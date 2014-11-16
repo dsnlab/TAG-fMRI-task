@@ -1,0 +1,45 @@
+1,2,1,3,2,3,0.516,0.725,I like to chew my pencil
+2,1,2,1,5,2,0.597,1.220,I hate pulling weeds
+3,3,2,3,4,5,0.687,0.770,I hate walking uphill
+4,3,3,2,1,1,0.633,0.927,I always have chapstick
+5,2,3,1,2,1,0.363,0.950,I always use sunscreen
+6,3,2,3,5,5,0.561,1.198,I hate squeaky shoes
+7,1,1,2,1,5,0.300,0.995,I like to wrestle
+8,2,3,1,3,3,0.552,1.062,I hate being sick
+9,2,1,3,3,4,0.453,0.905,I like smelling markers
+10,1,1,2,2,2,0.372,1.333,I want to learn to surf
+11,2,1,3,1,1,0.399,1.040,I like people who litter
+12,3,2,3,4,1,0.525,1.175,I love scary movies
+13,1,2,1,1,4,0.444,8.883,I take a lot of naps
+14,1,2,1,1,3,0.660,1.242,I remember dreams
+15,3,3,2,3,3,0.669,9.445,I hate skinny jeans
+16,3,3,2,5,1,0.579,1.400,I like free stuff
+17,1,1,2,2,3,0.489,9.085,I don"t like earmuffs
+18,3,2,3,2,4,0.417,0.792,I"m afraid of ghosts
+19,1,2,1,3,5,0.345,0.590,I hate to be tickled
+20,1,2,1,4,4,0.498,1.468,I always watch the news
+21,2,1,3,4,5,0.435,8.545,I hate being late
+22,2,3,1,4,5,0.651,1.153,I don"t like tapioca
+23,2,1,3,2,5,0.354,0.657,I like country music
+24,1,1,2,1,3,0.480,0.972,I like to burp out loud
+25,3,3,2,5,3,0.678,0.500,I love ketchup
+26,1,1,2,4,5,0.408,0.748,I think eggs are nasty
+27,3,2,3,4,4,0.615,1.265,I hate soft beds
+28,1,1,2,5,1,0.696,1.422,I rarely get headaches
+29,2,1,3,2,2,0.309,0.635,I sleep without a pillow
+30,2,3,1,5,5,0.462,0.522,I like birthday parties
+31,3,3,2,4,3,0.507,0.703,I always wear a watch
+32,2,1,3,4,4,0.381,1.288,I hate sour pickles
+33,3,2,3,1,1,0.570,1.107,I like watching sunsets
+34,3,2,3,1,4,0.426,1.018,I have a lucky charm
+35,3,3,2,3,4,0.642,0.680,I like cheeseburgers
+36,2,1,3,2,4,0.318,0.837,I think sushi is gross
+37,1,2,1,5,4,0.336,9.130,I like televised sports
+38,1,1,2,5,5,0.543,0.815,I wash my hands often
+39,2,1,3,2,4,0.327,0.860,I like doing new things
+40,3,2,3,4,3,0.534,1.355,I always stay up late
+41,2,3,1,4,2,0.624,0.568,I usually skip breakfast
+42,1,1,2,5,5,0.588,9.377,I tell a lot of jokes
+43,2,1,3,3,5,0.606,1.310,I bite my fingernails
+44,1,1,2,3,4,0.390,1.490,I make my own lunch
+45,3,2,3,1,1,0.471,8.613,I like to play cards

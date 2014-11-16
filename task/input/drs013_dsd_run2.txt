@@ -1,0 +1,45 @@
+1,2,1,3,4,5,0.327,1.085,I like cheeseburgers
+2,3,3,2,4,1,0.642,1.018,I hate soft beds
+3,1,1,2,3,3,0.444,0.680,I hate squeaky shoes
+4,3,3,2,1,1,0.309,8.703,I like smelling markers
+5,1,1,2,2,3,0.363,1.355,I like televised sports
+6,2,1,3,1,1,0.687,1.265,I love ketchup
+7,1,2,1,1,2,0.669,1.198,I like to play cards
+8,3,3,2,2,2,0.453,1.445,I want super powers
+9,2,3,1,5,2,0.561,0.635,I always use sunscreen
+10,3,2,3,4,4,0.588,0.837,I get sleepy after eating
+11,2,3,1,3,5,0.480,1.175,I hate doing dishes
+12,1,1,2,4,5,0.345,0.995,I hate spicy mustard
+13,1,2,1,1,4,0.318,1.377,I like to burp out loud
+14,1,1,2,5,1,0.426,0.590,I daydream in class
+15,2,1,3,3,5,0.552,1.153,I am a good dancer
+16,3,2,3,3,4,0.372,1.062,I like to watch cartoons
+17,3,2,3,1,3,0.570,1.107,I think tattoos are cool
+18,2,3,1,3,1,0.606,1.040,I never break the rules
+19,2,1,3,2,2,0.417,0.792,I always wear a watch
+20,2,3,1,4,4,0.435,9.242,I bite my fingernails
+21,2,1,3,5,2,0.390,0.545,I get ready quickly
+22,3,3,2,5,1,0.543,1.400,I like people who litter
+23,1,2,1,5,3,0.678,9.310,I can keep a secret
+24,1,2,1,5,5,0.381,0.568,I like birthday parties
+25,3,3,2,1,5,0.300,0.657,I"m afraid of ghosts
+26,2,3,1,1,3,0.579,1.220,I get good grades
+27,1,1,2,2,2,0.354,0.950,I think eggs are nasty
+28,3,2,3,3,3,0.624,0.883,I hate rainy days
+29,3,2,3,4,3,0.462,0.770,I like free stuff
+30,1,2,1,3,1,0.498,0.613,I hate riding the bus
+31,1,2,1,2,5,0.597,1.333,I hate eating leftovers
+32,2,1,3,3,3,0.633,0.815,I never make my bed
+33,2,1,3,5,1,0.696,8.905,I make people laugh
+34,1,1,2,1,1,0.516,0.860,I do not eat meat
+35,2,3,1,1,2,0.408,0.725,I can"t use chopsticks
+36,3,3,2,1,4,0.336,8.973,I hate to be tickled
+37,3,2,3,5,5,0.660,1.468,I usually skip breakfast
+38,1,1,2,4,3,0.489,1.130,I like hip-hop music
+39,3,2,3,5,5,0.525,0.500,I hate sour pickles
+40,3,2,3,5,5,0.534,0.927,I like foot massages
+41,2,1,3,2,3,0.615,9.490,I don"t like tofu
+42,3,2,3,5,4,0.651,0.522,I have a lucky charm
+43,1,2,1,3,4,0.471,1.288,I take a lot of naps
+44,2,1,3,2,3,0.507,1.422,I love pepperoni pizza
+45,1,2,1,3,4,0.399,8.748,I like doing new things

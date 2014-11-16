@@ -2,8 +2,8 @@
 % target: run1, run2
 % coins: run1, run2
 % eat a test fart
-GAdir = '/Users/wem3/Desktop/drs/design/GAoutput';
-targetDirectory = '/Users/wem3/Desktop/drs/input';
+GAdir = '/Users/wem3/Desktop/DRS/design/GAoutput';
+targetDirectory = '/Users/wem3/Desktop/DRS/task/input';
 for kCount = 1:50
   designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount), '.mat']);
   load(designFile)
@@ -53,7 +53,7 @@ for cCount = 1:length(coinPairs)
 end
 
 % add statements to designs at random
-statementFile = '/Users/wem3/Desktop/drs/materials/statements.txt';
+statementFile = '/Users/wem3/Desktop/DRS/task/materials/statements.txt';
 rawStatements(:,1) = textread(statementFile,'%s','delimiter','\n');
 numTrials = length(rawStatements)/2;
 rawStatements = Shuffle(rawStatements);
@@ -268,7 +268,7 @@ for dCount = 1:50
         for tCount = 1:45
           fid = fopen([targetDirectory,filesep,subID,'_dsd_','run',num2str(rCount),'.txt'],'a');
 
-          fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%4.3f,''%s''\n',tCount,condition(tCount),leftTarget(tCount),rightTarget(tCount),leftCoin(tCount),rightCoin(tCount),choiceJitter(tCount),discoJitter(tCount),statement{tCount});
+          fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%4.3f,%s\n',tCount,condition(tCount),leftTarget(tCount),rightTarget(tCount),leftCoin(tCount),rightCoin(tCount),choiceJitter(tCount),discoJitter(tCount),statement{tCount});
           fclose(fid);
         end
     end

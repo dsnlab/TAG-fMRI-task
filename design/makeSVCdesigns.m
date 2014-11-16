@@ -1,7 +1,7 @@
 %% set variables for saved design info & target directory (to save .txt files)
-svcTextFile = '/Users/wem3/Desktop/drs/materials/svcTraits.txt';
-targetDirectory = '/Users/wem3/Desktop/drs/input';
-GAoutputDirectory = '/Users/wem3/Desktop/drs/design/GAoutput';
+svcTextFile = '/Users/wem3/Desktop/DRS/task/materials/svcTraits.txt';
+targetDirectory = '/Users/wem3/Desktop/DRS/task/input';
+GAoutputDirectory = '/Users/wem3/Desktop/DRS/design/GAoutput';
 fid = fopen(svcTextFile,'r');
 svcCell = textscan(fid, '%s%u8%u8%u8','Delimiter',',');
 fclose(fid);
@@ -89,7 +89,7 @@ for dCount = 1:50
       end
       stimFileToWrite = [targetDirectory,filesep,subID,'_svc_','run',num2str(rCount),'.txt'];
       fid = fopen([targetDirectory,filesep,subID,'_svc_','run',num2str(rCount),'.txt'],'a');
-      formatSpec = '%u,%u,%4.3f,%u,%u,''%s''\n';
+      formatSpec = '%u,%u,%4.3f,%u,%u,%s\n';
       fprintf(fid, formatSpec, tCount, condition(tCount), svcJitter(tCount), reverse(tCount), syllables(tCount), word{tCount} );
       fclose(fid);
     end

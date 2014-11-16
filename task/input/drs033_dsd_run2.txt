@@ -1,0 +1,45 @@
+1,2,1,3,4,2,0.336,1.377,I bite my fingernails
+2,3,3,2,4,2,0.642,0.860,I like televised sports
+3,1,2,1,5,5,0.363,1.085,I like birthday parties
+4,1,1,2,5,5,0.543,0.725,I like free stuff
+5,3,2,3,1,5,0.696,1.310,I sing in the shower
+6,1,1,2,2,3,0.525,0.568,I like the way I look
+7,2,1,3,3,4,0.318,1.175,I drink a lot of coffee
+8,2,3,1,3,1,0.381,1.265,I always use sunscreen
+9,3,3,2,2,3,0.660,1.400,I hate sour pickles
+10,2,3,1,4,4,0.534,0.927,I like to read books
+11,3,3,2,3,5,0.597,8.838,I hate chicken soup
+12,1,1,2,4,2,0.327,1.040,I hate being late
+13,3,3,2,3,2,0.669,0.635,I don"t like tofu
+14,2,3,1,1,5,0.606,0.905,I hate pulling weeds
+15,1,2,1,3,4,0.561,1.468,I check Facebook often
+16,1,2,1,5,4,0.471,0.972,I always have chapstick
+17,2,3,1,2,2,0.507,1.333,I hate soft beds
+18,3,2,3,3,3,0.408,0.748,I floss every day
+19,3,3,2,1,5,0.399,9.355,I like to chew my pencil
+20,3,3,2,4,4,0.354,0.657,I hate eating leftovers
+21,1,1,2,3,5,0.624,1.107,I daydream in class
+22,2,1,3,5,2,0.426,1.288,I think sushi is gross
+23,3,3,2,5,4,0.579,0.792,I don"t like tapioca
+24,1,1,2,1,3,0.309,1.198,I like to wrestle
+25,2,1,3,3,3,0.390,8.770,I read a lot of comics
+26,2,1,3,3,2,0.453,1.220,I like wearing hoodies
+27,1,2,1,4,4,0.480,1.018,I like to play cards
+28,3,2,3,4,3,0.633,0.522,I can keep a secret
+29,1,1,2,2,2,0.498,8.703,I hate wearing seatbelts
+30,3,3,2,4,3,0.300,0.883,I carry a water bottle
+31,2,3,1,5,2,0.372,1.062,I want super powers
+32,2,3,1,3,3,0.444,0.680,I love scary movies
+33,3,2,3,3,4,0.615,0.590,I hate walking uphill
+34,2,1,3,1,1,0.678,0.995,I hate riding the bus
+35,1,1,2,3,4,0.489,0.545,I hate being sick
+36,3,3,2,2,2,0.345,0.950,I never make my bed
+37,3,3,2,4,4,0.687,1.490,I like people who litter
+38,2,3,1,5,4,0.462,1.422,I get sleepy after eating
+39,1,1,2,3,2,0.435,8.500,I remember dreams
+40,1,2,1,2,3,0.516,1.242,I want to learn to surf
+41,2,1,3,1,1,0.552,9.130,I shower in the morning
+42,1,1,2,5,1,0.651,1.153,I hate spicy mustard
+43,2,1,3,2,3,0.417,0.815,I want super powers
+44,1,1,2,3,3,0.588,1.445,I never sit up straight
+45,3,3,2,1,4,0.570,8.613,I tell a lot of jokes

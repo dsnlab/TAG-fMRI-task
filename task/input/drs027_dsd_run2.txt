@@ -1,0 +1,45 @@
+1,1,1,2,3,1,0.552,0.972,I hate eating leftovers
+2,2,1,3,3,3,0.570,1.198,I rarely get headaches
+3,3,2,3,5,1,0.678,1.018,I hate spicy mustard
+4,1,2,1,4,3,0.399,0.725,I daydream in class
+5,3,2,3,1,2,0.579,8.793,I don"t like big cities
+6,1,2,1,1,1,0.561,1.130,I bite my fingernails
+7,3,2,3,4,1,0.453,1.310,I like to play cards
+8,2,3,1,3,1,0.327,0.680,I hate rainy days
+9,2,3,1,5,3,0.660,1.355,I hate squeaky shoes
+10,3,3,2,3,3,0.417,0.883,I sing in the shower
+11,2,3,1,2,2,0.498,1.377,I hate to wait in line
+12,1,2,1,5,3,0.345,1.085,I hate walking uphill
+13,2,3,1,1,3,0.525,0.860,I like country music
+14,3,3,2,2,3,0.471,1.062,I hate doing dishes
+15,1,1,2,5,4,0.309,9.332,I like to read books
+16,3,2,3,4,3,0.390,1.153,I hate being late
+17,1,2,1,3,3,0.480,1.040,I hate to be tickled
+18,3,3,2,4,2,0.696,0.995,I hate sour pickles
+19,2,1,3,2,2,0.408,0.635,I get sleepy after eating
+20,3,2,3,3,4,0.489,1.468,I sleep without a pillow
+21,3,3,2,3,1,0.543,0.905,I do not eat meat
+22,1,2,1,5,4,0.426,1.175,I like watching sunsets
+23,1,2,1,5,1,0.624,8.703,I carry a water bottle
+24,2,3,1,2,1,0.363,1.220,I am a morning person
+25,1,1,2,2,2,0.606,9.287,I floss every day
+26,1,2,1,2,3,0.381,0.770,I have a best friend
+27,3,3,2,3,1,0.318,1.107,I don"t like earmuffs
+28,2,1,3,1,1,0.435,0.815,I always wear a watch
+29,2,1,3,2,1,0.687,0.927,I like to burp out loud
+30,3,2,3,4,4,0.588,8.523,I hate licking envelopes
+31,2,3,1,1,1,0.669,0.837,I never make my bed
+32,2,3,1,2,5,0.597,0.748,I like wearing hoodies
+33,1,2,1,3,3,0.534,0.950,I can"t use chopsticks
+34,1,2,1,2,1,0.336,0.613,I like to watch cartoons
+35,1,1,2,5,5,0.462,1.265,I like doing new things
+36,2,3,1,1,1,0.372,8.590,I like to sleep in late
+37,3,3,2,5,4,0.507,0.657,I hate chicken soup
+38,3,3,2,3,1,0.300,1.422,I like birthday parties
+39,2,1,3,1,5,0.615,1.445,I want super powers
+40,1,1,2,5,5,0.444,1.242,I get good grades
+41,2,1,3,4,1,0.633,0.545,I want super powers
+42,3,2,3,1,3,0.642,1.490,I think sushi is gross
+43,1,1,2,5,5,0.651,0.500,I drink a lot of coffee
+44,2,1,3,2,3,0.516,1.400,I never break the rules
+45,3,2,3,3,1,0.354,8.568,I love scary movies

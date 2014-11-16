@@ -1,0 +1,10 @@
+1,1,2,1,5,1,0.507,1.107,I hate chicken soup
+2,2,3,1,4,5,0.642,1.040,I hate eating leftovers
+3,3,2,3,2,2,0.543,1.085,I love pepperoni pizza
+4,3,2,3,3,5,0.345,1.333,I like hip-hop music
+5,2,1,3,5,1,0.606,1.400,I hate walking uphill
+6,3,3,2,3,3,0.372,0.680,I hate sour pickles
+7,2,3,1,1,2,0.426,1.175,I am a good dancer
+8,3,3,2,3,1,0.309,1.242,I want to learn to surf
+9,1,2,1,1,3,0.624,1.310,I tell a lot of jokes
+10,1,1,2,3,5,0.354,0.748,I don"t like tapioca

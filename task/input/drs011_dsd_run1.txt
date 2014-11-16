@@ -1,0 +1,45 @@
+1,2,3,1,2,4,0.606,0.657,I don"t like earmuffs
+2,1,1,2,3,3,0.471,1.198,I check Facebook often
+3,1,1,2,2,3,0.597,1.018,I hate to wait in line
+4,3,2,3,3,3,0.633,1.377,I sleep without a pillow
+5,3,3,2,3,2,0.480,8.995,I like doing new things
+6,2,1,3,3,5,0.660,0.748,I get ready quickly
+7,1,1,2,3,1,0.435,0.545,I read a lot of comics
+8,2,3,1,3,3,0.543,0.725,I like smelling markers
+9,2,3,1,4,1,0.669,1.333,I have a best friend
+10,3,2,3,3,3,0.417,0.792,I never break the rules
+11,1,2,1,1,2,0.372,0.815,I always use sunscreen
+12,3,2,3,2,5,0.381,1.175,I like free stuff
+13,1,2,1,5,1,0.498,1.107,I like watching sunsets
+14,1,2,1,5,2,0.687,0.703,I"m afraid of ghosts
+15,2,1,3,5,5,0.462,0.568,I like cheeseburgers
+16,2,3,1,1,4,0.570,0.860,I hate wearing seatbelts
+17,3,3,2,2,1,0.444,1.085,I like to chew my pencil
+18,3,2,3,5,3,0.588,8.500,I never get bored
+19,2,3,1,3,2,0.354,1.265,I like televised sports
+20,3,2,3,5,4,0.642,1.310,I hate being late
+21,2,3,1,3,3,0.552,1.242,I never sit up straight
+22,3,3,2,4,4,0.579,1.490,I carry a water bottle
+23,1,1,2,5,5,0.525,0.522,I like people who litter
+24,2,1,3,2,2,0.624,9.130,I rarely get headaches
+25,1,1,2,5,4,0.363,0.905,I wash my hands often
+26,2,1,3,4,5,0.318,1.040,I hate squeaky shoes
+27,1,1,2,1,1,0.336,9.400,I love ketchup
+28,1,2,1,5,4,0.408,0.590,I usually skip breakfast
+29,1,2,1,3,1,0.678,1.062,I like to read books
+30,3,2,3,5,1,0.453,0.680,I hate rainy days
+31,2,3,1,1,2,0.309,1.468,I like hip-hop music
+32,1,2,1,4,4,0.426,0.613,I hate to be tickled
+33,3,2,3,5,1,0.696,8.635,I love scary movies
+34,1,2,1,5,4,0.534,1.288,I always wear a watch
+35,3,3,2,1,5,0.651,0.972,I don"t like big cities
+36,3,3,2,2,2,0.561,0.770,I hate skinny jeans
+37,1,1,2,4,5,0.390,1.220,I tell a lot of jokes
+38,2,3,1,2,5,0.327,8.883,I love pepperoni pizza
+39,3,3,2,5,5,0.516,1.422,I hate chicken soup
+40,2,1,3,2,1,0.399,0.927,I get good grades
+41,2,3,1,4,5,0.489,0.950,I think tattoos are cool
+42,3,2,3,5,5,0.345,0.837,I shower in the morning
+43,1,1,2,3,4,0.615,1.445,I like to sleep in late
+44,3,3,2,1,2,0.300,1.153,I have a lucky charm
+45,2,3,1,4,4,0.507,9.355,I am a good dancer

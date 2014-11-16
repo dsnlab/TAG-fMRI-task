@@ -1,0 +1,45 @@
+1,1,1,2,5,5,0.642,1.040,I never break the rules
+2,2,3,1,3,2,0.363,0.860,I hate being sick
+3,3,3,2,1,5,0.624,0.568,I like watching sunsets
+4,1,2,1,1,1,0.633,1.310,I think eggs are nasty
+5,2,3,1,1,5,0.651,1.468,I love pepperoni pizza
+6,3,2,3,5,5,0.327,1.062,I am a morning person
+7,3,3,2,2,3,0.669,9.400,I like wearing hoodies
+8,3,2,3,3,5,0.543,0.883,I rarely get headaches
+9,1,2,1,4,4,0.552,0.635,I love ketchup
+10,1,2,1,5,4,0.606,0.680,I hate skinny jeans
+11,2,1,3,1,3,0.507,0.590,I bite my fingernails
+12,1,1,2,1,1,0.471,1.175,I can"t use chopsticks
+13,3,3,2,5,5,0.687,1.085,I hate to be tickled
+14,2,3,1,5,3,0.696,9.107,I like to chew my pencil
+15,3,2,3,5,2,0.498,0.703,I like people who litter
+16,2,1,3,4,3,0.597,0.815,I like to read books
+17,1,2,1,4,5,0.660,0.972,I hate walking uphill
+18,3,2,3,2,4,0.615,1.333,I like free stuff
+19,2,3,1,1,3,0.561,0.792,I read a lot of comics
+20,2,1,3,4,5,0.309,1.377,I always use sunscreen
+21,1,1,2,4,4,0.525,1.490,I hate doing dishes
+22,1,2,1,1,5,0.336,1.242,I make my own lunch
+23,3,2,3,4,2,0.417,0.770,I do not eat meat
+24,2,1,3,5,5,0.579,1.265,I think sushi is gross
+25,3,2,3,4,5,0.480,8.500,I"m afraid of ghosts
+26,2,1,3,1,1,0.453,8.905,I like to sleep in late
+27,2,3,1,2,3,0.444,0.950,I always have chapstick
+28,3,3,2,4,4,0.678,1.153,I always wear a watch
+29,1,2,1,4,2,0.426,1.355,I never make my bed
+30,3,3,2,1,1,0.516,1.198,I sing in the shower
+31,1,2,1,2,1,0.318,1.288,I don"t like tapioca
+32,1,2,1,1,3,0.534,1.422,I floss every day
+33,3,2,3,1,5,0.462,0.613,I like smelling markers
+34,3,2,3,1,4,0.354,0.995,I like cheeseburgers
+35,1,1,2,4,1,0.399,0.748,I drink a lot of coffee
+36,2,3,1,2,1,0.390,0.837,I hate wearing seatbelts
+37,1,2,1,4,4,0.408,1.018,I never get bored
+38,2,3,1,2,2,0.345,8.928,I want super powers
+39,2,1,3,4,4,0.588,1.445,I get sleepy after eating
+40,2,1,3,3,2,0.489,1.130,I like the way I look
+41,1,2,1,3,1,0.435,8.523,I want to learn to surf
+42,3,2,3,3,3,0.381,0.657,I hate rainy days
+43,1,1,2,1,5,0.300,0.725,I wash my hands often
+44,2,1,3,5,2,0.570,0.545,I hate chicken soup
+45,3,2,3,5,3,0.372,9.220,I hate to wait in line

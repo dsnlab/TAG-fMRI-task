@@ -1,0 +1,45 @@
+1,2,1,3,4,3,0.642,1.018,I always stay up late
+2,1,1,2,2,3,0.372,1.490,I like to wrestle
+3,1,2,1,4,4,0.552,0.950,I like to play cards
+4,3,3,2,3,1,0.318,0.972,I don"t like tofu
+5,1,2,1,1,1,0.687,1.085,I like country music
+6,2,1,3,3,5,0.561,0.613,I hate licking envelopes
+7,3,3,2,1,1,0.300,0.927,I always use sunscreen
+8,2,1,3,4,4,0.471,0.680,I hate skinny jeans
+9,3,3,2,2,5,0.678,0.522,I have a lucky charm
+10,3,3,2,4,4,0.696,1.153,I hate walking uphill
+11,3,3,2,5,2,0.336,0.635,I like to watch cartoons
+12,1,1,2,4,5,0.435,9.062,I usually skip breakfast
+13,3,3,2,5,4,0.633,1.130,I drink a lot of coffee
+14,2,3,1,1,1,0.345,1.310,I get ready quickly
+15,1,1,2,4,2,0.453,1.333,I like people who litter
+16,3,3,2,4,3,0.417,1.400,I hate doing dishes
+17,2,3,1,4,2,0.363,8.545,I always have chapstick
+18,1,1,2,3,3,0.399,1.288,I hate sour pickles
+19,2,3,1,2,2,0.615,1.107,I hate squeaky shoes
+20,1,2,1,1,1,0.660,1.422,I shower in the morning
+21,3,3,2,1,5,0.570,1.445,I love pepperoni pizza
+22,2,3,1,2,4,0.579,0.883,I take a lot of naps
+23,2,1,3,5,3,0.534,1.265,I carry a water bottle
+24,1,1,2,3,1,0.309,0.725,I like to sleep in late
+25,1,1,2,2,2,0.525,8.860,I read a lot of comics
+26,1,2,1,2,1,0.669,0.905,I am a morning person
+27,3,2,3,3,2,0.498,1.377,I hate riding the bus
+28,3,3,2,2,1,0.462,0.770,I never break the rules
+29,1,1,2,5,2,0.444,0.500,I sing in the shower
+30,2,1,3,5,5,0.651,0.792,I don"t like earmuffs
+31,3,2,3,1,2,0.408,1.242,I like the way I look
+32,2,1,3,3,2,0.390,1.198,I always wear a watch
+33,2,1,3,3,3,0.327,9.040,I can"t use chopsticks
+34,1,2,1,1,2,0.597,1.468,I like birthday parties
+35,2,1,3,1,2,0.489,0.657,I hate mosquito bites
+36,2,1,3,3,3,0.624,1.355,I make my own lunch
+37,3,2,3,4,3,0.606,8.748,I hate rainy days
+38,3,3,2,2,1,0.426,0.815,I think sushi is gross
+39,1,2,1,1,4,0.543,0.568,I want to learn to surf
+40,2,3,1,1,2,0.381,9.220,I sleep without a pillow
+41,2,1,3,3,3,0.480,1.175,I like watching sunsets
+42,3,3,2,2,1,0.354,0.590,I wash my hands often
+43,1,2,1,1,4,0.516,0.703,I like foot massages
+44,3,3,2,5,5,0.507,0.837,I hate pulling weeds
+45,1,1,2,5,1,0.588,8.995,I never get bored

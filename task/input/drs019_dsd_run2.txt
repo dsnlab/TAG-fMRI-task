@@ -1,0 +1,45 @@
+1,1,1,2,1,1,0.345,0.680,I am a good dancer
+2,2,3,1,3,1,0.579,1.175,I hate sour pickles
+3,1,1,2,1,1,0.525,0.568,I like doing new things
+4,2,1,3,2,1,0.444,1.107,I shower in the morning
+5,3,3,2,4,3,0.453,1.333,I hate to wait in line
+6,3,3,2,3,3,0.543,0.657,I don"t like tofu
+7,1,1,2,3,5,0.417,0.613,I like to read books
+8,2,1,3,1,2,0.318,0.972,I get sleepy after eating
+9,3,3,2,4,4,0.399,8.793,I make my own lunch
+10,2,1,3,3,1,0.606,0.545,I make people laugh
+11,3,2,3,4,1,0.363,1.355,I always wear a watch
+12,2,3,1,3,4,0.552,1.288,I don"t like earmuffs
+13,1,2,1,5,2,0.435,0.837,I get good grades
+14,1,2,1,3,5,0.336,9.018,I like the way I look
+15,3,2,3,5,2,0.354,0.635,I want to learn to surf
+16,1,2,1,4,5,0.390,0.883,I hate being sick
+17,3,3,2,3,2,0.507,1.062,I hate rainy days
+18,2,1,3,4,5,0.597,1.198,I like to chew my pencil
+19,2,1,3,4,4,0.669,1.153,I hate chicken soup
+20,3,2,3,1,1,0.615,0.522,I hate eating leftovers
+21,2,1,3,2,4,0.624,1.220,I tell a lot of jokes
+22,2,3,1,3,5,0.570,0.500,I hate pulling weeds
+23,1,1,2,4,3,0.426,9.265,I like to play cards
+24,1,1,2,5,5,0.561,1.490,I hate skinny jeans
+25,3,2,3,2,1,0.408,1.377,I always watch the news
+26,2,3,1,3,3,0.660,0.748,I never sit up straight
+27,1,2,1,4,1,0.372,0.950,I hate spicy mustard
+28,3,2,3,5,5,0.480,0.770,I daydream in class
+29,1,2,1,1,5,0.462,1.422,I hate licking envelopes
+30,1,1,2,2,1,0.300,0.590,I hate doing dishes
+31,3,2,3,3,3,0.633,1.040,I am a morning person
+32,2,3,1,2,4,0.489,9.310,I can keep a secret
+33,3,3,2,5,4,0.678,1.445,I like televised sports
+34,2,3,1,3,2,0.534,0.725,I want super powers
+35,3,3,2,3,3,0.327,9.242,I like hip-hop music
+36,3,3,2,3,3,0.651,0.860,I want super powers
+37,1,2,1,3,3,0.516,0.927,I"m afraid of ghosts
+38,1,1,2,2,2,0.687,1.468,I remember dreams
+39,2,1,3,4,2,0.381,1.400,I like smelling markers
+40,3,3,2,4,5,0.696,0.905,I like foot massages
+41,1,1,2,3,1,0.309,1.085,I don"t like big cities
+42,2,3,1,5,5,0.588,8.815,I floss every day
+43,1,1,2,5,2,0.471,0.995,I hate soft beds
+44,3,3,2,3,4,0.642,0.703,I rarely get headaches
+45,2,3,1,3,2,0.498,9.130,I hate mosquito bites
