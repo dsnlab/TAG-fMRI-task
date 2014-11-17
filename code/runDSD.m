@@ -32,12 +32,24 @@ thisRun = ['run',num2str(runNum)];
 % load subject's drs structure
 subFile = [subID,'_info.mat'];
 load(subFile);
-inputFile = [subID,'_dsd_',thisRun,'.txt'];
+inputTextFile = [drs.input.path,filesep,subID,'_dsd_',thisRun,'_input.txt'];
+outputTextFile = [drs.output.path,filesep,subID,'_dsd_',thisRun,'_output.txt'];
 % load trialMatrix
-fid=fopen(inputFile);
+fid=fopen(inputTextFile);
 trialMatrix=textscan(fid,'%u%u%u%u%u%u%f%f%s\n','delimiter',',');
+fclose(fid);
+%% store info from trialMatrix in drs structure
+task.input.raw = [trialMatrix{1} trialMatrix{2} trialMatrix{3} trialMatrix{4} trialMatrix{5} trialMatrix{6} trialMatrix{7} trialMatrix{8}];
+task.input.condition = trialMatrix{2};
+task.input.leftTarget = trialMatrix{3};
+task.input.rightTarget = trialMatrix{4};
+task.input.leftCoin = trialMatrix{5};
+task.input.rightCoin = trialMatrix{6};
+task.input.choiceJitter = trialMatrix{7};
+task.input.discoJitter = trialMatrix{8};
+task.input.statement = trialMatrix{9};
 numTrials = length(trialMatrix{1});
-
+task.output.raw = NaN(numTrials,13);
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
 PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
@@ -62,7 +74,7 @@ drs.keys = initKeys;
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
   'center', 'center', drs.stim.white);
 [~,calibrationOnset] = Screen('Flip', win);
-WaitSecs(3);
+WaitSecs(1);
 DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 3',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
@@ -78,9 +90,9 @@ DrawFormattedText(win, 'Sharing Experiment:\n\n Get Ready!',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
 
-%% trigger pulse code
-KbTriggerWait(drs.keys.trigger);
-disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
+%% trigger pulse code (disabled for debug)
+%KbTriggerWait(drs.keys.trigger);
+%disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
 triggerPulseTime = GetSecs;
 disp('trigger pulse received, starting experiment');
 Screen('Flip', win);
@@ -96,7 +108,7 @@ KbQueueCreate(drs.keys.deviceNum, keyList);
 % ListenChar(2);
 choiceSkips = [];
 discoSkips = [];
-
+loopStartTime = GetSecs;
 %% trial loop
 for tCount = 1:numTrials
   %% set variables for this trial
@@ -120,35 +132,29 @@ for tCount = 1:numTrials
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);
   KbQueueStart(drs.keys.deviceNum);
+  % flip the screen to show choice
   [~,choiceOnset] = Screen('Flip',win);
+  % loop for response
   while (GetSecs - choiceOnset) < 3
     [ pressed, firstPress]=KbQueueCheck(drs.keys.deviceNum);
-    if chose == 0;
       if pressed
-        choiceRT = firstPress(find(firstPress)) - choiceOnset;
+        if chose == 0
+          choiceRT = firstPress(find(firstPress)) - choiceOnset;
+          chose == 1;
+        elseif chose == 1
+          multiChoiceResponse = [multiChoiceResponse choiceResponse];
+          multiChoiceRT =[multiChoiceRT choiceRT];
+          choiceRT = firstPress(find(firstPress)) - choiceOnset;
+        end
         if find(firstPress(leftKeys))
             choiceResponse = 1;
         elseif find(firstPress(rightKeys))
             choiceResponse = 2;
         end
         drawChoiceFeedback(win,drs.stim,targets,choiceResponse);
-      end
-      chose = 1;
-    else
-      if pressed
-        multiChoiceResponse = [multiChoiceResponse choiceResponse];
-        multiChoiceRT =[multiChoiceRT choiceRT];
-        choiceRT = firstPress(find(firstPress)) - choiceOnset;
-        if find(firstPress(leftKeys))
-            choiceResponse = 1;
-        elseif find(firstPress(rightKeys))
-            choiceResponse = 2;
-        end
-        drawChoiceFeedback(win,drs.stim,targets,choiceResponse);
-      end
-      
-    end
+      end   
   end
+  
   KbQueueStop(drs.keys.deviceNum)
   %% call draw function
   discoResponse = 0;
@@ -158,30 +164,21 @@ for tCount = 1:numTrials
   [~,discoOnset] = Screen('Flip',win);
   while (GetSecs - discoOnset) < 3
     [ pressed, firstPress]=KbQueueCheck(drs.keys.deviceNum);
-    if disclosed == 0;
-      if pressed
+    if pressed
+      if disclosed == 0;
         discoRT = firstPress(find(firstPress)) - discoOnset;
-        if find(firstPress(leftKeys))
-            discoResponse = 1;
-        elseif find(firstPress(rightKeys))
-            discoResponse = 2;
-        end
-        drawDiscoFeedback(win,drs.stim,targets,choiceResponse,discoResponse);
-      end
-      disclosed = 1;
-    else
-      if pressed
+        disclosed == 1;
+      elseif disclosed == 1 ;
         multiDiscoResponse = [multiDiscoResponse discoResponse];
         multiDiscoRT =[multiDiscoRT discoRT];
         discoRT = firstPress(find(firstPress)) - discoOnset;
-        if find(firstPress(leftKeys))
-            discoResponse = 1;
-        elseif find(firstPress(rightKeys))
-            discoResponse = 2;
-        end
-        drawDiscoFeedback(win,drs.stim,targets,statement,choiceResponse,discoResponse);
       end
-      
+      if find(firstPress(leftKeys))
+        discoResponse = 1;
+      elseif find(firstPress(rightKeys))
+        discoResponse = 2;
+      end
+      drawDiscoFeedback(win,drs.stim,targets,statement,choiceResponse,discoResponse);
     end
   end
   KbQueueStop(drs.keys.deviceNum)
@@ -195,29 +192,53 @@ for tCount = 1:numTrials
   if discoResponse == 0
     discoSkips = [discoSkips(tCount) discpSkips(tCount)];
   end
-  % assign output for each trial to dsd.(thisRun).output.raw matrix
-  dsd.output.raw(tCount,1) = tCount;
-  dsd.output.raw(tCount,2) = trialMatrix{2}(tCount);
-  dsd.output.raw(tCount,3) = trialMatrix{3}(tCount);
-  dsd.output.raw(tCount,4) = trialMatrix{4}(tCount);
-  dsd.output.raw(tCount,5) = trialMatrix{5}(tCount);
-  dsd.output.raw(tCount,6) = trialMatrix{6}(tCount);
-  dsd.output.raw(tCount,7) = choiceOnset;
-  dsd.output.raw(tCount,8) = choiceResponse;
-  dsd.output.raw(tCount,9) = choiceRT;
-  dsd.output.raw(tCount,10) = discoOnset;
-  dsd.output.raw(tCount,11) = discoResponse;
-  dsd.output.raw(tCount,16) = discoRT;
-  dsd.statement{tCount} = statement;
+  % assign output for each trial to task.(thisRun).output.raw matrix
+  task.output.raw(tCount,1) = tCount;
+  task.output.raw(tCount,2) = trialMatrix{2}(tCount);
+  task.output.raw(tCount,3) = trialMatrix{3}(tCount);
+  task.output.raw(tCount,4) = trialMatrix{4}(tCount);
+  task.output.raw(tCount,5) = trialMatrix{5}(tCount);
+  task.output.raw(tCount,6) = trialMatrix{6}(tCount);
+  task.output.raw(tCount,7) = (choiceOnset - loopStartTime);
+  task.output.raw(tCount,8) = choiceResponse;
+  task.output.raw(tCount,9) = choiceRT;
+  task.output.raw(tCount,10) = (discoOnset - loopStartTime);
+  task.output.raw(tCount,12) = discoResponse;
+  task.output.raw(tCount,13) = discoRT;
 
 end
-dsd.onset.calibration = calibrationOnset;
-dsd.onset.triggerPulse = triggerPulseTime;
-
 % End of experiment screen. We clear the screen once they have made their
 % response
-DrawFormattedText(win, 'Scan Complete! \n\n We"ll check in momentarily',...
+DrawFormattedText(win, 'Scan Complete! \n\nWe will check in momentarily...',...
     'center', 'center', drs.stim.white);
 Screen('Flip', win);
-KbStrokeWait;
-Screen('Close',win)
+
+fid=fopen(outputTextFile,'a');
+for tCount = 1:numTrials
+  fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%u,%4.3f,%4.3f,%u,%4.3f,%s\n',...
+  task.output.raw(tCount,1),...
+  task.output.raw(tCount,2),...
+  task.output.raw(tCount,3),...
+  task.output.raw(tCount,4),...
+  task.output.raw(tCount,5),...
+  task.output.raw(tCount,6),...
+  task.output.raw(tCount,7),...
+  task.output.raw(tCount,8),...
+  task.output.raw(tCount,9),...
+  task.output.raw(tCount,10),...
+  task.output.raw(tCount,12),...
+  task.output.raw(tCount,13),...
+  task.input.statement{tCount});
+end
+fclose(fid);
+% task.onsets.calibration = calibrationOnset;
+% task.onsets.triggerPulse = triggerPulseTime;
+% task.output.choice.skips = choiceSkips;
+% task.output.choice.multi = multiChoiceResponse;
+% task.output.choice.multiRT = multiChoiceRT;
+% task.output.disco.skips = discoSkips;
+% task.output.disco.multi = multiDiscoResponse;
+% task.output.disco.multiRT = multiDiscoRT;
+KbStrokeWait(drs.keys.deviceNum);
+
+Screen('CloseAll')

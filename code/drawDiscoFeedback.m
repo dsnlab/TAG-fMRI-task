@@ -8,7 +8,7 @@ function drawDiscoFeedback(win,stim,targets,statement,choiceResponse,discoRespon
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 yesnoGlow = (0.55:0.05:1);
-yesnoFade = flip(0:0.05:0.45)
+yesnoFade = flip(0:0.05:0.45);
 % fadeVector is a vector we'll use to construct a gradient of transparencies
 fadeVector = (0.1:0.1:1);
 

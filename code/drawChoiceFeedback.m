@@ -8,7 +8,7 @@ function drawChoiceFeedback(win,stim,targets,choiceResponse)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 handGlow = (0.55:0.05:1);
-handFade = flip(0:0.05:0.45)
+handFade = flip(0:0.05:0.45);
 % fadeVector is a vector we'll use to construct a gradient of transparencies
 fadeVector = (0.3:0.075:1);
 
@@ -26,7 +26,7 @@ for fadeCount = 1:length(fadeVector)
     fadeBox = [0 0 stim.box.xCenter stim.box.statement(2)];
   end
   % chosen box
-  drawHands(win,stim,targets,alphas)
+  drawHands(win,stim,targets,alphas);
   drawChoice(win,stim,targets);
   Screen('FillRect',win,[stim.bg(1:3) fadeVector(fadeCount)], fadeBox);
   WaitSecs(0.025);
