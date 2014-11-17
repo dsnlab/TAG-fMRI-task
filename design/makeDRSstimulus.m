@@ -1,6 +1,6 @@
 % make DSD stimulus
 %% set some paths
-matDir = '/Users/wem3/Desktop/drs/materials';
+matDir = '/Users/wem3/Desktop/drs/task/materials';
 coinFile = [matDir,filesep,'coin.png'];
 yesFile = [matDir,filesep,'yes-200.png'];
 noFile = [matDir,filesep,'no-200.png'];
@@ -23,13 +23,13 @@ stim.coins = {coin1, coin2, coin3, coin4, coin5};
 %% delta icon (for svc)
 [~,~,stim.alpha.delta] = imread(deltaFile);
 %% yes icon (for svc)
-[~,~,stim.alpha.yes] = imread(yesFile);
+[~,~,stim.alpha.yesno{1}] = imread(yesFile);
 %% no icon (for svc)
-[~,~,stim.alpha.no] = imread(noFile);
+[~,~,stim.alpha.yesno{2}] = imread(noFile);
 %% left icon (for svc)
-[~,~,stim.alpha.left] = imread(leftFile);
+[~,~,stim.alpha.hand{1}] = imread(leftFile);
 %% left icon (for svc)
-[~,~,stim.alpha.right] = imread(rightFile);
+[~,~,stim.alpha.hand{2}] = imread(rightFile);
 
 % colorscheme
 stim.bg     = [29  31  33  255]./255; % bg
@@ -62,14 +62,16 @@ posLR = [... % [ left x position, y position, right x position ]
 (xCenter - 2*unit), (yCenter + 0.5*unit), (xCenter + 2*unit) % 4. respBoxen
 ];
 % structure to hold boxen...
-box.L.choice = CenterRectOnPointd([0 0 4*unit unit],posLR(1,1),posLR(1,2));
-box.R.choice = CenterRectOnPointd([0 0 4*unit unit],posLR(1,3),posLR(1,2));
-box.L.coin = CenterRectOnPointd([0 0 270 76],posLR(2,1),posLR(2,2));
-box.R.coin = CenterRectOnPointd([0 0 270 76],posLR(2,3),posLR(2,2));
-box.L.hand = CenterRectOnPointd([0 0 200 200],posLR(3,1),posLR(3,2));
-box.R.hand = CenterRectOnPointd([0 0 200 200],posLR(3,3),posLR(3,2));
-box.L.resp = CenterRectOnPointd([0 0 200 200],posLR(4,1),posLR(4,2));
-box.R.resp = CenterRectOnPointd([0 0 200 200],posLR(4,3),posLR(4,2));
+box.choice{1} = CenterRectOnPointd([0 0 4*unit unit],posLR(1,1),posLR(1,2));
+box.choice{2} = CenterRectOnPointd([0 0 4*unit unit],posLR(1,3),posLR(1,2));
+box.coin{1} = CenterRectOnPointd([0 0 270 76],posLR(2,1),posLR(2,2));
+box.coin{2} = CenterRectOnPointd([0 0 270 76],posLR(2,3),posLR(2,2));
+box.hand{1} = CenterRectOnPointd([0 0 200 200],posLR(3,1),posLR(3,2));
+box.hand{2} = CenterRectOnPointd([0 0 200 200],posLR(3,3),posLR(3,2));
+box.yesno{1} = CenterRectOnPointd([0 0 200 200],posLR(3,1),posLR(3,2));
+box.yesno{2} = CenterRectOnPointd([0 0 200 200],posLR(3,3),posLR(3,2));
+box.resp{1} = CenterRectOnPointd([0 0 200 200],posLR(4,1),posLR(4,2));
+box.resp{2} = CenterRectOnPointd([0 0 200 200],posLR(4,3),posLR(4,2));
 box.statement = CenterRectOnPointd([0 0 6*unit unit],xCenter,yCenter);
 
 %% prefacbricate color boxen (?)
@@ -85,7 +87,7 @@ for rgbCount = 1:3
   box.blue(:,:,rgbCount)    = ones(200,200).*stim.blue(rgbCount);
   box.pink(:,:,rgbCount)    = ones(200,200).*stim.pink(rgbCount);
 end
-  stim.box = box;
+stim.box = box;
 
 %% aliens for rpe
 % for aCount = 1:5
@@ -93,5 +95,6 @@ end
 % end
 % stim.aliens = alienImg;
 %caBut('stim');
-save DRSstim.mat;
+saveName = [matDir,filesep,'DRSstim.mat'];
+save(saveName,'stim');
 
