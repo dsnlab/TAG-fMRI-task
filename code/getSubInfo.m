@@ -31,12 +31,12 @@ manualInput = inputdlg(prompt,dTitle,nLines,def);
 % to be readily readable in summary form (so this, err, isn't)
 drs.subID = ['drs',manualInput{1}];
 drs.subNum = str2num(manualInput{1});
-drs.input = [studyDir,filesep,'task',filesep,'input'];
-drs.output = [studyDir,filesep,'task',filesep,'output'];
+drs.input.path = [studyDir,filesep,'task',filesep,'input'];
+drs.output.path = [studyDir,filesep,'task',filesep,'output'];
 % stimFile created by makeDRSstimulus.m
-stimFile = [studyDir,filesep,materials,filesep,'DRSstim.mat'];
+stimFile = [studyDir,filesep,'task',filesep,'materials',filesep,'DRSstim.mat'];
 load(stimFile);
-drs.stim = stim;
+
 demo.name = manualInput{2};
 demo.gender = manualInput{5};
 demo.DOB = manualInput{6};
@@ -51,13 +51,19 @@ selfText = 'keep it private';
 friendText = ['share with ', drs.friend];
 parentText = ['share with ', drs.parent];
 drs.demo = demo;
-drs.targetText = {selfText, friendText, parentText};
+stim.targetText = {selfText, friendText, parentText};
 
-% randomize colors
-drs.targetColors = Shuffle({stim.sky,stim.blue,stim.pink});
+% randomize colors, make boxen (so we can draw colored hands later)
+stim.targetColors = Shuffle({stim.sky,stim.blue,stim.pink});
+for boxCount = 1:3
+  for rgbCount = 1:3
+    stim.targetBoxen{boxCount}(:,:,rgbCount) = ones(200,200).*stim.targetColors{boxCount}(rgbCount);
+  end
+end
 
-saveFile = [drs.output,filesep,[drs.subID,'_info.mat']];
-
+% store stim in drs and save
+drs.stim = stim;
+saveFile = [drs.input.path,filesep,[drs.subID,'_info.mat']];
 save(saveFile,'drs');
 
 return

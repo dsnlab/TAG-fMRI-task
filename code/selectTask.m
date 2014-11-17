@@ -1,4 +1,4 @@
-function [ drs ] = selectTask(drs)
+function [ task ] = selectTask(drs)
 % % SELECTTASK.m %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   usage: [ ] = selectTask(drs)
 %
@@ -21,13 +21,12 @@ function [ drs ] = selectTask(drs)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
 % Construct a questdlg with three options
-taskChoice = questdlg('Which experiment?',...
+task.name = questdlg('Which experiment?',...
  'Select Task: ', ...
 'dsd','rpe','svc','dsd');
-runChoice = questdlg('Which session?',...
+task.sess = questdlg('Which session?',...
   'Select Run: ', ...
   'run1','run2','run0','run1');
-
-drs.(taskChoice).(runChoice).inputFile = [drs.input,filesep,drs.subID,'_',taskChoice,'_',runChoice,'.txt'];
+task.input.file = [drs.input,filesep,drs.subID,'_',taskChoice,'_',runChoice,'.txt'];
 
 
