@@ -22,7 +22,7 @@ function [task] = runDSD(subNum,runNum)
 %     (subID)_info.mat = structure w/ subject specific info
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-try
+
 %% get subID from subNum
 if subNum < 10
   subID = ['drs00',num2str(subNum)];
@@ -112,8 +112,8 @@ loopStartTime = GetSecs;
 for tCount = 1:numTrials
   %% set variables for this trial
   targets = [trialMatrix{3}(tCount),trialMatrix{4}(tCount),trialMatrix{5}(tCount),trialMatrix{6}(tCount)];
-  choiceJitter = trialMatrix{7};
-  discoJitter = trialMatrix{8};
+  choiceJitter = trialMatrix{7}(tCount);
+  discoJitter = trialMatrix{8}(tCount);
   statement = trialMatrix{9}{tCount};
   choiceResponse = 0;
   choiceRT = NaN;
@@ -134,33 +134,36 @@ for tCount = 1:numTrials
   % flip the screen to show choice
   [~,choiceOnset] = Screen('Flip',win);
   %loop for response
-   while (GetSecs - choiceOnset) < 3
-     [ pressed, firstPress]=KbQueueCheck(inputDevice);
-       if pressed
-         if chose == 0
-           choiceRT = firstPress(find(firstPress)) - choiceOnset;
-         elseif chose == 1
-           multiChoiceResponse = [multiChoiceResponse choiceResponse];
-           multiChoiceRT =[multiChoiceRT choiceRT];
-           choiceRT = firstPress(find(firstPress)) - choiceOnset;
-         end
-         if find(firstPress(leftKeys))
-             choiceResponse = 1;
-         elseif find(firstPress(rightKeys))
-             choiceResponse = 2;
-         end
+  while (GetSecs - choiceOnset) < 3.5
+    [ pressed, firstPress]=KbQueueCheck(inputDevice);
+      if pressed
+        if chose == 0
+          choiceRT = firstPress(find(firstPress)) - choiceOnset;
+        elseif chose == 1
+          multiChoiceResponse = [multiChoiceResponse choiceResponse];
+          multiChoiceRT =[multiChoiceRT choiceRT];
+          choiceRT = firstPress(find(firstPress)) - choiceOnset;
+        end
+
+        if find(firstPress(leftKeys))
+            choiceResponse = 1;
+        elseif find(firstPress(rightKeys))
+            choiceResponse = 2;
+        end
          chose=1;
-         drawChoiceFeedback(win,drs.stim,targets,choiceResponse);
-       end   
-   end
-  %
+        drawChoiceFeedback(win,drs.stim,targets,choiceResponse);
+      end   
+  end
   KbQueueStop(inputDevice);
+  
+  WaitSecs('UntilTime',(choiceOnset + 3.5 + choiceJitter));
+  %
   discoResponse = 0;
   drawYesNo(win,drs.stim,[0.5 0.5]);
   drawDisco(win,drs.stim,targets,statement,choiceResponse);
   KbQueueStart(inputDevice);
   [~,discoOnset] = Screen('Flip',win);
-  while (GetSecs - discoOnset) < 3
+  while (GetSecs - discoOnset) < 3.5
     [ pressed, firstPress]=KbQueueCheck(inputDevice);
     if pressed
       if disclosed == 0;
@@ -179,10 +182,10 @@ for tCount = 1:numTrials
       drawDiscoFeedback(win,drs.stim,targets,statement,choiceResponse,discoResponse);
     end
   end
-  KbQueueStop(inputDevice)
+  KbQueueStop(inputDevice);
+  [~,discoOffset] = Screen('Flip',win);
+  WaitSecs('UntilTime',(discoOnset + 3.5 + discoJitter));
 %%
-  
-  Screen('Flip',win);
   if choiceResponse == 0
     choiceSkips = [choiceSkips tCount];
   end
@@ -216,18 +219,16 @@ for tCount = 1:numTrials
   task.output.raw(tCount,1:12), task.input.statement{tCount});
 end
 fclose(fid);
-% task.onsets.calibration = calibrationOnset;
-% task.onsets.triggerPulse = triggerPulseTime;
-% task.output.choice.skips = choiceSkips;
-% task.output.choice.multi = multiChoiceResponse;
-% task.output.choice.multiRT = multiChoiceRT;
-% task.output.disco.skips = discoSkips;
-% task.output.disco.multi = multiDiscoResponse;
-% task.output.disco.multiRT = multiDiscoRT;
+task.onsets.calibration = calibrationOnset;
+task.onsets.triggerPulse = triggerPulseTime;
+task.output.choice.skips = choiceSkips;
+task.output.choice.multi = multiChoiceResponse;
+task.output.choice.multiRT = multiChoiceRT;
+task.output.disco.skips = discoSkips;
+task.output.disco.multi = multiDiscoResponse;
+task.output.disco.multiRT = multiDiscoRT;
 KbQueueRelease;
 KbStrokeWait(inputDevice);
 Screen('CloseAll');
-catch
-  sca;
-end
+
 return
