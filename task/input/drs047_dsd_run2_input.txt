@@ -1,0 +1,45 @@
+1,2,1,3,5,4,0.426,1.468,I get ready quickly
+2,1,1,2,1,5,0.318,1.400,I always stay up late
+3,1,2,1,1,4,0.534,0.770,I like doing new things
+4,3,2,3,3,3,0.696,0.972,I drink a lot of coffee
+5,3,2,3,4,3,0.345,0.545,I never make my bed
+6,2,3,1,2,1,0.525,9.130,I like the way I look
+7,1,1,2,2,2,0.372,1.288,I am a morning person
+8,2,1,3,5,2,0.507,0.657,I want super powers
+9,2,1,3,4,2,0.561,0.522,I sing in the shower
+10,3,3,2,2,2,0.435,0.995,I daydream in class
+11,2,3,1,3,2,0.417,1.107,I like watching sunsets
+12,1,2,1,5,4,0.363,8.725,I like cheeseburgers
+13,3,3,2,5,5,0.633,1.242,I am a good dancer
+14,1,1,2,2,1,0.669,1.422,I get sleepy after eating
+15,3,2,3,2,2,0.660,1.018,I like to play cards
+16,1,1,2,5,4,0.597,0.680,I think eggs are nasty
+17,2,3,1,3,4,0.651,1.062,I want to learn to surf
+18,3,3,2,4,5,0.453,1.490,I read a lot of comics
+19,1,2,1,4,3,0.309,0.950,I never get bored
+20,3,3,2,1,1,0.642,0.792,I hate doing dishes
+21,2,1,3,3,4,0.552,0.905,I hate being sick
+22,2,3,1,4,3,0.687,0.635,I love scary movies
+23,3,2,3,3,2,0.354,1.333,I hate sour pickles
+24,1,1,2,4,2,0.516,0.837,I like hip-hop music
+25,2,3,1,4,4,0.300,8.500,I hate chicken soup
+26,2,3,1,3,3,0.444,0.927,I hate riding the bus
+27,1,1,2,3,3,0.579,1.445,I shower in the morning
+28,1,2,1,2,4,0.480,0.568,I always have chapstick
+29,3,2,3,1,4,0.327,9.175,I like free stuff
+30,1,1,2,2,2,0.408,1.153,I have a best friend
+31,3,2,3,4,5,0.390,9.040,I hate mosquito bites
+32,1,1,2,1,1,0.399,0.703,I think tattoos are cool
+33,1,2,1,2,4,0.588,1.220,I can keep a secret
+34,2,1,3,5,5,0.615,0.590,I never sit up straight
+35,3,3,2,1,2,0.471,1.355,I have a lucky charm
+36,2,3,1,4,3,0.462,1.265,I check Facebook often
+37,3,2,3,1,3,0.336,1.310,I think sushi is gross
+38,3,3,2,1,1,0.489,0.860,I hate skinny jeans
+39,2,3,1,4,3,0.570,1.377,I hate eating leftovers
+40,1,1,2,4,2,0.543,0.883,I carry a water bottle
+41,2,3,1,1,4,0.678,0.815,I always use sunscreen
+42,2,1,3,2,2,0.381,0.613,I like people who litter
+43,3,2,3,5,2,0.606,1.085,I tell a lot of jokes
+44,1,2,1,2,1,0.498,9.197,I bite my fingernails
+45,3,2,3,1,1,0.624,8.748,I can"t use chopsticks

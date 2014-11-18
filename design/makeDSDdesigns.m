@@ -266,7 +266,7 @@ for dCount = 1:50
         discoJitter = dsdDesign(dCount).(thisRun).discoJitter;
 
         for tCount = 1:45
-          fid = fopen([targetDirectory,filesep,subID,'_dsd_','run',num2str(rCount),'.txt'],'a');
+          fid = fopen([targetDirectory,filesep,subID,'_dsd_','run',num2str(rCount),'_input.txt'],'a');
 
           fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%4.3f,%s\n',tCount,condition(tCount),leftTarget(tCount),rightTarget(tCount),leftCoin(tCount),rightCoin(tCount),choiceJitter(tCount),discoJitter(tCount),statement{tCount});
           fclose(fid);

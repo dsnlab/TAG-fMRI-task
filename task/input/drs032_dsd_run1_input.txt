@@ -1,0 +1,45 @@
+1,1,2,1,4,5,0.309,1.085,I hate being sick
+2,2,1,3,2,5,0.552,1.265,I drink a lot of coffee
+3,3,3,2,1,2,0.462,9.422,I check Facebook often
+4,1,1,2,2,2,0.669,1.468,I like country music
+5,3,2,3,4,5,0.624,1.333,I tell a lot of jokes
+6,2,1,3,2,2,0.390,0.725,I never break the rules
+7,2,1,3,4,4,0.453,1.040,I floss every day
+8,3,3,2,1,1,0.435,1.153,I don"t like tapioca
+9,1,2,1,5,2,0.678,0.522,I hate doing dishes
+10,3,3,2,5,5,0.489,0.545,I like doing new things
+11,3,3,2,1,5,0.363,0.927,I like televised sports
+12,2,3,1,2,4,0.408,1.130,I can"t use chopsticks
+13,1,2,1,3,3,0.345,0.680,I have a best friend
+14,2,3,1,5,3,0.417,1.062,I can keep a secret
+15,1,1,2,5,2,0.534,0.703,I hate walking uphill
+16,3,3,2,1,4,0.300,1.400,I rarely get headaches
+17,2,3,1,1,1,0.471,0.905,I make people laugh
+18,1,2,1,5,5,0.480,0.972,I always have chapstick
+19,2,3,1,3,2,0.399,9.220,I am a good dancer
+20,1,2,1,4,2,0.561,0.837,I don"t like earmuffs
+21,3,2,3,3,3,0.507,0.770,I like to wrestle
+22,1,1,2,1,1,0.687,1.310,I don"t like tofu
+23,2,3,1,1,5,0.579,0.613,I daydream in class
+24,2,3,1,2,3,0.336,0.657,I wash my hands often
+25,1,2,1,3,5,0.615,0.815,I hate eating leftovers
+26,3,2,3,2,3,0.354,9.175,I carry a water bottle
+27,2,3,1,5,1,0.588,8.793,I like to burp out loud
+28,3,3,2,2,4,0.696,0.568,I hate licking envelopes
+29,2,1,3,4,4,0.444,1.377,I think eggs are nasty
+30,3,3,2,4,3,0.597,0.883,I like people who litter
+31,3,2,3,1,5,0.516,0.635,I shower in the morning
+32,3,2,3,2,4,0.570,1.445,I have a lucky charm
+33,1,1,2,1,1,0.651,0.500,I like free stuff
+34,1,1,2,1,3,0.318,9.287,I think tattoos are cool
+35,1,1,2,1,1,0.606,0.590,I never sit up straight
+36,1,2,1,1,3,0.372,0.860,I make my own lunch
+37,1,1,2,1,3,0.498,0.995,I always use sunscreen
+38,2,1,3,3,3,0.381,1.198,I hate being late
+39,3,2,3,1,5,0.633,1.018,I get ready quickly
+40,2,1,3,1,5,0.543,9.490,I like hip-hop music
+41,2,1,3,1,3,0.327,0.748,I sing in the shower
+42,3,3,2,3,5,0.642,1.355,I hate spicy mustard
+43,1,1,2,1,1,0.426,1.242,I take a lot of naps
+44,2,1,3,5,3,0.525,0.950,I hate to wait in line
+45,3,3,2,5,1,0.660,9.107,I like cheeseburgers

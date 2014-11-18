@@ -1,0 +1,45 @@
+1,1,2,1,1,1,0.426,1.175,I always use sunscreen
+2,2,3,1,2,4,0.633,0.613,I hate pulling weeds
+3,3,2,3,5,3,0.687,1.310,I shower in the morning
+4,3,2,3,5,4,0.390,9.467,I like to chew my pencil
+5,3,3,2,4,4,0.507,1.288,I hate being late
+6,1,2,1,2,2,0.588,1.018,I hate doing dishes
+7,2,1,3,4,1,0.615,0.905,I carry a water bottle
+8,3,3,2,4,4,0.516,1.333,I like to watch cartoons
+9,1,2,1,5,5,0.462,0.748,I like televised sports
+10,2,1,3,1,3,0.642,1.490,I hate to be tickled
+11,3,3,2,2,3,0.543,0.545,I hate eating leftovers
+12,2,3,1,4,5,0.354,1.130,I can"t use chopsticks
+13,1,2,1,4,4,0.372,1.107,I take a lot of naps
+14,1,2,1,4,2,0.579,0.725,I love scary movies
+15,2,3,1,1,2,0.570,0.837,I make my own lunch
+16,3,2,3,2,2,0.660,1.242,I read a lot of comics
+17,1,1,2,2,1,0.471,0.883,I hate chicken soup
+18,3,2,3,4,3,0.408,0.995,I think sushi is gross
+19,2,1,3,3,1,0.597,0.635,I usually skip breakfast
+20,2,3,1,3,2,0.480,1.085,I wash my hands often
+21,3,3,2,1,1,0.417,1.153,I hate to wait in line
+22,3,3,2,3,1,0.678,1.445,I always stay up late
+23,2,3,1,2,3,0.561,1.198,I don"t like tapioca
+24,1,2,1,5,3,0.552,8.703,I like to play cards
+25,2,3,1,4,4,0.534,8.523,I always have chapstick
+26,1,1,2,2,5,0.381,0.815,I sing in the shower
+27,2,3,1,3,3,0.318,1.220,I always wear a watch
+28,2,3,1,4,1,0.525,1.062,I check Facebook often
+29,1,2,1,5,5,0.336,0.657,I like doing new things
+30,3,3,2,1,1,0.444,9.400,I can keep a secret
+31,1,1,2,5,1,0.399,1.377,I hate walking uphill
+32,3,3,2,1,1,0.327,1.265,I am a good dancer
+33,3,2,3,1,2,0.345,0.792,I like cheeseburgers
+34,1,2,1,2,1,0.669,1.422,I remember dreams
+35,3,2,3,1,5,0.651,0.860,I like watching sunsets
+36,2,1,3,1,2,0.435,0.680,I like country music
+37,1,1,2,5,5,0.498,8.500,I think eggs are nasty
+38,1,2,1,5,4,0.309,0.590,I like the way I look
+39,1,2,1,3,2,0.489,0.927,I like people who litter
+40,1,2,1,1,3,0.696,0.950,I hate mosquito bites
+41,3,2,3,2,5,0.606,0.770,I get sleepy after eating
+42,2,3,1,2,1,0.300,0.568,I like smelling markers
+43,2,3,1,2,1,0.453,9.355,I don"t like earmuffs
+44,2,3,1,2,3,0.624,0.972,I hate wearing seatbelts
+45,3,2,3,1,1,0.363,9.040,I like to burp out loud

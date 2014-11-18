@@ -87,7 +87,7 @@ for dCount = 1:50
       elseif dCount >= 10
         subID = ['drs0',num2str(dCount)];
       end
-      stimFileToWrite = [targetDirectory,filesep,subID,'_svc_','run',num2str(rCount),'.txt'];
+      stimFileToWrite = [targetDirectory,filesep,subID,'_svc_','run',num2str(rCount),'_input.txt'];
       fid = fopen([targetDirectory,filesep,subID,'_svc_','run',num2str(rCount),'.txt'],'a');
       formatSpec = '%u,%u,%4.3f,%u,%u,%s\n';
       fprintf(fid, formatSpec, tCount, condition(tCount), svcJitter(tCount), reverse(tCount), syllables(tCount), word{tCount} );

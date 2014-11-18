@@ -1,0 +1,45 @@
+1,2,3,1,1,2,0.408,1.377,I hate to be tickled
+2,1,1,2,3,3,0.507,1.242,I like birthday parties
+3,1,1,2,2,4,0.678,1.333,I carry a water bottle
+4,3,3,2,1,2,0.579,8.905,I drink a lot of coffee
+5,1,2,1,4,4,0.390,0.522,I check Facebook often
+6,2,3,1,4,2,0.588,1.265,I like country music
+7,1,1,2,1,5,0.642,0.635,I never make my bed
+8,3,2,3,4,4,0.606,1.445,I wash my hands often
+9,2,1,3,5,3,0.561,0.703,I usually skip breakfast
+10,3,3,2,3,3,0.570,0.748,I never get bored
+11,2,3,1,2,2,0.660,1.085,I read a lot of comics
+12,3,2,3,4,3,0.480,0.792,I think sushi is gross
+13,3,2,3,2,3,0.318,0.860,I hate riding the bus
+14,1,2,1,1,3,0.651,0.972,I can"t use chopsticks
+15,3,2,3,2,4,0.435,0.545,I love ketchup
+16,3,3,2,5,3,0.300,1.153,I never break the rules
+17,1,1,2,5,2,0.426,1.400,I like to wrestle
+18,1,1,2,1,3,0.597,0.680,I always have chapstick
+19,2,1,3,4,4,0.327,0.995,I hate wearing seatbelts
+20,2,3,1,5,5,0.516,0.500,I think tattoos are cool
+21,3,2,3,5,5,0.696,0.725,I like cheeseburgers
+22,3,2,3,4,2,0.489,0.815,I sleep without a pillow
+23,2,3,1,1,5,0.687,1.130,I like people who litter
+24,1,2,1,2,2,0.354,1.422,I don"t like tapioca
+25,2,3,1,4,5,0.498,0.657,I hate walking uphill
+26,2,3,1,2,3,0.372,9.197,I like to burp out loud
+27,2,3,1,2,4,0.543,1.062,I hate squeaky shoes
+28,1,2,1,5,5,0.624,9.107,I get ready quickly
+29,1,2,1,5,2,0.669,1.310,I bite my fingernails
+30,1,2,1,1,4,0.345,8.950,I like to watch cartoons
+31,2,1,3,4,3,0.399,1.490,I have a lucky charm
+32,3,3,2,4,1,0.453,0.883,I hate being late
+33,1,2,1,5,5,0.336,0.590,I like to sleep in late
+34,2,3,1,5,2,0.633,1.288,I do not eat meat
+35,3,2,3,1,1,0.444,0.613,I like free stuff
+36,1,1,2,3,4,0.525,1.018,I love pepperoni pizza
+37,2,3,1,3,1,0.615,9.175,I have a best friend
+38,1,1,2,3,2,0.417,1.220,I love scary movies
+39,3,2,3,3,2,0.381,0.927,I like wearing hoodies
+40,3,3,2,1,1,0.552,1.468,I take a lot of naps
+41,2,3,1,1,1,0.462,8.838,I always stay up late
+42,3,3,2,1,1,0.471,0.568,I sing in the shower
+43,2,3,1,3,1,0.363,1.355,I think eggs are nasty
+44,1,2,1,1,5,0.534,0.770,I always use sunscreen
+45,3,2,3,5,2,0.309,9.040,I like watching sunsets
