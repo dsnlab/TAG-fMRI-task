@@ -32,6 +32,7 @@ manualInput = inputdlg(prompt,dTitle,nLines,def);
 % the order is funky here because we want the structure output 
 % to be readily readable in summary form (so this, err, isn't)
 drs.subID = ['drs',manualInput{1}];
+drs.studyDir = studyDir;
 drs.subNum = str2num(manualInput{1});
 drs.input.path = [studyDir,filesep,'task',filesep,'input'];
 drs.output.path = [studyDir,filesep,'task',filesep,'output'];
