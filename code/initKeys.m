@@ -27,9 +27,7 @@ for deviceCount=1:length(devices),
     fprintf('button box detected\n using device #%d: %s\n',inputDevice,devices(inputDevice).product);
     bbox = 1;
     break,
-  end
-
-  if (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Microsoft')),
+  elseif (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Microsoft')),
     inputDevice = deviceCount;
     fprintf('Using Device #%d: internal %s\n',inputDevice,devices(inputDevice).usageName);
     bbox = 0;
@@ -49,21 +47,21 @@ keys.shift=KbName('RightShift');
 keys.kill = KbName('k');
 
 if bbox == 1;
-  keys.trigger = 52; % trigger pulse / TR signal key ('`') for LCNI scanner
-  keys.b1 = KbName('1');    % Button Box 1
-  keys.b2 = KbName('2');    % Button Box 2
-  keys.b3 = KbName('3');    % Button Box 3
-  keys.b4 = KbName('4');    % Button Box 4
-  keys.b5 = KbName('5');    % Button Box 5
-  keys.b6 = KbName('6');    % Button Box 6
-  keys.b7 = KbName('7');    % Button Box 7
-  keys.b8 = KbName('8');    % Button Box 8
-  keys.b9 = KbName('9');    % Button Box 9
-  keys.b0 = KbName('0');    % Button Box 0
-  keys.buttons = (89:98);
-
-elseif bbox == 0;
-  keys.trigger = KbName('t'); % use 't' as KbTrigger
+    keys.trigger = 52; % trigger pulse / TR signal key ('`') for LCNI scanner
+  elseif bbox == 0;
+    keys.trigger = KbName('t'); % use 't' as KbTrigger
+  % keys.b1 = KbName('1');    % Button Box 1
+  % keys.b2 = KbName('2');    % Button Box 2
+  % keys.b3 = KbName('3');    % Button Box 3
+  % keys.b4 = KbName('4');    % Button Box 4
+  % keys.b5 = KbName('5');    % Button Box 5
+  % keys.b6 = KbName('6');    % Button Box 6
+  % keys.b7 = KbName('7');    % Button Box 7
+  % keys.b8 = KbName('8');    % Button Box 8
+  % keys.b9 = KbName('9');    % Button Box 9
+  % keys.b0 = KbName('0');    % Button Box 0
+  % keys.buttons = (89:98);
+end 
   keys.b1 = KbName('1!');   % Keyboard 1
   keys.b2 = KbName('2@');   % Keyboard 2
   keys.b3 = KbName('3#');   % Keyboard 3
@@ -75,7 +73,6 @@ elseif bbox == 0;
   keys.b9 = KbName('9(');   % Keyboard 9
   keys.b0 = KbName('0)');   % Keyboard 0
   keys.buttons = (30:39);
-end
 
 % to disable detection of the trigger pulse:
 % olddisabledkeys=DisableKeysForKbCheck([KbName(52), KbName('0)')])
