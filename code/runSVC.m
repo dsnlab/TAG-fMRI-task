@@ -92,7 +92,7 @@ DrawFormattedText(win, 'Self or Change? Experiment:\n\n Get Ready!',...
 Screen('Flip', win);
 
 % trigger pulse code (disabled for debug)
-KbTriggerWait(drs.keys.trigger);
+KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
 %disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
 triggerPulseTime = GetSecs;
 disp('trigger pulse received, starting experiment');
