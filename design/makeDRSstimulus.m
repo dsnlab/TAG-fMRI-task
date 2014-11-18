@@ -2,8 +2,8 @@
 %% set some paths
 matDir = '/Users/wem3/Desktop/drs/task/materials';
 coinFile = [matDir,filesep,'coin.png'];
-yesFile = [matDir,filesep,'yes-200.png'];
-noFile = [matDir,filesep,'no-200.png'];
+yesFile = [matDir,filesep,'yes-150.png'];
+noFile = [matDir,filesep,'no-150.png'];
 selfFile = [matDir,filesep,'self-200.png'];
 deltaFile = [matDir,filesep,'delta-200.png'];
 leftFile = [matDir,filesep,'hand-L-200.png'];
@@ -42,6 +42,7 @@ stim.green  = [ 60 218  96 255]./255; % aquagreen
 stim.sky    = [ 59 190 213 255]./255; % sky
 stim.blue   = [ 79  82 230 255]./255; % blurple
 stim.pink   = [167  47 187 255]./255; % pinkle
+stim.purple = [124  70 241 255]./255; % purple
 
 % set up screen positions
 xDim = 1920; % hardcoded here, but built to work on 3/4 as well
@@ -58,7 +59,7 @@ box.yCenter = yCenter;
 posLR = [... % [ left x position, y position, right x position ]
 (xCenter - 3*unit), (yCenter - 2.5*unit), (xCenter + 3*unit) % 1. choiceBoxen
 (xCenter - 3*unit), (yCenter - 1.5*unit), (xCenter + 3*unit) % 2. coinBoxen
-(xCenter - 5*unit), (yCenter + 2.5*unit), (xCenter + 5*unit) % 3. handBoxen
+(xCenter - 4*unit), (yCenter + 2*unit), (xCenter + 4*unit) % 3. handBoxen
 (xCenter - 2*unit), (yCenter + 0.5*unit), (xCenter + 2*unit) % 4. respBoxen
 ];
 % structure to hold boxen...
@@ -68,24 +69,26 @@ box.coin{1} = CenterRectOnPointd([0 0 270 76],posLR(2,1),posLR(2,2));
 box.coin{2} = CenterRectOnPointd([0 0 270 76],posLR(2,3),posLR(2,2));
 box.hand{1} = CenterRectOnPointd([0 0 200 200],posLR(3,1),posLR(3,2));
 box.hand{2} = CenterRectOnPointd([0 0 200 200],posLR(3,3),posLR(3,2));
-box.yesno{1} = CenterRectOnPointd([0 0 200 200],posLR(3,1),posLR(3,2));
-box.yesno{2} = CenterRectOnPointd([0 0 200 200],posLR(3,3),posLR(3,2));
+box.yesno{1} = CenterRectOnPointd([0 0 150 150],posLR(3,1),posLR(3,2));
+box.yesno{2} = CenterRectOnPointd([0 0 150 150],posLR(3,3),posLR(3,2));
 box.resp{1} = CenterRectOnPointd([0 0 200 200],posLR(4,1),posLR(4,2));
 box.resp{2} = CenterRectOnPointd([0 0 200 200],posLR(4,3),posLR(4,2));
 box.statement = CenterRectOnPointd([0 0 6*unit unit],xCenter,yCenter);
+box.prompt = CenterRectOnPointd([0 0 200 200],xCenter,(yCenter - 2*unit));
 
 %% prefacbricate color boxen (?)
 for rgbCount = 1:3
   box.bg(:,:,rgbCount)      = ones(200,200).*stim.bg(rgbCount);
   box.grey(:,:,rgbCount)    = ones(200,200).*stim.grey(rgbCount);
   box.white(:,:,rgbCount)   = ones(200,200).*stim.white(rgbCount);
-  box.red(:,:,rgbCount)     = ones(200,200).*stim.red(rgbCount);
+  box.red(:,:,rgbCount)     = ones(150,150).*stim.red(rgbCount);
   box.orange(:,:,rgbCount)  = ones(200,200).*stim.orange(rgbCount);
   box.yellow(:,:,rgbCount)  = ones(200,200).*stim.yellow(rgbCount);
-  box.green(:,:,rgbCount)   = ones(200,200).*stim.green(rgbCount);
+  box.green(:,:,rgbCount)   = ones(150,150).*stim.green(rgbCount);
   box.sky(:,:,rgbCount)     = ones(200,200).*stim.sky(rgbCount);
   box.blue(:,:,rgbCount)    = ones(200,200).*stim.blue(rgbCount);
   box.pink(:,:,rgbCount)    = ones(200,200).*stim.pink(rgbCount);
+  box.purple(:,:,rgbCount)    = ones(200,200).*stim.purple(rgbCount);
 end
 stim.box = box;
 

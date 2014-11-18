@@ -26,8 +26,10 @@ function [task] = runDSD(subNum,runNum)
 %% get subID from subNum
 if subNum < 10
   subID = ['drs00',num2str(subNum)];
-elseif subNum >= 10
+elseif subNum < 100
   subID = ['drs0',num2str(subNum)];
+else
+  subID = ['drs',num2str(subNum)];
 end
 % get thisRun from runNum
 thisRun = ['run',num2str(runNum)];
