@@ -63,7 +63,7 @@ Tamir, D. I., & Mitchell, J. P. (2012). Disclosing information about the self is
 
 Figure 1. Differential Self Disclosure Paradigm: ![Fig1-dsd-design.png](https://github.com/wem3/DRS/raw/master/paper/proposal/Fig1-dsd-design.png)  
 
-Figure 2. Self vs. Change Paradigm (to localize self-relevant BOLD signal): ![Fig2-svc-design.png](https://github.com/wem3/DRS/raw/master/paper/proposal/Fig1-svc-design.png)  
+Figure 2. Self vs. Change Paradigm (to localize self-relevant BOLD signal): ![Fig2-svc-design.png](https://github.com/wem3/DRS/raw/master/paper/proposal/Fig2-svc-design.png)  
 
-Figure 3. Probabilistic Learning Paradigm (to localize reward related activity): ![Fig3-rpe-design.png](https://github.com/wem3/DRS/raw/master/paper/proposal/Fig1-rpe-design.png)
+Figure 3. Probabilistic Learning Paradigm (to localize reward related activity): ![Fig3-rpe-design.png](https://github.com/wem3/DRS/raw/master/paper/proposal/Fig3-rpe-design.png)
 
