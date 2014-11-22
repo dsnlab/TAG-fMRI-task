@@ -1,8 +1,8 @@
-#Sharing all the way to the bank:  
+#Sharing all the way to the bank: 
 ##a neuroimaging investigation of differential self disclosure 
 
-William Everett Moore III[^1]  
-University of Oregon  
+William Everett Moore III[1]  
+[^1]University of Oregon  
 
 Address for correspondence:   
 Will Moore  
@@ -12,7 +12,7 @@ United States of America
 phone:(919)-619-2309  
 email: wem3@uoregon.edu  
 
-###  
+###   
 
 A growing body of work has begun to characterize common neural substrates recruited across tasks tapping into processes related to self and reward (Northoff, 2011). We know that the computation of value for primary rewards like food, secondary reinforcers like money and even highly abstract and contextualized forms of value such as prospective social approval have all been linked to activity in the ventral striatum (vS), perhaps the single anatomical region most canonically regarded as “reward-related” (Izuma, Saito, & Sadato, 2008). Some researchers have gone so far as to ask whether the self is, in fact, nothing but reward (Northoff & Hayes, 2011). The goals of this dissertation are to i) outline a conceptual framework that describes how theoretical and neurobiological similarities between self and reward can and should be used to enhance the study of adolescent development, and ii) conduct an fMRI study that characterizes self-reward associations across social contexts. The first goal will be accomplished in the form of a review paper (currently in progress, and invited at Developmental Cognitive Neuroscience). The fMRI study designed to achieve the second goal is described in more detail below.    
 
@@ -25,7 +25,7 @@ It is a testament to his prescience that Hall’s interests in relationships bet
 
 Such an approach is difficult to reconcile with dual-systems models of adolescent development, which place the vS in opposition to prefrontal regions implicated in self-relevant processes (e.g., medial prefrontal cortex, mPFC). Recent neuroimaging evidence calls into question the assumptions that activity in subcortical regions is a neural liability and that the role of prefrontal cortex is necessarily protective (Pfeifer & Allen, 2012). If the study of adolescence is to progress the beyond the ‘bad striatum / good cortex’ account of teenagers’ decision-making, we need carefully designed experiments that can test the computations mutually underlying self and reward, as well as the extent to which they are modulated by social context.   
 
-###
+###  
 
 ###II. fMRI Study: Neural Basis of the Differential Value of Self-Disclosure  
 
@@ -69,7 +69,7 @@ Spear, L. P. (2004). Adolescent brain development and animal models. Annals of t
 
 Tamir, D. I., & Mitchell, J. P. (2012). Disclosing information about the self is intrinsically rewarding. Proc Natl Acad Sci U S A, 109(21), 8038–43. doi:10.1073/pnas.1202129109  
 
-###
+###  
 
 **Figure 1. Differential Self Disclosure Paradigm:**  
 ![Fig1-dsd-design.png](https://github.com/wem3/DRS/raw/master/paper/proposal/Fig1-dsd-design.png)  
