@@ -1,45 +1,45 @@
-1,2,3,1,4,3,0.426,0.815,I can keep a secret
-2,3,3,2,2,3,0.624,0.860,I like to sleep in late
-3,3,2,3,1,1,0.372,0.950,I always have chapstick
-4,1,2,1,3,3,0.498,1.288,I like to read books
-5,3,2,3,3,3,0.570,1.153,I never break the rules
-6,1,1,2,4,5,0.354,1.220,I like cheeseburgers
-7,1,1,2,1,5,0.516,0.635,I want to learn to surf
-8,3,3,2,3,3,0.345,1.355,I like to burp out loud
-9,2,3,1,3,2,0.534,0.500,I daydream in class
-10,2,1,3,4,4,0.435,1.490,I don"t like big cities
-11,1,2,1,3,4,0.480,0.725,I hate eating leftovers
-12,3,2,3,5,1,0.588,1.310,I"m afraid of ghosts
-13,2,3,1,1,3,0.678,1.107,I hate pulling weeds
-14,1,1,2,1,4,0.462,1.130,I do not eat meat
-15,2,3,1,4,4,0.417,0.770,I like doing new things
-16,2,1,3,5,3,0.606,0.703,I check Facebook often
-17,3,2,3,5,2,0.669,1.265,I hate spicy mustard
-18,1,1,2,3,4,0.633,9.400,I hate sour pickles
-19,1,1,2,4,1,0.615,0.927,I don"t like earmuffs
-20,1,2,1,1,2,0.561,0.680,I think tattoos are cool
-21,2,3,1,1,4,0.543,1.333,I hate squeaky shoes
-22,3,2,3,2,5,0.363,8.838,I sing in the shower
-23,3,3,2,3,1,0.525,0.568,I usually skip breakfast
-24,3,3,2,2,4,0.552,0.883,I never get bored
-25,2,1,3,1,1,0.471,1.445,I get good grades
-26,2,1,3,1,4,0.489,8.658,I hate to be tickled
-27,3,2,3,5,5,0.597,0.972,I hate wearing seatbelts
-28,2,1,3,5,4,0.660,0.748,I read a lot of comics
-29,1,2,1,5,5,0.408,0.995,I tell a lot of jokes
-30,1,1,2,4,4,0.381,0.590,I get sleepy after eating
-31,3,2,3,4,4,0.651,9.085,I want super powers
-32,1,2,1,1,2,0.309,0.545,I hate skinny jeans
-33,3,2,3,2,4,0.642,1.198,I get ready quickly
-34,3,2,3,4,4,0.453,0.613,I love scary movies
-35,2,1,3,4,2,0.300,9.467,I like smelling markers
-36,2,3,1,4,5,0.507,0.522,I like to chew my pencil
-37,1,1,2,2,2,0.696,1.242,I like country music
-38,1,1,2,4,4,0.390,1.175,I hate riding the bus
-39,2,3,1,5,4,0.327,9.040,I like hip-hop music
-40,1,2,1,4,5,0.444,0.905,I always stay up late
-41,2,1,3,5,4,0.336,1.422,I like birthday parties
-42,3,2,3,4,1,0.687,1.018,I hate being sick
-43,1,2,1,4,4,0.399,0.792,I wash my hands often
-44,2,1,3,5,4,0.318,1.377,I floss every day
-45,3,3,2,5,3,0.579,9.062,I like people who litter
+1,2,1,3,5,3,0.525,0.657,I love scary movies
+2,3,2,3,4,1,0.309,0.927,I like to wrestle
+3,3,2,3,1,1,0.570,0.613,I hate pulling weeds
+4,1,2,1,4,4,0.318,0.860,I hate to be tickled
+5,3,3,2,4,4,0.516,1.445,I tell a lot of jokes
+6,1,2,1,2,3,0.462,1.400,I hate tapioca
+7,1,2,1,1,3,0.354,0.905,I hate big cities
+8,3,3,2,1,1,0.435,0.568,I never break the rules
+9,2,1,3,1,4,0.372,0.680,I hate to wait in line
+10,2,1,3,2,2,0.678,1.220,I like to sleep in late
+11,1,1,2,4,5,0.597,0.545,I never sit up straight
+12,3,3,2,2,1,0.381,1.422,I get good grades
+13,2,3,1,2,3,0.426,0.837,I always stay up late
+14,1,1,2,2,3,0.669,1.062,I like free stuff
+15,2,1,3,4,4,0.624,1.355,I hate wearing seatbelts
+16,2,1,3,3,4,0.615,0.522,I floss every day
+17,3,2,3,5,1,0.534,1.377,I hate earmuffs
+18,1,1,2,1,4,0.471,8.995,I am a morning person
+19,1,1,2,4,1,0.444,1.265,I love pepperoni pizza
+20,1,2,1,1,2,0.561,0.815,I never get bored
+21,2,1,3,4,3,0.489,1.107,I hate riding the bus
+22,3,3,2,1,2,0.453,9.152,I rarely get headaches
+23,3,3,2,2,5,0.336,1.198,I daydream in class
+24,3,3,2,5,1,0.606,0.725,I like people who litter
+25,2,3,1,4,4,0.480,0.972,I hate tofu
+26,2,1,3,1,3,0.399,9.130,I hate mosquito bites
+27,3,3,2,5,5,0.498,1.333,I like to watch cartoons
+28,2,1,3,5,1,0.417,1.468,I make my own lunch
+29,1,2,1,3,3,0.408,0.635,I like birthday parties
+30,1,2,1,1,1,0.300,0.770,I can keep a secret
+31,3,2,3,2,2,0.588,8.950,I remember dreams
+32,1,2,1,1,2,0.642,0.500,I like to chew my pencil
+33,3,2,3,5,3,0.579,1.490,I never make my bed
+34,3,2,3,2,2,0.660,1.310,I do not eat meat
+35,2,3,1,2,4,0.363,8.703,I like wearing hoodies
+36,2,3,1,1,5,0.345,1.018,I hate licking envelopes
+37,1,1,2,5,5,0.687,0.590,I want super powers
+38,1,1,2,4,4,0.696,0.792,I have a lucky charm
+39,2,1,3,2,5,0.633,9.242,I usually skip breakfast
+40,1,2,1,4,5,0.651,1.175,I like hip-hop music
+41,2,3,1,1,5,0.543,1.040,I like to read books
+42,3,2,3,2,5,0.552,0.748,I get ready quickly
+43,1,1,2,4,4,0.327,1.288,I bite my fingernails
+44,2,1,3,5,1,0.507,0.883,I sleep without a pillow
+45,3,2,3,3,5,0.390,9.085,I get sleepy after eating

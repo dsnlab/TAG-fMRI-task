@@ -1,29 +1,27 @@
 %% load up the 200 optimized sequences, assign 4 per 'design'
-% target: run1, run2
-% coins: run1, run2
-% eat a test fart
+% for kCount = 1:50
+%   designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount), '.mat']);
+%   load(designFile)
+%   run1.target.ovf = Out.bestOVF;
+%   run1.target.sequence = Out.bestList;
+%   designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount + 50), '.mat']);
+%   load(designFile)
+%   run2.target.ovf = Out.bestOVF;
+%   run2.target.sequence = Out.bestList;
+%   designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount + 100), '.mat']);
+%   load(designFile)
+%   run1.coin.ovf = Out.bestOVF;
+%   run1.coin.sequence = Out.bestList(Out.bestList~=0);
+%   designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount + 150), '.mat']);
+%   load(designFile)
+%   run2.coin.ovf = Out.bestOVF;
+%   run2.coin.sequence = Out.bestList(Out.bestList~=0);
+%   dsdDesign(kCount).run1 = run1;
+%   dsdDesign(kCount).run2 = run2;
+% end
+
 GAdir = '/Users/wem3/Desktop/DRS/design/GAoutput';
 targetDirectory = '/Users/wem3/Desktop/DRS/task/input';
-for kCount = 1:50
-  designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount), '.mat']);
-  load(designFile)
-  run1.target.ovf = Out.bestOVF;
-  run1.target.sequence = Out.bestList;
-  designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount + 50), '.mat']);
-  load(designFile)
-  run2.target.ovf = Out.bestOVF;
-  run2.target.sequence = Out.bestList;
-  designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount + 100), '.mat']);
-  load(designFile)
-  run1.coin.ovf = Out.bestOVF;
-  run1.coin.sequence = Out.bestList(Out.bestList~=0);
-  designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount + 150), '.mat']);
-  load(designFile)
-  run2.coin.ovf = Out.bestOVF;
-  run2.coin.sequence = Out.bestList(Out.bestList~=0);
-  dsdDesign(kCount).run1 = run1;
-  dsdDesign(kCount).run2 = run2;
-end
 
 %% assign positions and coin values
 % randomize left/right, optimize coin values (1 = aIsMore,
@@ -53,7 +51,7 @@ for cCount = 1:length(coinPairs)
 end
 
 % add statements to designs at random
-statementFile = '/Users/wem3/Desktop/DRS/task/materials/statements.txt';
+statementFile = '/Users/wem3/Desktop/DRS/design/materials/statements.txt';
 rawStatements(:,1) = textread(statementFile,'%s','delimiter','\n');
 numTrials = length(rawStatements)/2;
 rawStatements = Shuffle(rawStatements);
@@ -243,7 +241,7 @@ end
 % because having double rests at the end makes the loop funky, manually fix
 % sub007.run2:
 dsdDesign(7).run2.discoJitter(45) = dsdDesign(7).run2.discoJitter(45) + 8;
-save dsdDesigns.mat dsdDesign
+%save dsdDesigns.mat dsdDesign
 
 caBut('dsdDesign','targetDirectory');
 % note, made a separate loop to write output b/c sub007 is funky. Surely, this

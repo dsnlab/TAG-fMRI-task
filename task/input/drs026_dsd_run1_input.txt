@@ -1,45 +1,45 @@
-1,2,1,3,5,2,0.318,1.220,I hate soft beds
-2,1,1,2,2,5,0.300,1.265,I don"t like tofu
-3,1,1,2,4,1,0.462,8.860,I hate walking uphill
-4,1,2,1,1,1,0.624,1.490,I like the way I look
-5,2,1,3,2,3,0.615,1.242,I never make my bed
-6,3,2,3,4,1,0.588,0.792,I hate mosquito bites
-7,3,2,3,5,5,0.426,0.905,I love scary movies
-8,3,3,2,1,5,0.444,0.680,I tell a lot of jokes
-9,2,1,3,3,5,0.552,1.175,I sing in the shower
-10,1,1,2,5,5,0.561,9.040,I floss every day
-11,3,3,2,2,2,0.480,0.657,I love pepperoni pizza
-12,1,1,2,4,3,0.570,0.545,I always stay up late
-13,3,3,2,3,1,0.363,9.018,I never break the rules
-14,3,3,2,4,2,0.678,0.883,I bite my fingernails
-15,1,2,1,1,2,0.327,1.107,I want super powers
-16,2,1,3,1,2,0.345,1.130,I make my own lunch
-17,2,1,3,4,3,0.633,0.837,I think eggs are nasty
-18,3,3,2,4,3,0.354,9.152,I sleep without a pillow
-19,2,1,3,4,4,0.642,1.310,I daydream in class
-20,2,1,3,2,2,0.543,0.568,I take a lot of naps
-21,1,2,1,5,1,0.417,0.500,I usually skip breakfast
-22,2,3,1,4,4,0.336,0.522,I hate rainy days
-23,2,3,1,1,4,0.516,1.355,I hate riding the bus
-24,3,2,3,2,3,0.507,1.288,I always use sunscreen
-25,1,2,1,4,3,0.390,1.198,I hate to be tickled
-26,3,2,3,3,3,0.606,0.703,I have a lucky charm
-27,1,1,2,5,2,0.660,1.333,I am a good dancer
-28,1,1,2,2,2,0.651,1.400,I like cheeseburgers
-29,3,3,2,5,2,0.669,0.927,I wash my hands often
-30,2,1,3,2,1,0.408,0.635,I remember dreams
-31,1,1,2,3,3,0.399,1.377,I always wear a watch
-32,2,3,1,4,2,0.309,1.422,I like to watch cartoons
-33,3,3,2,4,4,0.453,0.950,I"m afraid of ghosts
-34,2,1,3,3,2,0.381,0.995,I hate licking envelopes
-35,1,1,2,1,5,0.498,0.748,I hate squeaky shoes
-36,1,2,1,5,1,0.597,0.972,I make people laugh
-37,2,3,1,1,1,0.696,8.725,I love ketchup
-38,1,1,2,1,5,0.489,1.468,I like to burp out loud
-39,3,2,3,1,1,0.372,0.815,I never get bored
-40,3,2,3,2,3,0.687,0.613,I rarely get headaches
-41,2,1,3,3,4,0.525,8.770,I like to play cards
-42,3,2,3,1,1,0.435,0.590,I carry a water bottle
-43,1,1,2,4,4,0.471,1.062,I hate spicy mustard
-44,3,3,2,3,2,0.579,1.445,I hate skinny jeans
-45,2,3,1,4,3,0.534,9.085,I like foot massages
+1,2,3,1,4,5,0.534,0.635,I hate wearing seatbelts
+2,1,2,1,5,2,0.687,0.950,I hate to wait in line
+3,1,1,2,3,2,0.570,9.197,I always use sunscreen
+4,1,1,2,5,5,0.318,0.613,I always watch the news
+5,2,1,3,1,2,0.363,1.040,I like people who litter
+6,3,2,3,4,3,0.381,1.490,I sleep without a pillow
+7,3,3,2,5,5,0.462,0.972,I sing in the shower
+8,3,2,3,5,4,0.345,0.545,I get sleepy after eating
+9,2,1,3,4,5,0.444,1.333,I hate squeaky shoes
+10,1,2,1,4,4,0.489,8.770,I read a lot of comics
+11,3,2,3,1,1,0.327,0.815,I never sit up straight
+12,1,1,2,3,1,0.399,1.355,I like to read books
+13,3,3,2,3,1,0.552,9.265,I think tattoos are cool
+14,3,3,2,3,2,0.390,1.445,I hate eating leftovers
+15,1,1,2,3,5,0.597,1.468,I want super powers
+16,2,3,1,3,2,0.336,0.883,I hate big cities
+17,2,3,1,2,3,0.678,0.725,I always stay up late
+18,3,3,2,4,3,0.507,9.085,I hate tapioca
+19,2,3,1,5,5,0.408,1.288,I like free stuff
+20,2,3,1,5,5,0.309,0.590,I do not eat meat
+21,1,2,1,5,4,0.624,0.995,I like birthday parties
+22,2,3,1,1,1,0.453,1.062,I hate earmuffs
+23,2,3,1,1,4,0.642,1.242,I always wear a watch
+24,3,3,2,4,1,0.435,0.568,I want super powers
+25,1,1,2,5,4,0.633,1.153,I hate to be tickled
+26,3,3,2,5,5,0.606,0.905,I usually skip breakfast
+27,1,1,2,3,4,0.498,1.422,I hate soft beds
+28,1,1,2,2,2,0.579,0.860,I think eggs are nasty
+29,3,2,3,4,5,0.669,1.130,I hate pulling weeds
+30,2,3,1,3,4,0.660,0.792,I never make my bed
+31,1,2,1,4,4,0.480,1.310,I like to watch cartoons
+32,2,1,3,5,2,0.543,0.500,I hate licking envelopes
+33,3,3,2,4,4,0.615,0.703,I have a lucky charm
+34,2,1,3,4,2,0.525,0.748,I like country music
+35,1,2,1,5,4,0.300,1.107,I like watching sunsets
+36,1,2,1,5,4,0.372,1.220,I never get bored
+37,2,1,3,4,4,0.471,8.928,I never break the rules
+38,1,2,1,5,4,0.561,1.400,I hate rainy days
+39,3,2,3,2,2,0.426,1.018,I am afraid of ghosts
+40,3,2,3,1,4,0.651,0.837,I hate walking uphill
+41,2,1,3,5,3,0.588,9.175,I hate riding the bus
+42,3,3,2,2,2,0.354,0.522,I love scary movies
+43,1,1,2,1,1,0.417,1.377,I like to play cards
+44,3,3,2,4,1,0.696,0.657,I like to sleep in late
+45,2,1,3,5,3,0.516,8.680,I rarely get headaches

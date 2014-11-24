@@ -1,45 +1,45 @@
-1,2,3,1,1,4,0.678,0.927,I never get bored
-2,1,1,2,1,1,0.669,1.490,I daydream in class
-3,1,2,1,3,2,0.453,0.725,I don"t like big cities
-4,3,3,2,2,2,0.480,1.445,I love pepperoni pizza
-5,2,1,3,3,4,0.516,0.950,I like to sleep in late
-6,1,2,1,2,3,0.597,1.018,I like smelling markers
-7,3,2,3,3,4,0.651,1.198,I always watch the news
-8,1,2,1,5,5,0.507,0.590,I always have chapstick
-9,2,1,3,2,1,0.444,1.153,I hate soft beds
-10,2,3,1,4,1,0.615,1.242,I can keep a secret
-11,3,3,2,1,5,0.390,1.107,I sing in the shower
-12,2,3,1,5,3,0.300,1.288,I don"t like tofu
-13,3,2,3,1,5,0.363,1.377,I want super powers
-14,1,2,1,4,4,0.570,8.500,I hate riding the bus
-15,3,2,3,4,5,0.624,0.995,I like to read books
-16,2,3,1,2,5,0.399,0.748,I can"t use chopsticks
-17,3,3,2,3,3,0.318,1.468,I shower in the morning
-18,2,1,3,2,2,0.579,8.815,I love scary movies
-19,3,3,2,4,4,0.462,8.545,I always use sunscreen
-20,3,3,2,1,1,0.381,0.792,I hate mosquito bites
-21,1,2,1,4,1,0.642,0.703,I rarely get headaches
-22,1,1,2,3,5,0.309,1.085,I like hip-hop music
-23,3,2,3,3,1,0.534,9.400,I take a lot of naps
-24,1,1,2,3,4,0.552,0.860,I like the way I look
-25,2,3,1,4,4,0.417,0.770,I make people laugh
-26,1,2,1,3,1,0.354,9.422,I want to learn to surf
-27,2,1,3,2,3,0.426,1.062,I want super powers
-28,2,1,3,1,5,0.633,1.265,I get sleepy after eating
-29,2,3,1,2,1,0.525,0.837,I like wearing hoodies
-30,1,2,1,3,3,0.660,1.175,I like birthday parties
-31,1,2,1,4,2,0.336,0.613,I like doing new things
-32,2,3,1,5,2,0.543,0.883,I never sit up straight
-33,3,2,3,4,4,0.372,1.333,I hate chicken soup
-34,1,1,2,3,1,0.606,0.972,I think eggs are nasty
-35,2,1,3,2,5,0.561,0.522,I like televised sports
-36,3,3,2,2,4,0.327,1.220,I like to chew my pencil
-37,3,3,2,4,4,0.345,0.568,I read a lot of comics
-38,1,1,2,4,3,0.588,1.040,I hate rainy days
-39,2,3,1,2,1,0.489,8.635,I hate being late
-40,1,2,1,1,2,0.696,0.680,I hate doing dishes
-41,3,3,2,4,4,0.687,1.310,I like watching sunsets
-42,2,1,3,1,2,0.435,9.355,I hate being sick
-43,1,1,2,2,4,0.471,1.130,I bite my fingernails
-44,3,3,2,4,4,0.408,0.657,I hate sour pickles
-45,3,2,3,4,4,0.498,0.905,I never make my bed
+1,2,1,3,4,2,0.660,0.545,I make people laugh
+2,1,2,1,2,2,0.363,0.613,I hate pulling weeds
+3,1,1,2,5,4,0.498,0.837,I always stay up late
+4,3,3,2,1,1,0.417,1.310,I hate walking uphill
+5,2,1,3,5,3,0.408,1.490,I like foot massages
+6,1,2,1,5,4,0.570,0.680,I hate mosquito bites
+7,3,2,3,1,4,0.588,0.972,I like cheeseburgers
+8,1,2,1,5,5,0.345,1.445,I like birthday parties
+9,2,3,1,5,4,0.678,0.860,I hate wearing seatbelts
+10,2,3,1,2,1,0.453,0.590,I like country music
+11,3,3,2,4,5,0.471,1.468,I wash my hands often
+12,2,3,1,5,1,0.489,1.400,I like to read books
+13,3,2,3,3,1,0.606,1.153,I can use chopsticks
+14,1,2,1,1,1,0.552,9.107,I hate being sick
+15,3,2,3,1,5,0.300,0.703,I hate tofu
+16,2,1,3,2,4,0.480,1.130,I love ketchup
+17,3,3,2,3,3,0.336,0.815,I like to wrestle
+18,2,3,1,5,5,0.390,9.422,I love pepperoni pizza
+19,3,3,2,2,2,0.615,8.770,I always use sunscreen
+20,3,2,3,5,5,0.534,1.220,I never get bored
+21,1,1,2,5,3,0.561,1.175,I get sleepy after eating
+22,1,1,2,4,3,0.372,1.018,I hate earmuffs
+23,3,3,2,2,3,0.669,9.197,I never break the rules
+24,1,1,2,1,3,0.327,0.657,I hate licking envelopes
+25,2,1,3,4,4,0.399,0.792,I hate big cities
+26,1,1,2,5,1,0.444,9.287,I always wear a watch
+27,2,1,3,2,3,0.354,1.062,I like doing new things
+28,2,3,1,1,2,0.381,1.333,I bite my fingernails
+29,2,1,3,5,4,0.525,1.377,I do not eat meat
+30,1,2,1,5,5,0.426,1.085,I floss every day
+31,1,2,1,3,2,0.507,0.748,I like hip-hop music
+32,2,1,3,3,2,0.435,0.883,I hate rainy days
+33,3,3,2,2,2,0.633,0.950,I have a best friend
+34,1,2,1,2,3,0.579,1.040,I usually skip breakfast
+35,2,1,3,3,2,0.516,0.500,I hate chicken soup
+36,3,2,3,3,5,0.543,0.522,I want super powers
+37,3,2,3,2,2,0.309,1.265,I hate soft beds
+38,1,1,2,2,1,0.462,1.242,I like watching sunsets
+39,2,3,1,4,5,0.597,8.928,I carry a water bottle
+40,1,1,2,2,5,0.624,0.905,I hate riding the bus
+41,3,3,2,2,2,0.651,0.995,I like to burp out loud
+42,2,1,3,5,4,0.696,8.725,I daydream in class
+43,1,2,1,3,2,0.642,0.568,I hate squeaky shoes
+44,3,2,3,2,2,0.318,0.635,I like smelling markers
+45,3,3,2,2,2,0.687,1.355,I like televised sports

@@ -1,45 +1,45 @@
-1,1,2,1,5,3,0.345,0.590,I hate riding the bus
-2,3,3,2,1,1,0.561,1.198,I like smelling markers
-3,2,1,3,2,3,0.471,0.545,I like to wrestle
-4,1,2,1,1,2,0.300,1.242,I like the way I look
-5,2,1,3,3,4,0.588,9.422,I want super powers
-6,1,2,1,1,1,0.507,0.680,I like watching sunsets
-7,3,2,3,4,5,0.336,1.445,I don"t like tofu
-8,3,3,2,3,1,0.678,9.467,I hate eating leftovers
-9,3,2,3,4,4,0.552,1.310,I always wear a watch
-10,2,1,3,5,5,0.453,1.153,I hate wearing seatbelts
-11,2,3,1,4,2,0.633,0.815,I have a lucky charm
-12,2,3,1,2,2,0.309,1.062,I hate being sick
-13,3,2,3,1,1,0.417,1.377,I"m afraid of ghosts
-14,1,2,1,5,1,0.435,1.355,I love ketchup
-15,2,1,3,4,5,0.354,1.175,I love scary movies
-16,3,3,2,5,1,0.498,1.040,I tell a lot of jokes
-17,1,2,1,2,1,0.489,0.995,I always use sunscreen
-18,1,2,1,4,4,0.462,9.332,I hate sour pickles
-19,1,2,1,1,4,0.480,1.130,I wash my hands often
-20,2,3,1,2,5,0.651,0.792,I am a morning person
-21,2,3,1,3,1,0.642,0.950,I always stay up late
-22,1,1,2,3,1,0.687,9.085,I floss every day
-23,2,1,3,4,3,0.615,1.220,I always watch the news
-24,3,2,3,5,5,0.444,1.265,I love pepperoni pizza
-25,2,1,3,1,3,0.390,0.972,I like to burp out loud
-26,1,2,1,3,2,0.570,0.522,I drink a lot of coffee
-27,3,2,3,2,2,0.363,0.703,I like cheeseburgers
-28,2,1,3,1,3,0.426,0.568,I remember dreams
-29,3,3,2,2,2,0.543,0.860,I have a best friend
-30,1,2,1,4,2,0.534,0.657,I get sleepy after eating
-31,3,2,3,4,3,0.318,1.490,I like foot massages
-32,3,3,2,1,5,0.525,8.838,I like to read books
-33,1,2,1,1,3,0.399,0.905,I hate licking envelopes
-34,3,3,2,2,2,0.669,0.613,I never make my bed
-35,1,1,2,5,5,0.372,0.725,I think eggs are nasty
-36,2,1,3,1,3,0.696,0.500,I am a good dancer
-37,3,2,3,3,5,0.381,1.288,I hate walking uphill
-38,1,2,1,2,2,0.579,0.770,I like to chew my pencil
-39,2,3,1,1,3,0.660,0.927,I hate pulling weeds
-40,1,2,1,5,5,0.597,1.107,I hate soft beds
-41,3,2,3,3,2,0.408,0.748,I hate doing dishes
-42,2,1,3,1,1,0.516,9.400,I sleep without a pillow
-43,3,3,2,3,2,0.606,0.635,I think sushi is gross
-44,2,3,1,3,1,0.624,0.883,I usually skip breakfast
-45,1,2,1,1,3,0.327,9.018,I like free stuff
+1,1,1,2,1,5,0.525,1.175,I do not eat meat
+2,3,3,2,3,3,0.615,0.703,I drink a lot of coffee
+3,2,1,3,2,4,0.390,0.837,I get good grades
+4,1,2,1,1,3,0.489,1.310,I hate tapioca
+5,2,1,3,1,4,0.597,9.220,I hate big cities
+6,1,2,1,4,4,0.516,1.085,I get sleepy after eating
+7,3,2,3,4,5,0.336,0.568,I always have chapstick
+8,3,3,2,4,5,0.345,8.590,I shower in the morning
+9,3,3,2,1,1,0.642,0.725,I hate spicy mustard
+10,2,1,3,1,1,0.381,0.792,I hate to be tickled
+11,2,1,3,1,2,0.633,0.883,I like foot massages
+12,2,1,3,2,2,0.408,1.422,I never break the rules
+13,3,3,2,3,3,0.417,0.950,I am a morning person
+14,1,1,2,2,1,0.327,1.107,I floss every day
+15,2,3,1,1,3,0.399,0.815,I usually skip breakfast
+16,3,2,3,4,1,0.624,1.153,I like hip-hop music
+17,1,1,2,5,4,0.579,0.680,I rarely get headaches
+18,1,1,2,5,5,0.309,9.062,I hate earmuffs
+19,1,1,2,3,5,0.669,1.377,I always wear a watch
+20,2,3,1,3,2,0.453,1.265,I love pepperoni pizza
+21,2,1,3,5,1,0.507,0.748,I hate chicken soup
+22,1,1,2,4,3,0.660,9.197,I hate rainy days
+23,2,1,3,2,5,0.300,0.770,I like to watch cartoons
+24,3,2,3,5,5,0.471,1.355,I tell a lot of jokes
+25,2,3,1,1,5,0.480,0.995,I like to wrestle
+26,1,1,2,1,3,0.678,1.130,I never sit up straight
+27,3,2,3,4,4,0.372,0.972,I take a lot of naps
+28,2,1,3,5,1,0.561,0.500,I love scary movies
+29,3,3,2,4,4,0.363,0.657,I like to read books
+30,1,2,1,4,1,0.426,1.490,I hate licking envelopes
+31,3,2,3,2,1,0.462,1.468,I like to play cards
+32,3,2,3,2,4,0.543,8.905,I make my own lunch
+33,1,2,1,3,4,0.651,0.927,I want to learn to surf
+34,3,2,3,4,4,0.687,0.613,I hate sour pickles
+35,1,2,1,3,3,0.354,1.400,I wash my hands often
+36,2,1,3,5,1,0.552,0.545,I have a lucky charm
+37,3,2,3,1,5,0.588,1.445,I daydream in class
+38,1,1,2,3,3,0.534,1.040,I hate being late
+39,2,3,1,1,2,0.498,0.522,I sleep without a pillow
+40,1,2,1,2,2,0.570,1.242,I like to burp out loud
+41,3,3,2,3,4,0.318,1.018,I like the way I look
+42,2,1,3,1,1,0.606,8.635,I always stay up late
+43,3,2,3,1,2,0.696,1.288,I hate to wait in line
+44,2,1,3,5,1,0.435,0.860,I like people who litter
+45,1,2,1,3,4,0.444,9.332,I like doing new things

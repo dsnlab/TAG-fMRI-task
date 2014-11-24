@@ -37,7 +37,7 @@ drs.subNum = str2num(manualInput{1});
 drs.input.path = [studyDir,filesep,'task',filesep,'input'];
 drs.output.path = [studyDir,filesep,'task',filesep,'output'];
 % stimFile created by makeDRSstimulus.m
-stimFile = [studyDir,filesep,'task',filesep,'materials',filesep,'DRSstim.mat'];
+stimFile = [studyDir,filesep,'task',filesep,'DRSstim.mat'];
 load(stimFile);
 
 demo.name = manualInput{2};

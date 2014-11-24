@@ -1,45 +1,45 @@
-1,3,3,2,5,4,0.669,0.590,I do not eat meat
-2,1,2,1,5,5,0.462,1.422,I hate skinny jeans
-3,1,2,1,4,2,0.489,1.490,I never make my bed
-4,3,2,3,3,5,0.642,1.153,I want super powers
-5,2,3,1,2,2,0.318,0.635,I read a lot of comics
-6,1,1,2,5,2,0.696,1.062,I have a best friend
-7,3,2,3,1,3,0.300,0.657,I hate soft beds
-8,2,3,1,1,5,0.534,0.972,I hate pulling weeds
-9,3,2,3,3,3,0.327,0.860,I think sushi is gross
-10,2,1,3,4,2,0.678,1.242,I don"t like big cities
-11,3,2,3,1,1,0.381,1.107,I can keep a secret
-12,2,3,1,5,4,0.480,1.085,I shower in the morning
-13,1,1,2,2,2,0.399,0.500,I get good grades
-14,3,2,3,5,5,0.363,0.703,I hate mosquito bites
-15,1,2,1,3,5,0.633,0.568,I hate rainy days
-16,2,3,1,1,1,0.561,0.995,I want super powers
-17,3,3,2,3,5,0.651,1.040,I hate wearing seatbelts
-18,1,1,2,2,5,0.471,1.130,I like televised sports
-19,2,1,3,1,1,0.345,9.377,I think tattoos are cool
-20,1,1,2,3,4,0.408,1.198,I always wear a watch
-21,3,3,2,3,4,0.336,1.333,I love pepperoni pizza
-22,2,1,3,5,2,0.525,0.613,I like to read books
-23,2,1,3,3,3,0.624,8.950,I hate being sick
-24,2,3,1,5,5,0.444,1.310,I usually skip breakfast
-25,3,2,3,2,1,0.660,0.725,I have a lucky charm
-26,1,1,2,1,2,0.543,1.220,I hate doing dishes
-27,2,1,3,3,1,0.606,0.792,I hate to wait in line
-28,1,1,2,3,2,0.372,0.748,I like smelling markers
-29,1,2,1,2,1,0.588,0.545,I hate to be tickled
-30,3,3,2,1,1,0.552,1.468,I make people laugh
-31,3,2,3,3,4,0.579,8.815,I floss every day
-32,2,1,3,2,5,0.309,0.522,I like to burp out loud
-33,1,1,2,4,1,0.516,8.680,I like doing new things
-34,1,2,1,4,4,0.498,0.905,I like birthday parties
-35,2,1,3,2,1,0.354,0.927,I always use sunscreen
-36,1,1,2,5,5,0.435,0.883,I never sit up straight
-37,3,2,3,2,5,0.390,1.445,I like country music
-38,3,3,2,4,1,0.417,9.287,I make my own lunch
-39,3,2,3,5,4,0.426,0.837,I hate being late
-40,3,3,2,4,4,0.687,1.175,I like to watch cartoons
-41,1,1,2,1,2,0.507,1.265,I like foot massages
-42,2,3,1,3,1,0.570,9.355,I hate walking uphill
-43,2,1,3,2,1,0.615,0.770,I like cheeseburgers
-44,2,3,1,1,2,0.597,1.018,I bite my fingernails
-45,1,2,1,1,1,0.453,9.400,I never break the rules
+1,3,3,2,2,3,0.615,1.040,I hate rainy days
+2,1,1,2,2,2,0.561,0.905,I like free stuff
+3,1,1,2,2,4,0.507,0.500,I am afraid of ghosts
+4,3,2,3,3,1,0.435,1.445,I take a lot of naps
+5,2,3,1,4,4,0.417,0.927,I make my own lunch
+6,1,2,1,3,2,0.318,1.062,I hate doing dishes
+7,3,3,2,4,1,0.624,1.175,I hate soft beds
+8,2,1,3,1,2,0.525,0.590,I tell a lot of jokes
+9,3,3,2,4,4,0.579,0.725,I never break the rules
+10,2,1,3,1,5,0.372,0.837,I want super powers
+11,3,3,2,5,5,0.426,0.860,I hate tapioca
+12,2,3,1,5,4,0.651,1.333,I remember dreams
+13,1,1,2,4,4,0.390,0.748,I have a best friend
+14,3,2,3,5,5,0.363,1.288,I like to watch cartoons
+15,1,1,2,1,4,0.606,0.792,I hate chicken soup
+16,2,1,3,1,1,0.588,0.972,I get ready quickly
+17,3,2,3,2,4,0.399,0.950,I read a lot of comics
+18,1,2,1,5,3,0.345,1.265,I like watching sunsets
+19,2,1,3,5,5,0.408,9.242,I wash my hands often
+20,1,1,2,3,4,0.489,0.613,I hate licking envelopes
+21,3,3,2,1,4,0.678,0.770,I carry a water bottle
+22,2,1,3,5,3,0.354,1.490,I love scary movies
+23,2,3,1,2,2,0.516,9.152,I rarely get headaches
+24,2,1,3,2,2,0.300,1.130,I like hip-hop music
+25,3,2,3,2,1,0.660,0.522,I can use chopsticks
+26,1,2,1,2,5,0.633,1.085,I hate tofu
+27,2,3,1,5,2,0.570,0.635,I like to chew my pencil
+28,1,2,1,1,3,0.336,0.657,I like to burp out loud
+29,1,2,1,2,5,0.381,0.545,I love ketchup
+30,3,2,3,1,1,0.309,0.815,I hate spicy mustard
+31,3,2,3,5,4,0.696,8.995,I like to read books
+32,2,1,3,2,1,0.480,1.468,I am a good dancer
+33,1,1,2,1,5,0.444,9.355,I like wearing hoodies
+34,1,1,2,1,1,0.471,1.422,I like cheeseburgers
+35,2,1,3,4,3,0.327,1.198,I hate being late
+36,1,2,1,5,5,0.453,1.018,I like televised sports
+37,3,3,2,5,3,0.552,1.107,I hate eating leftovers
+38,3,3,2,2,5,0.669,8.680,I do not eat meat
+39,3,3,2,4,3,0.687,0.703,I hate wearing seatbelts
+40,3,2,3,4,4,0.597,1.400,I shower in the morning
+41,1,1,2,5,2,0.534,1.310,I am a morning person
+42,2,3,1,2,5,0.462,9.220,I never sit up straight
+43,2,3,1,3,4,0.543,1.377,I hate skinny jeans
+44,2,3,1,3,4,0.642,0.883,I hate riding the bus
+45,1,1,2,4,4,0.498,8.568,I hate to wait in line

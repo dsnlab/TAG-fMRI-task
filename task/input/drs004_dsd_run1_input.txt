@@ -1,45 +1,45 @@
-1,1,1,2,1,3,0.471,0.950,I read a lot of comics
-2,3,3,2,5,1,0.390,0.815,I hate walking uphill
-3,2,3,1,5,4,0.300,0.927,I tell a lot of jokes
-4,1,2,1,2,2,0.489,1.040,I like country music
-5,3,3,2,2,2,0.408,1.175,I remember dreams
-6,1,2,1,1,2,0.399,8.770,I have a best friend
-7,1,2,1,5,4,0.534,0.972,I hate pulling weeds
-8,3,3,2,1,1,0.597,1.400,I like people who litter
-9,2,1,3,3,4,0.444,0.792,I floss every day
-10,3,2,3,3,4,0.633,8.568,I wash my hands often
-11,1,1,2,2,3,0.336,1.265,I make my own lunch
-12,2,3,1,4,4,0.696,0.522,I sleep without a pillow
-13,2,3,1,4,5,0.687,8.680,I hate to wait in line
-14,2,3,1,4,4,0.453,1.310,I don"t like big cities
-15,3,2,3,2,1,0.507,0.883,I"m afraid of ghosts
-16,1,2,1,5,5,0.318,1.490,I like smelling markers
-17,3,3,2,3,2,0.417,0.635,I hate mosquito bites
-18,2,3,1,4,1,0.552,1.468,I do not eat meat
-19,3,3,2,4,4,0.327,1.355,I hate chicken soup
-20,2,1,3,1,5,0.624,0.590,I hate squeaky shoes
-21,2,3,1,2,2,0.543,1.153,I am a good dancer
-22,1,2,1,4,3,0.381,0.613,I think eggs are nasty
-23,2,1,3,3,3,0.678,9.130,I hate doing dishes
-24,2,1,3,2,5,0.561,0.725,I hate licking envelopes
-25,1,2,1,4,2,0.651,0.545,I get good grades
-26,1,2,1,5,2,0.669,1.018,I hate to be tickled
-27,3,3,2,3,3,0.570,1.198,I check Facebook often
-28,3,2,3,4,1,0.606,1.445,I shower in the morning
-29,1,2,1,3,3,0.345,9.085,I make people laugh
-30,1,1,2,3,5,0.309,0.657,I love pepperoni pizza
-31,3,2,3,4,5,0.516,9.422,I am a morning person
-32,3,3,2,4,2,0.642,0.703,I hate skinny jeans
-33,1,1,2,1,5,0.588,1.220,I like hip-hop music
-34,3,2,3,1,2,0.363,1.107,I hate riding the bus
-35,1,1,2,5,3,0.498,1.333,I like the way I look
-36,2,1,3,1,1,0.462,0.748,I sing in the shower
-37,1,1,2,1,5,0.525,0.860,I love scary movies
-38,2,1,3,5,3,0.660,0.837,I hate wearing seatbelts
-39,1,1,2,5,5,0.354,1.377,I never sit up straight
-40,2,1,3,1,1,0.579,1.062,I hate rainy days
-41,3,2,3,4,3,0.426,1.242,I always stay up late
-42,3,3,2,4,5,0.480,0.500,I get ready quickly
-43,2,3,1,1,1,0.372,0.905,I like doing new things
-44,2,1,3,2,4,0.435,0.995,I hate soft beds
-45,3,3,2,3,4,0.615,9.287,I always watch the news
+1,1,2,1,4,5,0.525,1.490,I want super powers
+2,3,2,3,2,5,0.354,0.500,I hate pulling weeds
+3,2,1,3,3,2,0.498,0.522,I hate licking envelopes
+4,1,1,2,1,1,0.561,0.680,I like people who litter
+5,3,3,2,2,2,0.390,0.905,I am a morning person
+6,1,1,2,3,2,0.579,9.220,I like doing new things
+7,1,2,1,2,4,0.381,1.265,I hate mosquito bites
+8,3,2,3,5,5,0.696,0.568,I hate earmuffs
+9,2,1,3,5,1,0.471,0.545,I always wear a watch
+10,3,2,3,1,3,0.660,8.613,I tell a lot of jokes
+11,1,2,1,4,2,0.372,0.590,I like to watch cartoons
+12,2,1,3,3,3,0.534,0.703,I like cheeseburgers
+13,2,1,3,5,4,0.642,9.175,I hate being late
+14,2,1,3,5,5,0.507,1.198,I always use sunscreen
+15,3,3,2,5,1,0.624,0.657,I hate squeaky shoes
+16,1,2,1,5,5,0.345,1.107,I shower in the morning
+17,3,2,3,2,4,0.552,0.995,I like to wrestle
+18,2,3,1,3,1,0.444,1.400,I have a best friend
+19,3,3,2,4,4,0.417,1.445,I hate skinny jeans
+20,2,1,3,4,1,0.453,1.040,I get good grades
+21,2,1,3,4,4,0.327,1.242,I hate to wait in line
+22,1,1,2,5,3,0.669,0.837,I can use chopsticks
+23,2,1,3,1,1,0.597,8.883,I hate walking uphill
+24,2,3,1,1,3,0.399,0.792,I sing in the shower
+25,1,2,1,4,1,0.408,1.018,I like to chew my pencil
+26,1,1,2,4,1,0.633,0.748,I think sushi is gross
+27,3,3,2,1,1,0.435,0.815,I do not eat meat
+28,3,2,3,3,5,0.363,1.333,I like the way I look
+29,1,2,1,3,3,0.480,8.635,I hate to be tickled
+30,1,1,2,2,1,0.570,1.085,I love ketchup
+31,3,3,2,1,4,0.606,9.062,I hate riding the bus
+32,3,3,2,4,5,0.687,0.860,I like wearing hoodies
+33,1,1,2,4,5,0.318,1.153,I drink a lot of coffee
+34,3,2,3,3,4,0.309,0.927,I get sleepy after eating
+35,1,2,1,1,5,0.543,1.422,I think eggs are nasty
+36,2,3,1,2,2,0.588,1.355,I hate rainy days
+37,1,1,2,4,5,0.489,1.468,I usually skip breakfast
+38,2,1,3,3,4,0.462,1.288,I rarely get headaches
+39,1,2,1,2,2,0.336,0.972,I hate chicken soup
+40,2,3,1,2,2,0.426,1.130,I hate being sick
+41,3,2,3,4,2,0.651,0.770,I like free stuff
+42,3,3,2,1,5,0.516,1.377,I hate spicy mustard
+43,2,3,1,2,2,0.300,0.950,I think tattoos are cool
+44,2,3,1,2,1,0.678,0.725,I want to learn to surf
+45,3,3,2,2,4,0.615,9.310,I like to burp out loud

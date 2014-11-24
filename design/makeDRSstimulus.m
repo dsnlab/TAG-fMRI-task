@@ -1,6 +1,7 @@
 % make DSD stimulus
 %% set some paths
-matDir = '/Users/wem3/Desktop/drs/task/materials';
+matDir = '/Users/wem3/Desktop/DRS/design/materials';
+taskDir = '/Users/wem3/Desktop/DRS/task';
 coinFile = [matDir,filesep,'coin.png'];
 yesFile = [matDir,filesep,'yes-150.png'];
 noFile = [matDir,filesep,'no-150.png'];
@@ -30,6 +31,17 @@ stim.coins = {coin1, coin2, coin3, coin4, coin5};
 [~,~,stim.alpha.hand{1}] = imread(leftFile);
 %% left icon (for svc)
 [~,~,stim.alpha.hand{2}] = imread(rightFile);
+
+%% alien images for rpe
+for aCount = 1:6
+  alienFile = [matDir,filesep,'alien',num2str(aCount),'.png'];
+  [alienImg,~,alienAlpha] = imread(alienFile);
+  stim.alpha.alien = alienAlpha;
+  alienImg(:,:,4) = alienAlpha;
+  stim.alien{aCount}=alienImg;
+end
+
+stim.alienText = {'LUX','RAZ'};
 
 % colorscheme
 stim.bg     = [29  31  33  255]./255; % bg
@@ -75,6 +87,8 @@ box.resp{1} = CenterRectOnPointd([0 0 200 200],posLR(4,1),posLR(4,2));
 box.resp{2} = CenterRectOnPointd([0 0 200 200],posLR(4,3),posLR(4,2));
 box.statement = CenterRectOnPointd([0 0 6*unit unit],xCenter,yCenter);
 box.prompt = CenterRectOnPointd([0 0 200 200],xCenter,(yCenter - 2*unit));
+box.alien = CenterRectOnPointd([0 0 200 200],xCenter,(yCenter-unit/2));
+box.payout = CenterRectOnPointd([0 0 270 76],xCenter,(yCenter + unit));
 
 %% prefacbricate color boxen (?)
 for rgbCount = 1:3
@@ -98,6 +112,6 @@ stim.box = box;
 % end
 % stim.aliens = alienImg;
 %caBut('stim');
-saveName = [matDir,filesep,'DRSstim.mat'];
+saveName = [taskDir,filesep,'DRSstim.mat'];
 save(saveName,'stim');
 

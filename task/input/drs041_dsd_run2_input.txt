@@ -1,45 +1,45 @@
-1,1,1,2,2,2,0.309,0.568,I sleep without a pillow
-2,3,2,3,1,1,0.462,0.635,I"m afraid of ghosts
-3,2,1,3,1,3,0.588,1.265,I like people who litter
-4,1,1,2,4,3,0.426,8.613,I hate riding the bus
-5,2,1,3,2,2,0.624,1.062,I make people laugh
-6,1,2,1,4,3,0.651,0.995,I tell a lot of jokes
-7,3,2,3,3,5,0.615,0.522,I think sushi is gross
-8,3,2,3,1,3,0.570,1.490,I hate soft beds
-9,3,2,3,1,5,0.327,1.400,I wash my hands often
-10,2,1,3,1,1,0.471,0.972,I drink a lot of coffee
-11,3,2,3,2,5,0.579,0.950,I sing in the shower
-12,3,2,3,5,5,0.597,1.040,I check Facebook often
-13,2,3,1,2,3,0.354,1.220,I like doing new things
-14,1,2,1,5,5,0.453,0.680,I hate chicken soup
-15,1,1,2,2,1,0.534,1.468,I like foot massages
-16,3,2,3,2,3,0.696,1.130,I have a lucky charm
-17,1,1,2,1,3,0.660,1.377,I hate eating leftovers
-18,2,3,1,4,3,0.489,1.175,I like hip-hop music
-19,2,1,3,4,5,0.678,1.018,I hate sour pickles
-20,2,1,3,1,1,0.606,9.085,I always watch the news
-21,2,1,3,3,3,0.543,0.905,I do not eat meat
-22,3,3,2,5,4,0.480,0.860,I make my own lunch
-23,1,1,2,4,5,0.498,1.445,I like televised sports
-24,2,3,1,3,5,0.552,0.725,I love scary movies
-25,3,2,3,3,1,0.336,0.927,I can keep a secret
-26,2,3,1,1,4,0.687,1.153,I like to wrestle
-27,1,2,1,1,5,0.300,0.792,I hate being sick
-28,1,1,2,3,3,0.417,8.658,I want to learn to surf
-29,1,2,1,3,5,0.381,1.355,I hate rainy days
-30,2,3,1,1,2,0.399,8.838,I rarely get headaches
-31,1,2,1,5,5,0.318,1.198,I hate pulling weeds
-32,3,2,3,5,5,0.507,1.242,I hate being late
-33,3,2,3,1,2,0.435,1.288,I want super powers
-34,1,2,1,1,1,0.642,8.815,I like to watch cartoons
-35,3,3,2,4,5,0.633,0.883,I hate wearing seatbelts
-36,1,2,1,1,1,0.363,1.310,I like to read books
-37,3,3,2,1,3,0.408,0.590,I think tattoos are cool
-38,2,3,1,4,1,0.516,8.770,I floss every day
-39,3,2,3,3,3,0.525,1.333,I shower in the morning
-40,1,2,1,1,4,0.561,0.500,I think eggs are nasty
-41,2,1,3,5,4,0.390,0.703,I like watching sunsets
-42,3,2,3,3,4,0.345,0.748,I like country music
-43,1,2,1,4,2,0.669,1.107,I remember dreams
-44,2,1,3,4,4,0.444,1.422,I take a lot of naps
-45,2,3,1,2,4,0.372,8.545,I have a best friend
+1,1,2,1,4,4,0.570,1.175,I hate earmuffs
+2,3,3,2,4,4,0.660,0.815,I make my own lunch
+3,2,3,1,3,2,0.462,1.355,I like televised sports
+4,1,2,1,1,3,0.417,9.085,I like to chew my pencil
+5,2,1,3,2,2,0.480,1.130,I get sleepy after eating
+6,1,1,2,1,4,0.309,0.657,I want super powers
+7,3,2,3,4,1,0.606,0.905,I hate to wait in line
+8,3,2,3,5,3,0.489,1.040,I love pepperoni pizza
+9,3,3,2,2,3,0.300,0.500,I make people laugh
+10,2,3,1,2,2,0.651,1.018,I have a lucky charm
+11,3,2,3,3,5,0.381,1.107,I want super powers
+12,3,3,2,4,4,0.426,1.220,I daydream in class
+13,2,3,1,5,2,0.615,1.310,I like cheeseburgers
+14,1,1,2,1,1,0.552,0.792,I like birthday parties
+15,1,2,1,5,1,0.453,1.265,I like doing new things
+16,3,3,2,1,5,0.687,0.748,I always watch the news
+17,1,2,1,3,5,0.354,0.545,I love scary movies
+18,2,1,3,5,4,0.597,1.400,I wash my hands often
+19,2,1,3,3,1,0.471,0.950,I think sushi is gross
+20,2,3,1,3,3,0.507,9.197,I hate wearing seatbelts
+21,2,3,1,5,5,0.435,1.242,I like to sleep in late
+22,3,2,3,4,5,0.534,0.972,I read a lot of comics
+23,1,2,1,5,2,0.408,0.883,I can keep a secret
+24,2,1,3,1,2,0.642,0.680,I like the way I look
+25,3,2,3,4,2,0.588,0.522,I never sit up straight
+26,2,3,1,2,4,0.318,0.613,I think tattoos are cool
+27,1,2,1,1,5,0.390,1.333,I like wearing hoodies
+28,1,2,1,3,3,0.336,8.995,I like smelling markers
+29,1,1,2,2,3,0.561,1.490,I hate tofu
+30,2,3,1,1,2,0.372,8.703,I drink a lot of coffee
+31,1,1,2,3,3,0.345,1.288,I carry a water bottle
+32,3,3,2,5,5,0.678,1.377,I never break the rules
+33,3,3,2,4,5,0.399,1.422,I check Facebook often
+34,1,1,2,5,5,0.516,9.062,I shower in the morning
+35,3,3,2,3,2,0.633,0.590,I like to burp out loud
+36,1,1,2,5,5,0.444,1.153,I hate skinny jeans
+37,3,2,3,4,2,0.624,0.770,I like to play cards
+38,2,3,1,3,5,0.363,8.725,I tell a lot of jokes
+39,3,3,2,3,3,0.579,0.927,I hate sour pickles
+40,1,1,2,2,1,0.525,1.468,I can use chopsticks
+41,2,1,3,3,4,0.543,0.568,I hate to be tickled
+42,3,3,2,4,1,0.696,0.860,I always stay up late
+43,1,2,1,4,2,0.498,0.837,I get ready quickly
+44,2,1,3,4,4,0.669,0.635,I rarely get headaches
+45,2,3,1,2,3,0.327,9.445,I remember dreams

@@ -92,7 +92,7 @@ DrawFormattedText(win, 'Self or Change? Experiment:\n\n Get Ready!',...
 Screen('Flip', win);
 
 % trigger pulse code (disabled for debug)
-KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
+%KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
 %disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
 triggerPulseTime = GetSecs;
 disp('trigger pulse received, starting experiment');
@@ -124,7 +124,7 @@ for tCount = 1:numTrials
   % flip the screen to show trait
   [~,traitOnset] = Screen('Flip',win);
   %loop for response
-  while (GetSecs - traitOnset) < 3.5
+  while (GetSecs - traitOnset) < 4
     [ pressed, firstPress]=KbQueueCheck(inputDevice);
       if pressed
         if chose == 0
@@ -150,7 +150,7 @@ for tCount = 1:numTrials
   else
     traitOffset = GetSecs;
   end
-  WaitSecs('UntilTime',(traitOnset + 3.5 + traitJitter));
+  WaitSecs('UntilTime',(traitOnset + 4 + traitJitter));
   %%
   if traitResponse == 0
     traitSkips = [traitSkips tCount];
@@ -177,8 +177,8 @@ for tCount = 1:numTrials
   task.output.raw(tCount,1:7), task.input.trait{tCount});
 end
 fclose(fid);
-task.onsets.calibration = calibrationOnset;
-task.onsets.triggerPulse = triggerPulseTime;
+task.calibration = calibrationOnset;
+task.triggerPulse = triggerPulseTime;
 task.output.skips = traitSkips;
 task.output.multi.response = multiTraitResponse;
 task.output.multi.RT = multiTraitRT;

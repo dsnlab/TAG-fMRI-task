@@ -1,45 +1,45 @@
-1,2,1,3,2,4,0.588,1.062,I don"t like big cities
-2,3,2,3,4,3,0.633,0.748,I like free stuff
-3,3,2,3,5,2,0.507,0.568,I wash my hands often
-4,1,1,2,2,2,0.606,0.725,I want super powers
-5,1,1,2,2,1,0.462,0.545,I always watch the news
-6,2,1,3,4,3,0.570,1.130,I carry a water bottle
-7,1,2,1,5,4,0.327,0.635,I think eggs are nasty
-8,3,2,3,1,1,0.489,1.490,I like televised sports
-9,2,3,1,4,3,0.678,8.838,I"m afraid of ghosts
-10,3,3,2,4,4,0.498,1.445,I like to watch cartoons
-11,3,3,2,4,2,0.381,0.770,I sleep without a pillow
-12,2,3,1,4,4,0.300,1.220,I like wearing hoodies
-13,1,2,1,3,3,0.417,1.107,I never sit up straight
-14,1,2,1,1,4,0.687,8.680,I like country music
-15,2,1,3,5,2,0.363,1.198,I hate being late
-16,1,1,2,1,1,0.336,1.153,I floss every day
-17,2,1,3,4,2,0.354,1.333,I hate doing dishes
-18,2,1,3,1,2,0.471,0.703,I like the way I look
-19,2,3,1,1,5,0.453,1.265,I tell a lot of jokes
-20,1,1,2,5,2,0.372,0.927,I don"t like earmuffs
-21,3,3,2,1,1,0.552,1.018,I hate mosquito bites
-22,3,3,2,3,2,0.345,1.085,I hate skinny jeans
-23,1,2,1,4,5,0.534,0.657,I like foot massages
-24,2,1,3,1,5,0.318,0.522,I shower in the morning
-25,3,2,3,5,5,0.597,1.377,I hate squeaky shoes
-26,1,2,1,2,3,0.390,9.400,I like to burp out loud
-27,1,1,2,1,1,0.525,0.883,I never get bored
-28,1,2,1,4,1,0.480,1.242,I have a best friend
-29,3,2,3,4,1,0.516,8.860,I hate sour pickles
-30,3,3,2,3,3,0.624,1.288,I want super powers
-31,2,1,3,5,1,0.561,0.950,I like birthday parties
-32,3,3,2,2,3,0.309,9.422,I remember dreams
-33,2,3,1,3,3,0.543,1.355,I hate rainy days
-34,3,3,2,1,2,0.444,0.590,I hate walking uphill
-35,2,1,3,5,1,0.651,1.175,I like watching sunsets
-36,1,1,2,1,5,0.696,8.793,I always wear a watch
-37,3,2,3,3,3,0.642,0.613,I like people who litter
-38,1,1,2,1,5,0.615,0.815,I make my own lunch
-39,2,3,1,4,4,0.408,0.500,I read a lot of comics
-40,2,1,3,2,2,0.399,0.905,I hate soft beds
-41,1,1,2,3,4,0.435,0.995,I take a lot of naps
-42,3,2,3,3,5,0.669,1.310,I have a lucky charm
-43,2,1,3,5,1,0.579,1.040,I always use sunscreen
-44,3,3,2,3,3,0.660,0.972,I like to play cards
-45,1,2,1,5,1,0.426,9.467,I never break the rules
+1,2,1,3,3,4,0.363,0.635,I hate squeaky shoes
+2,3,3,2,1,3,0.624,1.468,I hate soft beds
+3,3,2,3,2,4,0.615,1.040,I am a morning person
+4,1,1,2,3,3,0.606,0.613,I tell a lot of jokes
+5,1,2,1,3,4,0.552,0.792,I always wear a watch
+6,2,1,3,3,2,0.579,0.725,I think eggs are nasty
+7,1,1,2,4,5,0.426,1.153,I hate riding the bus
+8,3,2,3,5,5,0.570,0.522,I want to learn to surf
+9,2,3,1,1,5,0.597,9.130,I hate spicy mustard
+10,3,2,3,3,3,0.318,0.927,I like to watch cartoons
+11,3,3,2,4,5,0.309,1.220,I hate tofu
+12,2,1,3,2,2,0.660,1.288,I like birthday parties
+13,1,1,2,2,2,0.534,1.242,I like to chew my pencil
+14,1,1,2,2,5,0.507,8.500,I like to burp out loud
+15,2,1,3,5,3,0.516,1.175,I always have chapstick
+16,1,2,1,4,4,0.408,0.748,I do not eat meat
+17,2,3,1,5,3,0.336,1.377,I like doing new things
+18,2,1,3,2,4,0.345,0.657,I hate tapioca
+19,2,1,3,5,2,0.453,0.972,I like to play cards
+20,1,2,1,4,3,0.651,1.018,I daydream in class
+21,3,2,3,5,5,0.561,0.950,I like to read books
+22,3,3,2,3,2,0.678,0.770,I hate earmuffs
+23,1,2,1,2,5,0.696,1.490,I never sit up straight
+24,2,3,1,5,2,0.498,1.333,I like free stuff
+25,3,3,2,1,1,0.588,0.860,I am a good dancer
+26,1,1,2,3,2,0.381,8.905,I shower in the morning
+27,1,1,2,5,5,0.354,0.883,I hate being sick
+28,1,2,1,3,2,0.543,0.995,I hate pulling weeds
+29,3,2,3,2,5,0.480,9.400,I hate big cities
+30,3,3,2,3,3,0.327,0.680,I wash my hands often
+31,2,1,3,5,2,0.471,0.590,I sleep without a pillow
+32,3,3,2,1,2,0.687,8.838,I hate mosquito bites
+33,2,1,3,3,3,0.300,1.310,I drink a lot of coffee
+34,3,2,3,3,2,0.390,1.085,I think sushi is gross
+35,2,1,3,5,2,0.642,0.568,I want super powers
+36,1,2,1,1,2,0.669,9.445,I like wearing hoodies
+37,3,2,3,3,3,0.435,1.062,I usually skip breakfast
+38,1,2,1,1,2,0.399,0.545,I hate being late
+39,2,1,3,1,1,0.372,1.198,I love ketchup
+40,2,3,1,3,3,0.489,0.703,I can use chopsticks
+41,1,1,2,5,4,0.525,0.815,I never make my bed
+42,3,3,2,5,4,0.462,1.107,I hate sour pickles
+43,2,1,3,5,2,0.417,1.355,I hate wearing seatbelts
+44,3,3,2,3,3,0.444,1.265,I make people laugh
+45,1,1,2,2,1,0.633,9.422,I think tattoos are cool

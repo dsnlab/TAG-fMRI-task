@@ -1,45 +1,45 @@
-1,1,1,2,2,4,0.399,0.590,I want super powers
-2,1,1,2,4,4,0.525,0.703,I have a best friend
-3,2,1,3,1,2,0.318,0.657,I never get bored
-4,3,2,3,2,2,0.426,1.130,I drink a lot of coffee
-5,2,3,1,5,1,0.588,1.107,I can keep a secret
-6,3,3,2,5,1,0.615,1.198,I daydream in class
-7,2,1,3,2,2,0.498,1.468,I do not eat meat
-8,2,3,1,3,5,0.489,1.018,I tell a lot of jokes
-9,1,1,2,4,1,0.579,0.680,I take a lot of naps
-10,3,2,3,5,4,0.408,0.522,I like watching sunsets
-11,1,2,1,2,4,0.696,1.310,I like doing new things
-12,3,3,2,1,1,0.552,1.085,I hate riding the bus
-13,3,2,3,3,2,0.543,1.175,I hate licking envelopes
-14,1,1,2,2,5,0.471,0.927,I hate sour pickles
-15,3,3,2,4,3,0.669,1.242,I want to learn to surf
-16,2,1,3,4,4,0.678,0.545,I sleep without a pillow
-17,2,3,1,4,4,0.507,0.995,I like the way I look
-18,3,3,2,5,4,0.660,9.355,I like to chew my pencil
-19,3,2,3,1,1,0.363,1.220,I carry a water bottle
-20,1,2,1,5,5,0.345,8.635,I shower in the morning
-21,2,3,1,2,5,0.390,0.860,I like free stuff
-22,1,2,1,3,4,0.417,1.422,I like to read books
-23,2,3,1,4,3,0.624,1.445,I hate eating leftovers
-24,2,1,3,5,4,0.435,1.288,I like country music
-25,1,2,1,5,5,0.453,0.613,I hate skinny jeans
-26,1,2,1,5,3,0.633,9.265,I like wearing hoodies
-27,1,1,2,4,4,0.561,1.333,I never break the rules
-28,3,3,2,2,4,0.642,1.153,I hate rainy days
-29,1,1,2,1,3,0.327,1.400,I hate chicken soup
-30,2,1,3,5,5,0.444,8.725,I read a lot of comics
-31,2,1,3,4,1,0.300,0.883,I sing in the shower
-32,1,2,1,4,3,0.480,1.040,I always use sunscreen
-33,3,2,3,2,4,0.309,0.905,I like to wrestle
-34,3,3,2,2,1,0.372,0.568,I check Facebook often
-35,2,3,1,2,2,0.534,0.815,I always have chapstick
-36,3,2,3,3,3,0.381,8.973,I like hip-hop music
-37,1,1,2,5,2,0.570,1.062,I floss every day
-38,2,3,1,2,3,0.354,0.837,I like to watch cartoons
-39,3,2,3,3,5,0.597,0.500,I hate walking uphill
-40,3,2,3,1,3,0.462,0.792,I think tattoos are cool
-41,2,1,3,3,1,0.516,0.770,I love pepperoni pizza
-42,1,1,2,3,5,0.651,1.377,I like to burp out loud
-43,2,3,1,2,2,0.687,8.950,I bite my fingernails
-44,1,2,1,3,2,0.336,0.748,I always wear a watch
-45,3,3,2,5,5,0.606,9.490,I hate to wait in line
+1,1,2,1,2,5,0.615,0.635,I usually skip breakfast
+2,1,1,2,3,3,0.354,0.590,I tell a lot of jokes
+3,2,3,1,4,2,0.480,1.310,I think sushi is gross
+4,3,2,3,5,5,0.462,1.490,I like wearing hoodies
+5,2,3,1,1,2,0.678,1.107,I never get bored
+6,3,3,2,2,3,0.336,1.242,I hate chicken soup
+7,2,1,3,5,5,0.444,1.265,I sleep without a pillow
+8,2,3,1,4,1,0.633,0.950,I hate big cities
+9,1,2,1,5,4,0.363,1.130,I make people laugh
+10,3,2,3,2,3,0.570,0.770,I always use sunscreen
+11,1,1,2,2,1,0.399,0.837,I have a lucky charm
+12,3,2,3,3,3,0.390,0.995,I carry a water bottle
+13,3,2,3,4,1,0.525,1.422,I read a lot of comics
+14,1,2,1,1,4,0.309,1.198,I love pepperoni pizza
+15,3,3,2,1,5,0.624,0.613,I can use chopsticks
+16,2,1,3,3,3,0.489,0.680,I hate doing dishes
+17,2,1,3,2,2,0.579,1.355,I rarely get headaches
+18,3,3,2,5,2,0.435,9.062,I like doing new things
+19,3,3,2,1,1,0.516,0.522,I hate soft beds
+20,1,2,1,5,5,0.345,8.748,I think tattoos are cool
+21,2,1,3,2,3,0.471,1.018,I like to read books
+22,1,1,2,3,1,0.669,1.400,I hate to be tickled
+23,2,1,3,5,3,0.318,0.972,I never make my bed
+24,2,1,3,5,2,0.651,0.815,I like to burp out loud
+25,1,2,1,4,4,0.696,1.085,I bite my fingernails
+26,1,1,2,4,3,0.381,9.377,I think eggs are nasty
+27,1,2,1,2,2,0.327,0.500,I like to sleep in late
+28,3,3,2,2,4,0.552,0.703,I hate spicy mustard
+29,1,1,2,5,3,0.660,1.175,I hate sour pickles
+30,2,1,3,4,4,0.498,8.793,I hate squeaky shoes
+31,2,1,3,2,5,0.507,0.545,I do not eat meat
+32,1,1,2,5,4,0.417,0.725,I get sleepy after eating
+33,3,3,2,2,1,0.687,1.040,I want to learn to surf
+34,3,3,2,3,5,0.597,0.568,I never break the rules
+35,2,1,3,5,5,0.543,1.220,I check Facebook often
+36,3,2,3,1,1,0.372,8.883,I hate rainy days
+37,1,1,2,2,3,0.642,1.445,I am a morning person
+38,2,3,1,5,3,0.453,1.153,I like to wrestle
+39,3,2,3,1,5,0.606,1.288,I always stay up late
+40,3,3,2,4,3,0.300,1.468,I want super powers
+41,2,1,3,4,3,0.408,1.333,I like to chew my pencil
+42,1,2,1,3,4,0.561,0.860,I can keep a secret
+43,2,3,1,5,5,0.534,8.905,I like smelling markers
+44,1,2,1,4,3,0.588,0.657,I always wear a watch
+45,3,2,3,4,4,0.426,8.928,I like foot massages

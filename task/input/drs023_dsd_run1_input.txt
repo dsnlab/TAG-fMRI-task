@@ -1,45 +1,45 @@
-1,2,1,3,5,3,0.579,1.377,I like smelling markers
-2,3,2,3,3,2,0.633,1.018,I never sit up straight
-3,1,1,2,2,1,0.336,0.635,I like wearing hoodies
-4,1,1,2,5,5,0.300,1.175,I get good grades
-5,3,2,3,3,1,0.588,9.085,I don"t like tapioca
-6,1,2,1,2,2,0.444,0.860,I like country music
-7,1,2,1,2,3,0.597,1.355,I never break the rules
-8,3,3,2,1,4,0.543,1.490,I usually skip breakfast
-9,2,3,1,2,1,0.660,1.445,I hate being late
-10,3,3,2,1,1,0.318,1.422,I don"t like earmuffs
-11,2,1,3,5,5,0.390,0.522,I hate spicy mustard
-12,2,3,1,3,2,0.507,0.613,I like to play cards
-13,1,1,2,2,2,0.345,1.220,I like watching sunsets
-14,1,2,1,3,3,0.354,9.197,I think tattoos are cool
-15,3,2,3,2,1,0.561,0.815,I carry a water bottle
-16,1,1,2,1,4,0.552,1.400,I like birthday parties
-17,2,1,3,5,5,0.471,0.703,I drink a lot of coffee
-18,2,1,3,3,4,0.687,0.972,I always watch the news
-19,3,3,2,2,2,0.417,0.995,I have a best friend
-20,3,3,2,5,3,0.381,0.883,I like doing new things
-21,3,3,2,3,2,0.426,1.107,I make people laugh
-22,2,1,3,3,5,0.480,0.950,I tell a lot of jokes
-23,1,2,1,4,5,0.606,8.658,I always use sunscreen
-24,2,3,1,1,5,0.624,1.288,I remember dreams
-25,2,3,1,1,5,0.453,8.568,I read a lot of comics
-26,3,2,3,3,5,0.534,1.468,I like televised sports
-27,2,1,3,2,2,0.498,0.545,I bite my fingernails
-28,1,2,1,5,2,0.372,0.770,I hate skinny jeans
-29,3,3,2,5,3,0.615,9.265,I rarely get headaches
-30,1,2,1,4,4,0.525,0.680,I hate to be tickled
-31,2,1,3,5,1,0.570,0.792,I wash my hands often
-32,1,1,2,1,5,0.642,0.748,I get sleepy after eating
-33,1,1,2,3,5,0.489,0.500,I like to wrestle
-34,2,1,3,5,1,0.327,1.040,I like to chew my pencil
-35,3,3,2,2,2,0.516,1.153,I want to learn to surf
-36,3,3,2,3,5,0.309,0.905,I can"t use chopsticks
-37,1,2,1,5,3,0.435,1.310,I shower in the morning
-38,3,3,2,3,3,0.408,0.725,I like cheeseburgers
-39,1,2,1,4,4,0.651,0.837,I like the way I look
-40,3,3,2,4,4,0.696,1.062,I check Facebook often
-41,2,3,1,1,5,0.462,9.332,I am a morning person
-42,2,1,3,5,1,0.678,0.590,I always wear a watch
-43,1,2,1,5,3,0.669,1.130,I sing in the shower
-44,2,3,1,3,3,0.399,0.927,I hate wearing seatbelts
-45,3,3,2,2,1,0.363,9.242,I don"t like tofu
+1,2,3,1,3,1,0.300,1.400,I hate spicy mustard
+2,3,3,2,3,4,0.309,0.680,I think sushi is gross
+3,1,2,1,5,2,0.615,1.445,I hate pulling weeds
+4,1,2,1,1,1,0.345,0.703,I like foot massages
+5,3,2,3,2,1,0.642,9.062,I love ketchup
+6,1,1,2,4,4,0.669,0.883,I hate earmuffs
+7,1,1,2,4,1,0.381,0.905,I drink a lot of coffee
+8,3,3,2,2,3,0.462,1.288,I like people who litter
+9,2,3,1,4,2,0.363,0.545,I hate mosquito bites
+10,3,2,3,1,1,0.570,0.972,I hate sour pickles
+11,2,3,1,1,1,0.660,1.265,I like to burp out loud
+12,2,1,3,5,3,0.624,0.500,I get ready quickly
+13,1,1,2,2,2,0.543,0.522,I like wearing hoodies
+14,1,1,2,5,5,0.561,9.040,I like birthday parties
+15,3,3,2,5,1,0.471,0.725,I like televised sports
+16,1,1,2,2,4,0.507,0.815,I hate riding the bus
+17,2,3,1,1,1,0.687,1.422,I like to wrestle
+18,2,1,3,1,2,0.579,0.860,I hate tofu
+19,3,3,2,1,1,0.354,1.333,I usually skip breakfast
+20,3,2,3,3,1,0.444,1.018,I sleep without a pillow
+21,3,3,2,4,1,0.678,1.242,I never make my bed
+22,2,1,3,4,2,0.336,0.635,I hate to be tickled
+23,1,2,1,1,5,0.534,9.152,I have a best friend
+24,2,3,1,4,3,0.327,0.792,I hate tapioca
+25,2,3,1,4,3,0.453,8.568,I think eggs are nasty
+26,3,3,2,1,3,0.390,0.995,I hate being sick
+27,2,1,3,2,2,0.408,1.198,I sing in the shower
+28,1,2,1,3,4,0.489,1.130,I love scary movies
+29,3,2,3,3,1,0.588,9.220,I make my own lunch
+30,1,2,1,1,1,0.516,1.490,I hate wearing seatbelts
+31,2,3,1,4,3,0.606,0.613,I am a morning person
+32,1,1,2,3,1,0.498,1.310,I want super powers
+33,1,1,2,3,5,0.417,1.085,I can keep a secret
+34,2,3,1,4,3,0.480,0.748,I have a lucky charm
+35,3,3,2,3,3,0.372,0.770,I like to chew my pencil
+36,3,3,2,3,1,0.318,1.355,I always have chapstick
+37,1,1,2,3,5,0.525,1.377,I hate licking envelopes
+38,3,2,3,4,4,0.651,0.590,I hate rainy days
+39,1,1,2,1,1,0.552,1.107,I never break the rules
+40,3,2,3,5,5,0.696,0.837,I hate skinny jeans
+41,2,1,3,3,4,0.633,8.658,I hate soft beds
+42,2,1,3,3,4,0.597,0.927,I like to play cards
+43,1,1,2,3,5,0.435,1.468,I daydream in class
+44,2,1,3,5,5,0.399,0.950,I always watch the news
+45,3,2,3,5,3,0.426,9.175,I carry a water bottle

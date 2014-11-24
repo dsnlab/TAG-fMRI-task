@@ -1,45 +1,45 @@
-1,3,3,2,4,1,0.660,0.972,I hate pulling weeds
-2,1,2,1,4,4,0.489,1.377,I floss every day
-3,1,1,2,2,5,0.615,1.400,I hate being sick
-4,3,2,3,4,4,0.300,0.500,I hate riding the bus
-5,3,2,3,3,3,0.543,1.040,I want to learn to surf
-6,3,2,3,2,4,0.570,0.635,I hate licking envelopes
-7,2,3,1,2,4,0.453,0.545,I don"t like earmuffs
-8,2,3,1,3,2,0.606,8.568,I like cheeseburgers
-9,2,3,1,2,3,0.642,1.468,I like to read books
-10,3,3,2,2,2,0.678,1.130,I sing in the shower
-11,2,3,1,2,5,0.624,0.995,I hate eating leftovers
-12,1,2,1,3,4,0.525,1.310,I like free stuff
-13,1,2,1,2,2,0.327,0.680,I always watch the news
-14,2,1,3,4,1,0.579,1.107,I hate being late
-15,1,1,2,4,5,0.597,0.748,I think eggs are nasty
-16,3,2,3,5,5,0.462,1.490,I am a morning person
-17,2,3,1,3,5,0.336,0.950,I like to play cards
-18,1,1,2,4,1,0.516,1.085,I like country music
-19,3,2,3,3,4,0.651,1.175,I make my own lunch
-20,2,1,3,5,5,0.354,1.220,I make people laugh
-21,1,1,2,1,1,0.588,0.792,I do not eat meat
-22,1,1,2,1,3,0.435,1.153,I read a lot of comics
-23,3,2,3,5,1,0.534,8.928,I never get bored
-24,1,2,1,5,1,0.471,0.770,I never break the rules
-25,2,1,3,2,1,0.318,9.197,I want super powers
-26,3,2,3,1,3,0.309,0.522,I always use sunscreen
-27,2,1,3,3,5,0.552,0.725,I think tattoos are cool
-28,3,2,3,3,2,0.363,0.815,I like foot massages
-29,3,2,3,5,5,0.390,1.018,I hate to wait in line
-30,1,2,1,4,3,0.561,1.062,I always wear a watch
-31,2,1,3,2,2,0.372,8.703,I"m afraid of ghosts
-32,2,1,3,4,4,0.444,0.613,I like to chew my pencil
-33,3,3,2,5,1,0.498,1.355,I sleep without a pillow
-34,1,1,2,5,4,0.399,8.883,I hate mosquito bites
-35,3,3,2,3,1,0.669,0.657,I tell a lot of jokes
-36,1,2,1,3,3,0.687,1.242,I love pepperoni pizza
-37,2,1,3,3,5,0.408,0.837,I can keep a secret
-38,3,2,3,5,5,0.345,0.860,I hate chicken soup
-39,2,3,1,5,3,0.426,1.422,I hate sour pickles
-40,3,2,3,5,5,0.381,1.265,I get good grades
-41,1,1,2,5,3,0.507,1.288,I have a lucky charm
-42,2,1,3,5,4,0.480,0.590,I never sit up straight
-43,1,1,2,1,5,0.633,8.905,I like to sleep in late
-44,2,3,1,3,1,0.417,1.445,I drink a lot of coffee
-45,1,1,2,1,1,0.696,9.332,I always have chapstick
+1,3,2,3,3,4,0.624,1.265,I like to burp out loud
+2,1,1,2,3,3,0.345,1.220,I like hip-hop music
+3,1,2,1,2,3,0.633,1.333,I like smelling markers
+4,3,3,2,5,5,0.336,1.355,I hate mosquito bites
+5,3,2,3,3,3,0.480,1.422,I get good grades
+6,3,2,3,1,3,0.660,0.972,I usually skip breakfast
+7,2,1,3,4,3,0.327,1.018,I have a best friend
+8,2,3,1,1,5,0.354,9.400,I want super powers
+9,2,1,3,2,1,0.525,0.792,I have a lucky charm
+10,3,2,3,5,5,0.381,1.288,I do not eat meat
+11,2,1,3,2,3,0.570,0.860,I hate licking envelopes
+12,1,1,2,4,2,0.588,0.680,I think eggs are nasty
+13,1,1,2,5,5,0.318,0.590,I always use sunscreen
+14,2,1,3,4,1,0.579,0.770,I hate walking uphill
+15,1,2,1,5,4,0.471,1.175,I like country music
+16,3,3,2,4,4,0.462,1.490,I wash my hands often
+17,2,3,1,2,1,0.561,0.748,I hate sour pickles
+18,1,2,1,3,4,0.597,1.377,I hate squeaky shoes
+19,3,3,2,2,1,0.696,0.995,I want super powers
+20,2,3,1,5,5,0.300,1.445,I sing in the shower
+21,1,1,2,2,2,0.444,0.657,I want to learn to surf
+22,1,2,1,1,5,0.390,0.522,I drink a lot of coffee
+23,3,2,3,5,4,0.417,8.838,I hate chicken soup
+24,1,2,1,5,1,0.408,0.703,I always stay up late
+25,2,3,1,5,4,0.651,9.152,I like the way I look
+26,3,3,2,2,5,0.552,0.927,I get ready quickly
+27,2,3,1,1,3,0.543,0.815,I hate to be tickled
+28,3,2,3,4,5,0.507,0.950,I hate eating leftovers
+29,3,3,2,2,2,0.642,1.242,I hate earmuffs
+30,1,2,1,4,5,0.498,0.635,I am a good dancer
+31,2,3,1,2,2,0.426,8.905,I never get bored
+32,2,1,3,1,1,0.516,1.062,I hate big cities
+33,3,2,3,4,1,0.435,1.310,I like doing new things
+34,1,1,2,5,3,0.678,8.545,I like people who litter
+35,3,2,3,5,2,0.489,0.500,I hate rainy days
+36,1,1,2,4,4,0.687,1.107,I hate tofu
+37,2,1,3,3,1,0.399,1.130,I like foot massages
+38,3,3,2,2,2,0.372,1.198,I like to play cards
+39,2,1,3,3,1,0.453,0.883,I like to chew my pencil
+40,3,2,3,2,2,0.669,1.085,I carry a water bottle
+41,1,1,2,2,3,0.309,0.725,I shower in the morning
+42,2,1,3,5,2,0.534,0.613,I like wearing hoodies
+43,1,2,1,5,1,0.606,9.040,I think tattoos are cool
+44,2,1,3,5,4,0.363,1.468,I always have chapstick
+45,1,2,1,3,3,0.615,8.568,I never sit up straight

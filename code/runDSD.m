@@ -1,6 +1,8 @@
 function [task] = runDSD(subNum,runNum)
 % % RUNDSD.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% this is a script, not a function, by design
+% usage: [ task ] = runDSD( subNum, runNum )
+%
+%   subNum && runNum are scalar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % dependencies:
@@ -77,27 +79,27 @@ inputDevice = drs.keys.deviceNum;
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
   'center', 'center', drs.stim.white);
 [~,calibrationOnset] = Screen('Flip', win);
-WaitSecs(.1);
+WaitSecs(1);
 DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 3',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
-WaitSecs(.1);
+WaitSecs(1);
 DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 2',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
 DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 1',...
   'center', 'center', drs.stim.white);
-WaitSecs(.1);
+WaitSecs(1);
 Screen('Flip', win);
 DrawFormattedText(win, 'Sharing Experiment:\n\n Get Ready!',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
 
 % trigger pulse code (disabled for debug)
-KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
+%KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
 %disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
-triggerPulseTime = GetSecs;
-disp('trigger pulse received, starting experiment');
+%triggerPulseTime = GetSecs;
+%disp('trigger pulse received, starting experiment');
 Screen('Flip', win);
 
 % define keys to listen for, create KbQueue (coins & text drawn while it warms up)
@@ -136,7 +138,7 @@ for tCount = 1:numTrials
   % flip the screen to show choice
   [~,choiceOnset] = Screen('Flip',win);
   %loop for response
-  while (GetSecs - choiceOnset) < 3.5
+  while (GetSecs - choiceOnset) < 3
     [ pressed, firstPress]=KbQueueCheck(inputDevice);
       if pressed
         if chose == 0
@@ -158,14 +160,14 @@ for tCount = 1:numTrials
   end
   KbQueueStop(inputDevice);
   
-  WaitSecs('UntilTime',(choiceOnset + 3.5 + choiceJitter));
+  WaitSecs('UntilTime',(choiceOnset + 3 + choiceJitter));
   %
   discoResponse = 0;
   drawYesNo(win,drs.stim,[0.5 0.5]);
   drawDisco(win,drs.stim,targets,statement,choiceResponse);
   KbQueueStart(inputDevice);
   [~,discoOnset] = Screen('Flip',win);
-  while (GetSecs - discoOnset) < 3.5
+  while (GetSecs - discoOnset) < 4
     [ pressed, firstPress]=KbQueueCheck(inputDevice);
     if pressed
       if disclosed == 0;
@@ -186,7 +188,7 @@ for tCount = 1:numTrials
   end
   KbQueueStop(inputDevice);
   [~,discoOffset] = Screen('Flip',win);
-  WaitSecs('UntilTime',(discoOnset + 3.5 + discoJitter));
+  WaitSecs('UntilTime',(discoOnset + 4 + discoJitter));
 %%
   if choiceResponse == 0
     choiceSkips = [choiceSkips tCount];
@@ -221,8 +223,8 @@ for tCount = 1:numTrials
   task.output.raw(tCount,1:12), task.input.statement{tCount});
 end
 fclose(fid);
-task.onsets.calibration = calibrationOnset;
-task.onsets.triggerPulse = triggerPulseTime;
+task.calibration = calibrationOnset;
+task.triggerPulse = triggerPulseTime;
 task.output.choice.skips = choiceSkips;
 task.output.choice.multi = multiChoiceResponse;
 task.output.choice.multiRT = multiChoiceRT;

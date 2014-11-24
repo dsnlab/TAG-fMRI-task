@@ -1,45 +1,45 @@
-1,1,2,1,2,1,0.417,0.972,I wash my hands often
-2,3,3,2,2,3,0.696,0.995,I want super powers
-3,2,3,1,5,2,0.399,0.545,I have a best friend
-4,1,1,2,1,1,0.444,0.883,I like watching sunsets
-5,1,1,2,3,5,0.327,1.018,I like to watch cartoons
-6,2,3,1,4,1,0.597,1.175,I hate squeaky shoes
-7,2,3,1,1,5,0.633,1.355,I always watch the news
-8,3,2,3,4,4,0.552,0.680,I don"t like tofu
-9,3,3,2,3,4,0.642,9.220,I am a morning person
-10,3,3,2,2,5,0.471,0.725,I like to chew my pencil
-11,3,2,3,5,5,0.480,0.905,I get ready quickly
-12,1,2,1,3,3,0.507,0.792,I hate chicken soup
-13,1,2,1,1,5,0.408,0.635,I sleep without a pillow
-14,1,2,1,2,4,0.318,9.377,I hate licking envelopes
-15,3,2,3,2,3,0.336,1.265,I make people laugh
-16,1,1,2,2,4,0.588,1.310,I hate spicy mustard
-17,2,1,3,4,2,0.462,0.815,I can"t use chopsticks
-18,3,3,2,4,4,0.435,1.085,I floss every day
-19,2,3,1,1,4,0.453,1.400,I always use sunscreen
-20,3,3,2,5,3,0.300,1.445,I usually skip breakfast
-21,2,3,1,2,5,0.615,0.590,I bite my fingernails
-22,2,1,3,2,2,0.489,0.748,I can keep a secret
-23,3,3,2,2,1,0.354,0.568,I remember dreams
-24,1,2,1,1,3,0.372,0.657,I like country music
-25,2,1,3,3,3,0.543,9.062,I hate being late
-26,2,3,1,4,5,0.426,1.468,I"m afraid of ghosts
-27,1,1,2,3,2,0.381,0.703,I like free stuff
-28,3,3,2,5,2,0.687,1.130,I like hip-hop music
-29,1,2,1,5,1,0.309,1.153,I don"t like big cities
-30,3,2,3,3,3,0.624,0.522,I tell a lot of jokes
-31,2,3,1,4,4,0.363,0.927,I like to play cards
-32,1,2,1,4,5,0.516,9.490,I drink a lot of coffee
-33,2,3,1,1,1,0.561,1.288,I never make my bed
-34,1,1,2,1,4,0.525,0.770,I carry a water bottle
-35,2,3,1,5,5,0.534,0.837,I like wearing hoodies
-36,3,3,2,3,3,0.579,0.950,I never get bored
-37,1,1,2,4,4,0.390,9.107,I always have chapstick
-38,1,2,1,5,1,0.678,1.333,I get sleepy after eating
-39,3,3,2,3,3,0.345,1.198,I want to learn to surf
-40,3,2,3,4,2,0.570,1.242,I don"t like tapioca
-41,2,1,3,2,4,0.606,8.500,I take a lot of naps
-42,2,3,1,4,2,0.498,1.422,I love scary movies
-43,3,3,2,3,3,0.669,0.613,I love pepperoni pizza
-44,1,2,1,4,1,0.660,1.040,I read a lot of comics
-45,2,1,3,4,5,0.651,8.860,I like foot massages
+1,1,1,2,1,4,0.534,1.310,I remember dreams
+2,3,3,2,2,3,0.561,1.040,I want super powers
+3,2,1,3,4,1,0.372,1.333,I like country music
+4,1,1,2,1,1,0.363,1.468,I like watching sunsets
+5,1,2,1,5,1,0.426,1.445,I am a good dancer
+6,2,1,3,1,4,0.678,0.590,I like smelling markers
+7,2,3,1,1,5,0.606,1.377,I hate being late
+8,3,2,3,5,5,0.633,1.153,I rarely get headaches
+9,3,2,3,4,1,0.642,8.725,I always stay up late
+10,3,3,2,2,1,0.435,0.657,I hate mosquito bites
+11,3,3,2,3,3,0.570,0.545,I hate being sick
+12,1,2,1,5,5,0.444,1.400,I like to play cards
+13,1,2,1,2,1,0.327,1.018,I like doing new things
+14,1,1,2,3,5,0.624,8.860,I wash my hands often
+15,3,2,3,1,4,0.318,0.770,I bite my fingernails
+16,1,1,2,1,3,0.489,1.107,I take a lot of naps
+17,2,1,3,3,2,0.696,0.995,I have a lucky charm
+18,3,2,3,1,1,0.588,1.422,I always have chapstick
+19,2,1,3,4,5,0.390,0.748,I like wearing hoodies
+20,3,3,2,3,4,0.417,1.288,I get good grades
+21,2,1,3,1,3,0.507,1.175,I can keep a secret
+22,2,1,3,4,4,0.660,0.837,I never break the rules
+23,3,3,2,4,5,0.552,0.613,I hate eating leftovers
+24,1,2,1,1,2,0.408,0.522,I never sit up straight
+25,2,1,3,5,5,0.399,8.815,I like cheeseburgers
+26,2,1,3,1,2,0.615,1.220,I hate tapioca
+27,1,1,2,4,1,0.543,0.635,I hate pulling weeds
+28,3,2,3,3,1,0.669,1.265,I like to chew my pencil
+29,1,1,2,4,5,0.687,0.680,I hate licking envelopes
+30,3,2,3,2,2,0.300,1.062,I like to read books
+31,2,3,1,1,1,0.336,1.490,I check Facebook often
+32,1,2,1,3,5,0.597,8.793,I floss every day
+33,2,3,1,5,5,0.516,0.950,I like to burp out loud
+34,1,1,2,5,2,0.579,1.242,I sing in the shower
+35,2,1,3,2,2,0.345,0.703,I make people laugh
+36,3,2,3,2,2,0.651,0.972,I make my own lunch
+37,1,1,2,4,4,0.309,8.883,I never make my bed
+38,1,2,1,5,4,0.462,1.130,I am afraid of ghosts
+39,3,3,2,2,2,0.354,0.568,I hate soft beds
+40,3,2,3,3,5,0.480,1.198,I like to watch cartoons
+41,2,3,1,3,5,0.498,9.355,I like hip-hop music
+42,2,3,1,3,5,0.453,0.927,I want super powers
+43,3,3,2,2,2,0.471,0.500,I drink a lot of coffee
+44,1,2,1,2,5,0.525,0.905,I love pepperoni pizza
+45,2,1,3,2,1,0.381,9.085,I hate earmuffs
