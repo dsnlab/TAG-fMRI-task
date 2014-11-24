@@ -105,10 +105,10 @@ DrawFormattedText(win, 'Sharing Task: next, you''ll see a brief statement','cent
 choiceResponse=1;
 drawYesNo(win,drs.stim,[0.5 0.5]);
 drawDisco(win,drs.stim,targets,statement,choiceResponse);
-DrawFormattedText(win, '(press left for yes)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+DrawFormattedText(win, '(press left for yes, right for no)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
 Screen('Flip',win);
+
 KbStrokeWait(inputDevice);
-drawDiscoFeedback(win,drs.stim,targets,statement,1,1);
 %%
  choiceResponse = 0;
   drawHands(win,drs.stim,targets,[0.5 0.5]);

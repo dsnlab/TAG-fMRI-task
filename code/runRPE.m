@@ -214,11 +214,14 @@ DrawFormattedText(win, 'Scan Complete! \n\nWe will check in momentarily...',...
 Screen('Flip', win);
 task.payout = sum(task.output.raw(:,7));
 
+if runNum ~=0
 fid=fopen(outputTextFile,'a');
-for tCount = 1:numTrials
-  fprintf(fid,'%u,%u,%4.3f,%u,%4.3f,%4.3f,%u,%4.2f,%4.3f\n',...
-  task.output.raw(tCount,1:9));
+  for tCount = 1:numTrials
+    fprintf(fid,'%u,%u,%4.3f,%u,%4.3f,%4.3f,%u,%4.2f,%4.3f\n',...
+    task.output.raw(tCount,1:9));
+  end
 end
+
 fclose(fid);
 task.calibration = calibrationOnset;
 task.triggerPulse = triggerPulseTime;

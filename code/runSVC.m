@@ -202,12 +202,15 @@ DrawFormattedText(win, 'Scan Complete! \n\nWe will check in momentarily...',...
     'center', 'center', drs.stim.white);
 Screen('Flip', win);
 
-fid=fopen(outputTextFile,'a');
-for tCount = 1:numTrials
-  fprintf(fid,'%u,%u,%4.3f,%4.3f,%u,%u,%u,%s\n',...
-  task.output.raw(tCount,1:7), task.input.trait{tCount});
+if runNum ~= 0
+  fid=fopen(outputTextFile,'a');
+  for tCount = 1:numTrials
+    fprintf(fid,'%u,%u,%4.3f,%4.3f,%u,%u,%u,%s\n',...
+    task.output.raw(tCount,1:7), task.input.trait{tCount});
+  end
+  fclose(fid);
 end
-fclose(fid);
+
 task.calibration = calibrationOnset;
 task.triggerPulse = triggerPulseTime;
 task.output.skips = traitSkips;
