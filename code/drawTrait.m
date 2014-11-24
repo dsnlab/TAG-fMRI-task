@@ -23,7 +23,7 @@ Screen('DrawTexture',win,iconTex,[],stim.box.prompt);
 % draw trait
 Screen('TextSize', win, 100);
 Screen('TextFont', win, 'Arial');
-Screen('TextStyle', win,1);
+Screen('TextStyle', win,0);
 DrawFormattedText( win, trait, 'center', 'center', stim.white );
 % draw yes
 yesMatrix = stim.box.green;

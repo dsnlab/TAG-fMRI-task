@@ -34,12 +34,8 @@ for dCount = 1:50
       svcDesign(dCount).(thisRun).sequence...
         (svcDesign(dCount).(thisRun).sequence~=0);
     ITIs = (Shuffle(0.47:0.027:1.74))'; % sum(ITIs) = 49.563; mean(ITIs) = 1.1014;
-    gammaSlice = ... % pad the ISIs w/ 3 events = gamma(4.7) -> the I*S*I
-      ([zeros(1,4),... % no long rests in the first 4 trials
-      (Shuffle([zeros(1,12),(gamma(4.7))])),...% you gotta
-      (Shuffle([zeros(1,13),(gamma(4.7))])),...% keep them
-      (Shuffle([zeros(1,12),(gamma(4.7))])),...% seperated
-      zeros(1,4)])'; % or the last 4              (hey!)
+    % pad the ISI by resting after trials 12, 24, 36
+    gammaSlice = ([zeros(1,11),22.4,zeros(1,11),22.4,zeros(1,11),22.4,zeros(1,12)])';
     svcDesign(dCount).(thisRun).jitter = ITIs+gammaSlice;
     svcJitter = ITIs+gammaSlice;
     condition = svcDesign(dCount).(thisRun).condition;
