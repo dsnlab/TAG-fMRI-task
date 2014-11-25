@@ -39,10 +39,18 @@ end
 % get thisRun from runNum
 thisRun = ['run',num2str(runNum)];
 % load subject's drs structure
-subFile = [subID,'_info.mat'];
-load(subFile);
-inputTextFile = [drs.input.path,filesep,subID,'_rpe_input.txt'];
-outputTextFile = [drs.output.path,filesep,subID,'_rpe_',thisRun,'_output.txt'];
+subInfoFile = [subID,'_info.mat'];
+load(subInfoFile);
+thisRun = ['run',num2str(runNum)];
+if strcmp(thisRun,'run0')
+  inputTextFile = [drs.input.path,filesep,'rpe_practice_input.txt'];
+  outputTextFile = [drs.output.path,filesep,'rpe_practice_output.txt'];  % get thisRun from runNum
+else
+  subOutputMat = [drs.output.path,filesep,subID,'_rpe_',thisRun,'.mat']
+  inputTextFile = [drs.input.path,filesep,subID,'_rpe_input.txt'];
+  outputTextFile = [drs.output.path,filesep,subID,'_rpe_',thisRun,'_output.txt'];
+end
+
 % load trialMatrix
 fid=fopen(inputTextFile);
 trialMatrix=textscan(fid,'%u%u%f%f%u\n','delimiter',',');
@@ -205,30 +213,33 @@ for tCount = 1:numTrials
   task.output.raw(tCount,7) = payout;
   task.output.raw(tCount,8) = task.probabilities(condition);
   task.output.raw(tCount,9) = (alienOffset - alienOnset);
-
+  save(subOutputMat,'task');
 end
-% End of experiment screen. We clear the screen once they have made their
-% response
-DrawFormattedText(win, 'Scan Complete! \n\nWe will check in momentarily...',...
+KbQueueRelease;
+
+% End of experiment screen. 
+task.payout = sum(task.output.raw(:,7));
+endText = ['Alien ID ',thisRun,' complete! \n\nYou earned ',num2str(task.payout),' gold coins.'];
+DrawFormattedText(win, endText,...
     'center', 'center', drs.stim.white);
 Screen('Flip', win);
-task.payout = sum(task.output.raw(:,7));
 
 if runNum ~=0
-fid=fopen(outputTextFile,'a');
+  fid=fopen(outputTextFile,'a');
   for tCount = 1:numTrials
     fprintf(fid,'%u,%u,%4.3f,%u,%4.3f,%4.3f,%u,%4.2f,%4.3f\n',...
     task.output.raw(tCount,1:9));
   end
+  fclose(fid);
+  task.calibration = calibrationOnset;
+  task.triggerPulse = triggerPulseTime;
+  task.output.skips = alienSkips;
+  task.output.multi = multiAlienResponse;
+  task.output.multiRT = multiAlienRT;
+  save(subOutputMat,'task');
 end
 
-fclose(fid);
-task.calibration = calibrationOnset;
-task.triggerPulse = triggerPulseTime;
-task.output.skips = alienSkips;
-task.output.multi = multiAlienResponse;
-task.output.multiRT = multiAlienRT;
-KbQueueRelease;
+KbStrokeWait(drs.keys.kb);
 
 Screen('CloseAll');
 

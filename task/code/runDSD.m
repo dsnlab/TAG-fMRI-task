@@ -33,13 +33,20 @@ elseif subNum < 100
 else
   subID = ['drs',num2str(subNum)];
 end
-% get thisRun from runNum
-thisRun = ['run',num2str(runNum)];
+
 % load subject's drs structure
-subFile = [subID,'_info.mat'];
-load(subFile);
-inputTextFile = [drs.input.path,filesep,subID,'_dsd_',thisRun,'_input.txt'];
-outputTextFile = [drs.output.path,filesep,subID,'_dsd_',thisRun,'_output.txt'];
+subInfoFile = [subID,'_info.mat'];
+load(subInfoFile);
+thisRun = ['run',num2str(runNum)];
+if strcmp(thisRun,'run0')
+  inputTextFile = [drs.input.path,filesep,'dsd_practice_input.txt'];
+  outputTextFile = [drs.output.path,filesep,'dsd_practice_output.txt'];  % get thisRun from runNum
+else
+  subOutputMat = [drs.output.path,filesep,subID,'_dsd_',thisRun,'.mat']
+  inputTextFile = [drs.input.path,filesep,subID,'_dsd_',thisRun,'_input.txt'];
+  outputTextFile = [drs.output.path,filesep,subID,'_dsd_',thisRun,'_output.txt'];
+end
+
 % load trialMatrix
 fid=fopen(inputTextFile);
 trialMatrix=textscan(fid,'%u%u%u%u%u%u%f%f%s\n','delimiter',',');
@@ -122,6 +129,7 @@ for tCount = 1:numTrials
   choiceResponse = 0;
   choiceRT = NaN;
   discoRT = NaN;
+  payout = NaN;
   chose = 0;
   disclosed = 0;
   multiChoiceResponse = [];
@@ -151,8 +159,10 @@ for tCount = 1:numTrials
 
         if find(firstPress(leftKeys))
             choiceResponse = 1;
+            payout = targets(3);
         elseif find(firstPress(rightKeys))
             choiceResponse = 2;
+            payout = targets(4);
         end
          chose=1;
         drawChoiceFeedback(win,drs.stim,targets,choiceResponse);
@@ -209,33 +219,45 @@ for tCount = 1:numTrials
   task.output.raw(tCount,10) = (discoOnset - loopStartTime);
   task.output.raw(tCount,11) = discoResponse;
   task.output.raw(tCount,12) = discoRT;
+  if payout == 5
+    payout = 0;
+  end
+  task.output.raw(tCount,13) = payout;
+  % save task structure every trial (much faster than writing to text file)
+  save(subOutputMat,'task');
 
 end
 % End of experiment screen. We clear the screen once they have made their
 % response
-DrawFormattedText(win, 'Scan Complete! \n\nWe will check in momentarily...',...
+payout = sum(task.output.raw(:,13));
+task.payout = payout;
+endText = ['Sharing task ',thisRun,' complete! \n\nYou earned ',num2str(payout), ' gold coins.'];
+DrawFormattedText(win, endText,...
     'center', 'center', drs.stim.white);
 Screen('Flip', win);
+KbQueueRelease;
 
+% write output text file for redundancy
 if runNum ~= 0
   fid=fopen(outputTextFile,'a');
   for tCount = 1:numTrials
-    fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%u,%4.3f,%4.3f,%u,%4.3f,%s\n',...
-    task.output.raw(tCount,1:12), task.input.statement{tCount});
+    fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%u,%4.3f,%4.3f,%u,%4.3f,%u,%s\n',...
+    task.output.raw(tCount,1:13), task.input.statement{tCount});
   end
   fclose(fid);
+  task.calibration = calibrationOnset;
+  task.triggerPulse = triggerPulseTime;
+  task.loopStart = loopStartTime;
+  task.output.choice.skips = choiceSkips;
+  task.output.choice.multi = multiChoiceResponse;
+  task.output.choice.multiRT = multiChoiceRT;
+  task.output.disco.skips = discoSkips;
+  task.output.disco.multi = multiDiscoResponse;
+  task.output.disco.multiRT = multiDiscoRT;
+  save(subOutputMat,'task');
 end
 
-task.calibration = calibrationOnset;
-task.triggerPulse = triggerPulseTime;
-task.output.choice.skips = choiceSkips;
-task.output.choice.multi = multiChoiceResponse;
-task.output.choice.multiRT = multiChoiceRT;
-task.output.disco.skips = discoSkips;
-task.output.disco.multi = multiDiscoResponse;
-task.output.disco.multiRT = multiDiscoRT;
-KbQueueRelease;
-KbStrokeWait(inputDevice);
+KbStrokeWait(keys.kb);
 Screen('CloseAll');
 
 return

@@ -35,10 +35,18 @@ end
 % get thisRun from runNum
 thisRun = ['run',num2str(runNum)];
 % load subject's drs structure
-subFile = [subID,'_info.mat'];
-load(subFile);
-inputTextFile = [drs.input.path,filesep,subID,'_svc_',thisRun,'_input.txt'];
-outputTextFile = [drs.output.path,filesep,subID,'_svc_',thisRun,'_output.txt'];
+subInfoFile = [subID,'_info.mat'];
+load(subInfoFile);
+thisRun = ['run',num2str(runNum)];
+if strcmp(thisRun,'run0')
+  inputTextFile = [drs.input.path,filesep,'svc_practice_input.txt'];
+  outputTextFile = [drs.output.path,filesep,'svc_practice_output.txt'];  % get thisRun from runNum
+else
+  subOutputMat = [drs.output.path,filesep,subID,'_svc_',thisRun,'.mat']
+  inputTextFile = [drs.input.path,filesep,subID,'_svc_',thisRun,'_input.txt'];
+  outputTextFile = [drs.output.path,filesep,subID,'_svc_',thisRun,'_output.txt'];
+end
+
 % load trialMatrix
 fid=fopen(inputTextFile);
 trialMatrix=textscan(fid,'%u%u%f%u%u%s\n','delimiter',',');
@@ -194,8 +202,10 @@ for tCount = 1:numTrials
   task.output.raw(tCount,5) = traitResponse;
   task.output.raw(tCount,6) = trialMatrix{4}(tCount);
   task.output.raw(tCount,7) = trialMatrix{5}(tCount);
+  save(subOutputMat,'task');
 
 end
+KbQueueRelease;
 % End of experiment screen. We clear the screen once they have made their
 % response
 DrawFormattedText(win, 'Scan Complete! \n\nWe will check in momentarily...',...
@@ -209,16 +219,15 @@ if runNum ~= 0
     task.output.raw(tCount,1:7), task.input.trait{tCount});
   end
   fclose(fid);
+  task.calibration = calibrationOnset;
+  task.triggerPulse = triggerPulseTime;
+  task.output.skips = traitSkips;
+  task.output.multi.response = multiTraitResponse;
+  task.output.multi.RT = multiTraitRT;
+  save(subOutputMat,'task');
 end
 
-task.calibration = calibrationOnset;
-task.triggerPulse = triggerPulseTime;
-task.output.skips = traitSkips;
-task.output.multi.response = multiTraitResponse;
-task.output.multi.RT = multiTraitRT;
-
-KbQueueRelease;
-KbStrokeWait(inputDevice);
+KbStrokeWait(drs.keys.kb);
 Screen('CloseAll');
 
 return
