@@ -20,14 +20,11 @@ prompt = {...
 'friend email: ',...
 'parent: ',...
 'parent email: ',...
-'gender: subGender = ',...
-'birthday: DOB = ',...
-'handedness: hand = ',...
 'experimentor: exptID = '};
 dTitle = 'define subject specific variables';
 nLines = 1;
 % defaults
-def = { '999' , 'Subastian' , 'Ricky' , 'ricky@gmail.com', 'Mom' , 'mom@comcast.net', 'M' , '04-Jul-1994' , 'R' , 'wem3' };
+def = { '999' , 'Subastian' , 'Ricky' , 'ricky@gmail.com', 'Mom' , 'mom@comcast.net', 'wem3' };
 manualInput = inputdlg(prompt,dTitle,nLines,def);
 % the order is funky here because we want the structure output 
 % to be readily readable in summary form (so this, err, isn't)
@@ -41,9 +38,6 @@ stimFile = [studyDir,filesep,'task',filesep,'DRSstim.mat'];
 load(stimFile);
 
 demo.name = manualInput{2};
-demo.gender = manualInput{6};
-demo.DOB = manualInput{8};
-demo.hand = manualInput{9};
 demo.friendEmail = manualInput{4};
 demo.parentEmail = manualInput{6};
 demo.exptID = manualInput{10};
