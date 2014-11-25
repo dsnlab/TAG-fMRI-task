@@ -82,6 +82,12 @@ Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 drs.keys = initKeys;
 inputDevice = drs.keys.deviceNum;
 
+% to inform subject about upcoming task
+prefaceText = ['Coming up... ','Alien Identification: ',thisRun, '\n\n(left for ''LUX'', right for ''RAZ'') '];
+DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.purple);
+[~,programOnset] = Screen('Flip',win);
+KbStrokeWait(drs.keys.kb);
+
 %% present during multiband calibration (time shortened for debug)
 % remind em' not to squirm!
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...

@@ -41,7 +41,7 @@ thisRun = ['run',num2str(runNum)];
 if strcmp(thisRun,'run0')
   inputTextFile = [drs.input.path,filesep,'svc_practice_input.txt'];
 else
-  subOutputMat = [drs.output.path,filesep,subID,'_svc_',thisRun,'.mat']
+  subOutputMat = [drs.output.path,filesep,subID,'_svc_',thisRun,'.mat'];
   inputTextFile = [drs.input.path,filesep,subID,'_svc_',thisRun,'_input.txt'];
   outputTextFile = [drs.output.path,filesep,subID,'_svc_',thisRun,'_output.txt'];
 end
@@ -77,25 +77,32 @@ Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 drs.keys = initKeys;
 inputDevice = drs.keys.deviceNum;
 
+% to inform subject about upcoming task
+prefaceText = ['Coming up... ','Change Task: ',thisRun, '\n\n(left for ''yes'', right for ''no'') '];
+DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.orange);
+[~,programOnset] = Screen('Flip',win);
+KbStrokeWait(drs.keys.kb);
+
 %% present during multiband calibration (time shortened for debug)
 % remind em' not to squirm!
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
   'center', 'center', drs.stim.white);
 [~,calibrationOnset] = Screen('Flip', win);
-WaitSecs(.1);
-DrawFormattedText(win, 'Self or Change? Experiment:\n\n Starting in... 3',...
+WaitSecs(18);
+DrawFormattedText(win, 'Change Task:\n\n Starting in... 5',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
-WaitSecs(.1);
-DrawFormattedText(win, 'Self or Change? Experiment:\n\n Starting in... 2',...
+WaitSecs(1);
+DrawFormattedText(win, 'Change Task:\n\n Starting in... 4',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
-DrawFormattedText(win, 'Self or Change? Experiment:\n\n Starting in... 1',...
+DrawFormattedText(win, 'Change Task\n\n Starting in... 3',...
   'center', 'center', drs.stim.white);
-WaitSecs(.1);
+WaitSecs(1);
 Screen('Flip', win);
-DrawFormattedText(win, 'Self or Change? Experiment:\n\n Get Ready!',...
+DrawFormattedText(win, 'Change Task:\n\n Get Ready!',...
   'center', 'center', drs.stim.white);
+WaitSecs(1);
 Screen('Flip', win);
 
 % trigger pulse code (disabled for debug)
