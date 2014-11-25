@@ -17,6 +17,6 @@ Make sure to add the folders in `~/task` to the MATLAB search path. To wit, you 
 addpath(genpath('~/task'));
 ```
 ===
-DRS
-author: wem3
-edited: 14-11-25
+DRS  
+author: wem3  
+edited: 14-11-25  
