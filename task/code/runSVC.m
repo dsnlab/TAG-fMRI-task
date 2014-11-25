@@ -81,7 +81,7 @@ inputDevice = drs.keys.deviceNum;
 prefaceText = ['Coming up... ','Change Task: ',thisRun, '\n\n(left for ''yes'', right for ''no'') '];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.orange);
 [~,programOnset] = Screen('Flip',win);
-KbStrokeWait(drs.keys.kb);
+KbStrokeWait(inputDevice);
 
 %% present during multiband calibration (time shortened for debug)
 % remind em' not to squirm!
@@ -233,7 +233,7 @@ if runNum ~= 0
   save(subOutputMat,'task');
 end
 
-KbStrokeWait(drs.keys.kb);
+KbStrokeWait(inputDevice);
 Screen('CloseAll');
 
 return

@@ -86,7 +86,7 @@ inputDevice = drs.keys.deviceNum;
 prefaceText = ['Coming up... ','Alien Identification: ',thisRun, '\n\n(left for ''LUX'', right for ''RAZ'') '];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.purple);
 [~,programOnset] = Screen('Flip',win);
-KbStrokeWait(drs.keys.kb);
+KbStrokeWait(inputDevice);
 
 %% present during multiband calibration (time shortened for debug)
 % remind em' not to squirm!
@@ -223,7 +223,7 @@ end
 KbQueueRelease;
 
 % End of experiment screen. 
-task.payout = sum(task.output.raw(:,7));
+task.payout = nansum(task.output.raw(:,7));
 endText = ['Alien ID ',thisRun,' complete! \n\nYou earned ',num2str(task.payout),' gold coins.'];
 DrawFormattedText(win, endText,...
     'center', 'center', drs.stim.white);
@@ -244,7 +244,7 @@ if runNum ~=0
   save(subOutputMat,'task');
 end
 
-KbStrokeWait(drs.keys.kb);
+KbStrokeWait(inputDevice);
 
 Screen('CloseAll');
 
