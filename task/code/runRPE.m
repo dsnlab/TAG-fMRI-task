@@ -230,7 +230,7 @@ end
 KbQueueRelease;
 
 % End of experiment screen. 
-task.payout = sum(task.output.raw(:,7));
+task.payout = nansum(task.output.raw(:,7));
 endText = ['Alien ID ',thisRun,' complete! \n\nYou earned ',num2str(task.payout),' gold coins.'];
 DrawFormattedText(win, endText,...
     'center', 'center', drs.stim.white);
