@@ -40,6 +40,7 @@ load(subInfoFile);
 thisRun = ['run',num2str(runNum)];
 if strcmp(thisRun,'run0')
   inputTextFile = [drs.input.path,filesep,'svc_practice_input.txt'];
+  subOutputMat = [drs.output.path,filesep,subID,'_rpe_',thisRun,'.mat'];366
 else
   subOutputMat = [drs.output.path,filesep,subID,'_svc_',thisRun,'.mat'];
   inputTextFile = [drs.input.path,filesep,subID,'_svc_',thisRun,'_input.txt'];
@@ -81,14 +82,20 @@ inputDevice = drs.keys.deviceNum;
 prefaceText = ['Coming up... ','Change Task: ',thisRun, '\n\n(left for ''yes'', right for ''no'') '];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.orange);
 [~,programOnset] = Screen('Flip',win);
-KbStrokeWait(drs.keys.kb);
+KbStrokeWait(inputDevice);
 
 %% present during multiband calibration (time shortened for debug)
+% skip the long wait for training session
+if runNum == 0
+    calibrationTime = 1;
+else
+    calibrationTime = 17;
+end
 % remind em' not to squirm!
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
   'center', 'center', drs.stim.white);
 [~,calibrationOnset] = Screen('Flip', win);
-WaitSecs(18);
+WaitSecs(calibrationTime);
 DrawFormattedText(win, 'Change Task:\n\n Starting in... 5',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
@@ -233,7 +240,7 @@ if runNum ~= 0
   save(subOutputMat,'task');
 end
 
-KbStrokeWait(drs.keys.kb);
+KbStrokeWait(inputDevice);
 Screen('CloseAll');
 
 return

@@ -40,7 +40,7 @@ load(stimFile);
 demo.name = manualInput{2};
 demo.friendEmail = manualInput{4};
 demo.parentEmail = manualInput{6};
-demo.exptID = manualInput{10};
+demo.exptID = manualInput{7};
 demo.exptDate = datestr(now);
 drs.friend = manualInput{3};
 drs.parent = manualInput{5};

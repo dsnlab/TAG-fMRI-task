@@ -40,6 +40,7 @@ load(subInfoFile);
 thisRun = ['run',num2str(runNum)];
 if strcmp(thisRun,'run0')
   inputTextFile = [drs.input.path,filesep,'dsd_practice_input.txt'];
+  subOutputMat = [drs.output.path,filesep,subID,'_rpe_',thisRun,'.mat'];
 else
   subOutputMat = [drs.output.path,filesep,subID,'_dsd_',thisRun,'.mat']
   inputTextFile = [drs.input.path,filesep,subID,'_dsd_',thisRun,'_input.txt'];
@@ -84,22 +85,28 @@ inputDevice = drs.keys.deviceNum;
 prefaceText = ['Coming up... ','Sharing Task: ',thisRun, '\n\ndecision: (left for left option, right for right option) \n\nstatement: (left for ''yes'', right for ''no'') '];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.sky);
 [~,programOnset] = Screen('Flip',win);
-KbStrokeWait(drs.keys.kb);
+KbStrokeWait(inputDevice);
 
 %% present during multiband calibration (time shortened for debug)
+% skip the long wait for training session
+if runNum == 0
+    calibrationTime = 1;
+else
+    calibrationTime = 17;
+end
 % remind em' not to squirm!
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
   'center', 'center', drs.stim.white);
 [~,calibrationOnset] = Screen('Flip', win);
+WaitSecs(calibrationTime);
+DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 5',...
+  'center', 'center', drs.stim.white);
+Screen('Flip', win);
 WaitSecs(1);
+DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 4',...
+  'center', 'center', drs.stim.white);
+Screen('Flip', win);
 DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 3',...
-  'center', 'center', drs.stim.white);
-Screen('Flip', win);
-WaitSecs(1);
-DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 2',...
-  'center', 'center', drs.stim.white);
-Screen('Flip', win);
-DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 1',...
   'center', 'center', drs.stim.white);
 WaitSecs(1);
 Screen('Flip', win);
@@ -107,11 +114,11 @@ DrawFormattedText(win, 'Sharing Experiment:\n\n Get Ready!',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
 
-% trigger pulse code (disabled for debug)
-%KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
-%disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
-%triggerPulseTime = GetSecs;
-%disp('trigger pulse received, starting experiment');
+% trigger pulse code 
+KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
+disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
+triggerPulseTime = GetSecs;
+disp('trigger pulse received, starting experiment');
 Screen('Flip', win);
 
 % define keys to listen for, create KbQueue (coins & text drawn while it warms up)
@@ -262,7 +269,7 @@ if runNum ~= 0
   save(subOutputMat,'task');
 end
 
-KbStrokeWait(keys.kb);
+KbStrokeWait(inputDevice);
 Screen('CloseAll');
 
 return
