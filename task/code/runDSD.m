@@ -98,11 +98,7 @@ end
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
   'center', 'center', drs.stim.white);
 [~,calibrationOnset] = Screen('Flip', win);
-<<<<<<< HEAD
 WaitSecs(calibrationTime);
-=======
-WaitSecs(17);
->>>>>>> 87b588e9b0bfd99e3c5398aac98825f0e5542c9b
 DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 5',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
@@ -120,11 +116,8 @@ DrawFormattedText(win, 'Sharing Experiment:\n\n Get Ready!',...
 WaitSecs(1);
 Screen('Flip', win);
 
-<<<<<<< HEAD
+
 % trigger pulse code 
-=======
-% trigger pulse code (disabled for debug)
->>>>>>> 87b588e9b0bfd99e3c5398aac98825f0e5542c9b
 KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
 disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
 triggerPulseTime = GetSecs;

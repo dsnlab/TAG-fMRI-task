@@ -1,4 +1,4 @@
-function [task] = runRPE(subNum,runNum)
+ function [task] = runRPE(subNum,runNum)
 % % RUNRPE.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % usage: [ task ] = runRPE( subNum, runNum )
 %
