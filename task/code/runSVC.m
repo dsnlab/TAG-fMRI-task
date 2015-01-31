@@ -96,25 +96,25 @@ DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
   'center', 'center', drs.stim.white);
 [~,calibrationOnset] = Screen('Flip', win);
 WaitSecs(calibrationTime);
-DrawFormattedText(win, 'Change Task:\n\n Starting in... 5',...
+DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 5',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
 WaitSecs(1);
-DrawFormattedText(win, 'Change Task:\n\n Starting in... 4',...
+DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 4',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
-DrawFormattedText(win, 'Change Task\n\n Starting in... 3',...
+DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 3',...
   'center', 'center', drs.stim.white);
 WaitSecs(1);
 Screen('Flip', win);
-DrawFormattedText(win, 'Change Task:\n\n Get Ready!',...
+DrawFormattedText(win, 'Self or Change Task\n\n Get Ready!',...
   'center', 'center', drs.stim.white);
 WaitSecs(1);
 Screen('Flip', win);
 
 % trigger pulse code (disabled for debug)
-%KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
-%disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
+KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
+disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
 triggerPulseTime = GetSecs;
 disp('trigger pulse received, starting experiment');
 Screen('Flip', win);

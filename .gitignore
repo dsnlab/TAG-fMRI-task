@@ -1,0 +1,5 @@
+# Ignore task output
+task/output/
+
+# Ignore subInfoMats
+task/input/drs*_info.mat 
