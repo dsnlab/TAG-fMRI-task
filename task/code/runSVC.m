@@ -40,7 +40,7 @@ load(subInfoFile);
 thisRun = ['run',num2str(runNum)];
 if strcmp(thisRun,'run0')
   inputTextFile = [drs.input.path,filesep,'svc_practice_input.txt'];
-  subOutputMat = [drs.output.path,filesep,subID,'_rpe_',thisRun,'.mat'];366
+  subOutputMat = [drs.output.path,filesep,subID,'_rpe_',thisRun,'.mat'];
 else
   subOutputMat = [drs.output.path,filesep,subID,'_svc_',thisRun,'.mat'];
   inputTextFile = [drs.input.path,filesep,subID,'_svc_',thisRun,'_input.txt'];
