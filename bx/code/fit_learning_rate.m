@@ -23,10 +23,6 @@ for sCount = 1:length(subject_ids)
     fb = drs(sCount).combo.rpe.fb;
     fb(fb==1)=0;
     fb(fb==2)=1;
-
-    %fb_onset = vertcat( drs(sCount).rpe(1).fb_onset(drs(sCount).rpe(1).clean_trials), drs(sCount).rpe(2).fb_onset(drs(sCount).rpe(2).clean_trials));
-    %trial_dur = vertcat( drs(sCount).rpe(1).trial_dur(drs(sCount).rpe(1).clean_trials), drs(sCount).rpe(2).trial_dur(drs(sCount).rpe(2).clean_trials));
-
     num_trials = length(sess);
 
     % Define variables for sub_ev_sum and sub_pe to make sure right length
@@ -40,13 +36,11 @@ for sCount = 1:length(subject_ids)
     sub_pe_pred=-99*ones(length(subject_ids),num_trials);
 
     % do a grid search to find best learning rate
-    % learning_rate = 0.0005:0.00025:0.005;
-    % Why is the above comment *here*?
-    ssd_figure = figure(2);
+    ssd_figure = figure(1);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    learning_rate = (0.0005:0.00025:.6);
+    learning_rate = (0.02:.02:.6);
     ssd = zeros(1, length(learning_rate));
     ssd_var = zeros(1, length(learning_rate));
 
@@ -65,7 +59,7 @@ for sCount = 1:length(subject_ids)
 
     best_ssd = max(find(ssd <= (min(ssd) * 1.1)));
     
-%     figure(1 + sCount)
+    figure(1 + sCount)
     figure(ssd_figure)
     hold on
     plot(learning_rate, ssd);
@@ -176,40 +170,40 @@ for sCount = 1:length(subject_ids)
         
         % Create onset file names
         % Stim onsets
-        stim_hplr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_stim_hplr_onsets.txt',subject_id ,rCount);
-        stim_hphr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_stim_hphr_onsets.txt',subject_id ,rCount);
-        stim_rplr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_stim_rplr_onsets.txt',subject_id ,rCount);
-        stim_rphr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_stim_rphr_onsets.txt',subject_id ,rCount);
-        stim_hplr_ev_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_stim_hplr_ev_onsets.txt',subject_id ,rCount);
-        stim_hphr_ev_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_stim_hphr_ev_onsets.txt',subject_id ,rCount);
-        stim_rplr_ev_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_stim_rplr_ev_onsets.txt',subject_id ,rCount);
-        stim_rphr_ev_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_stim_rphr_ev_onsets.txt',subject_id ,rCount);
+        stim_hplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_hplr_onsets.txt',subject_id ,rCount);
+        stim_hphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_hphr_onsets.txt',subject_id ,rCount);
+        stim_rplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_rplr_onsets.txt',subject_id ,rCount);
+        stim_rphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_rphr_onsets.txt',subject_id ,rCount);
+        stim_hplr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_hplr_ev_onsets.txt',subject_id ,rCount);
+        stim_hphr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_hphr_ev_onsets.txt',subject_id ,rCount);
+        stim_rplr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_rplr_ev_onsets.txt',subject_id ,rCount);
+        stim_rphr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_rphr_ev_onsets.txt',subject_id ,rCount);
         % Choice onsets
-        choice_hplr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_choice_hplr_onsets.txt',subject_id ,rCount);
-        choice_hphr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_choice_hphr_onsets.txt',subject_id ,rCount);
-        choice_rplr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_choice_rplr_onsets.txt',subject_id ,rCount);
-        choice_rphr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_choice_rphr_onsets.txt',subject_id ,rCount);
-        choice_hplr_ev_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_choice_hplr_ev_onsets.txt',subject_id ,rCount);
-        choice_hphr_ev_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_choice_hphr_ev_onsets.txt',subject_id ,rCount);
-        choice_rplr_ev_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_choice_rplr_ev_onsets.txt',subject_id ,rCount);
-        choice_rphr_ev_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_choice_rphr_ev_onsets.txt',subject_id ,rCount);
+        choice_hplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_hplr_onsets.txt',subject_id ,rCount);
+        choice_hphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_hphr_onsets.txt',subject_id ,rCount);
+        choice_rplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_rplr_onsets.txt',subject_id ,rCount);
+        choice_rphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_rphr_onsets.txt',subject_id ,rCount);
+        choice_hplr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_hplr_ev_onsets.txt',subject_id ,rCount);
+        choice_hphr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_hphr_ev_onsets.txt',subject_id ,rCount);
+        choice_rplr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_rplr_ev_onsets.txt',subject_id ,rCount);
+        choice_rphr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_rphr_ev_onsets.txt',subject_id ,rCount);
         % FB onsets
-        fb_pos_hplr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_pos_hplr_onsets.txt',subject_id ,rCount);
-        fb_pos_hphr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_pos_hphr_onsets.txt',subject_id ,rCount);
-        fb_pos_rplr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_pos_rplr_onsets.txt',subject_id ,rCount);
-        fb_pos_rphr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_pos_rphr_onsets.txt',subject_id ,rCount);
-        fb_neg_hplr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_neg_hplr_onsets.txt',subject_id ,rCount);
-        fb_neg_hphr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_neg_hphr_onsets.txt',subject_id ,rCount);
-        fb_neg_rplr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_neg_rplr_onsets.txt',subject_id ,rCount);
-        fb_neg_rphr_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_neg_rphr_onsets.txt',subject_id ,rCount);
-        fb_pos_hplr_pe_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_pos_hplr_pe_onsets.txt',subject_id ,rCount);
-        fb_pos_hphr_pe_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_pos_hphr_pe_onsets.txt',subject_id ,rCount);
-        fb_pos_rplr_pe_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_pos_rplr_pe_onsets.txt',subject_id ,rCount);
-        fb_pos_rphr_pe_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_pos_rphr_pe_onsets.txt',subject_id ,rCount);
-        fb_neg_hplr_pe_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_neg_hplr_pe_onsets.txt',subject_id ,rCount);
-        fb_neg_hphr_pe_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_neg_hphr_pe_onsets.txt',subject_id ,rCount);
-        fb_neg_rplr_pe_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_neg_rplr_pe_onsets.txt',subject_id ,rCount);
-        fb_neg_rphr_pe_ons_name = sprintf('/Volumes/crunch/DRS/matrix/icy/rpe_onset_files/%s_run%d_fb_neg_rphr_pe_onsets.txt',subject_id ,rCount);
+        fb_pos_hplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_hplr_onsets.txt',subject_id ,rCount);
+        fb_pos_hphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_hphr_onsets.txt',subject_id ,rCount);
+        fb_pos_rplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_rplr_onsets.txt',subject_id ,rCount);
+        fb_pos_rphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_rphr_onsets.txt',subject_id ,rCount);
+        fb_neg_hplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_hplr_onsets.txt',subject_id ,rCount);
+        fb_neg_hphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_hphr_onsets.txt',subject_id ,rCount);
+        fb_neg_rplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_rplr_onsets.txt',subject_id ,rCount);
+        fb_neg_rphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_rphr_onsets.txt',subject_id ,rCount);
+        fb_pos_hplr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_hplr_pe_onsets.txt',subject_id ,rCount);
+        fb_pos_hphr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_hphr_pe_onsets.txt',subject_id ,rCount);
+        fb_pos_rplr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_rplr_pe_onsets.txt',subject_id ,rCount);
+        fb_pos_rphr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_rphr_pe_onsets.txt',subject_id ,rCount);
+        fb_neg_hplr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_hplr_pe_onsets.txt',subject_id ,rCount);
+        fb_neg_hphr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_hphr_pe_onsets.txt',subject_id ,rCount);
+        fb_neg_rplr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_rplr_pe_onsets.txt',subject_id ,rCount);
+        fb_neg_rphr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_rphr_pe_onsets.txt',subject_id ,rCount);
         
         % Open textfiles to write onset information to them
         % Stim onsets
