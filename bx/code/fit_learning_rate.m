@@ -87,10 +87,10 @@ for sCount = 1:length(subject_ids)
         % Rand (3,4)
         % Pred (1,2,5,6)
         
-    sub_ev_sum_rand(sCount,1:length(find(stim==3 | stim==4)))=ev_sum(find(stim==3 | stim==4));
-    sub_ev_sum_pred(sCount,1:length(find(stim<3 | stim>4)))=ev_sum(find(stim<3 | stim>4));
-    sub_pe_rand(sCount,1:length(find(stim==3 | stim==4)))=pe(find(stim==3 | stim==4));
-    sub_pe_pred(sCount,1:length(find(stim<3 | stim>4)))=pe(find(stim<3 | stim>4));
+    sub_ev_sum_rand(sCount,1:length(find(stim==3 | stim==4))) = ev_sum(find(stim==3 | stim==4));
+    sub_ev_sum_pred(sCount,1:length(find(stim<3 | stim>4))) = ev_sum(find(stim<3 | stim>4));
+    sub_pe_rand(sCount,1:length(find(stim==3 | stim==4))) = pe(find(stim==3 | stim==4));
+    sub_pe_pred(sCount,1:length(find(stim<3 | stim>4))) = pe(find(stim<3 | stim>4));
    
     % pe = pe.^2;
     % center vector--demean vector to use as a regressor! 
@@ -441,9 +441,12 @@ for sCount = 1:length(subject_ids)
         fclose(fid_fb_neg_hphr_pe);
         fclose(fid_fb_neg_rplr_pe);
         fclose(fid_fb_neg_rphr_pe);
-        
+    
+    % nest task into rpe structure    
+    rpe(rCount) = task;
     end
-
+    
+    clear task;
 end
 
 %Print list of subject's learning rates to a textfile
