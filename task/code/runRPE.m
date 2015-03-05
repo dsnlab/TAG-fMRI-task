@@ -87,7 +87,7 @@ inputDevice = drs.keys.deviceNum;
 prefaceText = ['Coming up... ','Alien Identification: ',thisRun, '\n\n(left for ''LUX'', right for ''RAZ'') '];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.purple);
 [~,programOnset] = Screen('Flip',win);
-KbStrokeWait(inputDevice);
+%KbStrokeWait(inputDevice);
 
 %% present during multiband calibration
 % skip the long wait for training session
@@ -117,7 +117,7 @@ DrawFormattedText(win, 'Alien Identification:\n\n Get Ready!',...
 Screen('Flip', win);
 
 % trigger pulse code
-KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
+%KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
 disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
 triggerPulseTime = GetSecs;
 disp('trigger pulse received, starting experiment');

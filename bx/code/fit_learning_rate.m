@@ -131,119 +131,10 @@ for sCount = 1:length(subject_ids)
                 ev_diff_temp=ev_diff((72-noresp_run1+1):length(ev_diff)); % note, not using this for now!
                 pe_temp=pe((72-noresp_run1+1):length(pe));
             end;        
-     
-        % NOTES ABOUT THE ONSET FILES!!!!!
-        % Make different onset files for each of the stimulus types and
-        % pos/neg prederr
-        % FOR ONSET FILES
-        % col 1: onset times
-        % col 2: length of time to look at each trial
-        % col 3: weighting of factor (1 or weighted)
-
-        % Onset Files to Make:
-        % STIMULUS ONSET (4 files):--col 1 = stim_onset; col 2 = length of time stim up before resp (rt); col 3 = 1
-        %     High Prob-Low Rew (1,5)
-        %     High Prob-High Rew (2,6)
-        %     Rand Prob-Low Rew (3)
-        %     Rand Prob-High Rew (4)
-        % STIMULUS ONSET PARAMETRIC (4 files):--col 1 = stim_onset; col 2 = length of time stim up before resp (rt); col 3 = ev_sum
-        %     High Prob-Low Rew (1,5)
-        %     High Prob-High Rew (2,6)
-        %     Rand Prob-Low Rew (3)
-        %     Rand Prob-High Rew (4)
-        % CHOICE ONSET (4 files):--col 1 = stim_onset+rt; col 2 = length of time b/w response and fb (fb_onset-stim_onset-rt); col 3 = 1
-        %     High Prob-Low Rew (1,5)
-        %     High Prob-High Rew (2,6)
-        %     Rand Prob-Low Rew (3)
-        %     Rand Prob-High Rew (4)
-        % CHOICE ONSET PARAMETRIC (4 files):--col 1 = stim_onset+rt; col 2 = length of time b/w response and fb (fb_onset-stim_onset-rt); col 3 = ev_choice
-        %     High Prob-Low Rew (1,5)
-        %     High Prob-High Rew (2,6)
-        %     Rand Prob-Low Rew (3)
-        %     Rand Prob-High Rew (4)
-        % PREDERR ONSET (8 files):--col 1 = fb_onset; col 2 = 1.25 (constant); col 3 = 1
-        %     Positive PE for each of 4 stim groups
-        %     Negative PE for each of 4 stim groups
-        % PREDERR ONSET PARAMETRIC (8 files):--col 1 = fb_onset; col 2 = 1.25 (constant); col 3 = pe
-        %     Positive PE for each of 4 stim groups
-        %     Negative PE for each of 4 stim groups
-        
-        % Create onset file names
-        % Stim onsets
-        stim_hplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_hplr_onsets.txt',subject_id ,rCount);
-        stim_hphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_hphr_onsets.txt',subject_id ,rCount);
-        stim_rplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_rplr_onsets.txt',subject_id ,rCount);
-        stim_rphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_rphr_onsets.txt',subject_id ,rCount);
-        stim_hplr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_hplr_ev_onsets.txt',subject_id ,rCount);
-        stim_hphr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_hphr_ev_onsets.txt',subject_id ,rCount);
-        stim_rplr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_rplr_ev_onsets.txt',subject_id ,rCount);
-        stim_rphr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_stim_rphr_ev_onsets.txt',subject_id ,rCount);
-        % Choice onsets
-        choice_hplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_hplr_onsets.txt',subject_id ,rCount);
-        choice_hphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_hphr_onsets.txt',subject_id ,rCount);
-        choice_rplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_rplr_onsets.txt',subject_id ,rCount);
-        choice_rphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_rphr_onsets.txt',subject_id ,rCount);
-        choice_hplr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_hplr_ev_onsets.txt',subject_id ,rCount);
-        choice_hphr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_hphr_ev_onsets.txt',subject_id ,rCount);
-        choice_rplr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_rplr_ev_onsets.txt',subject_id ,rCount);
-        choice_rphr_ev_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_choice_rphr_ev_onsets.txt',subject_id ,rCount);
-        % FB onsets
-        fb_pos_hplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_hplr_onsets.txt',subject_id ,rCount);
-        fb_pos_hphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_hphr_onsets.txt',subject_id ,rCount);
-        fb_pos_rplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_rplr_onsets.txt',subject_id ,rCount);
-        fb_pos_rphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_rphr_onsets.txt',subject_id ,rCount);
-        fb_neg_hplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_hplr_onsets.txt',subject_id ,rCount);
-        fb_neg_hphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_hphr_onsets.txt',subject_id ,rCount);
-        fb_neg_rplr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_rplr_onsets.txt',subject_id ,rCount);
-        fb_neg_rphr_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_rphr_onsets.txt',subject_id ,rCount);
-        fb_pos_hplr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_hplr_pe_onsets.txt',subject_id ,rCount);
-        fb_pos_hphr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_hphr_pe_onsets.txt',subject_id ,rCount);
-        fb_pos_rplr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_rplr_pe_onsets.txt',subject_id ,rCount);
-        fb_pos_rphr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_pos_rphr_pe_onsets.txt',subject_id ,rCount);
-        fb_neg_hplr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_hplr_pe_onsets.txt',subject_id ,rCount);
-        fb_neg_hphr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_hphr_pe_onsets.txt',subject_id ,rCount);
-        fb_neg_rplr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_rplr_pe_onsets.txt',subject_id ,rCount);
-        fb_neg_rphr_pe_ons_name = sprintf('/Users/wem3/Desktop/DRS/bx/onset_files/%s_run%d_fb_neg_rphr_pe_onsets.txt',subject_id ,rCount);
-        
-        % Open textfiles to write onset information to them
-        % Stim onsets
-        fid_stim_hplr = fopen(stim_hplr_ons_name, 'w');
-        fid_stim_hphr = fopen(stim_hphr_ons_name, 'w');
-        fid_stim_rplr = fopen(stim_rplr_ons_name, 'w');
-        fid_stim_rphr = fopen(stim_rphr_ons_name, 'w');
-        fid_stim_hplr_ev = fopen(stim_hplr_ev_ons_name, 'w');
-        fid_stim_hphr_ev = fopen(stim_hphr_ev_ons_name, 'w');
-        fid_stim_rplr_ev = fopen(stim_rplr_ev_ons_name, 'w');
-        fid_stim_rphr_ev = fopen(stim_rphr_ev_ons_name, 'w');
-        % Choice onsets
-        fid_choice_hplr = fopen(choice_hplr_ons_name, 'w');
-        fid_choice_hphr = fopen(choice_hphr_ons_name, 'w');
-        fid_choice_rplr = fopen(choice_rplr_ons_name, 'w');
-        fid_choice_rphr = fopen(choice_rphr_ons_name, 'w');
-        fid_choice_hplr_ev = fopen(choice_hplr_ev_ons_name, 'w');
-        fid_choice_hphr_ev = fopen(choice_hphr_ev_ons_name, 'w');
-        fid_choice_rplr_ev = fopen(choice_rplr_ev_ons_name, 'w');
-        fid_choice_rphr_ev = fopen(choice_rphr_ev_ons_name, 'w');
-        % FB onsets
-        fid_fb_pos_hplr = fopen(fb_pos_hplr_ons_name, 'w');
-        fid_fb_pos_hphr = fopen(fb_pos_hphr_ons_name, 'w');
-        fid_fb_pos_rplr = fopen(fb_pos_rplr_ons_name, 'w');
-        fid_fb_pos_rphr = fopen(fb_pos_rphr_ons_name, 'w');
-        fid_fb_neg_hplr = fopen(fb_neg_hplr_ons_name, 'w');
-        fid_fb_neg_hphr = fopen(fb_neg_hphr_ons_name, 'w');
-        fid_fb_neg_rplr = fopen(fb_neg_rplr_ons_name, 'w');
-        fid_fb_neg_rphr = fopen(fb_neg_rphr_ons_name, 'w');
-        fid_fb_pos_hplr_pe = fopen(fb_pos_hplr_pe_ons_name, 'w');
-        fid_fb_pos_hphr_pe = fopen(fb_pos_hphr_pe_ons_name, 'w');
-        fid_fb_pos_rplr_pe = fopen(fb_pos_rplr_pe_ons_name, 'w');
-        fid_fb_pos_rphr_pe = fopen(fb_pos_rphr_pe_ons_name, 'w');
-        fid_fb_neg_hplr_pe = fopen(fb_neg_hplr_pe_ons_name, 'w');
-        fid_fb_neg_hphr_pe = fopen(fb_neg_hphr_pe_ons_name, 'w');
-        fid_fb_neg_rplr_pe = fopen(fb_neg_rplr_pe_ons_name, 'w');
-        fid_fb_neg_rphr_pe = fopen(fb_neg_rphr_pe_ons_name, 'w');
         
         % Make onsets and durations for all stimulus/fb types
         % Stim onsets
+        % this is ugly as fuck, but I'm leaving it and just making it cleaner below
         stim_hplr_ons=stim_onset_temp(find(stim_temp==1 | stim_temp==5));
         stim_hphr_ons=stim_onset_temp(find(stim_temp==2 | stim_temp==6));
         stim_rplr_ons=stim_onset_temp(find(stim_temp==3));
@@ -304,143 +195,72 @@ for sCount = 1:length(subject_ids)
         fb_neg_rphr_pe=pe_temp(find((stim_temp==4) & (resp_temp~=fb_temp)));
         fb_neg_rphr_pe_demean=fb_neg_rphr_pe-mean(fb_neg_rphr_pe);
         
-        % Print the onset textfiles
-        % Stim onsets
-        for n=1:length(stim_hplr_ons),
-            fprintf(fid_stim_hplr,'%0.4f\t%0.4f\t1\n',stim_hplr_ons(n),stim_hplr_dur(n));
-        end;
-        for n=1:length(stim_hphr_ons),
-            fprintf(fid_stim_hphr,'%0.4f\t%0.4f\t1\n',stim_hphr_ons(n),stim_hphr_dur(n));
-        end;
-        for n=1:length(stim_rplr_ons),
-            fprintf(fid_stim_rplr,'%0.4f\t%0.4f\t1\n',stim_rplr_ons(n),stim_rplr_dur(n));
-        end;
-        for n=1:length(stim_rphr_ons),
-            fprintf(fid_stim_rphr,'%0.4f\t%0.4f\t1\n',stim_rphr_ons(n),stim_rphr_dur(n));
-        end;
-        for n=1:length(stim_hplr_ons),
-            fprintf(fid_stim_hplr_ev,'%0.4f\t%0.4f\t%0.4f\n',stim_hplr_ons(n),stim_hplr_dur(n),stim_hplr_ev_demean(n));
-        end;
-        for n=1:length(stim_hphr_ons),
-            fprintf(fid_stim_hphr_ev,'%0.4f\t%0.4f\t%0.4f\n',stim_hphr_ons(n),stim_hphr_dur(n),stim_hphr_ev_demean(n));
-        end;
-        for n=1:length(stim_rplr_ons),
-            fprintf(fid_stim_rplr_ev,'%0.4f\t%0.4f\t%0.4f\n',stim_rplr_ons(n),stim_rplr_dur(n),stim_rplr_ev_demean(n));
-        end;
-        for n=1:length(stim_rphr_ons),
-            fprintf(fid_stim_rphr_ev,'%0.4f\t%0.4f\t%0.4f\n',stim_rphr_ons(n),stim_rphr_dur(n),stim_rphr_ev_demean(n));
-        end;
-        % Choice onsets
-        for n=1:length(choice_hplr_ons),
-            fprintf(fid_choice_hplr,'%0.4f\t%0.4f\t1\n',choice_hplr_ons(n),choice_hplr_dur(n));
-        end;
-        for n=1:length(choice_hphr_ons),
-            fprintf(fid_choice_hphr,'%0.4f\t%0.4f\t1\n',choice_hphr_ons(n),choice_hphr_dur(n));
-        end;
-        for n=1:length(choice_rplr_ons),
-            fprintf(fid_choice_rplr,'%0.4f\t%0.4f\t1\n',choice_rplr_ons(n),choice_rplr_dur(n));
-        end;
-        for n=1:length(choice_rphr_ons),
-            fprintf(fid_choice_rphr,'%0.4f\t%0.4f\t1\n',choice_rphr_ons(n),choice_rphr_dur(n));
-        end;
-        for n=1:length(choice_hplr_ons),
-            fprintf(fid_choice_hplr_ev,'%0.4f\t%0.4f\t%0.4f\n',choice_hplr_ons(n),choice_hplr_dur(n),choice_hplr_ev_demean(n));
-        end;
-        for n=1:length(choice_hphr_ons),
-            fprintf(fid_choice_hphr_ev,'%0.4f\t%0.4f\t%0.4f\n',choice_hphr_ons(n),choice_hphr_dur(n),choice_hphr_ev_demean(n));
-        end;
-        for n=1:length(choice_rplr_ons),
-            fprintf(fid_choice_rplr_ev,'%0.4f\t%0.4f\t%0.4f\n',choice_rplr_ons(n),choice_rplr_dur(n),choice_rplr_ev_demean(n));
-        end;
-        for n=1:length(choice_rphr_ons),
-            fprintf(fid_choice_rphr_ev,'%0.4f\t%0.4f\t%0.4f\n',choice_rphr_ons(n),choice_rphr_dur(n),choice_rphr_ev_demean(n));
-        end;
-        % FB onsets
-        for n=1:length(fb_pos_hplr_ons),
-            fprintf(fid_fb_pos_hplr,'%0.4f\t1.25\t1\n',fb_pos_hplr_ons(n));
-        end;
-        for n=1:length(fb_pos_hphr_ons),
-            fprintf(fid_fb_pos_hphr,'%0.4f\t1.25\t1\n',fb_pos_hphr_ons(n));
-        end;
-        for n=1:length(fb_pos_rplr_ons),
-            fprintf(fid_fb_pos_rplr,'%0.4f\t1.25\t1\n',fb_pos_rplr_ons(n));
-        end;
-        for n=1:length(fb_pos_rphr_ons),
-            fprintf(fid_fb_pos_rphr,'%0.4f\t1.25\t1\n',fb_pos_rphr_ons(n));
-        end;
-        for n=1:length(fb_neg_hplr_ons),
-            fprintf(fid_fb_neg_hplr,'%0.4f\t1.25\t1\n',fb_neg_hplr_ons(n));
-        end;
-        for n=1:length(fb_neg_hphr_ons),
-            fprintf(fid_fb_neg_hphr,'%0.4f\t1.25\t1\n',fb_neg_hphr_ons(n));
-        end;
-        for n=1:length(fb_neg_rplr_ons),
-            fprintf(fid_fb_neg_rplr,'%0.4f\t1.25\t1\n',fb_neg_rplr_ons(n));
-        end;
-        for n=1:length(fb_neg_rphr_ons),
-            fprintf(fid_fb_neg_rphr,'%0.4f\t1.25\t1\n',fb_neg_rphr_ons(n));
-        end;
-        for n=1:length(fb_pos_hplr_ons),
-            fprintf(fid_fb_pos_hplr_pe,'%0.4f\t1.25\t%0.4f\n',fb_pos_hplr_ons(n),fb_pos_hplr_pe_demean(n));
-        end;
-        for n=1:length(fb_pos_hphr_ons),
-            fprintf(fid_fb_pos_hphr_pe,'%0.4f\t1.25\t%0.4f\n',fb_pos_hphr_ons(n),fb_pos_hphr_pe_demean(n));
-        end;
-        for n=1:length(fb_pos_rplr_ons),
-            fprintf(fid_fb_pos_rplr_pe,'%0.4f\t1.25\t%0.4f\n',fb_pos_rplr_ons(n),fb_pos_rplr_pe_demean(n));
-        end;
-        for n=1:length(fb_pos_rphr_ons),
-            fprintf(fid_fb_pos_rphr_pe,'%0.4f\t1.25\t%0.4f\n',fb_pos_rphr_ons(n),fb_pos_rphr_pe_demean(n));
-        end;
-        for n=1:length(fb_neg_hplr_ons),
-            fprintf(fid_fb_neg_hplr_pe,'%0.4f\t1.25\t%0.4f\n',fb_neg_hplr_ons(n),fb_neg_hplr_pe_demean(n));
-        end;
-        for n=1:length(fb_neg_hphr_ons),
-            fprintf(fid_fb_neg_hphr_pe,'%0.4f\t1.25\t%0.4f\n',fb_neg_hphr_ons(n),fb_neg_hphr_pe_demean(n));
-        end;
-        for n=1:length(fb_neg_rplr_ons),
-            fprintf(fid_fb_neg_rplr_pe,'%0.4f\t1.25\t%0.4f\n',fb_neg_rplr_ons(n),fb_neg_rplr_pe_demean(n));
-        end;
-        for n=1:length(fb_neg_rphr_ons),
-            fprintf(fid_fb_neg_rphr_pe,'%0.4f\t1.25\t%0.4f\n',fb_neg_rphr_ons(n),fb_neg_rphr_pe_demean(n));
-        end;
-        
-        % Close onset txt files
-        % Stim onsets
-        fclose(fid_stim_hplr);
-        fclose(fid_stim_hphr);
-        fclose(fid_stim_rplr);
-        fclose(fid_stim_rphr);
-        fclose(fid_stim_hplr_ev);
-        fclose(fid_stim_hphr_ev);
-        fclose(fid_stim_rplr_ev);
-        fclose(fid_stim_rphr_ev);
-        % Choice onsets
-        fclose(fid_choice_hplr);
-        fclose(fid_choice_hphr);
-        fclose(fid_choice_rplr);
-        fclose(fid_choice_rphr);
-        fclose(fid_choice_hplr_ev);
-        fclose(fid_choice_hphr_ev);
-        fclose(fid_choice_rplr_ev);
-        fclose(fid_choice_rphr_ev);
-        % FB onsets
-        fclose(fid_fb_pos_hplr);
-        fclose(fid_fb_pos_hphr);
-        fclose(fid_fb_pos_rplr);
-        fclose(fid_fb_pos_rphr);
-        fclose(fid_fb_neg_hplr);
-        fclose(fid_fb_neg_hphr);
-        fclose(fid_fb_neg_rplr);
-        fclose(fid_fb_neg_rphr);
-        fclose(fid_fb_pos_hplr_pe);
-        fclose(fid_fb_pos_hphr_pe);
-        fclose(fid_fb_pos_rplr_pe);
-        fclose(fid_fb_pos_rphr_pe);
-        fclose(fid_fb_neg_hplr_pe);
-        fclose(fid_fb_neg_hphr_pe);
-        fclose(fid_fb_neg_rplr_pe);
-        fclose(fid_fb_neg_rphr_pe);
+                % stimulus onsets
+        task.onsets.stim.hilo = stim_hplr_ons;
+        task.onsets.stim.hihi = stim_hphr_ons;
+        task.onsets.stim.ralo = stim_rplr_ons;
+        task.onsets.stim.rahi = stim_rphr_ons;
+        % choice onsets
+        task.onsets.choice.hilo = choice_hplr_ons;
+        task.onsets.choice.hihi = choice_hphr_ons;
+        task.onsets.choice.ralo = choice_rplr_ons;
+        task.onsets.choice.rahi = choice_rphr_ons;
+        % feedback onsets
+        task.onsets.fb_pos.hilo = fb_pos_hplr_ons;
+        task.onsets.fb_pos.hihi = fb_pos_hphr_ons;
+        task.onsets.fb_pos.ralo = fb_pos_rplr_ons;
+        task.onsets.fb_pos.rahi = fb_pos_rphr_ons;
+        task.onsets.fb_neg.hilo = fb_neg_hplr_ons;
+        task.onsets.fb_neg.hihi = fb_neg_hphr_ons;
+        task.onsets.fb_neg.ralo = fb_neg_rplr_ons;
+        task.onsets.fb_neg.rahi = fb_neg_rphr_ons;
+        % stim durations
+        task.durations.stim.hilo = stim_hplr_dur;
+        task.durations.stim.hihi = stim_hphr_dur;
+        task.durations.stim.ralo = stim_rplr_dur;
+        task.durations.stim.rahi = stim_rphr_dur;
+        % choice durations
+        task.durations.choice.hilo = choice_hplr_dur;
+        task.durations.choice.hihi = choice_hphr_dur;
+        task.durations.choice.ralo = choice_rplr_dur;
+        task.durations.choice.rahi = choice_rphr_dur;
+        % stimulus expected value (pmod can only be ev at stim & choice)
+        task.pmod.stim.hilo = stim_hplr_ev;
+        task.pmod.stim.hihi = stim_hphr_ev;
+        task.pmod.stim.ralo = stim_rplr_ev;
+        task.pmod.stim.rahi = stim_rphr_ev;
+        % choice expected value
+        task.pmod.choice.hilo = choice_hplr_ev;
+        task.pmod.choice.hihi = choice_hphr_ev;
+        task.pmod.choice.ralo = choice_rplr_ev;
+        task.pmod.choice.rahi = choice_rphr_ev;
+        % positive prediction error (pmod at feedback can only be pe)
+        task.pmod.fb_pos.hilo = fb_pos_hplr_pe;
+        task.pmod.fb_pos.hihi = fb_pos_hphr_pe;
+        task.pmod.fb_pos.ralo = fb_pos_rplr_pe;
+        task.pmod.fb_pos.rahi = fb_pos_rphr_pe;
+        % negative prediction error
+        task.pmod.fb_neg.hilo = fb_neg_hplr_pe;
+        task.pmod.fb_neg.hihi = fb_neg_hphr_pe;
+        task.pmod.fb_neg.ralo = fb_neg_rplr_pe;
+        task.pmod.fb_neg.rahi = fb_neg_rphr_pe;
+        % same as pmods as above, but mean centered
+        task.pmod.stim.mc_hilo = stim_hplr_ev_demean;
+        task.pmod.stim.mc_hihi = stim_hphr_ev_demean;
+        task.pmod.stim.mc_ralo = stim_rplr_ev_demean;
+        task.pmod.stim.mc_rahi = stim_rphr_ev_demean;
+        task.pmod.choice.mc_hilo = choice_hplr_ev_demean;
+        task.pmod.choice.mc_hihi = choice_hphr_ev_demean;
+        task.pmod.choice.mc_ralo = choice_rplr_ev_demean;
+        task.pmod.choice.mc_rahi = choice_rphr_ev_demean;
+        task.pmod.fb_pos.mc_hilo = fb_pos_hplr_pe_demean;
+        task.pmod.fb_pos.mc_hihi = fb_pos_hphr_pe_demean;
+        task.pmod.fb_pos.mc_ralo = fb_pos_rplr_pe_demean;
+        task.pmod.fb_pos.mc_rahi = fb_pos_rphr_pe_demean;
+        task.pmod.fb_neg.mc_hilo = fb_neg_hplr_pe_demean;
+        task.pmod.fb_neg.mc_hihi = fb_neg_hphr_pe_demean;
+        task.pmod.fb_neg.mc_ralo = fb_neg_rplr_pe_demean;
+        task.pmod.fb_neg.mc_rahi = fb_neg_rphr_pe_demean;
     
     % nest task into rpe structure    
     rpe(rCount) = task;
@@ -448,26 +268,3 @@ for sCount = 1:length(subject_ids)
     
     clear task;
 end
-
-%Print list of subject's learning rates to a textfile
-fid=fopen('rpe_learning_rates.txt','w');
-for sCount=1:length(subject_ids),
-    fprintf(fid,'%s\t%0.4f\t%0.4f\n',subject_ids{sCount},sub_learning_rate(sCount),sub_learning_rate_actual(sCount));
-end;
-fclose(fid);
-
-%For each subject, print ev_sum and pe for each trial to a textfile
-fid2=fopen('rpe_ev_sum_pe.txt','w');
-for sCount=1:length(subject_ids),
-    fprintf(fid2,'%s\t',subject_ids{sCount});
-    for n=1:num_trials,
-        fprintf(fid2,'%0.4f\t',sub_ev_sum(sCount,n));
-    end;
-    fprintf(fid2,'\n');
-    fprintf(fid2,'%s\t',subject_ids{sCount});
-    for n=1:num_trials,
-        fprintf(fid2,'%0.4f\t',sub_pe(sCount,n));
-    end;
-    fprintf(fid2,'\n');
-end;
-fclose(fid2);

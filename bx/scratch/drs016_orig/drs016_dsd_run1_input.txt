@@ -1,0 +1,20 @@
+26,1,1,2,5,1,0.444,9.287,I always wear a watch
+27,2,1,3,2,3,0.354,1.062,I like doing new things
+28,2,3,1,1,2,0.381,1.333,I bite my fingernails
+29,2,1,3,5,4,0.525,1.377,I do not eat meat
+30,1,2,1,5,5,0.426,1.085,I floss every day
+31,1,2,1,3,2,0.507,0.748,I like hip-hop music
+32,2,1,3,3,2,0.435,0.883,I hate rainy days
+33,3,3,2,2,2,0.633,0.950,I have a best friend
+34,1,2,1,2,3,0.579,1.040,I usually skip breakfast
+35,2,1,3,3,2,0.516,0.500,I hate chicken soup
+36,3,2,3,3,5,0.543,0.522,I want super powers
+37,3,2,3,2,2,0.309,1.265,I hate soft beds
+38,1,1,2,2,1,0.462,1.242,I like watching sunsets
+39,2,3,1,4,5,0.597,8.928,I carry a water bottle
+40,1,1,2,2,5,0.624,0.905,I hate riding the bus
+41,3,3,2,2,2,0.651,0.995,I like to burp out loud
+42,2,1,3,5,4,0.696,8.725,I daydream in class
+43,1,2,1,3,2,0.642,0.568,I hate squeaky shoes
+44,3,2,3,2,2,0.318,0.635,I like smelling markers
+45,3,3,2,2,2,0.687,1.355,I like televised sports
