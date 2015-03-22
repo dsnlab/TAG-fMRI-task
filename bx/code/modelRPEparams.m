@@ -9,7 +9,7 @@ ssd = zeros(1, length(learning_rate));
 ssd_var = zeros(1, length(learning_rate));
 for lr = 1:length(learning_rate)
     disp(sprintf('simulation %d of %d\n',lr,length(learning_rate)));
-    avg_pred_error = rwmodel(stim', resp', fb', (learning_rate(lr)), 100);
+    avg_pred_error = rwmodel(stim', resp', fb', (learning_rate(lr)), 1000);
     ssd(lr) = mean(avg_pred_error);
     ssd_var(lr) = var(avg_pred_error);
 end
