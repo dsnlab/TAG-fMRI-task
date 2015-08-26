@@ -1,4 +1,7 @@
 #DRS  
+
+This is the version to be used in TAG
+
 ##`{ Disclosure , Reward , Self }`
 
 code for DRS suite of experiments  
