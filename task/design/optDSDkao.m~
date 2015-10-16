@@ -308,7 +308,7 @@ Inp.V2 = V; % <-- square of whitening matrix
 % 1. Optimality criterion
 Inp.Opt = 1; % <-- 0=A-optimality; 1=D-optimality
 % 2. weights for MO-criterion
-Inp.MOweight = [0/16 10/16 1/16 5/16]; % <-- w_i in the order of [w_c, w_d, w_e, w_f];
+Inp.MOweight = [1/16 1/2 1/16 1/4]; % <-- w_i in the order of [w_c, w_d, w_e, w_f];
 % % % note. w_c and w_f should be zero if there is only one stimulus type; i.e.
 % % %   Inp.nSTYPE = 1
 % 3. basis for the HRF
@@ -343,7 +343,7 @@ Inp.MaxFd = 6.6924; %<-- numerical approximation of Max(Fd)
 %Inp.MaxFd = 1; Inp.MOweight = [0 1 0 0];
 % % %   after the search the approximate is in Out.bestOVF
 % 6. psychological confounds
-Inp.cbalR = 1; % <-- order of counterbalancing
+Inp.cbalR = 3; % <-- order of counterbalancing
 % 7. desired stimulus frequency
 Inp.stimFREQ = ones(1,Inp.nSTYPE)./Inp.nSTYPE; %<-- desired stimulus frequency
 % % % use equal frequency if no preference
@@ -351,7 +351,7 @@ Inp.stimFREQ = ones(1,Inp.nSTYPE)./Inp.nSTYPE; %<-- desired stimulus frequency
 %**** Algorithmic parameters
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Inp.StopRule = 1; % 1=maximal generations; 2=accumulated improvement
-Inp.numITR = 400;
+Inp.numITR = 2000;
 % when StopRule = 1, total number of GA generations for each loop
 % when StopRule = 2, check the stopping rule every Inp.numITR generation
 Inp.improve = 10^(-7);

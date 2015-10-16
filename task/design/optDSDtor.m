@@ -3,11 +3,11 @@ optDesPath=genpath('/vxfsvol/home/research/dsnlab/matlab/CanlabCore/CanlabCore')
 addpath(optDesPath);
 clear Models, clear MM
 
-GA.conditions = [1 2 3 4 5 6]; %self|change x prosoc|insecure|aggressive + rest
-                                 % .5    .5        .5    .275       .225
-GA.freqConditions = [.25 .1375 .1125 .25 .1375 .1125];
-GA.scanLength = 282;  
-GA.ISI = 4.7;  
+GA.conditions = [1 2 3 4 5 6]; %affect|neutral x equal|loss to share|loss to private
+                                 % .5    .5        .333    .333       .333
+GA.freqConditions = [.1666 .1666 .1666 .1666 .1666 .1666];
+GA.scanLength = 810;  
+GA.ISI = 7.5;  
 GA.TR = 2; 
 GA.doepochs = 0;
 GA.numhox = 0;
@@ -27,23 +27,24 @@ GA.NumStimthresh = [];      % maximum number of repeats of any one event type in
 GA.maxCbalDevthresh = []; 	% maximum acceptable counterbalancing deviation (actual freq - expected freq)
 GA.maxFreqDevthresh = [];   % maximum acceptable deviation from input frequencies (GA.freqConditions)
 GA.contrasts = [...
-      1    1    1   -1   -1   -1; ...          %Self v Change
-      1  -.5  -.5    0    0    0; ...          %Self Prosocial v Self not prosocial
-      1    0    0   -1    0    0; ...          %Self Prosocial v Change prosocial
-      1    0    0    0    0    0; ...          %Self Prosocial v rest
-      1    0   -1    0    0    0; ...          %Self Prosocial v self agressive
-    -.5    1  -.5    0    0    0; ...          %Self Insecure v Not Insecure
-      0    0    0    1  -.5  -.5];             %Change prosocial v change not prosocial
-   
+      1   -1    0    0    0    0; ...          %Affect equal v Neutral equal 
+      0    0    1   -1    0    0; ...          %Affect loss to share v Neutral loss to share 
+      0    0    0    0    1   -1; ...          %Affect loss to privtae v Neutral loss to private 
+      1    0   -1    0    0    0; ...          %Affect equal v Affective loss to share  
+      1    0    0    0   -1    0; ...          %Affect equal v Affective loss to private 
+      0    1    0   -1    0    0; ...          %Neutral equal v Neutrak loss to share
+      0    1    0    0    0   -1]; ...          %Neutral equal v Neutrak loss to private
+
 % GA.contrasts = [...
 %      1     1    -1    -1     1     1    -1    -1
 %      1     0    -1     0     1     0    -1     0
 %      0     1     0    -1     0     1     0    -1
 %      1    -1     1    -1     1    -1     1    -1
 %      ];
-GA.contrastweights = [5 1 1 1 .5 .5 .5];	                      
+
+GA.contrastweights = [2 2 2 1 1 1 1]; 	                      
 AutocorrelationFileName = 'myscannerxc';
-GA.restlength = [.21]; 
+GA.restlength = [.2]; 
 GA.restevery = [1]; 
 GA.trans2switch = 0; 
 GA.trans2block = 0; 
