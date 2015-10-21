@@ -61,8 +61,7 @@ affRawStatements(:,1) = textread(affStatementFile,'%s','delimiter','\n');
 
 numTrials = (length(neutRawStatements)+length(affRawStatements))/2;
 
-neutStatements = shuffle(neutRawStatements);
-affStatements = shuffle(affRawStatements);
+
 
 %% convert the 0s in the sequence into + 8sec durations for previous trial,
 % get jittered durations (m = 1.5s)
@@ -71,11 +70,20 @@ affStatements = shuffle(affRawStatements);
 rawJitter = (0.5:.0225:1.5)';
 choiceJitter = (0.3:0.009:0.7)';
 
+targetA = repmat(1, numTrials, 1); % 1=Private
+targetB = repmat(2, numTrials, 1); % 2=Share
+ 
 for dCount = 1:NSubsTotal
-    rawStatements=shuffle(rawStatements);
+    
+    neutStatements = shuffle(neutRawStatements);
+    affStatements = shuffle(affRawStatements);
+             
+    shuffLeftIsMorePairs=leftIsMorePairs(shuffle(1:14),:);
+    shuffRightIsMorePairs=rightIsMorePairs(shuffle(1:14),:);
+    shuffEqPairs=eqPairs(shuffle(1:14),:);
+
     for rCount = 1:2;
         thisRun = (['run',num2str(rCount)]);
-        %dsdDesign(dCount).(thisRun).statement = rawStatements( (1:numTrials)+ numTrials*(rCount-1)  ); % take the first 
         rawJitter = shuffle(rawJitter);
         choiceJitter = shuffle(choiceJitter);
         adjJitter = NaN(numTrials,1);
@@ -97,8 +105,6 @@ for dCount = 1:NSubsTotal
         % some temporary NaN vectors
         %!! We can get rid of the below loop because we only care about
         %share versus private (we don't have parents)
-
-        leftoRighto = rand(numTrials,1);
         
         nStatementCounter = 1;
         aStatementCounter = 1;
@@ -118,9 +124,7 @@ for dCount = 1:NSubsTotal
 
         coinA = nan(numTrials,1);
         coinB = nan(numTrials,1);
-        Apairs = leftIsMorePairs(shuffle(1:14),:);
-        Bpairs = rightIsMorePairs(shuffle(1:14),:);
-        Epairs = eqPairs(shuffle(1:14),:);
+
         % get a different randomized order of coin pairs for each subCondition
         %!! Edit because we don't have t1-3 conditions (but we have affect
         %and neutral
@@ -130,34 +134,23 @@ for dCount = 1:NSubsTotal
         % c1 = loss to share
         % c2 = loss to private
         % c3 = equal payout
-        run1t1c1 = Apairs((1:7), :);
-        run2t1c1 = Apairs((8:14),:);
-        Apairs = leftIsMorePairs(shuffle(1:14),:);
-        Bpairs = rightIsMorePairs(shuffle(1:14),:);
-        Epairs = eqPairs(shuffle(1:14),:);
-        run1t1c2 = Bpairs((1:7), :);
-        run2t1c2 = Bpairs((8:14),:);
-        Apairs = leftIsMorePairs(shuffle(1:14),:);
-        Bpairs = rightIsMorePairs(shuffle(1:14),:);
-        Epairs = eqPairs(shuffle(1:14),:);
-        run1t1c3 = Epairs((1:7), :);
-        run2t1c3 = Epairs((8:14),:);
-        Apairs = leftIsMorePairs(shuffle(1:14),:);
-        Bpairs = rightIsMorePairs(shuffle(1:14),:);
-        Epairs = eqPairs(shuffle(1:14),:);
-        run1t2c1 = Apairs((1:7), :);
-        run2t2c1 = Apairs((8:14),:);
-        Apairs = leftIsMorePairs(shuffle(1:14),:);
-        Bpairs = rightIsMorePairs(shuffle(1:14),:);
-        Epairs = eqPairs(shuffle(1:14),:);
-        run1t2c2 = Bpairs((1:7), :);
-        run2t2c2 = Bpairs((8:14),:);
-        Apairs = leftIsMorePairs(shuffle(1:14),:);
-        Bpairs = rightIsMorePairs(shuffle(1:14),:);
-        Epairs = eqPairs(shuffle(1:14),:);
-        run1t2c3 = Epairs((1:7), :);
-        run2t2c3 = Epairs((8:14),:);
+        Apairs = leftIsMorePairs;
+        run1t1c1 = Apairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
         
+        Bpairs = rightIsMorePairs;
+        run1t1c2 = Bpairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
+        
+        Epairs = eqPairs;
+        run1t1c3 = Epairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
+        
+        Apairs = leftIsMorePairs;
+        run1t2c1 = Apairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
+        
+        Bpairs = rightIsMorePairs;
+        run1t2c2 = Bpairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
+        
+        Epairs = eqPairs;
+        run1t2c3 = Epairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
 
         t1c1Count = 1;
         t1c2Count = 1;
@@ -167,13 +160,12 @@ for dCount = 1:NSubsTotal
         t2c3Count= 1;
 
         for tCount = 1:numTrials % (there are numTrials trials, screw generalizing this)
+            %% Need to add in here a flipping
             switch condition(tCount)
-               
                         case 1
                             coinA(tCount) = run1t1c1(1,1);
                             coinB(tCount) = run1t1c1(1,2);
                             run1t1c1 = popArray(run1t1c1);
-
                         case 2
                             coinA(tCount) = run1t1c2(1,1);
                             coinB(tCount) = run1t1c2(1,2);
@@ -182,9 +174,6 @@ for dCount = 1:NSubsTotal
                             coinA(tCount) = run1t1c3(1,1);
                             coinB(tCount) = run1t1c3(1,2);
                             run1t1c3 = popArray(run1t1c3);
-    
-
-                
                         case 4
                             coinA(tCount) = run1t2c1(1,1);
                             coinB(tCount) = run1t2c1(1,2);
@@ -197,7 +186,6 @@ for dCount = 1:NSubsTotal
                             coinA(tCount) = run1t2c3(1,1);
                             coinB(tCount) = run1t2c3(1,2);
                             run1t2c3 = popArray(run1t2c3);
-
             end
 
             % randomly determine screen position
