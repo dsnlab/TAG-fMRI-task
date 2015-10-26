@@ -1,0 +1,45 @@
+1,1,1,2,4,4,0.687,0.545,I like the way I look
+2,2,1,3,3,2,0.669,0.590,I hate earmuffs
+3,3,2,3,5,4,0.552,1.130,I hate squeaky shoes
+4,3,3,2,3,1,0.678,8.523,I think sushi is gross
+5,3,3,2,2,2,0.453,0.972,I like to play cards
+6,1,1,2,1,1,0.534,1.422,I always stay up late
+7,2,3,1,1,4,0.354,0.950,I hate licking envelopes
+8,3,2,3,5,5,0.642,0.927,I get sleepy after eating
+9,1,2,1,3,3,0.300,0.657,I like to burp out loud
+10,2,1,3,2,4,0.606,0.568,I want super powers
+11,3,3,2,1,3,0.633,0.635,I like free stuff
+12,2,3,1,4,5,0.471,1.377,I hate pulling weeds
+13,1,1,2,3,3,0.345,0.725,I always have chapstick
+14,1,1,2,1,3,0.498,0.995,I like to watch cartoons
+15,2,3,1,5,2,0.561,0.703,I carry a water bottle
+16,3,2,3,2,2,0.660,1.355,I bite my fingernails
+17,1,1,2,3,2,0.399,0.905,I wash my hands often
+18,3,2,3,4,3,0.327,0.815,I never get bored
+19,2,1,3,4,2,0.570,1.265,I like wearing hoodies
+20,2,3,1,1,5,0.390,1.107,I sleep without a pillow
+21,3,2,3,1,1,0.462,1.490,I am a good dancer
+22,3,2,3,5,3,0.525,1.040,I want super powers
+23,2,1,3,3,5,0.615,1.085,I rarely get headaches
+24,1,1,2,1,5,0.372,9.332,I hate soft beds
+25,2,3,1,5,5,0.336,8.860,I have a lucky charm
+26,1,1,2,3,5,0.408,1.468,I like country music
+27,2,1,3,3,3,0.597,1.242,I take a lot of naps
+28,2,3,1,2,5,0.309,1.062,I hate to wait in line
+29,1,1,2,4,4,0.381,1.153,I always wear a watch
+30,3,3,2,3,3,0.507,9.400,I like smelling markers
+31,1,1,2,1,4,0.426,1.445,I hate tapioca
+32,3,2,3,3,3,0.435,1.220,I daydream in class
+33,3,2,3,5,1,0.489,0.792,I hate doing dishes
+34,1,1,2,5,1,0.624,0.613,I think eggs are nasty
+35,3,3,2,5,4,0.579,0.680,I hate eating leftovers
+36,2,3,1,3,2,0.516,1.018,I hate chicken soup
+37,1,2,1,4,4,0.588,9.197,I can use chopsticks
+38,1,2,1,1,3,0.363,1.175,I get ready quickly
+39,1,1,2,5,3,0.543,0.837,I have a best friend
+40,1,2,1,1,4,0.651,1.310,I hate riding the bus
+41,3,2,3,3,5,0.444,0.770,I never sit up straight
+42,2,1,3,2,3,0.417,0.883,I like foot massages
+43,2,1,3,2,3,0.480,8.500,I like doing new things
+44,2,3,1,5,3,0.318,0.748,I get good grades
+45,3,3,2,3,3,0.696,9.287,I make people laugh

@@ -1,0 +1,45 @@
+1,1,1,2,2,1,0.309,0.522,I usually skip breakfast
+2,2,3,1,3,3,0.408,0.590,I hate being late
+3,3,2,3,5,3,0.489,0.635,I like doing new things
+4,1,1,2,1,1,0.381,1.062,I hate sour pickles
+5,2,3,1,2,5,0.516,0.725,I like to chew my pencil
+6,3,2,3,4,4,0.606,8.950,I wash my hands often
+7,1,1,2,1,5,0.327,1.490,I hate tapioca
+8,3,3,2,2,1,0.615,0.792,I sleep without a pillow
+9,2,1,3,1,1,0.426,0.972,I like televised sports
+10,3,3,2,5,2,0.597,1.040,I want to learn to surf
+11,2,1,3,2,2,0.642,1.198,I hate chicken soup
+12,1,2,1,3,4,0.696,1.333,I think tattoos are cool
+13,1,2,1,4,1,0.399,1.175,I always watch the news
+14,1,1,2,4,2,0.534,8.613,I hate to be tickled
+15,3,3,2,2,2,0.633,1.220,I tell a lot of jokes
+16,1,2,1,4,3,0.579,1.130,I hate walking uphill
+17,2,3,1,3,2,0.480,1.018,I like to read books
+18,2,3,1,5,3,0.660,0.568,I get ready quickly
+19,3,2,3,5,1,0.543,0.815,I daydream in class
+20,3,2,3,3,5,0.372,9.242,I hate to wait in line
+21,2,3,1,5,5,0.669,1.377,I can keep a secret
+22,1,2,1,1,3,0.390,1.085,I check Facebook often
+23,2,1,3,3,2,0.498,1.310,I hate riding the bus
+24,2,3,1,4,4,0.570,8.928,I like to burp out loud
+25,2,1,3,1,4,0.444,0.680,I like free stuff
+26,1,1,2,3,1,0.507,1.445,I hate wearing seatbelts
+27,3,2,3,2,3,0.336,0.770,I hate big cities
+28,2,1,3,4,4,0.363,0.545,I sing in the shower
+29,1,2,1,1,1,0.345,1.288,I hate earmuffs
+30,3,2,3,1,5,0.687,0.995,I bite my fingernails
+31,1,1,2,2,4,0.354,1.107,I love ketchup
+32,2,1,3,3,4,0.678,8.838,I hate tofu
+33,3,2,3,5,4,0.417,0.657,I like to wrestle
+34,2,1,3,4,4,0.318,1.265,I always wear a watch
+35,3,3,2,5,5,0.300,1.422,I love scary movies
+36,3,2,3,3,1,0.435,1.355,I like country music
+37,1,1,2,3,1,0.453,0.860,I have a lucky charm
+38,1,2,1,3,1,0.624,8.500,I like foot massages
+39,1,2,1,5,5,0.588,1.153,I like people who litter
+40,3,2,3,5,4,0.552,0.905,I hate eating leftovers
+41,3,3,2,1,1,0.471,1.468,I want super powers
+42,1,1,2,3,1,0.462,0.748,I floss every day
+43,3,2,3,5,4,0.525,1.400,I remember dreams
+44,2,1,3,4,4,0.651,0.883,I hate mosquito bites
+45,2,1,3,4,5,0.561,8.703,I like hip-hop music

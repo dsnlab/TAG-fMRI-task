@@ -1,0 +1,45 @@
+1,2,3,1,1,5,0.534,0.815,I like cheeseburgers
+2,1,2,1,5,4,0.309,0.613,I make my own lunch
+3,1,1,2,4,4,0.336,0.837,I drink a lot of coffee
+4,3,3,2,2,2,0.300,0.545,I hate eating leftovers
+5,3,3,2,1,1,0.678,1.310,I get sleepy after eating
+6,2,1,3,5,5,0.381,9.107,I never make my bed
+7,2,3,1,3,2,0.597,1.062,I think tattoos are cool
+8,3,3,2,2,4,0.453,0.792,I make people laugh
+9,2,3,1,5,1,0.417,1.490,I hate to be tickled
+10,3,2,3,3,4,0.606,1.333,I hate licking envelopes
+11,2,1,3,4,4,0.570,0.950,I like to play cards
+12,1,2,1,4,3,0.444,1.377,I usually skip breakfast
+13,3,3,2,5,1,0.390,9.130,I like doing new things
+14,3,3,2,3,3,0.507,0.972,I always stay up late
+15,1,2,1,5,2,0.435,0.905,I hate earmuffs
+16,1,2,1,5,5,0.651,0.927,I love scary movies
+17,2,3,1,2,3,0.642,1.040,I hate soft beds
+18,2,3,1,3,1,0.669,9.355,I like to wrestle
+19,1,1,2,2,3,0.345,0.568,I like birthday parties
+20,2,1,3,2,5,0.471,1.085,I think eggs are nasty
+21,1,2,1,3,1,0.480,1.220,I hate squeaky shoes
+22,3,3,2,3,5,0.615,0.883,I sing in the shower
+23,2,3,1,3,3,0.318,1.468,I like people who litter
+24,3,2,3,3,5,0.624,9.242,I am afraid of ghosts
+25,1,2,1,1,1,0.633,0.748,I like to chew my pencil
+26,3,2,3,4,4,0.363,1.153,I never sit up straight
+27,2,3,1,1,3,0.561,0.680,I like watching sunsets
+28,3,2,3,1,2,0.462,0.635,I hate spicy mustard
+29,3,2,3,5,5,0.327,0.995,I like hip-hop music
+30,1,1,2,1,4,0.426,9.422,I always watch the news
+31,1,1,2,1,5,0.579,0.590,I never get bored
+32,1,1,2,3,3,0.498,1.288,I like the way I look
+33,3,3,2,1,5,0.372,0.703,I never break the rules
+34,1,2,1,5,5,0.525,0.500,I daydream in class
+35,2,3,1,2,1,0.660,0.657,I hate being late
+36,2,3,1,2,4,0.552,1.175,I tell a lot of jokes
+37,2,1,3,4,2,0.543,0.522,I hate tapioca
+38,3,2,3,5,5,0.516,1.445,I like to read books
+39,1,1,2,4,1,0.354,1.400,I hate tofu
+40,2,1,3,1,4,0.687,1.018,I hate rainy days
+41,3,3,2,5,2,0.408,0.725,I hate doing dishes
+42,1,2,1,1,2,0.588,8.860,I like wearing hoodies
+43,2,1,3,5,5,0.489,1.198,I want super powers
+44,1,1,2,1,2,0.399,1.265,I do not eat meat
+45,3,3,2,4,2,0.696,8.770,I am a good dancer

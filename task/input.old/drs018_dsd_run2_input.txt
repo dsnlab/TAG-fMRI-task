@@ -1,0 +1,45 @@
+1,1,1,2,1,5,0.525,1.175,I do not eat meat
+2,3,3,2,3,3,0.615,0.703,I drink a lot of coffee
+3,2,1,3,2,4,0.390,0.837,I get good grades
+4,1,2,1,1,3,0.489,1.310,I hate tapioca
+5,2,1,3,1,4,0.597,9.220,I hate big cities
+6,1,2,1,4,4,0.516,1.085,I get sleepy after eating
+7,3,2,3,4,5,0.336,0.568,I always have chapstick
+8,3,3,2,4,5,0.345,8.590,I shower in the morning
+9,3,3,2,1,1,0.642,0.725,I hate spicy mustard
+10,2,1,3,1,1,0.381,0.792,I hate to be tickled
+11,2,1,3,1,2,0.633,0.883,I like foot massages
+12,2,1,3,2,2,0.408,1.422,I never break the rules
+13,3,3,2,3,3,0.417,0.950,I am a morning person
+14,1,1,2,2,1,0.327,1.107,I floss every day
+15,2,3,1,1,3,0.399,0.815,I usually skip breakfast
+16,3,2,3,4,1,0.624,1.153,I like hip-hop music
+17,1,1,2,5,4,0.579,0.680,I rarely get headaches
+18,1,1,2,5,5,0.309,9.062,I hate earmuffs
+19,1,1,2,3,5,0.669,1.377,I always wear a watch
+20,2,3,1,3,2,0.453,1.265,I love pepperoni pizza
+21,2,1,3,5,1,0.507,0.748,I hate chicken soup
+22,1,1,2,4,3,0.660,9.197,I hate rainy days
+23,2,1,3,2,5,0.300,0.770,I like to watch cartoons
+24,3,2,3,5,5,0.471,1.355,I tell a lot of jokes
+25,2,3,1,1,5,0.480,0.995,I like to wrestle
+26,1,1,2,1,3,0.678,1.130,I never sit up straight
+27,3,2,3,4,4,0.372,0.972,I take a lot of naps
+28,2,1,3,5,1,0.561,0.500,I love scary movies
+29,3,3,2,4,4,0.363,0.657,I like to read books
+30,1,2,1,4,1,0.426,1.490,I hate licking envelopes
+31,3,2,3,2,1,0.462,1.468,I like to play cards
+32,3,2,3,2,4,0.543,8.905,I make my own lunch
+33,1,2,1,3,4,0.651,0.927,I want to learn to surf
+34,3,2,3,4,4,0.687,0.613,I hate sour pickles
+35,1,2,1,3,3,0.354,1.400,I wash my hands often
+36,2,1,3,5,1,0.552,0.545,I have a lucky charm
+37,3,2,3,1,5,0.588,1.445,I daydream in class
+38,1,1,2,3,3,0.534,1.040,I hate being late
+39,2,3,1,1,2,0.498,0.522,I sleep without a pillow
+40,1,2,1,2,2,0.570,1.242,I like to burp out loud
+41,3,3,2,3,4,0.318,1.018,I like the way I look
+42,2,1,3,1,1,0.606,8.635,I always stay up late
+43,3,2,3,1,2,0.696,1.288,I hate to wait in line
+44,2,1,3,5,1,0.435,0.860,I like people who litter
+45,1,2,1,3,4,0.444,9.332,I like doing new things

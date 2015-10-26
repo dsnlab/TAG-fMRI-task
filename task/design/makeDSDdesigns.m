@@ -1,6 +1,6 @@
 GAdir = 'GAoutput';
-targetDirectory = '../task/input';
-NSubsTotal = 200;
+targetDirectory = '../input';
+NSubsTotal = 1;
 trialLength = 8;
 
 
@@ -59,7 +59,7 @@ affStatementFile = 'materials/statements_affect.txt';
 neutRawStatements(:,1) = textread(neutStatementFile,'%s','delimiter','\n');
 affRawStatements(:,1) = textread(affStatementFile,'%s','delimiter','\n');
 
-numTrials = (length(neutRawStatements)+length(affRawStatements))/2;
+numStatements = (length(neutRawStatements)+length(affRawStatements));
 
 
 
@@ -70,8 +70,8 @@ numTrials = (length(neutRawStatements)+length(affRawStatements))/2;
 rawJitter = (0.5:.0225:1.5)';
 choiceJitter = (0.3:0.009:0.7)';
 
-targetA = repmat(1, numTrials, 1); % 1=Private
-targetB = repmat(2, numTrials, 1); % 2=Share
+%targetA = repmat(1, numTrials, 1); % 1=Private
+%targetB = repmat(2, numTrials, 1); % 2=Share
  
 for dCount = 1:NSubsTotal
     
@@ -86,10 +86,11 @@ for dCount = 1:NSubsTotal
         thisRun = (['run',num2str(rCount)]);
         rawJitter = shuffle(rawJitter);
         choiceJitter = shuffle(choiceJitter);
-        adjJitter = NaN(numTrials,1);
-        condition = NaN(numTrials,1);
         zCount = 0;
         rawTarget = dsdDesign(dCount).(thisRun).sequence; % Every event from optimized sequence (e.g., numbers 0-6 ...)
+        numOptTrials = length(rawTarget(rawTarget~=0));
+        adjJitter = NaN(numOptTrials,1);
+        condition = NaN(numOptTrials,1);
         for eCount = 1:length(rawTarget) % for every event
             if rawTarget(eCount) == 0 % if it's a rest event
                 zCount = zCount + 1; % add one to the counter variable for number of rests
@@ -99,6 +100,7 @@ for dCount = 1:NSubsTotal
             end
         end
         dsdDesign(dCount).(thisRun).condition = rawTarget(rawTarget~=0);
+        
         dsdDesign(dCount).(thisRun).choiceJitter = choiceJitter;
         dsdDesign(dCount).(thisRun).discoJitter = adjJitter;
         condition = dsdDesign(dCount).(thisRun).condition;
@@ -110,137 +112,127 @@ for dCount = 1:NSubsTotal
         aStatementCounter = 1;
         % Fill design list with affective or neutral statements depending on
         % condition.
+
         for tCount = 1:length(condition)
             if condition(tCount) > 0 & condition(tCount) < 4;
-                dsdDesign(dCount).(thisRun).statement(tCount) = neutStatements(nStatementCounter + numTrials*(rCount-1));
+                dsdDesign(dCount).(thisRun).statement(tCount) = neutStatements(nStatementCounter + (numStatements/4)*(rCount-1));
                 nStatementCounter = nStatementCounter + 1;
             elseif condition(tCount) > 3 & condition(tCount) < 7;
-                dsdDesign(dCount).(thisRun).statement(tCount) = affStatements(aStatementCounter + numTrials*(rCount-1));
+                dsdDesign(dCount).(thisRun).statement(tCount) = affStatements(aStatementCounter + (numStatements/4)*(rCount-1));
                 aStatementCounter = aStatementCounter + 1;
             else
                 error('What the fucking fuck?!')
             end
         end
 
-        coinA = nan(numTrials,1);
-        coinB = nan(numTrials,1);
+        coinA = nan(numOptTrials,1);
+        coinB = nan(numOptTrials,1);
 
         % get a different randomized order of coin pairs for each subCondition
         %!! Edit because we don't have t1-3 conditions (but we have affect
         %and neutral
-        % Left is Private, Right is Share
+	% orientation = Left is Private, Right is Share
         % t1 = Neutral
         % t2 = Affective
         % c1 = loss to share
         % c2 = loss to private
         % c3 = equal payout
-        Apairs = leftIsMorePairs;
-        run1t1c1 = Apairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
         
-        Bpairs = rightIsMorePairs;
-        run1t1c2 = Bpairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
-        
-        Epairs = eqPairs;
-        run1t1c3 = Epairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
-        
-        Apairs = leftIsMorePairs;
-        run1t2c1 = Apairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
-        
-        Bpairs = rightIsMorePairs;
-        run1t2c2 = Bpairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
-        
-        Epairs = eqPairs;
-        run1t2c3 = Epairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
+	%maybe delete run1 from following variables? or try to make code enter exact run number?
 
-        t1c1Count = 1;
-        t1c2Count = 1;
-        t1c3Count= 1;
-        t2c1Count = 1;
-        t2c2Count = 1;
-        t2c3Count= 1;
+        run1t1c1 = shuffLeftIsMorePairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
+        
+        run1t1c2 = shuffRightIsMorePairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
+        
+        run1t1c3 = shuffEqPairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
+        
+        run1t2c1 = shuffLeftIsMorePairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
+        
+        run1t2c2 = shuffRightIsMorePairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
 
-        for tCount = 1:numTrials % (there are numTrials trials, screw generalizing this)
-            %% Need to add in here a flipping
+        run1t2c3 = shuffEqPairs((1+7*(rCount - 1)):(7+7*(rCount - 1)), :);
+
+        %t1c1Count = 1;
+        %t1c2Count = 1;
+        %t1c3Count= 1;
+        %t2c1Count = 1;
+        %t2c2Count = 1;
+        %t2c3Count= 1;
+
+        for tCount = 1:numOptTrials 
             switch condition(tCount)
                         case 1
                             coinA(tCount) = run1t1c1(1,1);
-                            coinB(tCount) = run1t1c1(1,2);
-                            run1t1c1 = popArray(run1t1c1);
-                        case 2
+                            coinB(tCount) = run1t1c1(1,2);                           
+                            run1t1c1 = popArray(run1t1c1); 
+
+                      	case 2
                             coinA(tCount) = run1t1c2(1,1);
                             coinB(tCount) = run1t1c2(1,2);
-                            run1t1c2 = popArray(run1t1c2);
+                            run1t1c2 = popArray(run1t1c2);                          
+                            
                         case 3
                             coinA(tCount) = run1t1c3(1,1);
                             coinB(tCount) = run1t1c3(1,2);
                             run1t1c3 = popArray(run1t1c3);
+    
                         case 4
                             coinA(tCount) = run1t2c1(1,1);
                             coinB(tCount) = run1t2c1(1,2);
                             run1t2c1 = popArray(run1t2c1);
+                            
                         case 5
                             coinA(tCount) = run1t2c2(1,1);
                             coinB(tCount) = run1t2c2(1,2);
                             run1t2c2 = popArray(run1t2c2);
+
                         case 6
                             coinA(tCount) = run1t2c3(1,1);
                             coinB(tCount) = run1t2c3(1,2);
-                            run1t2c3 = popArray(run1t2c3);
+                            run1t2c3 = popArray(run1t2c3);           
             end
-
-            % randomly determine screen position
-
-            if (leftoRighto(tCount) >= 0.5)
-                leftCoin(tCount,1) = coinA(tCount);
-                rightCoin(tCount,1) = coinB(tCount);
-                leftTarget(tCount,1) = targetA(tCount);
-                rightTarget(tCount,1) = targetB(tCount);
-            elseif (leftoRighto(tCount) < 0.5)
-                leftCoin(tCount,1) = coinB(tCount);
-                rightCoin(tCount,1) = coinA(tCount);
-                leftTarget(tCount,1) = targetB(tCount);
-                rightTarget(tCount,1) = targetA(tCount);
-            end
-
         end
-        leftCoin(leftCoin==0) = 5;
-        rightCoin(rightCoin==0) = 5;
-        dsdDesign(dCount).(thisRun).leftCoin=leftCoin;
-        dsdDesign(dCount).(thisRun).rightCoin=rightCoin;
-        dsdDesign(dCount).(thisRun).leftTarget=leftTarget;
-        dsdDesign(dCount).(thisRun).rightTarget=rightTarget;
+        
+        %no longer randomly determining screen position
+        
+        dsdDesign(dCount).(thisRun).leftCoin=coinA;
+        dsdDesign(dCount).(thisRun).rightCoin=coinB;
     end
+   
 end
 
 % because having double rests at the end makes the loop funky, manually fix
 % sub007.run2:
-dsdDesign(7).run2.discoJitter(numTrials) = dsdDesign(7).run2.discoJitter(numTrials) + 8;
+%dsdDesign(7).run2.discoJitter(numTrials) = dsdDesign(7).run2.discoJitter(numTrials) + 8;
 %save dsdDesigns.mat dsdDesign
 
-caBut('dsdDesign','targetDirectory'); %!! is problem?
+%caBut('dsdDesign','targetDirectory'); %!! is problem?
 % note, made a separate loop to write output b/c sub007 is funky. Surely, this
 % could be adressed programatically, but I only have time for pragmatic address...
-for dCount = 1:50
+
+
+for dCount = 1:NSubsTotal
     if dCount < 10
-        subID = ['drs00',num2str(dCount)];
-    elseif dCount >= 10
-        subID = ['drs0',num2str(dCount)];
+        subID = ['t00',num2str(dCount)];
+    elseif dCount >= 10 & dCount < 100
+        subID = ['t0',num2str(dCount)];
+    else
+	subID = ['t',num2str(dCount)];
     end
+
     for rCount = 1:2
         thisRun = (['run',num2str(rCount)]);
         condition = dsdDesign(dCount).(thisRun).condition;
-        leftTarget = dsdDesign(dCount).(thisRun).leftTarget;
-        rightTarget = dsdDesign(dCount).(thisRun).rightTarget;  
         leftCoin = dsdDesign(dCount).(thisRun).leftCoin;
         rightCoin = dsdDesign(dCount).(thisRun).rightCoin;
         statement = dsdDesign(dCount).(thisRun).statement;
         choiceJitter = dsdDesign(dCount).(thisRun).choiceJitter;
         discoJitter = dsdDesign(dCount).(thisRun).discoJitter;
 
-        for tCount = 1:numTrials
+        for tCount = 1:numOptTrials
           fid = fopen([targetDirectory,filesep,subID,'_dsd_','run',num2str(rCount),'_input.txt'],'a');
 
-          fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%4.3f,%s\n',tCount,condition(tCount),leftTarget(tCount),rightTarget(tCount),leftCoin(tCount),rightCoin(tCount),choiceJitter(tCount),discoJitter(tCount),statement{tCount});
+          fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%4.3f,%s\n',tCount,condition(tCount),leftCoin(tCount),rightCoin(tCount),choiceJitter(tCount),discoJitter(tCount),statement{tCount});
           fclose(fid);
         end
     end

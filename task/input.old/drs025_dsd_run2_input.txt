@@ -1,0 +1,45 @@
+1,1,2,1,1,1,0.381,0.748,I check Facebook often
+2,3,3,2,5,4,0.561,0.860,I love ketchup
+3,2,3,1,1,1,0.570,0.657,I hate skinny jeans
+4,1,1,2,5,3,0.480,0.995,I think eggs are nasty
+5,2,1,3,1,1,0.390,0.545,I hate to be tickled
+6,3,2,3,5,4,0.498,0.568,I never break the rules
+7,1,1,2,5,4,0.516,1.355,I like smelling markers
+8,2,3,1,5,4,0.525,0.725,I like to play cards
+9,3,3,2,4,2,0.309,0.635,I floss every day
+10,2,3,1,4,4,0.345,9.220,I hate being sick
+11,3,2,3,5,5,0.642,0.927,I never make my bed
+12,3,2,3,2,5,0.669,8.950,I want super powers
+13,3,3,2,1,1,0.399,0.770,I wash my hands often
+14,1,2,1,1,4,0.534,1.490,I like to burp out loud
+15,2,1,3,5,5,0.579,1.040,I get sleepy after eating
+16,1,2,1,4,1,0.588,1.130,I hate tofu
+17,2,3,1,2,3,0.408,0.905,I never sit up straight
+18,3,2,3,2,1,0.426,1.153,I can keep a secret
+19,1,2,1,3,2,0.327,8.793,I always have chapstick
+20,1,1,2,4,2,0.543,0.837,I like birthday parties
+21,2,3,1,4,3,0.651,1.198,I always use sunscreen
+22,3,2,3,4,4,0.678,1.175,I hate mosquito bites
+23,3,3,2,2,4,0.624,1.400,I always watch the news
+24,2,1,3,3,5,0.453,1.288,I make my own lunch
+25,2,3,1,3,5,0.660,0.500,I hate licking envelopes
+26,1,1,2,5,5,0.444,8.523,I never get bored
+27,1,2,1,2,1,0.462,1.377,I like free stuff
+28,1,1,2,3,5,0.489,1.085,I carry a water bottle
+29,2,3,1,3,3,0.435,0.815,I read a lot of comics
+30,1,1,2,3,3,0.633,1.062,I like to sleep in late
+31,1,1,2,1,2,0.300,1.468,I hate sour pickles
+32,3,2,3,5,1,0.507,0.613,I always wear a watch
+33,2,3,1,3,3,0.597,1.265,I hate rainy days
+34,2,1,3,4,1,0.687,0.883,I take a lot of naps
+35,3,2,3,4,1,0.417,0.680,I get ready quickly
+36,2,1,3,3,3,0.318,1.310,I like people who litter
+37,1,2,1,1,2,0.696,1.333,I daydream in class
+38,3,2,3,5,3,0.552,1.018,I hate wearing seatbelts
+39,1,2,1,2,1,0.363,1.107,I like doing new things
+40,3,3,2,2,5,0.372,8.703,I remember dreams
+41,2,1,3,3,3,0.471,1.422,I have a lucky charm
+42,3,2,3,5,5,0.354,9.242,I usually skip breakfast
+43,3,2,3,5,2,0.615,0.590,I sing in the shower
+44,2,3,1,2,4,0.606,0.972,I like to chew my pencil
+45,1,2,1,5,4,0.336,9.445,I love pepperoni pizza

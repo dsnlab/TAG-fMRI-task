@@ -1,0 +1,45 @@
+1,2,1,3,2,3,0.669,0.950,I like cheeseburgers
+2,1,1,2,4,5,0.426,0.905,I am a morning person
+3,2,1,3,1,1,0.516,1.490,I like birthday parties
+4,3,3,2,4,4,0.624,8.500,I never break the rules
+5,1,1,2,5,5,0.678,0.770,I do not eat meat
+6,3,3,2,2,3,0.606,0.568,I hate rainy days
+7,1,1,2,4,3,0.588,1.310,I like to wrestle
+8,3,3,2,3,3,0.336,1.242,I read a lot of comics
+9,2,1,3,5,3,0.390,1.468,I hate tofu
+10,3,3,2,5,5,0.660,1.175,I want to learn to surf
+11,2,1,3,5,2,0.345,1.018,I hate skinny jeans
+12,1,2,1,5,2,0.318,0.860,I hate big cities
+13,1,2,1,5,5,0.525,0.545,I hate being sick
+14,2,1,3,4,5,0.642,0.725,I check Facebook often
+15,3,3,2,2,1,0.309,1.107,I am afraid of ghosts
+16,1,1,2,3,5,0.552,1.400,I love ketchup
+17,3,2,3,1,1,0.507,1.422,I like hip-hop music
+18,3,3,2,4,5,0.462,1.062,I like watching sunsets
+19,1,1,2,1,3,0.363,0.815,I make my own lunch
+20,1,1,2,5,2,0.471,0.590,I tell a lot of jokes
+21,3,3,2,1,4,0.372,0.522,I shower in the morning
+22,2,1,3,1,5,0.435,1.355,I love scary movies
+23,2,3,1,2,2,0.453,1.040,I think tattoos are cool
+24,3,2,3,1,5,0.408,8.635,I hate to be tickled
+25,3,2,3,4,2,0.651,0.837,I floss every day
+26,2,3,1,4,2,0.354,9.152,I drink a lot of coffee
+27,2,3,1,1,2,0.579,0.657,I remember dreams
+28,1,1,2,3,3,0.417,0.972,I never make my bed
+29,3,3,2,3,1,0.597,0.680,I usually skip breakfast
+30,2,1,3,2,2,0.687,0.792,I hate wearing seatbelts
+31,1,1,2,5,1,0.399,1.377,I always watch the news
+32,1,1,2,2,3,0.696,1.130,I hate spicy mustard
+33,2,1,3,3,1,0.300,9.265,I hate being late
+34,1,2,1,4,2,0.543,1.085,I like people who litter
+35,2,1,3,5,5,0.570,1.333,I hate sour pickles
+36,1,1,2,1,1,0.561,9.197,I love pepperoni pizza
+37,2,1,3,3,5,0.381,1.288,I like to chew my pencil
+38,1,2,1,1,1,0.615,0.995,I always use sunscreen
+39,3,3,2,4,1,0.480,0.927,I like to read books
+40,3,3,2,5,5,0.327,0.748,I sing in the shower
+41,2,1,3,3,5,0.534,8.613,I like televised sports
+42,3,2,3,2,4,0.498,0.883,I can keep a secret
+43,3,2,3,5,5,0.633,1.445,I hate mosquito bites
+44,1,1,2,1,5,0.444,1.220,I hate walking uphill
+45,2,3,1,1,5,0.489,8.703,I like to sleep in late

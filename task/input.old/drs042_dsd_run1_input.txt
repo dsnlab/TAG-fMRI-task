@@ -1,0 +1,45 @@
+1,3,2,3,4,5,0.498,1.265,I hate soft beds
+2,2,1,3,4,4,0.696,1.062,I like foot massages
+3,1,2,1,3,4,0.372,0.500,I make people laugh
+4,1,2,1,1,5,0.354,1.468,I hate being late
+5,2,1,3,4,5,0.660,1.310,I bite my fingernails
+6,1,1,2,1,3,0.318,0.748,I love scary movies
+7,3,2,3,5,5,0.426,8.815,I check Facebook often
+8,3,2,3,4,4,0.561,1.130,I hate to be tickled
+9,3,2,3,1,2,0.534,1.333,I carry a water bottle
+10,3,2,3,3,3,0.570,0.860,I think eggs are nasty
+11,2,1,3,5,1,0.399,1.107,I think sushi is gross
+12,1,2,1,1,3,0.516,1.220,I hate eating leftovers
+13,2,1,3,2,2,0.687,0.837,I love pepperoni pizza
+14,3,3,2,2,2,0.444,0.680,I hate squeaky shoes
+15,2,1,3,4,4,0.597,9.018,I hate wearing seatbelts
+16,1,1,2,2,1,0.462,1.355,I get sleepy after eating
+17,1,2,1,4,5,0.507,9.175,I like to play cards
+18,1,1,2,1,4,0.642,1.377,I hate to wait in line
+19,2,1,3,1,1,0.417,1.400,I have a best friend
+20,2,1,3,1,3,0.669,0.703,I tell a lot of jokes
+21,3,3,2,4,1,0.453,0.905,I never get bored
+22,1,2,1,2,3,0.345,0.927,I hate rainy days
+23,2,3,1,2,3,0.543,1.153,I am a good dancer
+24,2,1,3,5,4,0.489,1.198,I hate tapioca
+25,1,1,2,1,1,0.309,1.422,I like to wrestle
+26,3,3,2,3,5,0.651,0.883,I like birthday parties
+27,2,3,1,2,4,0.300,9.085,I like smelling markers
+28,1,1,2,5,5,0.327,8.635,I like free stuff
+29,3,2,3,3,1,0.525,1.040,I like doing new things
+30,1,1,2,2,5,0.606,0.725,I hate tofu
+31,3,3,2,1,2,0.678,1.490,I always wear a watch
+32,1,2,1,3,5,0.624,0.545,I can keep a secret
+33,3,2,3,5,2,0.363,1.288,I want super powers
+34,3,2,3,4,2,0.615,0.613,I make my own lunch
+35,2,1,3,3,3,0.633,0.792,I hate doing dishes
+36,2,1,3,3,4,0.381,0.995,I always have chapstick
+37,2,3,1,1,2,0.435,1.445,I read a lot of comics
+38,3,2,3,1,1,0.336,8.523,I like to sleep in late
+39,2,1,3,3,3,0.408,0.770,I hate pulling weeds
+40,3,2,3,1,1,0.579,0.657,I do not eat meat
+41,1,1,2,2,5,0.471,0.972,I hate spicy mustard
+42,2,1,3,5,2,0.588,0.950,I always watch the news
+43,3,3,2,1,1,0.390,0.568,I hate earmuffs
+44,1,2,1,5,2,0.552,1.242,I like to burp out loud
+45,1,2,1,3,5,0.480,8.590,I like cheeseburgers

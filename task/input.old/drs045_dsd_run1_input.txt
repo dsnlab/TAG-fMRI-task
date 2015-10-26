@@ -1,0 +1,45 @@
+1,2,1,3,1,4,0.372,0.635,I can use chopsticks
+2,1,2,1,5,2,0.696,1.288,I like watching sunsets
+3,3,2,3,1,1,0.399,1.445,I like country music
+4,2,1,3,1,1,0.525,1.062,I am a good dancer
+5,3,3,2,5,4,0.498,0.927,I make my own lunch
+6,1,2,1,5,3,0.534,1.130,I am a morning person
+7,2,3,1,2,1,0.597,8.815,I love scary movies
+8,1,2,1,1,3,0.588,1.153,I hate wearing seatbelts
+9,3,3,2,2,2,0.390,0.792,I love pepperoni pizza
+10,3,3,2,4,1,0.345,1.400,I hate pulling weeds
+11,1,1,2,2,2,0.561,0.860,I wash my hands often
+12,3,3,2,2,5,0.480,0.613,I like smelling markers
+13,2,1,3,5,4,0.417,0.950,I hate big cities
+14,3,3,2,2,3,0.408,1.490,I like wearing hoodies
+15,1,1,2,1,1,0.354,0.770,I always use sunscreen
+16,1,2,1,1,4,0.363,1.468,I take a lot of naps
+17,3,2,3,5,3,0.651,0.995,I can keep a secret
+18,2,3,1,3,3,0.336,8.883,I hate being sick
+19,2,3,1,1,5,0.669,0.725,I like cheeseburgers
+20,3,2,3,3,3,0.642,8.703,I like doing new things
+21,3,2,3,2,3,0.678,1.377,I hate skinny jeans
+22,2,1,3,4,5,0.507,1.018,I like to watch cartoons
+23,2,3,1,5,1,0.624,9.265,I think tattoos are cool
+24,2,1,3,3,4,0.516,1.422,I always watch the news
+25,1,1,2,5,5,0.435,0.522,I want super powers
+26,2,3,1,3,4,0.633,1.198,I make people laugh
+27,3,2,3,1,2,0.300,0.748,I want to learn to surf
+28,1,2,1,4,4,0.309,1.333,I hate to wait in line
+29,1,2,1,5,4,0.606,9.107,I like to read books
+30,1,1,2,5,5,0.489,0.972,I hate earmuffs
+31,2,1,3,4,4,0.615,1.220,I hate spicy mustard
+32,1,2,1,5,5,0.687,0.568,I love ketchup
+33,2,3,1,5,2,0.660,0.837,I like to play cards
+34,2,1,3,4,2,0.381,0.590,I hate licking envelopes
+35,3,2,3,4,3,0.318,0.905,I hate tofu
+36,1,1,2,1,4,0.471,9.242,I get good grades
+37,1,1,2,2,3,0.579,1.085,I like foot massages
+38,3,3,2,2,1,0.570,0.500,I bite my fingernails
+39,1,1,2,4,5,0.552,1.040,I floss every day
+40,3,3,2,1,1,0.444,0.657,I hate mosquito bites
+41,3,2,3,1,2,0.327,1.175,I remember dreams
+42,2,1,3,4,4,0.453,0.545,I sleep without a pillow
+43,1,1,2,5,5,0.543,1.355,I never get bored
+44,2,3,1,2,4,0.426,0.680,I think eggs are nasty
+45,3,3,2,2,1,0.462,9.310,I have a best friend

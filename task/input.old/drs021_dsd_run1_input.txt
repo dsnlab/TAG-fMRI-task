@@ -1,0 +1,45 @@
+1,2,3,1,4,4,0.642,0.927,I like foot massages
+2,3,3,2,4,5,0.516,1.355,I want super powers
+3,3,3,2,5,3,0.588,1.400,I always use sunscreen
+4,1,1,2,2,2,0.318,0.837,I love ketchup
+5,2,1,3,3,4,0.633,0.815,I am afraid of ghosts
+6,1,1,2,1,1,0.543,8.725,I hate being late
+7,1,2,1,2,4,0.669,1.040,I like to play cards
+8,3,3,2,4,4,0.660,1.377,I like to wrestle
+9,2,1,3,2,4,0.606,1.310,I usually skip breakfast
+10,3,2,3,3,2,0.300,8.568,I hate skinny jeans
+11,2,1,3,3,5,0.696,1.333,I think sushi is gross
+12,1,1,2,2,1,0.372,1.085,I like people who litter
+13,1,2,1,4,4,0.507,1.422,I make people laugh
+14,3,2,3,1,1,0.615,0.748,I hate tapioca
+15,3,2,3,5,1,0.552,1.153,I sleep without a pillow
+16,1,1,2,5,5,0.435,1.175,I hate earmuffs
+17,3,2,3,1,4,0.678,0.792,I get ready quickly
+18,2,3,1,4,1,0.534,0.972,I like the way I look
+19,2,3,1,2,5,0.309,0.500,I love pepperoni pizza
+20,1,2,1,2,3,0.525,0.590,I do not eat meat
+21,2,3,1,3,2,0.570,9.107,I like watching sunsets
+22,1,1,2,4,3,0.453,0.635,I hate being sick
+23,2,1,3,2,3,0.444,0.770,I never sit up straight
+24,3,2,3,4,4,0.579,0.860,I hate rainy days
+25,2,1,3,3,3,0.327,9.242,I daydream in class
+26,2,1,3,4,2,0.426,1.490,I like to read books
+27,3,3,2,5,1,0.390,1.198,I always watch the news
+28,1,1,2,1,3,0.489,0.950,I bite my fingernails
+29,3,2,3,4,3,0.354,1.468,I have a best friend
+30,1,1,2,4,5,0.651,9.445,I take a lot of naps
+31,3,2,3,2,2,0.561,0.703,I hate sour pickles
+32,2,3,1,1,3,0.336,1.265,I rarely get headaches
+33,1,1,2,5,1,0.408,0.545,I never break the rules
+34,3,3,2,5,5,0.498,1.018,I hate wearing seatbelts
+35,2,1,3,5,5,0.624,8.905,I like to burp out loud
+36,3,2,3,5,5,0.462,0.522,I am a morning person
+37,3,2,3,4,5,0.597,0.657,I can use chopsticks
+38,1,2,1,2,2,0.399,1.062,I hate mosquito bites
+39,2,1,3,1,5,0.363,0.613,I shower in the morning
+40,1,2,1,3,5,0.345,1.288,I hate doing dishes
+41,1,2,1,4,2,0.471,0.883,I like hip-hop music
+42,2,3,1,3,2,0.480,1.220,I can keep a secret
+43,1,2,1,2,2,0.381,0.680,I hate to be tickled
+44,3,3,2,5,4,0.687,0.995,I always wear a watch
+45,2,1,3,2,3,0.417,9.130,I like to watch cartoons

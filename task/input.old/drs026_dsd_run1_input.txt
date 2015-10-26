@@ -1,0 +1,45 @@
+1,2,3,1,4,5,0.534,0.635,I hate wearing seatbelts
+2,1,2,1,5,2,0.687,0.950,I hate to wait in line
+3,1,1,2,3,2,0.570,9.197,I always use sunscreen
+4,1,1,2,5,5,0.318,0.613,I always watch the news
+5,2,1,3,1,2,0.363,1.040,I like people who litter
+6,3,2,3,4,3,0.381,1.490,I sleep without a pillow
+7,3,3,2,5,5,0.462,0.972,I sing in the shower
+8,3,2,3,5,4,0.345,0.545,I get sleepy after eating
+9,2,1,3,4,5,0.444,1.333,I hate squeaky shoes
+10,1,2,1,4,4,0.489,8.770,I read a lot of comics
+11,3,2,3,1,1,0.327,0.815,I never sit up straight
+12,1,1,2,3,1,0.399,1.355,I like to read books
+13,3,3,2,3,1,0.552,9.265,I think tattoos are cool
+14,3,3,2,3,2,0.390,1.445,I hate eating leftovers
+15,1,1,2,3,5,0.597,1.468,I want super powers
+16,2,3,1,3,2,0.336,0.883,I hate big cities
+17,2,3,1,2,3,0.678,0.725,I always stay up late
+18,3,3,2,4,3,0.507,9.085,I hate tapioca
+19,2,3,1,5,5,0.408,1.288,I like free stuff
+20,2,3,1,5,5,0.309,0.590,I do not eat meat
+21,1,2,1,5,4,0.624,0.995,I like birthday parties
+22,2,3,1,1,1,0.453,1.062,I hate earmuffs
+23,2,3,1,1,4,0.642,1.242,I always wear a watch
+24,3,3,2,4,1,0.435,0.568,I want super powers
+25,1,1,2,5,4,0.633,1.153,I hate to be tickled
+26,3,3,2,5,5,0.606,0.905,I usually skip breakfast
+27,1,1,2,3,4,0.498,1.422,I hate soft beds
+28,1,1,2,2,2,0.579,0.860,I think eggs are nasty
+29,3,2,3,4,5,0.669,1.130,I hate pulling weeds
+30,2,3,1,3,4,0.660,0.792,I never make my bed
+31,1,2,1,4,4,0.480,1.310,I like to watch cartoons
+32,2,1,3,5,2,0.543,0.500,I hate licking envelopes
+33,3,3,2,4,4,0.615,0.703,I have a lucky charm
+34,2,1,3,4,2,0.525,0.748,I like country music
+35,1,2,1,5,4,0.300,1.107,I like watching sunsets
+36,1,2,1,5,4,0.372,1.220,I never get bored
+37,2,1,3,4,4,0.471,8.928,I never break the rules
+38,1,2,1,5,4,0.561,1.400,I hate rainy days
+39,3,2,3,2,2,0.426,1.018,I am afraid of ghosts
+40,3,2,3,1,4,0.651,0.837,I hate walking uphill
+41,2,1,3,5,3,0.588,9.175,I hate riding the bus
+42,3,3,2,2,2,0.354,0.522,I love scary movies
+43,1,1,2,1,1,0.417,1.377,I like to play cards
+44,3,3,2,4,1,0.696,0.657,I like to sleep in late
+45,2,1,3,5,3,0.516,8.680,I rarely get headaches

@@ -1,0 +1,45 @@
+1,2,3,1,5,4,0.417,0.905,I never sit up straight
+2,3,3,2,2,5,0.309,0.680,I usually skip breakfast
+3,1,1,2,2,2,0.579,0.950,I never make my bed
+4,3,2,3,3,3,0.489,9.355,I am a good dancer
+5,1,1,2,2,3,0.480,1.242,I get ready quickly
+6,2,3,1,2,2,0.516,0.568,I hate doing dishes
+7,1,1,2,3,1,0.318,0.972,I do not eat meat
+8,3,3,2,5,5,0.507,1.175,I like to sleep in late
+9,2,3,1,1,4,0.696,0.837,I hate mosquito bites
+10,3,2,3,4,4,0.615,1.220,I get good grades
+11,2,1,3,1,4,0.561,1.265,I like to play cards
+12,1,1,2,4,1,0.606,1.400,I drink a lot of coffee
+13,1,2,1,5,1,0.642,1.040,I am afraid of ghosts
+14,1,1,2,5,4,0.678,0.748,I hate to wait in line
+15,2,3,1,3,4,0.660,0.500,I rarely get headaches
+16,3,3,2,2,1,0.570,1.490,I hate squeaky shoes
+17,3,2,3,5,1,0.534,1.130,I like wearing hoodies
+18,2,3,1,2,1,0.336,0.815,I love pepperoni pizza
+19,2,3,1,1,1,0.498,1.153,I have a best friend
+20,2,3,1,3,3,0.390,8.770,I am a morning person
+21,2,1,3,5,1,0.687,1.310,I hate chicken soup
+22,3,2,3,2,1,0.552,0.927,I like the way I look
+23,1,2,1,1,2,0.345,8.793,I hate big cities
+24,1,2,1,3,3,0.363,0.703,I think tattoos are cool
+25,3,2,3,5,3,0.543,0.860,I hate pulling weeds
+26,2,1,3,3,5,0.327,1.018,I like people who litter
+27,1,1,2,2,2,0.444,0.590,I have a lucky charm
+28,3,3,2,3,3,0.471,0.613,I can keep a secret
+29,3,3,2,1,4,0.399,0.545,I read a lot of comics
+30,1,1,2,1,2,0.435,1.422,I like doing new things
+31,1,1,2,2,4,0.669,0.725,I shower in the morning
+32,2,3,1,5,5,0.300,0.522,I hate earmuffs
+33,2,3,1,4,2,0.354,9.197,I like foot massages
+34,1,1,2,1,1,0.633,1.288,I tell a lot of jokes
+35,2,1,3,1,5,0.381,1.377,I always wear a watch
+36,3,2,3,4,5,0.408,9.467,I like hip-hop music
+37,3,3,2,1,1,0.426,1.333,I sleep without a pillow
+38,1,2,1,5,2,0.453,0.883,I hate tapioca
+39,3,2,3,1,1,0.624,1.085,I remember dreams
+40,3,3,2,1,1,0.588,1.107,I never break the rules
+41,2,3,1,4,5,0.597,9.062,I take a lot of naps
+42,3,2,3,3,4,0.525,0.657,I bite my fingernails
+43,1,1,2,2,5,0.372,1.445,I always use sunscreen
+44,2,3,1,4,5,0.462,0.995,I hate wearing seatbelts
+45,1,1,2,2,5,0.651,8.635,I like birthday parties

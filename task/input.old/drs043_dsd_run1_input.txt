@@ -1,0 +1,45 @@
+1,3,3,2,5,1,0.516,1.445,I hate skinny jeans
+2,1,2,1,2,2,0.534,0.635,I floss every day
+3,3,2,3,2,5,0.381,1.422,I remember dreams
+4,2,1,3,1,3,0.453,9.018,I like to play cards
+5,2,3,1,2,2,0.399,0.545,I like to sleep in late
+6,2,1,3,3,2,0.552,1.242,I like the way I look
+7,1,2,1,3,2,0.462,0.770,I can use chopsticks
+8,3,2,3,4,3,0.300,0.905,I hate licking envelopes
+9,1,1,2,5,4,0.435,0.950,I hate doing dishes
+10,2,3,1,4,4,0.408,1.107,I like televised sports
+11,3,3,2,5,3,0.624,1.355,I like to watch cartoons
+12,2,3,1,3,3,0.417,0.748,I am afraid of ghosts
+13,3,3,2,4,4,0.543,9.287,I like wearing hoodies
+14,1,2,1,5,5,0.480,0.590,I want to learn to surf
+15,3,3,2,3,1,0.525,0.680,I think sushi is gross
+16,2,1,3,5,2,0.588,1.130,I never get bored
+17,1,1,2,5,5,0.687,1.198,I hate pulling weeds
+18,2,3,1,3,5,0.363,1.175,I always wear a watch
+19,1,1,2,1,1,0.426,1.085,I hate sour pickles
+20,3,2,3,2,1,0.696,1.333,I like doing new things
+21,2,1,3,2,3,0.471,0.792,I never make my bed
+22,2,3,1,5,4,0.615,1.468,I hate to be tickled
+23,1,2,1,4,4,0.570,0.500,I like country music
+24,2,3,1,1,3,0.669,0.860,I always stay up late
+25,3,3,2,4,3,0.309,1.040,I think tattoos are cool
+26,1,2,1,1,2,0.660,8.523,I hate squeaky shoes
+27,1,2,1,1,3,0.507,8.815,I hate chicken soup
+28,1,1,2,5,1,0.354,0.613,I get good grades
+29,1,2,1,4,4,0.318,0.927,I tell a lot of jokes
+30,2,3,1,2,2,0.390,8.725,I wash my hands often
+31,3,3,2,1,2,0.336,0.837,I am a morning person
+32,3,2,3,2,1,0.498,0.568,I hate tapioca
+33,2,1,3,5,1,0.372,1.377,I hate earmuffs
+34,3,2,3,1,1,0.597,9.152,I hate to wait in line
+35,3,3,2,4,1,0.489,1.310,I hate tofu
+36,1,2,1,4,3,0.345,0.657,I like smelling markers
+37,1,2,1,4,4,0.642,1.490,I drink a lot of coffee
+38,3,3,2,1,2,0.606,1.400,I rarely get headaches
+39,3,2,3,4,4,0.444,1.220,I hate being sick
+40,1,2,1,3,1,0.651,0.703,I hate soft beds
+41,3,3,2,1,2,0.561,0.972,I like birthday parties
+42,2,1,3,1,1,0.678,1.265,I check Facebook often
+43,2,3,1,1,5,0.579,0.883,I love scary movies
+44,1,1,2,4,3,0.327,0.995,I hate spicy mustard
+45,2,3,1,1,5,0.633,9.062,I think eggs are nasty

@@ -1,0 +1,45 @@
+1,3,2,3,3,5,0.660,0.927,I take a lot of naps
+2,2,1,3,5,1,0.561,1.265,I drink a lot of coffee
+3,1,1,2,5,5,0.498,1.018,I do not eat meat
+4,3,2,3,2,2,0.687,9.062,I like to read books
+5,1,1,2,5,3,0.588,0.500,I never sit up straight
+6,3,3,2,2,2,0.408,1.175,I always stay up late
+7,1,1,2,3,5,0.696,1.333,I like country music
+8,1,2,1,3,3,0.417,1.130,I get sleepy after eating
+9,2,3,1,5,4,0.669,0.657,I wash my hands often
+10,3,2,3,2,4,0.309,1.468,I check Facebook often
+11,2,3,1,3,5,0.471,0.770,I hate mosquito bites
+12,2,3,1,5,2,0.570,0.545,I like to sleep in late
+13,1,2,1,5,5,0.390,9.085,I like to chew my pencil
+14,3,2,3,5,2,0.633,1.310,I hate tapioca
+15,2,1,3,3,5,0.651,0.815,I shower in the morning
+16,2,1,3,1,2,0.642,9.107,I hate riding the bus
+17,2,3,1,5,5,0.327,1.490,I make people laugh
+18,1,2,1,1,1,0.318,0.522,I hate licking envelopes
+19,2,3,1,4,1,0.624,0.860,I like to burp out loud
+20,3,2,3,1,2,0.399,1.040,I like watching sunsets
+21,3,2,3,2,5,0.363,0.792,I hate eating leftovers
+22,1,1,2,3,1,0.615,0.680,I bite my fingernails
+23,2,1,3,2,1,0.444,1.400,I have a best friend
+24,3,2,3,1,1,0.372,1.445,I hate earmuffs
+25,2,1,3,4,1,0.606,0.995,I like to wrestle
+26,1,2,1,4,4,0.597,1.377,I hate being late
+27,3,2,3,4,4,0.543,0.883,I am a good dancer
+28,1,1,2,2,5,0.300,8.703,I tell a lot of jokes
+29,1,2,1,1,4,0.552,0.568,I hate soft beds
+30,1,1,2,4,2,0.516,0.590,I want super powers
+31,2,1,3,5,4,0.534,1.220,I am a morning person
+32,3,3,2,4,1,0.345,9.242,I hate walking uphill
+33,1,2,1,4,4,0.336,0.635,I like foot massages
+34,2,1,3,4,1,0.462,0.725,I never make my bed
+35,3,3,2,4,5,0.453,0.837,I think eggs are nasty
+36,3,2,3,3,3,0.507,8.905,I hate doing dishes
+37,3,2,3,5,4,0.480,0.972,I like the way I look
+38,1,1,2,4,2,0.579,1.198,I like to play cards
+39,3,3,2,3,3,0.525,1.355,I hate spicy mustard
+40,2,3,1,3,3,0.426,1.288,I never get bored
+41,2,3,1,4,5,0.381,1.153,I want to learn to surf
+42,1,1,2,4,4,0.354,0.748,I have a lucky charm
+43,2,3,1,4,5,0.678,0.950,I like televised sports
+44,3,3,2,4,5,0.489,0.613,I hate tofu
+45,1,2,1,2,4,0.435,9.422,I sing in the shower

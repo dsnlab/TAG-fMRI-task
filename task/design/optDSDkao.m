@@ -278,7 +278,7 @@ clear;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 date = clock;
 date = [num2str(date(2))  num2str(date(3))  num2str(date(1)) '-' num2str(date(4))  num2str(date(5)) ];
-Inp.filename = (['dsd_8s_45t_opt', date, '.mat']); % <-- filename for output
+Inp.filename = (['dsd_8s_42t_opt', date, '.mat']); % <-- filename for output
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %**** Experimental conditions
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -351,7 +351,7 @@ Inp.stimFREQ = ones(1,Inp.nSTYPE)./Inp.nSTYPE; %<-- desired stimulus frequency
 %**** Algorithmic parameters
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Inp.StopRule = 1; % 1=maximal generations; 2=accumulated improvement
-Inp.numITR = 400;
+Inp.numITR = 600;
 % when StopRule = 1, total number of GA generations for each loop
 % when StopRule = 2, check the stopping rule every Inp.numITR generation
 Inp.improve = 10^(-7);
