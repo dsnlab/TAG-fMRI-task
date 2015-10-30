@@ -1,45 +1,41 @@
-1,1,1,2,1,4,0.318,0.860,I like to watch cartoons
-2,1,1,2,2,5,0.354,1.040,I like watching sunsets
-3,2,3,1,5,3,0.516,1.265,I tell a lot of jokes
-4,1,1,2,4,4,0.408,1.175,I like to wrestle
-5,3,2,3,3,2,0.471,1.310,I check Facebook often
-6,2,1,3,4,4,0.525,1.355,I always use sunscreen
-7,1,2,1,5,3,0.390,1.400,I have a best friend
-8,2,1,3,4,4,0.588,1.198,I hate chicken soup
-9,3,2,3,5,2,0.363,0.657,I hate being sick
-10,2,1,3,2,2,0.300,8.995,I hate mosquito bites
-11,3,2,3,3,3,0.417,0.568,I get ready quickly
-12,3,2,3,2,3,0.606,0.703,I hate squeaky shoes
-13,3,2,3,5,4,0.309,1.153,I always wear a watch
-14,3,3,2,1,2,0.597,0.837,I like the way I look
-15,1,2,1,5,1,0.336,0.522,I hate tofu
-16,2,3,1,1,2,0.624,0.950,I sleep without a pillow
-17,3,3,2,1,5,0.696,1.107,I shower in the morning
-18,1,1,2,5,5,0.507,1.288,I hate licking envelopes
-19,2,3,1,1,4,0.372,0.972,I can use chopsticks
-20,2,3,1,4,5,0.561,0.545,I floss every day
-21,1,2,1,1,4,0.399,0.792,I rarely get headaches
-22,3,3,2,4,3,0.453,8.928,I sing in the shower
-23,1,1,2,2,2,0.345,1.018,I like to chew my pencil
-24,2,3,1,2,1,0.381,1.085,I never make my bed
-25,3,2,3,2,2,0.669,1.490,I hate tapioca
-26,2,1,3,3,3,0.570,0.905,I hate skinny jeans
-27,1,1,2,1,3,0.534,1.242,I always have chapstick
-28,1,2,1,2,3,0.498,9.377,I carry a water bottle
-29,1,2,1,2,2,0.426,1.422,I like to burp out loud
-30,3,3,2,4,4,0.327,0.680,I hate walking uphill
-31,2,3,1,2,4,0.480,1.333,I hate to be tickled
-32,3,2,3,3,4,0.651,9.467,I want super powers
-33,2,3,1,3,3,0.615,1.130,I like smelling markers
-34,1,1,2,5,1,0.444,0.815,I like country music
-35,1,2,1,2,3,0.660,8.613,I like to read books
-36,3,2,3,2,5,0.489,0.748,I have a lucky charm
-37,1,1,2,5,4,0.642,0.635,I like free stuff
-38,2,1,3,1,4,0.543,0.883,I bite my fingernails
-39,2,1,3,2,3,0.462,9.220,I hate riding the bus
-40,3,3,2,3,3,0.552,0.725,I hate soft beds
-41,2,3,1,3,3,0.579,0.590,I always stay up late
-42,2,3,1,5,4,0.687,1.445,I want super powers
-43,3,2,3,2,2,0.678,1.062,I always watch the news
-44,1,1,2,5,3,0.435,0.770,I hate wearing seatbelts
-45,3,3,2,1,3,0.633,8.500,I like to play cards
+1,1,4,3,0.444,0.860,I want super powers
+2,2,3,4,0.516,1.040,I like people who litter
+3,3,3,3,0.300,0.500,I never sit up straight
+4,4,4,3,0.579,1.198,I hate squeaky shoes
+5,5,3,4,0.651,1.377,I always watch the news
+6,6,3,3,0.399,0.748,I hate being sick
+7,4,3,2,0.552,1.130,I hate tofu
+8,2,2,3,0.570,1.175,I love pepperoni pizza
+9,3,2,2,0.309,0.522,I like to sleep in late
+10,1,3,2,0.354,0.635,I love ketchup
+11,5,2,3,0.453,0.883,I check Facebook often
+12,6,2,2,0.588,1.220,I hate tapioca
+13,1,4,2,0.543,1.107,I like wearing hoodies
+14,5,2,4,0.642,1.355,I hate earmuffs
+15,1,3,2,0.597,1.242,I want super powers
+16,4,4,2,0.624,1.310,I hate to be tickled
+17,6,4,4,0.435,0.837,I get sleepy after eating
+18,2,2,4,0.489,0.972,I never get bored
+19,1,4,2,0.390,0.725,I like to chew my pencil
+20,6,2,2,0.336,0.590,I can keep a secret
+21,2,2,3,0.678,1.445,I think sushi is gross
+22,3,4,4,0.480,0.950,I tell a lot of jokes
+23,4,3,2,0.669,1.422,I hate soft beds
+24,2,2,4,0.525,1.062,I shower in the morning
+25,5,2,3,0.426,0.815,I hate riding the bus
+26,6,4,4,0.408,0.770,I hate licking envelopes
+27,3,2,2,0.687,1.468,I like the way I look
+28,5,2,4,0.507,1.018,I am a morning person
+29,2,2,4,0.471,0.927,I never break the rules
+30,4,4,2,0.606,1.265,I get ready quickly
+31,3,4,4,0.462,0.905,I rarely get headaches
+32,6,3,3,0.417,0.792,I hate chicken soup
+33,4,4,2,0.696,1.490,I floss every day
+34,1,4,2,0.615,1.288,I make my own lunch
+35,3,3,3,0.318,0.545,I make people laugh
+36,2,3,4,0.327,0.568,I sleep without a pillow
+37,5,2,4,0.498,0.995,I get good grades
+38,4,4,3,0.372,0.680,I hate pulling weeds
+39,1,4,3,0.345,0.613,I am afraid of ghosts
+40,6,3,3,0.363,0.657,I eat potatoes
+41,5,3,4,0.633,9.332,I hate eating leftovers

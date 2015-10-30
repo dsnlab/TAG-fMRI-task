@@ -26,6 +26,7 @@ function [task] = runDSD(subNum,runNum)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Screen('Preference', 'SkipSyncTests', 1);
 %% get subID from subNum
 if subNum < 10
   subID = ['drs00',num2str(subNum)];
@@ -50,25 +51,24 @@ end
 
 % load trialMatrix
 fid=fopen(inputTextFile);
-trialMatrix=textscan(fid,'%u%u%u%u%u%u%f%f%s\n','delimiter',',');
+trialMatrix=textscan(fid,'%f%f%f%f%f%f%s\n','delimiter',',');
 fclose(fid);
 %% store info from trialMatrix in drs structure
-task.input.raw = [trialMatrix{1} trialMatrix{2} trialMatrix{3} trialMatrix{4} trialMatrix{5} trialMatrix{6} trialMatrix{7} trialMatrix{8}];
+task.input.raw = [trialMatrix{1} trialMatrix{2} trialMatrix{3} trialMatrix{4} trialMatrix{5} trialMatrix{6}];
 task.input.condition = trialMatrix{2};
-task.input.leftTarget = trialMatrix{3};
-task.input.rightTarget = trialMatrix{4};
-task.input.leftCoin = trialMatrix{5};
-task.input.rightCoin = trialMatrix{6};
-task.input.choiceJitter = trialMatrix{7};
-task.input.discoJitter = trialMatrix{8};
-task.input.statement = trialMatrix{9};
+task.input.leftCoin = trialMatrix{3};
+task.input.rightCoin = trialMatrix{4};
+task.input.choiceJitter = trialMatrix{5};
+task.input.discoJitter = trialMatrix{6};
+task.input.statement = trialMatrix{7};
 numTrials = length(trialMatrix{1});
-task.output.raw = NaN(numTrials,13);
+task.output.raw = NaN(numTrials,11);
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
 PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
 rng('shuffle'); % if incompatible with older machines, use >> rand('seed', sum(100 * clock));
 screenNumber = max(Screen('Screens'));
+PsychImaging('PrepareConfiguration');
 % open a window, set more params
 %[win,winBox] = PsychImaging('OpenWindow',screenNumber,bg,[0 0 1920/2 1080/2],[],'kPsychGUIWindow');
 [win,winBox] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
@@ -137,10 +137,10 @@ loopStartTime = GetSecs;
 %% trial loop
 for tCount = 1:numTrials
   %% set variables for this trial
-  targets = [trialMatrix{3}(tCount),trialMatrix{4}(tCount),trialMatrix{5}(tCount),trialMatrix{6}(tCount)];
-  choiceJitter = trialMatrix{7}(tCount);
-  discoJitter = trialMatrix{8}(tCount);
-  statement = trialMatrix{9}{tCount};
+  targets = [1,2,trialMatrix{3}(tCount),trialMatrix{4}(tCount)];
+  choiceJitter = trialMatrix{5}(tCount);
+  discoJitter = trialMatrix{6}(tCount);
+  statement = trialMatrix{7}{tCount};
   choiceResponse = 0;
   choiceRT = NaN;
   discoRT = NaN;
@@ -226,25 +226,23 @@ for tCount = 1:numTrials
   task.output.raw(tCount,2) = trialMatrix{2}(tCount);
   task.output.raw(tCount,3) = trialMatrix{3}(tCount);
   task.output.raw(tCount,4) = trialMatrix{4}(tCount);
-  task.output.raw(tCount,5) = trialMatrix{5}(tCount);
-  task.output.raw(tCount,6) = trialMatrix{6}(tCount);
-  task.output.raw(tCount,7) = (choiceOnset - loopStartTime);
-  task.output.raw(tCount,8) = choiceResponse;
-  task.output.raw(tCount,9) = choiceRT;
-  task.output.raw(tCount,10) = (discoOnset - loopStartTime);
-  task.output.raw(tCount,11) = discoResponse;
-  task.output.raw(tCount,12) = discoRT;
+  task.output.raw(tCount,5) = (choiceOnset - loopStartTime);
+  task.output.raw(tCount,6) = choiceResponse;
+  task.output.raw(tCount,7) = choiceRT;
+  task.output.raw(tCount,8) = (discoOnset - loopStartTime);
+  task.output.raw(tCount,9) = discoResponse;
+  task.output.raw(tCount,10) = discoRT;
   if payout == 5
     payout = 0;
   end
-  task.output.raw(tCount,13) = payout;
+  task.output.raw(tCount,11) = payout;
   % save task structure every trial (much faster than writing to text file)
   save(subOutputMat,'task');
 
 end
 % End of experiment screen. We clear the screen once they have made their
 % response
-payout = nansum(task.output.raw(:,13));
+payout = nansum(task.output.raw(:,11));
 task.payout = payout;
 endText = ['Sharing task ',thisRun,' complete! \n\nYou earned ',num2str(payout), ' gold coins.'];
 DrawFormattedText(win, endText,...
@@ -256,8 +254,8 @@ KbQueueRelease;
 if runNum ~= 0
   fid=fopen(outputTextFile,'a');
   for tCount = 1:numTrials
-    fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%u,%4.3f,%4.3f,%u,%4.3f,%u,%s\n',...
-    task.output.raw(tCount,1:13), task.input.statement{tCount});
+    fprintf(fid,'%u,%u,%u,%u,%4.3f,%u,%4.3f,%4.3f,%u,%4.3f,%u,%s\n',...
+    task.output.raw(tCount,1:11), task.input.statement{tCount});
   end
   fclose(fid);
   task.calibration = calibrationOnset;

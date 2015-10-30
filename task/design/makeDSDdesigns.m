@@ -213,9 +213,9 @@ end
 
 for dCount = 1:NSubsTotal
     if dCount < 10
-        subID = ['t00',num2str(dCount)];
+        subID = ['drs00',num2str(dCount)];
     elseif dCount >= 10 & dCount < 100
-        subID = ['t0',num2str(dCount)];
+        subID = ['drs0',num2str(dCount)];
     else
 	subID = ['t',num2str(dCount)];
     end
@@ -232,7 +232,7 @@ for dCount = 1:NSubsTotal
         for tCount = 1:numOptTrials
           fid = fopen([targetDirectory,filesep,subID,'_dsd_','run',num2str(rCount),'_input.txt'],'a');
 
-          fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%4.3f,%s\n',tCount,condition(tCount),leftCoin(tCount),rightCoin(tCount),choiceJitter(tCount),discoJitter(tCount),statement{tCount});
+          fprintf(fid,'%u,%u,%u,%u,%4.3f,%4.3f,%s\n',tCount,condition(tCount),leftCoin(tCount),rightCoin(tCount),choiceJitter(tCount),discoJitter(tCount),statement{tCount});
           fclose(fid);
         end
     end

@@ -1,45 +1,41 @@
-1,1,2,1,5,4,0.462,0.703,I hate eating leftovers
-2,2,1,3,5,1,0.615,1.333,I make my own lunch
-3,3,3,2,4,4,0.435,0.613,I daydream in class
-4,3,2,3,3,1,0.651,1.468,I can keep a secret
-5,2,1,3,1,4,0.318,0.568,I want to learn to surf
-6,3,2,3,3,3,0.390,1.288,I hate to wait in line
-7,2,1,3,2,5,0.687,1.175,I usually skip breakfast
-8,3,3,2,4,5,0.381,1.310,I hate rainy days
-9,1,1,2,3,1,0.552,1.355,I hate spicy mustard
-10,1,2,1,2,3,0.507,1.242,I remember dreams
-11,3,3,2,3,4,0.327,0.522,I never break the rules
-12,1,1,2,3,5,0.660,1.198,I take a lot of naps
-13,3,2,3,5,5,0.354,0.837,I get sleepy after eating
-14,1,2,1,4,3,0.444,9.400,I wash my hands often
-15,2,1,3,3,1,0.399,1.040,I never sit up straight
-16,1,1,2,1,1,0.408,0.635,I hate pulling weeds
-17,1,1,2,2,2,0.669,0.972,I am a good dancer
-18,3,2,3,5,1,0.597,1.445,I love ketchup
-19,3,2,3,4,5,0.588,1.377,I think sushi is gross
-20,2,1,3,2,4,0.336,0.792,I like doing new things
-21,1,2,1,4,1,0.417,8.815,I am afraid of ghosts
-22,3,3,2,1,1,0.309,9.220,I am a morning person
-23,2,1,3,5,3,0.516,0.770,I make people laugh
-24,3,3,2,3,5,0.489,0.860,I like birthday parties
-25,2,3,1,4,5,0.561,0.883,I love pepperoni pizza
-26,2,3,1,2,3,0.426,1.018,I love scary movies
-27,2,1,3,3,3,0.543,0.500,I like foot massages
-28,1,1,2,4,4,0.534,1.107,I like hip-hop music
-29,3,2,3,3,3,0.498,1.153,I read a lot of comics
-30,1,2,1,4,2,0.345,1.130,I like wearing hoodies
-31,2,3,1,2,2,0.363,0.657,I hate doing dishes
-32,2,1,3,5,4,0.570,0.950,I think eggs are nasty
-33,1,2,1,5,5,0.579,0.590,I like cheeseburgers
-34,3,3,2,3,3,0.678,0.545,I like to sleep in late
-35,2,1,3,4,2,0.372,8.748,I think tattoos are cool
-36,2,3,1,5,3,0.696,0.680,I like televised sports
-37,3,2,3,3,3,0.480,0.927,I hate earmuffs
-38,3,2,3,3,4,0.642,8.995,I drink a lot of coffee
-39,1,1,2,4,1,0.453,8.905,I get good grades
-40,1,2,1,1,4,0.624,1.265,I hate being late
-41,2,1,3,4,4,0.633,1.085,I hate big cities
-42,1,1,2,4,1,0.471,1.490,I hate sour pickles
-43,2,1,3,5,4,0.525,1.422,I do not eat meat
-44,3,2,3,1,3,0.300,0.725,I like people who litter
-45,1,1,2,3,3,0.606,9.062,I never get bored
+1,1,4,2,0.678,1.445,I love scary movies
+2,2,2,4,0.462,0.905,I like to play cards
+3,3,4,4,0.381,0.703,I like foot massages
+4,4,4,2,0.300,0.500,I drink a lot of coffee
+5,6,4,4,0.345,0.613,I can use chopsticks
+6,5,2,4,0.597,1.242,I always have chapstick
+7,1,3,2,0.561,1.153,I like televised sports
+8,3,2,2,0.417,0.792,I think eggs are nasty
+9,5,2,3,0.696,1.490,I am a good dancer
+10,4,3,2,0.318,0.545,I hate skinny jeans
+11,6,2,2,0.363,0.657,I hate mosquito bites
+12,4,4,3,0.507,1.018,I do not eat meat
+13,3,3,3,0.426,0.815,I sing in the shower
+14,2,2,3,0.408,0.770,I like to wrestle
+15,1,4,3,0.624,1.310,I like hip-hop music
+16,3,4,4,0.651,1.377,I like to burp out loud
+17,5,3,4,0.687,1.468,I always use sunscreen
+18,1,4,2,0.615,1.288,I never make my bed
+19,2,3,4,0.336,0.590,I like watching sunsets
+20,4,4,2,0.309,0.522,I bite my fingernails
+21,1,3,2,0.390,0.725,I like to watch cartoons
+22,2,2,4,0.660,1.400,I usually skip breakfast
+23,6,3,3,0.534,1.085,I hate being late
+24,2,2,3,0.579,1.198,I want to learn to surf
+25,5,2,4,0.633,1.333,I hate big cities
+26,6,4,4,0.327,0.568,I daydream in class
+27,2,3,4,0.516,1.040,I think tattoos are cool
+28,4,3,2,0.453,0.883,I hate spicy mustard
+29,3,2,2,0.399,0.748,I like smelling markers
+30,5,2,3,0.444,0.860,I hate to wait in line
+31,4,4,3,0.435,0.837,I hate sour pickles
+32,1,4,3,0.642,1.355,I like free stuff
+33,5,3,4,0.498,0.995,I always wear a watch
+34,6,2,2,0.372,0.680,I always stay up late
+35,3,3,3,0.606,1.265,I like to read books
+36,6,3,3,0.588,1.220,I carry a water bottle
+37,1,4,2,0.552,1.130,I wash my hands often
+38,2,2,4,0.354,0.635,I read a lot of comics
+39,3,4,4,0.489,0.972,I take a lot of naps
+40,4,4,2,0.525,1.062,I hate walking uphill
+41,5,2,4,0.471,0.927,I hate doing dishes
