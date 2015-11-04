@@ -27,7 +27,8 @@ for deviceCount=1:length(devices),
     keys.trigger = 52; % trigger pulse / TR signal key ('`') for LCNI scanner
     fprintf('button box detected\n using device #%d: %s\n',deviceCount,devices(deviceCount).product);
     break,
-  elseif (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')),
+  elseif ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
+          || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Apple, Inc'))),
     keys.bbox = deviceCount;
     keys.trigger = KbName('t'); % use 't' as KbTrigger
     fprintf('Using Device #%d: internal %s\n',deviceCount,devices(deviceCount).usageName);

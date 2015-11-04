@@ -7,6 +7,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % open dialog to get some info from participant
+Screen('Preference', 'SkipSyncTests', 1);
 drs = getSubInfo();
 % set subID & studyDir (cause I keep forgetting to drill into drs.subID/studyDir)
 subID = drs.subID;
@@ -185,12 +186,14 @@ KbStrokeWait(inputDevice);
   drawChoice(win,drs.stim,targets);
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);
+  KbQueueCreate(inputDevice);
   KbQueueStart(inputDevice);
   % flip the screen to show choice
   [~,choiceOnset] = Screen('Flip',win);
   %loop for response
   while (GetSecs - choiceOnset) < 3
     [ pressed, firstPress]=KbQueueCheck(inputDevice);
+    display(pressed);
       if pressed
         if chose == 0
           choiceRT = firstPress(find(firstPress)) - choiceOnset;
