@@ -11,8 +11,7 @@ function [task] = runDSD(subNum,runNum)
 %    input text columns (%u,%u,%u,%u,%u,%f%f) 
 %       1. trialNum
 %       2. condition (self vs. friend == 1, self vs. parent == 2, friend vs. parent == 3)
-%       3. leftTarget (self == 1, friend == 2, parent == 3) !! Delete
-%       target 3
+%       3. leftTarget (self == 1, friend == 2, parent == 3) 
 %       4. rightTarget
 %       5. leftCoin (1:4 == 1:4 coins, 5 == 0 coins, for indexing convenience)
 %       6. rightCoin

@@ -223,6 +223,8 @@ for dCount = 1:NSubsTotal
     for rCount = 1:2
         thisRun = (['run',num2str(rCount)]);
         condition = dsdDesign(dCount).(thisRun).condition;
+        leftTarget = repmat(1,numOptTrials,1);
+        rightTarget = repmat(2,numOptTrials,1);
         leftCoin = dsdDesign(dCount).(thisRun).leftCoin;
         rightCoin = dsdDesign(dCount).(thisRun).rightCoin;
         statement = dsdDesign(dCount).(thisRun).statement;
@@ -232,7 +234,7 @@ for dCount = 1:NSubsTotal
         for tCount = 1:numOptTrials
           fid = fopen([targetDirectory,filesep,subID,'_dsd_','run',num2str(rCount),'_input.txt'],'a');
 
-          fprintf(fid,'%u,%u,%u,%u,%4.3f,%4.3f,%s\n',tCount,condition(tCount),leftCoin(tCount),rightCoin(tCount),choiceJitter(tCount),discoJitter(tCount),statement{tCount});
+          fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%4.3f,%s\n',tCount,condition(tCount),leftTarget(tCount),rightTarget(tCount),leftCoin(tCount),rightCoin(tCount),choiceJitter(tCount),discoJitter(tCount),statement{tCount});
           fclose(fid);
         end
     end
