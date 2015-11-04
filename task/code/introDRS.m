@@ -35,6 +35,9 @@ Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 drs.keys = initKeys;
 inputDevice = drs.keys.deviceNum;
 
+leftKeys = ([drs.keys.b0 drs.keys.b1 drs.keys.b2 drs.keys.b3 drs.keys.b4 drs.keys.left]);
+rightKeys = ([drs.keys.b5 drs.keys.b6 drs.keys.b7 drs.keys.b8 drs.keys.b9 drs.keys.right]);
+
 %% preface
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
@@ -205,9 +208,9 @@ KbStrokeWait(inputDevice);
           choiceRT = firstPress(find(firstPress)) - choiceOnset;
         end
 
-        if find(firstPress(drs.keys.left))
+        if find(firstPress(leftKeys))
             choiceResponse = 1;
-        elseif find(firstPress(drs.keys.right))
+        elseif find(firstPress(rightKeys))
             choiceResponse = 2;
         end
         chose=1;
