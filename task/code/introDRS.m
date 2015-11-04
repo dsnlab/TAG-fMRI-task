@@ -170,7 +170,7 @@ drawDiscoFeedback(win,drs.stim,targets,statement,1,1);
 WaitSecs(1);
 %%
 statement = 'I hate the smell of paint';
-targets = [2 3 3 2];
+targets = [1 2 3 2];
 DrawFormattedText(win, 'Sharing Task: try it out! ','center',(drs.stim.box.yCenter - 4*drs.stim.box.unit), drs.stim.yellow);
 drawHands(win,drs.stim,targets,[0.5 0.5]);
 drawChoice(win,drs.stim,targets);
@@ -190,11 +190,13 @@ KbStrokeWait(inputDevice);
   KbQueueStart(inputDevice);
   % flip the screen to show choice
   [~,choiceOnset] = Screen('Flip',win);
+  chose=0;
+  pressed=0;
   %loop for response
   while (GetSecs - choiceOnset) < 3
+      display([GetSecs - choiceOnset chose pressed]);
     [ pressed, firstPress]=KbQueueCheck(inputDevice);
-    display(pressed);
-      if pressed
+      if pressed == 1
         if chose == 0
           choiceRT = firstPress(find(firstPress)) - choiceOnset;
         elseif chose == 1
@@ -203,15 +205,17 @@ KbStrokeWait(inputDevice);
           choiceRT = firstPress(find(firstPress)) - choiceOnset;
         end
 
-        if find(firstPress(leftKeys))
+        if find(firstPress(drs.keys.left))
             choiceResponse = 1;
-        elseif find(firstPress(rightKeys))
+        elseif find(firstPress(drs.keys.right))
             choiceResponse = 2;
         end
-         chose=1;
+        chose=1;
         drawChoiceFeedback(win,drs.stim,targets,choiceResponse);
       end   
   end
+  
+%Screen('CloseAll');
 %   KbQueueStop(inputDevice);
 
 
