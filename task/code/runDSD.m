@@ -153,11 +153,42 @@ for tCount = 1:numTrials
   multiDiscoResponse = [];
   multiDiscoRT =[];
   %% call draw function
+  discoResponse = 0;
+  drawYesNo(win,drs.stim,[0.5 0.5]);
+  drawDisco(win,drs.stim,targets,statement,choiceResponse);
+  
+  Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
+  Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);
+  
+  %
+  KbQueueStart(inputDevice);
+  [~,discoOnset] = Screen('Flip',win);
+  while (GetSecs - discoOnset) < 4
+    [ pressed, firstPress]=KbQueueCheck(inputDevice);
+    if pressed
+      if disclosed == 0;
+        discoRT = firstPress(find(firstPress)) - discoOnset;
+      elseif disclosed == 1 ;
+        multiDiscoResponse = [multiDiscoResponse discoResponse];
+        multiDiscoRT =[multiDiscoRT discoRT];
+        discoRT = firstPress(find(firstPress)) - discoOnset;
+      end
+      if find(firstPress(leftKeys))
+        discoResponse = 1;
+      elseif find(firstPress(rightKeys))
+        discoResponse = 2;
+      end
+      disclosed = 1;
+      drawDiscoFeedback(win,drs.stim,targets,statement,choiceResponse,discoResponse);
+    end
+  end
+  KbQueueStop(inputDevice);
+  [~,discoOffset] = Screen('Flip',win);
+  WaitSecs('UntilTime',(discoOnset + 4 + discoJitter));
+  %
   choiceResponse = 0;
   drawHands(win,drs.stim,targets,[0.5 0.5]);
   drawChoice(win,drs.stim,targets);
-  Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
-  Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);
   KbQueueStart(inputDevice);
   % flip the screen to show choice
   [~,choiceOnset] = Screen('Flip',win);
@@ -187,34 +218,6 @@ for tCount = 1:numTrials
   KbQueueStop(inputDevice);
   
   WaitSecs('UntilTime',(choiceOnset + 3 + choiceJitter));
-  %
-  discoResponse = 0;
-  drawYesNo(win,drs.stim,[0.5 0.5]);
-  drawDisco(win,drs.stim,targets,statement,choiceResponse);
-  KbQueueStart(inputDevice);
-  [~,discoOnset] = Screen('Flip',win);
-  while (GetSecs - discoOnset) < 4
-    [ pressed, firstPress]=KbQueueCheck(inputDevice);
-    if pressed
-      if disclosed == 0;
-        discoRT = firstPress(find(firstPress)) - discoOnset;
-      elseif disclosed == 1 ;
-        multiDiscoResponse = [multiDiscoResponse discoResponse];
-        multiDiscoRT =[multiDiscoRT discoRT];
-        discoRT = firstPress(find(firstPress)) - discoOnset;
-      end
-      if find(firstPress(leftKeys))
-        discoResponse = 1;
-      elseif find(firstPress(rightKeys))
-        discoResponse = 2;
-      end
-      disclosed = 1;
-      drawDiscoFeedback(win,drs.stim,targets,statement,choiceResponse,discoResponse);
-    end
-  end
-  KbQueueStop(inputDevice);
-  [~,discoOffset] = Screen('Flip',win);
-  WaitSecs('UntilTime',(discoOnset + 4 + discoJitter));
 %%
   if choiceResponse == 0
     choiceSkips = [choiceSkips tCount];

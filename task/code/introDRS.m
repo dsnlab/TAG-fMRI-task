@@ -187,10 +187,12 @@ KbStrokeWait(inputDevice);
  choiceResponse = 0;
   drawHands(win,drs.stim,targets,[0.5 0.5]);
   drawChoice(win,drs.stim,targets);
+  
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);
   KbQueueCreate(inputDevice);
   KbQueueStart(inputDevice);
+  
   % flip the screen to show choice
   [~,choiceOnset] = Screen('Flip',win);
   chose=0;
