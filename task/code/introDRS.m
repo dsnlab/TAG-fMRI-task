@@ -197,8 +197,8 @@ KbStrokeWait(inputDevice);
   pressed=0;
   %loop for response
   while (GetSecs - choiceOnset) < 3
-      display([GetSecs - choiceOnset chose pressed]);
-    [ pressed, firstPress]=KbQueueCheck(inputDevice);
+      %display([GetSecs - choiceOnset chose pressed]);
+      [ pressed, firstPress]=KbQueueCheck(inputDevice);
       if pressed == 1
         if chose == 0
           choiceRT = firstPress(find(firstPress)) - choiceOnset;
@@ -219,6 +219,6 @@ KbStrokeWait(inputDevice);
   end
   
 %Screen('CloseAll');
-%   KbQueueStop(inputDevice);
+%KbQueueStop(inputDevice);
 
 
