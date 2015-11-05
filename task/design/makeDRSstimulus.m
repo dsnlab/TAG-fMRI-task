@@ -1,7 +1,7 @@
 % make DSD stimulus
 %% set some paths
-matDir = '/Users/wem3/Desktop/DRS/design/materials';
-taskDir = '/Users/wem3/Desktop/DRS/task';
+matDir = 'materials';
+taskDir = '../';
 coinFile = [matDir,filesep,'coin.png'];
 yesFile = [matDir,filesep,'yes-150.png'];
 noFile = [matDir,filesep,'no-150.png'];
