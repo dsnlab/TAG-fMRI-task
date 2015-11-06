@@ -47,7 +47,7 @@ DrawFormattedText(win, ['Hi, ',drs.demo.name,' !\n\n Welcome to the DRS study.\n
 [~,instructionOnset] = Screen('Flip', win);
 KbStrokeWait(inputDevice);
 Screen('Flip', win);
-DrawFormattedText(win, 'Today, we''re going to do\n\n three different tasks \n\n (press any button to continue)',...
+DrawFormattedText(win, 'Today, we''re going to do\n\n two different tasks \n\n (press any button to continue)',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
 KbStrokeWait(inputDevice);
@@ -58,125 +58,109 @@ Screen('Flip', win);
 KbStrokeWait(inputDevice);
 DrawFormattedText(win, 'The tasks are: ','center', (drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.white);
 DrawFormattedText(win, '1. Sharing Task ',(drs.stim.box.xCenter - 3*drs.stim.box.unit), (drs.stim.box.yCenter - drs.stim.box.unit), drs.stim.yellow);
-DrawFormattedText(win, '2. Alien Identification ',(drs.stim.box.xCenter - 3*drs.stim.box.unit), drs.stim.box.yCenter, drs.stim.purple);
-DrawFormattedText(win, '3. Change Task ',(drs.stim.box.xCenter - 3*drs.stim.box.unit),(drs.stim.box.yCenter + drs.stim.box.unit), drs.stim.orange);
-DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.yCenter + 2*drs.stim.box.unit), drs.stim.white);
+DrawFormattedText(win, '2. Change Task ',(drs.stim.box.xCenter - 3*drs.stim.box.unit), drs.stim.box.yCenter, drs.stim.purple);
+DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.yCenter + drs.stim.box.unit), drs.stim.white);
 Screen('Flip', win);
 KbStrokeWait(inputDevice);
 %% Explain DSD
 targets = [1 2 2 4];
-statement = 'I think robots are awesome';
+statement = 'like robots';
 %%
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, 'Sharing Task: on each trial, you''ll see two of these three:, \n\n(with 0-4 gold coins presented beneath the text)... ','center',(drs.stim.box.yCenter - 4*drs.stim.box.unit), drs.stim.yellow);
-DrawFormattedText(win, [drs.stim.targetText{1},' : answer yes/no question privately'],'center',(drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.targetColors{1});
-DrawFormattedText(win, [drs.stim.targetText{2},' : share answer via email '],'center',(drs.stim.box.yCenter - drs.stim.box.unit), drs.stim.targetColors{2});
-DrawFormattedText(win, [drs.stim.targetText{3},' : share answer via email '],'center', drs.stim.box.yCenter,drs.stim.targetColors{3});
-DrawFormattedText(win, 'At the end of the experiment, you''ll be paid \n\nbased on the number of gold coins you earn','center',(drs.stim.box.yCenter + 2*drs.stim.box.unit), drs.stim.yellow);
-DrawFormattedText(win, '(press any button to continue)','center',(drs.stim.box.yCenter + 4*drs.stim.box.unit), drs.stim.white);
-Screen('Flip',win);
+DrawFormattedText(win, 'Sharing Task: First, you''ll see a brief statement.','center', (drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.white);
+DrawFormattedText(win, 'Decide if this statement describes you.','center', (drs.stim.box.yCenter - drs.stim.box.unit), drs.stim.yellow);
+DrawFormattedText(win, 'You''ll have about 4 seconds to decide.','center', drs.stim.box.yCenter, drs.stim.yellow);
+DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.yCenter + drs.stim.box.unit), drs.stim.white);
+Screen('Flip', win);
 KbStrokeWait(inputDevice);
-
-%%
-DrawFormattedText(win, 'Sharing Task: example ','center',(drs.stim.box.yCenter - 4*drs.stim.box.unit), drs.stim.yellow);
-drawHands(win,drs.stim,targets,[0.5 0.5]);
-drawChoice(win,drs.stim,targets);
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press any button to continue)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
-Screen('Flip',win);
-KbStrokeWait(inputDevice);
-%%
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, 'Sharing Task: on each trial... ','center',(drs.stim.box.yCenter - 4*drs.stim.box.unit), drs.stim.yellow);
-DrawFormattedText(win, 'to choose the left option, \n\n press the left index finger button ','center','center', drs.stim.white,[],[],[],[],[],drs.stim.box.statement);
-drawHands(win,drs.stim,targets,[0.5 0.5]);
-drawChoice(win,drs.stim,targets);
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press left index finger button)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
-Screen('Flip',win);
-KbStrokeWait(inputDevice);
-drawChoiceFeedback(win,drs.stim,targets,1);
-WaitSecs(1);
-%%
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, 'Sharing Task: on each trial... ','center',(drs.stim.box.yCenter - 4*drs.stim.box.unit), drs.stim.yellow);
-DrawFormattedText(win, 'to choose the right option, \n\n press the right index finger button ','center','center', drs.stim.white,[],[],[],[],[],drs.stim.box.statement);
-drawHands(win,drs.stim,targets,[0.5 0.5]);
-drawChoice(win,drs.stim,targets);
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press right index finger button)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
-Screen('Flip',win);
-KbStrokeWait(inputDevice);
-drawChoiceFeedback(win,drs.stim,targets,2);
 WaitSecs(1);
 
 %%
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, 'Sharing Task: on each trial... ','center',(drs.stim.box.yCenter - 4*drs.stim.box.unit), drs.stim.yellow);
-DrawFormattedText(win, 'don''t rush, but choose quickly \n\nbecause you only have about 3 seconds','center','center', drs.stim.white,[],[],[],[],[],drs.stim.box.statement);
-drawHands(win,drs.stim,targets,[0.5 0.5]);
-drawChoice(win,drs.stim,targets);
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press any button)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
-Screen('Flip',win);
-KbStrokeWait(inputDevice);
-drawChoiceFeedback(win,drs.stim,targets,2);
-WaitSecs(1);
-%%
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, 'Sharing Task: next, you''ll see a brief statement','center',(drs.stim.box.yCenter - 4*drs.stim.box.unit), drs.stim.yellow);
 choiceResponse=1;
 drawYesNo(win,drs.stim,[0.5 0.5]);
-drawDisco(win,drs.stim,targets,statement,choiceResponse);
+drawDisco(win,drs.stim,statement);
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
 DrawFormattedText(win, '(press left for yes)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
-drawDiscoFeedback(win,drs.stim,targets,statement,1,1);
+drawDiscoFeedback(win,drs.stim,targets,statement,1);
+WaitSecs(1);
+%%
+Screen('TextSize', win, 50);
+Screen('TextFont', win, 'Arial');
+Screen('TextStyle',win,0);
+choiceResponse=2;
+drawYesNo(win,drs.stim,[0.5 0.5]);
+drawDisco(win,drs.stim,statement);
+Screen('TextSize', win, 50);
+Screen('TextFont', win, 'Arial');
+Screen('TextStyle',win,0);
+DrawFormattedText(win, '(press right for no)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+Screen('Flip',win);
+KbStrokeWait(inputDevice);
+drawDiscoFeedback(win,drs.stim,targets,statement,2);
+WaitSecs(1);
+%%
+Screen('TextSize', win, 50);
+Screen('TextFont', win, 'Arial');
+Screen('TextStyle',win,0);
+DrawFormattedText(win, 'Sharing Task: Next, you''ll have to decide whether to share this statement\nwith your friend or keep it private, \n\n(with 2-4 pennies presented beneath the text)... ','center',(drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.white);
+DrawFormattedText(win, 'At the end of the experiment, you''ll be paid \n\nbased on the number of pennies you earn','center',(drs.stim.box.yCenter), drs.stim.yellow);
+DrawFormattedText(win, '(press any button to continue)','center',(drs.stim.box.yCenter + 2*drs.stim.box.unit), drs.stim.white);
+Screen('Flip',win);
+KbStrokeWait(inputDevice);
+%%
+Screen('TextSize', win, 50);
+Screen('TextFont', win, 'Arial');
+Screen('TextStyle',win,0);
+drawHands(win,drs.stim,targets,[0.5 0.5]);
+drawChoice(win,drs.stim,targets,statement,2);
+Screen('TextSize', win, 50);
+Screen('TextFont', win, 'Arial');
+Screen('TextStyle',win,0);
+DrawFormattedText(win, '(press left index finger button to keep private)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+Screen('Flip',win);
+KbStrokeWait(inputDevice);
+drawChoiceFeedback(win,drs.stim,targets,statement,2,1);
+WaitSecs(1);
+%%
+Screen('TextSize', win, 50);
+Screen('TextFont', win, 'Arial');
+Screen('TextStyle',win,0);
+drawHands(win,drs.stim,targets,[0.5 0.5]);
+drawChoice(win,drs.stim,targets,statement,2);
+Screen('TextSize', win, 50);
+Screen('TextFont', win, 'Arial');
+Screen('TextStyle',win,0);
+DrawFormattedText(win, '(press right index finger button to share with your friend)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+Screen('Flip',win);
+KbStrokeWait(inputDevice);
+drawChoiceFeedback(win,drs.stim,targets,statement,2,2);
 WaitSecs(1);
 
 %%
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, 'Sharing Task: you have about 4 seconds to decide','center',(drs.stim.box.yCenter - 4*drs.stim.box.unit), drs.stim.yellow);
-choiceResponse=1;
-drawYesNo(win,drs.stim,[0.5 0.5]);
-drawDisco(win,drs.stim,targets,statement,choiceResponse);
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press left for yes)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+DrawFormattedText(win, 'On each trial, don''t rush, but choose quickly \n\nbecause you only have about 3 seconds ','center',(drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.yellow);
+DrawFormattedText(win, '(press any button)','center',(drs.stim.box.yCenter + 2*drs.stim.box.unit), drs.stim.white);
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
-drawDiscoFeedback(win,drs.stim,targets,statement,1,1);
 WaitSecs(1);
+
 %%
 statement = 'I hate the smell of paint';
 targets = [1 2 3 2];
 DrawFormattedText(win, 'Sharing Task: try it out! ','center',(drs.stim.box.yCenter - 4*drs.stim.box.unit), drs.stim.yellow);
 drawHands(win,drs.stim,targets,[0.5 0.5]);
-drawChoice(win,drs.stim,targets);
+drawChoice(win,drs.stim,targets,statement,2);
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
@@ -186,7 +170,7 @@ KbStrokeWait(inputDevice);
 %%
  choiceResponse = 0;
   drawHands(win,drs.stim,targets,[0.5 0.5]);
-  drawChoice(win,drs.stim,targets);
+  drawChoice(win,drs.stim,targets,statement,2);
   
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);

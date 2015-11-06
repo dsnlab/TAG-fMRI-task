@@ -1,7 +1,7 @@
 %% set variables for saved design info & target directory (to save .txt files)
-svcTextFile = '/Users/wem3/Desktop/DRS/design/materials/svcTraits.txt';
-targetDirectory = '/Users/wem3/Desktop/DRS/task/input';
-GAoutputDirectory = '/Users/wem3/Desktop/DRS/design/GAoutput';
+svcTextFile = 'materials/svcTraits.txt';
+targetDirectory = '../input';
+GAoutputDirectory = 'GAoutput';
 fid = fopen(svcTextFile,'r');
 svcCell = textscan(fid, '%s%u8%u8%u8','Delimiter',',');
 fclose(fid);

@@ -1,4 +1,4 @@
-optDesPath=genpath('/vxfsvol/home/research/dsnlab/matlab/CanlabCore/CanlabCore');
+optDesPath=genpath('/Volumes/research/dsnlab/matlab/CanlabCore/CanlabCore');
 %scnPath=genpath('/Users/wem3/matlab/grimoire/SCN_Core_Support/');
 addpath(optDesPath);
 clear Models, clear MM
@@ -12,7 +12,7 @@ GA.TR = 2;
 GA.doepochs = 0;
 GA.numhox = 0;
 GA.hoxrange = [];
-nmodels = 1; 
+nmodels = 2; 
 GA.cbalColinPowerWeights = [2 5 1 4];	% 1 = cbal, 2 = eff, 3 = hrf shape, 4 = freq
 GA.numGenerations = 10000; 
 GA.sizeGenerations = 40;  

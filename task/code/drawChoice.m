@@ -1,4 +1,4 @@
-function drawChoice(win, stim, targets)
+function drawChoice(win, stim, targets, statement, discoResponse)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % drawChoice.m: draw targets & coins for dsd
@@ -6,6 +6,17 @@ function drawChoice(win, stim, targets)
 %               ~wem3 - 141030
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+drawDisco(win,stim,statement);
+switch discoResponse
+    case 0
+        drawYesNo(win,stim,[.45 .45]);
+    case 1
+        drawYesNo(win,stim,[1 0]);
+    case 2
+        drawYesNo(win,stim,[0 1]);
+end
+
 Screen('TextSize', win, 60);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle', win,1);

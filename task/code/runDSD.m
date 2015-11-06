@@ -94,7 +94,7 @@ KbStrokeWait(inputDevice);
 if runNum == 0
     calibrationTime = 1;
 else
-    calibrationTime = 17;
+    calibrationTime = 1;
 end
 % remind em' not to squirm!
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
@@ -163,7 +163,7 @@ for tCount = 1:numTrials
   %
   KbQueueStart(inputDevice);
   [~,discoOnset] = Screen('Flip',win);
-  while (GetSecs - discoOnset) < 4
+  while (GetSecs - discoOnset) < 4.5
     [ pressed, firstPress]=KbQueueCheck(inputDevice);
     if pressed
       if disclosed == 0;

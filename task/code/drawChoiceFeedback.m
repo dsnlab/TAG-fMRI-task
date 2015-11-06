@@ -1,4 +1,4 @@
-function drawChoiceFeedback(win,stim,targets,choiceResponse)
+function drawChoiceFeedback(win,stim,targets,statement,discoResponse,choiceResponse)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % drawChoiceFeedback.m: draw a frame around the subject's choice
@@ -27,7 +27,7 @@ for fadeCount = 1:length(fadeVector)
   end
   % chosen box
   drawHands(win,stim,targets,alphas);
-  drawChoice(win,stim,targets);
+  drawChoice(win,stim,targets,statement,discoResponse);
   Screen('FillRect',win,[stim.bg(1:3) fadeVector(fadeCount)], fadeBox);
   WaitSecs(0.025);
   Screen('Flip',win);

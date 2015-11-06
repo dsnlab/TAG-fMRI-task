@@ -53,7 +53,7 @@ drs.demo = demo;
 stim.targetText = {selfText, friendText, parentText};
 
 % randomize colors, make boxen for dsd (so we can draw colored hands later)
-stim.targetColors = shuffle({stim.sky,stim.pink,stim.blue});
+stim.targetColors = shuffle({stim.sky,stim.sky,stim.sky});
 for boxCount = 1:3
   for rgbCount = 1:3
     stim.targetBoxen{boxCount}(:,:,rgbCount) = ones(200,200).*stim.targetColors{boxCount}(rgbCount);

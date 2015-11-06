@@ -1,4 +1,4 @@
-function drawDiscoFeedback(win,stim,targets,statement,choiceResponse,discoResponse)
+function drawDiscoFeedback(win,stim,targets,statement,discoResponse)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % drawDiscoFeedback.m: draw feedback for subject's disclosure
@@ -26,7 +26,7 @@ for fadeCount = 1:length(fadeVector)
     fadeBox = [0 stim.box.xCenter stim.box.statement(2)];
   end
   drawYesNo(win,stim,alphas);
-  drawDisco(win,stim,targets,statement,choiceResponse);
+  drawDisco(win,stim,statement);
   WaitSecs(0.025);
   Screen('Flip',win);
 end

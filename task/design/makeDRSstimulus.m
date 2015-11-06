@@ -75,17 +75,17 @@ posLR = [... % [ left x position, y position, right x position ]
 (xCenter - 2*unit), (yCenter + 0.5*unit), (xCenter + 2*unit) % 4. respBoxen
 ];
 % structure to hold boxen...
-box.choice{1} = CenterRectOnPointd([0 0 4*unit unit],posLR(1,1),posLR(1,2));
-box.choice{2} = CenterRectOnPointd([0 0 4*unit unit],posLR(1,3),posLR(1,2));
-box.coin{1} = CenterRectOnPointd([0 0 270 76],posLR(2,1),posLR(2,2));
-box.coin{2} = CenterRectOnPointd([0 0 270 76],posLR(2,3),posLR(2,2));
+box.choice{1} = CenterRectOnPointd([0 0 4*unit unit],posLR(1,1),(yCenter-.5*unit));
+box.choice{2} = CenterRectOnPointd([0 0 4*unit unit],posLR(1,3),(yCenter-.5*unit));
+box.coin{1} = CenterRectOnPointd([0 0 270 76],posLR(2,1),(yCenter+.5*unit));
+box.coin{2} = CenterRectOnPointd([0 0 270 76],posLR(2,3),(yCenter+.5*unit));
 box.hand{1} = CenterRectOnPointd([0 0 200 200],posLR(3,1),posLR(3,2));
 box.hand{2} = CenterRectOnPointd([0 0 200 200],posLR(3,3),posLR(3,2));
-box.yesno{1} = CenterRectOnPointd([0 0 150 150],posLR(3,1),posLR(3,2));
-box.yesno{2} = CenterRectOnPointd([0 0 150 150],posLR(3,3),posLR(3,2));
+box.yesno{1} = CenterRectOnPointd([0 0 150 150],posLR(2,1),posLR(2,2));
+box.yesno{2} = CenterRectOnPointd([0 0 150 150],posLR(2,3),posLR(2,2));
 box.resp{1} = CenterRectOnPointd([0 0 200 200],posLR(4,1),posLR(4,2));
 box.resp{2} = CenterRectOnPointd([0 0 200 200],posLR(4,3),posLR(4,2));
-box.statement = CenterRectOnPointd([0 0 6*unit unit],xCenter,yCenter);
+box.statement = CenterRectOnPointd([0 0 6*unit unit],xCenter,posLR(1,2));
 box.prompt = CenterRectOnPointd([0 0 200 200],xCenter,(yCenter - 2*unit));
 box.alien = CenterRectOnPointd([0 0 200 200],xCenter,(yCenter-unit/2));
 box.payout = CenterRectOnPointd([0 0 270 76],xCenter,(yCenter + unit));
