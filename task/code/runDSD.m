@@ -119,6 +119,8 @@ WaitSecs(1);
 Screen('Flip', win);
 
 % trigger pulse code 
+
+disp(drs.keys.trigger);
 KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
 disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
 triggerPulseTime = GetSecs;
@@ -155,7 +157,7 @@ for tCount = 1:numTrials
   %% call draw function
   discoResponse = 0;
   drawYesNo(win,drs.stim,[0.5 0.5]);
-  drawDisco(win,drs.stim,targets,statement,choiceResponse);
+  drawDisco(win,drs.stim,statement);
   
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);
@@ -179,16 +181,15 @@ for tCount = 1:numTrials
         discoResponse = 2;
       end
       disclosed = 1;
-      drawDiscoFeedback(win,drs.stim,targets,statement,choiceResponse,discoResponse);
+      drawDiscoFeedback(win,drs.stim,targets,statement,discoResponse);
     end
   end
   KbQueueStop(inputDevice);
-  [~,discoOffset] = Screen('Flip',win);
   WaitSecs('UntilTime',(discoOnset + 4 + discoJitter));
   %
   choiceResponse = 0;
   drawHands(win,drs.stim,targets,[0.5 0.5]);
-  drawChoice(win,drs.stim,targets);
+  drawChoice(win,drs.stim,targets,statement,discoResponse);
   KbQueueStart(inputDevice);
   % flip the screen to show choice
   [~,choiceOnset] = Screen('Flip',win);
@@ -212,11 +213,11 @@ for tCount = 1:numTrials
             payout = targets(4);
         end
          chose=1;
-        drawChoiceFeedback(win,drs.stim,targets,choiceResponse);
+        drawChoiceFeedback(win,drs.stim,targets,statement,discoResponse,choiceResponse);
       end   
   end
   KbQueueStop(inputDevice);
-  
+  [~,choiceOffset] = Screen('Flip',win); % choiceOffset used to be discoOffset
   WaitSecs('UntilTime',(choiceOnset + 3 + choiceJitter));
 %%
   if choiceResponse == 0
@@ -278,5 +279,5 @@ end
 
 KbStrokeWait(inputDevice);
 Screen('CloseAll');
-
+ShowCursor();
 return

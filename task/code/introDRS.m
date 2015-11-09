@@ -42,7 +42,7 @@ rightKeys = ([drs.keys.b5 drs.keys.b6 drs.keys.b7 drs.keys.b8 drs.keys.b9 drs.ke
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, ['Hi, ',drs.demo.name,' !\n\n Welcome to the DRS study.\n\n (press any button to continue)'],...
+DrawFormattedText(win, ['Hi, ',drs.demo.name,' !\n\n Welcome to the TAG study.\n\n (press any button to continue)'],...
   'center', 'center', drs.stim.white);
 [~,instructionOnset] = Screen('Flip', win);
 KbStrokeWait(inputDevice);
@@ -57,8 +57,8 @@ DrawFormattedText(win, 'We''ll do two ''runs'' of each task\n\n and each ''run''
 Screen('Flip', win);
 KbStrokeWait(inputDevice);
 DrawFormattedText(win, 'The tasks are: ','center', (drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.white);
-DrawFormattedText(win, '1. Sharing Task ',(drs.stim.box.xCenter - 3*drs.stim.box.unit), (drs.stim.box.yCenter - drs.stim.box.unit), drs.stim.yellow);
-DrawFormattedText(win, '2. Change Task ',(drs.stim.box.xCenter - 3*drs.stim.box.unit), drs.stim.box.yCenter, drs.stim.purple);
+DrawFormattedText(win, '1. Sharing Task ','center', (drs.stim.box.yCenter - drs.stim.box.unit), drs.stim.yellow);
+DrawFormattedText(win, '2. Change Task ','center', drs.stim.box.yCenter, drs.stim.purple);
 DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.yCenter + drs.stim.box.unit), drs.stim.white);
 Screen('Flip', win);
 KbStrokeWait(inputDevice);
@@ -111,8 +111,8 @@ WaitSecs(1);
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, 'Sharing Task: Next, you''ll have to decide whether to share this statement\nwith your friend or keep it private, \n\n(with 2-4 pennies presented beneath the text)... ','center',(drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.white);
-DrawFormattedText(win, 'At the end of the experiment, you''ll be paid \n\nbased on the number of pennies you earn','center',(drs.stim.box.yCenter), drs.stim.yellow);
+DrawFormattedText(win, 'Next, decide whether to share this statement\nwith your friend or keep it private, \n\n(with 2-4 pennies presented beneath the text)... ','center',(drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.white);
+DrawFormattedText(win, 'At the end of the task, you''ll be paid \n\nthe number of pennies you earn','center',(drs.stim.box.yCenter), drs.stim.yellow);
 DrawFormattedText(win, '(press any button to continue)','center',(drs.stim.box.yCenter + 2*drs.stim.box.unit), drs.stim.white);
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
@@ -125,7 +125,7 @@ drawChoice(win,drs.stim,targets,statement,2);
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press left index finger button to keep private)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+DrawFormattedText(win, '(press left to keep it private)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
 drawChoiceFeedback(win,drs.stim,targets,statement,2,1);
@@ -139,7 +139,7 @@ drawChoice(win,drs.stim,targets,statement,2);
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press right index finger button to share with your friend)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+DrawFormattedText(win, '(press right to share with your friend)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
 drawChoiceFeedback(win,drs.stim,targets,statement,2,2);
@@ -149,7 +149,7 @@ WaitSecs(1);
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, 'On each trial, don''t rush, but choose quickly \n\nbecause you only have about 3 seconds ','center',(drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.yellow);
+DrawFormattedText(win, 'Don''t rush, but choose quickly \n\nbecause you only have about 3 seconds ','center',(drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.yellow);
 DrawFormattedText(win, '(press any button)','center',(drs.stim.box.yCenter + 2*drs.stim.box.unit), drs.stim.white);
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
@@ -167,44 +167,7 @@ Screen('TextStyle',win,0);
 DrawFormattedText(win, '(press any button to start the trial)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
-%%
- choiceResponse = 0;
-  drawHands(win,drs.stim,targets,[0.5 0.5]);
-  drawChoice(win,drs.stim,targets,statement,2);
-  
-  Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
-  Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);
-  KbQueueCreate(inputDevice);
-  KbQueueStart(inputDevice);
-  
-  % flip the screen to show choice
-  [~,choiceOnset] = Screen('Flip',win);
-  chose=0;
-  pressed=0;
-  %loop for response
-  while (GetSecs - choiceOnset) < 3
-      %display([GetSecs - choiceOnset chose pressed]);
-      [ pressed, firstPress]=KbQueueCheck(inputDevice);
-      if pressed == 1
-        if chose == 0
-          choiceRT = firstPress(find(firstPress)) - choiceOnset;
-        elseif chose == 1
-          multiChoiceResponse = [multiChoiceResponse choiceResponse];
-          multiChoiceRT =[multiChoiceRT choiceRT];
-          choiceRT = firstPress(find(firstPress)) - choiceOnset;
-        end
 
-        if find(firstPress(leftKeys))
-            choiceResponse = 1;
-        elseif find(firstPress(rightKeys))
-            choiceResponse = 2;
-        end
-        chose=1;
-        drawChoiceFeedback(win,drs.stim,targets,choiceResponse);
-      end   
-  end
-  
-%Screen('CloseAll');
-%KbQueueStop(inputDevice);
+runDSD(drs.subNum,0);
 
 

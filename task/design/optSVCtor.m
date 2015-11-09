@@ -4,8 +4,8 @@ addpath(optDesPath);
 clear Models, clear MM
 
 GA.conditions = [1 2 3 4 5 6]; %self|change x prosoc|insecure|aggressive + rest
-                                 % .5    .5        .5    .275       .225
-GA.freqConditions = [.25 .1375 .1125 .25 .1375 .1125];
+                                 % .5    .5        1/3  1/3  1/3
+GA.freqConditions = [1/6 1/6 1/6 1/6 1/6 1/6];
 GA.scanLength = 282;  
 GA.ISI = 4.7;  
 GA.TR = 2; 

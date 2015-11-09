@@ -7,23 +7,30 @@ svcCell = textscan(fid, '%s%u8%u8%u8','Delimiter',',');
 fclose(fid);
 coolTraits = svcCell{1}(svcCell{2}==1);
 goodTraits = svcCell{1}(svcCell{2}==2);
+otherTraits = svcCell{1}(svcCell{2}==3);
 
-for dCount = 1:50
+for dCount = 1
   %% shuffle em' up & split across runs
   % (we can grab the other info from svcCell using strcmp later...)
   coolTraits = svcCell{1}(svcCell{2}==1);
   goodTraits = svcCell{1}(svcCell{2}==2);
+  otherTraits = svcCell{1}(svcCell{2}==3);
   coolTraits = Shuffle(coolTraits);
   goodTraits = Shuffle(goodTraits);
+  otherTraits = Shuffle(otherTraits);
 
-  scList1 = coolTraits(1:12);
-  sgList1 = goodTraits(1:12);
-  ccList1 = coolTraits(13:end);
-  cgList1 = goodTraits(13:end);
-  scList2 = sgList1;
-  sgList2 = scList1;
-  ccList2 = cgList1;
-  cgList2 = ccList1;
+  scList1 = coolTraits(1:8);
+  sgList1 = goodTraits(1:8);
+  soList1 = otherTraits(1:8);
+  ccList1 = coolTraits(9:end);
+  cgList1 = goodTraits(9:end);
+  coList1 = otherTraits(9:end);
+  scList2 = ccList1;
+  sgList2 = cgList1;
+  soList2 = coList1;
+  ccList2 = scList1;
+  cgList2 = sgList1;
+  coList2 = soList1;
   % loop over runs
   for rCount = 1:2;
     thisRun = ['run',num2str(rCount)];
@@ -33,9 +40,9 @@ for dCount = 1:50
     svcDesign(dCount).(thisRun).condition = ... % strip out the zeros
       svcDesign(dCount).(thisRun).sequence...
         (svcDesign(dCount).(thisRun).sequence~=0);
-    ITIs = (Shuffle(0.47:0.027:1.74))'; % sum(ITIs) = 49.563; mean(ITIs) = 1.1014;
+    ITIs = (Shuffle(0.47:0.026:1.74))'; % sum(ITIs) = 49.563; mean(ITIs) = 1.1014;
     % pad the ISI by resting after trials 12, 24, 36
-    gammaSlice = ([zeros(1,11),22.4,zeros(1,11),22.4,zeros(1,11),22.4,zeros(1,12)])';
+    gammaSlice = ([zeros(1,11),22.4,zeros(1,11),22.4,zeros(1,11),22.4,zeros(1,13)])';
     svcDesign(dCount).(thisRun).jitter = ITIs+gammaSlice;
     svcJitter = ITIs+gammaSlice;
     condition = svcDesign(dCount).(thisRun).condition;
@@ -47,32 +54,44 @@ for dCount = 1:50
     if rCount == 1
       sgList = sgList1;
       scList = scList1;
+      soList = soList1;
       cgList = cgList1;
       ccList = ccList1;
+      coList = coList1;
     elseif rCount == 2
       sgList = sgList2;
       scList = scList2;
+      soList = soList2;
       cgList = cgList2;
       ccList = ccList2;
+      coList = coList2;
     end
   % loop over trials
     for tCount = 1:length(word);
       switch condition(tCount)
         case 1
-          word{tCount} = sgList{1};
-          sgList = popArray(sgList);
-          prompt{tCount} = 'true about me?';
-        case 2
           word{tCount} = scList{1};
           scList = popArray(scList);
           prompt{tCount} = 'true about me?';
+        case 2
+          word{tCount} = sgList{1};
+          sgList = popArray(sgList);
+          prompt{tCount} = 'true about me?';
         case 3
-          word{tCount} = cgList{1};
-          cgList = popArray(cgList);
-          prompt{tCount} = 'can this change?';
+          word{tCount} = soList{1};
+          soList = popArray(soList);
+          prompt{tCount} = 'true about me?';    
         case 4
           word{tCount} = ccList{1};
           ccList = popArray(ccList);
+          prompt{tCount} = 'can this change?';
+        case 5
+          word{tCount} = cgList{1};
+          cgList = popArray(cgList);
+          prompt{tCount} = 'can this change?';
+        case 6
+          word{tCount} = coList{1};
+          coList = popArray(coList);
           prompt{tCount} = 'can this change?';
       end
       condition = svcDesign(dCount).(thisRun).condition;
@@ -90,5 +109,5 @@ for dCount = 1:50
     end
   end
 end
-saveSVCname = '/Users/wem3/Desktop/drs/design/svcDesigns.mat';
+saveSVCname = 'svcDesigns.mat';
 save(saveSVCname,'svcDesign');
