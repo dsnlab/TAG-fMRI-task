@@ -15,16 +15,12 @@ studyDir = uigetdir('/vxfsvol/home/research/dsnlab/Studies/TAG/code/task/DRS','S
 % interactive dialog to get demographic info
 prompt = {...
 'subID: ',...
-'name: ',...
 'friend: ',...
-'friend email: ',...
-'parent: ',...
-'parent email: ',...
 'experimentor: exptID = '};
 dTitle = 'define subject specific variables';
 nLines = 1;
 % defaults
-def = { '999' , 'Subastian' , 'Ricky' , 'ricky@gmail.com', 'Mom' , 'mom@comcast.net', 'wem3' };
+def = { '999' , 'Ricky' , 'TAG' };
 manualInput = inputdlg(prompt,dTitle,nLines,def);
 % the order is funky here because we want the structure output 
 % to be readily readable in summary form (so this, err, isn't)
@@ -37,13 +33,13 @@ drs.output.path = [studyDir,filesep,'task',filesep,'output'];
 stimFile = [studyDir,filesep,'task',filesep,'DRSstim.mat'];
 load(stimFile);
 
-demo.name = manualInput{2};
-demo.friendEmail = manualInput{4};
-demo.parentEmail = manualInput{6};
-demo.exptID = manualInput{7};
+demo.name = '';
+demo.friendEmail = '';
+demo.parentEmail = '';
+demo.exptID = manualInput{3};
 demo.exptDate = datestr(now);
-drs.friend = manualInput{3};
-drs.parent = manualInput{5};
+drs.friend = manualInput{2};
+drs.parent = '';
 
 % now that we know friend/parent names, we can finish the stimulus...
 selfText = 'keep it private';

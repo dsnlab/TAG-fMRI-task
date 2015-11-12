@@ -1,41 +1,41 @@
-1,1,1,2,4,3,0.687,1.468,I usually skip breakfast
-2,2,1,2,3,4,0.390,0.725,I wash my hands often
-3,3,1,2,3,3,0.435,0.837,I like watching sunsets
-4,4,1,2,4,3,0.480,0.950,I hate spicy mustard
-5,5,1,2,3,4,0.561,1.153,I hate walking uphill
-6,6,1,2,3,3,0.525,1.062,I hate big cities
-7,4,1,2,4,2,0.633,1.333,I daydream in class
-8,2,1,2,2,4,0.372,0.680,I like to watch cartoons
-9,3,1,2,4,4,0.300,0.500,I never break the rules
-10,1,1,2,4,2,0.651,1.377,I think sushi is gross
-11,5,1,2,2,4,0.453,0.883,I get ready quickly
-12,6,1,2,4,4,0.327,0.568,I hate soft beds
-13,1,1,2,3,2,0.696,1.490,I like wearing hoodies
-14,5,1,2,2,3,0.381,0.703,I hate earmuffs
-15,1,1,2,4,2,0.534,1.085,I like foot massages
-16,4,1,2,3,2,0.588,1.220,I always have chapstick
-17,6,1,2,2,2,0.444,0.860,I can keep a secret
-18,2,1,2,2,3,0.498,0.995,I like to chew my pencil
-19,1,1,2,4,2,0.543,1.107,I sing in the shower
-20,6,1,2,3,3,0.624,1.310,I hate mosquito bites
-21,2,1,2,2,4,0.336,0.590,I make my own lunch
-22,3,1,2,2,2,0.399,0.748,I think tattoos are cool
-23,4,1,2,4,2,0.597,1.242,I floss every day
-24,2,1,2,2,4,0.516,1.040,I never sit up straight
-25,5,1,2,2,4,0.354,0.635,I hate sour pickles
-26,6,1,2,4,4,0.678,1.445,I hate being sick
-27,3,1,2,3,3,0.345,0.613,I like to play cards
-28,5,1,2,2,4,0.309,0.522,I can use chopsticks
-29,2,1,2,3,4,0.669,1.422,I want super powers
-30,4,1,2,4,2,0.471,0.927,I hate to be tickled
-31,3,1,2,4,4,0.363,0.657,I remember dreams
-32,6,1,2,3,3,0.552,1.130,I hate eating leftovers
-33,4,1,2,4,3,0.579,1.198,I am a morning person
-34,1,1,2,4,3,0.606,1.265,I like the way I look
-35,3,1,2,3,3,0.507,1.018,I like hip-hop music
-36,2,1,2,2,3,0.615,1.288,I read a lot of comics
-37,5,1,2,3,4,0.660,1.400,I always use sunscreen
-38,4,1,2,3,2,0.462,0.905,I hate doing dishes
-39,1,1,2,3,2,0.642,1.355,I am afraid of ghosts
-40,6,1,2,2,2,0.489,0.972,I eat potatoes
-41,5,1,2,2,3,0.417,8.793,I hate chicken soup
+1,6,1,2,2,2,2.018,0.464,ignore my parents
+2,2,1,2,2,3,1.063,0.102,like breaking rules
+3,3,1,2,2,2,1.573,0.386,get picked on
+4,4,1,2,3,2,1.003,0.202,act without thinking
+5,5,1,2,2,3,1.282,0.127,want to be popular
+6,2,1,2,2,4,0.005,0.224,get self-conscious
+7,5,1,2,2,4,0.775,0.028,think I'm too quiet
+8,1,1,2,3,2,0.178,0.176,like watching sports
+9,4,1,2,4,2,4.052,0.698,get mad at friends
+10,6,1,2,3,3,0.383,0.328,make friends easily
+11,5,1,2,2,4,5.907,0.213,can be mean
+12,1,1,2,4,2,0.128,0.164,judge people
+13,3,1,2,3,3,0.085,0.268,try to recycle
+14,1,1,2,4,2,2.434,0.431,go to the movies
+15,6,1,2,4,4,2.373,0.033,hide my feelings
+16,2,1,2,2,4,1.254,0.126,wish I had more friends
+17,3,1,2,4,4,1.429,0.105,wear bright colors
+18,1,1,2,4,2,2.688,0.243,stay up late
+19,2,1,2,2,4,1.125,0.073,worry about drugs
+20,4,1,2,4,2,0.968,0.259,worry about drugs
+21,3,1,2,4,4,0.004,0.047,think I'm weird
+22,5,1,2,2,4,0.737,0.101,judge people
+23,4,1,2,4,2,0.576,0.106,can't keep secrets  
+24,1,1,2,4,3,0.271,0.392,pretend to like people
+25,4,1,2,4,3,1.503,0.233,dream about my wedding 
+26,5,1,2,3,4,0.296,0.358,worry about kissing
+27,6,1,2,4,4,0.275,0.074,worry about grades
+28,2,1,2,3,4,0.692,0.299,weigh myself
+29,5,1,2,2,4,5.622,0.043,think I'm weird
+30,6,1,2,3,3,0.206,0.358,like flirting
+31,3,1,2,3,3,6.251,0.031,sleep in late
+32,2,1,2,2,4,3.065,0.171,forget people's names
+33,6,1,2,4,4,0.258,0.060,want to be alone
+34,4,1,2,4,2,0.023,0.114,pretend to like people
+35,2,1,2,2,3,0.342,0.104,play board games
+36,1,1,2,4,2,1.623,0.213,like wearing costumes
+37,5,1,2,2,3,0.077,0.038,like breaking rules
+38,3,1,2,4,4,0.880,0.066,wear PJs all day
+39,6,1,2,2,2,0.792,0.032,weigh myself
+40,1,1,2,3,2,0.966,0.127,hate going to school
+41,4,1,2,3,2,9.724,0.019,think I look bomb

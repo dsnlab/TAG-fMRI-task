@@ -3,8 +3,8 @@
 matDir = 'materials';
 taskDir = '../';
 coinFile = [matDir,filesep,'coin.png'];
-yesFile = [matDir,filesep,'yes-150.png'];
-noFile = [matDir,filesep,'no-150.png'];
+yesFile = [matDir,filesep,'yes-76.png'];
+noFile = [matDir,filesep,'no-76.png'];
 selfFile = [matDir,filesep,'self-200.png'];
 deltaFile = [matDir,filesep,'delta-200.png'];
 leftFile = [matDir,filesep,'hand-L-200.png'];
@@ -45,7 +45,7 @@ stim.alienText = {'LUX','RAZ'};
 
 % colorscheme
 stim.bg     = [29  31  33  255]./255; % bg
-stim.grey   = [224 224 224 255]./255; % grey
+stim.grey   = [203 203 203 255]./255; % grey
 stim.white  = [255 255 255 255]./255; % white
 stim.red    = [244  82  82 255]./255; % red
 stim.orange = [252 147  55 255]./255; % orange
@@ -81,13 +81,13 @@ box.coin{1} = CenterRectOnPointd([0 0 270 76],posLR(2,1),(yCenter+.5*unit));
 box.coin{2} = CenterRectOnPointd([0 0 270 76],posLR(2,3),(yCenter+.5*unit));
 box.hand{1} = CenterRectOnPointd([0 0 200 200],posLR(3,1),posLR(3,2));
 box.hand{2} = CenterRectOnPointd([0 0 200 200],posLR(3,3),posLR(3,2));
-box.yesno{1} = CenterRectOnPointd([0 0 150 150],posLR(2,1),posLR(2,2));
-box.yesno{2} = CenterRectOnPointd([0 0 150 150],posLR(2,3),posLR(2,2));
+box.yesno{1} = CenterRectOnPointd([0 0 76 76],posLR(2,1),posLR(2,2));
+box.yesno{2} = CenterRectOnPointd([0 0 76 76],posLR(2,3),posLR(2,2));
 box.resp{1} = CenterRectOnPointd([0 0 200 200],posLR(4,1),posLR(4,2));
 box.resp{2} = CenterRectOnPointd([0 0 200 200],posLR(4,3),posLR(4,2));
 box.statement = CenterRectOnPointd([0 0 6*unit unit],xCenter,posLR(1,2));
 box.prompt = CenterRectOnPointd([0 0 200 200],xCenter,(yCenter - 2*unit));
-box.alien = CenterRectOnPointd([0 0 200 200],xCenter,(yCenter-unit/2));
+box.alien = CenterRectOnPointd([0 0 200 200],xCenter,(yCenter - unit/2));
 box.payout = CenterRectOnPointd([0 0 270 76],xCenter,(yCenter + unit));
 
 %% prefacbricate color boxen (?)
@@ -95,10 +95,10 @@ for rgbCount = 1:3
   box.bg(:,:,rgbCount)      = ones(200,200).*stim.bg(rgbCount);
   box.grey(:,:,rgbCount)    = ones(200,200).*stim.grey(rgbCount);
   box.white(:,:,rgbCount)   = ones(200,200).*stim.white(rgbCount);
-  box.red(:,:,rgbCount)     = ones(150,150).*stim.red(rgbCount);
+  box.red(:,:,rgbCount)     = ones(76,76).*stim.red(rgbCount);
   box.orange(:,:,rgbCount)  = ones(200,200).*stim.orange(rgbCount);
   box.yellow(:,:,rgbCount)  = ones(200,200).*stim.yellow(rgbCount);
-  box.green(:,:,rgbCount)   = ones(150,150).*stim.green(rgbCount);
+  box.green(:,:,rgbCount)   = ones(76,76).*stim.green(rgbCount);
   box.sky(:,:,rgbCount)     = ones(200,200).*stim.sky(rgbCount);
   box.blue(:,:,rgbCount)    = ones(200,200).*stim.blue(rgbCount);
   box.pink(:,:,rgbCount)    = ones(200,200).*stim.pink(rgbCount);

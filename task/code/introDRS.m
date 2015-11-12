@@ -42,7 +42,7 @@ rightKeys = ([drs.keys.b5 drs.keys.b6 drs.keys.b7 drs.keys.b8 drs.keys.b9 drs.ke
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, ['Hi, ',drs.demo.name,' !\n\n Welcome to the TAG study.\n\n (press any button to continue)'],...
+DrawFormattedText(win, ['Welcome to the TAG study!\n\n (press any button to continue)'],...
   'center', 'center', drs.stim.white);
 [~,instructionOnset] = Screen('Flip', win);
 KbStrokeWait(inputDevice);

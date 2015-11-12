@@ -12,9 +12,9 @@ function [task] = runSVC(subNum,runNum)
 %
 %    input text columns (%u,%u,%u,%u,%u,%f%f) 
 %       1. trialNum
-%       2. condition (1/2 == self (good/cool), 3/4 == change (good/cool) )
+%       2. condition (1/2 == self (good/cool), 3/4 == change (good/cool), !!5/6... )
 %       3. jitter
-%       4. reverse coded (0 == normal, 1 == reverse coded)
+%       4. reverse coded (0 == normal, 1 == reverse coded) !!Meaningful?
 %       5. syllables
 %       6. trait (string w/ trait adjective)
 %
@@ -23,7 +23,7 @@ function [task] = runSVC(subNum,runNum)
 %--> (subID)_info.mat = structure w/ subject specific info
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+Screen('Preference', 'SkipSyncTests', 1);
 %% get subID from subNum
 if subNum < 10
   subID = ['drs00',num2str(subNum)];
@@ -89,7 +89,7 @@ KbStrokeWait(inputDevice);
 if runNum == 0
     calibrationTime = 1;
 else
-    calibrationTime = 17;
+    calibrationTime = 1;
 end
 % remind em' not to squirm!
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...

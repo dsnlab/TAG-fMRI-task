@@ -1,41 +1,41 @@
-1,1,1,2,4,2,0.552,1.130,I shower in the morning
-2,2,1,2,2,4,0.399,0.748,I like to sleep in late
-3,3,1,2,4,4,0.570,1.175,I sleep without a pillow
-4,4,1,2,4,2,0.453,0.883,I hate licking envelopes
-5,6,1,2,4,4,0.597,1.242,I check Facebook often
-6,5,1,2,2,4,0.696,1.490,I hate pulling weeds
-7,1,1,2,4,2,0.417,0.792,I love pepperoni pizza
-8,3,1,2,4,4,0.588,1.220,I think eggs are nasty
-9,5,1,2,2,4,0.579,1.198,I hate tofu
-10,4,1,2,4,2,0.462,0.905,I hate skinny jeans
-11,6,1,2,4,4,0.327,0.568,I do not eat meat
-12,4,1,2,3,2,0.390,0.725,I hate riding the bus
-13,3,1,2,2,2,0.345,0.613,I like to wrestle
-14,2,1,2,2,4,0.633,1.333,I tell a lot of jokes
-15,1,1,2,3,2,0.678,1.445,I take a lot of naps
-16,3,1,2,4,4,0.363,0.657,I love scary movies
-17,5,1,2,2,3,0.444,0.860,I hate rainy days
-18,1,1,2,4,2,0.480,0.950,I like people who litter
-19,2,1,2,2,3,0.651,1.377,I like to read books
-20,4,1,2,4,2,0.507,1.018,I drink a lot of coffee
-21,1,1,2,4,3,0.498,0.995,I like televised sports
-22,2,1,2,2,4,0.309,0.522,I want super powers
-23,6,1,2,2,2,0.336,0.590,I always watch the news
-24,2,1,2,3,4,0.624,1.310,I like to burp out loud
-25,5,1,2,2,4,0.660,1.400,I carry a water bottle
-26,6,1,2,4,4,0.426,0.815,I am a good dancer
-27,2,1,2,3,4,0.408,0.770,I love ketchup
-28,4,1,2,4,3,0.489,0.972,I hate squeaky shoes
-29,3,1,2,3,3,0.687,1.468,I make people laugh
-30,5,1,2,3,4,0.606,1.265,I bite my fingernails
-31,4,1,2,4,3,0.435,0.837,I hate tapioca
-32,1,1,2,4,3,0.300,0.500,I want to learn to surf
-33,5,1,2,3,4,0.372,0.680,I get good grades
-34,6,1,2,3,3,0.561,1.153,I hate to wait in line
-35,3,1,2,3,3,0.471,0.927,I never make my bed
-36,6,1,2,3,3,0.615,1.288,I hate being late
-37,1,1,2,3,2,0.516,1.040,I never get bored
-38,2,1,2,2,3,0.381,0.703,I like free stuff
-39,3,1,2,2,2,0.642,1.355,I like smelling markers
-40,4,1,2,3,2,0.543,1.107,I get sleepy after eating
-41,5,1,2,2,3,0.354,0.635,I always stay up late
+1,6,1,2,4,4,1.282,0.127,feel shy in groups
+2,2,1,2,2,4,1.125,0.073,can be awkward
+3,3,1,2,4,4,0.004,0.047,can be mean
+4,4,1,2,4,2,4.052,0.698,think smoking is gross
+5,5,1,2,2,4,0.692,0.299,wish I had more friends
+6,2,1,2,3,4,5.622,0.043,like cold pizza
+7,5,1,2,3,4,0.792,0.032,hate going to school
+8,1,1,2,4,2,2.373,0.033,decorate my room
+9,4,1,2,4,3,3.065,0.171,can't wait to be older
+10,6,1,2,3,3,6.251,0.031,wish I was in love
+11,5,1,2,3,4,0.023,0.114,get embarrassed
+12,1,1,2,4,3,0.737,0.101,think I'm too quiet
+13,3,1,2,3,3,0.296,0.358,don't like my life
+14,1,1,2,4,3,0.966,0.127,like leftovers
+15,6,1,2,3,3,0.206,0.358,feel lonely
+16,2,1,2,3,4,1.573,0.386,tell little lies
+17,3,1,2,3,3,5.907,0.213,paint my nails
+18,1,1,2,4,2,0.342,0.104,tease my sibling
+19,2,1,2,2,4,2.688,0.243,like flirting
+20,4,1,2,4,3,0.383,0.328,can be awkward
+21,3,1,2,4,4,1.063,0.102,copy homework
+22,5,1,2,2,4,1.429,0.105,dislike my body
+23,4,1,2,4,2,0.271,0.392,can't ignore gossip 
+24,1,1,2,3,2,0.005,0.224,burn my toast
+25,4,1,2,3,2,1.592,0.037,find homework hard
+26,5,1,2,2,3,0.085,0.268,get picked on
+27,6,1,2,4,4,2.224,0.019,don't like my life
+28,2,1,2,2,3,2.018,0.464,wear flip flops
+29,5,1,2,2,3,0.880,0.066,tell little lies
+30,6,1,2,2,2,2.434,0.431,get self-conscious
+31,3,1,2,2,2,1.003,0.202,use hand lotion
+32,2,1,2,2,3,0.128,0.164,don't make my bed
+33,6,1,2,2,2,0.178,0.176,worry about high school
+34,4,1,2,3,2,0.968,0.259,copy homework
+35,2,1,2,3,4,1.254,0.126,want to be alone
+36,1,1,2,3,2,0.576,0.106,think I look bomb
+37,5,1,2,3,4,0.258,0.060,tease my sibling
+38,3,1,2,2,2,1.623,0.213,shower before bed
+39,6,1,2,3,3,1.503,0.233,can get moody
+40,1,1,2,4,3,0.775,0.028,make friends easily
+41,4,1,2,4,3,7.775,0.074,count calories

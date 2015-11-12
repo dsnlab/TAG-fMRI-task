@@ -1,24 +1,23 @@
 GAdir = 'GAoutput';
 targetDirectory = '../input';
-NSubsTotal = 1;
-trialLength = 8;
-
+NSubsTotal = 170;
+trialLength = 7.5;
+load('gammaDists.mat'); % loads variables choiceGammaDSD and discoGammaDSD
 
 %% load up the 200 optimized sequences, assign 4 per 'design'
-for kCount = 1:NSubsTotal
-  designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount), '.mat']);
-  load(designFile)
+designFile = ([GAdir,filesep,'kaoDSDdesign.mat']);
+load(designFile);
+for kCount = 1:NSubsTotal %Using the same design for all participants
+%   designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount), '.mat']);
   run1.ovf = Out.bestOVF;
   run1.sequence = Out.bestList;
-  designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount + NSubsTotal), '.mat']);
-  load(designFile)
-  run2.ovf = Out.bestOVF;
-  run2.sequence = Out.bestList;
+%   designFile = ([GAdir,filesep,'kaoDSDdesign_', num2str(kCount + NSubsTotal), '.mat']);
+%   load(designFile)
+%   run2.ovf = Out.bestOVF;
+%   run2.sequence = Out.bestList;
   dsdDesign(kCount).run1 = run1;
-  dsdDesign(kCount).run2 = run2;
+  dsdDesign(kCount).run2 = run1;
 end
-
-
 
 %% assign positions and coin values
 % randomize left/right, optimize coin values (1 = aIsMore,
@@ -67,8 +66,8 @@ numStatements = (length(neutRawStatements)+length(affRawStatements));
 % get jittered durations (m = 1.5s)
 %!! need to make sure these rests due to optimization are not negatively
 %!! impacting the total time for the run
-rawJitter = (0.5:.0225:1.5)';
-choiceJitter = (0.3:0.009:0.7)';
+rawJitter = choiceGammaDSD./1000';
+discoJitter = discoGammaDSD./1000';
 
 %targetA = repmat(1, numTrials, 1); % 1=Private
 %targetB = repmat(2, numTrials, 1); % 2=Share
@@ -85,7 +84,7 @@ for dCount = 1:NSubsTotal
     for rCount = 1:2;
         thisRun = (['run',num2str(rCount)]);
         rawJitter = shuffle(rawJitter);
-        choiceJitter = shuffle(choiceJitter);
+        discoJitter = shuffle(discoJitter);
         zCount = 0;
         rawTarget = dsdDesign(dCount).(thisRun).sequence; % Every event from optimized sequence (e.g., numbers 0-6 ...)
         numOptTrials = length(rawTarget(rawTarget~=0));
@@ -101,8 +100,8 @@ for dCount = 1:NSubsTotal
         end
         dsdDesign(dCount).(thisRun).condition = rawTarget(rawTarget~=0);
         
-        dsdDesign(dCount).(thisRun).choiceJitter = choiceJitter;
-        dsdDesign(dCount).(thisRun).discoJitter = adjJitter;
+        dsdDesign(dCount).(thisRun).discoJitter = discoJitter;
+        dsdDesign(dCount).(thisRun).choiceJitter = adjJitter;
         condition = dsdDesign(dCount).(thisRun).condition;
         % some temporary NaN vectors
         %!! We can get rid of the below loop because we only care about
@@ -217,7 +216,7 @@ for dCount = 1:NSubsTotal
     elseif dCount >= 10 & dCount < 100
         subID = ['drs0',num2str(dCount)];
     else
-	subID = ['t',num2str(dCount)];
+	subID = ['drs',num2str(dCount)];
     end
 
     for rCount = 1:2

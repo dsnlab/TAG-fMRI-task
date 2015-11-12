@@ -1,4 +1,4 @@
-function [task] = runDSD(subNum,runNum)
+function [task] = runDSD()
 % % RUNDSD.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % usage: [ task ] = runDSD( subNum, runNum )
 %
@@ -24,8 +24,21 @@ function [task] = runDSD(subNum,runNum)
 %     (subID)_info.mat = structure w/ subject specific info
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear all;
 
+prompt = {...
+'sub num: ',...
+'run num: '};
+dTitle = 'Input Subject and Run Number';
+nLines = 1;
+% defaults
+def = { '' , ''};
+manualInput = inputdlg(prompt,dTitle,nLines,def);
+subNum = str2double(manualInput{1});
+runNum = str2double(manualInput{2});
+rng('default');
 Screen('Preference', 'SkipSyncTests', 1);
+
 %% get subID from subNum
 if subNum < 10
   subID = ['drs00',num2str(subNum)];
@@ -185,7 +198,7 @@ for tCount = 1:numTrials
     end
   end
   KbQueueStop(inputDevice);
-  WaitSecs('UntilTime',(discoOnset + 4 + discoJitter));
+  WaitSecs('UntilTime',(discoOnset + 4.5 + discoJitter));
   %
   choiceResponse = 0;
   drawHands(win,drs.stim,targets,[0.5 0.5]);
@@ -212,13 +225,14 @@ for tCount = 1:numTrials
             choiceResponse = 2;
             payout = targets(4);
         end
-         chose=1;
+        chose=1;
         drawChoiceFeedback(win,drs.stim,targets,statement,discoResponse,choiceResponse);
       end   
   end
   KbQueueStop(inputDevice);
+  Screen('FillRect',win, drs.stim.bg);
   [~,choiceOffset] = Screen('Flip',win); % choiceOffset used to be discoOffset
-  WaitSecs('UntilTime',(choiceOnset + 3 + choiceJitter));
+  WaitSecs('UntilTime',(choiceOnset + 3 + choiceJitter + 1));
 %%
   if choiceResponse == 0
     choiceSkips = [choiceSkips tCount];
@@ -251,7 +265,7 @@ end
 % response
 payout = nansum(task.output.raw(:,11));
 task.payout = payout;
-endText = ['Sharing task ',thisRun,' complete! \n\nYou earned ',num2str(payout), ' gold coins.'];
+endText = ['Sharing task ',thisRun,' complete! \n\nYou earned ',num2str(payout), ' pennies.'];
 DrawFormattedText(win, endText,...
     'center', 'center', drs.stim.white);
 Screen('Flip', win);

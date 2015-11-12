@@ -283,7 +283,7 @@ Inp.filename = (['dsd_8s_42t_opt', date, '.mat']); % <-- filename for output
 %**** Experimental conditions
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Inp.nSTYPE = 6; % <--  number of stimulus types (excluding the control)
-Inp.ISI = 8.0; % <--time interval between event onsets
+Inp.ISI = 10.0; % <--time interval between event onsets
 Inp.TR = 2.0; % <--time interval between scans
 Inp.dT = 2.0; % <--the greatest value dividing both the ISI and TR
 Inp.nEvents = 42; % <--number of events in the design
@@ -332,15 +332,15 @@ lagHRF = Inp.nSTYPE*(1+floor(Inp.durHRF/Inp.dT));
 Inp.CX = eye(lagHRF); % <-- linear combinations for h
 Inp.CZ = eye(Inp.nSTYPE); % <-- linear combinations for theta
 % 5. max(Fe) and Max(Fd)
-Inp.MaxFe = 4.1960; %<-- numerical approximation of Max(Fe)
-Inp.MaxFd = 6.6924; %<-- numerical approximation of Max(Fd)
+Inp.MaxFe = 4.5136; %<-- numerical approximation of Max(Fe)
+Inp.MaxFd = 7.2033; %<-- numerical approximation of Max(Fd)
 % % % to get numerical approximation for Max(Fe):
 % % %   set Inp.MaxFe = 1; and Inp.MOweight = [0 0 1 0];
-%Inp.MaxFe = 1; Inp.MOweight = [0 0 1 0];
+% Inp.MaxFe = 1; Inp.MOweight = [0 0 1 0];
 % % %   after the search the approximate is in Out.bestOVF
 % % % to get numerical approximation for Max(Fd):
 % % %   set Inp.MaxFd = 1; and Inp.MOweight = [0 1 0 0];
-%Inp.MaxFd = 1; Inp.MOweight = [0 1 0 0];
+% Inp.MaxFd = 1; Inp.MOweight = [0 1 0 0];
 % % %   after the search the approximate is in Out.bestOVF
 % 6. psychological confounds
 Inp.cbalR = 1; % <-- order of counterbalancing
@@ -351,7 +351,7 @@ Inp.stimFREQ = ones(1,Inp.nSTYPE)./Inp.nSTYPE; %<-- desired stimulus frequency
 %**** Algorithmic parameters
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Inp.StopRule = 1; % 1=maximal generations; 2=accumulated improvement
-Inp.numITR = 600;
+Inp.numITR = 1500;
 % when StopRule = 1, total number of GA generations for each loop
 % when StopRule = 2, check the stopping rule every Inp.numITR generation
 Inp.improve = 10^(-7);
