@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.258,0.060,judge people
+2,2,1,2,3,4,5.907,0.213,go to the movies
+3,3,1,2,3,3,1.623,0.213,don't brush my teeth
+4,4,1,2,4,3,0.005,0.224,wish I was in love
+5,5,1,2,3,4,1.003,0.202,make friends easily
+6,2,1,2,2,4,0.271,0.392,use lotion
+7,5,1,2,2,4,1.063,0.102,think I'm too quiet
+8,1,1,2,4,3,2.434,0.431,decorate my room
+9,4,1,2,4,2,4.052,0.698,think I'm weird
+10,6,1,2,4,4,0.692,0.299,like flirting
+11,5,1,2,3,4,1.429,0.105,hide my feelings
+12,1,1,2,4,2,2.018,0.464,don't make my bed
+13,3,1,2,4,4,1.573,0.386,burn my toast
+14,1,1,2,4,3,0.966,0.127,can be creative
+15,6,1,2,3,3,0.077,0.038,dream about my wedding 
+16,2,1,2,3,4,2.688,0.243,take bubble baths
+17,3,1,2,3,3,3.065,0.171,like eating out
+18,1,1,2,4,3,0.775,0.028,sing in the shower
+19,2,1,2,3,4,1.592,0.037,forget to turn off lights
+20,4,1,2,4,3,0.968,0.259,think smoking is gross
+21,3,1,2,3,3,1.503,0.233,like to wear hats
+22,5,1,2,3,4,0.880,0.066,can get moody
+23,4,1,2,4,3,0.206,0.358,get self-conscious
+24,1,1,2,3,2,0.737,0.101,shower before bed
+25,4,1,2,3,2,1.125,0.073,feel lonely
+26,5,1,2,2,3,1.254,0.126,want to be alone
+27,6,1,2,3,3,5.622,0.043,can be awkward
+28,2,1,2,2,3,0.792,0.032,like watching sports
+29,5,1,2,2,4,2.373,0.033,feel shy in groups
+30,6,1,2,2,2,0.296,0.358,worry about kissing
+31,3,1,2,2,2,0.342,0.104,listen to music
+32,2,1,2,2,4,0.383,0.328,go barefoot
+33,6,1,2,4,4,0.275,0.074,worry about grades
+34,4,1,2,4,2,0.128,0.164,wish I had more friends
+35,2,1,2,3,4,0.023,0.114,wear leggings
+36,1,1,2,4,2,1.282,0.127,wear PJs all day
+37,5,1,2,3,4,0.576,0.106,get mad at friends
+38,3,1,2,4,4,2.224,0.019,can be messy
+39,6,1,2,3,3,6.251,0.031,get picked on
+40,1,1,2,4,3,0.085,0.268,wear flip flops
+41,4,1,2,4,3,7.504,0.047,get embarrassed

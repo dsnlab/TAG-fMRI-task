@@ -1,0 +1,41 @@
+1,6,1,2,3,3,4.052,0.243,don't like my life
+2,2,1,2,3,4,0.005,0.102,sleep in late
+3,3,1,2,3,3,0.576,0.019,wear bright colors
+4,4,1,2,4,3,0.692,0.698,tell little lies
+5,5,1,2,3,4,1.282,0.114,like flirting
+6,2,1,2,2,4,0.128,0.224,burn my toast
+7,5,1,2,2,4,0.383,0.127,dislike my body
+8,1,1,2,4,3,2.224,0.126,like sleepovers
+9,4,1,2,4,2,0.968,0.358,judge people
+10,6,1,2,4,4,1.063,0.060,feel shy in groups
+11,5,1,2,2,4,2.373,0.171,act without thinking
+12,1,1,2,4,2,1.573,0.386,go to the movies
+13,3,1,2,4,4,1.003,0.164,listen to music
+14,1,1,2,4,2,3.065,0.268,wear sunglasses
+15,6,1,2,4,4,0.178,0.392,want to be popular
+16,2,1,2,2,4,6.251,0.073,try new foods
+17,3,1,2,4,4,0.085,0.074,like watching sports
+18,1,1,2,4,3,0.077,0.358,read magazines
+19,2,1,2,3,4,0.023,0.233,play board games
+20,4,1,2,4,2,2.434,0.101,can be awkward
+21,3,1,2,3,3,0.966,0.202,can be creative
+22,5,1,2,3,4,1.592,0.105,can't ignore gossip 
+23,4,1,2,4,3,0.792,0.028,copy homework
+24,1,1,2,3,2,0.271,0.213,decorate my room
+25,4,1,2,3,2,0.775,0.299,hide my feelings
+26,5,1,2,2,3,0.206,0.104,think I'm too quiet
+27,6,1,2,3,3,0.004,0.043,find homework hard
+28,2,1,2,2,3,5.622,0.464,like wearing makeup
+29,5,1,2,2,4,1.254,0.038,can be mean
+30,6,1,2,2,2,0.275,0.213,tease my sibling
+31,3,1,2,2,2,1.125,0.066,like wearing costumes
+32,2,1,2,2,4,1.429,0.259,like cold pizza
+33,6,1,2,4,4,0.296,0.047,get embarrassed
+34,4,1,2,4,2,0.737,0.328,get mad at friends
+35,2,1,2,2,3,0.342,0.031,try to recycle
+36,1,1,2,4,2,0.258,0.033,can be messy
+37,5,1,2,2,3,5.907,0.127,count calories
+38,3,1,2,4,4,2.688,0.431,carry chapstick
+39,6,1,2,2,2,1.503,0.106,think I look bomb
+40,1,1,2,3,2,0.880,0.176,like burning candles
+41,4,1,2,3,2,9.123,0.037,make friends easily

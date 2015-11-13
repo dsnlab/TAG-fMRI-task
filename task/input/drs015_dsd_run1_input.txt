@@ -1,0 +1,41 @@
+1,6,1,2,2,2,2.224,0.019,like flirting
+2,2,1,2,2,3,0.383,0.328,burn my toast
+3,3,1,2,2,2,0.085,0.268,like to doodle
+4,4,1,2,3,2,1.003,0.202,worry about high school
+5,5,1,2,2,3,0.576,0.106,hate going to school
+6,2,1,2,2,4,1.573,0.386,go to the pool
+7,5,1,2,2,4,3.065,0.171,make friends easily
+8,1,1,2,3,2,4.052,0.698,use lotion
+9,4,1,2,4,2,0.275,0.074,think I'm weird
+10,6,1,2,4,4,0.004,0.047,can be awkward
+11,5,1,2,2,4,0.258,0.060,act without thinking
+12,1,1,2,4,2,0.023,0.114,don't make my bed
+13,3,1,2,4,4,0.128,0.164,like watching sports
+14,1,1,2,4,2,2.434,0.431,wear sunglasses
+15,6,1,2,4,4,0.792,0.032,can be mean
+16,2,1,2,2,4,1.592,0.037,like wearing costumes
+17,3,1,2,4,4,0.692,0.299,decorate my room
+18,1,1,2,4,2,2.373,0.033,go barefoot
+19,2,1,2,2,4,2.688,0.243,can be messy
+20,4,1,2,4,2,0.005,0.224,think I'm too quiet
+21,3,1,2,3,3,1.063,0.102,drink milk
+22,5,1,2,2,4,0.775,0.028,worry about kissing
+23,4,1,2,4,2,0.737,0.101,get mad at friends
+24,1,1,2,4,2,1.254,0.126,forget people's names
+25,4,1,2,4,2,5.907,0.213,ignore my parents
+26,5,1,2,2,4,1.125,0.073,like breaking rules
+27,6,1,2,3,3,5.622,0.043,pretend to like people
+28,2,1,2,2,4,0.178,0.176,paint my nails
+29,5,1,2,3,4,0.296,0.358,can't ignore gossip 
+30,6,1,2,4,4,0.271,0.392,hide my feelings
+31,3,1,2,4,4,0.077,0.038,read magazines
+32,2,1,2,3,4,1.623,0.213,can be creative
+33,6,1,2,3,3,6.251,0.031,judge people
+34,4,1,2,4,3,0.342,0.104,feel lonely
+35,2,1,2,3,4,0.966,0.127,go to the movies
+36,1,1,2,4,3,0.206,0.358,like to wear hats
+37,5,1,2,3,4,0.968,0.259,get embarrassed
+38,3,1,2,3,3,2.018,0.464,try to recycle
+39,6,1,2,3,3,1.503,0.233,find homework hard
+40,1,1,2,4,3,1.429,0.105,like wearing makeup
+41,4,1,2,4,3,8.782,0.127,count calories

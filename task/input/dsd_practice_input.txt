@@ -1,0 +1,12 @@
+1,4,1,2,4,2,0.178,0.176,like dancing
+2,3,1,2,2,2,0.737,0.101,bite my fingernails
+3,5,1,2,2,3,3.065,0.171,take afternoon naps
+4,4,1,2,3,2,2.373,0.033,like cloudy days
+5,1,1,2,4,2,0.775,0.028,remember my homework
+6,4,1,2,4,2,1.282,0.127,eat spicy food
+7,5,1,2,2,4,0.004,0.047,like carving pumpkins
+8,6,1,2,2,2,2.018,0.464,think bugs are gross
+9,2,1,2,2,4,5.907,0.213,hate riding the bus
+10,5,1,2,2,4,0.692,0.299,eat banana bread
+11,6,1,2,4,4,0.576,0.106,chew bubblegum
+12,3,1,2,4,4,0.005,0.224,go to concerts

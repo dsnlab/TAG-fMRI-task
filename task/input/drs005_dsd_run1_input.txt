@@ -1,0 +1,41 @@
+1,6,1,2,4,4,1.254,0.126,like flirting
+2,2,1,2,2,4,2.224,0.019,burn my toast
+3,3,1,2,4,4,1.503,0.233,go to the movies
+4,4,1,2,4,2,2.373,0.033,judge people
+5,5,1,2,2,4,1.282,0.127,tease my sibling
+6,2,1,2,3,4,0.085,0.268,like cold pizza
+7,5,1,2,3,4,0.128,0.164,get mad at friends
+8,1,1,2,4,2,0.966,0.127,can be messy
+9,4,1,2,4,3,1.429,0.105,can't wait to be older
+10,6,1,2,3,3,0.296,0.358,get self-conscious
+11,5,1,2,3,4,0.968,0.259,worry about drugs
+12,1,1,2,4,3,0.576,0.106,braid my hair
+13,3,1,2,3,3,1.623,0.213,forget to turn off lights
+14,1,1,2,4,3,2.018,0.464,stay up late
+15,6,1,2,3,3,0.271,0.392,dislike my body
+16,2,1,2,3,4,0.692,0.299,like sleepovers
+17,3,1,2,3,3,0.880,0.066,sing in the shower
+18,1,1,2,3,2,2.688,0.243,wear PJs all day
+19,2,1,2,2,3,5.622,0.043,shower before bed
+20,4,1,2,4,3,0.004,0.047,can get moody
+21,3,1,2,2,2,6.251,0.031,forget people's names
+22,5,1,2,2,3,0.737,0.101,wish I had more friends
+23,4,1,2,3,2,0.342,0.104,want to be alone
+24,1,1,2,3,2,1.125,0.073,like watching sports
+25,4,1,2,3,2,0.005,0.224,like breaking rules
+26,5,1,2,2,3,0.383,0.328,can be awkward
+27,6,1,2,2,2,0.178,0.176,think I'm weird
+28,2,1,2,2,3,0.206,0.358,don't make my bed
+29,5,1,2,3,4,5.907,0.213,want to be popular
+30,6,1,2,2,2,1.592,0.037,tell little lies
+31,3,1,2,2,2,0.077,0.038,try new foods
+32,2,1,2,3,4,2.434,0.431,wear bright colors
+33,6,1,2,3,3,0.792,0.032,count calories
+34,4,1,2,4,3,0.023,0.114,worry about grades
+35,2,1,2,2,3,4.052,0.698,carry chapstick
+36,1,1,2,4,3,1.573,0.386,wear leggings
+37,5,1,2,2,3,0.258,0.060,hide my feelings
+38,3,1,2,3,3,1.003,0.202,can be creative
+39,6,1,2,2,2,1.063,0.102,can be mean
+40,1,1,2,3,2,0.775,0.028,like wearing costumes
+41,4,1,2,3,2,7.775,0.074,worry about high school

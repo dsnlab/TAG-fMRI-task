@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.004,0.358,can be mean
+2,2,1,2,2,4,0.128,0.101,like wearing costumes
+3,3,1,2,4,4,0.966,0.047,use lotion
+4,4,1,2,4,2,4.052,0.259,make friends easily
+5,5,1,2,2,4,1.573,0.392,hate going to school
+6,2,1,2,2,3,2.688,0.037,go to the pool
+7,5,1,2,2,3,0.275,0.066,tell little lies
+8,1,1,2,4,2,0.692,0.171,wear bright colors
+9,4,1,2,3,2,6.251,0.105,act without thinking
+10,6,1,2,2,2,1.592,0.028,judge people
+11,5,1,2,2,4,0.737,0.033,can't keep secrets  
+12,1,1,2,3,2,0.077,0.164,wear sunglasses
+13,3,1,2,2,2,0.178,0.202,go to the movies
+14,1,1,2,4,2,0.775,0.233,like reality TV
+15,6,1,2,4,4,0.296,0.073,find homework hard
+16,2,1,2,2,4,0.085,0.102,like wearing makeup
+17,3,1,2,4,4,3.065,0.464,forget people's names
+18,1,1,2,3,2,2.373,0.698,can be messy
+19,2,1,2,2,3,0.383,0.074,play board games
+20,4,1,2,4,2,5.622,0.268,like breaking rules
+21,3,1,2,2,2,1.003,0.104,wear PJs all day
+22,5,1,2,2,3,2.018,0.038,get mad at friends
+23,4,1,2,3,2,1.429,0.213,copy homework
+24,1,1,2,4,3,1.282,0.043,go barefoot
+25,4,1,2,4,3,1.623,0.358,wish I had more friends
+26,5,1,2,3,4,0.342,0.176,worry about kissing
+27,6,1,2,2,2,0.271,0.328,worry about high school
+28,2,1,2,3,4,0.005,0.031,like to doodle
+29,5,1,2,2,4,1.063,0.213,pretend to like people
+30,6,1,2,3,3,0.968,0.127,feel lonely
+31,3,1,2,3,3,0.023,0.032,paint my nails
+32,2,1,2,2,4,0.206,0.106,like to wear hats
+33,6,1,2,3,3,0.258,0.114,ignore my parents
+34,4,1,2,4,2,2.434,0.431,get self-conscious
+35,2,1,2,2,4,1.503,0.126,drink milk
+36,1,1,2,4,2,2.224,0.299,forget to turn off lights
+37,5,1,2,2,4,1.125,0.060,don't like my life
+38,3,1,2,3,3,1.254,0.386,sleep in late
+39,6,1,2,4,4,0.792,0.243,think smoking is gross
+40,1,1,2,4,2,0.880,0.224,like eating out
+41,4,1,2,4,2,8.076,0.019,worry about drugs

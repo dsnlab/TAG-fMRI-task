@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.206,0.358,make friends easily
+2,2,1,2,2,4,0.775,0.028,use lotion
+3,3,1,2,4,4,1.573,0.386,braid my hair
+4,4,1,2,4,2,0.966,0.127,can't wait to be older
+5,5,1,2,2,4,1.503,0.233,weigh myself
+6,2,1,2,2,3,1.125,0.073,like leftovers
+7,5,1,2,2,3,0.880,0.066,get self-conscious
+8,1,1,2,4,2,0.737,0.101,forget to turn off lights
+9,4,1,2,3,2,0.271,0.392,think smoking is gross
+10,6,1,2,2,2,1.429,0.105,want to be alone
+11,5,1,2,2,3,1.063,0.102,can be mean
+12,1,1,2,3,2,0.023,0.114,like eating out
+13,3,1,2,2,2,4.052,0.698,shower before bed
+14,1,1,2,3,2,0.576,0.106,like wearing costumes
+15,6,1,2,2,2,2.018,0.464,worry about drugs
+16,2,1,2,2,3,0.005,0.224,stay up late
+17,3,1,2,2,2,0.342,0.104,sleep in late
+18,1,1,2,4,2,1.623,0.213,wear leggings
+19,2,1,2,2,4,0.085,0.268,decorate my room
+20,4,1,2,3,2,0.077,0.038,don't like my life
+21,3,1,2,3,3,0.692,0.299,like wearing makeup
+22,5,1,2,2,4,0.792,0.032,worry about grades
+23,4,1,2,4,2,6.251,0.031,think I'm too quiet
+24,1,1,2,4,2,3.065,0.171,go to the movies
+25,4,1,2,4,2,0.004,0.047,find homework hard
+26,5,1,2,2,4,5.622,0.043,judge people
+27,6,1,2,3,3,2.224,0.019,worry about kissing
+28,2,1,2,2,4,1.003,0.202,go barefoot
+29,5,1,2,2,4,5.907,0.213,ignore my parents
+30,6,1,2,4,4,1.592,0.037,wish I had more friends
+31,3,1,2,4,4,0.383,0.328,drink milk
+32,2,1,2,2,4,1.254,0.126,wear PJs all day
+33,6,1,2,4,4,1.282,0.127,think I look bomb
+34,4,1,2,4,2,0.258,0.060,can't ignore gossip 
+35,2,1,2,2,3,2.434,0.431,like burning candles
+36,1,1,2,4,2,2.688,0.243,read magazines
+37,5,1,2,2,3,0.128,0.164,get mad at friends
+38,3,1,2,4,4,0.178,0.176,can be messy
+39,6,1,2,2,2,2.373,0.033,tease my sibling
+40,1,1,2,3,2,0.296,0.358,like cold pizza
+41,4,1,2,3,2,8.468,0.259,wish I was in love

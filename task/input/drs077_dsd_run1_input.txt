@@ -1,0 +1,41 @@
+1,6,1,2,4,4,1.125,0.073,get embarrassed
+2,2,1,2,2,4,0.342,0.104,try to recycle
+3,3,1,2,4,4,1.503,0.233,decorate my room
+4,4,1,2,4,2,2.018,0.464,think I'm too quiet
+5,5,1,2,2,4,0.792,0.032,worry about drugs
+6,2,1,2,2,3,6.251,0.031,stay up late
+7,5,1,2,2,3,0.966,0.127,weigh myself
+8,1,1,2,4,2,0.271,0.392,like leftovers
+9,4,1,2,3,2,5.622,0.043,act without thinking
+10,6,1,2,2,2,1.429,0.105,worry about grades
+11,5,1,2,3,4,1.063,0.102,get self-conscious
+12,1,1,2,3,2,5.907,0.213,wear sunglasses
+13,3,1,2,2,2,0.258,0.060,wear leggings
+14,1,1,2,4,3,3.065,0.171,forget to turn off lights
+15,6,1,2,3,3,0.023,0.114,hide my feelings
+16,2,1,2,3,4,1.003,0.202,can be creative
+17,3,1,2,3,3,0.692,0.299,carry chapstick
+18,1,1,2,3,2,2.373,0.033,go to the pool
+19,2,1,2,2,3,0.296,0.358,sleep in late
+20,4,1,2,4,3,0.737,0.101,count calories
+21,3,1,2,2,2,2.224,0.019,forget people's names
+22,5,1,2,2,3,0.275,0.074,hate going to school
+23,4,1,2,3,2,0.178,0.176,don't like my life
+24,1,1,2,3,2,1.282,0.127,wear bright colors
+25,4,1,2,3,2,0.383,0.328,like breaking rules
+26,5,1,2,2,3,0.085,0.268,tell little lies
+27,6,1,2,2,2,0.077,0.038,get picked on
+28,2,1,2,2,3,1.254,0.126,wear flip flops
+29,5,1,2,3,4,0.775,0.028,find homework hard
+30,6,1,2,2,2,0.128,0.164,dislike my body
+31,3,1,2,2,2,2.434,0.431,like wearing makeup
+32,2,1,2,3,4,1.592,0.037,like sleepovers
+33,6,1,2,3,3,0.004,0.047,think smoking is gross
+34,4,1,2,4,3,2.688,0.243,like flirting
+35,2,1,2,2,4,1.573,0.386,like eating out
+36,1,1,2,4,3,1.623,0.213,burn my toast
+37,5,1,2,2,4,0.005,0.224,copy homework
+38,3,1,2,3,3,4.052,0.698,play board games
+39,6,1,2,4,4,0.880,0.066,can't keep secrets  
+40,1,1,2,4,2,0.576,0.106,like reality TV
+41,4,1,2,4,2,7.706,0.358,can be awkward
