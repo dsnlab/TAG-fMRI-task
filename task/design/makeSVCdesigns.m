@@ -2,6 +2,7 @@
 svcTextFile = 'materials/svcTraits.txt';
 targetDirectory = '../input';
 GAoutputDirectory = 'GAoutput';
+load('gammaDists.mat', 'gammaSVC');
 fid = fopen(svcTextFile,'r');
 svcCell = textscan(fid, '%s%u8%u8%u8','Delimiter',',');
 fclose(fid);
@@ -22,12 +23,12 @@ for dCount = 1
   caList1 = aggTraits(8:end);
   cgList1 = goodTraits(10:end);
   cwList1 = withdrwnTraits(10:end);
-  scList2 = caList1;
+  saList2 = caList1;
   sgList2 = cgList1;
-  soList2 = cwList1;
-  ccList2 = saList1;
+  swList2 = cwList1;
+  caList2 = saList1;
   cgList2 = sgList1;
-  coList2 = swList1;
+  cwList2 = swList1;
   % loop over runs
   for rCount = 1:2;
     thisRun = ['run',num2str(rCount)];
@@ -37,9 +38,9 @@ for dCount = 1
     svcDesign(dCount).(thisRun).condition = ... % strip out the zeros
       svcDesign(dCount).(thisRun).sequence...
         (svcDesign(dCount).(thisRun).sequence~=0);
-    ITIs = (Shuffle(0.47:0.026:1.74))'; %!! Change to gamma sum(ITIs) = 49.563; mean(ITIs) = 1.1014; 
+    ITIs = (Shuffle(gammaSVC./1000))'; %!! Change to gamma sum(ITIs) = 49.563; mean(ITIs) = 1.1014; 
     % pad the ISI by resting after every 5th trial
-    gammaSlice = repmat([0 0 0 0 0 4.7], 10, 1);
+    gammaSlice = repmat([0 0 0 0 4.7], 1, 10);
     svcDesign(dCount).(thisRun).jitter = ITIs+gammaSlice;
     svcJitter = ITIs+gammaSlice;
     condition = svcDesign(dCount).(thisRun).condition;
@@ -68,27 +69,27 @@ for dCount = 1
       switch condition(tCount)
         case 1
           word{tCount} = sgList{1};
-          scList = popArray(scList);
+          sgList = popArray(sgList);
           prompt{tCount} = 'true about me?';
         case 2
           word{tCount} = swList{1};
-          sgList = popArray(sgList);
+          swList = popArray(swList);
           prompt{tCount} = 'true about me?';
         case 3
           word{tCount} = saList{1};
-          soList = popArray(soList);
+          saList = popArray(saList);
           prompt{tCount} = 'true about me?';    
         case 4
           word{tCount} = cgList{1};
-          ccList = popArray(ccList);
+          cgList = popArray(cgList);
           prompt{tCount} = 'can this change?';
         case 5
           word{tCount} = cwList{1};
-          cgList = popArray(cgList);
+          cwList = popArray(cwList);
           prompt{tCount} = 'can this change?';
         case 6
           word{tCount} = caList{1};
-          coList = popArray(coList);
+          caList = popArray(caList);
           prompt{tCount} = 'can this change?';
       end
       condition = svcDesign(dCount).(thisRun).condition;
@@ -101,7 +102,7 @@ for dCount = 1
       end
       fid = fopen([targetDirectory,filesep,subID,'_svc_','run',num2str(rCount),'_input.txt'],'a');
       formatSpec = '%u,%u,%4.3f,%u,%u,%s\n';
-      fprintf(fid, formatSpec, tCount, condition(tCount), svcJitter(tCount), reverse(tCount), syllables(tCount), word{tCount} );
+      fprintf(fid, formatSpec, tCount, condition(tCount), svcJitter(tCount), reverse(tCount), syllables(tCount), word{tCount});
       fclose(fid);
     end
   end

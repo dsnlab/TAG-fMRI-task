@@ -1,4 +1,4 @@
-function [task] = runSVC(subNum,runNum)
+function [task] = runSVC()
 % % RUNSVC.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % usage: [ task ] = runSVC( subNum, runNum )
 %
@@ -23,7 +23,21 @@ function [task] = runSVC(subNum,runNum)
 %--> (subID)_info.mat = structure w/ subject specific info
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear all;
+
+prompt = {...
+'sub num: ',...
+'run num: '};
+dTitle = 'Input Subject and Run Number';
+nLines = 1;
+% defaults
+def = { '' , ''};
+manualInput = inputdlg(prompt,dTitle,nLines,def);
+subNum = str2double(manualInput{1});
+runNum = str2double(manualInput{2});
+rng('default');
 Screen('Preference', 'SkipSyncTests', 1);
+
 %% get subID from subNum
 if subNum < 10
   subID = ['drs00',num2str(subNum)];
@@ -127,7 +141,7 @@ leftKeys = ([drs.keys.b0 drs.keys.b1 drs.keys.b2 drs.keys.b3 drs.keys.b4 drs.key
 rightKeys = ([drs.keys.b5 drs.keys.b6 drs.keys.b7 drs.keys.b8 drs.keys.b9 drs.keys.right]);
 KbQueueCreate(inputDevice, keyList);
 traitSkips = [];
-blockStartTrials = 1:4:48;
+blockStartTrials = 1:5:50;
 loopStartTime = GetSecs;
 %% trial loop
 for tCount = 1:numTrials
@@ -151,10 +165,18 @@ for tCount = 1:numTrials
       promptText = 'true about me?';
       promptColor = drs.stim.promptColors{1};
     case 3
+      iconMatrix = drs.stim.promptMatrix{1};
+      promptText = 'true about me?';
+      promptColor = drs.stim.promptColors{1};
+    case 4
       iconMatrix = drs.stim.promptMatrix{2};
       promptText = 'can it change?';
       promptColor = drs.stim.promptColors{2};
-    case 4
+    case 5
+      iconMatrix = drs.stim.promptMatrix{2};
+      promptText = 'can it change?';
+      promptColor = drs.stim.promptColors{2};
+    case 6
       iconMatrix = drs.stim.promptMatrix{2};
       promptText = 'can it change?';
       promptColor = drs.stim.promptColors{2};
@@ -166,7 +188,7 @@ for tCount = 1:numTrials
     Screen('TextFont', win, 'Arial');
     DrawFormattedText( win, promptText, 'center', 'center', promptColor );
     Screen('Flip',win);
-    WaitSecs(3.6);
+    WaitSecs(4.7);
   end
   %% call draw function
   drawTrait(win,drs.stim,trait,condition,[0.5 0.5]);
@@ -174,7 +196,7 @@ for tCount = 1:numTrials
   % flip the screen to show trait
   [~,traitOnset] = Screen('Flip',win);
   %loop for response
-  while (GetSecs - traitOnset) < 3.6
+  while (GetSecs - traitOnset) < 4.7
     [ pressed, firstPress]=KbQueueCheck(inputDevice);
       if pressed
         if chose == 0
@@ -197,12 +219,12 @@ for tCount = 1:numTrials
   KbQueueStop(inputDevice);
   drawTrait(win,drs.stim,' ',condition,[0.5 0.5]);
   Screen('Flip',win);
-  if traitJitter > 5
+  if traitJitter > 4.7
     [~,traitOffset] = Screen('Flip',win);
   else
     traitOffset = GetSecs;
   end
-  WaitSecs('UntilTime',(traitOnset + 3.6 + traitJitter));
+  WaitSecs('UntilTime',(traitOnset + 4.7 + traitJitter));
   %%
   if traitResponse == 0
     traitSkips = [traitSkips tCount];
