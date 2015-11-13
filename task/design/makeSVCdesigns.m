@@ -5,44 +5,41 @@ GAoutputDirectory = 'GAoutput';
 fid = fopen(svcTextFile,'r');
 svcCell = textscan(fid, '%s%u8%u8%u8','Delimiter',',');
 fclose(fid);
-coolTraits = svcCell{1}(svcCell{2}==1);
-goodTraits = svcCell{1}(svcCell{2}==2);
-otherTraits = svcCell{1}(svcCell{2}==3);
+goodTraits = svcCell{1}(svcCell{2}==1);
+withdrwnTraits = svcCell{1}(svcCell{2}==2);
+aggTraits = svcCell{1}(svcCell{2}==3);
 
 for dCount = 1
   %% shuffle em' up & split across runs
   % (we can grab the other info from svcCell using strcmp later...)
-  coolTraits = svcCell{1}(svcCell{2}==1);
-  goodTraits = svcCell{1}(svcCell{2}==2);
-  otherTraits = svcCell{1}(svcCell{2}==3);
-  coolTraits = Shuffle(coolTraits);
+  aggTraits = Shuffle(aggTraits);
   goodTraits = Shuffle(goodTraits);
-  otherTraits = Shuffle(otherTraits);
+  withdrwnTraits = Shuffle(withdrwnTraits);
 
-  scList1 = coolTraits(1:8);
-  sgList1 = goodTraits(1:8);
-  soList1 = otherTraits(1:8);
-  ccList1 = coolTraits(9:end);
-  cgList1 = goodTraits(9:end);
-  coList1 = otherTraits(9:end);
-  scList2 = ccList1;
+  saList1 = aggTraits(1:7);
+  sgList1 = goodTraits(1:9);
+  swList1 = withdrwnTraits(1:9);
+  caList1 = aggTraits(8:end);
+  cgList1 = goodTraits(10:end);
+  cwList1 = withdrwnTraits(10:end);
+  scList2 = caList1;
   sgList2 = cgList1;
-  soList2 = coList1;
-  ccList2 = scList1;
+  soList2 = cwList1;
+  ccList2 = saList1;
   cgList2 = sgList1;
-  coList2 = soList1;
+  coList2 = swList1;
   % loop over runs
   for rCount = 1:2;
     thisRun = ['run',num2str(rCount)];
-    designFile = [GAoutputDirectory,filesep,(['torSVCdesign_',num2str(dCount + 50*(rCount-1)),'.mat'])];
+    designFile = [GAoutputDirectory,filesep,(['torSVCdesign.mat'])];
     load(designFile);  
     svcDesign(dCount).(thisRun).sequence = M.stimlist;
     svcDesign(dCount).(thisRun).condition = ... % strip out the zeros
       svcDesign(dCount).(thisRun).sequence...
         (svcDesign(dCount).(thisRun).sequence~=0);
-    ITIs = (Shuffle(0.47:0.026:1.74))'; % sum(ITIs) = 49.563; mean(ITIs) = 1.1014;
-    % pad the ISI by resting after trials 12, 24, 36
-    gammaSlice = ([zeros(1,11),22.4,zeros(1,11),22.4,zeros(1,11),22.4,zeros(1,13)])';
+    ITIs = (Shuffle(0.47:0.026:1.74))'; %!! Change to gamma sum(ITIs) = 49.563; mean(ITIs) = 1.1014; 
+    % pad the ISI by resting after every 5th trial
+    gammaSlice = repmat([0 0 0 0 0 4.7], 10, 1);
     svcDesign(dCount).(thisRun).jitter = ITIs+gammaSlice;
     svcJitter = ITIs+gammaSlice;
     condition = svcDesign(dCount).(thisRun).condition;
@@ -53,44 +50,44 @@ for dCount = 1
     % assign list per run
     if rCount == 1
       sgList = sgList1;
-      scList = scList1;
-      soList = soList1;
+      saList = saList1;
+      swList = swList1;
       cgList = cgList1;
-      ccList = ccList1;
-      coList = coList1;
+      caList = caList1;
+      cwList = cwList1;
     elseif rCount == 2
       sgList = sgList2;
-      scList = scList2;
-      soList = soList2;
+      saList = saList2;
+      swList = swList2;
       cgList = cgList2;
-      ccList = ccList2;
-      coList = coList2;
+      caList = caList2;
+      cwList = cwList2;
     end
   % loop over trials
     for tCount = 1:length(word);
       switch condition(tCount)
         case 1
-          word{tCount} = scList{1};
+          word{tCount} = sgList{1};
           scList = popArray(scList);
           prompt{tCount} = 'true about me?';
         case 2
-          word{tCount} = sgList{1};
+          word{tCount} = swList{1};
           sgList = popArray(sgList);
           prompt{tCount} = 'true about me?';
         case 3
-          word{tCount} = soList{1};
+          word{tCount} = saList{1};
           soList = popArray(soList);
           prompt{tCount} = 'true about me?';    
         case 4
-          word{tCount} = ccList{1};
+          word{tCount} = cgList{1};
           ccList = popArray(ccList);
           prompt{tCount} = 'can this change?';
         case 5
-          word{tCount} = cgList{1};
+          word{tCount} = cwList{1};
           cgList = popArray(cgList);
           prompt{tCount} = 'can this change?';
         case 6
-          word{tCount} = coList{1};
+          word{tCount} = caList{1};
           coList = popArray(coList);
           prompt{tCount} = 'can this change?';
       end

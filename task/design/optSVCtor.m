@@ -3,20 +3,20 @@ optDesPath=genpath('/Volumes/research/dsnlab/matlab/CanlabCore/CanlabCore');
 addpath(optDesPath);
 clear Models, clear MM
 
-GA.conditions = [1 2 3 4 5 6]; %self|change x prosoc|insecure|aggressive + rest
+GA.conditions = [1 2 3]; %self|change x prosoc|insecure|aggressive + rest
                                  % .5    .5        1/3  1/3  1/3
-GA.freqConditions = [1/6 1/6 1/6 1/6 1/6 1/6];
-GA.scanLength = 282;  
+GA.freqConditions = [18/50 18/50 14/50]; % this leaves 10 rest events
+GA.scanLength = 282; % 282 / 4.7 = 60 
 GA.ISI = 4.7;  
 GA.TR = 2; 
 GA.doepochs = 0;
 GA.numhox = 0;
 GA.hoxrange = [];
-nmodels = 2; 
+nmodels = 1; 
 GA.cbalColinPowerWeights = [2 5 1 4];	% 1 = cbal, 2 = eff, 3 = hrf shape, 4 = freq
 GA.numGenerations = 10000; 
 GA.sizeGenerations = 40;  
-GA.maxTime = 240;						
+GA.maxTime = 60*5;						
 GA.alph = 2.7; 
 GA.plotFlag = 1; 
 GA.lowerLimit = [];  
@@ -32,7 +32,7 @@ GA.contrasts = [...
       1    0    0   -1    0    0; ...          %Self Prosocial v Change prosocial
       1    0    0    0    0    0; ...          %Self Prosocial v rest
       1    0   -1    0    0    0; ...          %Self Prosocial v self agressive
-    -.5    1  -.5    0    0    0; ...          %Self Insecure v Not Insecure
+      1   -1    0    0    0    0; ...          %Self Prosocial v self withdrawn
       0    0    0    1  -.5  -.5];             %Change prosocial v change not prosocial
    
 % GA.contrasts = [...
@@ -43,10 +43,10 @@ GA.contrasts = [...
 %      ];
 GA.contrastweights = [5 1 1 1 .5 .5 .5];	                      
 AutocorrelationFileName = 'myscannerxc';
-GA.restlength = [.21]; 
-GA.restevery = [1]; 
+GA.restlength = [1]; 
+GA.restevery = [5]; 
 GA.trans2switch = 0; 
-GA.trans2block = 0; 
+GA.trans2block = 1; 
 GA.dofirst = 0; 
 GA.nonlinthreshold = []; 
 % ---------------------------------------------------------------
