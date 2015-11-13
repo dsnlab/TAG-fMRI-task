@@ -3,7 +3,6 @@ task/output/*
 # Ignore generated onset .txt files
 bx/onset_files
 bx/onset_files/*
-task/input/*
 task/input.old/*
 # Ignore subInfoMats
-# task/input/drs*_info.mat 
+task/input/drs*_info.mat 
