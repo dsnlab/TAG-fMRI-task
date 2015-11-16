@@ -96,11 +96,22 @@ Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 drs.keys = initKeys;
 inputDevice = drs.keys.deviceNum;
 
+devices=PsychHID('Devices');
+for deviceCount=1:length(devices),
+  % Just get the local keyboard
+  if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
+          || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Apple, Inc'))),
+    keys.bbox = deviceCount;
+    keys.trigger = KbName('t'); % use 't' as KbTrigger
+    internalKeyboardDevice=deviceCount;
+  end
+end
+
 % to inform subject about upcoming task
-prefaceText = ['Coming up... ','Sharing Task: ',thisRun, '\n\ndecision: (left for left option, right for right option) \n\nstatement: (left for ''yes'', right for ''no'') '];
+prefaceText = ['Coming up... ','Sharing Task: ',thisRun, '\n\nstatement: left for ''yes'', right for ''no'' \n\ndecision: left to keep private, right to share '];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.sky);
 [~,programOnset] = Screen('Flip',win);
-KbStrokeWait(inputDevice);
+KbStrokeWait(internalKeyboardDevice);
 
 %% present during multiband calibration (time shortened for debug)
 % skip the long wait for training session
@@ -215,7 +226,7 @@ for tCount = 1:numTrials
         elseif chose == 1
           multiChoiceResponse = [multiChoiceResponse choiceResponse];
           multiChoiceRT =[multiChoiceRT choiceRT];
-          choiceRT = firstPress(find(firstPress)) - choiceOnset;
+          choiceRT = firstPress(find(firstPress)) - choiceOnset
         end
 
         if find(firstPress(leftKeys))
@@ -248,8 +259,8 @@ for tCount = 1:numTrials
   task.output.raw(tCount,5) = trialMatrix{5}(tCount);
   task.output.raw(tCount,6) = trialMatrix{6}(tCount);
   task.output.raw(tCount,7) = (choiceOnset - loopStartTime);
-  task.output.raw(tCount,8) = choiceResponse;
-  task.output.raw(tCount,9) = choiceRT;
+  task.output.raw(tCount,8) = choiceResponse; 
+  task.output.raw(tCount,9) = choiceRT; %Errors here could be caused by ultra-fast switching of answers
   task.output.raw(tCount,10) = (discoOnset - loopStartTime);
   task.output.raw(tCount,11) = discoResponse;
   task.output.raw(tCount,12) = discoRT;
@@ -291,7 +302,7 @@ if runNum ~= 0
   save(subOutputMat,'task');
 end
 
-KbStrokeWait(inputDevice);
+KbStrokeWait(internalKeyboardDevice);
 Screen('CloseAll');
 ShowCursor();
 return

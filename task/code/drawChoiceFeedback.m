@@ -29,7 +29,7 @@ for fadeCount = 1:length(fadeVector)
   case 1
     alphas = [handGlow(fadeCount) handFade(fadeCount)];
     fadeBox = stim.box.hand{2};
-    fadeChoice = stim.box.choice{2};
+    fadeChoice = stim.box.choice{2}.*[0 1 0 1]+[stim.box.xCenter 0 stim.box.xDim 0]; %make box cover a wide x range
     fadeCoin = stim.box.coin{2};
   case 2
     alphas = [handFade(fadeCount) handGlow(fadeCount)];

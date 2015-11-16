@@ -20,20 +20,27 @@ function [ keys ] = initKeys()
 
 %% set up button box / keyboard
 devices=PsychHID('Devices');
+detectButtonBox = false;
 for deviceCount=1:length(devices),
   % the lcni button box has the usageName 'Keyboard' and the product 'Xkeys'
   if (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).product,'Xkeys')),
     keys.bbox = deviceCount;
     keys.trigger = 52; % trigger pulse / TR signal key ('`') for LCNI scanner
     fprintf('button box detected\n using device #%d: %s\n',deviceCount,devices(deviceCount).product);
+    detectButtonBox = true;
+    deviceNum = deviceCount;
     break,
   elseif ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
           || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Apple, Inc'))),
     keys.bbox = deviceCount;
     keys.trigger = KbName('t'); % use 't' as KbTrigger
-    fprintf('Using Device #%d: internal %s\n',deviceCount,devices(deviceCount).usageName);
-    break,
+    detectButtonBox = false;
+    deviceNum=deviceCount;
   end
+end
+
+if (~detectButtonBox)
+     fprintf('Using Device #%d: internal %s\n',deviceCount,devices(deviceCount).usageName);
 end
 
 keys.b1 = KbName('1!');   % Keyboard 1
@@ -48,8 +55,8 @@ keys.b9 = KbName('9(');   % Keyboard 9
 keys.b0 = KbName('0)');   % Keyboard 0
 keys.buttons = (30:39);
 
-keys.device = devices(deviceCount);
-keys.deviceNum = deviceCount;
+keys.device = devices(deviceNum);
+keys.deviceNum = deviceNum;
 keys.space=KbName('SPACE');
 keys.esc=KbName('ESCAPE');
 keys.right=KbName('RightArrow');
