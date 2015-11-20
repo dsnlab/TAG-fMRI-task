@@ -1,4 +1,4 @@
-function [task] = runDSD()
+function [task] = runDSD(subNumArg, runNumArg)
 % % RUNDSD.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % usage: [ task ] = runDSD( subNum, runNum )
 %
@@ -24,18 +24,26 @@ function [task] = runDSD()
 %     (subID)_info.mat = structure w/ subject specific info
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-clear all;
+switch nargin
+    case 0
+        clear all;
+        prompt = {...
+        'sub num: ',...
+        'run num: '};
+        dTitle = 'Input Subject and Run Number';
+        nLines = 1;
+        % defaults
+        def = { '' , ''};
+        manualInput = inputdlg(prompt,dTitle,nLines,def);
+        subNum = str2double(manualInput{1});
+        runNum = str2double(manualInput{2});
+    case 1
+        error('Must specify 0 or 2 arguments');
+    case 2
+        subNum = subNumArg;
+        runNum = runNumArg;
+end
 
-prompt = {...
-'sub num: ',...
-'run num: '};
-dTitle = 'Input Subject and Run Number';
-nLines = 1;
-% defaults
-def = { '' , ''};
-manualInput = inputdlg(prompt,dTitle,nLines,def);
-subNum = str2double(manualInput{1});
-runNum = str2double(manualInput{2});
 rng('default');
 Screen('Preference', 'SkipSyncTests', 1);
 
@@ -118,7 +126,7 @@ KbStrokeWait(internalKeyboardDevice);
 if runNum == 0
     calibrationTime = 1;
 else
-    calibrationTime = 1;
+    calibrationTime = 17;
 end
 % remind em' not to squirm!
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
@@ -145,10 +153,14 @@ Screen('Flip', win);
 % trigger pulse code 
 
 disp(drs.keys.trigger);
-KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
-disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
-triggerPulseTime = GetSecs;
-disp('trigger pulse received, starting experiment');
+if runNum == 0
+    KbStrokeWait(internalKeyboardDevice);
+else
+    KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
+    disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
+    triggerPulseTime = GetSecs;
+    disp('trigger pulse received, starting experiment');
+end
 Screen('Flip', win);
 
 % define keys to listen for, create KbQueue (coins & text drawn while it warms up)
@@ -303,6 +315,5 @@ if runNum ~= 0
 end
 
 KbStrokeWait(internalKeyboardDevice);
-Screen('CloseAll');
-ShowCursor();
+Screen('Close', win);
 return

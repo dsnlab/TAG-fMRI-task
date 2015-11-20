@@ -12,8 +12,12 @@ case 1
 case 2 
   iconMatrix = stim.promptMatrix{1};
 case 3
-  iconMatrix = stim.promptMatrix{2};
+  iconMatrix = stim.promptMatrix{1};
 case 4
+  iconMatrix = stim.promptMatrix{2};
+case 5
+  iconMatrix = stim.promptMatrix{2};
+case 6
   iconMatrix = stim.promptMatrix{2};
 end
 

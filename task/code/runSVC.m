@@ -1,4 +1,4 @@
-function [task] = runSVC()
+function [task] = runSVC(subNumArg, runNumArg)
 % % RUNSVC.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % usage: [ task ] = runSVC( subNum, runNum )
 %
@@ -23,18 +23,26 @@ function [task] = runSVC()
 %--> (subID)_info.mat = structure w/ subject specific info
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-clear all;
+switch nargin
+    case 0
+        clear all;
+        prompt = {...
+        'sub num: ',...
+        'run num: '};
+        dTitle = 'Input Subject and Run Number';
+        nLines = 1;
+        % defaults
+        def = { '' , ''};
+        manualInput = inputdlg(prompt,dTitle,nLines,def);
+        subNum = str2double(manualInput{1});
+        runNum = str2double(manualInput{2});
+    case 1
+        error('Must specify 0 or 2 arguments');
+    case 2
+        subNum = subNumArg;
+        runNum = runNumArg;
+end
 
-prompt = {...
-'sub num: ',...
-'run num: '};
-dTitle = 'Input Subject and Run Number';
-nLines = 1;
-% defaults
-def = { '' , ''};
-manualInput = inputdlg(prompt,dTitle,nLines,def);
-subNum = str2double(manualInput{1});
-runNum = str2double(manualInput{2});
 rng('default');
 Screen('Preference', 'SkipSyncTests', 1);
 
@@ -92,11 +100,22 @@ Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 drs.keys = initKeys;
 inputDevice = drs.keys.deviceNum;
 
+devices=PsychHID('Devices');
+for deviceCount=1:length(devices),
+  % Just get the local keyboard
+  if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
+          || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Apple, Inc'))),
+    keys.bbox = deviceCount;
+    keys.trigger = KbName('t'); % use 't' as KbTrigger
+    internalKeyboardDevice=deviceCount;
+  end
+end
+
 % to inform subject about upcoming task
 prefaceText = ['Coming up... ','Change Task: ',thisRun, '\n\n(left for ''yes'', right for ''no'') '];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.orange);
 [~,programOnset] = Screen('Flip',win);
-KbStrokeWait(inputDevice);
+KbStrokeWait(internalKeyboardDevice);
 
 %% present during multiband calibration (time shortened for debug)
 % skip the long wait for training session
@@ -127,10 +146,16 @@ WaitSecs(1);
 Screen('Flip', win);
 
 % trigger pulse code (disabled for debug)
-KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
-disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
-triggerPulseTime = GetSecs;
-disp('trigger pulse received, starting experiment');
+
+disp(drs.keys.trigger);
+if runNum == 0
+    KbStrokeWait(internalKeyboardDevice);
+else
+    KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
+    disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
+    triggerPulseTime = GetSecs;
+    disp('trigger pulse received, starting experiment');
+end
 Screen('Flip', win);
 
 %% define keys to listen for, create KbQueue (coins & text drawn while it warms up)
@@ -240,7 +265,7 @@ for tCount = 1:numTrials
   save(subOutputMat,'task');
 
 end
-KbQueueRelease;
+KbQueueRelease(inputDevice);
 % End of experiment screen. We clear the screen once they have made their
 % response
 DrawFormattedText(win, 'Scan Complete! \n\nWe will check in momentarily...',...
@@ -262,7 +287,7 @@ if runNum ~= 0
   save(subOutputMat,'task');
 end
 
-KbStrokeWait(inputDevice);
-Screen('CloseAll');
+KbStrokeWait(internalKeyboardDevice);
+Screen('Close', win);
 
 return
