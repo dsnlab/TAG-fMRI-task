@@ -12,3 +12,4 @@ task/input/drs*_info.mat
 *.m~
 ._*
 model*log
+.DS_Store
