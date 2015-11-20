@@ -6,3 +6,9 @@ bx/onset_files/*
 task/input.old/*
 # Ignore subInfoMats
 task/input/drs*_info.mat 
+
+# Temp files
+
+*.m~
+._*
+model*log
