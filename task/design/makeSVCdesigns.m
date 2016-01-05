@@ -1,6 +1,7 @@
 %% set variables for saved design info & target directory (to save .txt files)
 svcTextFile = 'materials/svcTraits.txt';
 targetDirectory = '../input';
+NSubsTotal = 170;
 GAoutputDirectory = 'GAoutput';
 load('gammaDists.mat', 'gammaSVC');
 fid = fopen(svcTextFile,'r');
@@ -10,7 +11,7 @@ goodTraits = svcCell{1}(svcCell{2}==1);
 withdrwnTraits = svcCell{1}(svcCell{2}==2);
 aggTraits = svcCell{1}(svcCell{2}==3);
 
-for dCount = 1
+for dCount = 1:NSubsTotal
   %% shuffle em' up & split across runs
   % (we can grab the other info from svcCell using strcmp later...)
   aggTraits = Shuffle(aggTraits);
