@@ -1,4 +1,4 @@
-function [task] = runDSD(subNumArg, runNumArg)
+function [task] = runDSD(subNumArg, waveNumArg, runNumArg)
 % % RUNDSD.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % usage: [ task ] = runDSD( subNum, runNum )
 %
@@ -51,18 +51,23 @@ switch nargin
         clear all;
         prompt = {...
         'sub num: ',...
+        'wave num: ',...
         'run num: '};
-        dTitle = 'Input Subject and Run Number';
+        dTitle = 'Input Subject, Wave, and Run Number';
         nLines = 1;
         % defaults
-        def = { '' , ''};
+        def = {'', '', ''};
         manualInput = inputdlg(prompt,dTitle,nLines,def);
         subNum = str2double(manualInput{1});
-        runNum = str2double(manualInput{2});
+        waveNum = str2double(manualInput{2});
+        runNum = str2double(manualInput{3});
     case 1
-        error('Must specify 0 or 2 arguments');
+        error('Must specify 0 or 3 arguments');
     case 2
+        error('Must specify 0 or 3 arguments');
+    case 3
         subNum = subNumArg;
+        waveNum = waveNumArg;
         runNum = runNumArg;
 end
 
@@ -71,24 +76,24 @@ Screen('Preference', 'SkipSyncTests', 1);
 
 %% get subID from subNum
 if subNum < 10
-  subID = ['drs00',num2str(subNum)];
+  subID = ['tag00',num2str(subNum)];
 elseif subNum < 100
-  subID = ['drs0',num2str(subNum)];
+  subID = ['tag0',num2str(subNum)];
 else
-  subID = ['drs',num2str(subNum)];
+  subID = ['tag',num2str(subNum)];
 end
 
 % load subject's drs structure
-subInfoFile = [subID,'_info.mat'];
+subInfoFile = [subID,'_wave_',num2str(waveNum),'_info.mat'];
 load(subInfoFile);
 thisRun = ['run',num2str(runNum)];
 if strcmp(thisRun,'run0')
   inputTextFile = [drs.input.path,filesep,'dsd_practice_input.txt'];
-  subOutputMat = [drs.output.path,filesep,subID,'_rpe_',thisRun,'.mat'];
+  subOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_rpe_',thisRun,'.mat'];
 else
-  subOutputMat = [drs.output.path,filesep,subID,'_dsd_',thisRun,'.mat'];
-  inputTextFile = [drs.input.path,filesep,subID,'_dsd_',thisRun,'_input.txt'];
-  outputTextFile = [drs.output.path,filesep,subID,'_dsd_',thisRun,'_output.txt'];
+  subOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_',thisRun,'.mat'];
+  inputTextFile = [drs.input.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_',thisRun,'_input.txt'];
+  outputTextFile = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_',thisRun,'_output.txt'];
 end
 
 % load trialMatrix

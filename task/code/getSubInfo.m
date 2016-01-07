@@ -14,19 +14,21 @@ studyDir = uigetdir('/vxfsvol/home/research/dsnlab/Studies/TAG/code/task/DRS','S
 
 % interactive dialog to get demographic info
 prompt = {...
-'subID: ',...
+'subID: ',...,
 'friend: ',...
-'experimentor: exptID = '};
+'experimentor: '...,
+'wave: '};
 dTitle = 'define subject specific variables';
 nLines = 1;
 % defaults
-def = { '999' , 'Ricky' , 'TAG' };
+def = { '999' , 'Ally' , 'TAG', '1' };
 manualInput = inputdlg(prompt,dTitle,nLines,def);
 % the order is funky here because we want the structure output 
 % to be readily readable in summary form (so this, err, isn't)
-drs.subID = ['drs',manualInput{1}];
+drs.subID = ['tag',manualInput{1}];
 drs.studyDir = studyDir;
 drs.subNum = str2num(manualInput{1});
+drs.waveNum = str2num(manualInput{4});
 drs.input.path = [studyDir,filesep,'task',filesep,'input'];
 drs.output.path = [studyDir,filesep,'task',filesep,'output'];
 % stimFile created by makeDRSstimulus.m
@@ -69,7 +71,7 @@ stim.promptMatrix{2}(:,:,4) = (stim.alpha.delta) ./255;
 
 % store stim in drs and save
 drs.stim = stim;
-saveFile = [drs.input.path,filesep,[drs.subID,'_info.mat']];
+saveFile = [drs.input.path,filesep,[drs.subID,'_wave_',num2str(waveNum),'_info.mat']];
 save(saveFile,'drs');
 
 return

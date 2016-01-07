@@ -145,7 +145,7 @@ DrawFormattedText(win, '(press any button to start the practice)','center',(drs.
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
 
-runSVC(drs.subNum,0)
+runSVC(drs.subNum,1,0)
 
 %% Explain DSD
 targets = [1 2 2 4];
@@ -249,6 +249,6 @@ DrawFormattedText(win, '(press any button to start the practice)','center',(drs.
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
 
-runDSD(drs.subNum,0);
+runDSD(drs.subNum,1,0);
 
 Screen('CloseAll')
