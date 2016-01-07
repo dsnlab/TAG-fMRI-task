@@ -2,12 +2,9 @@
 
 This is the version to be used in TAG
 
-##`{ Disclosure , Reward , Self }`
+##`{ Disclosure, Self }`
 
 code for DRS suite of experiments  
-
-###~/paper  
-contains materials for any manuscripts pertaining to DRS (e.g., proposal, conference submissions, articles, etc.)  
 
 ###~/task
 contains code && input text to run experiments, design info/materials, task output  
@@ -20,6 +17,6 @@ Make sure to add the folders in `~/task` to the MATLAB search path. To wit, you 
 addpath(genpath('~/task'));
 ```
 ===
-DRS  
-author: wem3  
-edited: 14-11-25  
+DRS-TAG  
+author: wem3, jflournoy  
+edited: 16-01-07  
