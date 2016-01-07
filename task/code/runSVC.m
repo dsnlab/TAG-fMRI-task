@@ -122,7 +122,7 @@ KbStrokeWait(internalKeyboardDevice);
 if runNum == 0
     calibrationTime = 1;
 else
-    calibrationTime = 1;
+    calibrationTime = 17;
 end
 % remind em' not to squirm!
 DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
