@@ -1,6 +1,7 @@
 GAdir = 'GAoutput';
 targetDirectory = '../input';
-NSubsTotal = 170;
+NSubsTotal = 250;
+NWavesTotal = 3;
 trialLength = 7.5;
 load('gammaDists.mat'); % loads variables choiceGammaDSD and discoGammaDSD
 
