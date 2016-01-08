@@ -58,7 +58,7 @@ else
 end
 
 % load subject's drs structure
-subInfoFile = [subID,'_wave_',num2str(waveNum),'_info.mat'];
+subInfoFile = ['input', filesep, subID,'_wave_',num2str(waveNum),'_info.mat'];
 load(subInfoFile);
 
 finalDiscoOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_finalOut.mat'];
@@ -130,42 +130,91 @@ neutDisco = {'like wearing makeup', ...
 %
 
 if subNum < 40
-% Left: Yes, Private; Right: No, Share.
-    yesResp = 1;
+% Left: Yes, Private; Right: No, Share. This will change after some number
+% of participants have been run, and this must change accordingly.
+% endorseString is set to correspond to order on screen so we can reference
+% easily using the codes for left choice and right, e.g., endorseString{1}
+% gives us the response corresponding to the left side of the screen.
+    endorseString = {'Yes', 'No'}; %Yes on left, No on right.
     shareResp = 2;
 else
-    display('Have you swapped choice positions yet?')
-    yesResp = 1;
+    display('Have you swapped choice positions yet?');
+    endorseString = {'Yes', 'No'}; %Yes on left, No on right.
     shareResp = 2;
 end
 
+%concatenate all decisions to disclose or not, all yes/no responses to
+%statements, and all statements.
 allDiscoChoices = [task1.task.output.raw(:,8); task2.task.output.raw(:,8)];
-% allDiscoChoices = floor(rand(82,1)+1.5);
-% display('MUST DELETE LINE 143 BEFORE USING!!!');
+allEndorseChoices = [task1.task.output.raw(:,11); task2.task.output.raw(:,11)];
 allStatements = {task1.task.input.statement{:}, task2.task.input.statement{:}};
+
+%Get a vector of logical values as to whether the person disclosed to their
+%friend or not.
 allRowsDisclosed = allDiscoChoices == shareResp;
 
+%If not any of the items were disclosed, warn the user and set the
+%statements
 if ~any(allRowsDisclosed)
     display('WARNING: All statements kept private');
     discoInfo.chosenStatements = {'NO STATEMENT', 'NO STATEMENT'};
 else
+    %get every statement that they chose to share with a friend, and the
+    %corresponding endorsement choices for those statements.
     allDisclosedStatements = {allStatements{allRowsDisclosed}};
-    affStatementRows = ismember(allDisclosedStatements,affDisco);
-    neutStatementRows = ismember(allDisclosedStatements,neutDisco);
-    possibleAffStatements = {allDisclosedStatements{affStatementRows}};
-    possibleNeutStatements = {allDisclosedStatements{neutStatementRows}};
-    [~, nPossAff] = size(possibleAffStatements);
-    [~, nPossNeut] = size(possibleNeutStatements);
-    randAffItemNum = floor(nPossAff*rand(1)+1);
-    randNeutItemNum = floor(nPossNeut*rand(1)+1);
-    randAffItem = possibleAffStatements{randAffItemNum};
-    randNeutItem = possibleNeutStatements{randNeutItemNum};
-    discoInfo.chosenStatements = {['Sometimes I ' randAffItem], ['Sometimes I ' randNeutItem]};
+    allDisclosedEndorseChoices = allEndorseChoices(allRowsDisclosed);
+    
+    %get a vector of all disclosed statements that is true if it is in our
+    %IRB approved list of disclosable statements and if there is an
+    %endoresement choice for the statement (one for both aff and neut
+    %items.
+    affStatementRows = ismember(allDisclosedStatements,affDisco)' & allDisclosedEndorseChoices;
+    neutStatementRows = ismember(allDisclosedStatements,neutDisco)' & allDisclosedEndorseChoices;
+    
+    %check if any statements are shareable and have endorsement choices
+    %or else warn and set the statement to 'NO STATEMENT'.
+    if any(affStatementRows)
+        %pare down the list of statements and corresponding choices so
+        %we're left with just the options we are allowed to disclose.
+        possibleAffStatements = {allDisclosedStatements{affStatementRows}};
+        possibleAffEndorseChoices = allDisclosedEndorseChoices(affStatementRows);
+        
+        %get the number of statements, and then select one at random.
+        [~, nPossAff] = size(possibleAffStatements);
+        % you can easily check that the below does what we want if you run:
+        % histogram(floor(5*rand(1,10000)+1))
+        randAffItemNum = floor(nPossAff*rand(1)+1); 
+        randAffEndorseChoice = possibleAffEndorseChoices(randAffItemNum); % must be 1 or 2
+        randAffItem = [possibleAffStatements{randAffItemNum} ': ' endorseString{randAffEndorseChoice}];
+    else
+        display('WARNING: No appropriate A statement');
+        randAffItem = 'NO STATEMENT';
+    end
+    if any(neutStatementRows)
+         %pare down the list of statements and corresponding choices so
+        %we're left with just the options we are allowed to disclose.
+        possibleNeutStatements = {allDisclosedStatements{neutStatementRows}};
+        possibleNeutEndorseChoices = allDisclosedEndorseChoices(neutStatementRows);
+        
+        %get the number of statements, and then select one at random.
+        [~, nPossNeut] = size(possibleNeutStatements);
+        randNeutItemNum = floor(nPossNeut*rand(1)+1);
+        randNeutEndorseChoice = possibleNeutEndorseChoices(randNeutItemNum); % must be 1 or 2
+        randNeutItem = [possibleNeutStatements{randNeutItemNum} ': ' endorseString{randNeutEndorseChoice}];
+    else
+        display('WARNING: No appropriate N statement');
+        randNeutItem = 'NO STATEMENT';
+    end
+    %start building discoInfo to save to a mat with strings we want to output
+    discoInfo.chosenStatements = {['Sometimes I ' randAffItem],...
+        ['Sometimes I ' randNeutItem]};
 end
 
+%put payouts and friend name into final output structure.
 discoInfo.payouts = {task1.task.payout, task2.task.payout};
 discoInfo.friend = drs.friend;
 
+%save final output.
 stringSpec = 'Friend: %s\nPayout Run1: %u\nPayout Run2: %u\nStatements:\n\t1. %s\n\t2. %s\n';
 
 fid=fopen(finalDiscoOutputTxt,'a');
