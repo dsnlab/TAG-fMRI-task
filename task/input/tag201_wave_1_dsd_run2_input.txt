@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.576,0.101,can't wait to be older
+2,2,1,2,2,4,2.434,0.028,braid my hair
+3,3,1,2,4,4,0.880,0.060,decorate my room
+4,4,1,2,4,2,0.275,0.105,think I'm too quiet
+5,5,1,2,2,4,0.296,0.043,want to be alone
+6,2,1,2,2,3,0.692,0.019,shower before bed
+7,5,1,2,2,3,0.004,0.176,wish I was in love
+8,1,1,2,4,2,1.282,0.127,don't brush my teeth
+9,4,1,2,3,2,0.737,0.032,act without thinking
+10,6,1,2,2,2,1.592,0.698,make friends easily
+11,5,1,2,2,4,0.383,0.102,worry about high school
+12,1,1,2,3,2,0.968,0.233,wear sunglasses
+13,3,1,2,2,2,5.907,0.243,use lotion
+14,1,1,2,4,2,2.373,0.073,like to doodle
+15,6,1,2,3,3,1.063,0.358,worry about drugs
+16,2,1,2,2,4,1.623,0.213,stay up late
+17,3,1,2,3,3,1.503,0.126,drink milk
+18,1,1,2,4,2,0.775,0.328,like wearing costumes
+19,2,1,2,2,4,0.206,0.464,don't make my bed
+20,4,1,2,4,2,1.125,0.259,ignore my parents
+21,3,1,2,4,4,0.271,0.224,read magazines
+22,5,1,2,2,4,0.258,0.213,can be mean
+23,4,1,2,4,2,0.023,0.104,think I'm weird
+24,1,1,2,3,2,3.065,0.066,wear PJs all day
+25,4,1,2,3,2,0.128,0.392,can't ignore gossip 
+26,5,1,2,2,3,6.251,0.047,wish I had more friends
+27,6,1,2,4,4,5.622,0.171,think I look bomb
+28,2,1,2,2,3,0.005,0.033,like burning candles
+29,5,1,2,2,4,0.085,0.299,can be awkward
+30,6,1,2,2,2,1.003,0.038,like breaking rules
+31,3,1,2,2,2,0.178,0.074,like watching sports
+32,2,1,2,2,4,1.573,0.431,forget people's names
+33,6,1,2,4,4,1.429,0.037,get self-conscious
+34,4,1,2,4,2,4.052,0.164,copy homework
+35,2,1,2,3,4,0.792,0.386,forget to turn off lights
+36,1,1,2,4,2,2.018,0.268,play board games
+37,5,1,2,3,4,0.966,0.031,count calories
+38,3,1,2,4,4,2.224,0.358,carry chapstick
+39,6,1,2,3,3,0.077,0.106,can't keep secrets  
+40,1,1,2,4,3,0.342,0.127,like reality TV
+41,4,1,2,4,3,10.188,0.114,dislike my body

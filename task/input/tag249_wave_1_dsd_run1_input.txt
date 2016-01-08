@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.692,0.019,can get moody
+2,2,1,2,3,4,3.065,0.066,sing in the shower
+3,3,1,2,3,3,2.434,0.028,like cold pizza
+4,4,1,2,4,3,0.085,0.299,tease my sibling
+5,5,1,2,3,4,0.968,0.233,can be mean
+6,2,1,2,3,4,0.271,0.224,like wearing costumes
+7,5,1,2,3,4,0.342,0.127,dislike my body
+8,1,1,2,4,3,0.576,0.101,like sleepovers
+9,4,1,2,4,3,0.077,0.106,pretend to like people
+10,6,1,2,3,3,1.003,0.038,get picked on
+11,5,1,2,2,3,1.282,0.127,worry about drugs
+12,1,1,2,4,3,1.623,0.213,paint my nails
+13,3,1,2,3,3,0.792,0.386,wear flip flops
+14,1,1,2,3,2,1.429,0.037,stay up late
+15,6,1,2,2,2,0.737,0.032,count calories
+16,2,1,2,2,3,0.023,0.104,carry chapstick
+17,3,1,2,2,2,0.004,0.176,play board games
+18,1,1,2,4,2,2.224,0.358,try to recycle
+19,2,1,2,2,4,4.052,0.164,drink milk
+20,4,1,2,3,2,0.383,0.102,copy homework
+21,3,1,2,3,3,2.688,0.114,decorate my room
+22,5,1,2,2,4,5.622,0.171,get embarrassed
+23,4,1,2,4,2,0.775,0.328,ignore my parents
+24,1,1,2,4,2,0.296,0.043,don't make my bed
+25,4,1,2,4,2,2.373,0.073,think I'm too quiet
+26,5,1,2,2,4,1.254,0.202,think I'm weird
+27,6,1,2,3,3,6.251,0.047,can't ignore gossip 
+28,2,1,2,2,4,1.573,0.431,read magazines
+29,5,1,2,2,3,0.275,0.105,think I look bomb
+30,6,1,2,4,4,0.178,0.074,worry about grades
+31,3,1,2,4,4,0.258,0.213,like burning candles
+32,2,1,2,2,3,1.503,0.126,wear leggings
+33,6,1,2,2,2,0.128,0.392,weigh myself
+34,4,1,2,3,2,5.907,0.243,get self-conscious
+35,2,1,2,3,4,1.125,0.259,like leftovers
+36,1,1,2,3,2,0.880,0.060,forget to turn off lights
+37,5,1,2,3,4,0.005,0.033,hide my feelings
+38,3,1,2,2,2,0.966,0.031,can be creative
+39,6,1,2,3,3,1.592,0.698,can be awkward
+40,1,1,2,4,3,0.206,0.464,like watching sports
+41,4,1,2,4,3,9.518,0.268,judge people

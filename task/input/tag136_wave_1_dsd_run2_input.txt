@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.178,0.074,can't keep secrets  
+2,2,1,2,2,4,2.373,0.073,like reality TV
+3,3,1,2,4,4,2.688,0.114,take bubble baths
+4,4,1,2,4,2,0.004,0.176,dream about my wedding 
+5,5,1,2,2,4,0.880,0.060,wish I had more friends
+6,2,1,2,2,3,5.622,0.171,wear PJs all day
+7,5,1,2,2,3,4.052,0.164,count calories
+8,1,1,2,4,2,0.968,0.233,carry chapstick
+9,4,1,2,3,2,0.005,0.033,worry about kissing
+10,6,1,2,2,2,0.085,0.299,feel shy in groups
+11,5,1,2,2,4,0.206,0.464,think I look bomb
+12,1,1,2,3,2,1.503,0.126,go barefoot
+13,3,1,2,2,2,0.775,0.328,listen to music
+14,1,1,2,4,2,1.623,0.213,like burning candles
+15,6,1,2,4,4,0.737,0.032,get mad at friends
+16,2,1,2,2,4,2.434,0.028,can be messy
+17,3,1,2,4,4,0.077,0.106,try new foods
+18,1,1,2,4,3,0.275,0.105,wear flip flops
+19,2,1,2,3,4,0.966,0.031,burn my toast
+20,4,1,2,4,2,0.792,0.386,want to be popular
+21,3,1,2,3,3,1.063,0.358,sing in the shower
+22,5,1,2,3,4,3.065,0.066,get picked on
+23,4,1,2,4,3,2.018,0.268,like flirting
+24,1,1,2,4,2,0.342,0.127,like wearing costumes
+25,4,1,2,4,2,0.692,0.019,can get moody
+26,5,1,2,2,4,2.224,0.358,can be mean
+27,6,1,2,3,3,0.383,0.102,wish I was in love
+28,2,1,2,2,4,1.592,0.698,don't brush my teeth
+29,5,1,2,2,3,1.429,0.037,can't ignore gossip 
+30,6,1,2,4,4,1.573,0.431,don't like my life
+31,3,1,2,4,4,0.023,0.104,read magazines
+32,2,1,2,2,3,0.128,0.392,sleep in late
+33,6,1,2,2,2,1.125,0.259,get self-conscious
+34,4,1,2,3,2,1.003,0.038,find homework hard
+35,2,1,2,2,4,6.251,0.047,forget to turn off lights
+36,1,1,2,3,2,0.576,0.101,like wearing makeup
+37,5,1,2,2,4,5.907,0.243,act without thinking
+38,3,1,2,2,2,0.271,0.224,wear sunglasses
+39,6,1,2,4,4,1.254,0.202,worry about drugs
+40,1,1,2,4,2,0.258,0.213,stay up late
+41,4,1,2,4,2,7.796,0.043,judge people

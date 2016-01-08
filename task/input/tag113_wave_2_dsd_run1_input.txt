@@ -1,0 +1,41 @@
+1,6,1,2,2,2,1.573,0.106,find homework hard
+2,2,1,2,2,3,2.224,0.176,like wearing makeup
+3,3,1,2,2,2,0.342,0.126,can be messy
+4,4,1,2,3,2,1.429,0.259,get mad at friends
+5,5,1,2,2,3,2.434,0.114,count calories
+6,2,1,2,2,4,0.005,0.233,carry chapstick
+7,5,1,2,2,4,2.018,0.105,want to be alone
+8,1,1,2,3,2,5.622,0.431,shower before bed
+9,4,1,2,4,2,0.792,0.224,think I'm too quiet
+10,6,1,2,4,4,1.003,0.386,can be mean
+11,5,1,2,2,3,1.125,0.213,judge people
+12,1,1,2,4,2,0.023,0.243,decorate my room
+13,3,1,2,4,4,1.282,0.358,like wearing costumes
+14,1,1,2,3,2,0.692,0.033,go to the movies
+15,6,1,2,2,2,0.085,0.031,get self-conscious
+16,2,1,2,2,3,0.966,0.104,forget to turn off lights
+17,3,1,2,2,2,6.251,0.328,like cold pizza
+18,1,1,2,4,2,0.077,0.213,like eating out
+19,2,1,2,2,4,0.128,0.164,wear flip flops
+20,4,1,2,3,2,1.063,0.074,tease my sibling
+21,3,1,2,4,4,0.258,0.202,wear leggings
+22,5,1,2,2,4,0.968,0.102,think smoking is gross
+23,4,1,2,4,2,0.004,0.073,get picked on
+24,1,1,2,3,2,2.373,0.032,read magazines
+25,4,1,2,3,2,0.296,0.299,worry about grades
+26,5,1,2,2,3,2.688,0.698,can't ignore gossip 
+27,6,1,2,4,4,0.880,0.037,can't keep secrets  
+28,2,1,2,2,3,0.271,0.127,like reality TV
+29,5,1,2,2,4,0.576,0.358,feel lonely
+30,6,1,2,2,2,0.383,0.127,worry about drugs
+31,3,1,2,2,2,0.206,0.171,like to wear hats
+32,2,1,2,2,4,1.623,0.043,stay up late
+33,6,1,2,4,4,0.737,0.268,like breaking rules
+34,4,1,2,4,2,0.275,0.019,wish I had more friends
+35,2,1,2,2,4,1.592,0.464,forget people's names
+36,1,1,2,4,2,0.775,0.028,wear PJs all day
+37,5,1,2,2,4,1.254,0.066,can get moody
+38,3,1,2,4,4,3.065,0.047,sing in the shower
+39,6,1,2,4,4,4.052,0.101,hide my feelings
+40,1,1,2,4,2,0.178,0.038,can be creative
+41,4,1,2,4,2,13.407,0.392,get embarrassed

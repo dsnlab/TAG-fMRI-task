@@ -1,0 +1,41 @@
+1,6,1,2,2,2,1.003,0.043,think I look bomb
+2,2,1,2,2,3,0.383,0.358,like burning candles
+3,3,1,2,2,2,1.282,0.102,like reality TV
+4,4,1,2,3,2,0.966,0.268,can't keep secrets  
+5,5,1,2,2,3,3.065,0.033,judge people
+6,2,1,2,3,4,0.737,0.698,go to the movies
+7,5,1,2,3,4,0.576,0.066,tell little lies
+8,1,1,2,3,2,0.968,0.202,wear bright colors
+9,4,1,2,4,3,0.775,0.386,like breaking rules
+10,6,1,2,3,3,1.573,0.213,hate going to school
+11,5,1,2,2,4,2.018,0.464,wish I had more friends
+12,1,1,2,4,3,5.622,0.224,forget people's names
+13,3,1,2,3,3,1.592,0.176,go to the pool
+14,1,1,2,4,2,0.271,0.031,wear PJs all day
+15,6,1,2,4,4,0.342,0.299,worry about high school
+16,2,1,2,2,4,0.077,0.047,like to doodle
+17,3,1,2,4,4,0.296,0.233,wear sunglasses
+18,1,1,2,3,2,0.023,0.171,wear leggings
+19,2,1,2,2,3,1.125,0.019,burn my toast
+20,4,1,2,4,2,5.907,0.213,act without thinking
+21,3,1,2,2,2,6.251,0.126,play board games
+22,5,1,2,2,3,0.005,0.114,worry about grades
+23,4,1,2,3,2,1.623,0.038,like flirting
+24,1,1,2,4,2,0.275,0.101,take bubble baths
+25,4,1,2,4,2,1.429,0.127,copy homework
+26,5,1,2,2,4,0.128,0.259,dream about my wedding 
+27,6,1,2,2,2,1.254,0.037,wish I was in love
+28,2,1,2,2,4,0.004,0.358,don't brush my teeth
+29,5,1,2,2,3,0.258,0.243,tease my sibling
+30,6,1,2,4,4,0.692,0.073,can be awkward
+31,3,1,2,4,4,4.052,0.028,like cold pizza
+32,2,1,2,2,3,2.224,0.127,like watching sports
+33,6,1,2,2,2,0.085,0.104,get picked on
+34,4,1,2,3,2,1.503,0.431,can be mean
+35,2,1,2,3,4,2.688,0.074,wear flip flops
+36,1,1,2,3,2,2.373,0.060,like wearing costumes
+37,5,1,2,3,4,0.792,0.328,can't wait to be older
+38,3,1,2,2,2,0.178,0.392,braid my hair
+39,6,1,2,3,3,0.880,0.164,feel lonely
+40,1,1,2,4,3,1.063,0.106,like to wear hats
+41,4,1,2,4,3,7.706,0.032,want to be popular

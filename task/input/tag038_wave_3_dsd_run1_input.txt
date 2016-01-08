@@ -1,0 +1,41 @@
+1,6,1,2,2,2,1.063,0.106,find homework hard
+2,2,1,2,2,3,0.692,0.073,like wearing makeup
+3,3,1,2,2,2,0.004,0.358,like burning candles
+4,4,1,2,3,2,0.271,0.031,think I look bomb
+5,5,1,2,2,3,6.251,0.126,can't keep secrets  
+6,2,1,2,2,4,1.282,0.102,like reality TV
+7,5,1,2,2,4,2.018,0.464,wish I was in love
+8,1,1,2,3,2,5.907,0.213,don't brush my teeth
+9,4,1,2,4,2,2.224,0.127,judge people
+10,6,1,2,4,4,4.052,0.028,think I'm weird
+11,5,1,2,2,3,0.023,0.171,can be mean
+12,1,1,2,4,2,1.254,0.037,go to the movies
+13,3,1,2,4,4,1.003,0.043,don't make my bed
+14,1,1,2,3,2,0.775,0.386,like wearing costumes
+15,6,1,2,2,2,0.576,0.066,think I'm too quiet
+16,2,1,2,2,3,0.880,0.164,decorate my room
+17,3,1,2,2,2,0.275,0.101,use lotion
+18,1,1,2,4,3,1.623,0.038,wear leggings
+19,2,1,2,3,4,0.737,0.698,like to wear hats
+20,4,1,2,3,2,0.206,0.032,make friends easily
+21,3,1,2,3,3,1.573,0.213,try to recycle
+22,5,1,2,3,4,1.125,0.019,worry about grades
+23,4,1,2,4,3,0.342,0.299,feel lonely
+24,1,1,2,3,2,0.296,0.233,paint my nails
+25,4,1,2,3,2,2.434,0.105,get embarrassed
+26,5,1,2,2,3,0.383,0.358,pretend to like people
+27,6,1,2,3,3,0.128,0.259,tease my sibling
+28,2,1,2,2,3,0.077,0.047,like cold pizza
+29,5,1,2,2,4,0.005,0.114,want to be alone
+30,6,1,2,2,2,0.792,0.328,worry about drugs
+31,3,1,2,2,2,0.085,0.104,shower before bed
+32,2,1,2,2,4,0.258,0.243,stay up late
+33,6,1,2,3,3,2.688,0.074,hate going to school
+34,4,1,2,4,2,0.968,0.202,dream about my wedding 
+35,2,1,2,3,4,1.429,0.127,go to the pool
+36,1,1,2,4,2,0.178,0.392,take bubble baths
+37,5,1,2,3,4,0.966,0.268,worry about high school
+38,3,1,2,3,3,1.503,0.431,like to doodle
+39,6,1,2,3,3,3.065,0.033,like flirting
+40,1,1,2,4,3,2.373,0.060,burn my toast
+41,4,1,2,4,3,13.122,0.224,feel shy in groups

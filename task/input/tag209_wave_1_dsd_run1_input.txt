@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.342,0.127,wish I had more friends
+2,2,1,2,2,3,3.065,0.066,wear PJs all day
+3,3,1,2,2,2,0.296,0.043,shower before bed
+4,4,1,2,3,2,0.085,0.299,want to be alone
+5,5,1,2,2,3,1.503,0.126,tell little lies
+6,2,1,2,2,4,0.576,0.101,wear bright colors
+7,5,1,2,2,4,1.592,0.698,worry about grades
+8,1,1,2,3,2,0.692,0.019,wear leggings
+9,4,1,2,4,2,0.275,0.105,get mad at friends
+10,6,1,2,4,4,5.907,0.243,don't like my life
+11,5,1,2,2,4,1.003,0.038,feel shy in groups
+12,1,1,2,4,2,0.023,0.104,can be messy
+13,3,1,2,4,4,5.622,0.171,sleep in late
+14,1,1,2,4,2,0.258,0.213,listen to music
+15,6,1,2,4,4,0.271,0.224,pretend to like people
+16,2,1,2,2,4,1.573,0.431,paint my nails
+17,3,1,2,4,4,0.775,0.328,like watching sports
+18,1,1,2,4,3,0.880,0.060,like cold pizza
+19,2,1,2,3,4,1.623,0.213,try new foods
+20,4,1,2,4,2,2.688,0.114,can be awkward
+21,3,1,2,3,3,6.251,0.047,wear sunglasses
+22,5,1,2,3,4,0.178,0.074,tease my sibling
+23,4,1,2,4,3,0.077,0.106,want to be popular
+24,1,1,2,4,3,2.018,0.268,like sleepovers
+25,4,1,2,4,3,0.383,0.102,act without thinking
+26,5,1,2,3,4,1.282,0.127,dislike my body
+27,6,1,2,3,3,0.206,0.464,hate going to school
+28,2,1,2,3,4,2.373,0.073,go to the pool
+29,5,1,2,3,4,2.434,0.028,can get moody
+30,6,1,2,3,3,2.224,0.358,hide my feelings
+31,3,1,2,3,3,4.052,0.164,sing in the shower
+32,2,1,2,3,4,0.128,0.392,can be creative
+33,6,1,2,3,3,0.968,0.233,think I'm weird
+34,4,1,2,4,3,0.005,0.033,think I look bomb
+35,2,1,2,2,4,0.792,0.386,don't make my bed
+36,1,1,2,4,3,0.004,0.176,like burning candles
+37,5,1,2,2,4,1.254,0.202,judge people
+38,3,1,2,3,3,0.737,0.032,go to the movies
+39,6,1,2,4,4,1.429,0.037,worry about drugs
+40,1,1,2,4,2,1.063,0.358,stay up late
+41,4,1,2,4,2,8.466,0.031,can't keep secrets  

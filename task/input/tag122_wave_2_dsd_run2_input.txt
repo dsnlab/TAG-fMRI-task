@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.383,0.127,ignore my parents
+2,2,1,2,2,4,0.023,0.243,drink milk
+3,3,1,2,4,4,0.077,0.213,read magazines
+4,4,1,2,4,2,2.018,0.105,can't ignore gossip 
+5,5,1,2,2,4,0.775,0.028,act without thinking
+6,2,1,2,2,3,2.434,0.114,wear sunglasses
+7,5,1,2,2,3,1.429,0.259,worry about kissing
+8,1,1,2,4,2,0.737,0.268,go barefoot
+9,4,1,2,3,2,0.342,0.126,worry about grades
+10,6,1,2,2,2,1.003,0.386,tease my sibling
+11,5,1,2,3,4,0.206,0.171,hide my feelings
+12,1,1,2,3,2,5.622,0.431,wear leggings
+13,3,1,2,2,2,5.907,0.392,like cold pizza
+14,1,1,2,4,3,0.792,0.224,can be creative
+15,6,1,2,3,3,2.373,0.032,think I look bomb
+16,2,1,2,3,4,0.880,0.037,like burning candles
+17,3,1,2,3,3,1.623,0.043,listen to music
+18,1,1,2,4,2,1.125,0.213,play board games
+19,2,1,2,2,4,0.966,0.104,go to the movies
+20,4,1,2,4,3,2.688,0.698,feel shy in groups
+21,3,1,2,4,4,0.004,0.073,burn my toast
+22,5,1,2,2,4,0.576,0.358,copy homework
+23,4,1,2,4,2,6.251,0.328,judge people
+24,1,1,2,4,3,0.128,0.164,wear PJs all day
+25,4,1,2,4,3,0.178,0.038,like flirting
+26,5,1,2,3,4,2.224,0.176,wish I had more friends
+27,6,1,2,4,4,0.275,0.019,want to be popular
+28,2,1,2,3,4,0.085,0.031,try new foods
+29,5,1,2,2,3,0.968,0.102,can't wait to be older
+30,6,1,2,3,3,0.271,0.127,pretend to like people
+31,3,1,2,3,3,3.065,0.047,braid my hair
+32,2,1,2,2,3,0.296,0.299,paint my nails
+33,6,1,2,2,2,0.258,0.202,think smoking is gross
+34,4,1,2,3,2,1.592,0.464,dream about my wedding 
+35,2,1,2,2,3,1.503,0.060,like eating out
+36,1,1,2,3,2,0.005,0.233,take bubble baths
+37,5,1,2,2,3,1.573,0.106,feel lonely
+38,3,1,2,2,2,1.063,0.074,like to wear hats
+39,6,1,2,2,2,4.052,0.101,count calories
+40,1,1,2,3,2,1.254,0.066,carry chapstick
+41,4,1,2,3,2,8.192,0.033,worry about high school

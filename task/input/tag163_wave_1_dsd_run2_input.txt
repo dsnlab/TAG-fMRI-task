@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.206,0.464,can't ignore gossip 
+2,2,1,2,2,3,0.880,0.060,read magazines
+3,3,1,2,2,2,2.434,0.028,listen to music
+4,4,1,2,3,2,4.052,0.164,feel shy in groups
+5,5,1,2,2,3,2.018,0.268,make friends easily
+6,2,1,2,2,4,0.737,0.032,use lotion
+7,5,1,2,2,4,3.065,0.066,can be awkward
+8,1,1,2,3,2,0.271,0.224,like watching sports
+9,4,1,2,4,2,0.077,0.106,act without thinking
+10,6,1,2,4,4,2.688,0.114,tease my sibling
+11,5,1,2,2,4,2.224,0.358,want to be alone
+12,1,1,2,4,2,0.178,0.074,wear sunglasses
+13,3,1,2,4,4,1.503,0.126,like cold pizza
+14,1,1,2,4,2,0.258,0.213,shower before bed
+15,6,1,2,4,4,0.023,0.104,find homework hard
+16,2,1,2,2,4,0.692,0.019,like wearing makeup
+17,3,1,2,4,4,0.775,0.328,sing in the shower
+18,1,1,2,3,2,5.622,0.171,go to the pool
+19,2,1,2,2,3,0.342,0.127,wear bright colors
+20,4,1,2,4,2,1.063,0.358,can get moody
+21,3,1,2,2,2,1.592,0.698,wear flip flops
+22,5,1,2,2,3,1.429,0.037,hate going to school
+23,4,1,2,3,2,0.968,0.233,tell little lies
+24,1,1,2,4,3,0.966,0.031,try new foods
+25,4,1,2,4,3,0.128,0.392,get picked on
+26,5,1,2,3,4,1.254,0.202,want to be popular
+27,6,1,2,2,2,0.085,0.299,can't keep secrets  
+28,2,1,2,3,4,0.383,0.102,like reality TV
+29,5,1,2,2,4,6.251,0.047,ignore my parents
+30,6,1,2,3,3,0.792,0.386,wish I had more friends
+31,3,1,2,3,3,2.373,0.073,drink milk
+32,2,1,2,2,4,0.005,0.033,wear PJs all day
+33,6,1,2,4,4,1.003,0.038,pretend to like people
+34,4,1,2,4,2,1.125,0.259,don't like my life
+35,2,1,2,2,4,0.296,0.043,paint my nails
+36,1,1,2,4,2,5.907,0.243,sleep in late
+37,5,1,2,2,4,1.282,0.127,can't wait to be older
+38,3,1,2,4,4,0.576,0.101,braid my hair
+39,6,1,2,3,3,0.275,0.105,get embarrassed
+40,1,1,2,4,2,0.004,0.176,try to recycle
+41,4,1,2,4,2,9.073,0.431,worry about kissing

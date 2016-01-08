@@ -1,0 +1,41 @@
+1,6,1,2,3,3,6.251,0.243,dream about my wedding 
+2,2,1,2,3,4,0.576,0.105,take bubble baths
+3,3,1,2,3,3,0.005,0.213,don't make my bed
+4,4,1,2,4,3,2.224,0.358,think I'm weird
+5,5,1,2,3,4,1.429,0.066,think I'm too quiet
+6,2,1,2,2,4,1.623,0.047,decorate my room
+7,5,1,2,2,4,1.063,0.037,feel lonely
+8,1,1,2,4,3,0.077,0.176,like to wear hats
+9,4,1,2,4,2,0.342,0.073,feel shy in groups
+10,6,1,2,4,4,0.792,0.464,like flirting
+11,5,1,2,3,4,0.206,0.268,copy homework
+12,1,1,2,4,2,0.880,0.358,listen to music
+13,3,1,2,4,4,0.085,0.431,burn my toast
+14,1,1,2,4,3,5.907,0.031,play board games
+15,6,1,2,3,3,1.573,0.164,get picked on
+16,2,1,2,3,4,0.775,0.224,wear flip flops
+17,3,1,2,3,3,4.052,0.386,forget people's names
+18,1,1,2,4,3,1.592,0.043,can be creative
+19,2,1,2,3,4,5.622,0.328,like cold pizza
+20,4,1,2,4,3,1.282,0.213,like breaking rules
+21,3,1,2,3,3,0.275,0.060,wear sunglasses
+22,5,1,2,3,4,0.692,0.038,hide my feelings
+23,4,1,2,4,3,0.023,0.101,tease my sibling
+24,1,1,2,4,2,0.966,0.126,like to doodle
+25,4,1,2,4,2,0.383,0.259,act without thinking
+26,5,1,2,2,4,3.065,0.171,worry about high school
+27,6,1,2,3,3,0.968,0.127,hate going to school
+28,2,1,2,2,4,1.254,0.104,go to the pool
+29,5,1,2,2,3,1.503,0.019,tell little lies
+30,6,1,2,4,4,2.018,0.106,get self-conscious
+31,3,1,2,4,4,0.296,0.102,wear bright colors
+32,2,1,2,2,3,2.373,0.074,forget to turn off lights
+33,6,1,2,2,2,1.003,0.033,judge people
+34,4,1,2,3,2,0.737,0.233,worry about drugs
+35,2,1,2,2,4,1.125,0.127,go to the movies
+36,1,1,2,3,2,0.178,0.698,stay up late
+37,5,1,2,2,4,0.271,0.028,wish I was in love
+38,3,1,2,2,2,0.128,0.392,don't brush my teeth
+39,6,1,2,3,3,0.258,0.032,get embarrassed
+40,1,1,2,4,2,2.688,0.202,try to recycle
+41,4,1,2,4,2,9.934,0.114,ignore my parents

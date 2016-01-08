@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.968,0.224,think I'm too quiet
+2,2,1,2,2,3,0.775,0.066,decorate my room
+3,3,1,2,2,2,5.622,0.019,read magazines
+4,4,1,2,3,2,0.077,0.176,can't ignore gossip 
+5,5,1,2,2,3,3.065,0.033,tease my sibling
+6,2,1,2,2,3,0.296,0.043,like cold pizza
+7,5,1,2,2,3,1.503,0.358,get picked on
+8,1,1,2,3,2,2.373,0.268,wear flip flops
+9,4,1,2,3,2,1.623,0.431,tell little lies
+10,6,1,2,2,2,0.275,0.464,want to be alone
+11,5,1,2,2,4,0.692,0.101,can be mean
+12,1,1,2,3,2,1.125,0.102,wear bright colors
+13,3,1,2,2,2,2.434,0.299,shower before bed
+14,1,1,2,4,2,0.128,0.328,like wearing costumes
+15,6,1,2,4,4,0.178,0.105,worry about grades
+16,2,1,2,2,4,0.792,0.028,wear leggings
+17,3,1,2,4,4,1.429,0.213,use lotion
+18,1,1,2,3,2,5.907,0.213,don't brush my teeth
+19,2,1,2,2,3,0.085,0.259,forget people's names
+20,4,1,2,4,2,0.004,0.126,make friends easily
+21,3,1,2,2,2,0.005,0.060,take bubble baths
+22,5,1,2,2,3,4.052,0.164,wish I was in love
+23,4,1,2,3,2,0.342,0.038,like breaking rules
+24,1,1,2,4,3,0.966,0.243,go to the movies
+25,4,1,2,4,3,1.254,0.171,dream about my wedding 
+26,5,1,2,3,4,0.258,0.698,judge people
+27,6,1,2,2,2,0.737,0.047,get self-conscious
+28,2,1,2,3,4,1.573,0.127,forget to turn off lights
+29,5,1,2,2,4,2.018,0.358,dislike my body
+30,6,1,2,3,3,1.003,0.037,copy homework
+31,3,1,2,3,3,6.251,0.202,like sleepovers
+32,2,1,2,2,4,1.592,0.032,play board games
+33,6,1,2,4,4,0.206,0.031,worry about drugs
+34,4,1,2,4,2,1.063,0.392,think I look bomb
+35,2,1,2,2,4,0.576,0.386,stay up late
+36,1,1,2,4,2,2.688,0.104,like burning candles
+37,5,1,2,2,4,2.224,0.073,think smoking is gross
+38,3,1,2,4,4,0.880,0.127,like eating out
+39,6,1,2,4,4,0.383,0.114,worry about kissing
+40,1,1,2,4,2,0.023,0.233,go barefoot
+41,4,1,2,4,2,8.782,0.106,get mad at friends

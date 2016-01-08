@@ -1,0 +1,41 @@
+1,6,1,2,2,2,1.503,0.431,dislike my body
+2,2,1,2,2,3,1.254,0.037,like sleepovers
+3,3,1,2,2,2,5.622,0.224,sleep in late
+4,4,1,2,3,2,1.429,0.127,don't like my life
+5,5,1,2,2,3,0.692,0.073,can be mean
+6,2,1,2,3,4,3.065,0.033,like wearing costumes
+7,5,1,2,3,4,0.178,0.392,wish I had more friends
+8,1,1,2,3,2,0.128,0.259,wear PJs all day
+9,4,1,2,4,3,0.023,0.171,find homework hard
+10,6,1,2,3,3,0.275,0.101,like breaking rules
+11,5,1,2,2,3,1.125,0.019,can get moody
+12,1,1,2,4,3,0.792,0.328,like wearing makeup
+13,3,1,2,3,3,2.688,0.074,forget people's names
+14,1,1,2,3,2,1.623,0.038,sing in the shower
+15,6,1,2,2,2,0.383,0.358,tease my sibling
+16,2,1,2,2,3,2.434,0.105,like cold pizza
+17,3,1,2,2,2,2.224,0.127,carry chapstick
+18,1,1,2,3,2,1.063,0.106,burn my toast
+19,2,1,2,2,3,0.296,0.233,play board games
+20,4,1,2,3,2,0.005,0.114,count calories
+21,3,1,2,2,2,0.966,0.268,wear flip flops
+22,5,1,2,2,3,0.271,0.031,like flirting
+23,4,1,2,3,2,0.206,0.032,copy homework
+24,1,1,2,4,3,0.737,0.698,wear leggings
+25,4,1,2,4,3,2.018,0.464,get picked on
+26,5,1,2,3,4,4.052,0.028,worry about grades
+27,6,1,2,2,2,1.282,0.102,feel lonely
+28,2,1,2,3,4,0.968,0.202,like to wear hats
+29,5,1,2,2,4,0.258,0.243,think smoking is gross
+30,6,1,2,3,3,1.592,0.176,judge people
+31,3,1,2,3,3,2.373,0.060,like eating out
+32,2,1,2,2,4,0.775,0.386,go to the movies
+33,6,1,2,4,4,0.004,0.358,get self-conscious
+34,4,1,2,4,2,5.907,0.213,make friends easily
+35,2,1,2,2,3,0.880,0.164,forget to turn off lights
+36,1,1,2,4,2,0.576,0.066,use lotion
+37,5,1,2,2,3,1.003,0.043,think I look bomb
+38,3,1,2,4,4,6.251,0.126,like burning candles
+39,6,1,2,2,2,0.077,0.047,worry about high school
+40,1,1,2,3,2,0.342,0.299,like to doodle
+41,4,1,2,3,2,9.073,0.213,can't wait to be older

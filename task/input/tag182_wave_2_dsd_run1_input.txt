@@ -1,0 +1,41 @@
+1,6,1,2,2,2,2.434,0.105,like breaking rules
+2,2,1,2,2,3,5.622,0.224,forget people's names
+3,3,1,2,2,2,1.282,0.102,shower before bed
+4,4,1,2,3,2,0.966,0.268,want to be alone
+5,5,1,2,2,3,0.296,0.233,hate going to school
+6,2,1,2,3,4,1.623,0.038,go to the pool
+7,5,1,2,3,4,1.254,0.037,worry about grades
+8,1,1,2,3,2,0.077,0.047,wear leggings
+9,4,1,2,4,3,0.023,0.171,can get moody
+10,6,1,2,3,3,0.692,0.073,dream about my wedding 
+11,5,1,2,3,4,0.004,0.358,like flirting
+12,1,1,2,4,3,5.907,0.213,sing in the shower
+13,3,1,2,3,3,0.085,0.104,take bubble baths
+14,1,1,2,4,3,0.128,0.259,burn my toast
+15,6,1,2,3,3,2.224,0.127,think I'm too quiet
+16,2,1,2,3,4,0.342,0.299,decorate my room
+17,3,1,2,3,3,0.275,0.101,try to recycle
+18,1,1,2,4,2,1.125,0.019,can be creative
+19,2,1,2,2,4,0.968,0.202,wear sunglasses
+20,4,1,2,4,3,2.373,0.060,get embarrassed
+21,3,1,2,4,4,3.065,0.033,read magazines
+22,5,1,2,2,4,1.503,0.431,hide my feelings
+23,4,1,2,4,2,0.737,0.698,act without thinking
+24,1,1,2,4,2,0.271,0.031,wear bright colors
+25,4,1,2,4,2,0.576,0.066,can't ignore gossip 
+26,5,1,2,2,4,0.880,0.164,tell little lies
+27,6,1,2,4,4,1.592,0.176,get mad at friends
+28,2,1,2,2,4,0.258,0.243,can be messy
+29,5,1,2,2,4,2.688,0.074,want to be popular
+30,6,1,2,4,4,1.063,0.106,find homework hard
+31,3,1,2,4,4,1.429,0.127,try new foods
+32,2,1,2,2,4,4.052,0.028,like wearing makeup
+33,6,1,2,4,4,0.005,0.114,feel shy in groups
+34,4,1,2,4,2,0.178,0.392,weigh myself
+35,2,1,2,2,3,0.792,0.328,listen to music
+36,1,1,2,4,2,0.206,0.032,like leftovers
+37,5,1,2,2,3,1.573,0.213,tease my sibling
+38,3,1,2,4,4,1.003,0.043,like cold pizza
+39,6,1,2,2,2,0.383,0.358,count calories
+40,1,1,2,3,2,2.018,0.464,carry chapstick
+41,4,1,2,3,2,8.275,0.386,think smoking is gross

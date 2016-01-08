@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.258,0.243,think I'm weird
+2,2,1,2,2,3,0.206,0.032,don't make my bed
+3,3,1,2,2,2,1.282,0.102,like leftovers
+4,4,1,2,3,2,1.573,0.213,weigh myself
+5,5,1,2,2,3,4.052,0.028,worry about high school
+6,2,1,2,3,4,1.125,0.019,like to doodle
+7,5,1,2,3,4,0.128,0.259,worry about kissing
+8,1,1,2,3,2,1.429,0.127,go barefoot
+9,4,1,2,4,3,0.966,0.268,get picked on
+10,6,1,2,3,3,0.880,0.164,want to be alone
+11,5,1,2,3,4,5.907,0.213,dream about my wedding 
+12,1,1,2,4,3,0.178,0.392,wear flip flops
+13,3,1,2,3,3,0.692,0.073,shower before bed
+14,1,1,2,4,3,3.065,0.033,take bubble baths
+15,6,1,2,3,3,0.968,0.202,dislike my body
+16,2,1,2,3,4,0.576,0.066,like sleepovers
+17,3,1,2,3,3,0.004,0.358,try new foods
+18,1,1,2,3,2,2.373,0.060,can be creative
+19,2,1,2,2,3,0.077,0.047,decorate my room
+20,4,1,2,4,3,0.005,0.114,want to be popular
+21,3,1,2,2,2,0.775,0.386,wear leggings
+22,5,1,2,2,3,1.503,0.431,hide my feelings
+23,4,1,2,3,2,1.592,0.176,think I'm too quiet
+24,1,1,2,3,2,0.085,0.104,carry chapstick
+25,4,1,2,3,2,0.342,0.299,worry about grades
+26,5,1,2,2,3,6.251,0.126,count calories
+27,6,1,2,2,2,1.623,0.038,get embarrassed
+28,2,1,2,2,3,0.737,0.698,try to recycle
+29,5,1,2,2,4,2.688,0.074,think smoking is gross
+30,6,1,2,2,2,0.296,0.233,worry about drugs
+31,3,1,2,2,2,0.271,0.031,like eating out
+32,2,1,2,2,4,0.275,0.101,stay up late
+33,6,1,2,4,4,2.224,0.127,get self-conscious
+34,4,1,2,4,2,2.018,0.464,can't ignore gossip 
+35,2,1,2,2,4,0.792,0.328,forget to turn off lights
+36,1,1,2,4,2,0.383,0.358,read magazines
+37,5,1,2,2,4,1.003,0.043,act without thinking
+38,3,1,2,4,4,2.434,0.105,wear sunglasses
+39,6,1,2,4,4,1.254,0.037,get mad at friends
+40,1,1,2,4,2,5.622,0.224,can be messy
+41,4,1,2,4,2,7.523,0.171,can get moody

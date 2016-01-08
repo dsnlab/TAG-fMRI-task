@@ -1,0 +1,41 @@
+1,6,1,2,2,2,1.282,0.358,worry about high school
+2,2,1,2,2,3,0.004,0.073,like to doodle
+3,3,1,2,2,2,1.573,0.106,go to the pool
+4,4,1,2,3,2,0.775,0.028,hate going to school
+5,5,1,2,2,3,0.792,0.224,think I'm weird
+6,2,1,2,2,3,0.692,0.033,don't make my bed
+7,5,1,2,2,3,4.052,0.101,find homework hard
+8,1,1,2,3,2,0.576,0.358,like wearing makeup
+9,4,1,2,3,2,0.077,0.213,get mad at friends
+10,6,1,2,2,2,0.737,0.268,get self-conscious
+11,5,1,2,2,4,2.018,0.105,think smoking is gross
+12,1,1,2,3,2,6.251,0.328,can be messy
+13,3,1,2,2,2,5.907,0.392,forget to turn off lights
+14,1,1,2,4,2,0.005,0.233,like eating out
+15,6,1,2,4,4,1.503,0.060,wish I had more friends
+16,2,1,2,2,4,0.966,0.104,wear PJs all day
+17,3,1,2,4,4,0.258,0.202,take bubble baths
+18,1,1,2,4,2,0.206,0.171,sing in the shower
+19,2,1,2,2,4,0.383,0.127,wear sunglasses
+20,4,1,2,4,2,0.085,0.031,dream about my wedding 
+21,3,1,2,4,4,0.178,0.038,try to recycle
+22,5,1,2,2,4,0.968,0.102,can get moody
+23,4,1,2,4,2,3.065,0.047,act without thinking
+24,1,1,2,4,3,2.224,0.176,like leftovers
+25,4,1,2,4,3,0.271,0.127,get embarrassed
+26,5,1,2,3,4,5.622,0.431,weigh myself
+27,6,1,2,4,4,1.254,0.066,like breaking rules
+28,2,1,2,3,4,1.063,0.074,forget people's names
+29,5,1,2,2,4,1.003,0.386,tease my sibling
+30,6,1,2,3,3,1.592,0.464,count calories
+31,3,1,2,3,3,0.342,0.126,like cold pizza
+32,2,1,2,2,4,2.688,0.698,carry chapstick
+33,6,1,2,4,4,0.275,0.019,can't keep secrets  
+34,4,1,2,4,2,1.623,0.043,think I look bomb
+35,2,1,2,2,3,2.373,0.032,like reality TV
+36,1,1,2,4,2,1.125,0.213,like burning candles
+37,5,1,2,2,3,0.296,0.299,like flirting
+38,3,1,2,4,4,0.128,0.164,burn my toast
+39,6,1,2,2,2,1.429,0.259,can be awkward
+40,1,1,2,3,2,0.880,0.037,like watching sports
+41,4,1,2,3,2,9.934,0.114,want to be popular

@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.206,0.464,ignore my parents
+2,2,1,2,2,4,1.623,0.213,drink milk
+3,3,1,2,3,3,0.178,0.074,read magazines
+4,4,1,2,4,2,1.003,0.038,can't ignore gossip 
+5,5,1,2,2,4,1.503,0.126,can be mean
+6,2,1,2,2,4,2.018,0.268,like wearing costumes
+7,5,1,2,2,4,2.688,0.114,worry about high school
+8,1,1,2,4,2,0.271,0.224,like to doodle
+9,4,1,2,4,2,1.125,0.259,get embarrassed
+10,6,1,2,4,4,2.373,0.073,find homework hard
+11,5,1,2,2,3,0.775,0.328,get picked on
+12,1,1,2,4,2,0.023,0.104,try to recycle
+13,3,1,2,4,4,5.622,0.171,like wearing makeup
+14,1,1,2,3,2,5.907,0.243,wear flip flops
+15,6,1,2,2,2,1.282,0.127,worry about kissing
+16,2,1,2,2,3,0.966,0.031,go barefoot
+17,3,1,2,2,2,1.573,0.431,carry chapstick
+18,1,1,2,3,2,2.224,0.358,decorate my room
+19,2,1,2,2,3,1.254,0.202,take bubble baths
+20,4,1,2,3,2,3.065,0.066,count calories
+21,3,1,2,2,2,0.296,0.043,like leftovers
+22,5,1,2,2,3,0.258,0.213,think I'm too quiet
+23,4,1,2,3,2,0.128,0.392,dream about my wedding 
+24,1,1,2,3,2,1.063,0.358,burn my toast
+25,4,1,2,3,2,0.968,0.233,weigh myself
+26,5,1,2,2,3,4.052,0.164,like flirting
+27,6,1,2,2,2,0.342,0.127,make friends easily
+28,2,1,2,2,3,0.275,0.105,use lotion
+29,5,1,2,2,4,0.880,0.060,get self-conscious
+30,6,1,2,2,2,0.077,0.106,like breaking rules
+31,3,1,2,2,2,0.004,0.176,forget to turn off lights
+32,2,1,2,2,4,2.434,0.028,forget people's names
+33,6,1,2,4,4,0.737,0.032,think smoking is gross
+34,4,1,2,4,2,0.692,0.019,wish I was in love
+35,2,1,2,3,4,0.005,0.033,like eating out
+36,1,1,2,4,2,0.576,0.101,don't brush my teeth
+37,5,1,2,3,4,1.592,0.698,feel lonely
+38,3,1,2,4,4,6.251,0.047,like to wear hats
+39,6,1,2,3,3,0.792,0.386,can't wait to be older
+40,1,1,2,4,3,1.429,0.037,braid my hair
+41,4,1,2,4,3,7.585,0.299,copy homework

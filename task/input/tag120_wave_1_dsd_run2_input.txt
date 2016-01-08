@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.792,0.386,ignore my parents
+2,2,1,2,2,4,1.592,0.698,drink milk
+3,3,1,2,4,4,5.907,0.243,wear leggings
+4,4,1,2,4,2,0.077,0.106,worry about grades
+5,5,1,2,2,4,0.692,0.019,worry about kissing
+6,2,1,2,2,4,4.052,0.164,go barefoot
+7,5,1,2,2,4,0.966,0.031,can be awkward
+8,1,1,2,4,2,2.018,0.268,like watching sports
+9,4,1,2,4,2,0.206,0.464,dream about my wedding 
+10,6,1,2,3,3,0.023,0.104,think I'm too quiet
+11,5,1,2,2,3,0.383,0.102,get picked on
+12,1,1,2,4,2,1.429,0.037,take bubble baths
+13,3,1,2,3,3,1.573,0.431,decorate my room
+14,1,1,2,3,2,1.003,0.038,wear flip flops
+15,6,1,2,2,2,0.004,0.176,can get moody
+16,2,1,2,2,3,0.258,0.213,sing in the shower
+17,3,1,2,2,2,0.775,0.328,read magazines
+18,1,1,2,4,3,0.275,0.105,don't make my bed
+19,2,1,2,3,4,1.282,0.127,braid my hair
+20,4,1,2,3,2,3.065,0.066,can't ignore gossip 
+21,3,1,2,3,3,6.251,0.047,burn my toast
+22,5,1,2,3,4,0.737,0.032,think I'm weird
+23,4,1,2,4,3,2.373,0.073,can't wait to be older
+24,1,1,2,4,2,0.880,0.060,use lotion
+25,4,1,2,4,2,5.622,0.171,like flirting
+26,5,1,2,2,4,1.254,0.202,make friends easily
+27,6,1,2,3,3,0.178,0.074,hate going to school
+28,2,1,2,2,4,0.128,0.392,go to the pool
+29,5,1,2,2,3,1.623,0.213,pretend to like people
+30,6,1,2,4,4,0.968,0.233,don't like my life
+31,3,1,2,4,4,0.342,0.127,paint my nails
+32,2,1,2,2,3,2.434,0.028,sleep in late
+33,6,1,2,2,2,0.005,0.033,want to be popular
+34,4,1,2,3,2,2.688,0.114,tease my sibling
+35,2,1,2,2,4,1.503,0.126,try new foods
+36,1,1,2,3,2,0.576,0.101,like cold pizza
+37,5,1,2,2,4,1.063,0.358,find homework hard
+38,3,1,2,2,2,0.271,0.224,like wearing makeup
+39,6,1,2,4,4,0.085,0.299,judge people
+40,1,1,2,4,2,1.125,0.259,go to the movies
+41,4,1,2,4,2,9.724,0.358,act without thinking

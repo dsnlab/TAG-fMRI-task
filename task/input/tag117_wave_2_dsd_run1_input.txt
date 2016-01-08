@@ -1,0 +1,41 @@
+1,6,1,2,4,4,1.254,0.066,like breaking rules
+2,2,1,2,2,4,0.692,0.033,forget people's names
+3,3,1,2,4,4,0.737,0.268,like reality TV
+4,4,1,2,4,2,0.880,0.037,can't keep secrets  
+5,5,1,2,2,4,1.592,0.464,don't like my life
+6,2,1,2,2,4,1.573,0.106,sleep in late
+7,5,1,2,2,4,0.775,0.028,can't ignore gossip 
+8,1,1,2,4,2,0.576,0.358,read magazines
+9,4,1,2,4,2,6.251,0.328,act without thinking
+10,6,1,2,4,4,0.966,0.104,get embarrassed
+11,5,1,2,2,4,0.005,0.233,hide my feelings
+12,1,1,2,4,2,5.907,0.392,wear sunglasses
+13,3,1,2,4,4,1.125,0.213,try to recycle
+14,1,1,2,4,2,2.434,0.114,can be creative
+15,6,1,2,4,4,0.085,0.031,worry about grades
+16,2,1,2,2,4,5.622,0.431,wear leggings
+17,3,1,2,4,4,2.224,0.176,don't brush my teeth
+18,1,1,2,4,3,0.296,0.299,play board games
+19,2,1,2,3,4,0.023,0.243,decorate my room
+20,4,1,2,4,2,0.383,0.127,wish I was in love
+21,3,1,2,3,3,0.968,0.102,listen to music
+22,5,1,2,3,4,0.342,0.126,copy homework
+23,4,1,2,4,3,1.503,0.060,think I'm too quiet
+24,1,1,2,3,2,2.018,0.105,carry chapstick
+25,4,1,2,3,2,0.077,0.213,feel shy in groups
+26,5,1,2,2,3,1.282,0.358,count calories
+27,6,1,2,3,3,1.063,0.074,dislike my body
+28,2,1,2,2,3,0.206,0.171,like sleepovers
+29,5,1,2,2,3,0.258,0.202,get self-conscious
+30,6,1,2,2,2,1.623,0.043,can get moody
+31,3,1,2,2,2,2.688,0.698,forget to turn off lights
+32,2,1,2,2,3,3.065,0.047,sing in the shower
+33,6,1,2,2,2,2.373,0.032,hate going to school
+34,4,1,2,3,2,0.275,0.019,think I look bomb
+35,2,1,2,3,4,0.271,0.127,go to the pool
+36,1,1,2,3,2,0.004,0.073,like burning candles
+37,5,1,2,3,4,1.429,0.259,want to be popular
+38,3,1,2,2,2,4.052,0.101,try new foods
+39,6,1,2,3,3,0.178,0.038,dream about my wedding 
+40,1,1,2,4,3,0.792,0.224,take bubble baths
+41,4,1,2,4,3,7.628,0.164,wish I had more friends

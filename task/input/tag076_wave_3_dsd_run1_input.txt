@@ -1,0 +1,41 @@
+1,6,1,2,3,3,3.065,0.224,worry about kissing
+2,2,1,2,3,4,1.125,0.038,go barefoot
+3,3,1,2,3,3,0.077,0.464,use lotion
+4,4,1,2,4,3,6.251,0.037,make friends easily
+5,5,1,2,3,4,0.023,0.176,like breaking rules
+6,2,1,2,2,4,0.206,0.213,forget people's names
+7,5,1,2,2,4,0.342,0.043,feel shy in groups
+8,1,1,2,4,3,1.063,0.032,listen to music
+9,4,1,2,4,2,0.128,0.114,hide my feelings
+10,6,1,2,4,4,0.966,0.358,get embarrassed
+11,5,1,2,3,4,1.503,0.105,like flirting
+12,1,1,2,4,2,1.254,0.358,can be creative
+13,3,1,2,4,4,5.907,0.127,try to recycle
+14,1,1,2,4,3,0.271,0.104,burn my toast
+15,6,1,2,3,3,2.373,0.243,think smoking is gross
+16,2,1,2,3,4,0.968,0.073,like eating out
+17,3,1,2,3,3,0.004,0.102,don't brush my teeth
+18,1,1,2,4,2,0.005,0.028,sing in the shower
+19,2,1,2,2,4,2.434,0.127,paint my nails
+20,4,1,2,4,3,0.576,0.106,wish I was in love
+21,3,1,2,4,4,1.003,0.213,don't make my bed
+22,5,1,2,2,4,1.623,0.386,can get moody
+23,4,1,2,4,2,0.383,0.202,pretend to like people
+24,1,1,2,3,2,1.282,0.074,like reality TV
+25,4,1,2,3,2,5.622,0.431,think I'm weird
+26,5,1,2,2,3,0.792,0.019,can't keep secrets  
+27,6,1,2,4,4,0.692,0.031,can't wait to be older
+28,2,1,2,2,3,1.592,0.060,braid my hair
+29,5,1,2,2,4,1.429,0.101,worry about high school
+30,6,1,2,2,2,2.224,0.126,weigh myself
+31,3,1,2,2,2,2.688,0.392,like to doodle
+32,2,1,2,2,4,0.178,0.268,like leftovers
+33,6,1,2,4,4,0.775,0.233,think I'm too quiet
+34,4,1,2,4,2,0.737,0.259,act without thinking
+35,2,1,2,2,4,0.880,0.328,decorate my room
+36,1,1,2,4,2,4.052,0.698,wear sunglasses
+37,5,1,2,2,4,1.573,0.047,want to be alone
+38,3,1,2,4,4,0.296,0.171,shower before bed
+39,6,1,2,4,4,0.258,0.033,hate going to school
+40,1,1,2,4,2,0.275,0.299,go to the pool
+41,4,1,2,4,2,7.585,0.164,can be mean

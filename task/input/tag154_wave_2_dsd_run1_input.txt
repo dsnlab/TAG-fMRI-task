@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.023,0.171,can't wait to be older
+2,2,1,2,3,4,1.063,0.106,braid my hair
+3,3,1,2,2,2,5.907,0.213,like to wear hats
+4,4,1,2,4,3,0.880,0.164,feel lonely
+5,5,1,2,3,4,2.018,0.464,can be mean
+6,2,1,2,2,4,1.623,0.038,like wearing costumes
+7,5,1,2,2,4,1.125,0.019,think I look bomb
+8,1,1,2,4,3,0.383,0.358,like burning candles
+9,4,1,2,4,2,1.592,0.176,think I'm too quiet
+10,6,1,2,3,3,0.692,0.073,get mad at friends
+11,5,1,2,2,4,0.178,0.392,get embarrassed
+12,1,1,2,4,2,0.128,0.259,decorate my room
+13,3,1,2,3,3,2.224,0.127,can be messy
+14,1,1,2,4,2,0.077,0.047,try to recycle
+15,6,1,2,4,4,0.775,0.386,ignore my parents
+16,2,1,2,2,4,2.688,0.074,drink milk
+17,3,1,2,4,4,0.206,0.032,go to the pool
+18,1,1,2,4,2,1.003,0.043,take bubble baths
+19,2,1,2,2,4,0.342,0.299,like cold pizza
+20,4,1,2,4,2,0.296,0.233,hate going to school
+21,3,1,2,2,2,1.573,0.213,play board games
+22,5,1,2,2,4,5.622,0.224,dream about my wedding 
+23,4,1,2,4,2,6.251,0.126,tease my sibling
+24,1,1,2,3,2,1.254,0.037,like reality TV
+25,4,1,2,3,2,0.968,0.202,copy homework
+26,5,1,2,2,3,0.966,0.268,can't keep secrets  
+27,6,1,2,2,2,1.282,0.102,tell little lies
+28,2,1,2,2,3,3.065,0.033,wear bright colors
+29,5,1,2,2,3,0.271,0.031,want to be alone
+30,6,1,2,4,4,0.737,0.698,count calories
+31,3,1,2,4,4,2.434,0.105,shower before bed
+32,2,1,2,2,3,0.005,0.114,carry chapstick
+33,6,1,2,3,3,1.503,0.431,don't like my life
+34,4,1,2,3,2,2.373,0.060,like flirting
+35,2,1,2,2,3,0.258,0.243,sleep in late
+36,1,1,2,3,2,0.004,0.358,burn my toast
+37,5,1,2,2,3,4.052,0.028,feel shy in groups
+38,3,1,2,3,3,0.792,0.328,listen to music
+39,6,1,2,4,4,0.275,0.101,worry about grades
+40,1,1,2,3,2,0.576,0.066,wear leggings
+41,4,1,2,3,2,8.929,0.127,find homework hard

@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.258,0.213,like flirting
+2,2,1,2,2,4,0.576,0.101,burn my toast
+3,3,1,2,4,4,0.342,0.127,take bubble baths
+4,4,1,2,4,2,0.128,0.392,dream about my wedding 
+5,5,1,2,2,4,1.254,0.202,worry about grades
+6,2,1,2,2,3,0.792,0.386,wear leggings
+7,5,1,2,2,3,1.429,0.037,hide my feelings
+8,1,1,2,4,2,0.692,0.019,can be creative
+9,4,1,2,3,2,4.052,0.164,weigh myself
+10,6,1,2,2,2,0.968,0.233,copy homework
+11,5,1,2,3,4,5.622,0.171,can be awkward
+12,1,1,2,3,2,0.023,0.104,like leftovers
+13,3,1,2,2,2,6.251,0.047,play board games
+14,1,1,2,4,3,1.592,0.698,like watching sports
+15,6,1,2,3,3,0.296,0.043,make friends easily
+16,2,1,2,3,4,1.623,0.213,use lotion
+17,3,1,2,3,3,0.271,0.224,forget to turn off lights
+18,1,1,2,4,2,1.063,0.358,wear PJs all day
+19,2,1,2,2,4,1.003,0.038,paint my nails
+20,4,1,2,4,3,1.573,0.431,get self-conscious
+21,3,1,2,4,4,0.383,0.102,try to recycle
+22,5,1,2,2,4,1.125,0.259,wish I had more friends
+23,4,1,2,4,2,2.224,0.358,pretend to like people
+24,1,1,2,3,2,1.503,0.126,like eating out
+25,4,1,2,3,2,0.966,0.031,get embarrassed
+26,5,1,2,2,3,2.373,0.073,think smoking is gross
+27,6,1,2,4,4,0.275,0.105,count calories
+28,2,1,2,2,3,1.282,0.127,carry chapstick
+29,5,1,2,2,3,0.206,0.464,think I'm weird
+30,6,1,2,2,2,0.737,0.032,don't like my life
+31,3,1,2,2,2,2.434,0.028,don't make my bed
+32,2,1,2,2,3,3.065,0.066,sleep in late
+33,6,1,2,2,2,0.085,0.299,judge people
+34,4,1,2,3,2,2.018,0.268,find homework hard
+35,2,1,2,3,4,0.005,0.033,go to the movies
+36,1,1,2,3,2,5.907,0.243,like wearing makeup
+37,5,1,2,3,4,0.880,0.060,wish I was in love
+38,3,1,2,2,2,0.077,0.106,don't brush my teeth
+39,6,1,2,3,3,0.775,0.328,dislike my body
+40,1,1,2,4,3,0.004,0.176,like sleepovers
+41,4,1,2,4,3,10.188,0.114,want to be popular

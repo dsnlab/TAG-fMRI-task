@@ -1,0 +1,41 @@
+1,6,1,2,4,4,2.434,0.299,can't wait to be older
+2,2,1,2,2,4,6.251,0.202,braid my hair
+3,3,1,2,4,4,0.178,0.105,try new foods
+4,4,1,2,4,2,5.622,0.019,want to be popular
+5,5,1,2,2,4,1.592,0.032,can't ignore gossip 
+6,2,1,2,2,4,5.907,0.213,read magazines
+7,5,1,2,2,4,1.063,0.392,can be awkward
+8,1,1,2,4,2,0.966,0.243,like watching sports
+9,4,1,2,4,2,1.623,0.431,get picked on
+10,6,1,2,4,4,0.077,0.176,make friends easily
+11,5,1,2,2,4,0.206,0.031,think smoking is gross
+12,1,1,2,4,2,1.125,0.102,wear flip flops
+13,3,1,2,4,4,1.003,0.037,use lotion
+14,1,1,2,4,2,0.296,0.043,like eating out
+15,6,1,2,4,4,0.383,0.114,feel shy in groups
+16,2,1,2,2,4,4.052,0.164,listen to music
+17,3,1,2,4,4,0.792,0.028,like leftovers
+18,1,1,2,4,3,1.573,0.127,shower before bed
+19,2,1,2,3,4,0.258,0.698,like cold pizza
+20,4,1,2,4,2,3.065,0.033,weigh myself
+21,3,1,2,3,3,2.018,0.358,forget to turn off lights
+22,5,1,2,3,4,0.880,0.127,want to be alone
+23,4,1,2,4,3,2.688,0.104,tease my sibling
+24,1,1,2,4,3,1.282,0.106,like burning candles
+25,4,1,2,4,3,1.503,0.358,get self-conscious
+26,5,1,2,3,4,0.342,0.038,think I look bomb
+27,6,1,2,3,3,0.692,0.101,can be mean
+28,2,1,2,3,4,0.576,0.386,like wearing costumes
+29,5,1,2,2,4,1.254,0.171,dream about my wedding 
+30,6,1,2,3,3,0.275,0.464,act without thinking
+31,3,1,2,3,3,2.373,0.268,take bubble baths
+32,2,1,2,2,4,2.224,0.073,wear sunglasses
+33,6,1,2,4,4,0.271,0.074,think I'm weird
+34,4,1,2,4,2,0.775,0.066,can get moody
+35,2,1,2,2,3,0.004,0.126,don't make my bed
+36,1,1,2,4,2,1.429,0.213,sing in the shower
+37,5,1,2,2,3,0.005,0.060,feel lonely
+38,3,1,2,4,4,0.023,0.233,like to wear hats
+39,6,1,2,2,2,0.128,0.328,get mad at friends
+40,1,1,2,3,2,0.085,0.259,can be messy
+41,4,1,2,3,2,8.468,0.224,count calories

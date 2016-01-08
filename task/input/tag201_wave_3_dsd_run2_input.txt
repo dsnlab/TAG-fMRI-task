@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.004,0.126,hate going to school
+2,2,1,2,3,4,1.623,0.431,go to the pool
+3,3,1,2,3,3,3.065,0.033,like to doodle
+4,4,1,2,4,3,0.023,0.233,worry about high school
+5,5,1,2,3,4,0.275,0.464,get self-conscious
+6,2,1,2,2,3,1.282,0.106,forget to turn off lights
+7,5,1,2,2,3,1.125,0.102,can get moody
+8,1,1,2,4,3,0.342,0.038,sing in the shower
+9,4,1,2,3,2,1.254,0.171,count calories
+10,6,1,2,2,2,0.005,0.060,weigh myself
+11,5,1,2,2,4,1.063,0.392,think smoking is gross
+12,1,1,2,3,2,0.880,0.127,carry chapstick
+13,3,1,2,2,2,1.003,0.037,like leftovers
+14,1,1,2,4,2,1.592,0.032,like eating out
+15,6,1,2,4,4,0.966,0.243,pretend to like people
+16,2,1,2,2,4,2.373,0.268,paint my nails
+17,3,1,2,4,4,0.383,0.114,listen to music
+18,1,1,2,4,2,2.018,0.358,read magazines
+19,2,1,2,2,4,0.271,0.074,like cold pizza
+20,4,1,2,4,2,0.296,0.043,feel shy in groups
+21,3,1,2,4,4,1.429,0.213,sleep in late
+22,5,1,2,2,4,0.775,0.066,can't ignore gossip 
+23,4,1,2,4,2,4.052,0.164,tease my sibling
+24,1,1,2,4,2,0.692,0.101,burn my toast
+25,4,1,2,4,2,2.224,0.073,don't like my life
+26,5,1,2,2,4,0.128,0.328,like flirting
+27,6,1,2,4,4,2.688,0.104,act without thinking
+28,2,1,2,2,4,0.968,0.224,wear sunglasses
+29,5,1,2,3,4,0.085,0.259,make friends easily
+30,6,1,2,4,4,5.622,0.019,get picked on
+31,3,1,2,4,4,5.907,0.213,use lotion
+32,2,1,2,3,4,0.737,0.047,wear flip flops
+33,6,1,2,3,3,0.206,0.031,copy homework
+34,4,1,2,4,3,1.573,0.127,hide my feelings
+35,2,1,2,2,4,0.077,0.176,play board games
+36,1,1,2,4,3,0.576,0.386,can be creative
+37,5,1,2,2,4,6.251,0.202,want to be alone
+38,3,1,2,3,3,0.258,0.698,shower before bed
+39,6,1,2,4,4,1.503,0.358,wish I was in love
+40,1,1,2,4,2,0.178,0.105,don't brush my teeth
+41,4,1,2,4,2,9.934,0.299,get mad at friends

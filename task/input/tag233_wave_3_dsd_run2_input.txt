@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.206,0.031,get picked on
+2,2,1,2,2,4,0.271,0.074,wear flip flops
+3,3,1,2,4,4,0.004,0.126,like reality TV
+4,4,1,2,4,2,6.251,0.202,can't keep secrets  
+5,5,1,2,2,4,0.737,0.047,get mad at friends
+6,2,1,2,2,4,1.125,0.102,can be messy
+7,5,1,2,2,4,2.018,0.358,think smoking is gross
+8,1,1,2,4,2,1.573,0.127,like eating out
+9,4,1,2,4,2,2.688,0.104,think I look bomb
+10,6,1,2,4,4,1.429,0.213,judge people
+11,5,1,2,2,4,0.178,0.105,feel shy in groups
+12,1,1,2,4,2,5.622,0.019,like burning candles
+13,3,1,2,4,4,0.077,0.176,go to the movies
+14,1,1,2,4,2,0.692,0.101,listen to music
+15,6,1,2,4,4,0.775,0.066,worry about drugs
+16,2,1,2,2,4,1.623,0.431,stay up late
+17,3,1,2,4,4,0.296,0.043,don't make my bed
+18,1,1,2,3,2,0.085,0.259,like to doodle
+19,2,1,2,2,3,0.005,0.060,like leftovers
+20,4,1,2,4,2,2.373,0.268,think I'm weird
+21,3,1,2,2,2,0.023,0.233,paint my nails
+22,5,1,2,2,3,0.275,0.464,worry about high school
+23,4,1,2,3,2,0.792,0.028,weigh myself
+24,1,1,2,4,2,1.592,0.032,decorate my room
+25,4,1,2,4,2,4.052,0.164,pretend to like people
+26,5,1,2,2,4,0.383,0.114,think I'm too quiet
+27,6,1,2,2,2,1.503,0.358,act without thinking
+28,2,1,2,2,4,0.576,0.386,wear sunglasses
+29,5,1,2,3,4,1.003,0.037,feel lonely
+30,6,1,2,4,4,0.966,0.243,worry about kissing
+31,3,1,2,4,4,0.128,0.328,like to wear hats
+32,2,1,2,3,4,2.434,0.299,go barefoot
+33,6,1,2,3,3,0.968,0.224,dream about my wedding 
+34,4,1,2,4,3,2.224,0.073,wish I was in love
+35,2,1,2,2,4,0.880,0.127,take bubble baths
+36,1,1,2,4,3,1.282,0.106,don't brush my teeth
+37,5,1,2,2,4,5.907,0.213,tell little lies
+38,3,1,2,3,3,0.342,0.038,wear bright colors
+39,6,1,2,4,4,1.254,0.171,hate going to school
+40,1,1,2,4,2,3.065,0.033,go to the pool
+41,4,1,2,4,2,7.758,0.698,can't ignore gossip 

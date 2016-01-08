@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.077,0.047,get picked on
+2,2,1,2,2,4,1.573,0.213,wear flip flops
+3,3,1,2,4,4,1.254,0.037,go to the pool
+4,4,1,2,4,2,0.966,0.268,hate going to school
+5,5,1,2,2,4,3.065,0.033,feel lonely
+6,2,1,2,2,4,1.429,0.127,like to wear hats
+7,5,1,2,2,4,1.125,0.019,like breaking rules
+8,1,1,2,4,2,2.688,0.074,forget people's names
+9,4,1,2,4,2,0.128,0.259,copy homework
+10,6,1,2,4,4,0.275,0.101,weigh myself
+11,5,1,2,3,4,0.968,0.202,can be awkward
+12,1,1,2,4,2,0.004,0.358,play board games
+13,3,1,2,4,4,0.085,0.104,like leftovers
+14,1,1,2,4,3,2.373,0.060,like watching sports
+15,6,1,2,3,3,0.271,0.031,act without thinking
+16,2,1,2,3,4,1.503,0.431,wear sunglasses
+17,3,1,2,3,3,1.063,0.106,read magazines
+18,1,1,2,4,3,0.258,0.243,shower before bed
+19,2,1,2,3,4,0.023,0.171,sleep in late
+20,4,1,2,4,3,1.003,0.043,can't ignore gossip 
+21,3,1,2,3,3,1.623,0.038,sing in the shower
+22,5,1,2,3,4,0.296,0.233,want to be alone
+23,4,1,2,4,3,6.251,0.126,don't like my life
+24,1,1,2,4,2,4.052,0.028,try to recycle
+25,4,1,2,4,2,0.692,0.073,can get moody
+26,5,1,2,2,4,5.907,0.213,get embarrassed
+27,6,1,2,3,3,2.434,0.105,think I look bomb
+28,2,1,2,2,4,0.792,0.328,like burning candles
+29,5,1,2,2,3,0.383,0.358,dislike my body
+30,6,1,2,4,4,0.880,0.164,dream about my wedding 
+31,3,1,2,4,4,1.592,0.176,like sleepovers
+32,2,1,2,2,3,5.622,0.224,take bubble baths
+33,6,1,2,2,2,0.206,0.032,think smoking is gross
+34,4,1,2,3,2,0.178,0.392,pretend to like people
+35,2,1,2,2,3,0.737,0.698,like eating out
+36,1,1,2,3,2,2.018,0.464,paint my nails
+37,5,1,2,2,3,0.775,0.386,worry about grades
+38,3,1,2,2,2,1.282,0.102,wear leggings
+39,6,1,2,2,2,0.342,0.299,can be mean
+40,1,1,2,3,2,2.224,0.127,like wearing costumes
+41,4,1,2,3,2,7.505,0.114,worry about high school

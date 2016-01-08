@@ -1,0 +1,41 @@
+1,6,1,2,3,3,4.052,0.033,dislike my body
+2,2,1,2,3,4,1.573,0.386,like sleepovers
+3,3,1,2,3,3,1.003,0.268,don't brush my teeth
+4,4,1,2,4,3,1.429,0.104,wish I was in love
+5,5,1,2,3,4,2.434,0.328,act without thinking
+6,2,1,2,2,4,2.224,0.043,wear sunglasses
+7,5,1,2,2,4,0.342,0.073,can't keep secrets  
+8,1,1,2,4,3,0.576,0.392,like reality TV
+9,4,1,2,4,2,5.907,0.019,judge people
+10,6,1,2,4,4,3.065,0.031,can't wait to be older
+11,5,1,2,2,4,1.063,0.114,think I'm weird
+12,1,1,2,4,2,0.775,0.060,go to the movies
+13,3,1,2,4,4,0.271,0.698,braid my hair
+14,1,1,2,4,2,1.503,0.431,don't make my bed
+15,6,1,2,4,4,0.383,0.213,dream about my wedding 
+16,2,1,2,2,4,5.622,0.105,take bubble baths
+17,3,1,2,4,4,1.592,0.028,like wearing makeup
+18,1,1,2,3,2,2.688,0.127,carry chapstick
+19,2,1,2,2,3,0.023,0.358,shower before bed
+20,4,1,2,4,2,0.275,0.101,find homework hard
+21,3,1,2,2,2,6.251,0.243,like cold pizza
+22,5,1,2,2,3,0.296,0.202,count calories
+23,4,1,2,3,2,1.282,0.171,want to be alone
+24,1,1,2,3,2,0.692,0.127,wear leggings
+25,4,1,2,3,2,0.880,0.106,tease my sibling
+26,5,1,2,2,3,2.018,0.032,worry about grades
+27,6,1,2,2,2,0.077,0.358,get self-conscious
+28,2,1,2,2,3,0.258,0.259,forget to turn off lights
+29,5,1,2,2,3,0.966,0.038,pretend to like people
+30,6,1,2,2,2,2.373,0.074,can get moody
+31,3,1,2,2,2,0.085,0.047,paint my nails
+32,2,1,2,2,3,0.004,0.102,sing in the shower
+33,6,1,2,2,2,0.178,0.066,think smoking is gross
+34,4,1,2,3,2,0.792,0.037,worry about high school
+35,2,1,2,3,4,1.125,0.176,like eating out
+36,1,1,2,3,2,0.968,0.213,like to doodle
+37,5,1,2,3,4,0.005,0.164,feel lonely
+38,3,1,2,2,2,0.128,0.126,like to wear hats
+39,6,1,2,3,3,1.623,0.299,weigh myself
+40,1,1,2,4,3,0.737,0.224,like leftovers
+41,4,1,2,4,3,8.754,0.464,think I look bomb

@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.206,0.032,judge people
+2,2,1,2,2,4,0.271,0.031,go to the movies
+3,3,1,2,3,3,0.692,0.073,drink milk
+4,4,1,2,4,2,0.077,0.047,ignore my parents
+5,5,1,2,2,4,1.623,0.038,like breaking rules
+6,2,1,2,2,3,0.005,0.114,forget people's names
+7,5,1,2,2,3,1.063,0.106,find homework hard
+8,1,1,2,4,2,0.178,0.392,like wearing makeup
+9,4,1,2,3,2,0.258,0.243,worry about drugs
+10,6,1,2,2,2,3.065,0.033,like flirting
+11,5,1,2,2,3,1.254,0.037,can be mean
+12,1,1,2,3,2,5.622,0.224,stay up late
+13,3,1,2,2,2,0.792,0.328,burn my toast
+14,1,1,2,3,2,2.434,0.105,like wearing costumes
+15,6,1,2,2,2,0.880,0.164,weigh myself
+16,2,1,2,2,3,0.023,0.171,like leftovers
+17,3,1,2,2,2,4.052,0.028,wear flip flops
+18,1,1,2,3,2,0.383,0.358,carry chapstick
+19,2,1,2,2,3,0.966,0.268,go to the pool
+20,4,1,2,3,2,1.503,0.431,get picked on
+21,3,1,2,2,2,0.275,0.101,shower before bed
+22,5,1,2,2,3,0.968,0.202,count calories
+23,4,1,2,3,2,0.085,0.104,hate going to school
+24,1,1,2,4,3,0.576,0.066,try to recycle
+25,4,1,2,4,3,2.224,0.127,want to be alone
+26,5,1,2,3,4,0.737,0.698,get embarrassed
+27,6,1,2,2,2,1.003,0.043,feel shy in groups
+28,2,1,2,3,4,1.573,0.213,listen to music
+29,5,1,2,2,4,2.373,0.060,think I look bomb
+30,6,1,2,3,3,5.907,0.213,worry about grades
+31,3,1,2,3,3,1.592,0.176,like burning candles
+32,2,1,2,2,4,0.128,0.259,wear leggings
+33,6,1,2,4,4,2.018,0.464,tell little lies
+34,4,1,2,4,2,1.429,0.127,can get moody
+35,2,1,2,3,4,2.688,0.074,wear bright colors
+36,1,1,2,4,2,6.251,0.126,sing in the shower
+37,5,1,2,3,4,1.125,0.019,think smoking is gross
+38,3,1,2,4,4,0.296,0.233,like eating out
+39,6,1,2,3,3,0.004,0.358,dislike my body
+40,1,1,2,4,3,0.342,0.299,like sleepovers
+41,4,1,2,4,3,8.275,0.386,don't like my life

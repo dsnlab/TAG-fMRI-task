@@ -1,0 +1,41 @@
+1,6,1,2,4,4,1.063,0.358,get picked on
+2,2,1,2,2,4,0.383,0.102,wear flip flops
+3,3,1,2,4,4,0.258,0.213,like eating out
+4,4,1,2,4,2,0.085,0.299,think smoking is gross
+5,5,1,2,2,4,5.907,0.243,get mad at friends
+6,2,1,2,2,4,0.737,0.032,can be messy
+7,5,1,2,2,4,0.005,0.033,count calories
+8,1,1,2,4,2,0.880,0.060,carry chapstick
+9,4,1,2,4,2,0.023,0.104,worry about kissing
+10,6,1,2,4,4,0.966,0.031,think I'm too quiet
+11,5,1,2,2,3,0.792,0.386,worry about drugs
+12,1,1,2,4,2,2.373,0.073,go barefoot
+13,3,1,2,4,4,1.282,0.127,decorate my room
+14,1,1,2,3,2,1.003,0.038,stay up late
+15,6,1,2,2,2,1.429,0.037,hide my feelings
+16,2,1,2,2,3,2.018,0.268,can be creative
+17,3,1,2,2,2,1.592,0.698,like wearing costumes
+18,1,1,2,4,3,0.206,0.464,use lotion
+19,2,1,2,3,4,0.178,0.074,like wearing makeup
+20,4,1,2,3,2,2.224,0.358,can be mean
+21,3,1,2,3,3,1.623,0.213,don't make my bed
+22,5,1,2,3,4,4.052,0.164,make friends easily
+23,4,1,2,4,3,0.968,0.233,find homework hard
+24,1,1,2,3,2,5.622,0.171,go to the pool
+25,4,1,2,3,2,2.688,0.114,think I'm weird
+26,5,1,2,2,3,0.342,0.127,hate going to school
+27,6,1,2,3,3,1.254,0.202,can get moody
+28,2,1,2,2,3,2.434,0.028,sing in the shower
+29,5,1,2,3,4,0.576,0.101,get embarrassed
+30,6,1,2,2,2,0.296,0.043,feel lonely
+31,3,1,2,2,2,1.573,0.431,try to recycle
+32,2,1,2,3,4,6.251,0.047,like to wear hats
+33,6,1,2,3,3,0.775,0.328,want to be popular
+34,4,1,2,4,3,1.125,0.259,judge people
+35,2,1,2,3,4,0.692,0.019,try new foods
+36,1,1,2,4,3,0.128,0.392,go to the movies
+37,5,1,2,3,4,3.065,0.066,can't keep secrets  
+38,3,1,2,3,3,0.004,0.176,like reality TV
+39,6,1,2,3,3,0.271,0.224,act without thinking
+40,1,1,2,4,3,1.503,0.126,wear sunglasses
+41,4,1,2,4,3,7.577,0.106,dream about my wedding 

@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.258,0.698,find homework hard
+2,2,1,2,3,4,2.688,0.104,like wearing makeup
+3,3,1,2,3,3,0.004,0.126,sing in the shower
+4,4,1,2,4,3,0.178,0.105,can get moody
+5,5,1,2,3,4,1.573,0.127,can be mean
+6,2,1,2,2,4,1.254,0.171,like wearing costumes
+7,5,1,2,2,4,2.434,0.299,act without thinking
+8,1,1,2,4,3,0.692,0.101,wear sunglasses
+9,4,1,2,4,2,3.065,0.033,want to be popular
+10,6,1,2,4,4,0.005,0.060,make friends easily
+11,5,1,2,3,4,2.018,0.358,wish I had more friends
+12,1,1,2,4,2,0.342,0.038,try new foods
+13,3,1,2,4,4,0.383,0.114,use lotion
+14,1,1,2,4,3,5.907,0.213,wear PJs all day
+15,6,1,2,3,3,0.271,0.074,want to be alone
+16,2,1,2,3,4,0.966,0.243,shower before bed
+17,3,1,2,3,3,0.296,0.043,like burning candles
+18,1,1,2,3,2,0.576,0.386,can be creative
+19,2,1,2,2,3,4.052,0.164,sleep in late
+20,4,1,2,4,3,5.622,0.019,think I look bomb
+21,3,1,2,2,2,0.968,0.224,burn my toast
+22,5,1,2,2,3,0.085,0.259,hide my feelings
+23,4,1,2,3,2,1.623,0.431,don't like my life
+24,1,1,2,4,2,6.251,0.202,like to doodle
+25,4,1,2,4,2,0.275,0.464,like flirting
+26,5,1,2,2,4,0.775,0.066,worry about high school
+27,6,1,2,2,2,1.592,0.032,think smoking is gross
+28,2,1,2,2,4,0.077,0.176,like eating out
+29,5,1,2,2,4,0.792,0.028,get picked on
+30,6,1,2,4,4,1.282,0.106,wish I was in love
+31,3,1,2,4,4,0.737,0.047,wear flip flops
+32,2,1,2,2,4,1.063,0.392,don't brush my teeth
+33,6,1,2,4,4,0.023,0.233,can't wait to be older
+34,4,1,2,4,2,0.206,0.031,pretend to like people
+35,2,1,2,3,4,0.128,0.328,braid my hair
+36,1,1,2,4,2,1.429,0.213,paint my nails
+37,5,1,2,3,4,1.125,0.102,get mad at friends
+38,3,1,2,4,4,0.880,0.127,can be messy
+39,6,1,2,3,3,2.224,0.073,feel lonely
+40,1,1,2,4,3,2.373,0.268,like to wear hats
+41,4,1,2,4,3,8.503,0.037,think I'm weird

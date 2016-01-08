@@ -1,0 +1,41 @@
+1,6,1,2,4,4,1.254,0.171,think smoking is gross
+2,2,1,2,2,4,2.373,0.268,like eating out
+3,3,1,2,4,4,1.125,0.102,wear bright colors
+4,4,1,2,4,2,0.737,0.047,tell little lies
+5,5,1,2,2,4,0.023,0.233,make friends easily
+6,2,1,2,2,3,0.775,0.066,use lotion
+7,5,1,2,2,3,2.018,0.358,worry about high school
+8,1,1,2,4,2,0.275,0.464,like to doodle
+9,4,1,2,3,2,0.258,0.698,can't keep secrets  
+10,6,1,2,2,2,1.429,0.213,judge people
+11,5,1,2,2,4,0.383,0.114,get embarrassed
+12,1,1,2,3,2,1.573,0.127,like reality TV
+13,3,1,2,2,2,0.342,0.038,go to the movies
+14,1,1,2,4,2,0.880,0.127,try to recycle
+15,6,1,2,4,4,1.623,0.431,can get moody
+16,2,1,2,2,4,1.003,0.037,sing in the shower
+17,3,1,2,4,4,0.178,0.105,don't brush my teeth
+18,1,1,2,4,3,2.224,0.073,play board games
+19,2,1,2,3,4,0.968,0.224,go barefoot
+20,4,1,2,4,2,0.271,0.074,wish I was in love
+21,3,1,2,3,3,0.966,0.243,like wearing makeup
+22,5,1,2,3,4,0.085,0.259,copy homework
+23,4,1,2,4,3,0.792,0.028,worry about kissing
+24,1,1,2,3,2,1.282,0.106,can be creative
+25,4,1,2,3,2,0.296,0.043,find homework hard
+26,5,1,2,2,3,6.251,0.202,hide my feelings
+27,6,1,2,3,3,3.065,0.033,dream about my wedding 
+28,2,1,2,2,3,5.622,0.019,take bubble baths
+29,5,1,2,3,4,0.077,0.176,worry about grades
+30,6,1,2,2,2,4.052,0.164,act without thinking
+31,3,1,2,2,2,0.206,0.031,wear leggings
+32,2,1,2,3,4,0.576,0.386,wear sunglasses
+33,6,1,2,3,3,1.503,0.358,wish I had more friends
+34,4,1,2,4,3,0.005,0.060,ignore my parents
+35,2,1,2,2,3,2.688,0.104,wear PJs all day
+36,1,1,2,4,3,2.434,0.299,drink milk
+37,5,1,2,2,3,0.692,0.101,can't ignore gossip 
+38,3,1,2,3,3,1.063,0.392,read magazines
+39,6,1,2,2,2,5.907,0.213,want to be alone
+40,1,1,2,3,2,1.592,0.032,shower before bed
+41,4,1,2,3,2,7.628,0.328,get self-conscious

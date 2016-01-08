@@ -1,0 +1,41 @@
+1,6,1,2,2,2,5.907,0.031,worry about high school
+2,2,1,2,2,3,1.623,0.047,like to doodle
+3,3,1,2,2,2,0.005,0.213,like leftovers
+4,4,1,2,3,2,0.692,0.038,weigh myself
+5,5,1,2,2,3,2.018,0.106,make friends easily
+6,2,1,2,3,4,0.296,0.102,use lotion
+7,5,1,2,3,4,0.206,0.268,think I'm weird
+8,1,1,2,3,2,2.373,0.074,don't make my bed
+9,4,1,2,4,3,1.503,0.019,hate going to school
+10,6,1,2,3,3,1.573,0.164,wish I had more friends
+11,5,1,2,2,3,2.688,0.202,judge people
+12,1,1,2,4,3,1.429,0.066,go to the pool
+13,3,1,2,3,3,1.125,0.127,wear PJs all day
+14,1,1,2,3,2,1.003,0.033,go to the movies
+15,6,1,2,2,2,0.275,0.060,get picked on
+16,2,1,2,2,3,1.063,0.037,wear flip flops
+17,3,1,2,2,2,6.251,0.243,braid my hair
+18,1,1,2,4,3,0.258,0.032,decorate my room
+19,2,1,2,3,4,1.282,0.213,sing in the shower
+20,4,1,2,3,2,0.737,0.233,can't wait to be older
+21,3,1,2,3,3,0.968,0.127,try new foods
+22,5,1,2,3,4,0.383,0.259,think I'm too quiet
+23,4,1,2,4,3,0.966,0.126,can get moody
+24,1,1,2,4,2,2.434,0.114,shower before bed
+25,4,1,2,4,2,0.880,0.358,want to be popular
+26,5,1,2,2,4,0.792,0.464,want to be alone
+27,6,1,2,3,3,0.342,0.073,like flirting
+28,2,1,2,2,4,0.178,0.698,burn my toast
+29,5,1,2,2,4,0.775,0.224,tease my sibling
+30,6,1,2,4,4,0.271,0.028,get mad at friends
+31,3,1,2,4,4,0.128,0.392,like cold pizza
+32,2,1,2,2,4,1.592,0.043,can be messy
+33,6,1,2,4,4,0.085,0.431,think smoking is gross
+34,4,1,2,4,2,1.254,0.104,can't ignore gossip 
+35,2,1,2,2,4,0.023,0.101,like eating out
+36,1,1,2,4,2,0.077,0.176,read magazines
+37,5,1,2,2,4,0.004,0.299,don't like my life
+38,3,1,2,4,4,0.576,0.105,sleep in late
+39,6,1,2,4,4,5.622,0.328,feel shy in groups
+40,1,1,2,4,2,4.052,0.386,listen to music
+41,4,1,2,4,2,9.724,0.358,like breaking rules

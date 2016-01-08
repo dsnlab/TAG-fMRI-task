@@ -1,0 +1,41 @@
+1,6,1,2,3,3,1.003,0.213,hide my feelings
+2,2,1,2,3,4,1.623,0.386,can be creative
+3,3,1,2,3,3,0.275,0.299,don't make my bed
+4,4,1,2,4,3,0.271,0.104,think I'm weird
+5,5,1,2,3,4,0.880,0.328,find homework hard
+6,2,1,2,2,3,0.085,0.164,like wearing makeup
+7,5,1,2,2,3,2.688,0.392,can be mean
+8,1,1,2,4,3,0.966,0.358,like wearing costumes
+9,4,1,2,3,2,1.125,0.038,wish I was in love
+10,6,1,2,2,2,3.065,0.224,hate going to school
+11,5,1,2,2,4,0.128,0.114,think I'm too quiet
+12,1,1,2,3,2,2.224,0.126,don't brush my teeth
+13,3,1,2,2,2,0.296,0.171,go to the pool
+14,1,1,2,4,2,0.383,0.202,decorate my room
+15,6,1,2,4,4,1.573,0.047,weigh myself
+16,2,1,2,2,4,1.254,0.358,like leftovers
+17,3,1,2,4,4,0.342,0.043,go to the movies
+18,1,1,2,4,2,0.692,0.031,stay up late
+19,2,1,2,2,4,2.373,0.243,use lotion
+20,4,1,2,4,2,4.052,0.698,judge people
+21,3,1,2,4,4,5.907,0.127,listen to music
+22,5,1,2,2,4,0.737,0.259,worry about drugs
+23,4,1,2,4,2,5.622,0.431,make friends easily
+24,1,1,2,4,3,0.077,0.464,try new foods
+25,4,1,2,4,3,1.503,0.105,feel shy in groups
+26,5,1,2,3,4,1.429,0.101,want to be popular
+27,6,1,2,4,4,0.258,0.033,wish I had more friends
+28,2,1,2,3,4,1.063,0.032,wear PJs all day
+29,5,1,2,2,4,6.251,0.037,act without thinking
+30,6,1,2,3,3,0.968,0.073,can't keep secrets  
+31,3,1,2,3,3,0.206,0.213,wear sunglasses
+32,2,1,2,2,4,0.775,0.233,like reality TV
+33,6,1,2,4,4,2.018,0.066,like flirting
+34,4,1,2,4,2,0.178,0.268,dream about my wedding 
+35,2,1,2,3,4,1.592,0.060,burn my toast
+36,1,1,2,4,2,2.434,0.127,take bubble baths
+37,5,1,2,3,4,0.792,0.019,can get moody
+38,3,1,2,4,4,0.004,0.102,sing in the shower
+39,6,1,2,3,3,0.576,0.106,want to be alone
+40,1,1,2,4,3,0.005,0.028,shower before bed
+41,4,1,2,4,3,7.523,0.176,get picked on

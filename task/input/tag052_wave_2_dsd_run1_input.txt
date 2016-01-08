@@ -1,0 +1,41 @@
+1,6,1,2,2,2,2.373,0.032,find homework hard
+2,2,1,2,2,3,1.573,0.106,like wearing makeup
+3,3,1,2,2,2,1.063,0.074,go to the pool
+4,4,1,2,3,2,0.968,0.102,hate going to school
+5,5,1,2,2,3,0.128,0.164,want to be alone
+6,2,1,2,2,4,0.966,0.104,shower before bed
+7,5,1,2,2,4,0.275,0.019,dream about my wedding 
+8,1,1,2,3,2,1.592,0.464,take bubble baths
+9,4,1,2,4,2,0.576,0.358,get mad at friends
+10,6,1,2,4,4,0.692,0.033,judge people
+11,5,1,2,2,3,0.383,0.127,tease my sibling
+12,1,1,2,4,2,0.004,0.073,can be messy
+13,3,1,2,4,4,1.282,0.358,go to the movies
+14,1,1,2,3,2,5.907,0.392,like cold pizza
+15,6,1,2,2,2,0.296,0.299,don't like my life
+16,2,1,2,2,3,1.429,0.259,sleep in late
+17,3,1,2,2,2,2.224,0.176,wear leggings
+18,1,1,2,4,2,0.258,0.202,like eating out
+19,2,1,2,2,4,0.880,0.037,sing in the shower
+20,4,1,2,3,2,3.065,0.047,worry about grades
+21,3,1,2,4,4,1.125,0.213,braid my hair
+22,5,1,2,2,4,1.003,0.386,think smoking is gross
+23,4,1,2,4,2,2.018,0.105,can get moody
+24,1,1,2,4,3,0.085,0.031,like sleepovers
+25,4,1,2,4,3,2.434,0.114,can't wait to be older
+26,5,1,2,3,4,0.023,0.243,dislike my body
+27,6,1,2,4,4,1.254,0.066,get picked on
+28,2,1,2,3,4,4.052,0.101,wear flip flops
+29,5,1,2,3,4,0.178,0.038,copy homework
+30,6,1,2,3,3,0.737,0.268,act without thinking
+31,3,1,2,3,3,0.342,0.126,play board games
+32,2,1,2,3,4,0.005,0.233,wear sunglasses
+33,6,1,2,3,3,5.622,0.431,weigh myself
+34,4,1,2,4,3,0.792,0.224,can't ignore gossip 
+35,2,1,2,2,4,1.623,0.043,like leftovers
+36,1,1,2,4,3,6.251,0.328,read magazines
+37,5,1,2,2,4,0.775,0.028,can't keep secrets  
+38,3,1,2,3,3,0.077,0.213,like reality TV
+39,6,1,2,4,4,1.503,0.060,want to be popular
+40,1,1,2,4,2,0.206,0.171,try new foods
+41,4,1,2,4,2,10.188,0.698,like flirting

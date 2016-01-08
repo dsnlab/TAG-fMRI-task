@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.077,0.176,dream about my wedding 
+2,2,1,2,3,4,0.692,0.101,take bubble baths
+3,3,1,2,3,3,1.282,0.106,like sleepovers
+4,4,1,2,4,3,0.737,0.047,dislike my body
+5,5,1,2,3,4,0.128,0.328,think smoking is gross
+6,2,1,2,2,4,1.623,0.431,like eating out
+7,5,1,2,2,4,0.004,0.126,wish I had more friends
+8,1,1,2,4,3,0.576,0.386,wear PJs all day
+9,4,1,2,4,2,2.018,0.358,don't like my life
+10,6,1,2,4,4,0.206,0.031,hate going to school
+11,5,1,2,2,4,2.224,0.073,act without thinking
+12,1,1,2,4,2,0.005,0.060,sleep in late
+13,3,1,2,4,4,0.342,0.038,go to the pool
+14,1,1,2,4,2,0.775,0.066,wear sunglasses
+15,6,1,2,4,4,0.085,0.259,like flirting
+16,2,1,2,2,4,0.178,0.105,burn my toast
+17,3,1,2,4,4,1.063,0.392,forget to turn off lights
+18,1,1,2,4,2,1.503,0.358,drink milk
+19,2,1,2,2,4,1.254,0.171,wear flip flops
+20,4,1,2,4,2,2.373,0.268,get self-conscious
+21,3,1,2,3,3,1.573,0.127,read magazines
+22,5,1,2,2,4,1.592,0.032,ignore my parents
+23,4,1,2,4,2,0.968,0.224,get picked on
+24,1,1,2,4,2,0.271,0.074,sing in the shower
+25,4,1,2,4,2,0.023,0.233,can't ignore gossip 
+26,5,1,2,2,4,5.622,0.019,can get moody
+27,6,1,2,3,3,3.065,0.033,judge people
+28,2,1,2,2,4,0.275,0.464,go to the movies
+29,5,1,2,3,4,0.383,0.114,feel shy in groups
+30,6,1,2,4,4,0.258,0.698,tease my sibling
+31,3,1,2,4,4,0.296,0.043,listen to music
+32,2,1,2,3,4,0.966,0.243,like cold pizza
+33,6,1,2,3,3,2.688,0.104,can be awkward
+34,4,1,2,4,3,1.429,0.213,can be mean
+35,2,1,2,2,3,4.052,0.164,like watching sports
+36,1,1,2,4,3,6.251,0.202,like wearing costumes
+37,5,1,2,2,3,1.125,0.102,think I look bomb
+38,3,1,2,3,3,5.907,0.213,like burning candles
+39,6,1,2,2,2,1.003,0.037,pretend to like people
+40,1,1,2,3,2,0.880,0.127,paint my nails
+41,4,1,2,3,2,9.934,0.299,get embarrassed

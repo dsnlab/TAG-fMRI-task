@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.737,0.698,wish I had more friends
+2,2,1,2,2,3,0.258,0.243,wear PJs all day
+3,3,1,2,2,2,0.966,0.268,like to doodle
+4,4,1,2,3,2,0.023,0.171,worry about high school
+5,5,1,2,2,3,1.282,0.102,copy homework
+6,2,1,2,2,3,4.052,0.028,play board games
+7,5,1,2,2,3,0.271,0.031,like breaking rules
+8,1,1,2,3,2,0.005,0.114,forget people's names
+9,4,1,2,3,2,0.383,0.358,judge people
+10,6,1,2,2,2,0.692,0.073,tell little lies
+11,5,1,2,2,4,2.688,0.074,like flirting
+12,1,1,2,3,2,5.907,0.213,go to the movies
+13,3,1,2,2,2,1.573,0.213,wear bright colors
+14,1,1,2,4,2,2.224,0.127,burn my toast
+15,6,1,2,4,4,0.792,0.328,worry about kissing
+16,2,1,2,2,4,3.065,0.033,go barefoot
+17,3,1,2,4,4,0.004,0.358,like wearing makeup
+18,1,1,2,4,2,2.434,0.105,paint my nails
+19,2,1,2,2,4,1.592,0.176,like reality TV
+20,4,1,2,4,2,1.063,0.106,find homework hard
+21,3,1,2,3,3,0.128,0.259,drink milk
+22,5,1,2,2,4,1.125,0.019,pretend to like people
+23,4,1,2,4,2,0.077,0.047,can't keep secrets  
+24,1,1,2,4,3,1.254,0.037,can be creative
+25,4,1,2,4,3,1.429,0.127,ignore my parents
+26,5,1,2,3,4,2.373,0.060,hide my feelings
+27,6,1,2,3,3,1.003,0.043,tease my sibling
+28,2,1,2,3,4,0.775,0.386,like cold pizza
+29,5,1,2,3,4,0.178,0.392,weigh myself
+30,6,1,2,3,3,6.251,0.126,think I'm too quiet
+31,3,1,2,3,3,0.880,0.164,like leftovers
+32,2,1,2,3,4,0.576,0.066,decorate my room
+33,6,1,2,3,3,1.503,0.431,dislike my body
+34,4,1,2,4,3,0.342,0.299,get mad at friends
+35,2,1,2,2,4,0.296,0.233,like sleepovers
+36,1,1,2,4,3,0.968,0.202,can be messy
+37,5,1,2,2,4,5.622,0.224,can get moody
+38,3,1,2,3,3,0.275,0.101,sing in the shower
+39,6,1,2,4,4,1.623,0.038,act without thinking
+40,1,1,2,4,2,0.206,0.032,wear sunglasses
+41,4,1,2,4,2,9.518,0.464,worry about grades

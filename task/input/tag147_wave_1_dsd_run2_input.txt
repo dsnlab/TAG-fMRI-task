@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.023,0.104,hate going to school
+2,2,1,2,3,4,2.373,0.073,go to the pool
+3,3,1,2,3,3,0.271,0.224,forget people's names
+4,4,1,2,4,3,1.573,0.431,like breaking rules
+5,5,1,2,3,4,0.206,0.464,think I'm too quiet
+6,2,1,2,3,4,0.966,0.031,decorate my room
+7,5,1,2,3,4,3.065,0.066,weigh myself
+8,1,1,2,4,3,0.005,0.033,like leftovers
+9,4,1,2,4,3,0.342,0.127,tease my sibling
+10,6,1,2,3,3,1.623,0.213,can get moody
+11,5,1,2,3,4,0.296,0.043,dislike my body
+12,1,1,2,4,3,5.907,0.243,like cold pizza
+13,3,1,2,3,3,0.258,0.213,sing in the shower
+14,1,1,2,4,3,2.224,0.358,like sleepovers
+15,6,1,2,3,3,1.254,0.202,can be awkward
+16,2,1,2,3,4,5.622,0.171,like watching sports
+17,3,1,2,3,3,1.125,0.259,shower before bed
+18,1,1,2,4,2,0.792,0.386,try new foods
+19,2,1,2,2,4,2.688,0.114,go to the movies
+20,4,1,2,4,3,1.503,0.126,want to be alone
+21,3,1,2,4,4,0.692,0.019,like to wear hats
+22,5,1,2,2,4,4.052,0.164,want to be popular
+23,4,1,2,4,2,1.003,0.038,judge people
+24,1,1,2,4,2,0.880,0.060,don't make my bed
+25,4,1,2,4,2,0.775,0.328,feel lonely
+26,5,1,2,2,4,1.063,0.358,think I'm weird
+27,6,1,2,4,4,0.275,0.105,dream about my wedding 
+28,2,1,2,2,4,0.004,0.176,take bubble baths
+29,5,1,2,2,4,1.592,0.698,wish I was in love
+30,6,1,2,4,4,1.282,0.127,can't keep secrets  
+31,3,1,2,4,4,0.077,0.106,don't brush my teeth
+32,2,1,2,2,4,2.018,0.268,like reality TV
+33,6,1,2,4,4,0.968,0.233,think smoking is gross
+34,4,1,2,4,2,0.128,0.392,can't ignore gossip 
+35,2,1,2,3,4,0.737,0.032,like eating out
+36,1,1,2,4,2,0.576,0.101,read magazines
+37,5,1,2,3,4,2.434,0.028,worry about kissing
+38,3,1,2,4,4,6.251,0.047,go barefoot
+39,6,1,2,3,3,0.383,0.102,hide my feelings
+40,1,1,2,4,3,0.085,0.299,can be creative
+41,4,1,2,4,3,7.678,0.074,can be mean

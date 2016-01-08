@@ -1,0 +1,41 @@
+1,6,1,2,2,2,1.125,0.102,worry about high school
+2,2,1,2,2,3,0.692,0.101,like to doodle
+3,3,1,2,2,2,0.085,0.259,like wearing makeup
+4,4,1,2,3,2,1.282,0.106,find homework hard
+5,5,1,2,2,3,2.373,0.268,dislike my body
+6,2,1,2,2,3,1.254,0.171,like sleepovers
+7,5,1,2,2,3,0.775,0.066,make friends easily
+8,1,1,2,3,2,0.023,0.233,use lotion
+9,4,1,2,3,2,1.063,0.392,can't ignore gossip 
+10,6,1,2,2,2,0.077,0.176,act without thinking
+11,5,1,2,3,4,2.688,0.104,feel lonely
+12,1,1,2,3,2,0.966,0.243,read magazines
+13,3,1,2,2,2,0.258,0.698,wear sunglasses
+14,1,1,2,4,3,5.622,0.019,like to wear hats
+15,6,1,2,3,3,0.005,0.060,can get moody
+16,2,1,2,3,4,1.003,0.037,sing in the shower
+17,3,1,2,3,3,6.251,0.202,sleep in late
+18,1,1,2,4,2,0.383,0.114,listen to music
+19,2,1,2,2,4,4.052,0.164,stay up late
+20,4,1,2,4,3,1.592,0.032,don't like my life
+21,3,1,2,4,4,2.018,0.358,wear PJs all day
+22,5,1,2,2,4,1.429,0.213,feel shy in groups
+23,4,1,2,4,2,2.224,0.073,worry about drugs
+24,1,1,2,4,2,3.065,0.033,go to the pool
+25,4,1,2,4,2,0.128,0.328,wish I had more friends
+26,5,1,2,2,4,5.907,0.213,hate going to school
+27,6,1,2,4,4,0.271,0.074,want to be alone
+28,2,1,2,2,4,0.275,0.464,shower before bed
+29,5,1,2,3,4,0.968,0.224,want to be popular
+30,6,1,2,4,4,1.623,0.431,hide my feelings
+31,3,1,2,4,4,2.434,0.299,try new foods
+32,2,1,2,3,4,0.880,0.127,can be creative
+33,6,1,2,3,3,0.737,0.047,worry about kissing
+34,4,1,2,4,3,0.792,0.028,dream about my wedding 
+35,2,1,2,3,4,0.206,0.031,go barefoot
+36,1,1,2,4,3,0.004,0.126,take bubble baths
+37,5,1,2,3,4,1.573,0.127,tease my sibling
+38,3,1,2,3,3,0.296,0.043,like cold pizza
+39,6,1,2,3,3,0.178,0.105,can't wait to be older
+40,1,1,2,4,3,1.503,0.358,braid my hair
+41,4,1,2,4,3,7.842,0.038,think I'm weird

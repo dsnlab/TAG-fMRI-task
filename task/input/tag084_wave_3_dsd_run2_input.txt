@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.296,0.171,don't like my life
+2,2,1,2,2,4,0.966,0.358,sleep in late
+3,3,1,2,4,4,1.573,0.047,wear sunglasses
+4,4,1,2,4,2,1.063,0.032,act without thinking
+5,5,1,2,2,4,0.383,0.202,can be awkward
+6,2,1,2,2,4,2.688,0.392,like watching sports
+7,5,1,2,2,4,2.373,0.243,worry about high school
+8,1,1,2,4,2,0.968,0.073,like to doodle
+9,4,1,2,4,2,2.018,0.066,want to be popular
+10,6,1,2,3,3,6.251,0.037,pretend to like people
+11,5,1,2,2,4,1.623,0.386,hate going to school
+12,1,1,2,4,2,0.775,0.233,try new foods
+13,3,1,2,3,3,0.275,0.299,paint my nails
+14,1,1,2,4,2,1.503,0.105,go to the pool
+15,6,1,2,4,4,0.258,0.033,count calories
+16,2,1,2,2,4,5.622,0.431,carry chapstick
+17,3,1,2,4,4,0.077,0.464,stay up late
+18,1,1,2,3,2,1.592,0.060,listen to music
+19,2,1,2,2,3,1.003,0.213,like cold pizza
+20,4,1,2,4,2,2.224,0.126,worry about drugs
+21,3,1,2,2,2,0.206,0.213,don't brush my teeth
+22,5,1,2,2,3,1.125,0.038,feel shy in groups
+23,4,1,2,3,2,0.692,0.031,tease my sibling
+24,1,1,2,3,2,0.004,0.102,wear bright colors
+25,4,1,2,3,2,1.282,0.074,wish I was in love
+26,5,1,2,2,3,0.792,0.019,tell little lies
+27,6,1,2,2,2,0.880,0.328,dislike my body
+28,2,1,2,2,3,0.178,0.268,like sleepovers
+29,5,1,2,3,4,0.342,0.043,weigh myself
+30,6,1,2,2,2,5.907,0.127,wish I had more friends
+31,3,1,2,2,2,2.434,0.127,like leftovers
+32,2,1,2,3,4,0.128,0.114,wear PJs all day
+33,6,1,2,3,3,0.023,0.176,get self-conscious
+34,4,1,2,4,3,0.271,0.104,can be mean
+35,2,1,2,2,4,1.429,0.101,forget to turn off lights
+36,1,1,2,4,3,1.254,0.358,like wearing costumes
+37,5,1,2,2,4,0.737,0.259,dream about my wedding 
+38,3,1,2,3,3,4.052,0.698,take bubble baths
+39,6,1,2,4,4,3.065,0.224,like breaking rules
+40,1,1,2,4,2,0.085,0.164,forget people's names
+41,4,1,2,4,2,8.076,0.106,get mad at friends

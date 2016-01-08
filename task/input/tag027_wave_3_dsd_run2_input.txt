@@ -1,0 +1,41 @@
+1,6,1,2,2,2,1.429,0.127,think smoking is gross
+2,2,1,2,2,3,6.251,0.126,like eating out
+3,3,1,2,2,2,0.880,0.164,like to doodle
+4,4,1,2,3,2,0.178,0.392,worry about high school
+5,5,1,2,2,3,0.085,0.104,dislike my body
+6,2,1,2,3,4,0.023,0.171,like sleepovers
+7,5,1,2,3,4,0.737,0.698,count calories
+8,1,1,2,3,2,1.573,0.213,carry chapstick
+9,4,1,2,4,3,1.063,0.106,can't wait to be older
+10,6,1,2,3,3,4.052,0.028,feel shy in groups
+11,5,1,2,2,3,0.206,0.032,get picked on
+12,1,1,2,4,3,1.623,0.038,braid my hair
+13,3,1,2,3,3,2.224,0.127,listen to music
+14,1,1,2,3,2,0.296,0.233,wear flip flops
+15,6,1,2,2,2,5.622,0.224,tease my sibling
+16,2,1,2,2,3,1.125,0.019,like cold pizza
+17,3,1,2,2,2,2.688,0.074,like wearing costumes
+18,1,1,2,4,2,0.271,0.031,paint my nails
+19,2,1,2,2,4,1.003,0.043,forget people's names
+20,4,1,2,3,2,0.005,0.114,can be mean
+21,3,1,2,3,3,0.966,0.268,forget to turn off lights
+22,5,1,2,2,4,0.576,0.066,pretend to like people
+23,4,1,2,4,2,0.258,0.243,like breaking rules
+24,1,1,2,4,2,2.018,0.464,drink milk
+25,4,1,2,4,2,3.065,0.033,get self-conscious
+26,5,1,2,2,4,5.907,0.213,ignore my parents
+27,6,1,2,3,3,0.004,0.358,act without thinking
+28,2,1,2,2,4,1.254,0.037,wear sunglasses
+29,5,1,2,3,4,0.342,0.299,worry about drugs
+30,6,1,2,4,4,0.128,0.259,feel lonely
+31,3,1,2,4,4,1.503,0.431,stay up late
+32,2,1,2,3,4,2.434,0.105,like to wear hats
+33,6,1,2,3,3,2.373,0.060,want to be alone
+34,4,1,2,4,3,1.592,0.176,make friends easily
+35,2,1,2,2,3,0.775,0.386,shower before bed
+36,1,1,2,4,3,0.792,0.328,use lotion
+37,5,1,2,2,3,0.077,0.047,find homework hard
+38,3,1,2,3,3,0.692,0.073,like wearing makeup
+39,6,1,2,2,2,0.968,0.202,don't like my life
+40,1,1,2,3,2,1.282,0.102,sleep in late
+41,4,1,2,3,2,7.775,0.101,can be awkward

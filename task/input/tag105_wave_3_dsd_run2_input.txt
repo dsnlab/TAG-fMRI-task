@@ -1,0 +1,41 @@
+1,6,1,2,3,3,1.503,0.105,worry about drugs
+2,2,1,2,3,4,1.623,0.386,stay up late
+3,3,1,2,3,3,1.254,0.358,like burning candles
+4,4,1,2,4,3,2.373,0.243,think I look bomb
+5,5,1,2,3,4,0.296,0.171,worry about kissing
+6,2,1,2,3,4,0.737,0.259,go barefoot
+7,5,1,2,3,4,0.342,0.043,pretend to like people
+8,1,1,2,4,3,1.429,0.101,paint my nails
+9,4,1,2,4,3,0.576,0.106,like flirting
+10,6,1,2,3,3,0.692,0.031,dream about my wedding 
+11,5,1,2,2,4,5.907,0.127,think I'm too quiet
+12,1,1,2,4,3,2.434,0.127,burn my toast
+13,3,1,2,3,3,2.018,0.066,take bubble baths
+14,1,1,2,4,2,0.792,0.019,decorate my room
+15,6,1,2,4,4,0.178,0.268,want to be alone
+16,2,1,2,2,4,0.085,0.164,shower before bed
+17,3,1,2,4,4,0.077,0.464,go to the movies
+18,1,1,2,4,2,1.063,0.032,like wearing costumes
+19,2,1,2,2,4,0.880,0.328,wear leggings
+20,4,1,2,4,2,0.206,0.213,judge people
+21,3,1,2,4,4,4.052,0.698,listen to music
+22,5,1,2,2,4,1.003,0.213,can be mean
+23,4,1,2,4,2,1.125,0.038,worry about grades
+24,1,1,2,3,2,0.258,0.033,can be creative
+25,4,1,2,3,2,0.271,0.104,feel shy in groups
+26,5,1,2,2,3,0.966,0.358,hide my feelings
+27,6,1,2,4,4,1.282,0.074,count calories
+28,2,1,2,2,3,0.383,0.202,carry chapstick
+29,5,1,2,3,4,0.275,0.299,can be awkward
+30,6,1,2,2,2,2.688,0.392,don't like my life
+31,3,1,2,2,2,2.224,0.126,like watching sports
+32,2,1,2,3,4,0.023,0.176,sleep in late
+33,6,1,2,3,3,0.004,0.102,get self-conscious
+34,4,1,2,4,3,0.968,0.073,make friends easily
+35,2,1,2,2,3,1.592,0.060,forget to turn off lights
+36,1,1,2,4,3,0.775,0.233,use lotion
+37,5,1,2,2,3,0.005,0.028,weigh myself
+38,3,1,2,3,3,3.065,0.224,like leftovers
+39,6,1,2,2,2,6.251,0.037,think I'm weird
+40,1,1,2,3,2,1.573,0.047,don't make my bed
+41,4,1,2,3,2,7.628,0.114,get picked on

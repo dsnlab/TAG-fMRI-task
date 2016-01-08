@@ -1,0 +1,41 @@
+1,6,1,2,3,3,5.907,0.243,get self-conscious
+2,2,1,2,3,4,1.503,0.126,forget to turn off lights
+3,3,1,2,3,3,5.622,0.171,stay up late
+4,4,1,2,4,3,0.737,0.032,worry about drugs
+5,5,1,2,3,4,0.023,0.104,can get moody
+6,2,1,2,2,4,0.880,0.060,sing in the shower
+7,5,1,2,2,4,0.775,0.328,feel lonely
+8,1,1,2,4,3,2.018,0.268,like to wear hats
+9,4,1,2,4,2,1.573,0.431,can be mean
+10,6,1,2,4,4,0.271,0.224,dream about my wedding 
+11,5,1,2,3,4,0.792,0.386,get mad at friends
+12,1,1,2,4,2,0.966,0.031,like wearing costumes
+13,3,1,2,4,4,0.005,0.033,take bubble baths
+14,1,1,2,4,3,0.296,0.043,can be messy
+15,6,1,2,3,3,1.429,0.037,make friends easily
+16,2,1,2,3,4,6.251,0.047,use lotion
+17,3,1,2,3,3,2.434,0.028,go barefoot
+18,1,1,2,4,3,1.125,0.259,like sleepovers
+19,2,1,2,3,4,0.383,0.102,forget people's names
+20,4,1,2,4,3,1.282,0.127,worry about kissing
+21,3,1,2,3,3,0.342,0.127,wear flip flops
+22,5,1,2,3,4,0.258,0.213,dislike my body
+23,4,1,2,4,3,1.592,0.698,like breaking rules
+24,1,1,2,3,2,2.373,0.073,can be creative
+25,4,1,2,3,2,0.178,0.074,get picked on
+26,5,1,2,2,3,2.688,0.114,hide my feelings
+27,6,1,2,3,3,3.065,0.066,worry about high school
+28,2,1,2,2,3,0.077,0.106,like to doodle
+29,5,1,2,2,3,0.085,0.299,count calories
+30,6,1,2,2,2,0.968,0.233,judge people
+31,3,1,2,2,2,0.004,0.176,carry chapstick
+32,2,1,2,2,3,0.275,0.105,go to the movies
+33,6,1,2,2,2,0.206,0.464,can't keep secrets  
+34,4,1,2,3,2,4.052,0.164,pretend to like people
+35,2,1,2,2,4,0.692,0.019,like reality TV
+36,1,1,2,3,2,1.623,0.213,paint my nails
+37,5,1,2,2,4,2.224,0.358,don't like my life
+38,3,1,2,2,2,1.003,0.038,sleep in late
+39,6,1,2,4,4,0.576,0.101,think I'm weird
+40,1,1,2,4,2,0.128,0.392,don't make my bed
+41,4,1,2,4,2,8.754,0.202,think I'm too quiet
