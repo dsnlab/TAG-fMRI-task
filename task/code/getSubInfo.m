@@ -71,7 +71,7 @@ stim.promptMatrix{2}(:,:,4) = (stim.alpha.delta) ./255;
 
 % store stim in drs and save
 drs.stim = stim;
-saveFile = [drs.input.path,filesep,[drs.subID,'_wave_',num2str(waveNum),'_info.mat']];
+saveFile = [drs.input.path,filesep,[drs.subID,'_wave_',num2str(drs.waveNum),'_info.mat']];
 save(saveFile,'drs');
 
 return

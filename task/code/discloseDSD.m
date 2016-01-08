@@ -1,6 +1,6 @@
-function [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg, runNumArg)
+function [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg)
 % % discloseDSD.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% usage: [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg, runNumArg)
+% usage: [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg)
 %
 %   All args are scalar
 %
@@ -28,34 +28,28 @@ function [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg, runNumArg)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-subNumArg = '000';
-waveNumArg = 1;
-runNumArg = ;
-
 switch nargin
     case 0
         clear all;
         prompt = {...
         'sub num: ',...
-        'wave num: ',...
-        'run num: '};
-        dTitle = 'Input Subject, Wave, and Run Number';
+        'wave num: '};
+        dTitle = 'Input Subject and Wave';
         nLines = 1;
         % defaults
-        def = {'', '', ''};
+        def = {'', ''};
         manualInput = inputdlg(prompt,dTitle,nLines,def);
         subNum = str2double(manualInput{1});
         waveNum = str2double(manualInput{2});
-        runNum = str2double(manualInput{3});
     case 1
-        error('Must specify 0 or 3 arguments');
+        error('Must specify 0 or 2 arguments');
     case 2
-        error('Must specify 0 or 3 arguments');
-    case 3
         subNum = subNumArg;
         waveNum = waveNumArg;
-        runNum = runNumArg;
 end
+
+subNum = 0;
+waveNum = 1;
 
 %% get subID from subNum
 if subNum < 10
@@ -69,18 +63,14 @@ end
 % load subject's drs structure
 subInfoFile = [subID,'_wave_',num2str(waveNum),'_info.mat'];
 load(subInfoFile);
-thisRun = ['run',num2str(runNum)];
-if strcmp(thisRun,'run0')
-  inputTextFile = [drs.input.path,filesep,'dsd_practice_input.txt'];
-  subOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_rpe_',thisRun,'.mat'];
-else
-  subOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_',thisRun,'.mat'];
-  inputTextFile = [drs.input.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_',thisRun,'_input.txt'];
-  outputTextFile = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_',thisRun,'_output.txt'];
-end
 
-load(subOutputMat);
+finalDiscoOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_finalOut.mat'];
+finalDiscoOutputTxt = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_finalOut.txt'];
 
+subOutputMat1 = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_run1.mat'];
+subOutputMat2 = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_run2.mat'];
+task1=load(subOutputMat1);
+task2=load(subOutputMat2);
 %%
 % Set up discos we are allowed to share
 %
@@ -106,7 +96,7 @@ affDisco = {'can get moody', ...
 'dream about my wedding ', ...
 'worry about high school', ...
 'feel lonely', ...
-'get mad at friends'}
+'get mad at friends'};
 
 neutDisco = {'like wearing makeup', ...
 'wear leggings?', ...
@@ -127,14 +117,18 @@ neutDisco = {'like wearing makeup', ...
 'take bubble baths', ...
 'listen to music', ...
 'try new foods', ...
-'braid my hair'}
+'braid my hair'};
 
-%%
-% Get the output we want
+%% Get the output we want
+% 
+% task.output.raw:
 %       8. choiceResponse - Share or not? (leftkeys = 1, rightkeys = 2)
 %       11. discoResponse - endorse or not?  (leftkeys = 1, rightkeys = 2)
+% task.input.stament
+% task.payout
+% drs.friend
 %
-% Wether correspondence between keys and yes/no response may change by
+% Whether correspondence between keys and yes/no response may change by
 % participant number
 %
 
@@ -143,16 +137,54 @@ if subNum < 40
     yesResp = 1;
     shareResp = 2;
 else
-    warning("Have you swapped choice positions yet?")
+    display('Have you swapped choice positions yet?')
     yesResp = 1;
     shareResp = 2;
 end
-    
-allRowsDisclosed = task.output.raw(8,:) == shareResp;
-task.input.statement
-task.payout
 
+allDiscoChoices = [task1.task.output.raw(:,8); task2.task.output.raw(:,8)];
+allDiscoChoices = floor(rand(82,1)+1.5);
+display('MUST DELETE LINE 143 BEFORE USING!!!');
+allStatements = {task1.task.input.statement{:}, task2.task.input.statement{:}};
+allRowsDisclosed = allDiscoChoices == shareResp;
 
+if ~any(allRowsDisclosed)
+    display('WARNING: All statements kept private');
+    discoInfo.chosenStatements = {'NO STATEMENT', 'NO STATEMENT'};
+else
+    allDisclosedStatements = {allStatements{allRowsDisclosed}};
+    affStatementRows = ismember(allDisclosedStatements,affDisco);
+    neutStatementRows = ismember(allDisclosedStatements,neutDisco);
+    possibleAffStatements = {allDisclosedStatements{affStatementRows}};
+    possibleNeutStatements = {allDisclosedStatements{neutStatementRows}};
+    [~, nPossAff] = size(possibleAffStatements);
+    [~, nPossNeut] = size(possibleNeutStatements);
+    randAffItemNum = floor(nPossAff*rand(1)+1);
+    randNeutItemNum = floor(nPossNeut*rand(1)+1);
+    randAffItem = possibleAffStatements{randAffItemNum};
+    randNeutItem = possibleNeutStatements{randNeutItemNum};
+    discoInfo.chosenStatements = {['Sometimes I ' randAffItem], ['Sometimes I ' randNeutItem]};
+end
 
+discoInfo.payouts = {task1.task.payout, task2.task.payout};
+discoInfo.friend = drs.friend;
 
+stringSpec = 'Friend: %s\nPayout Run1: %u\nPayout Run2: %u\nStatements:\n\t1. %s\n\t2. %s\n';
+
+fid=fopen(finalDiscoOutputTxt,'a');
+fprintf(fid,stringSpec,...
+    discoInfo.friend, discoInfo.payouts{1}, discoInfo.payouts{2}, ...
+    discoInfo.chosenStatements{1}, discoInfo.chosenStatements{2});
+fclose(fid);
+
+displayString=sprintf(stringSpec,...
+    discoInfo.friend, discoInfo.payouts{1}, discoInfo.payouts{2}, ...
+    discoInfo.chosenStatements{1}, discoInfo.chosenStatements{2});
+
+display(displayString);
+
+save(finalDiscoOutputMat,'discoInfo');
+
+%% End Function
+end
 
