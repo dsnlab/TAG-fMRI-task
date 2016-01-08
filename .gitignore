@@ -12,4 +12,5 @@ task/input/tag*_info.mat
 *.m~
 ._*
 model*log
+*/.DS_Store
 .DS_Store
