@@ -5,7 +5,7 @@ bx/onset_files
 bx/onset_files/*
 task/input.old/*
 # Ignore subInfoMats
-task/input/tag*_info.mat 
+task/input/tag*_wave_1_info.mat
 
 # Temp files
 
