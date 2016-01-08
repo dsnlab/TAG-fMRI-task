@@ -48,9 +48,6 @@ switch nargin
         waveNum = waveNumArg;
 end
 
-subNum = 0;
-waveNum = 1;
-
 %% get subID from subNum
 if subNum < 10
   subID = ['tag00',num2str(subNum)];
@@ -143,8 +140,8 @@ else
 end
 
 allDiscoChoices = [task1.task.output.raw(:,8); task2.task.output.raw(:,8)];
-allDiscoChoices = floor(rand(82,1)+1.5);
-display('MUST DELETE LINE 143 BEFORE USING!!!');
+% allDiscoChoices = floor(rand(82,1)+1.5);
+% display('MUST DELETE LINE 143 BEFORE USING!!!');
 allStatements = {task1.task.input.statement{:}, task2.task.input.statement{:}};
 allRowsDisclosed = allDiscoChoices == shareResp;
 
