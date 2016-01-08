@@ -61,7 +61,7 @@ end
 % get thisRun from runNum
 thisRun = ['run',num2str(runNum)];
 % load subject's drs structure
-subInfoFile = [subID,'_wave_',num2str(waveNum),'_info.mat'];
+subInfoFile = ['input', filesep, subID,'_wave_',num2str(waveNum),'_info.mat'];
 load(subInfoFile);
 thisRun = ['run',num2str(runNum)];
 if strcmp(thisRun,'run0')
