@@ -1,6 +1,6 @@
-function [task] = runSVC(subNumArg, runNumArg)
+function [task] = runSVC(subNumArg, waveNumArg, runNumArg)
 % % RUNSVC.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% usage: [ task ] = runSVC( subNum, runNum )
+% usage: [ task ] = runSVC( subNumArg, waveNumArg, runNumArg )
 %
 %   subNum && runNum are scalar
 %

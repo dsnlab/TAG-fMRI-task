@@ -1,7 +1,9 @@
 %% set variables for saved design info & target directory (to save .txt files)
 svcTextFile = 'materials/svcTraits.txt';
 targetDirectory = '../input';
-NSubsTotal = 170;
+NRealSubsTotal = 250;
+NWavesTotal = 3;
+NSubsTotal = NRealSubsTotal * NWavesTotal;
 GAoutputDirectory = 'GAoutput';
 load('gammaDists.mat', 'gammaSVC');
 fid = fopen(svcTextFile,'r');
@@ -96,12 +98,20 @@ for dCount = 1:NSubsTotal
       condition = svcDesign(dCount).(thisRun).condition;
       reverse(tCount) = svcCell{3}(strcmp(word{tCount},svcCell{1}));
       syllables(tCount) = svcCell{4}(strcmp(word{tCount},svcCell{1}));
-      if dCount < 10
-        subID = ['drs00',num2str(dCount)];
-      elseif dCount >= 10
-        subID = ['drs0',num2str(dCount)];
+
+      waveNum = floor(((dCount-1)/250)+1); % wave number is just how far you are in the count
+    
+      subIDNum = dCount - 250 * (waveNum - 1);
+
+      if subIDNum < 10
+          subID = ['tag00',num2str(subIDNum)];
+      elseif subIDNum >= 10 & subIDNum < 100
+          subID = ['tag0',num2str(subIDNum)];
+      else
+      subID = ['tag',num2str(subIDNum)];
       end
-      fid = fopen([targetDirectory,filesep,subID,'_svc_','run',num2str(rCount),'_input.txt'],'a');
+
+      fid = fopen([targetDirectory,filesep,subID,'_wave_',num2str(waveNum),'_svc_','run',num2str(rCount),'_input.txt'],'a');
       formatSpec = '%u,%u,%4.3f,%u,%u,%s\n';
       fprintf(fid, formatSpec, tCount, condition(tCount), svcJitter(tCount), reverse(tCount), syllables(tCount), word{tCount});
       fclose(fid);

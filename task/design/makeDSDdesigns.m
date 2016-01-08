@@ -1,7 +1,8 @@
 GAdir = 'GAoutput';
 targetDirectory = '../input';
-NSubsTotal = 250;
+NRealSubsTotal = 250;
 NWavesTotal = 3;
+NSubsTotal = NRealSubsTotal * NWavesTotal;
 trialLength = 7.5;
 load('gammaDists.mat'); % loads variables choiceGammaDSD and discoGammaDSD
 
@@ -72,7 +73,7 @@ discoJitter = discoGammaDSD./1000';
 
 %targetA = repmat(1, numTrials, 1); % 1=Private
 %targetB = repmat(2, numTrials, 1); % 2=Share
- 
+
 for dCount = 1:NSubsTotal
     
     neutStatements = shuffle(neutRawStatements);
@@ -212,14 +213,18 @@ end
 
 
 for dCount = 1:NSubsTotal
-    if dCount < 10
-        subID = ['drs00',num2str(dCount)];
-    elseif dCount >= 10 & dCount < 100
-        subID = ['drs0',num2str(dCount)];
+    waveNum = floor(((dCount-1)/250)+1); % wave number is just how far you are in the count
+    
+    subIDNum = dCount - 250 * (waveNum - 1);
+        
+    if subIDNum < 10
+        subID = ['tag00',num2str(subIDNum)];
+    elseif subIDNum >= 10 & subIDNum < 100
+        subID = ['tag0',num2str(subIDNum)];
     else
-	subID = ['drs',num2str(dCount)];
+    subID = ['tag',num2str(subIDNum)];
     end
-
+        
     for rCount = 1:2
         thisRun = (['run',num2str(rCount)]);
         condition = dsdDesign(dCount).(thisRun).condition;
@@ -232,7 +237,7 @@ for dCount = 1:NSubsTotal
         discoJitter = dsdDesign(dCount).(thisRun).discoJitter;
 
         for tCount = 1:numOptTrials
-          fid = fopen([targetDirectory,filesep,subID,'_dsd_','run',num2str(rCount),'_input.txt'],'a');
+          fid = fopen([targetDirectory,filesep,subID,'_wave_',num2str(waveNum),'_dsd_','run',num2str(rCount),'_input.txt'],'a');
 
           fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%4.3f,%s\n',tCount,condition(tCount),leftTarget(tCount),rightTarget(tCount),leftCoin(tCount),rightCoin(tCount),choiceJitter(tCount),discoJitter(tCount),statement{tCount});
           fclose(fid);

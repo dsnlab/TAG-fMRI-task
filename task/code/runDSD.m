@@ -40,7 +40,7 @@ function [task] = runDSD(subNumArg, waveNumArg, runNumArg)
 %       8. choiceResponse - Share or not? (leftkeys = 1, rightkeys = 2)
 %       9. choiceRT - reaction time
 %       10. Time since trigger for statement decisions (discoOnset - loopStartTime);
-%       11. discoResponse - enorse or not?  (leftkeys = 1, rightkeys = 2)
+%       11. discoResponse - endorse or not?  (leftkeys = 1, rightkeys = 2)
 %       12. discoRT - reaction time
 %   task.input.statement
 %   task.payout
