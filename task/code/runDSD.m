@@ -251,7 +251,7 @@ for tCount = 1:numTrials
   WaitSecs('UntilTime',(discoOnset + 4.5 + discoJitter));
   %
   choiceResponse = 0;
-  drawHands(win,drs.stim,targets,[0.5 0.5]);
+  %drawHands(win,drs.stim,targets,[0.5 0.5]);
   drawChoice(win,drs.stim,targets,statement,discoResponse);
   KbQueueStart(inputDevice);
   % flip the screen to show choice

@@ -28,19 +28,19 @@ for fadeCount = 1:length(fadeVector)
   switch choiceResponse
   case 1
     alphas = [handGlow(fadeCount) handFade(fadeCount)];
-    fadeBox = stim.box.hand{2};
+    %fadeBox = stim.box.hand{2};
     fadeChoice = stim.box.choice{2}.*[0 1 0 1]+[stim.box.xCenter 0 stim.box.xDim 0]; %make box cover a wide x range
     fadeCoin = stim.box.coin{2};
   case 2
     alphas = [handFade(fadeCount) handGlow(fadeCount)];
-    fadeBox = stim.box.hand{1};
+    %fadeBox = stim.box.hand{1};
     fadeChoice = stim.box.choice{1};
     fadeCoin = stim.box.coin{1};
   end
   % chosen box
-  drawHands(win,stim,targets,alphas);
+  %drawHands(win,stim,targets,alphas);
   drawChoice(win,stim,targets,statement,discoResponse);
-  Screen('FillRect',win,[stim.bg(1:3) fadeVector(fadeCount)], fadeBox);
+  %Screen('FillRect',win,[stim.bg(1:3) fadeVector(fadeCount)], fadeBox);
   Screen('FillRect',win,[stim.bg(1:3) fadeVector(fadeCount)], fadeChoice);
   Screen('FillRect',win,[stim.bg(1:3) fadeVector(fadeCount)], fadeCoin);
   WaitSecs(0.025);
