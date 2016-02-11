@@ -95,6 +95,9 @@ screenNumber = max(Screen('Screens'));
 %[win,winBox] = PsychImaging('OpenWindow',screenNumber,bg,[0 0 1920/2 1080/2],[],'kPsychGUIWindow');
 [win,winBox] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
 % flip to get ifi
+
+HideCursor();
+
 Screen('Flip', win);
 drs.stim.ifi = Screen('GetFlipInterval', win);
 Screen('TextSize', win, 50);
