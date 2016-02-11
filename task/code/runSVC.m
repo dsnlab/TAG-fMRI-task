@@ -132,25 +132,26 @@ else
     calibrationTime = 17;
 end
 % remind em' not to squirm!
-DrawFormattedText(win, 'Calibrating scanner\n\n Please hold VERY still',...
+DrawFormattedText(win, 'Getting scan ready...\n\n hold really still!',...
   'center', 'center', drs.stim.white);
 [~,calibrationOnset] = Screen('Flip', win);
-WaitSecs(calibrationTime);
-DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 5',...
-  'center', 'center', drs.stim.white);
-Screen('Flip', win);
-WaitSecs(1);
-DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 4',...
-  'center', 'center', drs.stim.white);
-Screen('Flip', win);
-DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 3',...
-  'center', 'center', drs.stim.white);
-WaitSecs(1);
-Screen('Flip', win);
-DrawFormattedText(win, 'Self or Change Task\n\n Get Ready!',...
-  'center', 'center', drs.stim.white);
-WaitSecs(1);
-Screen('Flip', win);
+
+%WaitSecs(calibrationTime);
+%DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 5',...
+%  'center', 'center', drs.stim.white);
+%Screen('Flip', win);
+%WaitSecs(1);
+%DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 4',...
+%  'center', 'center', drs.stim.white);
+%Screen('Flip', win);
+%DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 3',...
+%  'center', 'center', drs.stim.white);
+%WaitSecs(1);
+%Screen('Flip', win);
+%DrawFormattedText(win, 'Self or Change Task\n\n Get Ready!',...
+%  'center', 'center', drs.stim.white);
+%WaitSecs(1);
+%Screen('Flip', win);
 
 % trigger pulse code (disabled for debug)
 
