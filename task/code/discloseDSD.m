@@ -1,4 +1,4 @@
-function [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg)
+function [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg, dirArg)
 % % discloseDSD.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % usage: [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg)
 %
@@ -41,11 +41,18 @@ switch nargin
         manualInput = inputdlg(prompt,dTitle,nLines,def);
         subNum = str2double(manualInput{1});
         waveNum = str2double(manualInput{2});
+        useOtherDir = false;
     case 1
         error('Must specify 0 or 2 arguments');
     case 2
         subNum = subNumArg;
         waveNum = waveNumArg;
+        useOtherDir = false;
+    case 3
+        subNum = subNumArg;
+        waveNum = waveNumArg;
+        useOtherDir = true;
+        otherDir = dirArg;
 end
 
 %% get subID from subNum
@@ -61,6 +68,10 @@ end
 subInfoFile = ['input', filesep, subID,'_wave_',num2str(waveNum),'_info.mat'];
 load(subInfoFile);
 
+if(useOtherDir)
+    drs.output.path = otherDir;
+end
+
 finalDiscoOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_finalOut.mat'];
 finalDiscoOutputTxt = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_finalOut.txt'];
 
@@ -73,6 +84,9 @@ task2=load(subOutputMat2);
 %
 % Updated from IRB doc as of 1/7/2016
 %%%%%%%
+
+% Maximum number of choices for each affective and neutral statements.
+maxChoicesPer = 2;
 
 affDisco = {'can get moody', ...
 'find homework hard', ...
@@ -181,14 +195,22 @@ else
         
         %get the number of statements, and then select one at random.
         [~, nPossAff] = size(possibleAffStatements);
-        % you can easily check that the below does what we want if you run:
-        % histogram(floor(5*rand(1,10000)+1))
-        randAffItemNum = floor(nPossAff*rand(1)+1); 
-        randAffEndorseChoice = possibleAffEndorseChoices(randAffItemNum); % must be 1 or 2
-        randAffItem = [possibleAffStatements{randAffItemNum} ': ' endorseString{randAffEndorseChoice}];
+        %Gets a max of 2 indexes from a randomly shuffled index of all 
+        % possible statments
+        randAffItemIndex = Shuffle(1:nPossAff);
+        chosenAffItemNumbers = randAffItemIndex(1:min(maxChoicesPer,nPossAff));
+        chosenAffStatements = possibleAffStatements(chosenAffItemNumbers);
+        randAffEndorseChoice = possibleAffEndorseChoices(chosenAffItemNumbers); % must be 1 or 2
+        for(aff_i=1:length(chosenAffStatements))
+            randAffItem{aff_i} = [possibleAffStatements{chosenAffItemNumbers(aff_i)} ': ' endorseString{randAffEndorseChoice(aff_i)}];
+        end
+        %We'll save discoInfo later
+        discoInfo.aff.statements = randAffItem;
+        discoInfo.aff.endorseButton = randAffEndorseChoice;
     else
         display('WARNING: No appropriate A statement');
-        randAffItem = 'NO STATEMENT';
+        discoInfo.aff.statements{1} = 'NO STATEMENT';
+        discoInfo.aff.endorseButton{1} = null(1);
     end
     if any(neutStatementRows)
          %pare down the list of statements and corresponding choices so
@@ -198,16 +220,33 @@ else
         
         %get the number of statements, and then select one at random.
         [~, nPossNeut] = size(possibleNeutStatements);
-        randNeutItemNum = floor(nPossNeut*rand(1)+1);
-        randNeutEndorseChoice = possibleNeutEndorseChoices(randNeutItemNum); % must be 1 or 2
-        randNeutItem = [possibleNeutStatements{randNeutItemNum} ': ' endorseString{randNeutEndorseChoice}];
+        %Gets a max of 2 indexes from a randomly shuffled index of all 
+        % possible statments
+        randNeutItemIndex = Shuffle(1:nPossNeut);
+        chosenNuetItemNumbers = randNeutItemIndex(1:min(maxChoicesPer,nPossNeut));
+        chosenNeutStatements = possibleNeutStatements(chosenNuetItemNumbers);
+        randNeutEndorseChoice = possibleNeutEndorseChoices(chosenNuetItemNumbers); % must be 1 or 2
+        for(neut_i=1:length(chosenNeutStatements))
+            randNeutItem{neut_i} = [possibleNeutStatements{chosenNuetItemNumbers(neut_i)} ': ' endorseString{randNeutEndorseChoice(neut_i)}];
+        end
+        discoInfo.neut.statements = randNeutItem;
+        discoInfo.neut.endorseButton = randNeutEndorseChoice;
     else
         display('WARNING: No appropriate N statement');
-        randNeutItem = 'NO STATEMENT';
+        discoInfo.neut.statements{1} = 'NO STATEMENT';
+        discoInfo.neut.endorseButton{1} = null(1);
     end
-    %start building discoInfo to save to a mat with strings we want to output
-    discoInfo.chosenStatements = {['Sometimes I ' randAffItem],...
-        ['Sometimes I ' randNeutItem]};
+end
+
+if(~isfield(task1.task,'payout'))
+    display('Task 1 payout not recorded, setting to 0.')
+    display('Was the task interupted?');
+    task1.task.payout=0;
+end
+if(~isfield(task1.task,'payout'))
+    display('Task 1 payout not recorded, setting to 0.')
+    display('Was the task interupted?');
+    task2.task.payout=0;
 end
 
 %put payouts and friend name into final output structure.
@@ -215,17 +254,17 @@ discoInfo.payouts = {task1.task.payout, task2.task.payout};
 discoInfo.friend = drs.friend;
 
 %save final output.
-stringSpec = 'Friend: %s\nPayout Run1: %u\nPayout Run2: %u\nStatements:\n\t1. %s\n\t2. %s\n';
+stringSpec = 'Friend: %s\nPayout Run1: %u\nPayout Run2: %u\nStatements:\n';
+statementStringSpec = '\t- Sometimes I %s\n';
+
+displayString=[sprintf(stringSpec,...
+    discoInfo.friend, discoInfo.payouts{1}, discoInfo.payouts{2})...
+    sprintf(statementStringSpec, discoInfo.aff.statements{:})...
+    sprintf(statementStringSpec, discoInfo.neut.statements{:})];
 
 fid=fopen(finalDiscoOutputTxt,'a');
-fprintf(fid,stringSpec,...
-    discoInfo.friend, discoInfo.payouts{1}, discoInfo.payouts{2}, ...
-    discoInfo.chosenStatements{1}, discoInfo.chosenStatements{2});
+fprintf(fid,displayString);
 fclose(fid);
-
-displayString=sprintf(stringSpec,...
-    discoInfo.friend, discoInfo.payouts{1}, discoInfo.payouts{2}, ...
-    discoInfo.chosenStatements{1}, discoInfo.chosenStatements{2});
 
 display(displayString);
 
