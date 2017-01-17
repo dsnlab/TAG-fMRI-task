@@ -55,6 +55,8 @@ switch nargin
         otherDir = dirArg;
 end
 
+%%%%%% REMOVE THESE TWO LINES %%%%%%%%%
+
 %% get subID from subNum
 if subNum < 10
   subID = ['tag00',num2str(subNum)];
@@ -77,8 +79,22 @@ finalDiscoOutputTxt = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'
 
 subOutputMat1 = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_run1.mat'];
 subOutputMat2 = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_run2.mat'];
-task1=load(subOutputMat1);
-task2=load(subOutputMat2);
+
+if exist(subOutputMat1, 'file')
+    task1_exists=true;
+    task1=load(subOutputMat1);
+else
+    display('WARNING: Run 1 output file does not exist.');
+    task1_exists=false;
+end
+if exist(subOutputMat2, 'file')
+    task2_exists=true;
+    task2=load(subOutputMat2);
+else
+    display('WARNING: Run 2 output file does not exist.');
+    task2_exists=false;
+end
+
 %%
 % Set up discos we are allowed to share
 %
@@ -159,9 +175,29 @@ end
 
 %concatenate all decisions to disclose or not, all yes/no responses to
 %statements, and all statements.
-allDiscoChoices = [task1.task.output.raw(:,8); task2.task.output.raw(:,8)];
-allEndorseChoices = [task1.task.output.raw(:,11); task2.task.output.raw(:,11)];
-allStatements = {task1.task.input.statement{:}, task2.task.input.statement{:}};
+
+if task1_exists
+    task1_choices=task1.task.output.raw(:,8);
+    task1_endochoices=task1.task.output.raw(:,11);
+    task1_statements=task1.task.input.statement;
+else
+    task1_choices=[];
+    task1_endochoices=[];
+    task1_statements=cell(0);
+end
+if task2_exists
+    task2_choices=task2.task.output.raw(:,8);
+    task2_endochoices=task2.task.output.raw(:,11);
+    task2_statements=task2.task.input.statement;
+else
+    task2_choices=[];
+    task2_endochoices=[];
+    task2_statements=cell(0);
+end
+
+allDiscoChoices = [task1_choices; task2_choices];
+allEndorseChoices = [task1_endochoices; task2_endochoices];
+allStatements = {task1_statements{:}, task2_statements{:}};
 
 %Get a vector of logical values as to whether the person disclosed to their
 %friend or not.
@@ -238,19 +274,26 @@ else
     end
 end
 
-if(~isfield(task1.task,'payout'))
-    display('Task 1 payout not recorded, setting to 0.')
-    display('Was the task interupted?');
-    task1.task.payout=0;
+if task1_exists 
+    task1_coins = task1.task.output.raw(:,5:6);
+    task1_sum_lcoins = task1.task.output.raw(:,8) == 1;
+    task1_sum_rcoins = task1.task.output.raw(:,8) == 2;
+    task1_payout = sum(task1_coins(task1_sum_lcoins,1)) + sum(task1_coins(task1_sum_rcoins,2));
+else
+    task1_payout = 0;
 end
-if(~isfield(task1.task,'payout'))
-    display('Task 1 payout not recorded, setting to 0.')
-    display('Was the task interupted?');
-    task2.task.payout=0;
+if task2_exists 
+    task2_coins = task2.task.output.raw(:,5:6);
+    task2_sum_lcoins = task2.task.output.raw(:,8) == 1;
+    task2_sum_rcoins = task2.task.output.raw(:,8) == 2;
+    task2_payout = sum(task2_coins(task2_sum_lcoins,1)) + sum(task2_coins(task2_sum_rcoins,2));
+else
+    task2_payout = 0;
 end
 
+
 %put payouts and friend name into final output structure.
-discoInfo.payouts = {task1.task.payout, task2.task.payout};
+discoInfo.payouts = {task1_payout, task2_payout};
 discoInfo.friend = drs.friend;
 
 %save final output.
