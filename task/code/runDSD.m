@@ -317,7 +317,7 @@ for tCount = 1:numTrials
 end
 % End of experiment screen. We clear the screen once they have made their
 % response
-payout = nansum(task.output.raw(:,11));
+payout = nansum(task.output.raw(:,13));
 task.payout = payout;
 endText = ['Sharing task ',thisRun,' complete! \n\nYou earned ',num2str(payout), ' pennies.'];
 DrawFormattedText(win, endText,...
