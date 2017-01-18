@@ -55,8 +55,6 @@ switch nargin
         otherDir = dirArg;
 end
 
-%%%%%% REMOVE THESE TWO LINES %%%%%%%%%
-
 %% get subID from subNum
 if subNum < 10
   subID = ['tag00',num2str(subNum)];
@@ -83,16 +81,38 @@ subOutputMat2 = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_r
 if exist(subOutputMat1, 'file')
     task1_exists=true;
     task1=load(subOutputMat1);
+    %       3. leftTarget (self == 1, friend == 2) 
+    %       4. rightTarget
+    [~,task1_sharekey] = ismember(2, [unique(task1.task.output.raw(:,3)) unique(task1.task.output.raw(:,4))]);
 else
     display('WARNING: Run 1 output file does not exist.');
     task1_exists=false;
+    task1_sharekey = [];
 end
 if exist(subOutputMat2, 'file')
     task2_exists=true;
     task2=load(subOutputMat2);
+    %       3. leftTarget (self == 1, friend == 2) 
+    %       4. rightTarget
+    [~,task2_sharekey] = ismember(2, [unique(task2.task.output.raw(:,3)) unique(task2.task.output.raw(:,4))]);
 else
     display('WARNING: Run 2 output file does not exist.');
     task2_exists=false;
+    task2_sharekey = [];
+end
+
+% if shareResp is 2, right is disclose. 1 means left is disclose
+shareResp = unique([task1_sharekey task2_sharekey]);
+if shareResp == 2
+    display('Option for disclosing appeard on the right: this is how the task was coded for the first block of participants.');
+elseif shareResp == 1
+    display('Option for disclosing appeard on the left: please be sure this switch was intended.');
+else
+    display('Disclosure response choice variabel makes no sense. Please report!');
+end
+
+if length(shareResp) > 1
+    error('Target position is not consistent across runs. Something is not right.');
 end
 
 %%
@@ -159,20 +179,6 @@ neutDisco = {'like wearing makeup', ...
 % participant number
 %
 
-if subNum < 40
-% Left: Yes, Private; Right: No, Share. This will change after some number
-% of participants have been run, and this must change accordingly.
-% endorseString is set to correspond to order on screen so we can reference
-% easily using the codes for left choice and right, e.g., endorseString{1}
-% gives us the response corresponding to the left side of the screen.
-    endorseString = {'Yes', 'No'}; %Yes on left, No on right.
-    shareResp = 2;
-else
-    display('Have you swapped choice positions yet?');
-    endorseString = {'Yes', 'No'}; %Yes on left, No on right.
-    shareResp = 2;
-end
-
 %concatenate all decisions to disclose or not, all yes/no responses to
 %statements, and all statements.
 
@@ -205,6 +211,8 @@ allRowsDisclosed = allDiscoChoices == shareResp;
 
 %If not any of the items were disclosed, warn the user and set the
 %statements
+endorseString = {'Yes', 'No'}; %Yes on left, No on right.
+
 if ~any(allRowsDisclosed)
     display('WARNING: All statements kept private');
     discoInfo.chosenStatements = {'NO STATEMENT', 'NO STATEMENT'};
