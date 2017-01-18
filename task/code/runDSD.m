@@ -71,6 +71,12 @@ switch nargin
         runNum = runNumArg;
 end
 
+choiceAdvice = 'Choose "Right" if subject number is over 50';
+
+discoSide = questdlg({'What side should disclosure choice appear on?';...
+    choiceAdvice; ['Subject is #', num2str(subNum)]},...
+    'Disclosure Side', 'Left', 'Right', 'Left')
+
 rng('default');
 Screen('Preference', 'SkipSyncTests', 1);
 
