@@ -104,9 +104,9 @@ end
 % if shareResp is 2, right is disclose. 1 means left is disclose
 shareResp = unique([task1_sharekey task2_sharekey]);
 if shareResp == 2
-    display('Option for disclosing appeard on the right: this is how the task was coded for the first block of participants.');
+    display('Option for disclosing appeared on the right: this is how the task was coded for the first block of participants.');
 elseif shareResp == 1
-    display('Option for disclosing appeard on the left: please be sure this switch was intended.');
+    display('Option for disclosing appeared on the left: please be sure this switch was intended.');
 else
     display('Disclosure response choice variabel makes no sense. Please report!');
 end
