@@ -42,6 +42,7 @@ function [task] = runDSD(subNumArg, waveNumArg, runNumArg)
 %       10. Time since trigger for statement decisions (discoOnset - loopStartTime);
 %       11. discoResponse - endorse or not?  (leftkeys = 1, rightkeys = 2)
 %       12. discoRT - reaction time
+%       13. payout amount according to choice
 %   task.input.statement
 %   task.payout
 %
