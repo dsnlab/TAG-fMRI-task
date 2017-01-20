@@ -71,11 +71,17 @@ switch nargin
         runNum = runNumArg;
 end
 
-choiceAdvice = 'Choose "Right" if subject number is over 50';
+%%The first approximately half of all participants in wave 1 saw the
+%%disclosure choice on the right hand side. We want to balance the side
+%%that this choice is displayed on for the second half of the participants.
+%%For future waves choiceAdvice should be updated to tell people to check
+%%the run sheet for which side the disclosure choice should appear.
+
+choiceAdvice = 'Choose "Left" for wave 1 now';
 
 discoSide = questdlg({'What side should disclosure choice appear on?';...
     choiceAdvice; ['Subject is #', num2str(subNum)]},...
-    'Disclosure Side', 'Left', 'Right', 'Left')
+    'Disclosure Side', 'Left', 'Right', 'Left');
 
 rng('default');
 Screen('Preference', 'SkipSyncTests', 1);
@@ -106,11 +112,26 @@ end
 fid=fopen(inputTextFile);
 trialMatrix=textscan(fid,'%f%f%f%f%f%f%f%f%s\n','delimiter',',');
 fclose(fid);
+
+[trialMatRows, ~] = size(trialMatrix{3});
+self_vec = ones(trialMatRows, 1);
+friend_vec = ones(trialMatRows, 1)+1;
+
+if strcmp(discoSide, 'Right')
+    leftTarget_vec = self_vec;
+    rightTarget_vec = friend_vec;
+elseif strcmp(discoSide, 'Left')
+    leftTarget_vec = friend_vec;
+    rightTarget_vec = self_vec;
+end
+
 %% store info from trialMatrix in drs structure
 task.input.raw = [trialMatrix{1} trialMatrix{2} trialMatrix{3} trialMatrix{4} trialMatrix{5} trialMatrix{6} trialMatrix{7} trialMatrix{8}];
 task.input.condition = trialMatrix{2};
-task.input.leftTarget = trialMatrix{3};
-task.input.rightTarget = trialMatrix{4};
+task.input.leftTarget = leftTarget_vec;
+trialMatrix{3} = leftTarget_vec;
+task.input.rightTarget = rightTarget_vec;
+trialMatrix{4} = rightTarget_vec;
 task.input.leftCoin = trialMatrix{5};
 task.input.rightCoin = trialMatrix{6};
 task.input.choiceJitter = trialMatrix{7};
@@ -118,6 +139,7 @@ task.input.discoJitter = trialMatrix{8};
 task.input.statement = trialMatrix{9};
 numTrials = length(trialMatrix{1});
 task.output.raw = NaN(numTrials,13);
+task.input.discoSide = discoSide;
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
 PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
