@@ -298,7 +298,7 @@ for tCount = 1:numTrials
         elseif chose == 1
           multiChoiceResponse = [multiChoiceResponse choiceResponse];
           multiChoiceRT =[multiChoiceRT choiceRT];
-          choiceRT = firstPress(find(firstPress)) - choiceOnset
+          choiceRT = firstPress(find(firstPress)) - choiceOnset;
         end
 
         if find(firstPress(leftKeys))
@@ -324,6 +324,7 @@ for tCount = 1:numTrials
     discoSkips = [discoSkips tCount];
   end
   % assign output for each trial to task.(thisRun).output.raw matrix
+  
   task.output.raw(tCount,1) = tCount;
   task.output.raw(tCount,2) = trialMatrix{2}(tCount);
   task.output.raw(tCount,3) = trialMatrix{3}(tCount);
@@ -332,10 +333,10 @@ for tCount = 1:numTrials
   task.output.raw(tCount,6) = trialMatrix{6}(tCount);
   task.output.raw(tCount,7) = (choiceOnset - loopStartTime);
   task.output.raw(tCount,8) = choiceResponse; 
-  task.output.raw(tCount,9) = choiceRT; %Errors here could be caused by ultra-fast switching of answers
+  task.output.raw(tCount,9) = max(choiceRT); %This ensures we only record one RT. Errors can be caused by ultra-fast switching
   task.output.raw(tCount,10) = (discoOnset - loopStartTime);
   task.output.raw(tCount,11) = discoResponse;
-  task.output.raw(tCount,12) = discoRT;
+  task.output.raw(tCount,12) = max(discoRT);
   if payout == 5
     payout = 0;
   end
