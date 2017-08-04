@@ -78,11 +78,13 @@ end
 %%For future waves choiceAdvice should be updated to tell people to check
 %%the run sheet for which side the disclosure choice should appear.
 
-choiceAdvice = 'Choose "Left" for wave 1 now';
-
-discoSide = questdlg({'What side should disclosure choice appear on?';...
-    choiceAdvice; ['Subject is #', num2str(subNum)]},...
-    'Disclosure Side', 'Left', 'Right', 'Left');
+%dsd_discoside.csv info:
+% col1: Tag ID; col2: side (1 = Right, 2 = Left)
+% dummy id 999 uses Right, 998 uses Left
+sides={'Right','Left'};
+discoSideMat=csvread('input/dsd_discoside.csv'); 
+discoSideNum=discoSideMat(discoSideMat(:,1) == subNum,2);
+discoSide=sides(discoSideNum);
 
 rng('default');
 Screen('Preference', 'SkipSyncTests', 1);
