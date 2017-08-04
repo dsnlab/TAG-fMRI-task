@@ -13,7 +13,16 @@ Screen('Preference', 'SkipSyncTests', 1);
 drs = getSubInfo();
 % set subID & studyDir (cause I keep forgetting to drill into drs.subID/studyDir)
 subID = drs.subID;
+subNum = str2num(cell2mat(regexp(subID,'\d*','Match')));
 studyDir = drs.studyDir;
+
+%dsd_discoside.csv info:
+% col1: Tag ID; col2: side (1 = Right, 2 = Left)
+% dummy id 999 uses Right, 998 uses Left
+sides={'Right','Left'};
+discoSideMat=csvread('input/dsd_discoside.csv'); 
+discoSideNum=discoSideMat(discoSideMat(:,1) == subNum,2);
+discoSide=sides(discoSideNum);
 
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
@@ -65,90 +74,99 @@ DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.
 Screen('Flip', win);
 KbStrokeWait(inputDevice);
 
-%%
-%%Practice SvC
-
-%%
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, 'Change Task:','center', (drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.white);
-DrawFormattedText(win, 'Each time you see a word \nyou will have to decide if it describes you \nor if it''s something that can change.','center', (drs.stim.box.yCenter - drs.stim.box.unit), drs.stim.yellow);
-DrawFormattedText(win, 'You''ll have about 4 seconds to decide.','center',(drs.stim.box.yCenter + drs.stim.box.unit), drs.stim.white);
-DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
-Screen('Flip', win);
-KbStrokeWait(inputDevice);
-WaitSecs(1);
-
-%%
-trait='funny';
-condition=1;
-
-iconMatrix = drs.stim.promptMatrix{1};
-promptText = 'true about me?';
-promptColor = drs.stim.promptColors{1};
-iconTex = Screen('MakeTexture',win,iconMatrix);
-Screen('DrawTexture',win,iconTex,[],drs.stim.box.prompt);
-Screen('TextSize', win, 80);
-Screen('TextFont', win, 'Arial');
-DrawFormattedText( win, promptText, 'center', 'center', promptColor );
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, 'If you see this, you''ll need to decide \nif the next set of words describe you.','center',(drs.stim.box.yCenter + .5*drs.stim.box.unit), drs.stim.white);
-DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
-Screen('Flip',win)
-KbStrokeWait(inputDevice);
-
-drawTrait(win,drs.stim,trait,condition,[0.5 0.5]);
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press left for yes or right for no)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
-Screen('Flip', win);
-KbStrokeWait(inputDevice);
-% flip the screen to show trait
-
-%%
-trait='weird';
-condition=4;
-
-iconMatrix = drs.stim.promptMatrix{2};
-promptText = 'can it change?';
-promptColor = drs.stim.promptColors{2};
-iconTex = Screen('MakeTexture',win,iconMatrix);
-Screen('DrawTexture',win,iconTex,[],drs.stim.box.prompt);
-Screen('TextSize', win, 80);
-Screen('TextFont', win, 'Arial');
-DrawFormattedText( win, promptText, 'center', 'center', promptColor );
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, 'If you see this, you''ll need to decide \nif the next set of words can change.','center',(drs.stim.box.yCenter + .5*drs.stim.box.unit), drs.stim.white);
-DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
-Screen('Flip',win)
-KbStrokeWait(inputDevice);
-
-drawTrait(win,drs.stim,trait,condition,[0.5 0.5]);
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press left for yes or right for no)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
-Screen('Flip', win);
-KbStrokeWait(inputDevice);
-% flip the screen to show trait
-DrawFormattedText(win, 'Let''s practice the change task! ','center',(drs.stim.box.yCenter), drs.stim.yellow);
-Screen('TextSize', win, 50);
-Screen('TextFont', win, 'Arial');
-Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press any button to start the practice)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
-Screen('Flip',win);
-KbStrokeWait(inputDevice);
-
-runSVC(drs.subNum,1,0)
+% %%
+% %%Practice SvC
+% 
+% %%
+% Screen('TextSize', win, 50);
+% Screen('TextFont', win, 'Arial');
+% Screen('TextStyle',win,0);
+% DrawFormattedText(win, 'Change Task:','center', (drs.stim.box.yCenter - 2*drs.stim.box.unit), drs.stim.white);
+% DrawFormattedText(win, 'Each time you see a word \nyou will have to decide if it describes you \nor if it''s something that can change.','center', (drs.stim.box.yCenter - drs.stim.box.unit), drs.stim.yellow);
+% DrawFormattedText(win, 'You''ll have about 4 seconds to decide.','center',(drs.stim.box.yCenter + drs.stim.box.unit), drs.stim.white);
+% DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+% Screen('Flip', win);
+% KbStrokeWait(inputDevice);
+% WaitSecs(1);
+% 
+% %%
+% trait='funny';
+% condition=1;
+% 
+% iconMatrix = drs.stim.promptMatrix{1};
+% promptText = 'true about me?';
+% promptColor = drs.stim.promptColors{1};
+% iconTex = Screen('MakeTexture',win,iconMatrix);
+% Screen('DrawTexture',win,iconTex,[],drs.stim.box.prompt);
+% Screen('TextSize', win, 80);
+% Screen('TextFont', win, 'Arial');
+% DrawFormattedText( win, promptText, 'center', 'center', promptColor );
+% Screen('TextSize', win, 50);
+% Screen('TextFont', win, 'Arial');
+% Screen('TextStyle',win,0);
+% DrawFormattedText(win, 'If you see this, you''ll need to decide \nif the next set of words describe you.','center',(drs.stim.box.yCenter + .5*drs.stim.box.unit), drs.stim.white);
+% DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+% Screen('Flip',win)
+% KbStrokeWait(inputDevice);
+% 
+% drawTrait(win,drs.stim,trait,condition,[0.5 0.5]);
+% Screen('TextSize', win, 50);
+% Screen('TextFont', win, 'Arial');
+% Screen('TextStyle',win,0);
+% DrawFormattedText(win, '(press left for yes or right for no)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+% Screen('Flip', win);
+% KbStrokeWait(inputDevice);
+% % flip the screen to show trait
+% 
+% %%
+% trait='weird';
+% condition=4;
+% 
+% iconMatrix = drs.stim.promptMatrix{2};
+% promptText = 'can it change?';
+% promptColor = drs.stim.promptColors{2};
+% iconTex = Screen('MakeTexture',win,iconMatrix);
+% Screen('DrawTexture',win,iconTex,[],drs.stim.box.prompt);
+% Screen('TextSize', win, 80);
+% Screen('TextFont', win, 'Arial');
+% DrawFormattedText( win, promptText, 'center', 'center', promptColor );
+% Screen('TextSize', win, 50);
+% Screen('TextFont', win, 'Arial');
+% Screen('TextStyle',win,0);
+% DrawFormattedText(win, 'If you see this, you''ll need to decide \nif the next set of words can change.','center',(drs.stim.box.yCenter + .5*drs.stim.box.unit), drs.stim.white);
+% DrawFormattedText(win, '(press any button to continue) ','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+% Screen('Flip',win)
+% KbStrokeWait(inputDevice);
+% 
+% drawTrait(win,drs.stim,trait,condition,[0.5 0.5]);
+% Screen('TextSize', win, 50);
+% Screen('TextFont', win, 'Arial');
+% Screen('TextStyle',win,0);
+% DrawFormattedText(win, '(press left for yes or right for no)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+% Screen('Flip', win);
+% KbStrokeWait(inputDevice);
+% % flip the screen to show trait
+% DrawFormattedText(win, 'Let''s practice the change task! ','center',(drs.stim.box.yCenter), drs.stim.yellow);
+% Screen('TextSize', win, 50);
+% Screen('TextFont', win, 'Arial');
+% Screen('TextStyle',win,0);
+% DrawFormattedText(win, '(press any button to start the practice)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+% Screen('Flip',win);
+% KbStrokeWait(inputDevice);
+% 
+% runSVC(drs.subNum,1,0)
 
 %% Explain DSD
-targets = [1 2 2 4];
+if strcmp(discoSide, 'Right')
+    targets = [1 2 2 4];
+    privatetext = '(press left to keep it private)';
+    sharetext = '(press right to share with your friend)';
+elseif strcmp(discoSide, 'Left')
+    targets = [2 1 2 4];
+    privatetext = '(press right to keep it private)';
+    sharetext = '(press left to share with your friend)';
+end
+
 statement = 'like robots';
 %%
 Screen('TextSize', win, 50);
@@ -210,7 +228,7 @@ drawChoice(win,drs.stim,targets,statement,2);
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press left to keep it private)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+DrawFormattedText(win, privatetext,'center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
 drawChoiceFeedback(win,drs.stim,targets,statement,2,1);
@@ -224,7 +242,7 @@ drawChoice(win,drs.stim,targets,statement,2);
 Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,0);
-DrawFormattedText(win, '(press right to share with your friend)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
+DrawFormattedText(win, sharetext,'center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
 drawChoiceFeedback(win,drs.stim,targets,statement,2,2);
