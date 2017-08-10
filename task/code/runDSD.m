@@ -78,11 +78,13 @@ end
 %%For future waves choiceAdvice should be updated to tell people to check
 %%the run sheet for which side the disclosure choice should appear.
 
-choiceAdvice = 'Choose "Left" for wave 1 now';
-
-discoSide = questdlg({'What side should disclosure choice appear on?';...
-    choiceAdvice; ['Subject is #', num2str(subNum)]},...
-    'Disclosure Side', 'Left', 'Right', 'Left');
+%dsd_discoside.csv info:
+% col1: Tag ID; col2: side (1 = Right, 2 = Left)
+% dummy id 999 uses Right, 998 uses Left
+sides={'Right','Left'};
+discoSideMat=csvread('input/dsd_discoside.csv'); 
+discoSideNum=discoSideMat(discoSideMat(:,1) == subNum,2);
+discoSide=sides(discoSideNum);
 
 rng('default');
 Screen('Preference', 'SkipSyncTests', 1);
@@ -121,9 +123,11 @@ friend_vec = ones(trialMatRows, 1)+1;
 if strcmp(discoSide, 'Right')
     leftTarget_vec = self_vec;
     rightTarget_vec = friend_vec;
+    sideInstructions = '\n\nstatement: left for ''yes'', right for ''no'' \n\ndecision: left to keep private, right to share ';
 elseif strcmp(discoSide, 'Left')
     leftTarget_vec = friend_vec;
     rightTarget_vec = self_vec;
+    sideInstructions = '\n\nstatement: left for ''yes'', right for ''no'' \n\ndecision: left to share, right to keep it private ';
 end
 
 %% store info from trialMatrix in drs structure
@@ -175,7 +179,7 @@ for deviceCount=1:length(devices),
 end
 
 % to inform subject about upcoming task
-prefaceText = ['Coming up... ','Sharing Task: ',thisRun, '\n\nstatement: left for ''yes'', right for ''no'' \n\ndecision: left to keep private, right to share '];
+prefaceText = ['Coming up... ','Sharing Task: ',thisRun, sideInstructions];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.sky);
 [~,programOnset] = Screen('Flip',win);
 KbStrokeWait(internalKeyboardDevice);
