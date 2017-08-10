@@ -20,7 +20,7 @@ studyDir = drs.studyDir;
 % col1: Tag ID; col2: side (1 = Right, 2 = Left)
 % dummy id 999 uses Right, 998 uses Left
 sides={'Right','Left'};
-discoSideMat=csvread('input/dsd_discoside.csv'); 
+discoSideMat=csvread([studyDir '/task/input/dsd_discoside.csv']); 
 discoSideNum=discoSideMat(discoSideMat(:,1) == subNum,2);
 discoSide=sides(discoSideNum);
 
