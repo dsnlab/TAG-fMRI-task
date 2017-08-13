@@ -86,6 +86,11 @@ discoSideMat=csvread('input/dsd_discoside.csv');
 discoSideNum=discoSideMat(discoSideMat(:,1) == subNum,2);
 discoSide=sides(discoSideNum);
 
+if !strcmp(discoSide, 'Right') & !strcmp(discoSide, 'Left')
+    discoSide = 'Right';
+    dlmwrite('input/dsd_discoside.csv', [subNum,2], 'delimiter', ',', '-append')
+end
+
 rng('default');
 Screen('Preference', 'SkipSyncTests', 1);
 
