@@ -19,10 +19,18 @@ studyDir = drs.studyDir;
 %dsd_discoside.csv info:
 % col1: Tag ID; col2: side (1 = Right, 2 = Left)
 % dummy id 999 uses Right, 998 uses Left
+discoSideFN='input/dsd_discoside.csv';
 sides={'Right','Left'};
-discoSideMat=csvread([studyDir '/task/input/dsd_discoside.csv']); 
+discoSideMat=csvread(discoSideFN); 
 discoSideNum=discoSideMat(discoSideMat(:,1) == subNum,2);
 discoSide=sides(discoSideNum);
+
+if isempty(discoSide) || (~strcmp(discoSide, 'Right') && ~strcmp(discoSide, 'Left'))
+    discoSideNumRand=randi([1 2]);
+    discoSide=sides(discoSideNumRand);
+    newDiscoSideMat = [discoSideMat; subNum,discoSideNumRand];
+    csvwrite(discoSideFN,newDiscoSideMat);
+end
 
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
