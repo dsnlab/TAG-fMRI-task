@@ -162,7 +162,7 @@ DrawFormattedText(win, '(press any button to start the practice)','center',(drs.
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
 
-runSVC(drs.subNum,1,0)
+runSVC(drs.subNum,drs.waveNum,0)
 
 %% Explain DSD
 if strcmp(discoSide, 'Right')
@@ -275,6 +275,6 @@ DrawFormattedText(win, '(press any button to start the practice)','center',(drs.
 Screen('Flip',win);
 KbStrokeWait(inputDevice);
 
-runDSD(drs.subNum,1,0);
+runDSD(drs.subNum,drs.waveNum,0);
 
 Screen('CloseAll')
