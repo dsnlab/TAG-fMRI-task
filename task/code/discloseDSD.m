@@ -42,12 +42,14 @@ switch nargin
         subNum = str2double(manualInput{1});
         waveNum = str2double(manualInput{2});
         useOtherDir = false;
+        showStatements = false;
     case 1
-        error('Must specify 0 or 2 arguments');
+        error('Must specify 0 or 2, or 3 arguments');
     case 2
         subNum = subNumArg;
         waveNum = waveNumArg;
         useOtherDir = false;
+        showStatements = false;
     case 3
         subNum = subNumArg;
         waveNum = waveNumArg; 
