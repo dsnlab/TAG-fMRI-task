@@ -370,6 +370,7 @@ KbQueueRelease;
 % write output text file for redundancy
 if runNum ~= 0
   fid=fopen(outputTextFile,'a');
+  fprintf(fid,'trial_number,condition,left_target,right_target,left_coin,right_coin,trigger_to_share,share_choice,share_rt,trigger_to_statement,statement_choice,statement_rt,coins_earned,statement_text\n');
   for tCount = 1:numTrials
     fprintf(fid,'%u,%u,%u,%u,%u,%u,%4.3f,%u,%4.3f,%4.3f,%u,%4.3f,%u,%s\n',...
     task.output.raw(tCount,1:13), task.input.statement{tCount});
