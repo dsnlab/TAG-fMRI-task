@@ -228,7 +228,7 @@ allDiscoNeut = [task1_neutrows; task2_neutrows] & allRowsDisclosed;
 
 %If not any of the items were disclosed, warn the user and set the
 %statements
-endorseString = {'Yes', 'No'}; %Yes on left, No on right.
+endorseString = {'Yes', 'No', 'No response'}; %Yes on left, No on right.
 
 if ~any(allRowsDisclosed)
     display('WARNING: All statements kept private');
@@ -340,7 +340,9 @@ fclose(fid);
 disp(displayString);
 if(showStatements)
     disp('All statements: ')
+    allDisclosedEndorseChoices(allDisclosedEndorseChoices == 0) = 3;
     for(i = 1:length(allDisclosedStatements))
+        
         disp(['    ' allDisclosedStatements{i} ': ' endorseString{allDisclosedEndorseChoices(i)}])
     end
 else
