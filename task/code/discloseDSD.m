@@ -1,4 +1,4 @@
-function [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg, dirArg)
+function [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg, showStatementsArg, dirArg)
 % % discloseDSD.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % usage: [ dsdFeedback ] = discloseDSD(subNumArg, waveNumArg)
 %
@@ -50,7 +50,14 @@ switch nargin
         useOtherDir = false;
     case 3
         subNum = subNumArg;
-        waveNum = waveNumArg;
+        waveNum = waveNumArg; 
+        showStatements = showStatementsArg;
+        useOtherDir = false;
+        otherDir = [];
+    case 4
+        subNum = subNumArg;
+        waveNum = waveNumArg; 
+        showStatements = showStatementsArg;
         useOtherDir = true;
         otherDir = dirArg;
 end
@@ -184,19 +191,27 @@ neutDisco = {'like wearing makeup', ...
 
 if task1_exists
     task1_choices=task1.task.output.raw(:,8);
+    task1_affrows=task1.task.output.raw(:,2) <= 6 & task1.task.output.raw(:,2) >= 4;   
+    task1_neutrows=task1.task.output.raw(:,2) <= 3 & task1.task.output.raw(:,2) >= 1;
     task1_endochoices=task1.task.output.raw(:,11);
     task1_statements=task1.task.input.statement;
 else
     task1_choices=[];
+    task1_affrows=[];
+    task1_neutrows=[];
     task1_endochoices=[];
     task1_statements=cell(0);
 end
 if task2_exists
     task2_choices=task2.task.output.raw(:,8);
+    task2_affrows=task2.task.output.raw(:,2) <= 6 & task2.task.output.raw(:,2) >= 4;;
+    task2_neutrows=task2.task.output.raw(:,2) <= 3 & task2.task.output.raw(:,2) >= 1;
     task2_endochoices=task2.task.output.raw(:,11);
     task2_statements=task2.task.input.statement;
 else
     task2_choices=[];
+    task2_affrows=[];
+    task2_neutrows=[];
     task2_endochoices=[];
     task2_statements=cell(0);
 end
@@ -208,6 +223,8 @@ allStatements = {task1_statements{:}, task2_statements{:}};
 %Get a vector of logical values as to whether the person disclosed to their
 %friend or not.
 allRowsDisclosed = allDiscoChoices == shareResp;
+allDiscoAff = [task1_affrows; task2_affrows] & allRowsDisclosed;
+allDiscoNeut = [task1_neutrows; task2_neutrows] & allRowsDisclosed;
 
 %If not any of the items were disclosed, warn the user and set the
 %statements
@@ -299,17 +316,20 @@ else
     task2_payout = 0;
 end
 
-
+discoInfo.pid=subID;
+discoInfo.datetime=datestr(datetime());
 %put payouts and friend name into final output structure.
 discoInfo.payouts = {task1_payout, task2_payout};
 discoInfo.friend = drs.friend;
 
 %save final output.
-stringSpec = 'Friend: %s\nPayout Run1: %u\nPayout Run2: %u\nStatements:\n';
+stringSpec = ['Date: %s\nPID: %s\nFriend: %s\nPayout Run1: %u\nPayout Run2: %u\n' ...
+    'Total Disclosed Affective Statements: %u\nTotal Disclosed Neutral Statements: %u\nChosen Statements:\n'];
 statementStringSpec = '\t- Sometimes I %s\n';
 
 displayString=[sprintf(stringSpec,...
-    discoInfo.friend, discoInfo.payouts{1}, discoInfo.payouts{2})...
+    discoInfo.datetime, discoInfo.pid, discoInfo.friend, discoInfo.payouts{1}, discoInfo.payouts{2},...
+    sum(allDiscoAff), sum(allDiscoNeut))...
     sprintf(statementStringSpec, discoInfo.aff.statements{:})...
     sprintf(statementStringSpec, discoInfo.neut.statements{:})];
 
@@ -317,7 +337,18 @@ fid=fopen(finalDiscoOutputTxt,'a');
 fprintf(fid,displayString);
 fclose(fid);
 
-display(displayString);
+disp(displayString);
+if(showStatements)
+    disp('All statements: ')
+    for(i = 1:length(allDisclosedStatements))
+        disp(['    ' allDisclosedStatements{i} ': ' endorseString{allDisclosedEndorseChoices(i)}])
+    end
+else
+    disp(sprintf(['Remember, not all statements are shareable.\n' ...
+    'To see a list of all disclosed statements, run\n\n' ...
+    '    discloseDSD(PID, WAVE, true)\n\n' ...
+    'where PID and WAVE are numbers corresponding to \nID and wave number.']))
+end
 
 save(finalDiscoOutputMat,'discoInfo');
 
