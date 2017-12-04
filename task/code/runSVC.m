@@ -12,9 +12,9 @@ function [task] = runSVC(subNumArg, waveNumArg, runNumArg)
 %
 %    input text columns (%u,%u,%u,%u,%u,%f%f) 
 %       1. trialNum
-%       2. condition (1/2 == self (good/cool), 3/4 == change (good/cool), !!5/6... )
+%       2. condition (1-6*)
 %       3. jitter
-%       4. reverse coded (0 == normal, 1 == reverse coded) !!Meaningful?
+%       4. reverse coded (0 == normal, 1 == reverse coded) !!See word-list in design/materials/
 %       5. syllables
 %       6. trait (string w/ trait adjective)
 %
@@ -22,6 +22,13 @@ function [task] = runSVC(subNumArg, waveNumArg, runNumArg)
 %
 %--> (subID)_info.mat = structure w/ subject specific info
 %
+% * Conditions are:
+%   1. Self good
+%   2. Self withdrawn
+%   3. Self aggressive
+%   4. Change good
+%   5. Change withdrawn
+%   6. Change aggressive
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 switch nargin
     case 0
