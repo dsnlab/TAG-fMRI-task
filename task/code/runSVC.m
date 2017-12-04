@@ -12,7 +12,7 @@ function [task] = runSVC(subNumArg, waveNumArg, runNumArg)
 %
 %    input text columns (%u,%u,%u,%u,%u,%f%f) 
 %       1. trialNum
-%       2. condition (1-6*)
+%       2. condition (1-6)
 %       3. jitter
 %       4. reverse coded (0 == normal, 1 == reverse coded) !!See word-list in design/materials/
 %       5. syllables
@@ -22,7 +22,7 @@ function [task] = runSVC(subNumArg, waveNumArg, runNumArg)
 %
 %--> (subID)_info.mat = structure w/ subject specific info
 %
-% * Conditions are:
+% Conditions are:
 %   1. Self good
 %   2. Self withdrawn
 %   3. Self aggressive
