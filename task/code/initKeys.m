@@ -22,7 +22,7 @@ function [ keys ] = initKeys()
 devices=PsychHID('Devices');
 detectButtonBox = false;
 for deviceCount=1:length(devices),
-  % the lcni button box has the usageName 'Keyboard' and the product 'Xkeys'
+  % the lcni button box has the usageName 'Keyboard' and the manufacturer 'Emerson'
   if (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Emerson')), %used to say product matched Xkeys
     keys.bbox = deviceCount;
     keys.trigger = 52; % trigger pulse / TR signal key ('`') for LCNI scanner
