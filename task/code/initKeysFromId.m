@@ -1,9 +1,11 @@
-function [ keys ] = initKeys(deviceNum)
+function [ keys ] = initKeys(varargin)
 % % INITKEYS.m %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %   sets device values in a structure called keys 
 %   given the id number of the device.
-%
+%   
+%   Argument 1: deviceID
+%   Optional argument 2: trigger (default is apostrophe)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -15,16 +17,15 @@ function [ keys ] = initKeys(deviceNum)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-keys.bbox = deviceNum;
-
-choice = input('Change default trigger?(y/n) ', 's');
-if choice == 'y' || choice == 'Y'
-    choice = input('Choose key to use for trigger: ', 's');
-    keys.trigger = KbName(choice);
-else    
+deviceNum = varargin{1};
+if nargin > 1
+    keys.trigger = varargin{2};
+else 
     keys.trigger = 52;
 end
+
+
+keys.bbox = deviceNum;
 
 devices=PsychHID('Devices');
 keys.b1 = KbName('1!');   % Keyboard 1
@@ -49,6 +50,7 @@ keys.up=KbName('UpArrow');
 keys.down=KbName('DownArrow');
 keys.shift=KbName('RightShift');
 keys.kill = KbName('k');
+
 
 end
 
