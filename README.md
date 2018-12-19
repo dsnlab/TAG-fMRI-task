@@ -16,6 +16,36 @@ Make sure to add the folders in `~/task` to the MATLAB search path. To wit, you 
 ```matlab
 addpath(genpath('~/task'));
 ```
+
+### a note on keyboards
+Both SVC and DSD scripts have two redundant pieces of code that help with keyboard selection. **Either one or the other should be active, while the other one should be commented out.**
+
+The first one looks like this, and is for manual keyboard selection. If this is activated, then with each run of the script the user will manually select the internal keyboard and response keyboard. 
+
+```matlab
+[internalKeyboardDevice, inputDevice] = getKeyboards;
+drs.keys = initKeysFromId(inputDevice);
+```
+
+The second one looks like this, and relies on harcoded specifications about the devices in order to identify keyboards. 
+
+```matlab
+ drs.keys = initKeys;
+ inputDevice = drs.keys.deviceNum;
+ 
+ devices=PsychHID('Devices');
+ for deviceCount=1:length(devices),
+   % Just get the local keyboard
+   if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
+           || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).product,'Apple Internal Keyboard / Trackpad'))),
+     keys.bbox = deviceCount;
+     keys.trigger = KbName('t'); % use 't' as KbTrigger
+     internalKeyboardDevice=deviceCount;
+   end
+ end
+
+```
+
 ===
 DRS-TAG  
 author: wem3, jflournoy  
