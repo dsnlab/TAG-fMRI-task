@@ -22,8 +22,10 @@ function [ keys ] = initKeys()
 devices=PsychHID('Devices');
 detectButtonBox = false;
 for deviceCount=1:length(devices),
-  % the lcni button box has the usageName 'Keyboard' and the manufacturer 'Emerson'
-  if (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Emerson')), %used to say product matched Xkeys
+  % the lcni button box has the usageName 'Keyboard' and the manufacturer
+  % 'Emerson' or product 'Xkeys' (if the button box is plugged in directly)
+  if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Emerson')) ... 
+          || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).product,'Xkeys'))) %used to say product matched Xkeys
     keys.bbox = deviceCount;
     keys.trigger = 52; % trigger pulse / TR signal key ('`') for LCNI scanner
     fprintf('button box detected\n using device #%d: %s\n',deviceCount,devices(deviceCount).product);
@@ -31,7 +33,7 @@ for deviceCount=1:length(devices),
     deviceNum = deviceCount;
     break,
   elseif ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
-          || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Apple, Inc'))),
+          || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).product,'Apple Internal Keyboard / Trackpad'))),
     keys.bbox = deviceCount;
     keys.trigger = KbName('t'); % use 't' as KbTrigger
     detectButtonBox = false;

@@ -57,8 +57,8 @@ stim.pink   = [167  47 187 255]./255; % pinkle
 stim.purple = [124  70 241 255]./255; % purple
 
 % set up screen positions
-xDim = 1920; % hardcoded here, but built to work on 3/4 as well
-yDim = 1080;
+xDim = 1440; % 1920; % hardcoded here, but built to work on 3/4 as well
+yDim = 900; % 1080;
 unit = xDim/16;
 xCenter = xDim/2;
 yCenter = yDim/2;
@@ -69,7 +69,7 @@ box.xCenter = xCenter;
 box.yCenter = yCenter;
 % posLR is an N x 3 matrix for making symmetrical boxen 
 posLR = [... % [ left x position, y position, right x position ]
-(xCenter - 3*unit), (yCenter - 2.5*unit), (xCenter + 3*unit) % 1. choiceBoxen
+(xCenter - 3*unit), (yCenter - 3*unit), (xCenter + 3*unit) % 1. choiceBoxen
 (xCenter - 3*unit), (yCenter - 1.5*unit), (xCenter + 3*unit) % 2. coinBoxen
 (xCenter - 4*unit), (yCenter + 2*unit), (xCenter + 4*unit) % 3. handBoxen
 (xCenter - 2*unit), (yCenter + 0.5*unit), (xCenter + 2*unit) % 4. respBoxen
@@ -77,8 +77,8 @@ posLR = [... % [ left x position, y position, right x position ]
 % structure to hold boxen...
 box.choice{1} = CenterRectOnPointd([0 0 4*unit unit],posLR(1,1),(yCenter+.25*unit));
 box.choice{2} = CenterRectOnPointd([0 0 4*unit unit],posLR(1,3),(yCenter+.25*unit));
-box.coin{1} = CenterRectOnPointd([0 0 270 76],posLR(2,1),(yCenter+1*unit));
-box.coin{2} = CenterRectOnPointd([0 0 270 76],posLR(2,3),(yCenter+1*unit));
+box.coin{1} = CenterRectOnPointd([0 0 270 76],posLR(2,1),(yCenter+1.5*unit));
+box.coin{2} = CenterRectOnPointd([0 0 270 76],posLR(2,3),(yCenter+1.5*unit));
 box.hand{1} = CenterRectOnPointd([0 0 200 200],posLR(3,1),posLR(3,2));
 box.hand{2} = CenterRectOnPointd([0 0 200 200],posLR(3,3),posLR(3,2));
 box.yesno{1} = CenterRectOnPointd([0 0 76 76],posLR(2,1),posLR(2,2));

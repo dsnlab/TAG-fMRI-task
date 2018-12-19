@@ -179,7 +179,7 @@ devices=PsychHID('Devices');
 for deviceCount=1:length(devices),
   % Just get the local keyboard
   if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
-          || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Apple, Inc'))),
+          || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).product,'Apple Internal Keyboard / Trackpad'))),
     keys.bbox = deviceCount;
     keys.trigger = KbName('t'); % use 't' as KbTrigger
     internalKeyboardDevice=deviceCount;

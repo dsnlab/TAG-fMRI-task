@@ -93,6 +93,10 @@ task.input.syllables = trialMatrix{5};
 task.input.trait = trialMatrix{6};
 numTrials = length(trialMatrix{1});
 task.output.raw = NaN(numTrials,13);
+
+[internalKeyboardDevice, inputDevice] = getKeyboards;
+drs.keys = initKeysFromId(inputDevice);
+
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
 PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
@@ -111,19 +115,19 @@ Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 
-drs.keys = initKeys;
-inputDevice = drs.keys.deviceNum;
-
-devices=PsychHID('Devices');
-for deviceCount=1:length(devices),
-  % Just get the local keyboard
-  if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
-          || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).product,'Apple Internal Keyboard / Trackpad'))),
-    keys.bbox = deviceCount;
-    keys.trigger = KbName('t'); % use 't' as KbTrigger
-    internalKeyboardDevice=deviceCount;
-  end
-end
+% drs.keys = initKeys;
+% inputDevice = drs.keys.deviceNum;
+% 
+% devices=PsychHID('Devices');
+% for deviceCount=1:length(devices),
+%   % Just get the local keyboard
+%   if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).product,'Apple Internal Keyboard / Trackpad'))), % ...
+%           %|| (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Apple, Inc'))),
+%     keys.bbox = deviceCount;
+%     keys.trigger = KbName('t'); % use 't' as KbTrigger
+%     internalKeyboardDevice=deviceCount;
+%   end
+% end
 
 % to inform subject about upcoming task
 prefaceText = ['Coming up... ','Change Task: ',thisRun, '\n\n(left for ''yes'', right for ''no'') '];
