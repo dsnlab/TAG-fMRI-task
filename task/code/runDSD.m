@@ -153,6 +153,14 @@ task.input.statement = trialMatrix{9};
 numTrials = length(trialMatrix{1});
 task.output.raw = NaN(numTrials,13);
 task.input.discoSide = discoSide;
+
+%% These two lines are for manual input keyboard selection.
+% If these are uncommented/activated, then please comment out lines 183-195
+% (drs.keys = initKeys until the end of the keyboard ID loop that follows it)
+% [internalKeyboardDevice, inputDevice] = getKeyboards;
+% drs.keys = initKeysFromId(inputDevice);
+
+
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
 PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;

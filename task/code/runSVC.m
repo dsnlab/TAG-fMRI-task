@@ -93,6 +93,14 @@ task.input.syllables = trialMatrix{5};
 task.input.trait = trialMatrix{6};
 numTrials = length(trialMatrix{1});
 task.output.raw = NaN(numTrials,13);
+
+%% These two lines are for manual input keyboard selection.
+% If these are uncommented/activated, then please comment out lines 122-134
+% (drs.keys = initKeys until the end of the keyboard ID loop that follows it)
+%[internalKeyboardDevice, inputDevice] = getKeyboards;
+%drs.keys = initKeysFromId(inputDevice);
+
+
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
 PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
