@@ -1,23 +1,36 @@
-#DRS  
+# Transitions in Adolescent Girls (TAG) tasks
 
-This is the version to be used in TAG
+This repository includes the code for two tasks used in the TAG study:
 
-##`{ Disclosure, Self }`
+* Self versus Change (SVC)
+* Differential Self Disclosure (DSD)
 
-code for DRS suite of experiments  
+SVC is a self-evaluation task based on prior work in our lab (Jankowski et al., 2014; Pfeifer et al., 2013; Pfeifer, Lieberman, & Dapretto, 2007). A generalized version of this task that is modifiable can be found here: https://gitlab.com/dsnlab/svc.
 
-###~/task
-contains code && input text to run experiments, design info/materials, task output  
+DSD is a self-disclosure task based on Tamir & Mitchell, 2012.
 
-All code is in PTB-3, optimized for MATLAB_R2014b on Apple's OS X (10.9.2)  
+## setup
+To run this task, proceed with the following steps:
 
-Make sure to add the folders in `~/task` to the MATLAB search path. To wit, you can do:  
+1. Add `task/code` to your matlab path
+2. You **must** run the following from `svc/task`
+3. Run `getSubInfo()` on the matlab command line
+	- it will ask you to select the study folder -- this will be the `svc/` folder in which you find `task/` and this file, `README.md`. 
+4. Run `runSVC()` or `runDSD()` on the matlab command line
+
+## `~/task`
+
+Contains code and input text to run experiments, design info/materials, task output  
+
+All code is in [Psychtoolbox-3](http://psychtoolbox.org/), often run on OS X using MATLAB_R2014b
+
+Make sure to add the folders in `~/task` to the MATLAB search path. To do so, type:  
 
 ```matlab
 addpath(genpath('~/task'));
 ```
 
-### a note on keyboards
+## a note on keyboards
 Both SVC and DSD scripts have two redundant pieces of code that help with keyboard selection. **Either one or the other should be active, while the other one should be commented out.**
 
 The first one looks like this, and is for manual keyboard selection. If this is activated, then with each run of the script the user will manually select the internal keyboard and response keyboard. 
@@ -45,8 +58,3 @@ The second one looks like this, and relies on harcoded specifications about the 
  end
 
 ```
-
-===
-DRS-TAG  
-author: wem3, jflournoy  
-edited: 16-01-07  
