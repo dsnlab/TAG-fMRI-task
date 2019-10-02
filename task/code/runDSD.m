@@ -157,8 +157,8 @@ task.input.discoSide = discoSide;
 %% These two lines are for manual input keyboard selection.
 % If these are uncommented/activated, then please comment out lines 183-195
 % (drs.keys = initKeys until the end of the keyboard ID loop that follows it)
-% [internalKeyboardDevice, inputDevice] = getKeyboards;
-% drs.keys = initKeysFromId(inputDevice);
+[internalKeyboardDevice, inputDevice] = getKeyboards;
+drs.keys = initKeysFromId(inputDevice);
 
 
 %% set up screen preferences, rng
@@ -180,19 +180,19 @@ Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 
-drs.keys = initKeys;
-inputDevice = drs.keys.deviceNum;
-
-devices=PsychHID('Devices');
-for deviceCount=1:length(devices),
-  % Just get the local keyboard
-  if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
-          || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Apple, Inc'))),
-    keys.bbox = deviceCount;
-    keys.trigger = KbName('t'); % use 't' as KbTrigger
-    internalKeyboardDevice=deviceCount;
-  end
-end
+% drs.keys = initKeys;
+% inputDevice = drs.keys.deviceNum;
+% 
+% devices=PsychHID('Devices');
+% for deviceCount=1:length(devices),
+%   % Just get the local keyboard
+%   if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
+%           || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Apple, Inc'))),
+%     keys.bbox = deviceCount;
+%     keys.trigger = KbName('t'); % use 't' as KbTrigger
+%     internalKeyboardDevice=deviceCount;
+%   end
+% end
 
 % to inform subject about upcoming task
 prefaceText = ['Coming up... ','Sharing Task: ',thisRun, sideInstructions];
