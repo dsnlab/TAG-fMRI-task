@@ -107,12 +107,28 @@ else
 end
 
 % load subject's drs structure
+
 subInfoFile = ['input', filesep, subID,'_wave_',num2str(waveNum),'_info.mat'];
 load(subInfoFile);
+
+%% added jcs
+if ~isfolder(drs.input.path)
+    disp("Select input folder");
+    drs.input.path = uigetdir(pwd, 'Select input folder');
+end
+
+if ~isfolder(drs.output.path)
+    disp("Select output folder");
+    drs.output.path = uigetdir(pwd, 'Select output folder');
+end
+
+%%
 thisRun = ['run',num2str(runNum)];
 if strcmp(thisRun,'run0')
+
   inputTextFile = [drs.input.path,filesep,'dsd_practice_input.txt'];
   subOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_rpe_',thisRun,'.mat'];
+
 else
   subOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_',thisRun,'.mat'];
   inputTextFile = [drs.input.path,filesep,subID,'_wave_',num2str(waveNum),'_dsd_',thisRun,'_input.txt'];
@@ -154,18 +170,26 @@ numTrials = length(trialMatrix{1});
 task.output.raw = NaN(numTrials,13);
 task.input.discoSide = discoSide;
 
-%% These two lines are for manual input keyboard selection.
-% If these are uncommented/activated, then please comment out lines
-% 183 to 195 (drs.keys = initKeys until the end of the keyboard ID loop
-% that follows it)
-[internalKeyboardDevice, inputDevice] = getKeyboards;
-drs.keys = initKeysFromId(inputDevice);
+%% load key definitions file 
+% Run ButtonSetup.m first to verify assignments
+disp("Open key file");
+keyfile = uigetfile('*.mat', 'Open key file');
+if keyfile
+    drs.keys = ButtonLoad(keyfile);
+else
+    return;
+end
+
 
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
 PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
 rng('shuffle'); % if incompatible with older machines, use >> rand('seed', sum(100 * clock));
 screenNumber = max(Screen('Screens'));
+
+% added jcs
+% oldres = SetResolution(screenNumber, 1440, 900); %1920, 1080); % 
+
 PsychImaging('PrepareConfiguration');
 % open a window, set more params
 %[win,winBox] = PsychImaging('OpenWindow',screenNumber,bg,[0 0 1920/2 1080/2],[],'kPsychGUIWindow');
@@ -180,30 +204,22 @@ Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 
-% drs.keys = initKeys;
-% inputDevice = drs.keys.deviceNum;
-% 
-% devices=PsychHID('Devices');
-% for deviceCount=1:length(devices),
-%   % Just get the local keyboard
-%   if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
-%           || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).product,'Apple Internal Keyboard / Trackpad'))),
-%     keys.bbox = deviceCount;
-%     keys.trigger = KbName('t'); % use 't' as KbTrigger
-%     internalKeyboardDevice=deviceCount;
-%   end
-% end
-
 % to inform subject about upcoming task
 prefaceText = ['Coming up... ','Sharing Task: ',thisRun, sideInstructions];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.sky);
 [~,programOnset] = Screen('Flip',win);
-KbStrokeWait(internalKeyboardDevice);
+
+try
+    KbStrokeWait(drs.keys.keyboard_index);
+catch
+    error("Problem waiting for internal keyboard, try running ButtonSetup")
+end
+
 
 %% present during multiband calibration (time shortened for debug)
 % skip the long wait for training session
 if runNum == 0
-    calibrationTime = 1;
+    calibrationTime = 1; 
 else
     calibrationTime = 17;
 end
@@ -230,28 +246,40 @@ DrawFormattedText(win, 'Getting scan ready...\n\n hold really still!',...
 %WaitSecs(1);
 %Screen('Flip', win);
 
-% trigger pulse code 
+% define keys to listen for, create KbQueue (coins & text drawn while it warms up)
+keyList = zeros(1,256);
+keyList(drs.keys.kill)=1; % unused? Should be use in internal keyboard queue
+leftKeys = ([drs.keys.b0 drs.keys.b1 drs.keys.b2 drs.keys.b3 drs.keys.b4]);
+rightKeys = ([drs.keys.b5 drs.keys.b6 drs.keys.b7 drs.keys.b8 drs.keys.b9]);
+keyList(leftKeys) = 1;
+keyList(rightKeys) = 1;
 
+choiceSkips = [];
+discoSkips = [];
+
+% trigger pulse code 
 disp(drs.keys.trigger);
-if runNum == 0
-    KbStrokeWait(internalKeyboardDevice);
+
+% Possibly a Psychtoolbox bug:
+% we need to create and release the trigger queue
+% when we've already used KbStrokeWait with the same device id
+KbQueueCreate(drs.keys.trigger_index);
+KbQueueRelease(drs.keys.trigger_index);
+
+if runNum == 0 
+    KbStrokeWait(drs.keys.keyboard_index);
 else
-    KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
+    KbTriggerWait(drs.keys.trigger,drs.keys.trigger_index); 
     disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
     triggerPulseTime = GetSecs;
     disp('trigger pulse received, starting experiment');
 end
 Screen('Flip', win);
 
-% define keys to listen for, create KbQueue (coins & text drawn while it warms up)
-keyList = zeros(1,256);
-keyList(drs.keys.buttons)=1;
-keyList(drs.keys.kill)=1;
-leftKeys = ([drs.keys.b0 drs.keys.b1 drs.keys.b2 drs.keys.b3 drs.keys.b4 drs.keys.left]);
-rightKeys = ([drs.keys.b5 drs.keys.b6 drs.keys.b7 drs.keys.b8 drs.keys.b9 drs.keys.right]);
-KbQueueCreate(inputDevice, keyList);
-choiceSkips = [];
-discoSkips = [];
+for kn = 1:length(drs.keys.response_indices)
+    KbQueueCreate(drs.keys.response_indices(kn), keyList);
+end
+
 loopStartTime = GetSecs;
 %% trial loop
 for tCount = 1:numTrials
@@ -278,11 +306,14 @@ for tCount = 1:numTrials
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
   Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);
   
-  %
-  KbQueueStart(inputDevice);
+  for kn = 1:length(drs.keys.response_indices)
+    KbQueueStart(drs.keys.response_indices(kn));
+  end
+
   [~,discoOnset] = Screen('Flip',win);
   while (GetSecs - discoOnset) < 4.5
-    [ pressed, firstPress]=KbQueueCheck(inputDevice);
+ %   [ pressed, firstPress]=KbQueueCheck(inputDevice);
+    [ pressed, firstPress]=ResponseCheck(drs.keys.response_indices);
     if pressed
       if disclosed == 0;
         discoRT = firstPress(find(firstPress)) - discoOnset;
@@ -300,18 +331,23 @@ for tCount = 1:numTrials
       drawDiscoFeedback(win,drs.stim,targets,statement,discoResponse);
     end
   end
-  KbQueueStop(inputDevice);
+  for kn = 1:length(drs.keys.response_indices)
+    KbQueueStop(drs.keys.response_indices(kn));
+  end
   WaitSecs('UntilTime',(discoOnset + 4.5 + discoJitter));
   %
   choiceResponse = 0;
   %drawHands(win,drs.stim,targets,[0.5 0.5]);
   drawChoice(win,drs.stim,targets,statement,discoResponse);
-  KbQueueStart(inputDevice);
+  for kn = 1:length(drs.keys.response_indices)
+    KbQueueStart(drs.keys.response_indices(kn));
+  end
   % flip the screen to show choice
   [~,choiceOnset] = Screen('Flip',win);
   %loop for response
   while (GetSecs - choiceOnset) < 3
-    [ pressed, firstPress]=KbQueueCheck(inputDevice);
+    [ pressed, firstPress]=ResponseCheck(drs.keys.response_indices);  
+ %   [ pressed, firstPress]=KbQueueCheck(inputDevice);
       if pressed
         if chose == 0
           choiceRT = firstPress(find(firstPress)) - choiceOnset;
@@ -332,7 +368,9 @@ for tCount = 1:numTrials
         drawChoiceFeedback(win,drs.stim,targets,statement,discoResponse,choiceResponse);
       end   
   end
-  KbQueueStop(inputDevice);
+  for kn = 1:length(drs.keys.response_indices)
+    KbQueueStop(drs.keys.response_indices(kn));
+  end
   Screen('FillRect',win, drs.stim.bg);
   [~,choiceOffset] = Screen('Flip',win); % choiceOffset used to be discoOffset
   WaitSecs('UntilTime',(choiceOnset + 3 + choiceJitter + 1));
@@ -373,7 +411,10 @@ endText = ['Sharing task ',thisRun,' complete! \n\nYou earned ',num2str(payout),
 DrawFormattedText(win, endText,...
     'center', 'center', drs.stim.white);
 Screen('Flip', win);
-KbQueueRelease;
+  
+for kn = 1:length(drs.keys.response_indices)
+    KbQueueRelease(drs.keys.response_indices(kn));
+end
 
 % write output text file for redundancy
 if runNum ~= 0
@@ -396,6 +437,7 @@ if runNum ~= 0
   save(subOutputMat,'task');
 end
 
-KbStrokeWait(internalKeyboardDevice);
+KbStrokeWait(drs.keys.keyboard_index);
 Screen('Close', win);
+SetResolution(screenNumber, oldres);
 return
