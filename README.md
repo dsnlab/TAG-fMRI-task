@@ -18,8 +18,9 @@ addpath(genpath('~/task'));
 ```
 
 ### an abbreviated note on keyboards - how to get the script to run
+* use runDSD and runSVC scripts from TAG-fMRI-task, NOT the copy and NOT the runDSD_laptop versions
+* you may need to add PsychToolbox and its subfolders to the path (it's under Applications)
 * When plugging in the two USB-C attachments to integrate Xkeys and to connect to the display on the left-hand side of the Sherri and Terri laptops, make sure that the XKeys USB to USB-C converter is first (at the top/closest to the laptop screen) and the display converter is second (at the bottom). 
-* run from TAG-fMRI-task, not the copy
 * when prompted to select the keys file, please select based on where you are running: 
 	* if running in the scanner from a laptop: `/Users/FP/Desktop/TAG-fMRI-task/task/code/[computer_name]_prisma_keys.mat` 
 	* if running a behavioral session on a laptop: `/Users/FP/Desktop/TAG-fMRI-task/task/code/[computer_name]_behavioral_keys.mat`
