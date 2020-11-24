@@ -17,6 +17,14 @@ Make sure to add the folders in `~/task` to the MATLAB search path. To wit, you 
 addpath(genpath('~/task'));
 ```
 
+### an abbreviated note on keyboards - how to get the script to run
+* When plugging in the two USB-C attachments to integrate Xkeys and to connect to the display on the left-hand side of the Sherri and Terri laptops, make sure that the XKeys USB to USB-C converter is first (at the top/closest to the laptop screen) and the display converter is second (at the bottom). 
+* run from TAG-fMRI-task, not the copy
+* when prompted to select the keys file, please select based on where you are running: 
+	* if running in the scanner from a laptop: `/Users/FP/Desktop/TAG-fMRI-task/task/code/[computer_name]_prisma_keys.mat` 
+	* if running a behavioral session on a laptop: `/Users/FP/Desktop/TAG-fMRI-task/task/code/[computer_name]_behavioral_keys.mat`
+	* I believe that they correct keys.mat file for running in the simulator is called osx_mock_keys.mat, and that this should be run from the Desktop within the simulator room
+
 ### a frighteningly long note on keyboards: a word from Jolinda 
 
 #### how to use new button setup scripts
