@@ -196,6 +196,8 @@ PsychImaging('PrepareConfiguration');
 [win,winBox] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
 % flip to get ifi
 
+%drs.stim.box = ConvertStim(drs.stim.box, screenNumber);
+
 HideCursor();
 
 Screen('Flip', win);
