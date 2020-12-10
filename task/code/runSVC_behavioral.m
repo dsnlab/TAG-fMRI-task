@@ -71,6 +71,19 @@ thisRun = ['run',num2str(runNum)];
 subInfoFile = ['input', filesep, subID,'_wave_',num2str(waveNum),'_info.mat'];
 load(subInfoFile);
 thisRun = ['run',num2str(runNum)];
+
+%% added jcs
+if ~isfolder(drs.input.path)
+    disp("Select input folder");
+    drs.input.path = uigetdir(pwd, 'Select input folder');
+end
+
+if ~isfolder(drs.output.path)
+    disp("Select output folder");
+    drs.output.path = uigetdir(pwd, 'Select output folder');
+end
+
+%%
 if strcmp(thisRun,'run0')
   inputTextFile = [drs.input.path,filesep,'svc_practice_input.txt'];
   subOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_rpe_',thisRun,'.mat'];
@@ -84,6 +97,7 @@ end
 fid=fopen(inputTextFile);
 trialMatrix=textscan(fid,'%u%u%f%u%u%s\n','delimiter',',');
 fclose(fid);
+
 %% store info from trialMatrix in drs structure
 task.input.raw = [trialMatrix{1} trialMatrix{2} trialMatrix{3} trialMatrix{4} trialMatrix{5}];
 task.input.condition = trialMatrix{2};
@@ -94,18 +108,31 @@ task.input.trait = trialMatrix{6};
 numTrials = length(trialMatrix{1});
 task.output.raw = NaN(numTrials,13);
 
-[internalKeyboardDevice, inputDevice] = getKeyboards;
-drs.keys = initKeysFromId(inputDevice);
+%% load key definitions file 
+% Run ButtonSetup.m first to verify assignments
+disp("Open key file");
+keyfile = uigetfile('*.mat', 'Open key file');
+if keyfile
+    drs.keys = ButtonLoad(keyfile);
+else
+    return;
+end
 
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
 PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
 rng('shuffle'); % if incompatible with older machines, use >> rand('seed', sum(100 * clock));
 screenNumber = max(Screen('Screens'));
+
+% added jcs
+% oldres = SetResolution(screenNumber, %1440, 900); %1920, 1080); %
+
 % open a window, set more params
 %[win,winBox] = PsychImaging('OpenWindow',screenNumber,bg,[0 0 1920/2 1080/2],[],'kPsychGUIWindow');
 [win,winBox] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
 % flip to get ifi
+
+%drs.stim.box = ConvertStim(drs.stim.box, screenNumber);
 
 HideCursor();
 
@@ -115,25 +142,11 @@ Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 
-% drs.keys = initKeys;
-% inputDevice = drs.keys.deviceNum;
-% 
-% devices=PsychHID('Devices');
-% for deviceCount=1:length(devices),
-%   % Just get the local keyboard
-%   if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).product,'Apple Internal Keyboard / Trackpad'))), % ...
-%           %|| (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Apple, Inc'))),
-%     keys.bbox = deviceCount;
-%     keys.trigger = KbName('t'); % use 't' as KbTrigger
-%     internalKeyboardDevice=deviceCount;
-%   end
-% end
-
 % to inform subject about upcoming task
 prefaceText = ['Coming up... ','Change Task: ',thisRun, '\n\n(left for ''yes'', right for ''no'') '];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.orange);
 [~,programOnset] = Screen('Flip',win);
-KbStrokeWait(internalKeyboardDevice);
+KbStrokeWait(drs.keys.keyboard_index);
 
 %% present during multiband calibration (time shortened for debug)
 % skip the long wait for training session
@@ -164,13 +177,19 @@ DrawFormattedText(win, 'Getting scan ready...\n\n hold really still!',...
 %WaitSecs(1);
 %Screen('Flip', win);
 
-% trigger pulse code (disabled for debug)
+% Possibly a Psychtoolbox bug:
+% we need to create and release the trigger queue
+% when we've already used KbStrokeWait with the same device id
+KbQueueCreate(drs.keys.trigger_index);
+KbQueueRelease(drs.keys.trigger_index);
 
+% trigger pulse code (disabled for debug)
 disp(drs.keys.trigger);
 if runNum == 0
-    KbStrokeWait(internalKeyboardDevice);
+    KbStrokeWait(drs.keys.keyboard_index);
 else
-    KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
+    KbTriggerWait(drs.keys.trigger, drs.keys.trigger_index); 
+    % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
     disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
     triggerPulseTime = GetSecs;
     disp('trigger pulse received, starting experiment');
@@ -179,11 +198,16 @@ Screen('Flip', win);
 
 %% define keys to listen for, create KbQueue (coins & text drawn while it warms up)
 keyList = zeros(1,256);
-keyList(drs.keys.buttons)=1;
-keyList(drs.keys.kill)=1;
-leftKeys = ([drs.keys.b0 drs.keys.b1 drs.keys.b2 drs.keys.b3 drs.keys.b4 drs.keys.left]);
-rightKeys = ([drs.keys.b5 drs.keys.b6 drs.keys.b7 drs.keys.b8 drs.keys.b9 drs.keys.right]);
-KbQueueCreate(inputDevice, keyList);
+keyList(drs.keys.kill)=1; % unused? Should be in internal keyboard queue
+leftKeys = ([drs.keys.b0 drs.keys.b1 drs.keys.b2 drs.keys.b3 drs.keys.b4]);
+rightKeys = ([drs.keys.b5 drs.keys.b6 drs.keys.b7 drs.keys.b8 drs.keys.b9]);
+keyList(leftKeys) = 1;
+keyList(rightKeys) = 1;
+
+for kn = 1:length(drs.keys.response_indices)
+    KbQueueCreate(drs.keys.response_indices(kn), keyList);
+end
+
 traitSkips = [];
 blockStartTrials = 1:5:50;
 loopStartTime = GetSecs;
@@ -236,12 +260,15 @@ for tCount = 1:numTrials
   end
   %% call draw function
   drawTrait(win,drs.stim,trait,condition,[0.5 0.5]);
-  KbQueueStart(inputDevice);
+  
+  for kn = 1:length(drs.keys.response_indices)
+    KbQueueStart(drs.keys.response_indices(kn));
+  end
   % flip the screen to show trait
   [~,traitOnset] = Screen('Flip',win);
   %loop for response
   while (GetSecs - traitOnset) < 4.7
-    [ pressed, firstPress]=KbQueueCheck(inputDevice);
+    [ pressed, firstPress]=ResponseCheck(drs.keys.response_indices);
       if pressed
         if chose == 0
           traitRT = firstPress(find(firstPress)) - traitOnset;
@@ -260,7 +287,9 @@ for tCount = 1:numTrials
         drawTraitFeedback(win,drs.stim,trait,condition,traitResponse);
       end   
   end
-  KbQueueStop(inputDevice);
+  for kn = 1:length(drs.keys.response_indices)
+    KbQueueStop(drs.keys.response_indices(kn));
+  end
   drawTrait(win,drs.stim,' ',condition,[0.5 0.5]);
   Screen('Flip',win);
   if traitJitter > 4.7
@@ -284,7 +313,11 @@ for tCount = 1:numTrials
   save(subOutputMat,'task');
 
 end
-KbQueueRelease(inputDevice);
+
+for kn = 1:length(drs.keys.response_indices)
+  KbQueueRelease(drs.keys.response_indices(kn));
+end
+
 % End of experiment screen. We clear the screen once they have made their
 % response
 DrawFormattedText(win, 'Scan Complete! \n\nWe will check in momentarily...',...
@@ -306,7 +339,7 @@ if runNum ~= 0
   save(subOutputMat,'task');
 end
 
-KbStrokeWait(internalKeyboardDevice);
+KbStrokeWait(drs.keys.keyboard_index);
 Screen('Close', win);
-
+SetResolution(screenNumber, oldres);
 return
