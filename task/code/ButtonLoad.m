@@ -16,8 +16,8 @@ function k = ButtonLoad(keyfile)
         k.left_index = GetKeyboardIndices([], [], k.left_loc);
         k.right_index = GetKeyboardIndices([], [], k.right_loc);
         
-        devices_found = ~all([k.keyboard_index, k.trigger_index, ...
-            k.left_index, k.right_index]);
+        devices_found = length([k.keyboard_index, k.trigger_index, ...
+            k.left_index, k.right_index]) == 4;
         
         if ~devices_found
             answer = questdlg('Unable to find devices.', ...
@@ -40,7 +40,8 @@ end
 
 function kfile = LoadKeyfile
     disp("Select keyfile");
-    kfile = uigetfile(pwd, 'Select key file', '*.mat');
+    [kfilename, kdir] = uigetfile(pwd, 'Select key file', '*.mat');
+    kfile = fullfile(kdir, kfilename);
     if ~kfile
      answer = questdlg('Run button setup?', ...
             'No keyfile', ...
