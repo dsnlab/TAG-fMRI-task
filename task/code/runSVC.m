@@ -119,15 +119,11 @@ PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors f
 rng('shuffle'); % if incompatible with older machines, use >> rand('seed', sum(100 * clock));
 screenNumber = max(Screen('Screens'));
 
-% may not work as expected depending on screens, psychtoolbox version
-% Somewhat moot with 'ConvertStim' anyway
-%newres = NearestResolution(screenNumber, drs.stim.box.xDim, drs.stim.box.yDim);
-%oldres = SetResolution(screenNumber, newres);
-
-% open a window, set more params
-%[win,winBox] = PsychImaging('OpenWindow',screenNumber,bg,[0 0 1920/2 1080/2],[],'kPsychGUIWindow');
 if nargin < 5
     [win,~] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
+    NeedToCloseWin = true;
+else
+    NeedToCloseWin = false;
 end
 % flip to get ifi
 
@@ -161,23 +157,6 @@ end
 DrawFormattedText(win, 'Getting scan ready...\n\n hold really still!',...
   'center', 'center', drs.stim.white);
 [~,calibrationOnset] = Screen('Flip', win);
-
-%WaitSecs(calibrationTime);
-%DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 5',...
-%  'center', 'center', drs.stim.white);
-%Screen('Flip', win);
-%WaitSecs(1);
-%DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 4',...
-%  'center', 'center', drs.stim.white);
-%Screen('Flip', win);
-%DrawFormattedText(win, 'Self or Change Task\n\n Starting in... 3',...
-%  'center', 'center', drs.stim.white);
-%WaitSecs(1);
-%Screen('Flip', win);
-%DrawFormattedText(win, 'Self or Change Task\n\n Get Ready!',...
-%  'center', 'center', drs.stim.white);
-%WaitSecs(1);
-%Screen('Flip', win);
 
 % we need to create and release the trigger queue
 % when we've already used KbStrokeWait with the same device id
@@ -343,6 +322,11 @@ end
 
 KbStrokeWait(drs.keys.keyboard_index);
 
-Screen('Close', win);
+% jcs TODO set a flag instead
+if NeedToCloseWin
+    Screen('Close', win);
+end
+
 %SetResolution(screenNumber, oldres); % jcs
-return
+%return
+end

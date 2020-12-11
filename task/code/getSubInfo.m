@@ -10,6 +10,7 @@ function [ drs ] = getSubInfo()
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % prompt for study directory (highest level)
+disp('Select study directory');
 studyDir = uigetdir('/vxfsvol/home/research/dsnlab/Studies/TAG/code/task/DRS','Select study directory');
 
 % interactive dialog to get demographic info

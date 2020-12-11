@@ -67,7 +67,7 @@ SetTextStyle(50);
 %% preface
 %DrawFormattedText(win, ['Welcome to the TAG study!\n\n (press any button to continue)'],...
 %  'center', 'center', drs.stim.white);
-
+FlushEvents('keyDown');
 DrawText('Welcome to the TAG study!');
 DrawContinue;
 
@@ -142,10 +142,12 @@ DrawContinue('(press any button to start the practice)', 3);
 %DrawFormattedText(win, '(press any button to start the practice)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
 
 FlushEvents('keyDown');
-%TODO: which queues need to be released on osx?
+
+% TODO: which queues need to be released and on what platform?
 % this is an internal psychtoolbox function but I can't find another way
 % to "unreserve" the queue 
-KbQueueReserve(2,1,-1);
+% KbQueueReserve(2,1,-1);
+
 runSVC(drs.subNum,drs.waveNum,0, drs.keys, win)
 
 FlushEvents('keyDown');

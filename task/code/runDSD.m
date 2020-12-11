@@ -188,7 +188,10 @@ PsychImaging('PrepareConfiguration');
 % open a window, set more params
 %[win,winBox] = PsychImaging('OpenWindow',screenNumber,bg,[0 0 1920/2 1080/2],[],'kPsychGUIWindow');
 if ~exist('win', 'var')
-    [win,winBox] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
+    [win,~] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
+    NeedToCloseWin = true;
+else
+    NeedToCloseWin = false;
 end
 % flip to get ifi
 
@@ -440,6 +443,11 @@ end
 KbStrokeWait(drs.keys.keyboard_index);
 KbQueueRelease(drs.keys.keyboard_index);
 KbQueueRelease(drs.keys.trigger_index);
-Screen('Close', win);
+
+
+if NeedToCloseWin
+    Screen('Close', win);
+end
+
 %SetResolution(screenNumber, oldres);
-return  
+end
