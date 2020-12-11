@@ -1,0 +1,3 @@
+[submodule "UniversalHardware"]
+	path = UniversalHardware
+	url = git@github.com:Jolinda/UniversalHardware.git

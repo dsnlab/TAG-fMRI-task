@@ -21,7 +21,8 @@ end
 iconTex = Screen('MakeTexture',win,iconMatrix);
 Screen('DrawTexture',win,iconTex,[],stim.box.prompt);
 % draw trait
-Screen('TextSize', win, 100);
+%Screen('TextSize', win, 100);
+Screen('TextSize', win, stim.box.bigtext); %jcs
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle', win,1);
 DrawFormattedText( win, trait, 'center', 'center', stim.white );

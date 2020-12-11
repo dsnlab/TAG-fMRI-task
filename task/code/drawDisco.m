@@ -24,7 +24,8 @@ function drawDisco(win, stim, statement)
 %   Screen('FillRect',win,[stim.bg(1:3) 0.5], [0 0 stim.box.xDim stim.box.statement(2)]);
 % end
 
-Screen('TextSize', win, 60);
+%Screen('TextSize', win, 60);
+Screen('TextSize', win, stim.box.smalltext);%jcs
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle',win,1);
 DrawFormattedText(win, 'Sometimes I...',...

@@ -17,7 +17,8 @@ switch discoResponse
         drawYesNo(win,stim,[0 1]);
 end
 
-Screen('TextSize', win, 60);
+%Screen('TextSize', win, 60);
+Screen('TextSize', win, stim.box.smalltext); %jcs
 Screen('TextFont', win, 'Arial');
 Screen('TextStyle', win,1);
 leftCoin = Screen('MakeTexture',win,stim.coins{targets(3)});
