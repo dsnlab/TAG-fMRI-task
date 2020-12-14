@@ -174,14 +174,15 @@ end
 
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
-PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
+
 rng('shuffle'); % if incompatible with older machines, use >> rand('seed', sum(100 * clock));
 screenNumber = max(Screen('Screens'));
 
-PsychImaging('PrepareConfiguration');
-% open a window, set more params
-%[win,winBox] = PsychImaging('OpenWindow',screenNumber,bg,[0 0 1920/2 1080/2],[],'kPsychGUIWindow');
+% open a window, set more params (unless win passed as parameter)
 if ~exist('win', 'var')
+    PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
+    PsychImaging('PrepareConfiguration');
+    PsychImaging('AddTask', 'General', 'UseRetinaResolution');
     [win,~] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
     NeedToCloseWin = true;
 else

@@ -52,7 +52,8 @@ screenNumber = max(Screen('Screens'));
 
 % open a window, set more params
 PsychImaging('PrepareConfiguration');
-[win,winBox] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
+PsychImaging('AddTask', 'General', 'UseRetinaResolution');
+[win,~] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
 
 drs.stim.box = ConvertStim(drs.stim.box, screenNumber); %jcs
 smalltext = 50; %jcs
