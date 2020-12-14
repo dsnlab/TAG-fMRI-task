@@ -1,3 +1,5 @@
 [submodule "UniversalHardware"]
 	path = UniversalHardware
 	url = https://github.com/Jolinda/UniversalHardware.git
+	branch = main
+	update = merge
