@@ -178,12 +178,6 @@ PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors f
 rng('shuffle'); % if incompatible with older machines, use >> rand('seed', sum(100 * clock));
 screenNumber = max(Screen('Screens'));
 
-% added jcs
-% may not work as expected depending on screens, psychtoolbox version
-% Somewhat moot with 'ConvertStim' anyway
-%newres = NearestResolution(screenNumber, drs.stim.box.xDim, drs.stim.box.yDim);
-%oldres = SetResolution(screenNumber, newres);
-
 PsychImaging('PrepareConfiguration');
 % open a window, set more params
 %[win,winBox] = PsychImaging('OpenWindow',screenNumber,bg,[0 0 1920/2 1080/2],[],'kPsychGUIWindow');
@@ -212,6 +206,7 @@ DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.sky);
 [~,programOnset] = Screen('Flip',win);
 
 try
+    disp("waiting for input from " + drs.keys.keyboard_name);
     KbStrokeWait(drs.keys.keyboard_index);
 catch
     error("Problem waiting for internal keyboard, try running ButtonSetup")
@@ -269,8 +264,10 @@ KbQueueCreate(drs.keys.trigger_index);
 KbQueueRelease(drs.keys.trigger_index);
 
 if runNum == 0 
+    disp("waiting for input from " + drs.keys.keyboard_name);
     KbStrokeWait(drs.keys.keyboard_index);
 else
+    disp("waiting for trigger from " + drs.keys.trigger_name);
     KbTriggerWait(drs.keys.trigger,drs.keys.trigger_index); 
     disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
     triggerPulseTime = GetSecs;

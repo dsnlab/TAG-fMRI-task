@@ -143,6 +143,7 @@ Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 prefaceText = ['Coming up... ','Change Task: ',thisRun, '\n\n(left for ''yes'', right for ''no'') '];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.orange);
 [~,programOnset] = Screen('Flip',win);
+disp("waiting for input from " + drs.keys.keyboard_name);
 KbStrokeWait(drs.keys.keyboard_index);
 
 %% present during multiband calibration (time shortened for debug)
@@ -166,8 +167,11 @@ KbQueueRelease(drs.keys.trigger_index);
 % trigger pulse code (disabled for debug)
 disp(drs.keys.trigger);
 if runNum == 0
+    disp("waiting for input from " + drs.keys.keyboard_name);
     KbStrokeWait(drs.keys.keyboard_index);
+    
 else
+    disp("waiting for trigger from " + drs.keys.trigger_name);
     KbTriggerWait(drs.keys.trigger, drs.keys.trigger_index); 
     % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
     disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
