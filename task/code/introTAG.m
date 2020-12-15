@@ -143,10 +143,11 @@ DrawContinue('(press any button to start the practice)', 3);
 
 FlushEvents('keyDown');
 
-% TODO: which queues need to be released and on what platform?
-% this is an internal psychtoolbox function but I can't find another way
-% to "unreserve" the queue 
-% KbQueueReserve(2,1,-1);
+% this is needed on windows, unneeded on macos, untested on linux
+% May not do any harm on macos?
+if ispc
+    KbQueueReserve(2,1,-1);
+end
 
 runSVC(drs.subNum,drs.waveNum,0, drs.keys, win)
 
@@ -235,6 +236,9 @@ DrawText('Let''s practice the sharing task!', 0, drs.stim.yellow);
 DrawContinue('(press any button to start the practice)',3);
 FlushEvents('keyDown');
 
+if ispc
+    KbQueueReserve(2,1,-1);
+end
 runDSD(drs.subNum,drs.waveNum,0, drs.keys, win);
 
 Screen('CloseAll')
