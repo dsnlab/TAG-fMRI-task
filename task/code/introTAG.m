@@ -5,8 +5,12 @@ clear all;
 %   drsIntro.m: a script what runs the introduction to DRS tasks
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%2222222232%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% dependencies:6666663663330
+% dependencies:
 %     getSubInfo.m (function to collect subject info)
+%     ButtonLoad.m (from UniversalHardware)
+%     runDSD.m
+%     runSVC.m
+%     
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % open dialog to get some info from participant
@@ -38,9 +42,14 @@ drs.keys = ButtonLoad;
 
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
-PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
+
+% automatically call KbName('UnifyKeyNames'), set colors from 0-1;
+PsychDefaultSetup(2); 
 rng('default');
-rng('shuffle'); % if incompatible with older machines, use >> rand('seed', sum(100 * clock));
+
+% if incompatible with older machines, use >> rand('seed', sum(100 * clock));
+rng('shuffle'); 
+
 screenNumber = max(Screen('Screens'));
 
 % open a window, set more params
@@ -56,11 +65,9 @@ largetext = 80;
 Screen('Flip', win);
 drs.stim.ifi = Screen('GetFlipInterval', win);
 Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
-SetTextStyle(50);
+SetTextStyle(smalltext);
 
 %% preface
-%DrawFormattedText(win, ['Welcome to the TAG study!\n\n (press any button to continue)'],...
-%  'center', 'center', drs.stim.white);
 FlushEvents('keyDown');
 DrawText('Welcome to the TAG study!');
 DrawContinue;
@@ -133,7 +140,6 @@ DrawContinue('(press left for yes or right for no)', 3);
 % flip the screen to show trait
 DrawText('Let''s practice the change task! ', 0, drs.stim.yellow);
 DrawContinue('(press any button to start the practice)', 3);
-%DrawFormattedText(win, '(press any button to start the practice)','center',(drs.stim.box.yCenter + 3*drs.stim.box.unit), drs.stim.white);
 
 FlushEvents('keyDown');
 
