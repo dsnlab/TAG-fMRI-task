@@ -15,7 +15,6 @@ drs = getSubInfo();
 % set subID & studyDir (cause I keep forgetting to drill into drs.subID/studyDir)
 subID = drs.subID;
 subNum = str2num(cell2mat(regexp(subID,'\d*','Match')));
-studyDir = drs.studyDir;
 
 %dsd_discoside.csv info:
 % col1: Tag ID; col2: side (1 = Right, 2 = Left)
@@ -36,12 +35,6 @@ end
 %% query button box, set up keys
 % jcs
 drs.keys = ButtonLoad;
-keyList = zeros(1,256);
-leftKeys = ([drs.keys.b0 drs.keys.b1 drs.keys.b2 drs.keys.b3 drs.keys.b4]);
-rightKeys = ([drs.keys.b5 drs.keys.b6 drs.keys.b7 drs.keys.b8 drs.keys.b9]);
-keyList(leftKeys) = 1;
-keyList(rightKeys) = 1;
-
 
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
@@ -55,9 +48,9 @@ PsychImaging('PrepareConfiguration');
 PsychImaging('AddTask', 'General', 'UseRetinaResolution');
 [win,~] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
 
-drs.stim.box = ConvertStim(drs.stim.box, screenNumber); %jcs
-smalltext = 50; %jcs
-largetext = 80; %jcs
+drs.stim.box = ConvertStim(drs.stim.box, screenNumber); 
+smalltext = 50; 
+largetext = 80; 
 
 % flip to get ifi
 Screen('Flip', win);
@@ -166,7 +159,7 @@ end
 statement = 'like robots';
 %%
 
-SetTextStyle(smalltext); %jcs
+SetTextStyle(smalltext); 
 DrawText('Sharing Task: First, you''ll see a brief statement.', -2);
 DrawText('Decide if this statement describes you.',-1, drs.stim.yellow);
 DrawText('You''ll have about 4 seconds to decide.',0, drs.stim.yellow);
@@ -175,28 +168,28 @@ DrawContinue;
 WaitSecs(1);
 
 %%
-choiceResponse=1;
+%choiceResponse=1;
 drawYesNo(win,drs.stim,[0.5 0.5]);
 drawDisco(win,drs.stim,statement);
 
-SetTextStyle(smalltext); %jcs
+SetTextStyle(smalltext); 
 DrawContinue('(press left for yes)',3);
 
 drawDiscoFeedback(win,drs.stim,targets,statement,1);
 WaitSecs(1);
 %%
 
-choiceResponse=2;
+%choiceResponse=2;
 drawYesNo(win,drs.stim,[0.5 0.5]);
 drawDisco(win,drs.stim,statement);
 
-SetTextStyle(smalltext); %jcs
+SetTextStyle(smalltext); 
 DrawContinue('(press right for no)', 3);
 
 drawDiscoFeedback(win,drs.stim,targets,statement,2);
 WaitSecs(1);
 %%
-SetTextStyle(smalltext); %jcs
+SetTextStyle(smalltext); 
 DrawText('Next, decide whether to share this statement\nwith your friend or keep it private, \n\n(with 2-4 pennies presented beneath the text)... ', ...
     -2, drs.stim.white);
 DrawText('At the end of the task, you''ll be paid \n\nthe number of pennies you earn', ...
@@ -208,7 +201,7 @@ DrawContinue;
 drawHands(win,drs.stim,targets,[0.5 0.5]);
 drawChoice(win,drs.stim,targets,statement,2);
 
-SetTextStyle(smalltext); %jcs
+SetTextStyle(smalltext); 
 DrawContinue(privatetext,3);
 
 drawChoiceFeedback(win,drs.stim,targets,statement,2,1);
@@ -217,7 +210,7 @@ WaitSecs(1);
 drawHands(win,drs.stim,targets,[0.5 0.5]);
 drawChoice(win,drs.stim,targets,statement,2);
 
-SetTextStyle(smalltext); %jcs
+SetTextStyle(smalltext); 
 DrawContinue(sharetext,3);
 
 drawChoiceFeedback(win,drs.stim,targets,statement,2,2);
@@ -225,7 +218,7 @@ WaitSecs(1);
 
 %%
 
-SetTextStyle(smalltext); %jcs
+SetTextStyle(smalltext); 
 DrawText('Don''t rush, but choose quickly \n\nbecause you only have about 3 seconds ',...
     -2, drs.stim.yellow);
 DrawContinue('(press any button)');
@@ -242,7 +235,7 @@ Screen('CloseAll')
 
 %% added by jcs
 function SetTextStyle(size)
-    Screen('TextSize', win, floor(size * drs.stim.box.yratio)); %jcs
+    Screen('TextSize', win, floor(size * drs.stim.box.yratio)); 
     Screen('TextFont', win, 'Arial');
     Screen('TextStyle',win,0);
 end
