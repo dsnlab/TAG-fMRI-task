@@ -45,7 +45,7 @@ Screen('Preference', 'VisualDebugLevel', 1);
 
 % for some reason this is needed ONLY for the dsnlab login on the mock
 % For other users, the new text renderer is fine
-if osx
+if IsOSX
     Screen('Preference','TextRenderer', 0)
 end
 
@@ -75,9 +75,6 @@ SetTextStyle(smalltext);
 
 %% preface
 FlushEvents('keyDown');
-DrawFormattedText(win, 'Hello\nHello');
-Screen('Flip',win);
-GetChar();
 DrawText('Welcome to the TAG study!');
 DrawContinue;
 
