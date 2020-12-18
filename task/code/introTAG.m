@@ -43,6 +43,12 @@ drs.keys = ButtonLoad;
 %% set up screen preferences, rng
 Screen('Preference', 'VisualDebugLevel', 1);
 
+% for some reason this is needed ONLY for the dsnlab login on the mock
+% For other users, the new text renderer is fine
+if osx
+    Screen('Preference','TextRenderer', 0)
+end
+
 % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
 PsychDefaultSetup(2); 
 rng('default');
@@ -69,6 +75,9 @@ SetTextStyle(smalltext);
 
 %% preface
 FlushEvents('keyDown');
+DrawFormattedText(win, 'Hello\nHello');
+Screen('Flip',win);
+GetChar();
 DrawText('Welcome to the TAG study!');
 DrawContinue;
 
