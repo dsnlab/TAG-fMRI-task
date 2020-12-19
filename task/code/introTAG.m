@@ -149,7 +149,13 @@ if ispc
     KbQueueReserve(2,1,-1);
 end
 
-runSVC(drs.subNum,drs.waveNum,0, drs.keys, win)
+try
+    runSVC(drs.subNum,drs.waveNum,0, drs.keys, win)
+catch
+    Screen('closeall');
+    ShowCursor;
+    error('Problem running runSVC');
+end
 
 FlushEvents('keyDown');
 %% Explain DSD
@@ -239,7 +245,14 @@ FlushEvents('keyDown');
 if ispc
     KbQueueReserve(2,1,-1);
 end
-runDSD(drs.subNum,drs.waveNum,0, drs.keys, win);
+
+try
+    runDSD(drs.subNum,drs.waveNum,0, drs.keys, win);
+catch
+    Screen('closeall');
+    ShowCursor;
+    error('Problem running runDSD');
+end
 
 Screen('CloseAll')
 
