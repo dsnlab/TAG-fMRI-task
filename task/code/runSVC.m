@@ -32,6 +32,10 @@ function [task] = runSVC(subNumArg, waveNumArg, runNumArg, keys, win)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % changed jcs
 
+if IsOSX
+    Screen('Preference','TextRenderer', 0)
+end
+
 if nargin < 1
     clear all;
     prompt = {...
@@ -71,7 +75,6 @@ load(subInfoFile);
 thisRun = ['run',num2str(runNum)];
 
 %% added jcs
-% if you are running from introTAG, this will be a problem
 if ~isfolder(drs.input.path)
     disp("Select input folder");
     drs.input.path = uigetdir(pwd, 'Select input folder');
