@@ -90,6 +90,9 @@ if isempty(discoSide) || (~strcmp(discoSide, 'Right') && ~strcmp(discoSide, 'Lef
 end
 
 rng('default');
+if IsOSX
+    Screen('Preference','TextRenderer', 0)
+end
 Screen('Preference', 'SkipSyncTests', 1);
 
 %% get subID from subNum

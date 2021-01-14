@@ -32,9 +32,7 @@ function [task] = runSVC(subNumArg, waveNumArg, runNumArg, keys, win)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % changed jcs
 
-if IsOSX
-    Screen('Preference','TextRenderer', 0)
-end
+
 
 if nargin < 1
     clear all;
@@ -57,6 +55,9 @@ else
 end
 
 rng('default');
+if IsOSX
+    Screen('Preference','TextRenderer', 0)
+end
 Screen('Preference', 'SkipSyncTests', 1);
 
 %% get subID from subNum
