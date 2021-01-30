@@ -1,0 +1,41 @@
+1,6,1,2,2,2,2.434,0.037,like flirting
+2,2,1,2,2,4,4.052,0.202,carry chapstick
+3,3,1,2,2,2,2.373,0.268,don't brush my teeth
+4,4,1,2,3,2,0.880,0.243,think I'm smart
+5,5,1,2,2,4,3.065,0.104,hide my feelings
+6,2,1,2,3,4,0.792,0.358,sing in the shower
+7,5,1,2,3,4,5.907,0.102,pretend I'm fine
+8,1,1,2,3,2,0.206,0.033,can be creative
+9,4,1,2,4,2,1.592,0.259,act without thinking
+10,6,1,2,3,3,0.077,0.073,pretend to like people
+11,5,1,2,2,4,0.692,0.105,fight with my family
+12,1,1,2,4,2,0.005,0.213,like cold pizza
+13,3,1,2,3,3,1.503,0.038,paint my nails
+14,1,1,2,3,2,2.018,0.233,like leftovers
+15,6,1,2,3,3,1.573,0.047,like breaking rules
+16,2,1,2,2,4,0.576,0.127,braid my hair
+17,3,1,2,3,3,0.004,0.171,like wearing makeup
+18,1,1,2,4,3,0.968,0.074,like reality TV shows
+19,2,1,2,3,4,0.383,0.019,help around the house
+20,4,1,2,3,2,0.737,0.043,feel shy in groups
+21,3,1,2,3,3,0.178,0.164,can be messy
+22,5,1,2,3,4,1.125,0.698,get picked on
+23,4,1,2,4,3,0.342,0.126,want to be popular
+24,1,1,2,4,3,0.296,0.464,wear PJs all day
+25,4,1,2,4,3,1.282,0.066,dream about my wedding
+26,5,1,2,2,3,1.003,0.328,can get moody
+27,6,1,2,3,3,0.258,0.392,think I'm weird
+28,2,1,2,2,3,1.429,0.176,forget people's names
+29,5,1,2,2,3,0.085,0.299,judge people
+30,6,1,2,4,4,0.966,0.106,make friends easily
+31,3,1,2,4,4,6.251,0.224,like burning candles
+32,2,1,2,2,3,2.224,0.127,like sleepovers
+33,6,1,2,2,2,1.063,0.032,worry about kissing
+34,4,1,2,4,2,2.688,0.386,get self-conscious
+35,2,1,2,2,4,1.623,0.213,dance in my room
+36,1,1,2,4,2,0.275,0.431,have too many chores
+37,5,1,2,2,4,0.023,0.114,get irritated easily
+38,3,1,2,2,2,0.128,0.031,read magazines
+39,6,1,2,4,4,0.271,0.358,can't stop worrying
+40,1,1,2,3,2,1.254,0.060,sleep in late
+41,4,1,2,3,2,8.275,0.028,can't count on my family

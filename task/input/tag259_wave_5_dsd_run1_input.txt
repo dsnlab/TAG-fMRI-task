@@ -1,0 +1,41 @@
+1,6,1,2,2,2,1.063,0.126,get mad at my friends
+2,2,1,2,3,4,0.077,0.037,like cold pizza
+3,3,1,2,2,2,0.023,0.176,carry chapstick
+4,4,1,2,3,2,0.296,0.127,like breaking rules
+5,5,1,2,3,4,2.373,0.127,worry about college
+6,2,1,2,2,4,1.282,0.299,go barefoot
+7,5,1,2,2,4,1.254,0.464,can't stop worrying
+8,1,1,2,3,2,0.128,0.074,take bubble baths 
+9,4,1,2,4,2,0.275,0.073,think I'm smart
+10,6,1,2,3,3,0.085,0.106,tell little lies
+11,5,1,2,3,4,4.052,0.213,can't keep secrets
+12,1,1,2,4,2,1.573,0.224,play board games
+13,3,1,2,3,3,1.592,0.104,like sleepovers
+14,1,1,2,4,2,0.737,0.102,burn my toast
+15,6,1,2,4,4,0.271,0.392,judge people
+16,2,1,2,3,4,2.224,0.202,forget to turn off lights
+17,3,1,2,4,4,1.503,0.698,like wearing costumes
+18,1,1,2,4,3,0.880,0.233,help around the house
+19,2,1,2,2,3,2.688,0.171,braid my hair
+20,4,1,2,4,2,1.623,0.358,can't count on my family
+21,3,1,2,3,3,0.178,0.243,like to doodle
+22,5,1,2,2,3,0.004,0.101,fight with my family
+23,4,1,2,4,3,0.258,0.043,hate school 
+24,1,1,2,3,2,1.003,0.386,try new foods
+25,4,1,2,3,2,0.206,0.328,copy homework
+26,5,1,2,2,4,3.065,0.038,can't ignore gossip
+27,6,1,2,3,3,0.005,0.268,can be awkward
+28,2,1,2,2,4,0.966,0.047,like reality TV shows
+29,5,1,2,3,4,0.383,0.105,get irritated easily
+30,6,1,2,4,4,0.576,0.028,worry about grades
+31,3,1,2,4,4,0.968,0.031,wear leggings
+32,2,1,2,3,4,5.907,0.213,paint my nails
+33,6,1,2,2,2,5.622,0.358,pretend I'm fine
+34,4,1,2,4,3,0.342,0.164,am good at getting my way
+35,2,1,2,2,4,1.125,0.033,stay up late
+36,1,1,2,4,3,6.251,0.114,wear flip flops
+37,5,1,2,2,4,0.775,0.019,think I look cute
+38,3,1,2,2,2,1.429,0.431,don't make my bed
+39,6,1,2,4,4,0.692,0.066,feel pressured to drink
+40,1,1,2,3,2,0.792,0.032,read magazines
+41,4,1,2,3,2,9.518,0.060,can get moody

@@ -1,0 +1,41 @@
+1,6,1,2,4,4,1.063,0.268,think I'm weird
+2,2,1,2,2,4,2.373,0.213,sleep in late
+3,3,1,2,4,4,1.125,0.202,like watching sports  
+4,4,1,2,3,2,2.018,0.047,make friends easily
+5,5,1,2,2,4,0.258,0.176,copy homework
+6,2,1,2,2,4,0.968,0.102,forget to wear sunscreen
+7,5,1,2,2,4,1.003,0.392,want to be alone
+8,1,1,2,3,2,1.254,0.104,don't make my bed
+9,4,1,2,3,2,0.271,0.464,hide my feelings
+10,6,1,2,2,2,0.576,0.019,pretend to like people
+11,5,1,2,3,4,0.004,0.066,get picked on
+12,1,1,2,3,2,0.342,0.033,burn my toast
+13,3,1,2,2,2,2.224,0.431,like burning candles
+14,1,1,2,4,2,1.573,0.127,don't shower in the morning
+15,6,1,2,4,4,0.792,0.101,judge people
+16,2,1,2,3,4,0.966,0.126,like to doodle
+17,3,1,2,4,4,1.282,0.106,wear PJs all day
+18,1,1,2,4,2,0.005,0.171,like wearing makeup
+19,2,1,2,3,4,0.128,0.164,paint my nails
+20,4,1,2,4,2,0.023,0.698,act without thinking
+21,3,1,2,3,3,0.692,0.038,dance in my room
+22,5,1,2,3,4,1.592,0.037,can be mean
+23,4,1,2,4,2,3.065,0.299,fight with my family
+24,1,1,2,4,2,0.077,0.073,forget to turn off lights
+25,4,1,2,4,2,1.503,0.127,get mad at my friends
+26,5,1,2,2,3,0.206,0.233,tell little lies
+27,6,1,2,3,3,0.737,0.358,am good at getting my way
+28,2,1,2,2,3,5.907,0.028,like wearing costumes
+29,5,1,2,3,4,5.622,0.105,can get moody
+30,6,1,2,3,3,0.775,0.224,feel lonely
+31,3,1,2,3,3,6.251,0.074,help around the house
+32,2,1,2,3,4,0.880,0.043,like sleepovers
+33,6,1,2,3,3,1.429,0.032,regret what I post online
+34,4,1,2,4,3,0.383,0.243,don't like my life
+35,2,1,2,2,3,2.434,0.328,sing in the shower
+36,1,1,2,4,3,0.178,0.114,like leftovers
+37,5,1,2,2,3,0.275,0.358,feel shy in groups
+38,3,1,2,3,3,1.623,0.259,drink milk
+39,6,1,2,2,2,2.688,0.060,like flirting
+40,1,1,2,3,2,4.052,0.213,play board games
+41,4,1,2,3,2,7.585,0.031,dream about my wedding

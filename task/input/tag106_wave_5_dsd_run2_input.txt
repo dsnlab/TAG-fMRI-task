@@ -1,0 +1,41 @@
+1,6,1,2,4,4,2.688,0.358,get irritated easily
+2,2,1,2,2,3,0.023,0.114,burn my toast
+3,3,1,2,4,4,1.429,0.028,like burning candles
+4,4,1,2,4,2,0.085,0.019,get mad at my friends
+5,5,1,2,2,3,0.692,0.038,worry about kissing
+6,2,1,2,2,3,2.373,0.043,don't shower in the morning
+7,5,1,2,2,3,2.224,0.176,worry about grades
+8,1,1,2,4,2,4.052,0.233,sing in the shower
+9,4,1,2,3,2,5.622,0.073,like breaking rules
+10,6,1,2,3,3,1.125,0.127,pretend I'm fine
+11,5,1,2,3,4,0.576,0.164,make friends easily
+12,1,1,2,3,2,0.968,0.268,dance in my room
+13,3,1,2,3,3,0.005,0.392,like cold pizza
+14,1,1,2,4,3,0.383,0.106,like to doodle
+15,6,1,2,2,2,5.907,0.126,get self-conscious
+16,2,1,2,3,4,0.342,0.066,like to wear hats 
+17,3,1,2,2,2,3.065,0.074,don't make my bed
+18,1,1,2,4,2,1.254,0.031,carry chapstick
+19,2,1,2,3,4,0.206,0.127,like wearing costumes
+20,4,1,2,4,3,0.178,0.698,fight with my family
+21,3,1,2,3,3,0.775,0.224,paint my nails
+22,5,1,2,3,4,2.018,0.259,dislike my body
+23,4,1,2,4,2,0.271,0.047,dream about my wedding
+24,1,1,2,3,2,0.275,0.104,can be messy
+25,4,1,2,3,2,0.077,0.328,can't keep secrets
+26,5,1,2,2,4,0.880,0.033,wish I was in love 
+27,6,1,2,3,3,6.251,0.213,can be awkward
+28,2,1,2,2,4,0.737,0.358,have too many chores
+29,5,1,2,2,4,0.966,0.102,hate school 
+30,6,1,2,2,2,0.792,0.243,feel pressured to drink
+31,3,1,2,2,2,1.623,0.037,stay up late
+32,2,1,2,2,4,1.592,0.105,like watching sports  
+33,6,1,2,3,3,2.434,0.213,want to be alone
+34,4,1,2,4,2,1.003,0.464,can get moody
+35,2,1,2,2,3,1.063,0.202,help around the house
+36,1,1,2,4,2,1.503,0.060,like sleepovers
+37,5,1,2,2,3,1.573,0.299,can't count on my family
+38,3,1,2,3,3,0.004,0.101,braid my hair
+39,6,1,2,3,3,0.296,0.431,act without thinking
+40,1,1,2,4,2,0.258,0.171,like reality TV shows
+41,4,1,2,4,2,8.782,0.386,judge people

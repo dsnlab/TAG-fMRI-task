@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.775,0.127,regret what I post online
+2,2,1,2,3,4,0.128,0.114,wear flip flops
+3,3,1,2,4,4,2.224,0.033,dance in my room
+4,4,1,2,4,3,0.692,0.213,feel lonely
+5,5,1,2,3,4,5.907,0.043,worry about grades
+6,2,1,2,2,4,0.258,0.698,can be creative
+7,5,1,2,2,4,3.065,0.171,get self-conscious
+8,1,1,2,4,3,1.623,0.358,don't brush my teeth
+9,4,1,2,4,2,0.296,0.031,can't count on my family
+10,6,1,2,3,3,2.434,0.038,get irritated easily
+11,5,1,2,2,3,0.077,0.202,can't ignore gossip
+12,1,1,2,4,2,0.206,0.213,read magazines
+13,3,1,2,3,3,0.085,0.431,like reality TV shows
+14,1,1,2,4,3,1.254,0.028,burn my toast
+15,6,1,2,4,4,2.018,0.060,make friends easily
+16,2,1,2,2,3,0.005,0.268,like wearing costumes
+17,3,1,2,4,4,1.429,0.102,wear leggings
+18,1,1,2,4,2,1.003,0.164,braid my hair
+19,2,1,2,2,4,0.004,0.386,listen to music
+20,4,1,2,4,3,0.737,0.464,worry about kissing
+21,3,1,2,2,2,0.383,0.176,like burning candles
+22,5,1,2,2,4,0.792,0.224,am good at getting my way
+23,4,1,2,4,2,0.023,0.073,tell little lies
+24,1,1,2,3,2,0.966,0.104,sing in the shower
+25,4,1,2,3,2,0.178,0.127,think I'm smart
+26,5,1,2,2,3,4.052,0.392,want to be popular
+27,6,1,2,2,2,0.968,0.032,like breaking rules
+28,2,1,2,2,3,0.342,0.328,forget to turn off lights
+29,5,1,2,2,4,1.573,0.101,feel pressured to drink
+30,6,1,2,3,3,2.688,0.066,think I look cute
+31,3,1,2,3,3,2.373,0.074,carry chapstick
+32,2,1,2,2,4,1.592,0.243,forget to wear sunscreen
+33,6,1,2,4,4,5.622,0.047,pretend to like people
+34,4,1,2,4,3,0.576,0.299,feel shy in groups
+35,2,1,2,2,4,0.880,0.358,try new foods
+36,1,1,2,4,3,1.125,0.259,sleep in late
+37,5,1,2,2,4,0.271,0.233,think I'm weird
+38,3,1,2,4,4,1.063,0.037,have too many chores
+39,6,1,2,2,2,6.251,0.106,pretend I'm fine
+40,1,1,2,4,2,1.503,0.126,play board games
+41,4,1,2,4,2,8.782,0.019,dislike my body

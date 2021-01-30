@@ -1,0 +1,41 @@
+1,6,1,2,2,2,5.907,0.268,judge people
+2,2,1,2,2,4,1.003,0.037,try to recycle
+3,3,1,2,2,2,1.623,0.102,carry chapstick
+4,4,1,2,4,2,0.296,0.060,count calories
+5,5,1,2,2,4,0.178,0.127,get embarrassed
+6,2,1,2,2,4,0.206,0.114,like reality TV shows
+7,5,1,2,2,4,3.065,0.047,worry about college
+8,1,1,2,4,2,1.282,0.176,have too many chores
+9,4,1,2,4,2,0.576,0.431,can't stop worrying
+10,6,1,2,4,4,5.622,0.032,can't ignore gossip
+11,5,1,2,2,3,0.128,0.224,can get moody
+12,1,1,2,4,2,0.968,0.328,can be creative
+13,3,1,2,4,4,6.251,0.073,forget to wear sunscreen
+14,1,1,2,4,2,2.224,0.164,like to doodle
+15,6,1,2,3,3,0.005,0.464,don't like my life
+16,2,1,2,2,3,0.258,0.243,read magazines
+17,3,1,2,3,3,0.077,0.126,paint my nails
+18,1,1,2,4,3,1.573,0.038,don't brush my teeth
+19,2,1,2,3,4,0.275,0.358,wear sunglasses
+20,4,1,2,4,2,0.271,0.358,make friends easily
+21,3,1,2,4,4,1.254,0.019,try new foods
+22,5,1,2,3,4,0.880,0.043,get self-conscious
+23,4,1,2,4,3,0.966,0.106,can't keep secrets
+24,1,1,2,3,2,0.737,0.066,don't make my bed
+25,4,1,2,3,2,2.018,0.213,wish I was in love 
+26,5,1,2,2,4,0.342,0.213,get irritated easily
+27,6,1,2,4,4,1.592,0.101,feel lonely
+28,2,1,2,2,4,2.434,0.028,listen to music
+29,5,1,2,2,4,0.023,0.104,feel shy in groups
+30,6,1,2,3,3,1.063,0.127,pretend I'm fine
+31,3,1,2,3,3,2.373,0.386,like leftovers
+32,2,1,2,2,4,0.792,0.105,braid my hair
+33,6,1,2,3,3,0.775,0.259,dislike my body
+34,4,1,2,4,3,1.503,0.033,like breaking rules
+35,2,1,2,2,3,0.692,0.392,forget to turn off lights
+36,1,1,2,4,3,1.429,0.171,like burning candles
+37,5,1,2,2,3,0.383,0.233,want to be alone
+38,3,1,2,3,3,0.085,0.074,like cold pizza
+39,6,1,2,4,4,4.052,0.031,dream about my wedding
+40,1,1,2,4,2,0.004,0.202,sing in the shower
+41,4,1,2,4,2,8.625,0.299,worry about kissing

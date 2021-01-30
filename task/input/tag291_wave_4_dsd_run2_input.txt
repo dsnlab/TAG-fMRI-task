@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.005,0.074,worry about college
+2,2,1,2,2,4,2.434,0.431,wear leggings
+3,3,1,2,3,3,0.966,0.233,like watching sports  
+4,4,1,2,3,2,5.907,0.101,tell little lies
+5,5,1,2,2,4,0.128,0.106,dream about my wedding
+6,2,1,2,2,4,2.224,0.392,carry chapstick
+7,5,1,2,2,4,0.271,0.698,hide my feelings
+8,1,1,2,3,2,1.254,0.102,like sleepovers
+9,4,1,2,3,2,0.258,0.032,feel pressured to drink
+10,6,1,2,4,4,1.592,0.224,can be mean
+11,5,1,2,2,3,1.003,0.031,think I'm smart
+12,1,1,2,3,2,1.573,0.047,paint my nails
+13,3,1,2,4,4,0.968,0.268,go barefoot
+14,1,1,2,3,2,1.282,0.358,like to wear hats 
+15,6,1,2,4,4,1.429,0.358,think I look cute
+16,2,1,2,2,3,2.373,0.213,forget to wear sunscreen
+17,3,1,2,4,4,4.052,0.104,try to recycle
+18,1,1,2,4,3,0.296,0.259,like burning candles
+19,2,1,2,3,4,0.178,0.037,wear sunglasses
+20,4,1,2,3,2,0.275,0.033,want to be alone
+21,3,1,2,3,3,3.065,0.038,burn my toast
+22,5,1,2,3,4,1.125,0.028,act without thinking
+23,4,1,2,4,3,0.880,0.066,can be awkward
+24,1,1,2,4,2,0.737,0.328,have too many chores
+25,4,1,2,4,2,0.206,0.299,like flirting
+26,5,1,2,3,4,1.503,0.114,feel lonely
+27,6,1,2,3,3,1.063,0.043,can get moody
+28,2,1,2,3,4,0.576,0.464,help around the house
+29,5,1,2,2,3,0.342,0.019,count calories
+30,6,1,2,4,4,0.085,0.127,worry about grades
+31,3,1,2,4,4,0.004,0.386,sing in the shower
+32,2,1,2,2,3,0.077,0.171,forget to turn off lights
+33,6,1,2,3,3,2.018,0.213,am good at getting my way
+34,4,1,2,3,2,6.251,0.243,get mad at my friends
+35,2,1,2,3,4,5.622,0.202,can be messy
+36,1,1,2,3,2,0.023,0.060,braid my hair
+37,5,1,2,3,4,0.383,0.127,can't count on my family
+38,3,1,2,3,3,0.692,0.126,dance in my room
+39,6,1,2,4,4,0.775,0.073,want to be popular
+40,1,1,2,4,2,0.792,0.105,don't brush my teeth
+41,4,1,2,4,2,9.123,0.176,can't keep secrets

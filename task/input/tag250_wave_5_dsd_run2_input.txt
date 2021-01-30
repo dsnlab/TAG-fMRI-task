@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.342,0.066,copy homework
+2,2,1,2,2,3,4.052,0.074,like sleepovers
+3,3,1,2,2,2,0.271,0.431,don't brush my teeth
+4,4,1,2,4,2,5.622,0.259,pretend to like people
+5,5,1,2,2,3,1.125,0.106,hate school 
+6,2,1,2,2,4,0.880,0.032,don't shower in the morning
+7,5,1,2,2,4,0.692,0.268,get embarrassed
+8,1,1,2,4,2,0.968,0.019,go barefoot
+9,4,1,2,3,2,3.065,0.386,get irritated easily
+10,6,1,2,3,3,0.206,0.358,feel pressured to drink
+11,5,1,2,2,4,0.737,0.102,pretend I'm fine
+12,1,1,2,3,2,1.503,0.299,stay up late
+13,3,1,2,3,3,0.383,0.171,don't make my bed
+14,1,1,2,4,2,1.429,0.038,play board games
+15,6,1,2,2,2,0.966,0.105,tell little lies
+16,2,1,2,2,4,0.792,0.047,wear PJs all day
+17,3,1,2,2,2,1.282,0.243,forget to turn off lights
+18,1,1,2,4,3,1.063,0.213,like to wear hats 
+19,2,1,2,3,4,6.251,0.073,wear bright colors 
+20,4,1,2,4,2,2.434,0.202,get mad at my friends
+21,3,1,2,4,4,2.373,0.213,like reality TV shows
+22,5,1,2,3,4,1.254,0.037,can't stop worrying
+23,4,1,2,4,3,1.003,0.328,can't keep secrets
+24,1,1,2,4,2,0.258,0.127,listen to music
+25,4,1,2,4,2,5.907,0.101,can be awkward
+26,5,1,2,2,4,0.178,0.464,count calories
+27,6,1,2,4,4,0.005,0.127,think I'm smart
+28,2,1,2,2,4,2.688,0.224,drink milk
+29,5,1,2,2,3,0.023,0.392,dislike my body
+30,6,1,2,3,3,0.077,0.060,worry about kissing
+31,3,1,2,3,3,2.018,0.176,wear flip flops
+32,2,1,2,2,3,1.573,0.043,like to doodle
+33,6,1,2,4,4,0.004,0.114,judge people
+34,4,1,2,4,3,2.224,0.104,feel lonely
+35,2,1,2,2,4,0.085,0.358,like leftovers
+36,1,1,2,4,3,0.775,0.126,like eating out
+37,5,1,2,2,4,0.275,0.028,worry about college
+38,3,1,2,4,4,0.128,0.031,paint my nails
+39,6,1,2,2,2,1.623,0.164,hide my feelings
+40,1,1,2,3,2,0.576,0.233,can be messy
+41,4,1,2,3,2,9.092,0.033,don't like my life

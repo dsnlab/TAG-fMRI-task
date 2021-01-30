@@ -1,0 +1,41 @@
+1,6,1,2,4,4,1.429,0.114,tell little lies
+2,2,1,2,2,4,1.125,0.032,can be creative
+3,3,1,2,4,4,0.004,0.171,like sleepovers
+4,4,1,2,4,2,2.018,0.043,get mad at my friends
+5,5,1,2,2,4,0.005,0.268,can't count on my family
+6,2,1,2,2,4,0.275,0.176,play board games
+7,5,1,2,2,4,2.224,0.202,pretend to like people
+8,1,1,2,4,2,2.434,0.060,go barefoot
+9,4,1,2,4,3,0.271,0.164,hide my feelings
+10,6,1,2,2,2,0.178,0.328,think I look cute
+11,5,1,2,2,3,0.077,0.066,feel shy in groups
+12,1,1,2,4,3,1.623,0.106,like to doodle
+13,3,1,2,2,2,0.128,0.698,like cold pizza
+14,1,1,2,3,2,5.622,0.038,take bubble baths 
+15,6,1,2,3,3,4.052,0.028,think I'm weird
+16,2,1,2,2,3,5.907,0.105,try new foods
+17,3,1,2,3,3,0.968,0.464,try to recycle
+18,1,1,2,3,2,0.085,0.233,braid my hair
+19,2,1,2,2,3,2.373,0.259,drink milk
+20,4,1,2,3,2,0.880,0.213,get embarrassed
+21,3,1,2,2,2,1.573,0.047,forget to wear sunscreen
+22,5,1,2,2,3,1.503,0.126,can't ignore gossip
+23,4,1,2,3,2,0.258,0.019,worry about college
+24,1,1,2,3,2,1.282,0.102,can be messy
+25,4,1,2,3,2,0.296,0.431,want to be popular
+26,5,1,2,2,4,3.065,0.213,wish I was in love 
+27,6,1,2,2,2,0.966,0.074,judge people
+28,2,1,2,2,4,0.576,0.386,forget people's names
+29,5,1,2,2,4,6.251,0.101,can be mean
+30,6,1,2,3,3,0.383,0.299,hate school 
+31,3,1,2,3,3,0.737,0.037,stay up late
+32,2,1,2,2,4,0.206,0.127,like burning candles
+33,6,1,2,3,3,1.063,0.073,make friends easily
+34,4,1,2,4,2,1.592,0.033,want to be alone
+35,2,1,2,2,3,0.692,0.104,sleep in late
+36,1,1,2,4,2,0.342,0.127,help around the house
+37,5,1,2,2,3,1.254,0.224,act without thinking
+38,3,1,2,3,3,0.775,0.358,dance in my room
+39,6,1,2,4,4,1.003,0.392,fight with my family
+40,1,1,2,4,2,0.792,0.243,forget to turn off lights
+41,4,1,2,4,2,7.523,0.031,get self-conscious

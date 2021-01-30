@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.005,0.074,dislike my body
+2,2,1,2,2,4,0.880,0.164,wear leggings
+3,3,1,2,3,3,1.573,0.386,take bubble baths 
+4,4,1,2,4,2,0.178,0.268,like breaking rules
+5,5,1,2,2,4,4.052,0.299,wish I was in love 
+6,2,1,2,2,3,1.254,0.464,sing in the shower
+7,5,1,2,2,3,0.085,0.213,hate school 
+8,1,1,2,4,2,0.128,0.127,wear flip flops
+9,4,1,2,4,3,0.296,0.328,think I'm weird
+10,6,1,2,4,4,0.342,0.392,can be awkward
+11,5,1,2,2,4,2.434,0.176,pretend to like people
+12,1,1,2,4,3,0.737,0.060,paint my nails
+13,3,1,2,4,4,6.251,0.358,can be creative
+14,1,1,2,4,2,0.023,0.114,like reality TV shows
+15,6,1,2,2,2,0.275,0.028,am good at getting my way
+16,2,1,2,2,4,0.966,0.431,don't make my bed
+17,3,1,2,2,2,0.383,0.358,burn my toast
+18,1,1,2,4,3,5.907,0.126,like burning candles
+19,2,1,2,2,4,0.692,0.073,help around the house
+20,4,1,2,4,2,5.622,0.104,count calories
+21,3,1,2,2,2,0.206,0.066,can be messy
+22,5,1,2,2,4,1.592,0.127,feel shy in groups
+23,4,1,2,4,3,0.077,0.047,can get moody
+24,1,1,2,4,2,2.018,0.213,like to doodle
+25,4,1,2,4,2,2.224,0.032,fight with my family
+26,5,1,2,2,3,0.775,0.224,copy homework
+27,6,1,2,2,2,1.503,0.698,can't ignore gossip
+28,2,1,2,2,3,0.792,0.243,drink milk
+29,5,1,2,2,3,1.282,0.102,can't keep secrets
+30,6,1,2,3,3,0.258,0.233,feel lonely
+31,3,1,2,3,3,0.968,0.259,try to recycle
+32,2,1,2,2,3,1.003,0.033,play board games
+33,6,1,2,2,2,2.373,0.171,can't count on my family
+34,4,1,2,3,2,1.429,0.101,worry about kissing
+35,2,1,2,3,4,0.004,0.106,like leftovers
+36,1,1,2,3,2,1.125,0.038,forget to turn off lights
+37,5,1,2,3,4,0.576,0.019,regret what I post online
+38,3,1,2,2,2,2.688,0.043,like sleepovers
+39,6,1,2,4,4,0.271,0.031,make friends easily
+40,1,1,2,4,3,1.623,0.105,like cold pizza
+41,4,1,2,4,3,10.565,0.037,get self-conscious

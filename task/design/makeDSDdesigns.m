@@ -1,7 +1,7 @@
 GAdir = 'GAoutput';
 targetDirectory = '../input';
-NRealSubsTotal = 250;
-NWavesTotal = 3;
+NRealSubsTotal = 300;
+NWavesTotal = 2;
 NSubsTotal = NRealSubsTotal * NWavesTotal;
 trialLength = 7.5;
 load('gammaDists.mat'); % loads variables choiceGammaDSD and discoGammaDSD
@@ -213,9 +213,9 @@ end
 
 
 for dCount = 1:NSubsTotal
-    waveNum = floor(((dCount-1)/250)+1); % wave number is just how far you are in the count
+    waveNum = floor(((dCount-1)/250)+4); % wave number is just how far you are in the count
     
-    subIDNum = dCount - 250 * (waveNum - 1);
+    subIDNum = dCount - 300 * (waveNum - 1);
         
     if subIDNum < 10
         subID = ['tag00',num2str(subIDNum)];

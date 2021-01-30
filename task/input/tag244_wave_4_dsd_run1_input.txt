@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.692,0.038,get mad at my friends
+2,2,1,2,2,4,1.429,0.202,wear bright colors 
+3,3,1,2,4,4,4.052,0.114,stay up late
+4,4,1,2,3,2,1.623,0.243,am good at getting my way
+5,5,1,2,2,4,1.254,0.074,hide my feelings
+6,2,1,2,2,3,5.622,0.358,have too many chores
+7,5,1,2,2,3,1.125,0.213,pretend I'm fine
+8,1,1,2,3,2,5.907,0.104,braid my hair
+9,4,1,2,4,3,0.275,0.060,can be mean
+10,6,1,2,4,4,0.966,0.047,want to be popular
+11,5,1,2,2,4,0.077,0.176,wish I was in love 
+12,1,1,2,4,3,1.592,0.299,like cold pizza
+13,3,1,2,4,4,3.065,0.127,like wearing costumes
+14,1,1,2,4,3,0.342,0.464,like sleepovers
+15,6,1,2,2,2,1.503,0.073,judge people
+16,2,1,2,2,4,1.063,0.106,don't brush my teeth
+17,3,1,2,2,2,1.573,0.043,don't make my bed
+18,1,1,2,4,2,0.128,0.224,can be messy
+19,2,1,2,2,3,0.576,0.126,like burning candles
+20,4,1,2,4,3,0.880,0.213,fight with my family
+21,3,1,2,2,2,2.434,0.328,carry chapstick
+22,5,1,2,2,3,0.775,0.698,can't ignore gossip
+23,4,1,2,4,2,0.085,0.028,like flirting
+24,1,1,2,4,2,0.178,0.431,sleep in late
+25,4,1,2,4,2,0.206,0.127,tell little lies
+26,5,1,2,2,4,0.258,0.031,think I look cute
+27,6,1,2,2,2,2.373,0.268,hate school 
+28,2,1,2,2,4,0.792,0.102,like to doodle
+29,5,1,2,2,4,1.282,0.066,like breaking rules
+30,6,1,2,3,3,0.004,0.037,can get moody
+31,3,1,2,3,3,2.688,0.019,try new foods
+32,2,1,2,2,4,0.296,0.171,dance in my room
+33,6,1,2,4,4,0.383,0.033,dream about my wedding
+34,4,1,2,3,2,0.023,0.164,dislike my body
+35,2,1,2,2,3,0.968,0.392,read magazines
+36,1,1,2,3,2,1.003,0.105,take bubble baths 
+37,5,1,2,2,3,0.271,0.101,can be awkward
+38,3,1,2,4,4,0.737,0.259,listen to music
+39,6,1,2,2,2,6.251,0.233,act without thinking
+40,1,1,2,3,2,2.018,0.386,wear sunglasses
+41,4,1,2,3,2,9.724,0.358,want to be alone

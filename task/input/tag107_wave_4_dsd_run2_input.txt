@@ -1,0 +1,41 @@
+1,6,1,2,3,3,2.373,0.047,can get moody
+2,2,1,2,3,4,0.206,0.037,go barefoot
+3,3,1,2,3,3,4.052,0.019,have too many chores
+4,4,1,2,3,2,0.775,0.127,make friends easily
+5,5,1,2,3,4,5.622,0.106,wish I was in love 
+6,2,1,2,2,3,0.342,0.105,help around the house
+7,5,1,2,2,3,1.282,0.032,can't count on my family
+8,1,1,2,3,2,0.576,0.171,like eating out
+9,4,1,2,4,2,0.737,0.028,get picked on
+10,6,1,2,2,2,3.065,0.038,worry about college
+11,5,1,2,2,4,1.503,0.213,worry about grades
+12,1,1,2,4,2,2.688,0.127,carry chapstick
+13,3,1,2,2,2,1.429,0.074,like cold pizza
+14,1,1,2,4,2,0.023,0.259,forget people's names
+15,6,1,2,2,2,0.792,0.464,dream about my wedding
+16,2,1,2,2,4,1.003,0.233,dance in my room
+17,3,1,2,2,2,0.296,0.104,try to recycle
+18,1,1,2,4,2,0.258,0.043,can be creative
+19,2,1,2,2,3,0.005,0.176,sleep in late
+20,4,1,2,4,2,0.077,0.126,tell little lies
+21,3,1,2,2,2,0.085,0.066,like sleepovers
+22,5,1,2,2,3,0.692,0.268,get irritated easily
+23,4,1,2,4,2,2.018,0.358,judge people
+24,1,1,2,3,2,1.573,0.213,like wearing costumes
+25,4,1,2,3,2,0.178,0.031,count calories
+26,5,1,2,2,4,0.271,0.224,copy homework
+27,6,1,2,2,2,0.383,0.033,can't stop worrying
+28,2,1,2,2,4,6.251,0.102,play board games
+29,5,1,2,3,4,1.254,0.164,pretend to like people
+30,6,1,2,4,4,1.063,0.431,feel pressured to drink
+31,3,1,2,4,4,0.275,0.358,like to wear hats 
+32,2,1,2,3,4,1.592,0.101,stay up late
+33,6,1,2,3,3,0.880,0.073,pretend I'm fine
+34,4,1,2,4,3,1.623,0.392,get mad at my friends
+35,2,1,2,2,4,1.125,0.202,like burning candles
+36,1,1,2,4,3,0.128,0.328,try new foods
+37,5,1,2,2,4,5.907,0.299,think I'm smart
+38,3,1,2,3,3,0.966,0.060,braid my hair
+39,6,1,2,3,3,2.434,0.698,hide my feelings
+40,1,1,2,4,3,0.968,0.114,listen to music
+41,4,1,2,4,3,9.724,0.386,think I look cute
