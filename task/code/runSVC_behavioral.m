@@ -124,9 +124,6 @@ PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors f
 rng('shuffle'); % if incompatible with older machines, use >> rand('seed', sum(100 * clock));
 screenNumber = max(Screen('Screens'));
 
-% added jcs
-% oldres = SetResolution(screenNumber, %1440, 900); %1920, 1080); %
-
 % open a window, set more params
 %[win,winBox] = PsychImaging('OpenWindow',screenNumber,bg,[0 0 1920/2 1080/2],[],'kPsychGUIWindow');
 [win,winBox] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
@@ -341,5 +338,5 @@ end
 
 KbStrokeWait(drs.keys.keyboard_index);
 Screen('Close', win);
-SetResolution(screenNumber, oldres);
+
 return
