@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.077,0.386,pretend to like people
+2,2,1,2,3,4,0.271,0.037,forget to turn off lights
+3,3,1,2,4,4,1.623,0.358,dance in my room
+4,4,1,2,4,3,1.429,0.243,feel shy in groups
+5,5,1,2,3,4,0.692,0.164,want to be alone
+6,2,1,2,2,4,2.018,0.127,wear flip flops
+7,5,1,2,2,4,0.023,0.392,can't keep secrets
+8,1,1,2,4,3,1.282,0.213,wear sunglasses
+9,4,1,2,3,2,0.128,0.102,get picked on
+10,6,1,2,2,2,0.296,0.047,worry about college
+11,5,1,2,3,4,0.576,0.031,like breaking rules
+12,1,1,2,3,2,5.907,0.299,like wearing makeup
+13,3,1,2,2,2,1.592,0.171,like cold pizza
+14,1,1,2,4,2,1.254,0.028,take bubble baths 
+15,6,1,2,2,2,1.125,0.073,worry about grades
+16,2,1,2,3,4,0.005,0.698,like watching sports  
+17,3,1,2,2,2,0.206,0.043,don't shower in the morning
+18,1,1,2,4,2,0.792,0.268,like sleepovers
+19,2,1,2,2,3,0.968,0.106,like to doodle
+20,4,1,2,4,2,0.258,0.224,don't like my life
+21,3,1,2,3,3,0.004,0.101,help around the house
+22,5,1,2,2,3,2.224,0.114,judge people
+23,4,1,2,4,2,0.342,0.328,copy homework
+24,1,1,2,4,2,1.003,0.259,have too many chores
+25,4,1,2,4,2,0.275,0.104,act without thinking
+26,5,1,2,3,4,6.251,0.233,think I'm smart
+27,6,1,2,3,3,0.085,0.126,think I'm weird
+28,2,1,2,3,4,1.503,0.032,drink milk
+29,5,1,2,3,4,0.737,0.033,can't ignore gossip
+30,6,1,2,3,3,2.373,0.431,like flirting
+31,3,1,2,3,3,4.052,0.213,like eating out
+32,2,1,2,3,4,0.178,0.074,paint my nails
+33,6,1,2,4,4,0.880,0.105,get irritated easily
+34,4,1,2,4,3,2.434,0.358,get embarrassed
+35,2,1,2,2,3,5.622,0.176,sing in the shower
+36,1,1,2,4,3,0.966,0.127,read magazines
+37,5,1,2,2,3,3.065,0.066,feel lonely
+38,3,1,2,4,4,0.383,0.202,forget to wear sunscreen
+39,6,1,2,4,4,1.573,0.464,dislike my body
+40,1,1,2,4,2,2.688,0.019,like leftovers
+41,4,1,2,4,2,8.563,0.038,get self-conscious

@@ -1,0 +1,41 @@
+1,6,1,2,3,3,2.434,0.033,am good at getting my way
+2,2,1,2,3,4,1.429,0.019,carry chapstick
+3,3,1,2,3,3,0.005,0.164,have too many chores
+4,4,1,2,4,3,1.282,0.073,can't ignore gossip
+5,5,1,2,3,4,0.275,0.102,dislike my body
+6,2,1,2,2,4,0.296,0.358,drink milk
+7,5,1,2,2,4,0.023,0.431,hide my feelings
+8,1,1,2,4,3,0.258,0.106,like cold pizza
+9,4,1,2,3,2,0.775,0.299,want to be popular
+10,6,1,2,3,3,3.065,0.066,can be mean
+11,5,1,2,3,4,1.503,0.176,feel pressured to drink
+12,1,1,2,3,2,2.688,0.171,burn my toast
+13,3,1,2,3,3,0.792,0.243,forget people's names
+14,1,1,2,4,3,4.052,0.074,braid my hair
+15,6,1,2,4,4,0.077,0.126,get mad at my friends
+16,2,1,2,3,4,1.254,0.392,sing in the shower
+17,3,1,2,4,4,5.622,0.202,wear bright colors 
+18,1,1,2,3,2,1.573,0.105,go barefoot
+19,2,1,2,2,4,0.178,0.233,forget to turn off lights
+20,4,1,2,4,3,0.004,0.127,feel lonely
+21,3,1,2,2,2,0.271,0.060,like sleepovers
+22,5,1,2,2,4,0.342,0.224,think I'm smart
+23,4,1,2,3,2,2.373,0.386,worry about kissing
+24,1,1,2,4,3,1.592,0.358,don't shower in the morning
+25,4,1,2,4,3,1.125,0.038,can get moody
+26,5,1,2,2,3,0.128,0.698,like breaking rules
+27,6,1,2,2,2,0.576,0.101,act without thinking
+28,2,1,2,2,3,0.383,0.037,stay up late
+29,5,1,2,2,3,1.623,0.464,get embarrassed
+30,6,1,2,4,4,0.880,0.259,feel shy in groups
+31,3,1,2,4,4,1.003,0.028,like to wear hats 
+32,2,1,2,2,3,6.251,0.043,try new foods
+33,6,1,2,3,3,1.063,0.104,think I look cute
+34,4,1,2,4,2,2.224,0.032,wish I was in love 
+35,2,1,2,3,4,0.966,0.114,like to doodle
+36,1,1,2,4,2,0.737,0.213,wear leggings
+37,5,1,2,3,4,0.692,0.328,think I'm weird
+38,3,1,2,3,3,5.907,0.127,help around the house
+39,6,1,2,4,4,0.968,0.268,get self-conscious
+40,1,1,2,4,2,0.085,0.047,forget to wear sunscreen
+41,4,1,2,4,2,7.706,0.031,tell little lies

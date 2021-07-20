@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.692,0.202,get picked on
+2,2,1,2,3,4,3.065,0.213,sing in the shower
+3,3,1,2,2,2,0.085,0.213,forget to wear sunscreen
+4,4,1,2,3,2,1.573,0.299,count calories
+5,5,1,2,3,4,5.622,0.126,like breaking rules
+6,2,1,2,2,4,2.434,0.431,read magazines
+7,5,1,2,2,4,1.623,0.386,can't stop worrying
+8,1,1,2,3,2,4.052,0.105,like leftovers
+9,4,1,2,4,2,2.018,0.104,get embarrassed
+10,6,1,2,3,3,1.503,0.073,worry about college
+11,5,1,2,2,4,5.907,0.019,think I'm weird
+12,1,1,2,4,2,0.206,0.268,paint my nails
+13,3,1,2,3,3,0.968,0.171,wear PJs all day
+14,1,1,2,3,2,0.275,0.031,drink milk
+15,6,1,2,4,4,0.296,0.259,hide my feelings
+16,2,1,2,2,4,0.737,0.101,wear bright colors 
+17,3,1,2,4,4,6.251,0.127,like burning candles
+18,1,1,2,4,2,0.792,0.464,like watching sports  
+19,2,1,2,2,3,0.271,0.032,don't shower in the morning
+20,4,1,2,3,2,0.775,0.358,want to be popular
+21,3,1,2,4,4,0.258,0.037,can be messy
+22,5,1,2,2,3,0.077,0.176,think I look cute
+23,4,1,2,4,2,1.592,0.698,feel lonely
+24,1,1,2,4,2,0.880,0.043,try new foods
+25,4,1,2,4,2,0.576,0.224,can't count on my family
+26,5,1,2,2,3,0.178,0.066,can't ignore gossip
+27,6,1,2,4,4,0.004,0.392,fight with my family
+28,2,1,2,2,3,1.429,0.102,like cold pizza
+29,5,1,2,3,4,0.005,0.038,copy homework
+30,6,1,2,4,4,2.224,0.060,can get moody
+31,3,1,2,4,4,0.128,0.164,like wearing makeup
+32,2,1,2,3,4,2.688,0.127,have too many chores
+33,6,1,2,4,4,2.373,0.074,pretend to like people
+34,4,1,2,4,3,1.282,0.243,dream about my wedding
+35,2,1,2,2,4,1.254,0.233,like to doodle
+36,1,1,2,4,3,1.003,0.033,burn my toast
+37,5,1,2,2,4,1.063,0.028,don't like my life
+38,3,1,2,4,4,0.383,0.114,like sleepovers
+39,6,1,2,3,3,0.966,0.047,get self-conscious
+40,1,1,2,3,2,0.023,0.358,wear flip flops
+41,4,1,2,3,2,8.625,0.106,act without thinking

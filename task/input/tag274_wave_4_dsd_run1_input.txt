@@ -1,0 +1,41 @@
+1,6,1,2,4,4,1.573,0.358,dislike my body
+2,2,1,2,2,3,2.373,0.127,like leftovers
+3,3,1,2,4,4,0.258,0.101,dance in my room
+4,4,1,2,4,2,1.125,0.213,get irritated easily
+5,5,1,2,2,3,0.383,0.038,dream about my wedding
+6,2,1,2,3,4,0.128,0.176,wear flip flops
+7,5,1,2,3,4,0.023,0.171,want to be alone
+8,1,1,2,4,2,5.907,0.032,can be creative
+9,4,1,2,4,2,0.692,0.698,think I look cute
+10,6,1,2,3,3,0.968,0.073,worry about college
+11,5,1,2,3,4,1.429,0.037,copy homework
+12,1,1,2,4,2,2.688,0.268,paint my nails
+13,3,1,2,3,3,5.622,0.392,like eating out
+14,1,1,2,4,2,1.623,0.358,like watching sports  
+15,6,1,2,4,4,2.434,0.019,think I'm weird
+16,2,1,2,3,4,0.275,0.213,like wearing costumes
+17,3,1,2,4,4,6.251,0.047,help around the house
+18,1,1,2,4,2,1.503,0.106,like to doodle
+19,2,1,2,3,4,0.775,0.105,wear PJs all day
+20,4,1,2,4,2,0.271,0.074,pretend to like people
+21,3,1,2,4,4,0.737,0.066,sleep in late
+22,5,1,2,3,4,0.005,0.259,make friends easily
+23,4,1,2,4,2,1.592,0.233,can be mean
+24,1,1,2,4,2,0.178,0.386,read magazines
+25,4,1,2,4,2,0.576,0.224,hate school 
+26,5,1,2,2,4,3.065,0.104,can't stop worrying
+27,6,1,2,4,4,4.052,0.164,get mad at my friends
+28,2,1,2,2,4,0.880,0.464,sing in the shower
+29,5,1,2,2,4,0.342,0.299,want to be popular
+30,6,1,2,3,3,0.296,0.431,am good at getting my way
+31,3,1,2,3,3,0.206,0.043,try new foods
+32,2,1,2,2,4,0.004,0.060,don't make my bed
+33,6,1,2,2,2,0.966,0.102,worry about kissing
+34,4,1,2,4,3,0.085,0.031,feel pressured to drink
+35,2,1,2,2,3,2.224,0.126,forget people's names
+36,1,1,2,4,3,1.254,0.328,play board games
+37,5,1,2,2,3,1.282,0.114,feel lonely
+38,3,1,2,2,2,2.018,0.127,forget to turn off lights
+39,6,1,2,3,3,0.792,0.028,regret what I post online
+40,1,1,2,3,2,0.077,0.243,try to recycle
+41,4,1,2,3,2,8.503,0.033,act without thinking

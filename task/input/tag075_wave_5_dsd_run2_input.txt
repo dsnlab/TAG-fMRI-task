@@ -1,0 +1,41 @@
+1,6,1,2,4,4,6.251,0.038,regret what I post online
+2,2,1,2,2,4,5.622,0.268,burn my toast
+3,3,1,2,4,4,0.383,0.464,like eating out
+4,4,1,2,4,2,0.023,0.176,think I look cute
+5,5,1,2,2,4,0.342,0.033,dream about my wedding
+6,2,1,2,2,3,0.296,0.105,drink milk
+7,5,1,2,2,3,0.178,0.202,feel shy in groups
+8,1,1,2,4,2,1.282,0.126,wear bright colors 
+9,4,1,2,4,2,2.434,0.127,worry about grades
+10,6,1,2,3,3,1.003,0.031,worry about kissing
+11,5,1,2,2,3,1.254,0.164,fight with my family
+12,1,1,2,4,2,0.775,0.358,like cold pizza
+13,3,1,2,3,3,0.692,0.028,forget to wear sunscreen
+14,1,1,2,3,2,0.576,0.066,can be messy
+15,6,1,2,3,3,2.688,0.060,don't like my life
+16,2,1,2,2,3,1.623,0.073,help around the house
+17,3,1,2,3,3,1.125,0.431,like sleepovers
+18,1,1,2,4,2,0.128,0.104,wear sunglasses
+19,2,1,2,2,4,5.907,0.032,take bubble baths 
+20,4,1,2,3,2,0.206,0.114,hide my feelings
+21,3,1,2,4,4,1.429,0.243,don't brush my teeth
+22,5,1,2,2,4,2.018,0.213,worry about college
+23,4,1,2,4,2,0.077,0.259,can't stop worrying
+24,1,1,2,4,2,2.224,0.392,sleep in late
+25,4,1,2,4,2,0.258,0.047,get picked on
+26,5,1,2,2,3,0.966,0.106,like breaking rules
+27,6,1,2,4,4,0.085,0.037,get embarrassed
+28,2,1,2,2,3,0.737,0.127,wear leggings
+29,5,1,2,3,4,1.592,0.233,can't count on my family
+30,6,1,2,2,2,0.271,0.224,wish I was in love 
+31,3,1,2,2,2,4.052,0.299,stay up late
+32,2,1,2,3,4,1.573,0.386,dance in my room
+33,6,1,2,3,3,0.968,0.358,judge people
+34,4,1,2,4,3,0.005,0.102,like flirting
+35,2,1,2,2,3,2.373,0.101,have too many chores
+36,1,1,2,4,3,0.880,0.213,sing in the shower
+37,5,1,2,2,3,0.004,0.698,count calories
+38,3,1,2,3,3,0.275,0.328,don't make my bed
+39,6,1,2,3,3,1.503,0.074,can't keep secrets
+40,1,1,2,4,3,3.065,0.043,like wearing makeup
+41,4,1,2,4,3,8.563,0.171,get self-conscious

@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.792,0.047,make friends easily
+2,2,1,2,3,4,6.251,0.037,carry chapstick
+3,3,1,2,4,4,0.004,0.358,read magazines
+4,4,1,2,4,2,0.128,0.126,think I'm weird
+5,5,1,2,3,4,0.968,0.299,hate school 
+6,2,1,2,2,3,2.018,0.127,forget to wear sunscreen
+7,5,1,2,2,3,0.383,0.066,can be mean
+8,1,1,2,4,2,0.085,0.019,go barefoot
+9,4,1,2,4,3,0.275,0.431,get picked on
+10,6,1,2,3,3,0.296,0.114,regret what I post online
+11,5,1,2,2,3,1.254,0.328,feel shy in groups
+12,1,1,2,4,3,1.003,0.101,like burning candles
+13,3,1,2,3,3,4.052,0.060,can be creative
+14,1,1,2,3,2,1.573,0.104,stay up late
+15,6,1,2,3,3,0.576,0.105,think I look cute
+16,2,1,2,2,3,0.966,0.233,dance in my room
+17,3,1,2,3,3,1.503,0.464,sing in the shower
+18,1,1,2,4,3,0.258,0.127,try to recycle
+19,2,1,2,2,4,0.342,0.028,wear bright colors 
+20,4,1,2,3,2,0.178,0.213,feel lonely
+21,3,1,2,2,2,0.692,0.224,play board games
+22,5,1,2,2,4,1.282,0.386,hide my feelings
+23,4,1,2,4,3,1.125,0.106,think I'm smart
+24,1,1,2,4,2,1.429,0.043,don't make my bed
+25,4,1,2,4,2,1.623,0.202,copy homework
+26,5,1,2,2,4,0.023,0.698,worry about grades
+27,6,1,2,2,2,1.063,0.038,act without thinking
+28,2,1,2,2,4,2.688,0.102,like cold pizza
+29,5,1,2,3,4,2.434,0.074,pretend I'm fine
+30,6,1,2,2,2,0.271,0.033,feel pressured to drink
+31,3,1,2,2,2,0.737,0.073,try new foods
+32,2,1,2,3,4,1.592,0.213,like reality TV shows
+33,6,1,2,4,4,5.622,0.031,wish I was in love 
+34,4,1,2,4,3,5.907,0.243,want to be alone
+35,2,1,2,2,3,2.224,0.268,forget to turn off lights
+36,1,1,2,4,3,0.005,0.164,like to doodle
+37,5,1,2,2,3,0.775,0.358,dream about my wedding
+38,3,1,2,4,4,0.206,0.176,like sleepovers
+39,6,1,2,3,3,0.880,0.392,dislike my body
+40,1,1,2,3,2,2.373,0.171,like wearing costumes
+41,4,1,2,3,2,10.565,0.032,count calories

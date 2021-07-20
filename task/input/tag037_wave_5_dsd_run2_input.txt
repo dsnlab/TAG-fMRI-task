@@ -1,0 +1,41 @@
+1,6,1,2,2,2,3.065,0.698,worry about grades
+2,2,1,2,3,4,0.383,0.431,don't make my bed
+3,3,1,2,2,2,2.688,0.386,forget people's names
+4,4,1,2,4,2,0.023,0.268,am good at getting my way
+5,5,1,2,3,4,1.003,0.032,can't keep secrets
+6,2,1,2,3,4,0.880,0.033,wear PJs all day
+7,5,1,2,3,4,0.737,0.392,judge people
+8,1,1,2,4,2,1.254,0.126,like sleepovers
+9,4,1,2,4,3,0.576,0.066,think I look cute
+10,6,1,2,4,4,0.966,0.213,get self-conscious
+11,5,1,2,3,4,1.573,0.358,get mad at my friends
+12,1,1,2,4,3,0.271,0.164,can be messy
+13,3,1,2,4,4,0.128,0.224,like watching sports  
+14,1,1,2,4,2,0.692,0.043,wear sunglasses
+15,6,1,2,3,3,1.125,0.101,feel pressured to drink
+16,2,1,2,3,4,0.085,0.233,try to recycle
+17,3,1,2,3,3,5.622,0.176,wear bright colors 
+18,1,1,2,4,2,0.178,0.074,sing in the shower
+19,2,1,2,2,4,0.004,0.358,wear leggings
+20,4,1,2,4,2,4.052,0.031,act without thinking
+21,3,1,2,4,4,2.018,0.213,read magazines
+22,5,1,2,2,4,0.275,0.114,get picked on
+23,4,1,2,4,2,1.503,0.047,can get moody
+24,1,1,2,3,2,1.429,0.106,drink milk
+25,4,1,2,3,2,0.206,0.171,pretend to like people
+26,5,1,2,2,4,1.063,0.328,hide my feelings
+27,6,1,2,4,4,0.258,0.243,feel shy in groups
+28,2,1,2,2,4,5.907,0.105,like wearing costumes
+29,5,1,2,2,4,0.077,0.037,wish I was in love 
+30,6,1,2,4,4,1.623,0.259,don't like my life
+31,3,1,2,4,4,0.775,0.060,stay up late
+32,2,1,2,2,4,2.434,0.019,sleep in late
+33,6,1,2,2,2,1.282,0.202,like flirting
+34,4,1,2,4,3,0.296,0.127,can't ignore gossip
+35,2,1,2,2,3,0.792,0.073,braid my hair
+36,1,1,2,4,3,0.005,0.038,try new foods
+37,5,1,2,2,3,0.968,0.028,get irritated easily
+38,3,1,2,2,2,6.251,0.102,don't brush my teeth
+39,6,1,2,4,4,2.224,0.464,can't stop worrying
+40,1,1,2,4,2,0.342,0.104,forget to wear sunscreen
+41,4,1,2,4,2,9.092,0.299,can be mean

@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.206,0.202,wish I was in love 
+2,2,1,2,2,4,5.907,0.176,like wearing makeup
+3,3,1,2,3,3,1.282,0.073,read magazines
+4,4,1,2,4,3,3.065,0.698,like flirting
+5,5,1,2,2,4,0.128,0.243,want to be alone
+6,2,1,2,2,3,0.576,0.259,like sleepovers
+7,5,1,2,2,3,2.688,0.328,can't keep secrets
+8,1,1,2,4,3,0.085,0.386,like burning candles
+9,4,1,2,3,2,1.623,0.028,am good at getting my way
+10,6,1,2,2,2,0.296,0.358,make friends easily
+11,5,1,2,2,4,1.573,0.037,regret what I post online
+12,1,1,2,3,2,0.383,0.464,forget to turn off lights
+13,3,1,2,2,2,0.023,0.074,like to wear hats 
+14,1,1,2,3,2,2.434,0.233,carry chapstick
+15,6,1,2,4,4,4.052,0.032,copy homework
+16,2,1,2,2,4,1.063,0.031,dance in my room
+17,3,1,2,4,4,0.966,0.101,like to doodle
+18,1,1,2,4,2,2.224,0.066,play board games
+19,2,1,2,2,3,0.968,0.102,drink milk
+20,4,1,2,3,2,0.178,0.164,hide my feelings
+21,3,1,2,4,4,2.373,0.268,sing in the shower
+22,5,1,2,2,3,0.271,0.127,get self-conscious
+23,4,1,2,4,2,0.342,0.224,think I'm weird
+24,1,1,2,4,2,1.429,0.047,wear sunglasses
+25,4,1,2,4,2,0.275,0.299,fight with my family
+26,5,1,2,2,4,0.775,0.114,judge people
+27,6,1,2,4,4,1.592,0.127,get embarrassed
+28,2,1,2,2,4,0.077,0.019,help around the house
+29,5,1,2,3,4,0.880,0.043,dislike my body
+30,6,1,2,3,3,5.622,0.106,want to be popular
+31,3,1,2,3,3,0.792,0.104,listen to music
+32,2,1,2,3,4,0.004,0.392,wear flip flops
+33,6,1,2,4,4,2.018,0.060,hate school 
+34,4,1,2,4,3,0.258,0.431,worry about grades
+35,2,1,2,2,4,1.003,0.213,have too many chores
+36,1,1,2,4,3,0.692,0.213,don't brush my teeth
+37,5,1,2,2,4,1.503,0.105,like breaking rules
+38,3,1,2,4,4,6.251,0.038,go barefoot
+39,6,1,2,3,3,1.254,0.171,pretend I'm fine
+40,1,1,2,4,3,1.125,0.126,like cold pizza
+41,4,1,2,4,3,7.505,0.033,can get moody

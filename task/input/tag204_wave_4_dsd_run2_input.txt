@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.966,0.127,count calories
+2,2,1,2,3,4,0.258,0.102,like wearing makeup
+3,3,1,2,3,3,1.254,0.464,read magazines
+4,4,1,2,4,3,0.576,0.176,feel lonely
+5,5,1,2,3,4,0.692,0.073,can't ignore gossip
+6,2,1,2,3,4,2.688,0.171,drink milk
+7,5,1,2,3,4,1.003,0.386,worry about grades
+8,1,1,2,4,3,1.429,0.328,like burning candles
+9,4,1,2,3,2,0.128,0.127,pretend I'm fine
+10,6,1,2,2,2,0.296,0.392,hate school 
+11,5,1,2,2,4,4.052,0.233,feel pressured to drink
+12,1,1,2,3,2,1.063,0.047,forget to turn off lights
+13,3,1,2,2,2,0.178,0.243,burn my toast
+14,1,1,2,4,3,5.622,0.105,don't make my bed
+15,6,1,2,4,4,0.004,0.104,judge people
+16,2,1,2,2,4,3.065,0.114,don't brush my teeth
+17,3,1,2,4,4,1.503,0.431,braid my hair
+18,1,1,2,4,2,5.907,0.033,wear PJs all day
+19,2,1,2,2,3,1.592,0.074,like wearing costumes
+20,4,1,2,4,3,0.005,0.066,want to be popular
+21,3,1,2,4,4,2.224,0.106,wear leggings
+22,5,1,2,2,3,0.275,0.019,wish I was in love 
+23,4,1,2,4,2,0.737,0.299,think I'm smart
+24,1,1,2,3,2,0.077,0.202,wear sunglasses
+25,4,1,2,3,2,0.775,0.031,make friends easily
+26,5,1,2,2,3,0.271,0.164,worry about kissing
+27,6,1,2,4,4,0.206,0.043,dislike my body
+28,2,1,2,2,3,0.792,0.213,like sleepovers
+29,5,1,2,2,4,0.383,0.060,get self-conscious
+30,6,1,2,3,3,2.373,0.224,think I look cute
+31,3,1,2,3,3,1.282,0.213,have too many chores
+32,2,1,2,2,4,2.018,0.032,play board games
+33,6,1,2,4,4,6.251,0.698,think I'm weird
+34,4,1,2,4,3,1.125,0.259,get irritated easily
+35,2,1,2,2,4,0.342,0.358,go barefoot
+36,1,1,2,4,3,1.623,0.358,don't shower in the morning
+37,5,1,2,2,4,0.880,0.101,regret what I post online
+38,3,1,2,4,4,0.023,0.028,like watching sports  
+39,6,1,2,4,4,2.434,0.038,can't count on my family
+40,1,1,2,4,2,0.968,0.126,dance in my room
+41,4,1,2,4,2,7.585,0.268,can't stop worrying

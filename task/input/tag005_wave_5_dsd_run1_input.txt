@@ -1,0 +1,41 @@
+1,6,1,2,2,2,1.623,0.358,get irritated easily
+2,2,1,2,3,4,1.254,0.101,have too many chores
+3,3,1,2,2,2,0.271,0.114,forget people's names
+4,4,1,2,4,2,5.907,0.358,feel shy in groups
+5,5,1,2,3,4,1.503,0.102,dislike my body
+6,2,1,2,3,4,0.128,0.171,stay up late
+7,5,1,2,3,4,1.282,0.259,can be awkward
+8,1,1,2,4,2,0.206,0.031,forget to turn off lights
+9,4,1,2,3,2,0.258,0.037,think I look cute
+10,6,1,2,2,2,0.342,0.392,hide my feelings
+11,5,1,2,2,4,0.023,0.224,pretend I'm fine
+12,1,1,2,3,2,2.688,0.299,like reality TV shows
+13,3,1,2,2,2,0.775,0.073,help around the house
+14,1,1,2,4,3,0.275,0.032,paint my nails
+15,6,1,2,2,2,0.576,0.104,count calories
+16,2,1,2,2,4,0.968,0.268,don't make my bed
+17,3,1,2,2,2,0.005,0.038,like to doodle
+18,1,1,2,4,2,0.077,0.105,wear sunglasses
+19,2,1,2,2,3,0.692,0.106,can be messy
+20,4,1,2,4,3,1.573,0.066,copy homework
+21,3,1,2,3,3,0.383,0.213,sleep in late
+22,5,1,2,2,3,1.592,0.164,get self-conscious
+23,4,1,2,4,2,0.792,0.126,judge people
+24,1,1,2,4,2,0.085,0.431,play board games
+25,4,1,2,4,2,0.004,0.127,fight with my family
+26,5,1,2,2,3,0.296,0.202,get picked on
+27,6,1,2,3,3,2.434,0.043,dream about my wedding
+28,2,1,2,2,3,2.373,0.047,like wearing makeup
+29,5,1,2,2,4,0.966,0.127,worry about kissing
+30,6,1,2,4,4,1.003,0.243,can't count on my family
+31,3,1,2,4,4,2.018,0.328,like watching sports  
+32,2,1,2,2,4,1.063,0.033,like eating out
+33,6,1,2,3,3,0.737,0.698,can be mean
+34,4,1,2,3,2,0.178,0.028,can't ignore gossip
+35,2,1,2,2,4,0.880,0.386,wear bright colors 
+36,1,1,2,3,2,3.065,0.213,burn my toast
+37,5,1,2,2,4,6.251,0.074,act without thinking
+38,3,1,2,3,3,4.052,0.233,dance in my room
+39,6,1,2,3,3,5.622,0.019,think I'm smart
+40,1,1,2,4,3,2.224,0.176,like cold pizza
+41,4,1,2,4,3,8.929,0.464,like flirting

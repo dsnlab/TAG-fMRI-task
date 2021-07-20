@@ -1,0 +1,41 @@
+1,6,1,2,4,4,3.065,0.328,can't keep secrets
+2,2,1,2,2,3,1.125,0.031,like leftovers
+3,3,1,2,4,4,5.907,0.268,wear leggings
+4,4,1,2,4,2,0.085,0.164,think I'm weird
+5,5,1,2,2,3,5.622,0.033,judge people
+6,2,1,2,3,4,0.005,0.464,carry chapstick
+7,5,1,2,3,4,0.576,0.202,want to be alone
+8,1,1,2,4,2,1.282,0.032,like reality TV shows
+9,4,1,2,3,2,0.275,0.073,get self-conscious
+10,6,1,2,4,4,4.052,0.213,like flirting
+11,5,1,2,2,4,0.258,0.102,feel pressured to drink
+12,1,1,2,3,2,0.775,0.019,can be creative
+13,3,1,2,4,4,0.296,0.176,paint my nails
+14,1,1,2,3,2,0.077,0.101,take bubble baths 
+15,6,1,2,3,3,2.018,0.259,can't ignore gossip
+16,2,1,2,2,4,0.968,0.358,like wearing makeup
+17,3,1,2,3,3,1.592,0.038,can be messy
+18,1,1,2,4,2,1.623,0.066,don't make my bed
+19,2,1,2,3,4,0.206,0.043,wear PJs all day
+20,4,1,2,3,2,0.342,0.233,feel lonely
+21,3,1,2,2,2,0.966,0.698,braid my hair
+22,5,1,2,3,4,2.688,0.028,can't count on my family
+23,4,1,2,4,2,0.128,0.171,worry about grades
+24,1,1,2,4,2,2.434,0.224,like cold pizza
+25,4,1,2,4,2,1.003,0.431,get picked on
+26,5,1,2,2,3,1.429,0.074,like breaking rules
+27,6,1,2,2,2,0.383,0.243,can't stop worrying
+28,2,1,2,2,3,1.254,0.106,like burning candles
+29,5,1,2,2,4,0.692,0.104,worry about college
+30,6,1,2,4,4,0.023,0.105,am good at getting my way
+31,3,1,2,4,4,1.573,0.299,drink milk
+32,2,1,2,2,4,1.063,0.126,like watching sports  
+33,6,1,2,3,3,0.792,0.060,feel shy in groups
+34,4,1,2,3,2,1.503,0.047,get mad at my friends
+35,2,1,2,3,4,0.004,0.392,dance in my room
+36,1,1,2,3,2,2.373,0.213,play board games
+37,5,1,2,3,4,0.271,0.386,can be mean
+38,3,1,2,3,3,0.880,0.358,like sleepovers
+39,6,1,2,2,2,2.224,0.114,think I look cute
+40,1,1,2,3,2,0.178,0.037,try new foods
+41,4,1,2,3,2,8.237,0.127,dream about my wedding

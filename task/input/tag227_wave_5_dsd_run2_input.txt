@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.692,0.213,judge people
+2,2,1,2,2,4,1.003,0.031,try to recycle
+3,3,1,2,2,2,0.968,0.066,wear leggings
+4,4,1,2,4,2,1.282,0.358,hate school 
+5,5,1,2,2,4,0.737,0.105,get mad at my friends
+6,2,1,2,2,3,1.503,0.213,go barefoot
+7,5,1,2,2,3,0.206,0.127,feel shy in groups
+8,1,1,2,4,2,2.018,0.060,like burning candles
+9,4,1,2,4,3,0.271,0.114,pretend I'm fine
+10,6,1,2,4,4,0.966,0.392,can't stop worrying
+11,5,1,2,2,4,1.063,0.038,like flirting
+12,1,1,2,4,3,1.623,0.043,wear PJs all day
+13,3,1,2,4,4,0.004,0.074,forget to turn off lights
+14,1,1,2,4,2,0.342,0.019,sleep in late
+15,6,1,2,4,4,0.383,0.171,think I'm smart
+16,2,1,2,2,4,1.429,0.126,help around the house
+17,3,1,2,4,4,0.258,0.358,like eating out
+18,1,1,2,4,2,0.085,0.037,forget to wear sunscreen
+19,2,1,2,2,3,0.005,0.698,wear flip flops
+20,4,1,2,4,2,2.434,0.464,fight with my family
+21,3,1,2,4,4,0.880,0.299,stay up late
+22,5,1,2,2,3,3.065,0.202,want to be popular
+23,4,1,2,4,2,0.077,0.106,get picked on
+24,1,1,2,4,2,5.907,0.224,drink milk
+25,4,1,2,4,2,0.275,0.431,don't like my life
+26,5,1,2,2,3,1.254,0.233,worry about grades
+27,6,1,2,4,4,2.224,0.176,think I'm weird
+28,2,1,2,2,3,0.792,0.101,carry chapstick
+29,5,1,2,2,3,0.023,0.032,feel pressured to drink
+30,6,1,2,4,4,2.373,0.104,count calories
+31,3,1,2,4,4,0.128,0.127,take bubble baths 
+32,2,1,2,2,3,4.052,0.164,don't make my bed
+33,6,1,2,2,2,1.125,0.328,dream about my wedding
+34,4,1,2,4,3,0.296,0.268,wish I was in love 
+35,2,1,2,2,4,5.622,0.386,can be messy
+36,1,1,2,4,3,1.573,0.243,don't shower in the morning
+37,5,1,2,2,4,0.576,0.259,dislike my body
+38,3,1,2,2,2,6.251,0.033,forget people's names
+39,6,1,2,2,2,1.592,0.028,am good at getting my way
+40,1,1,2,4,2,0.775,0.047,like wearing makeup
+41,4,1,2,4,2,10.188,0.102,regret what I post online

@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.023,0.171,make friends easily
+2,2,1,2,2,3,1.503,0.019,like cold pizza
+3,3,1,2,4,4,0.383,0.037,forget people's names
+4,4,1,2,4,2,0.275,0.066,feel lonely
+5,5,1,2,2,3,1.063,0.126,act without thinking
+6,2,1,2,3,4,2.373,0.127,don't make my bed
+7,5,1,2,3,4,1.429,0.243,think I look cute
+8,1,1,2,4,2,0.004,0.032,play board games
+9,4,1,2,4,2,0.128,0.105,count calories
+10,6,1,2,4,4,0.206,0.176,worry about college
+11,5,1,2,3,4,0.966,0.114,get self-conscious
+12,1,1,2,4,2,0.258,0.299,listen to music
+13,3,1,2,4,4,2.434,0.358,like watching sports  
+14,1,1,2,3,2,5.622,0.233,help around the house
+15,6,1,2,4,4,2.018,0.074,think I'm smart
+16,2,1,2,3,4,0.775,0.358,don't shower in the morning
+17,3,1,2,4,4,0.077,0.047,like wearing costumes
+18,1,1,2,4,3,0.271,0.328,go barefoot
+19,2,1,2,3,4,1.125,0.259,burn my toast
+20,4,1,2,3,2,0.342,0.698,copy homework
+21,3,1,2,3,3,3.065,0.028,wear bright colors 
+22,5,1,2,3,4,0.005,0.101,worry about grades
+23,4,1,2,4,3,1.003,0.392,fight with my family
+24,1,1,2,4,2,2.224,0.073,paint my nails
+25,4,1,2,4,2,1.282,0.102,can't count on my family
+26,5,1,2,3,4,0.692,0.202,regret what I post online
+27,6,1,2,3,3,0.085,0.031,can't stop worrying
+28,2,1,2,3,4,2.688,0.038,sing in the shower
+29,5,1,2,2,4,1.573,0.224,get embarrassed
+30,6,1,2,2,2,6.251,0.104,get mad at my friends
+31,3,1,2,2,2,0.968,0.164,dance in my room
+32,2,1,2,2,4,0.880,0.213,like wearing makeup
+33,6,1,2,4,4,0.576,0.060,want to be popular
+34,4,1,2,4,2,0.792,0.268,hate school 
+35,2,1,2,2,4,1.254,0.386,take bubble baths 
+36,1,1,2,4,2,4.052,0.213,wear leggings
+37,5,1,2,2,4,0.296,0.033,judge people
+38,3,1,2,4,4,5.907,0.106,like reality TV shows
+39,6,1,2,3,3,0.737,0.431,pretend to like people
+40,1,1,2,3,2,0.178,0.127,try new foods
+41,4,1,2,3,2,9.092,0.043,can be mean

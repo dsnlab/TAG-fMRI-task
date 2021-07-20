@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.085,0.386,can't keep secrets
+2,2,1,2,3,4,0.737,0.431,like to doodle
+3,3,1,2,4,4,4.052,0.243,carry chapstick
+4,4,1,2,3,2,1.125,0.033,can be awkward
+5,5,1,2,3,4,2.434,0.038,judge people
+6,2,1,2,3,4,5.622,0.127,read magazines
+7,5,1,2,3,4,0.576,0.176,pretend I'm fine
+8,1,1,2,3,2,0.178,0.074,like wearing makeup
+9,4,1,2,4,2,0.968,0.171,get picked on
+10,6,1,2,4,4,1.063,0.328,dislike my body
+11,5,1,2,3,4,0.271,0.028,pretend to like people
+12,1,1,2,4,2,1.623,0.104,forget to wear sunscreen
+13,3,1,2,4,4,2.688,0.164,don't make my bed
+14,1,1,2,4,3,0.966,0.105,can be creative
+15,6,1,2,3,3,1.592,0.698,get mad at my friends
+16,2,1,2,3,4,2.224,0.043,like reality TV shows
+17,3,1,2,3,3,0.880,0.047,like cold pizza
+18,1,1,2,4,2,0.004,0.299,take bubble baths 
+19,2,1,2,2,3,1.254,0.213,stay up late
+20,4,1,2,4,3,0.775,0.060,make friends easily
+21,3,1,2,2,2,3.065,0.213,like wearing costumes
+22,5,1,2,2,3,1.429,0.464,wish I was in love 
+23,4,1,2,4,2,0.383,0.127,feel lonely
+24,1,1,2,4,3,0.258,0.031,don't shower in the morning
+25,4,1,2,4,3,0.296,0.066,dream about my wedding
+26,5,1,2,2,4,6.251,0.358,can't ignore gossip
+27,6,1,2,2,2,0.792,0.392,like breaking rules
+28,2,1,2,2,4,0.128,0.259,can be messy
+29,5,1,2,2,4,1.503,0.126,want to be alone
+30,6,1,2,4,4,0.275,0.101,am good at getting my way
+31,3,1,2,4,4,0.206,0.019,braid my hair
+32,2,1,2,2,4,1.573,0.202,don't brush my teeth
+33,6,1,2,4,4,1.282,0.102,get self-conscious
+34,4,1,2,4,2,0.077,0.073,feel shy in groups
+35,2,1,2,2,3,2.018,0.037,wear flip flops
+36,1,1,2,4,2,0.692,0.358,go barefoot
+37,5,1,2,2,3,5.907,0.233,count calories
+38,3,1,2,4,4,0.342,0.106,like watching sports  
+39,6,1,2,2,2,2.373,0.032,get embarrassed
+40,1,1,2,3,2,1.003,0.224,help around the house
+41,4,1,2,3,2,7.523,0.114,fight with my family

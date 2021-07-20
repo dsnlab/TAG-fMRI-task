@@ -1,0 +1,41 @@
+1,6,1,2,4,4,1.429,0.019,feel shy in groups
+2,2,1,2,3,4,1.623,0.233,dance in my room
+3,3,1,2,4,4,5.907,0.213,like cold pizza
+4,4,1,2,4,3,0.005,0.171,worry about college
+5,5,1,2,3,4,0.792,0.431,tell little lies
+6,2,1,2,2,4,0.023,0.328,like wearing costumes
+7,5,1,2,2,4,0.880,0.176,get irritated easily
+8,1,1,2,4,3,5.622,0.299,don't make my bed
+9,4,1,2,4,2,0.271,0.243,can be awkward
+10,6,1,2,3,3,1.592,0.038,like breaking rules
+11,5,1,2,2,4,0.004,0.104,get embarrassed
+12,1,1,2,4,2,0.576,0.060,paint my nails
+13,3,1,2,3,3,0.775,0.037,stay up late
+14,1,1,2,4,2,2.434,0.358,like watching sports  
+15,6,1,2,2,2,0.128,0.102,can't ignore gossip
+16,2,1,2,2,4,0.296,0.066,can be messy
+17,3,1,2,2,2,0.258,0.213,try to recycle
+18,1,1,2,3,2,1.573,0.224,like eating out
+19,2,1,2,3,4,1.503,0.073,like to wear hats 
+20,4,1,2,4,2,0.085,0.106,pretend I'm fine
+21,3,1,2,3,3,2.224,0.028,can be creative
+22,5,1,2,3,4,0.275,0.114,get picked on
+23,4,1,2,3,2,0.077,0.202,think I look cute
+24,1,1,2,4,2,2.688,0.032,like sleepovers
+25,4,1,2,4,2,0.737,0.386,get self-conscious
+26,5,1,2,2,3,1.254,0.031,count calories
+27,6,1,2,3,3,1.282,0.127,judge people
+28,2,1,2,2,3,6.251,0.392,help around the house
+29,5,1,2,3,4,4.052,0.074,wish I was in love 
+30,6,1,2,2,2,0.692,0.043,want to be popular
+31,3,1,2,2,2,0.968,0.464,like to doodle
+32,2,1,2,3,4,0.342,0.358,forget people's names
+33,6,1,2,3,3,1.003,0.126,fight with my family
+34,4,1,2,4,2,3.065,0.268,copy homework
+35,2,1,2,2,4,0.178,0.698,forget to turn off lights
+36,1,1,2,4,2,0.206,0.259,burn my toast
+37,5,1,2,2,4,1.063,0.033,pretend to like people
+38,3,1,2,3,3,2.373,0.101,carry chapstick
+39,6,1,2,4,4,0.383,0.127,can't stop worrying
+40,1,1,2,3,2,1.125,0.164,play board games
+41,4,1,2,3,2,9.518,0.047,feel pressured to drink
