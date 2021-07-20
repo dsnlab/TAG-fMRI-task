@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.077,0.202,can be awkward
+2,2,1,2,3,4,0.275,0.358,listen to music
+3,3,1,2,3,3,0.271,0.114,like sleepovers
+4,4,1,2,3,2,1.282,0.328,fight with my family
+5,5,1,2,3,4,0.004,0.101,want to be popular
+6,2,1,2,3,4,0.692,0.464,paint my nails
+7,5,1,2,3,4,0.968,0.243,get mad at my friends
+8,1,1,2,3,2,1.623,0.037,drink milk
+9,4,1,2,3,2,1.254,0.060,worry about college
+10,6,1,2,4,4,0.023,0.392,hate school 
+11,5,1,2,2,3,0.085,0.259,act without thinking
+12,1,1,2,3,2,1.125,0.176,play board games
+13,3,1,2,4,4,1.503,0.104,take bubble baths 
+14,1,1,2,3,2,1.063,0.164,like to doodle
+15,6,1,2,2,2,5.907,0.047,worry about kissing
+16,2,1,2,2,3,1.573,0.171,forget people's names
+17,3,1,2,2,2,1.592,0.031,help around the house
+18,1,1,2,4,2,0.880,0.268,like wearing makeup
+19,2,1,2,2,3,1.429,0.038,sleep in late
+20,4,1,2,3,2,0.178,0.299,hide my feelings
+21,3,1,2,3,3,2.373,0.102,like to wear hats 
+22,5,1,2,2,3,0.206,0.028,feel shy in groups
+23,4,1,2,4,2,1.003,0.213,dislike my body
+24,1,1,2,4,3,0.005,0.126,don't shower in the morning
+25,4,1,2,4,3,2.018,0.386,can be mean
+26,5,1,2,2,4,0.342,0.431,like flirting
+27,6,1,2,3,3,0.792,0.213,dream about my wedding
+28,2,1,2,2,4,4.052,0.698,try to recycle
+29,5,1,2,2,4,2.688,0.043,want to be alone
+30,6,1,2,2,2,2.434,0.074,get irritated easily
+31,3,1,2,2,2,0.737,0.127,go barefoot
+32,2,1,2,2,4,0.128,0.032,can be messy
+33,6,1,2,3,3,2.224,0.127,can't keep secrets
+34,4,1,2,4,3,0.576,0.019,feel lonely
+35,2,1,2,3,4,0.775,0.106,like eating out
+36,1,1,2,4,3,0.966,0.233,braid my hair
+37,5,1,2,3,4,5.622,0.358,think I'm smart
+38,3,1,2,3,3,0.383,0.073,don't make my bed
+39,6,1,2,2,2,3.065,0.105,pretend I'm fine
+40,1,1,2,4,2,0.258,0.066,read magazines
+41,4,1,2,4,2,13.751,0.033,can't count on my family

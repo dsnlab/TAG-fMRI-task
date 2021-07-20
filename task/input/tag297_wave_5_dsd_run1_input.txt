@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.258,0.105,pretend I'm fine
+2,2,1,2,3,4,0.342,0.328,like burning candles
+3,3,1,2,3,3,1.003,0.202,don't brush my teeth
+4,4,1,2,4,3,1.125,0.102,am good at getting my way
+5,5,1,2,3,4,5.622,0.106,want to be alone
+6,2,1,2,2,4,0.576,0.101,don't shower in the morning
+7,5,1,2,2,4,0.296,0.060,count calories
+8,1,1,2,4,3,5.907,0.073,play board games
+9,4,1,2,4,2,0.005,0.028,like flirting
+10,6,1,2,4,4,1.592,0.127,feel pressured to drink
+11,5,1,2,3,4,0.206,0.104,worry about grades
+12,1,1,2,4,2,4.052,0.114,burn my toast
+13,3,1,2,4,4,0.968,0.358,sing in the shower
+14,1,1,2,3,2,0.737,0.176,like sleepovers
+15,6,1,2,3,3,1.503,0.038,copy homework
+16,2,1,2,3,4,1.063,0.164,don't make my bed
+17,3,1,2,3,3,0.077,0.019,try new foods
+18,1,1,2,4,3,0.966,0.243,read magazines
+19,2,1,2,2,3,2.018,0.224,like cold pizza
+20,4,1,2,3,2,0.085,0.037,judge people
+21,3,1,2,4,4,0.383,0.299,can be messy
+22,5,1,2,2,3,2.224,0.431,regret what I post online
+23,4,1,2,4,3,1.429,0.066,can't keep secrets
+24,1,1,2,4,2,0.792,0.464,forget to turn off lights
+25,4,1,2,4,2,1.282,0.171,get picked on
+26,5,1,2,2,3,1.573,0.233,get irritated easily
+27,6,1,2,4,4,0.271,0.047,want to be popular
+28,2,1,2,2,3,1.623,0.268,dance in my room
+29,5,1,2,3,4,0.275,0.033,act without thinking
+30,6,1,2,3,3,6.251,0.213,get embarrassed
+31,3,1,2,3,3,0.692,0.358,like to wear hats 
+32,2,1,2,3,4,0.880,0.127,like eating out
+33,6,1,2,2,2,0.128,0.392,like breaking rules
+34,4,1,2,4,3,2.373,0.698,tell little lies
+35,2,1,2,2,4,0.004,0.032,have too many chores
+36,1,1,2,4,3,0.775,0.126,sleep in late
+37,5,1,2,2,4,0.178,0.031,can be mean
+38,3,1,2,2,2,1.254,0.213,like wearing makeup
+39,6,1,2,2,2,2.434,0.043,make friends easily
+40,1,1,2,4,2,2.688,0.386,carry chapstick
+41,4,1,2,4,2,10.565,0.074,wish I was in love 

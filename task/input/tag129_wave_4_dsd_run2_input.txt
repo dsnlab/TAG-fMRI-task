@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.077,0.047,can't count on my family
+2,2,1,2,2,3,0.968,0.431,try to recycle
+3,3,1,2,3,3,1.125,0.698,wear bright colors 
+4,4,1,2,4,2,0.275,0.386,get irritated easily
+5,5,1,2,2,3,0.005,0.033,feel shy in groups
+6,2,1,2,2,4,0.792,0.176,can be messy
+7,5,1,2,2,4,0.258,0.358,want to be alone
+8,1,1,2,4,2,3.065,0.104,like wearing makeup
+9,4,1,2,4,2,2.224,0.066,think I'm smart
+10,6,1,2,4,4,1.623,0.127,can't keep secrets
+11,5,1,2,2,4,0.296,0.031,like breaking rules
+12,1,1,2,4,2,0.342,0.392,forget to turn off lights
+13,3,1,2,4,4,0.178,0.106,carry chapstick
+14,1,1,2,4,2,5.907,0.019,like reality TV shows
+15,6,1,2,3,3,1.282,0.101,tell little lies
+16,2,1,2,2,4,0.383,0.028,like eating out
+17,3,1,2,3,3,0.023,0.102,wear flip flops
+18,1,1,2,3,2,1.003,0.213,try new foods
+19,2,1,2,2,4,1.429,0.243,like watching sports  
+20,4,1,2,4,2,0.004,0.038,think I look cute
+21,3,1,2,2,2,0.880,0.299,like sleepovers
+22,5,1,2,2,4,1.063,0.358,regret what I post online
+23,4,1,2,3,2,2.373,0.213,copy homework
+24,1,1,2,4,2,1.503,0.171,wear leggings
+25,4,1,2,4,2,1.592,0.114,can be awkward
+26,5,1,2,2,3,4.052,0.328,like flirting
+27,6,1,2,2,2,0.085,0.259,get self-conscious
+28,2,1,2,2,3,1.573,0.032,wear sunglasses
+29,5,1,2,2,4,2.434,0.233,think I'm weird
+30,6,1,2,2,2,0.692,0.074,want to be popular
+31,3,1,2,2,2,6.251,0.127,can be creative
+32,2,1,2,2,4,0.206,0.126,burn my toast
+33,6,1,2,2,2,0.737,0.464,dislike my body
+34,4,1,2,3,2,0.576,0.164,count calories
+35,2,1,2,3,4,0.128,0.105,don't brush my teeth
+36,1,1,2,3,2,2.018,0.037,sing in the shower
+37,5,1,2,3,4,5.622,0.224,dream about my wedding
+38,3,1,2,2,2,0.271,0.073,forget to wear sunscreen
+39,6,1,2,4,4,2.688,0.043,can be mean
+40,1,1,2,4,3,0.775,0.060,like to wear hats 
+41,4,1,2,4,3,8.754,0.202,can't stop worrying

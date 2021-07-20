@@ -1,0 +1,41 @@
+1,6,1,2,2,2,1.592,0.127,dream about my wedding
+2,2,1,2,2,3,5.622,0.102,like eating out
+3,3,1,2,2,2,1.429,0.127,try new foods
+4,4,1,2,4,2,0.085,0.106,worry about college
+5,5,1,2,2,3,0.004,0.233,count calories
+6,2,1,2,3,4,0.023,0.431,like reality TV shows
+7,5,1,2,3,4,5.907,0.043,think I look cute
+8,1,1,2,4,2,0.968,0.074,like watching sports  
+9,4,1,2,4,3,0.737,0.037,worry about kissing
+10,6,1,2,3,3,2.688,0.105,can be mean
+11,5,1,2,2,4,0.966,0.224,pretend to like people
+12,1,1,2,4,3,6.251,0.243,can be messy
+13,3,1,2,3,3,1.623,0.171,forget to wear sunscreen
+14,1,1,2,3,2,4.052,0.202,like wearing costumes
+15,6,1,2,3,3,0.383,0.066,can't count on my family
+16,2,1,2,2,4,0.206,0.299,don't make my bed
+17,3,1,2,3,3,1.254,0.126,paint my nails
+18,1,1,2,4,2,0.258,0.114,wear bright colors 
+19,2,1,2,3,4,0.128,0.073,like leftovers
+20,4,1,2,3,2,0.296,0.213,can't stop worrying
+21,3,1,2,2,2,3.065,0.101,wear PJs all day
+22,5,1,2,3,4,2.373,0.047,feel shy in groups
+23,4,1,2,4,2,0.792,0.698,get picked on
+24,1,1,2,4,2,0.077,0.259,take bubble baths 
+25,4,1,2,4,2,1.282,0.164,act without thinking
+26,5,1,2,2,3,1.503,0.038,think I'm smart
+27,6,1,2,2,2,1.003,0.328,get irritated easily
+28,2,1,2,2,3,0.880,0.031,try to recycle
+29,5,1,2,2,4,0.275,0.358,can't ignore gossip
+30,6,1,2,4,4,2.018,0.268,feel pressured to drink
+31,3,1,2,4,4,1.573,0.176,stay up late
+32,2,1,2,2,4,1.125,0.386,burn my toast
+33,6,1,2,2,2,2.434,0.060,feel lonely
+34,4,1,2,3,2,0.692,0.392,tell little lies
+35,2,1,2,3,4,0.342,0.028,can be creative
+36,1,1,2,3,2,2.224,0.032,sleep in late
+37,5,1,2,3,4,0.005,0.104,get mad at my friends
+38,3,1,2,2,2,0.576,0.033,don't shower in the morning
+39,6,1,2,4,4,1.063,0.358,don't like my life
+40,1,1,2,4,2,0.271,0.019,forget people's names
+41,4,1,2,4,2,8.275,0.464,can be awkward

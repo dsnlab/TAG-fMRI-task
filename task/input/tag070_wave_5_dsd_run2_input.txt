@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.792,0.243,pretend I'm fine
+2,2,1,2,3,4,0.342,0.106,read magazines
+3,3,1,2,2,2,0.258,0.066,have too many chores
+4,4,1,2,3,2,0.005,0.104,wish I was in love 
+5,5,1,2,3,4,0.692,0.358,think I look cute
+6,2,1,2,2,4,1.592,0.037,can be creative
+7,5,1,2,2,4,0.077,0.171,feel lonely
+8,1,1,2,3,2,2.688,0.074,forget to turn off lights
+9,4,1,2,3,2,0.271,0.114,count calories
+10,6,1,2,2,2,1.125,0.299,get mad at my friends
+11,5,1,2,2,4,1.429,0.176,don't like my life
+12,1,1,2,3,2,1.003,0.032,wear bright colors 
+13,3,1,2,2,2,1.573,0.224,braid my hair
+14,1,1,2,4,2,1.282,0.126,like eating out
+15,6,1,2,2,2,0.178,0.698,feel pressured to drink
+16,2,1,2,2,4,2.434,0.031,try new foods
+17,3,1,2,2,2,2.224,0.043,wear flip flops
+18,1,1,2,4,3,1.623,0.213,sleep in late
+19,2,1,2,3,4,1.063,0.105,try to recycle
+20,4,1,2,4,2,0.004,0.073,can't keep secrets
+21,3,1,2,4,4,0.023,0.392,stay up late
+22,5,1,2,3,4,6.251,0.060,want to be popular
+23,4,1,2,4,3,0.085,0.358,tell little lies
+24,1,1,2,4,2,0.128,0.047,wear leggings
+25,4,1,2,4,2,4.052,0.019,copy homework
+26,5,1,2,2,4,2.373,0.213,think I'm smart
+27,6,1,2,4,4,2.018,0.464,act without thinking
+28,2,1,2,2,4,0.968,0.102,drink milk
+29,5,1,2,3,4,0.576,0.259,can get moody
+30,6,1,2,3,3,0.737,0.028,worry about grades
+31,3,1,2,3,3,1.254,0.386,burn my toast
+32,2,1,2,3,4,5.907,0.038,don't shower in the morning
+33,6,1,2,2,2,1.503,0.033,pretend to like people
+34,4,1,2,3,2,0.383,0.164,can be awkward
+35,2,1,2,2,3,0.880,0.233,sing in the shower
+36,1,1,2,3,2,0.296,0.127,like reality TV shows
+37,5,1,2,2,3,0.966,0.328,can be mean
+38,3,1,2,2,2,0.206,0.431,go barefoot
+39,6,1,2,3,3,5.622,0.202,get self-conscious
+40,1,1,2,4,3,0.775,0.101,forget people's names
+41,4,1,2,4,3,10.565,0.127,dream about my wedding

@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.004,0.037,pretend I'm fine
+2,2,1,2,2,4,1.063,0.268,like eating out
+3,3,1,2,3,3,0.296,0.233,wear PJs all day
+4,4,1,2,4,2,2.224,0.213,like flirting
+5,5,1,2,2,4,1.573,0.176,like breaking rules
+6,2,1,2,2,4,1.503,0.328,wear flip flops
+7,5,1,2,2,4,0.737,0.358,get irritated easily
+8,1,1,2,4,2,0.077,0.127,carry chapstick
+9,4,1,2,4,2,0.085,0.043,pretend to like people
+10,6,1,2,4,4,0.005,0.171,think I look cute
+11,5,1,2,2,3,4.052,0.101,can't count on my family
+12,1,1,2,4,2,0.775,0.164,burn my toast
+13,3,1,2,4,4,1.592,0.259,forget to turn off lights
+14,1,1,2,3,2,1.282,0.032,wear leggings
+15,6,1,2,4,4,0.966,0.126,wish I was in love 
+16,2,1,2,2,3,2.688,0.299,drink milk
+17,3,1,2,4,4,0.968,0.224,braid my hair
+18,1,1,2,4,3,2.373,0.431,like wearing costumes
+19,2,1,2,3,4,0.792,0.074,try to recycle
+20,4,1,2,3,2,0.206,0.038,can be awkward
+21,3,1,2,3,3,0.271,0.033,like to doodle
+22,5,1,2,3,4,1.125,0.102,can't stop worrying
+23,4,1,2,4,3,0.258,0.104,think I'm smart
+24,1,1,2,4,2,0.383,0.031,like reality TV shows
+25,4,1,2,4,2,1.254,0.464,worry about college
+26,5,1,2,2,4,0.178,0.028,feel pressured to drink
+27,6,1,2,3,3,0.128,0.392,worry about kissing
+28,2,1,2,2,4,1.429,0.213,read magazines
+29,5,1,2,2,3,1.003,0.047,get embarrassed
+30,6,1,2,2,2,0.023,0.243,feel shy in groups
+31,3,1,2,2,2,2.018,0.114,try new foods
+32,2,1,2,2,3,5.622,0.202,dance in my room
+33,6,1,2,3,3,0.576,0.019,can be mean
+34,4,1,2,4,2,5.907,0.698,can't keep secrets
+35,2,1,2,3,4,6.251,0.358,like wearing makeup
+36,1,1,2,4,2,3.065,0.105,don't make my bed
+37,5,1,2,3,4,0.275,0.066,can't ignore gossip
+38,3,1,2,3,3,0.880,0.386,can be messy
+39,6,1,2,2,2,0.342,0.060,judge people
+40,1,1,2,4,3,0.692,0.127,go barefoot
+41,4,1,2,4,3,9.123,0.073,am good at getting my way

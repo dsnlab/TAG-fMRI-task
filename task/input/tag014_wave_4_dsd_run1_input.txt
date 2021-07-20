@@ -1,0 +1,41 @@
+1,6,1,2,4,4,0.966,0.105,feel pressured to drink
+2,2,1,2,2,4,2.018,0.102,listen to music
+3,3,1,2,4,4,0.775,0.233,like wearing costumes
+4,4,1,2,4,3,6.251,0.127,can get moody
+5,5,1,2,2,4,5.622,0.073,fight with my family
+6,2,1,2,2,4,0.085,0.164,drink milk
+7,5,1,2,2,4,4.052,0.328,wish I was in love 
+8,1,1,2,4,3,3.065,0.114,burn my toast
+9,4,1,2,4,3,5.907,0.386,worry about grades
+10,6,1,2,4,4,0.128,0.038,regret what I post online
+11,5,1,2,3,4,1.063,0.060,want to be popular
+12,1,1,2,4,3,0.206,0.392,forget people's names
+13,3,1,2,4,4,0.004,0.358,can be messy
+14,1,1,2,4,2,1.503,0.259,try to recycle
+15,6,1,2,3,3,2.688,0.431,feel lonely
+16,2,1,2,3,4,0.968,0.464,have too many chores
+17,3,1,2,3,3,0.880,0.028,sleep in late
+18,1,1,2,3,2,0.023,0.047,paint my nails
+19,2,1,2,3,4,0.296,0.033,stay up late
+20,4,1,2,4,2,0.383,0.106,pretend to like people
+21,3,1,2,4,4,1.254,0.043,take bubble baths 
+22,5,1,2,3,4,1.592,0.019,dream about my wedding
+23,4,1,2,3,2,0.792,0.213,can be mean
+24,1,1,2,3,2,0.258,0.037,dance in my room
+25,4,1,2,3,2,0.692,0.032,can be awkward
+26,5,1,2,2,3,0.178,0.224,like breaking rules
+27,6,1,2,4,4,0.342,0.176,dislike my body
+28,2,1,2,2,3,2.373,0.127,like to wear hats 
+29,5,1,2,2,4,0.077,0.171,worry about kissing
+30,6,1,2,3,3,1.282,0.104,act without thinking
+31,3,1,2,3,3,1.623,0.213,forget to turn off lights
+32,2,1,2,2,4,2.434,0.268,like to doodle
+33,6,1,2,3,3,1.003,0.066,hide my feelings
+34,4,1,2,4,3,0.275,0.698,feel shy in groups
+35,2,1,2,2,3,1.573,0.031,wear sunglasses
+36,1,1,2,4,3,1.429,0.101,don't shower in the morning
+37,5,1,2,2,3,0.737,0.358,hate school 
+38,3,1,2,3,3,0.271,0.299,don't brush my teeth
+39,6,1,2,4,4,2.224,0.243,think I'm weird
+40,1,1,2,4,2,1.125,0.202,wear PJs all day
+41,4,1,2,4,2,8.076,0.074,can't count on my family

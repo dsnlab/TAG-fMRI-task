@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.737,0.213,feel pressured to drink
+2,2,1,2,3,4,0.004,0.243,paint my nails
+3,3,1,2,2,2,1.429,0.213,like wearing makeup
+4,4,1,2,4,2,0.296,0.358,want to be alone
+5,5,1,2,3,4,1.282,0.202,pretend I'm fine
+6,2,1,2,2,3,0.966,0.164,wear sunglasses
+7,5,1,2,2,3,0.271,0.358,make friends easily
+8,1,1,2,4,2,0.342,0.299,drink milk
+9,4,1,2,4,3,0.077,0.127,dislike my body
+10,6,1,2,2,2,1.623,0.102,act without thinking
+11,5,1,2,3,4,1.063,0.176,think I'm weird
+12,1,1,2,4,3,3.065,0.047,like sleepovers
+13,3,1,2,2,2,0.085,0.043,braid my hair
+14,1,1,2,4,2,0.023,0.464,wear PJs all day
+15,6,1,2,4,4,4.052,0.066,hide my feelings
+16,2,1,2,3,4,2.018,0.171,sleep in late
+17,3,1,2,4,4,0.968,0.114,like cold pizza
+18,1,1,2,4,3,0.383,0.074,like leftovers
+19,2,1,2,2,4,0.576,0.233,have too many chores
+20,4,1,2,4,2,1.125,0.033,get embarrassed
+21,3,1,2,3,3,0.275,0.259,go barefoot
+22,5,1,2,2,4,0.880,0.392,can't stop worrying
+23,4,1,2,4,3,1.003,0.028,can't ignore gossip
+24,1,1,2,4,3,2.434,0.431,forget to wear sunscreen
+25,4,1,2,4,3,2.688,0.127,can't keep secrets
+26,5,1,2,2,3,1.592,0.106,don't like my life
+27,6,1,2,3,3,1.254,0.104,worry about college
+28,2,1,2,2,3,2.224,0.101,like reality TV shows
+29,5,1,2,3,4,5.622,0.126,feel lonely
+30,6,1,2,4,4,0.692,0.038,think I'm smart
+31,3,1,2,4,4,6.251,0.060,can be messy
+32,2,1,2,3,4,0.792,0.224,wear leggings
+33,6,1,2,3,3,0.005,0.105,fight with my family
+34,4,1,2,4,2,0.178,0.386,worry about kissing
+35,2,1,2,2,4,0.775,0.268,forget to turn off lights
+36,1,1,2,4,2,0.258,0.073,like watching sports  
+37,5,1,2,2,4,0.206,0.037,like flirting
+38,3,1,2,3,3,5.907,0.031,listen to music
+39,6,1,2,3,3,0.128,0.328,can be mean
+40,1,1,2,4,2,2.373,0.032,play board games
+41,4,1,2,4,2,9.003,0.698,dream about my wedding

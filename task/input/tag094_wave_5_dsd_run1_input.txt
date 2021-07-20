@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.737,0.102,worry about college
+2,2,1,2,2,4,1.503,0.127,forget to wear sunscreen
+3,3,1,2,3,3,6.251,0.386,burn my toast
+4,4,1,2,4,3,0.178,0.031,copy homework
+5,5,1,2,2,4,5.907,0.233,think I look cute
+6,2,1,2,2,3,2.434,0.105,like cold pizza
+7,5,1,2,2,3,0.077,0.213,think I'm smart
+8,1,1,2,4,3,2.018,0.164,can be messy
+9,4,1,2,4,2,0.004,0.268,can be mean
+10,6,1,2,3,3,0.005,0.047,can't stop worrying
+11,5,1,2,2,4,0.383,0.224,act without thinking
+12,1,1,2,4,2,0.258,0.171,braid my hair
+13,3,1,2,3,3,1.429,0.032,forget people's names
+14,1,1,2,3,2,1.623,0.074,like watching sports  
+15,6,1,2,4,4,3.065,0.126,want to be popular
+16,2,1,2,2,4,0.128,0.106,try to recycle
+17,3,1,2,4,4,2.224,0.328,like to wear hats 
+18,1,1,2,4,2,5.622,0.358,like wearing costumes
+19,2,1,2,3,4,1.254,0.101,wear bright colors 
+20,4,1,2,3,2,2.688,0.202,dislike my body
+21,3,1,2,2,2,0.296,0.043,like to doodle
+22,5,1,2,3,4,0.271,0.073,get embarrassed
+23,4,1,2,4,2,0.576,0.038,get picked on
+24,1,1,2,4,3,0.968,0.037,try new foods
+25,4,1,2,4,3,1.063,0.033,get self-conscious
+26,5,1,2,2,4,0.206,0.114,hide my feelings
+27,6,1,2,2,2,1.573,0.464,think I'm weird
+28,2,1,2,2,4,0.085,0.104,listen to music
+29,5,1,2,2,3,0.792,0.431,judge people
+30,6,1,2,4,4,0.880,0.066,can't count on my family
+31,3,1,2,4,4,0.775,0.698,can be creative
+32,2,1,2,2,3,0.342,0.028,dance in my room
+33,6,1,2,2,2,4.052,0.358,feel pressured to drink
+34,4,1,2,4,2,1.125,0.127,dream about my wedding
+35,2,1,2,3,4,2.373,0.060,like sleepovers
+36,1,1,2,4,2,1.003,0.259,read magazines
+37,5,1,2,3,4,0.023,0.176,feel lonely
+38,3,1,2,2,2,0.275,0.213,sleep in late
+39,6,1,2,3,3,1.592,0.299,fight with my family
+40,1,1,2,4,2,0.692,0.392,wear leggings
+41,4,1,2,4,2,8.466,0.243,can get moody

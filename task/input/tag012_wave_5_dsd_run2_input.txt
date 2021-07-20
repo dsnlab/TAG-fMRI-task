@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.206,0.431,feel pressured to drink
+2,2,1,2,3,4,0.968,0.019,play board games
+3,3,1,2,3,3,3.065,0.358,sing in the shower
+4,4,1,2,3,2,0.296,0.104,can be mean
+5,5,1,2,3,4,0.737,0.171,am good at getting my way
+6,2,1,2,2,4,1.429,0.213,like sleepovers
+7,5,1,2,2,4,2.373,0.028,copy homework
+8,1,1,2,3,2,0.258,0.074,carry chapstick
+9,4,1,2,4,3,2.018,0.176,can't keep secrets
+10,6,1,2,4,4,1.125,0.114,pretend I'm fine
+11,5,1,2,2,3,0.692,0.060,want to be alone
+12,1,1,2,4,3,1.282,0.213,help around the house
+13,3,1,2,4,4,0.966,0.043,don't brush my teeth
+14,1,1,2,4,2,0.178,0.259,have too many chores
+15,6,1,2,3,3,1.623,0.328,feel lonely
+16,2,1,2,2,3,6.251,0.268,burn my toast
+17,3,1,2,3,3,0.005,0.101,paint my nails
+18,1,1,2,3,2,4.052,0.392,stay up late
+19,2,1,2,2,4,0.275,0.224,wear PJs all day
+20,4,1,2,4,2,0.085,0.102,feel shy in groups
+21,3,1,2,3,3,1.573,0.105,don't shower in the morning
+22,5,1,2,2,4,0.880,0.032,regret what I post online
+23,4,1,2,3,2,2.434,0.464,can get moody
+24,1,1,2,4,2,0.775,0.066,wear leggings
+25,4,1,2,4,2,0.077,0.698,dream about my wedding
+26,5,1,2,2,4,0.023,0.358,get embarrassed
+27,6,1,2,3,3,5.622,0.243,hate school 
+28,2,1,2,2,4,0.383,0.127,like cold pizza
+29,5,1,2,2,4,1.063,0.202,get irritated easily
+30,6,1,2,4,4,2.224,0.106,worry about kissing
+31,3,1,2,4,4,0.342,0.164,like reality TV shows
+32,2,1,2,2,4,1.503,0.031,can be messy
+33,6,1,2,2,2,1.003,0.299,fight with my family
+34,4,1,2,4,2,0.004,0.033,worry about college
+35,2,1,2,2,3,1.592,0.127,like wearing makeup
+36,1,1,2,4,2,0.128,0.126,read magazines
+37,5,1,2,2,3,2.688,0.038,act without thinking
+38,3,1,2,2,2,0.792,0.047,like to doodle
+39,6,1,2,3,3,0.271,0.037,get picked on
+40,1,1,2,4,3,5.907,0.386,like burning candles
+41,4,1,2,4,3,8.076,0.233,can't count on my family

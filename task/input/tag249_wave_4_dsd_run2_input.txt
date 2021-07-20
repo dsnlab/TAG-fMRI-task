@@ -1,0 +1,41 @@
+1,6,1,2,2,2,5.622,0.259,want to be popular
+2,2,1,2,2,4,2.018,0.037,carry chapstick
+3,3,1,2,2,2,0.085,0.106,like sleepovers
+4,4,1,2,3,2,0.296,0.431,want to be alone
+5,5,1,2,2,4,0.005,0.043,feel pressured to drink
+6,2,1,2,3,4,1.429,0.386,don't brush my teeth
+7,5,1,2,3,4,0.342,0.224,feel shy in groups
+8,1,1,2,3,2,1.125,0.464,like wearing makeup
+9,4,1,2,4,2,0.258,0.392,can't ignore gossip
+10,6,1,2,2,2,6.251,0.028,worry about kissing
+11,5,1,2,2,4,2.224,0.243,hide my feelings
+12,1,1,2,4,2,1.592,0.101,stay up late
+13,3,1,2,2,2,1.063,0.213,like cold pizza
+14,1,1,2,4,2,0.775,0.233,burn my toast
+15,6,1,2,3,3,0.023,0.066,regret what I post online
+16,2,1,2,2,4,1.623,0.202,wear leggings
+17,3,1,2,3,3,0.275,0.038,braid my hair
+18,1,1,2,3,2,3.065,0.328,like watching sports  
+19,2,1,2,2,4,0.792,0.074,drink milk
+20,4,1,2,4,2,1.254,0.176,don't like my life
+21,3,1,2,4,4,0.880,0.127,like wearing costumes
+22,5,1,2,2,4,1.003,0.102,can be mean
+23,4,1,2,3,2,4.052,0.073,can't count on my family
+24,1,1,2,4,2,0.128,0.031,paint my nails
+25,4,1,2,4,2,0.737,0.171,pretend I'm fine
+26,5,1,2,2,3,0.178,0.060,act without thinking
+27,6,1,2,4,4,0.968,0.698,tell little lies
+28,2,1,2,2,3,2.373,0.033,sing in the shower
+29,5,1,2,2,4,2.434,0.358,get irritated easily
+30,6,1,2,4,4,0.206,0.164,worry about grades
+31,3,1,2,4,4,0.271,0.213,wear bright colors 
+32,2,1,2,2,4,0.576,0.114,wear flip flops
+33,6,1,2,3,3,0.966,0.019,think I look cute
+34,4,1,2,3,2,1.573,0.127,get mad at my friends
+35,2,1,2,3,4,0.077,0.126,wear sunglasses
+36,1,1,2,3,2,5.907,0.358,play board games
+37,5,1,2,3,4,2.688,0.104,am good at getting my way
+38,3,1,2,3,3,0.383,0.299,sleep in late
+39,6,1,2,4,4,1.282,0.105,can be awkward
+40,1,1,2,4,2,0.004,0.268,like to wear hats 
+41,4,1,2,4,2,8.192,0.047,make friends easily

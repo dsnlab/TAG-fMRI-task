@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.576,0.224,regret what I post online
+2,2,1,2,3,4,0.023,0.233,wear bright colors 
+3,3,1,2,3,3,0.383,0.299,sing in the shower
+4,4,1,2,4,2,0.271,0.202,get embarrassed
+5,5,1,2,3,4,1.592,0.328,judge people
+6,2,1,2,2,4,0.128,0.213,don't shower in the morning
+7,5,1,2,2,4,1.003,0.213,can't keep secrets
+8,1,1,2,4,2,3.065,0.102,sleep in late
+9,4,1,2,4,3,2.224,0.127,don't like my life
+10,6,1,2,3,3,0.296,0.074,can't count on my family
+11,5,1,2,2,4,0.178,0.392,count calories
+12,1,1,2,4,3,0.206,0.073,dance in my room
+13,3,1,2,3,3,5.622,0.243,like wearing costumes
+14,1,1,2,3,2,2.688,0.698,like leftovers
+15,6,1,2,4,4,0.775,0.101,feel lonely
+16,2,1,2,2,4,1.429,0.386,listen to music
+17,3,1,2,4,4,4.052,0.031,wear PJs all day
+18,1,1,2,4,3,2.373,0.268,forget people's names
+19,2,1,2,3,4,1.282,0.358,wear leggings
+20,4,1,2,3,2,0.880,0.176,want to be alone
+21,3,1,2,3,3,2.018,0.114,paint my nails
+22,5,1,2,3,4,1.573,0.037,can't ignore gossip
+23,4,1,2,4,3,0.968,0.431,want to be popular
+24,1,1,2,3,2,0.005,0.019,try new foods
+25,4,1,2,3,2,0.966,0.106,feel shy in groups
+26,5,1,2,2,4,0.692,0.032,worry about kissing
+27,6,1,2,3,3,0.004,0.105,worry about grades
+28,2,1,2,2,4,0.342,0.060,braid my hair
+29,5,1,2,3,4,6.251,0.126,get mad at my friends
+30,6,1,2,4,4,0.275,0.043,think I'm smart
+31,3,1,2,4,4,0.077,0.171,like watching sports  
+32,2,1,2,3,4,0.737,0.358,try to recycle
+33,6,1,2,3,3,1.063,0.028,hide my feelings
+34,4,1,2,4,2,1.503,0.033,copy homework
+35,2,1,2,2,4,0.792,0.464,don't brush my teeth
+36,1,1,2,4,2,5.907,0.164,read magazines
+37,5,1,2,2,4,1.623,0.066,can't stop worrying
+38,3,1,2,3,3,1.125,0.104,like cold pizza
+39,6,1,2,4,4,0.258,0.038,think I look cute
+40,1,1,2,4,2,1.254,0.127,burn my toast
+41,4,1,2,4,2,9.934,0.047,act without thinking

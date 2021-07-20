@@ -1,0 +1,41 @@
+1,6,1,2,3,3,1.125,0.299,feel shy in groups
+2,2,1,2,2,4,1.429,0.328,don't make my bed
+3,3,1,2,3,3,0.077,0.213,like wearing costumes
+4,4,1,2,3,2,0.383,0.126,pretend to like people
+5,5,1,2,2,4,0.004,0.202,judge people
+6,2,1,2,2,4,0.206,0.224,wear flip flops
+7,5,1,2,2,4,0.737,0.392,am good at getting my way
+8,1,1,2,3,2,0.342,0.043,can be messy
+9,4,1,2,4,2,1.573,0.268,like flirting
+10,6,1,2,3,3,2.018,0.386,worry about grades
+11,5,1,2,3,4,5.907,0.233,get irritated easily
+12,1,1,2,4,2,0.023,0.028,have too many chores
+13,3,1,2,3,3,0.576,0.047,like wearing makeup
+14,1,1,2,4,3,3.065,0.213,stay up late
+15,6,1,2,4,4,0.692,0.032,worry about college
+16,2,1,2,3,4,0.296,0.037,like burning candles
+17,3,1,2,4,4,0.178,0.243,play board games
+18,1,1,2,4,3,0.005,0.101,can be creative
+19,2,1,2,2,3,1.063,0.176,drink milk
+20,4,1,2,4,3,1.592,0.431,can be mean
+21,3,1,2,2,2,0.968,0.038,help around the house
+22,5,1,2,2,3,2.688,0.073,don't like my life
+23,4,1,2,4,3,0.775,0.259,act without thinking
+24,1,1,2,4,2,0.792,0.066,wear bright colors 
+25,4,1,2,4,2,6.251,0.127,can't stop worrying
+26,5,1,2,2,4,0.880,0.019,think I'm smart
+27,6,1,2,2,2,1.003,0.033,fight with my family
+28,2,1,2,2,4,2.224,0.102,go barefoot
+29,5,1,2,2,4,2.434,0.114,get picked on
+30,6,1,2,4,4,0.966,0.698,pretend I'm fine
+31,3,1,2,4,4,1.503,0.358,like leftovers
+32,2,1,2,2,4,0.128,0.104,burn my toast
+33,6,1,2,4,4,2.373,0.464,dream about my wedding
+34,4,1,2,4,2,1.282,0.171,think I'm weird
+35,2,1,2,2,3,1.623,0.031,sing in the shower
+36,1,1,2,4,2,0.271,0.358,take bubble baths 
+37,5,1,2,2,3,0.085,0.106,like breaking rules
+38,3,1,2,4,4,1.254,0.164,like watching sports  
+39,6,1,2,3,3,0.275,0.105,count calories
+40,1,1,2,3,2,5.622,0.060,paint my nails
+41,4,1,2,3,2,11.552,0.074,get embarrassed

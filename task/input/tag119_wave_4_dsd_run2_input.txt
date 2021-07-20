@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.271,0.028,get embarrassed
+2,2,1,2,2,4,0.968,0.105,like cold pizza
+3,3,1,2,3,3,0.966,0.164,like sleepovers
+4,4,1,2,4,3,1.573,0.073,pretend to like people
+5,5,1,2,2,4,5.622,0.127,feel shy in groups
+6,2,1,2,3,4,0.737,0.104,braid my hair
+7,5,1,2,3,4,2.224,0.102,can't count on my family
+8,1,1,2,4,3,0.692,0.074,don't brush my teeth
+9,4,1,2,4,2,0.005,0.233,act without thinking
+10,6,1,2,2,2,2.018,0.106,feel lonely
+11,5,1,2,2,3,2.373,0.386,think I look cute
+12,1,1,2,4,2,0.004,0.698,sleep in late
+13,3,1,2,2,2,2.434,0.328,forget people's names
+14,1,1,2,4,2,0.023,0.038,wear PJs all day
+15,6,1,2,4,4,0.296,0.037,like breaking rules
+16,2,1,2,2,3,1.623,0.127,dance in my room
+17,3,1,2,4,4,0.178,0.259,wear sunglasses
+18,1,1,2,4,2,1.125,0.202,drink milk
+19,2,1,2,2,4,1.282,0.043,paint my nails
+20,4,1,2,4,2,1.503,0.066,worry about college
+21,3,1,2,2,2,0.085,0.060,like burning candles
+22,5,1,2,2,4,3.065,0.031,get self-conscious
+23,4,1,2,4,2,1.592,0.033,pretend I'm fine
+24,1,1,2,3,2,0.576,0.171,listen to music
+25,4,1,2,3,2,1.429,0.176,think I'm weird
+26,5,1,2,2,4,0.792,0.358,am good at getting my way
+27,6,1,2,2,2,1.254,0.213,can't stop worrying
+28,2,1,2,2,4,0.275,0.114,like to doodle
+29,5,1,2,2,3,2.688,0.243,can get moody
+30,6,1,2,3,3,6.251,0.358,think I'm smart
+31,3,1,2,3,3,0.206,0.268,wear bright colors 
+32,2,1,2,2,3,0.077,0.101,like watching sports  
+33,6,1,2,4,4,0.258,0.019,get irritated easily
+34,4,1,2,4,2,5.907,0.392,get mad at my friends
+35,2,1,2,2,4,1.003,0.431,carry chapstick
+36,1,1,2,4,2,0.775,0.032,go barefoot
+37,5,1,2,2,4,4.052,0.299,fight with my family
+38,3,1,2,4,4,0.880,0.464,try to recycle
+39,6,1,2,3,3,0.128,0.224,dislike my body
+40,1,1,2,4,2,0.342,0.047,like wearing makeup
+41,4,1,2,4,2,8.563,0.213,can be awkward

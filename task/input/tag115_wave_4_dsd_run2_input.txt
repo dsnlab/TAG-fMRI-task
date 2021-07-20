@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.271,0.299,want to be alone
+2,2,1,2,3,4,1.003,0.127,burn my toast
+3,3,1,2,2,2,0.792,0.431,like burning candles
+4,4,1,2,4,2,0.576,0.038,feel lonely
+5,5,1,2,3,4,0.775,0.043,don't like my life
+6,2,1,2,2,3,0.258,0.102,like reality TV shows
+7,5,1,2,2,3,1.592,0.033,feel shy in groups
+8,1,1,2,4,2,0.206,0.386,like to wear hats 
+9,4,1,2,3,2,1.125,0.047,can't keep secrets
+10,6,1,2,4,4,0.023,0.114,copy homework
+11,5,1,2,3,4,1.254,0.233,worry about kissing
+12,1,1,2,3,2,2.688,0.028,like wearing costumes
+13,3,1,2,4,4,0.178,0.392,forget to turn off lights
+14,1,1,2,4,3,0.275,0.268,carry chapstick
+15,6,1,2,2,2,0.968,0.202,judge people
+16,2,1,2,3,4,2.434,0.171,drink milk
+17,3,1,2,2,2,0.383,0.031,try new foods
+18,1,1,2,4,2,2.224,0.105,have too many chores
+19,2,1,2,2,4,2.018,0.259,sing in the shower
+20,4,1,2,4,3,2.373,0.213,get picked on
+21,3,1,2,2,2,0.004,0.106,read magazines
+22,5,1,2,2,4,0.296,0.019,tell little lies
+23,4,1,2,4,2,1.063,0.164,count calories
+24,1,1,2,3,2,4.052,0.698,play board games
+25,4,1,2,3,2,0.085,0.358,regret what I post online
+26,5,1,2,3,4,0.005,0.213,worry about college
+27,6,1,2,2,2,0.880,0.464,hide my feelings
+28,2,1,2,3,4,0.128,0.074,don't make my bed
+29,5,1,2,2,4,0.692,0.243,want to be popular
+30,6,1,2,3,3,3.065,0.176,make friends easily
+31,3,1,2,3,3,1.429,0.126,paint my nails
+32,2,1,2,2,4,5.907,0.101,try to recycle
+33,6,1,2,3,3,0.737,0.066,pretend I'm fine
+34,4,1,2,4,3,6.251,0.358,get self-conscious
+35,2,1,2,2,4,1.623,0.032,braid my hair
+36,1,1,2,4,3,1.282,0.224,like eating out
+37,5,1,2,2,4,5.622,0.328,get irritated easily
+38,3,1,2,3,3,0.966,0.060,wear flip flops
+39,6,1,2,3,3,1.503,0.037,think I'm weird
+40,1,1,2,4,3,0.342,0.104,wear bright colors 
+41,4,1,2,4,3,9.073,0.073,can get moody
