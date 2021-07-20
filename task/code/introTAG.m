@@ -16,14 +16,21 @@ clear all;
 % open dialog to get some info from participant
 Screen('Preference', 'SkipSyncTests', 1);
 drs = getSubInfo();
-% set subID & studyDir (cause I keep forgetting to drill into drs.subID/studyDir)
+
+% set subID 
 subID = drs.subID;
 subNum = str2num(cell2mat(regexp(subID,'\d*','Match')));
+
+% get input directory
+thisfile = mfilename('fullpath'); % studyDir/task/code/thisfile.m
+taskDir = fileparts(fileparts(thisfile));
+inputDir = fullfile(taskDir, 'input');
+
 
 %dsd_discoside.csv info:
 % col1: Tag ID; col2: side (1 = Right, 2 = Left)
 % dummy id 999 uses Right, 998 uses Left
-discoSideFN='input/dsd_discoside.csv';
+discoSideFN = fullfile(inputDir, 'dsd_discoside.csv');
 sides={'Right','Left'};
 discoSideMat=csvread(discoSideFN); 
 discoSideNum=discoSideMat(discoSideMat(:,1) == subNum,2);
@@ -150,7 +157,6 @@ DrawContinue('(press any button to start the practice)', 3);
 FlushEvents('keyDown');
 
 % this is needed on windows, unneeded on macos, untested on linux
-% May not do any harm on macos?
 if ispc
     KbQueueReserve(2,1,-1);
 end

@@ -24,18 +24,18 @@
 %
 % adapted from Jess Cohen's rpe task
 % author: wem3 
-% last edited: 141121
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% get directories
+thisfile = mfilename('fullpath'); % studyDir/task/code/thisfile.m
+taskDir = fileparts(fileparts(thisfile));
+inputDir = fullfile(taskDir, 'input');
+outputDir = fullfile(taskDir, 'output');
+
 %% get subID from subNum
-if subNum < 10
-  subID = ['drs00',num2str(subNum)];
-elseif subNum < 100
-  subID = ['drs0',num2str(subNum)];
-else
-  subID = ['drs',num2str(subNum)];
-end
+subID = ['tag',num2str(subNum, '%03d')];
+
 % get thisRun from runNum
 thisRun = ['run',num2str(runNum)];
 % load subject's drs structure
@@ -43,12 +43,12 @@ subInfoFile = [subID,'_info.mat'];
 load(subInfoFile);
 thisRun = ['run',num2str(runNum)];
 if strcmp(thisRun,'run0')
-  inputTextFile = [drs.input.path,filesep,'rpe_practice_input.txt'];
-  subOutputMat = [drs.output.path,filesep,'temp.mat'];
+  inputTextFile = fullfile(inputDir, 'rpe_practice_input.txt');
+  subOutputMat = fullfile(outputDir, 'temp.mat');
 else
-  subOutputMat = [drs.output.path,filesep,subID,'_rpe_',thisRun,'.mat'];
-  inputTextFile = [drs.input.path,filesep,subID,'_rpe_input.txt'];
-  outputTextFile = [drs.output.path,filesep,subID,'_rpe_',thisRun,'_output.txt'];
+  subOutputMat = fullfile(outputDir, [subID,'_rpe_',thisRun,'.mat']);
+  inputTextFile = fullfile(intputDir, [subID,'_rpe_input.txt']);
+  outputTextFile = fullfile(outputDir, [subID,'_rpe_',thisRun,'_output.txt']);
 end
 
 % load trialMatrix
@@ -80,17 +80,19 @@ Screen('TextSize', win, 50);
 Screen('TextFont', win, 'Arial');
 Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 
-drs.keys = initKeys;
-inputDevice = drs.keys.deviceNum;
+drs.keys = ButtonLoad();
 
 % to inform subject about upcoming task
 prefaceText = ['Coming up... ','Alien Identification: ',thisRun, '\n\n(left for ''LUX'', right for ''RAZ'') '];
 DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.purple);
 [~,programOnset] = Screen('Flip',win);
-%KbStrokeWait(inputDevice);
+disp("waiting for input from " + drs.keys.keyboard_name);
+KbStrokeWait(drs.keys.keyboard_index);
 
 %% present during multiband calibration
 % skip the long wait for training session
+% jcs opinion: rewrite this, don't hard code in the calibration time
+% and don't try to count down to the start
 if runNum == 0
     calibrationTime = 1;
 else
@@ -116,8 +118,8 @@ DrawFormattedText(win, 'Alien Identification:\n\n Get Ready!',...
   'center', 'center', drs.stim.white);
 Screen('Flip', win);
 
-% trigger pulse code
-%KbTriggerWait(drs.keys.trigger,inputDevice); % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
+%% trigger pulse code
+KbTriggerWait(drs.keys.trigger, drs.keys.trigger_index)
 disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
 triggerPulseTime = GetSecs;
 disp('trigger pulse received, starting experiment');

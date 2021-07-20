@@ -9,9 +9,11 @@ function [ drs ] = getSubInfo()
 %   modified: 141104 ~wem3
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% prompt for study directory (highest level)
-disp('Select study directory');
-studyDir = uigetdir('/vxfsvol/home/research/dsnlab/Studies/TAG/code/task/DRS','Select study directory');
+% get directory info
+thisfile = mfilename('fullpath'); % studyDir/task/code/thisfile.m
+taskDir = fileparts(fileparts(thisfile));
+studyDir = fileparts(taskDir);
+inputDir = fullfile(taskDir, 'input');
 
 % interactive dialog to get demographic info
 prompt = {...
@@ -30,10 +32,13 @@ drs.subID = ['tag',manualInput{1}];
 drs.studyDir = studyDir;
 drs.subNum = str2num(manualInput{1});
 drs.waveNum = str2num(manualInput{4});
-drs.input.path = [studyDir,filesep,'task',filesep,'input'];
-drs.output.path = [studyDir,filesep,'task',filesep,'output'];
+
+% no longer necessary
+%drs.input.path = fullfile(studyDir,'task', 'input');
+%drs.output.path = fullfile(studyDir,'task','output');
+
 % stimFile created by makeDRSstimulus.m
-stimFile = [studyDir,filesep,'task',filesep,'DRSstim.mat'];
+stimFile = fullfile(studyDir,'task','DRSstim.mat');
 load(stimFile);
 
 demo.name = '';
@@ -72,7 +77,7 @@ stim.promptMatrix{2}(:,:,4) = (stim.alpha.delta) ./255;
 
 % store stim in drs and save
 drs.stim = stim;
-saveFile = [drs.input.path,filesep,[drs.subID,'_wave_',num2str(drs.waveNum),'_info.mat']];
+saveFile = fullfile(inputDir, [drs.subID,'_wave_',num2str(drs.waveNum),'_info.mat']);
 save(saveFile,'drs');
 
 return

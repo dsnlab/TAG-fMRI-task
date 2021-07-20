@@ -1,8 +1,7 @@
-function [task] = runSVC(subNumArg, waveNumArg, runNumArg, keys, win)
+function [task] = runSVC()
 % % RUNSVC.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% usage: [ task ] = runSVC( subNumArg, waveNumArg, runNumArg )
+% usage: [ task ] = runSVC()
 %
-%   subNum && runNum are scalar
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -30,12 +29,7 @@ function [task] = runSVC(subNumArg, waveNumArg, runNumArg, keys, win)
 %   5. Change withdrawn
 %   6. Change aggressive
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% changed jcs
 
-
-
-if nargin < 1
-    clear all;
     prompt = {...
     'sub num: ',...
     'wave num: ',...
@@ -48,296 +42,24 @@ if nargin < 1
     subNum = str2double(manualInput{1});
     waveNum = str2double(manualInput{2});
     runNum = str2double(manualInput{3});
-else
-    subNum = subNumArg;
-    waveNum = waveNumArg;
-    runNum = runNumArg;
-end
 
-rng('default');
-if IsOSX
-    Screen('Preference','TextRenderer', 0)
-end
-Screen('Preference', 'SkipSyncTests', 1);
+    keys = ButtonLoad();
+    load('DRSstim.mat', 'stim');
 
-%% get subID from subNum
-if subNum < 10
-  subID = ['tag00',num2str(subNum)];
-elseif subNum < 100
-  subID = ['tag0',num2str(subNum)];
-else
-  subID = ['tag',num2str(subNum)];
-end
-% get thisRun from runNum
-thisRun = ['run',num2str(runNum)];
-% load subject's drs structure
-subInfoFile = ['input', filesep, subID,'_wave_',num2str(waveNum),'_info.mat'];
-load(subInfoFile);
-thisRun = ['run',num2str(runNum)];
-
-%% added jcs
-if ~isfolder(drs.input.path)
-    disp("Select input folder");
-    drs.input.path = uigetdir(pwd, 'Select input folder');
-end
-
-if ~isfolder(drs.output.path)
-    disp("Select output folder");
-    drs.output.path = uigetdir(pwd, 'Select output folder');
-end
-
-%%
-if strcmp(thisRun,'run0')
-  inputTextFile = [drs.input.path,filesep,'svc_practice_input.txt'];
-  subOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_rpe_',thisRun,'.mat'];
-else
-  subOutputMat = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_svc_',thisRun,'.mat'];
-  inputTextFile = [drs.input.path,filesep,subID,'_wave_',num2str(waveNum),'_svc_',thisRun,'_input.txt'];
-  outputTextFile = [drs.output.path,filesep,subID,'_wave_',num2str(waveNum),'_svc_',thisRun,'_output.txt'];
-end
-
-% load trialMatrix
-fid=fopen(inputTextFile);
-trialMatrix=textscan(fid,'%u%u%f%u%u%s\n','delimiter',',');
-fclose(fid);
-
-%% store info from trialMatrix in drs structure
-task.input.raw = [trialMatrix{1} trialMatrix{2} trialMatrix{3} trialMatrix{4} trialMatrix{5}];
-task.input.condition = trialMatrix{2};
-task.input.jitter = trialMatrix{3};
-task.input.reverse = trialMatrix{4};
-task.input.syllables = trialMatrix{5};
-task.input.trait = trialMatrix{6};
-numTrials = length(trialMatrix{1});
-task.output.raw = NaN(numTrials,13);
-
-%% load key definitions file 
-if nargin < 4
-    drs.keys = ButtonLoad();
-else
-    drs.keys = keys;
-end
-
-%% set up screen preferences, rng
-Screen('Preference', 'VisualDebugLevel', 1);
-rng('shuffle'); % if incompatible with older machines, use >> rand('seed', sum(100 * clock));
-screenNumber = max(Screen('Screens'));
-
-if ~exist('win', 'var')
+    %% set up screen preferences
+    if IsOSX
+        Screen('Preference','TextRenderer', 0)
+    end
+    Screen('Preference', 'SkipSyncTests', 1);
+    Screen('Preference', 'VisualDebugLevel', 1);
+     
     PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
     PsychImaging('PrepareConfiguration');
     PsychImaging('AddTask', 'General', 'UseRetinaResolution');
-    [win,~] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
-    NeedToCloseWin = true;
-else
-    NeedToCloseWin = false;
-end
-% flip to get ifi
+    [win,~] = PsychImaging('OpenWindow',screenNumber, stim.bg);
 
-HideCursor();
-drs.stim.box = ConvertStim(drs.stim.box, screenNumber); %jcs
-
-Screen('Flip', win);
-drs.stim.ifi = Screen('GetFlipInterval', win);
-
-Screen('TextSize', win, floor(50 * drs.stim.box.yratio)); %jcs
-%Screen('TextSize', win, 50);
-
-Screen('TextFont', win, 'Arial');
-Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
-
-% to inform subject about upcoming task
-prefaceText = ['Coming up... ','Change Task: ',thisRun, '\n\n(left for ''yes'', right for ''no'') '];
-DrawFormattedText(win, prefaceText, 'center', 'center', drs.stim.orange);
-[~,programOnset] = Screen('Flip',win);
-disp("waiting for input from " + drs.keys.keyboard_name);
-KbStrokeWait(drs.keys.keyboard_index);
-
-%% present during multiband calibration (time shortened for debug)
-% skip the long wait for training session
-if runNum == 0
-    calibrationTime = 1;
-else
-    calibrationTime = 17;
-end
-% remind em' not to squirm!
-
-DrawFormattedText(win, 'Getting scan ready...\n\n hold really still!',...
-  'center', 'center', drs.stim.white);
-[~,calibrationOnset] = Screen('Flip', win);
-
-% we need to create and release the trigger queue
-% when we've already used KbStrokeWait with the same device id
-KbQueueCreate(drs.keys.trigger_index);
-KbQueueRelease(drs.keys.trigger_index);
-
-% trigger pulse code (disabled for debug)
-disp(drs.keys.trigger);
-if runNum == 0
-    disp("waiting for input from " + drs.keys.keyboard_name);
-    KbStrokeWait(drs.keys.keyboard_index);
     
-else
-    disp("waiting for trigger from " + drs.keys.trigger_name);
-    KbTriggerWait(drs.keys.trigger, drs.keys.trigger_index); 
-    % note: no problems leaving out 'inputDevice' in the mock, but MUST INCLUDE FOR SCANNER
-    disabledTrigger = DisableKeysForKbCheck(drs.keys.trigger);
-    triggerPulseTime = GetSecs;
-    disp('trigger pulse received, starting experiment');
-end
-Screen('Flip', win);
+    task = runSVC_core(subNum, runNum, waveNum, keys, win);
 
-%% define keys to listen for, create KbQueue (coins & text drawn while it warms up)
-keyList = zeros(1,256);
-keyList(drs.keys.kill)=1; % unused? Should be in internal keyboard queue
-leftKeys = ([drs.keys.b0 drs.keys.b1 drs.keys.b2 drs.keys.b3 drs.keys.b4]);
-rightKeys = ([drs.keys.b5 drs.keys.b6 drs.keys.b7 drs.keys.b8 drs.keys.b9]);
-keyList(leftKeys) = 1;
-keyList(rightKeys) = 1;
-
-for kn = 1:length(drs.keys.response_indices)
-    KbQueueCreate(drs.keys.response_indices(kn), keyList);
-end
-
-traitSkips = [];
-blockStartTrials = 1:5:50;
-loopStartTime = GetSecs;
-%% trial loop
-for tCount = 1:numTrials
-  %% set variables for this trial
-  condition = trialMatrix{2}(tCount);
-  traitJitter = trialMatrix{3}(tCount);
-  trait = trialMatrix{6}{tCount};
-  traitResponse = 0;
-  traitRT = NaN;
-  chose = 0;
-  multiTraitResponse = [];
-  multiTraitRT =[];
-  if find(blockStartTrials==tCount)
-    switch condition
-    case 1 
-      iconMatrix = drs.stim.promptMatrix{1};
-      promptText = 'true about me?';
-      promptColor = drs.stim.promptColors{1};
-    case 2 
-      iconMatrix = drs.stim.promptMatrix{1};
-      promptText = 'true about me?';
-      promptColor = drs.stim.promptColors{1};
-    case 3
-      iconMatrix = drs.stim.promptMatrix{1};
-      promptText = 'true about me?';
-      promptColor = drs.stim.promptColors{1};
-    case 4
-      iconMatrix = drs.stim.promptMatrix{2};
-      promptText = 'can it change?';
-      promptColor = drs.stim.promptColors{2};
-    case 5
-      iconMatrix = drs.stim.promptMatrix{2};
-      promptText = 'can it change?';
-      promptColor = drs.stim.promptColors{2};
-    case 6
-      iconMatrix = drs.stim.promptMatrix{2};
-      promptText = 'can it change?';
-      promptColor = drs.stim.promptColors{2};
-    end
-    % draw prompt with instructions
-    iconTex = Screen('MakeTexture',win,iconMatrix);
-    Screen('DrawTexture',win,iconTex,[],drs.stim.box.prompt);
-    %Screen('TextSize', win, 80);
-    Screen('TextSize', win, floor(80 * drs.stim.box.yratio));
-    Screen('TextFont', win, 'Arial');
-    DrawFormattedText( win, promptText, 'center', 'center', promptColor );
-    Screen('Flip',win);
-    WaitSecs(4.7);
-  end
-  %% call draw function
-  drawTrait(win,drs.stim,trait,condition,[0.5 0.5]);
-  
-  for kn = 1:length(drs.keys.response_indices)
-    KbQueueStart(drs.keys.response_indices(kn));
-  end
-  % flip the screen to show trait
-  [~,traitOnset] = Screen('Flip',win);
-  %loop for response
-  while (GetSecs - traitOnset) < 4.7
-    [ pressed, firstPress]=ResponseCheck(drs.keys.response_indices);
-      if pressed
-        if chose == 0
-          traitRT = firstPress(find(firstPress)) - traitOnset;
-        elseif chose == 1
-          multiTraitResponse = [multiTraitResponse traitResponse];
-          multiTraitRT =[multiTraitRT traitRT];
-          traitRT = firstPress(find(firstPress)) - traitOnset;
-        end
-
-        if find(firstPress(leftKeys))
-            traitResponse = 1;
-        elseif find(firstPress(rightKeys))
-            traitResponse = 2;
-        end
-         chose=1;
-        drawTraitFeedback(win,drs.stim,trait,condition,traitResponse);
-      end   
-  end
-  for kn = 1:length(drs.keys.response_indices)
-    KbQueueStop(drs.keys.response_indices(kn));
-  end
-  drawTrait(win,drs.stim,' ',condition,[0.5 0.5]);
-  Screen('Flip',win);
-  if traitJitter > 4.7
-    [~,traitOffset] = Screen('Flip',win);
-  else
-    traitOffset = GetSecs;
-  end
-  WaitSecs('UntilTime',(traitOnset + 4.7 + traitJitter));
-  %%
-  if traitResponse == 0
-    traitSkips = [traitSkips tCount];
-  end
-  % assign output for each trial to task.(thisRun).output.raw matrix
-  task.output.raw(tCount,1) = tCount;
-  task.output.raw(tCount,2) = trialMatrix{2}(tCount);
-  task.output.raw(tCount,3) = (traitOnset - loopStartTime);
-  task.output.raw(tCount,4) = max(traitRT); %This ensures we only record one RT. Errors can be caused by ultra-fast switching
-  task.output.raw(tCount,5) = traitResponse;
-  task.output.raw(tCount,6) = trialMatrix{4}(tCount);
-  task.output.raw(tCount,7) = trialMatrix{5}(tCount);
-  save(subOutputMat,'task');
-
-end
-
-for kn = 1:length(drs.keys.response_indices)
-  KbQueueRelease(drs.keys.response_indices(kn));
-end
-
-% End of experiment screen. We clear the screen once they have made their
-% response
-DrawFormattedText(win, 'Scan Complete! \n\nWe will check in momentarily...',...
-    'center', 'center', drs.stim.white);
-Screen('Flip', win);
-
-if runNum ~= 0
-  fid=fopen(outputTextFile,'a');
-  for tCount = 1:numTrials
-    fprintf(fid,'%u,%u,%4.3f,%4.3f,%u,%u,%u,%s\n',...
-    task.output.raw(tCount,1:7), task.input.trait{tCount});
-  end
-  fclose(fid);
-  task.calibration = calibrationOnset;
-  task.triggerPulse = triggerPulseTime;
-  task.output.skips = traitSkips;
-  task.output.multi.response = multiTraitResponse;
-  task.output.multi.RT = multiTraitRT;
-  save(subOutputMat,'task');
-end
-
-KbStrokeWait(drs.keys.keyboard_index);
-
-% jcs TODO set a flag instead
-if NeedToCloseWin
     Screen('Close', win);
-end
-
-%SetResolution(screenNumber, oldres); % jcs
-%return
 end
