@@ -36,6 +36,10 @@ function [task] = runSVC_core(subject, keys, win)
     taskDir = fileparts(fileparts(thisfile));
     inputDir = fullfile(taskDir, 'input');
     outputDir = fullfile(taskDir, 'output');
+    if not(isfolder(outputDir))
+        mkdir(outputDir)
+    end
+    
 
     % get subID from subNum
     subID = ['tag',num2str(subject.number, '%03d')];
@@ -55,6 +59,10 @@ function [task] = runSVC_core(subject, keys, win)
       subOutputMat = fullfile(outputDir, [prefix,'_svc_',thisRun,'.mat']);
       inputTextFile = fullfile(inputDir, [prefix,'_svc_',thisRun,'_input.txt']);
       outputTextFile = fullfile(outputDir, [prefix,'_svc_',thisRun,'_output.txt']);
+    end
+    
+    if not(isfile(inputTextFile))
+        fprintf('Warning: file not found %s.', inputTextFile);
     end
 
     % load trialMatrix
@@ -107,7 +115,7 @@ function [task] = runSVC_core(subject, keys, win)
 
     % trigger pulse code (disabled for debug)
     disp(keys.trigger);
-    if runNum == 0
+    if subject.run == 0
         disp("waiting for input from " + keys.keyboard_name);
         KbStrokeWait(keys.keyboard_index);
 
@@ -250,7 +258,7 @@ function [task] = runSVC_core(subject, keys, win)
         'center', 'center', drs.stim.white);
     Screen('Flip', win);
 
-    if runNum ~= 0
+    if subject.run ~= 0
       fid=fopen(outputTextFile,'a');
       for tCount = 1:numTrials
         fprintf(fid,'%u,%u,%4.3f,%4.3f,%u,%u,%u,%s\n',...

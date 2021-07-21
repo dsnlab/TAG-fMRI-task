@@ -63,7 +63,13 @@ function [task] = runDSD()
     keys = ButtonLoad();
     win = initWindow();
     
-    task = runDSD_core(subject, keys, win);
+    try
+        task = runDSD_core(subject, keys, win);
+    catch exception
+        Screen('closeall');
+        ShowCursor;
+        rethrow(exception);
+    end
 
     Screen('Close', win);
 end

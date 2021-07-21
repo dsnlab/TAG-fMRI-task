@@ -146,11 +146,11 @@ if ispc
 end
 
 try
-    runSVC(subject, keys, win)
-catch
+    runSVC_core(subject, keys, win)
+catch exception
     Screen('closeall');
     ShowCursor;
-    error('Problem running runSVC');
+    rethrow(exception);
 end
 
 FlushEvents('keyDown');
@@ -243,11 +243,11 @@ if ispc
 end
 
 try
-    runDSD(subject, keys, win);
-catch
+    runDSD_core(subject, keys, win);
+catch exception
     Screen('closeall');
     ShowCursor;
-    error('Problem running runDSD');
+    rethrow(exception);
 end
 
 Screen('CloseAll')

@@ -53,7 +53,10 @@ thisfile = mfilename('fullpath'); % studyDir/task/code/thisfile.m
 taskDir = fileparts(fileparts(thisfile));
 inputDir = fullfile(taskDir, 'input');
 outputDir = fullfile(taskDir, 'output');
-    
+if not(isfolder(outputDir))
+    mkdir(outputDir)
+end    
+
 % get subID from subNum
 subID = ['tag',num2str(subject.number, '%03d')];
 prefix = [subID,'_wave_',num2str(subject.wave)];
@@ -63,7 +66,7 @@ subInfoFile = fullfile(inputDir, [prefix,'_info.mat']);
 load(subInfoFile, 'drs');
 
 %%
-thisRun = ['run',num2str(subject.num)];
+thisRun = ['run',num2str(subject.run)];
 if strcmp(thisRun,'run0')
   inputTextFile = fullfile(inputDir,'dsd_practice_input.txt');
   subOutputMat = fullfile(outputDir, [prefix,'_rpe_',thisRun,'.mat']);
@@ -71,6 +74,10 @@ else
   subOutputMat = fullfile(outputDir, [prefix,'_dsd_',thisRun,'.mat']);
   inputTextFile = fullfile(inputDir, [prefix,'_dsd_',thisRun,'_input.txt']);
   outputTextFile = fullfile(outputDir, [prefix,'_dsd_',thisRun,'_output.txt']);
+end
+
+if not(isfile(inputTextFile))
+    fprintf('Warning: file not found %s.', inputTextFile);
 end
 
 %%The first approximately half of all participants in wave 1 saw the
@@ -186,7 +193,7 @@ disp(keys.trigger);
 KbQueueCreate(keys.trigger_index);
 KbQueueRelease(keys.trigger_index);
 
-if runNum == 0 
+if subject.run == 0 
     disp("waiting for input from " + keys.keyboard_name);
     KbStrokeWait(keys.keyboard_index);
 else
@@ -340,7 +347,7 @@ for kn = 1:length(keys.response_indices)
 end
 
 % write output text file for redundancy
-if runNum ~= 0
+if subject.run ~= 0
   fid=fopen(outputTextFile,'a');
   fprintf(fid,'trial_number,condition,left_target,right_target,left_coin,right_coin,trigger_to_share,share_choice,share_rt,trigger_to_statement,statement_choice,statement_rt,coins_earned,statement_text\n');
   for tCount = 1:numTrials

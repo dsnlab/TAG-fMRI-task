@@ -48,8 +48,14 @@ function [task] = runSVC()
     % initialize hardware
     keys = ButtonLoad();
     win = initWindow();
-    
-    task = runSVC_core(subject, keys, win);
+      
+    try
+        task = runSVC_core(subject, keys, win);
+    catch exception
+        Screen('closeall');
+        ShowCursor;
+        rethrow(exception);
+    end
 
     Screen('Close', win);
 end

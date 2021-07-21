@@ -18,6 +18,7 @@ function myWindow = initWindow()
     PsychImaging('PrepareConfiguration');
     PsychImaging('AddTask', 'General', 'UseRetinaResolution');
     load('DRSstim.mat', 'stim');
+    disp('be patient')
     [myWindow,~] = PsychImaging('OpenWindow',screenNumber, stim.bg);
     Screen('BlendFunction', myWindow, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 end
