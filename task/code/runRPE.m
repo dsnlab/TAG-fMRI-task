@@ -5,6 +5,8 @@
 %   subNum && runNum are scalar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+%  DOES NOT CURRENTLY WORK, NEEDS UPDATING
+%
 % dependencies:
 %
 %    (subID)_rpe_input.txt = comma delimited text with per trial input
@@ -35,13 +37,14 @@ outputDir = fullfile(taskDir, 'output');
 
 %% get subID from subNum
 subID = ['tag',num2str(subNum, '%03d')];
-
+prefix = [subID,'_wave_',num2str(waveNum)];
 % get thisRun from runNum
 thisRun = ['run',num2str(runNum)];
+
 % load subject's drs structure
-subInfoFile = [subID,'_info.mat'];
-load(subInfoFile);
-thisRun = ['run',num2str(runNum)];
+subInfoFile = fullfile(inputDir, [prefix,'_info.mat']);
+load(subInfoFile, 'drs');
+
 if strcmp(thisRun,'run0')
   inputTextFile = fullfile(inputDir, 'rpe_practice_input.txt');
   subOutputMat = fullfile(outputDir, 'temp.mat');

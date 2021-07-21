@@ -1,6 +1,6 @@
-function [task] = runSVC_core(subNum, waveNum, runNum, keys, win)
+function [task] = runSVC_core(subject, keys, win)
 % % runSVC_core.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% usage: [ task ] = runSVC_core( subNum, waveNum, runNum, keys, win )
+% usage: [ task ] = runSVC_core(subject, keys, win )
 %
 %   Called by runSVC and introTAG
 %
@@ -38,14 +38,14 @@ function [task] = runSVC_core(subNum, waveNum, runNum, keys, win)
     outputDir = fullfile(taskDir, 'output');
 
     % get subID from subNum
-    subID = ['tag',num2str(subNum, '%03d')];
+    subID = ['tag',num2str(subject.number, '%03d')];
     % prefix for files
-    prefix = [subID,'_wave_',num2str(waveNum)];
+    prefix = [subID,'_wave_',num2str(subject.wave)];
 
     % load subject's drs structure
     subInfoFile = fullfile(inputDir, [prefix,'_info.mat']);
     load(subInfoFile, 'drs');
-    thisRun = ['run',num2str(runNum)];
+    thisRun = ['run',num2str(subject.run)];
 
     %%
     if strcmp(thisRun,'run0')
@@ -72,10 +72,8 @@ function [task] = runSVC_core(subNum, waveNum, runNum, keys, win)
     numTrials = length(trialMatrix{1});
     task.output.raw = NaN(numTrials,13);
 
-    %% set up screen preferences, rng
+    %%
     screenNumber = max(Screen('Screens'));
-    Screen('Preference', 'VisualDebugLevel', 1);
-    rng('shuffle'); 
 
     % flip to get ifi
 
@@ -87,9 +85,7 @@ function [task] = runSVC_core(subNum, waveNum, runNum, keys, win)
 
     Screen('TextSize', win, floor(50 * drs.stim.box.yratio)); %jcs
     %Screen('TextSize', win, 50);
-
     Screen('TextFont', win, 'Arial');
-    Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 
     % to inform subject about upcoming task
     prefaceText = ['Coming up... ','Change Task: ',thisRun, '\n\n(left for ''yes'', right for ''no'') '];

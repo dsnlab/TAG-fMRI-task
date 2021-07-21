@@ -1,6 +1,6 @@
-function [task] = runDSD_core(subNum, waveNum, runNum, keys, win)
+function [task] = runDSD_core(subject, keys, win)
 % % runDSD_core.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% usage: [ task ] = runDSD_core(subNum, waveNum, runNum, keys, win)
+% usage: [ task ] = runDSD_core(subject, keys, win)
 %
 %   Called by runDSD and introTAG
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -55,15 +55,15 @@ inputDir = fullfile(taskDir, 'input');
 outputDir = fullfile(taskDir, 'output');
     
 % get subID from subNum
-subID = ['tag',num2str(subNum, '%03d')];
-prefix = [subID,'_wave_',num2str(waveNum)];
+subID = ['tag',num2str(subject.number, '%03d')];
+prefix = [subID,'_wave_',num2str(subject.wave)];
 
 % load subject's drs structure
 subInfoFile = fullfile(inputDir, [prefix,'_info.mat']);
 load(subInfoFile, 'drs');
 
 %%
-thisRun = ['run',num2str(runNum)];
+thisRun = ['run',num2str(subject.num)];
 if strcmp(thisRun,'run0')
   inputTextFile = fullfile(inputDir,'dsd_practice_input.txt');
   subOutputMat = fullfile(outputDir, [prefix,'_rpe_',thisRun,'.mat']);
@@ -85,13 +85,13 @@ end
 discoSideFN=fullfile(inputDir, 'dsd_discoside.csv');
 sides={'Right','Left'};
 discoSideMat=csvread(discoSideFN); 
-discoSideNum=discoSideMat(discoSideMat(:,1) == subNum,2);
+discoSideNum=discoSideMat(discoSideMat(:,1) == subject.number,2);
 discoSide=sides(discoSideNum);
 
 if isempty(discoSide) || (~strcmp(discoSide, 'Right') && ~strcmp(discoSide, 'Left'))
     discoSideNumRand=randi([1 2]);
     discoSide=sides(discoSideNumRand);
-    newDiscoSideMat = [discoSideMat; subNum,discoSideNumRand];
+    newDiscoSideMat = [discoSideMat; subject.number,discoSideNumRand];
     csvwrite(discoSideFN,newDiscoSideMat);
 end
 
@@ -132,10 +132,7 @@ task.input.discoSide = discoSide;
 
 
 
-%% set up screen preferences, rng
-Screen('Preference', 'VisualDebugLevel', 1);
-
-rng('shuffle'); 
+%% 
 screenNumber = max(Screen('Screens'));
 
 % flip to get ifi
@@ -149,7 +146,6 @@ drs.stim.ifi = Screen('GetFlipInterval', win);
 
 Screen('TextSize', win, floor(50 * drs.stim.box.yratio)); %jcs
 Screen('TextFont', win, 'Arial');
-Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 
 % to inform subject about upcoming task
 prefaceText = ['Coming up... ','Sharing Task: ',thisRun, sideInstructions];
@@ -164,35 +160,11 @@ catch
 end
 
 
-%% present during multiband calibration (time shortened for debug)
-% skip the long wait for training session
-if runNum == 0
-    calibrationTime = 1; 
-else
-    calibrationTime = 17;
-end
+%% 
 % remind em' not to squirm!
 DrawFormattedText(win, 'Getting scan ready...\n\n hold really still!',...
   'center', 'center', drs.stim.white);
 [~,calibrationOnset] = Screen('Flip', win);
-
-%WaitSecs(calibrationTime);
-%DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 5',...
-%  'center', 'center', drs.stim.white);
-%Screen('Flip', win);
-%WaitSecs(1);
-%DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 4',...
-%  'center', 'center', drs.stim.white);
-%WaitSecs(1);
-%Screen('Flip', win);
-%DrawFormattedText(win, 'Sharing Experiment:\n\n Starting in... 3',...
-%  'center', 'center', drs.stim.white);
-%WaitSecs(1);
-%Screen('Flip', win);
-%DrawFormattedText(win, 'Sharing Experiment:\n\n Get Ready!',...
-%  'center', 'center', drs.stim.white);
-%WaitSecs(1);
-%Screen('Flip', win);
 
 % define keys to listen for, create KbQueue (coins & text drawn while it warms up)
 keyList = zeros(1,256);
@@ -326,7 +298,7 @@ for tCount = 1:numTrials
   WaitSecs('UntilTime',(choiceOnset + 3 + choiceJitter + 1));
 %%
   
-if choiceResponse == 0
+  if choiceResponse == 0
     choiceSkips = [choiceSkips tCount];
   end
   if discoResponse == 0
@@ -391,8 +363,7 @@ end
 disp('Waiting for key');
 KbStrokeWait(keys.keyboard_index);
 
-% runSVC_core doesn't do this, must we do it here?
-%KbQueueRelease(keys.keyboard_index);
-%KbQueueRelease(keys.trigger_index);
+KbQueueRelease(keys.keyboard_index);
+KbQueueRelease(keys.trigger_index);
 
 end

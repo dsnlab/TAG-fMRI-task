@@ -30,6 +30,7 @@ function [task] = runSVC()
 %   6. Change aggressive
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+    % get subject info
     prompt = {...
     'sub num: ',...
     'wave num: ',...
@@ -39,27 +40,16 @@ function [task] = runSVC()
     % defaults
     def = {'', '', ''};
     manualInput = inputdlg(prompt,dTitle,nLines,def);
-    subNum = str2double(manualInput{1});
-    waveNum = str2double(manualInput{2});
-    runNum = str2double(manualInput{3});
 
+    subject.number = str2double(manualInput{1});
+    subject.wave = str2double(manualInput{2});
+    subject.run = str2double(manualInput{3});
+
+    % initialize hardware
     keys = ButtonLoad();
-    load('DRSstim.mat', 'stim');
-
-    %% set up screen preferences
-    if IsOSX
-        Screen('Preference','TextRenderer', 0)
-    end
-    Screen('Preference', 'SkipSyncTests', 1);
-    Screen('Preference', 'VisualDebugLevel', 1);
-     
-    PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
-    PsychImaging('PrepareConfiguration');
-    PsychImaging('AddTask', 'General', 'UseRetinaResolution');
-    [win,~] = PsychImaging('OpenWindow',screenNumber, stim.bg);
-
+    win = initWindow();
     
-    task = runSVC_core(subNum, runNum, waveNum, keys, win);
+    task = runSVC_core(subject, keys, win);
 
     Screen('Close', win);
 end

@@ -56,29 +56,14 @@ function [task] = runDSD()
     % defaults
     def = {'', '', ''};
     manualInput = inputdlg(prompt,dTitle,nLines,def);
-    subNum = str2double(manualInput{1});
-    waveNum = str2double(manualInput{2});
-    runNum = str2double(manualInput{3});
+    subject.number = str2double(manualInput{1});
+    subject.wave = str2double(manualInput{2});
+    subject.run = str2double(manualInput{3});
 
     keys = ButtonLoad();
-    load('DRSstim.mat', 'stim');
+    win = initWindow();
     
-    %% set up screen preferences, rng
-    if IsOSX
-        Screen('Preference','TextRenderer', 0)
-    end
-    Screen('Preference', 'SkipSyncTests', 1);
-    Screen('Preference', 'VisualDebugLevel', 1);
-
-    rng('shuffle'); 
-    screenNumber = max(Screen('Screens'));
-
-    PsychDefaultSetup(2); % automatically call KbName('UnifyKeyNames'), set colors from 0-1;
-    PsychImaging('PrepareConfiguration');
-    PsychImaging('AddTask', 'General', 'UseRetinaResolution');
-    [win,~] = PsychImaging('OpenWindow',screenNumber, stim.bg);
-    
-    task = runDSD_core(subNum, runNum, waveNum, keys, win);
+    task = runDSD_core(subject, keys, win);
 
     Screen('Close', win);
 end

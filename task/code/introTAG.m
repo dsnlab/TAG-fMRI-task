@@ -1,5 +1,4 @@
 function introTAG()
-clear all;
 
 % % DRSINTRO.m $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   drsIntro.m: a script what runs the introduction to DRS tasks
@@ -14,12 +13,14 @@ clear all;
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % open dialog to get some info from participant
-Screen('Preference', 'SkipSyncTests', 1);
 drs = getSubInfo();
 
 % set subID 
 subID = drs.subID;
-subNum = str2num(cell2mat(regexp(subID,'\d*','Match')));
+%subNum = str2num(cell2mat(regexp(subID,'\d*','Match')));
+subject.number = drs.subNum;
+subject.wave = drs.waveNum;
+subject.run = 0;
 
 % get input directory
 thisfile = mfilename('fullpath'); % studyDir/task/code/thisfile.m
@@ -33,51 +34,34 @@ inputDir = fullfile(taskDir, 'input');
 discoSideFN = fullfile(inputDir, 'dsd_discoside.csv');
 sides={'Right','Left'};
 discoSideMat=csvread(discoSideFN); 
-discoSideNum=discoSideMat(discoSideMat(:,1) == subNum,2);
+discoSideNum=discoSideMat(discoSideMat(:,1) == subject.number,2);
 discoSide=sides(discoSideNum);
 
 if isempty(discoSide) || (~strcmp(discoSide, 'Right') && ~strcmp(discoSide, 'Left'))
     discoSideNumRand=randi([1 2]);
     discoSide=sides(discoSideNumRand);
-    newDiscoSideMat = [discoSideMat; subNum,discoSideNumRand];
+    newDiscoSideMat = [discoSideMat; subject.number,discoSideNumRand];
     csvwrite(discoSideFN,newDiscoSideMat);
 end
 
 %% query button box, set up keys
 % jcs
-drs.keys = ButtonLoad;
+keys = ButtonLoad();
 
 %% set up screen preferences, rng
-Screen('Preference', 'VisualDebugLevel', 1);
-
-% for some reason this is needed ONLY for the dsnlab login on the mock
-% For other users, the new text renderer is fine
-if IsOSX
-    Screen('Preference','TextRenderer', 0)
-end
-
-% automatically call KbName('UnifyKeyNames'), set colors from 0-1;
-PsychDefaultSetup(2); 
-rng('default');
-
-% if incompatible with older machines, use >> rand('seed', sum(100 * clock));
-rng('shuffle'); 
+win = initWindow();
 
 screenNumber = max(Screen('Screens'));
 
-% open a window, set more params
-PsychImaging('PrepareConfiguration');
-PsychImaging('AddTask', 'General', 'UseRetinaResolution');
-[win,~] = PsychImaging('OpenWindow',screenNumber,drs.stim.bg);
-
+%% adjust stim for retina problems & different projectors
 drs.stim.box = ConvertStim(drs.stim.box, screenNumber); 
-smalltext = 50; 
-largetext = 80; 
+smalltext = floor(50 * drs.stim.box.yratio); 
+largetext = floor(80 * drs.stim.box.yratio); 
 
 % flip to get ifi
 Screen('Flip', win);
 drs.stim.ifi = Screen('GetFlipInterval', win);
-Screen('BlendFunction', win, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
+
 SetTextStyle(smalltext);
 
 %% preface
@@ -162,7 +146,7 @@ if ispc
 end
 
 try
-    runSVC(drs.subNum,drs.waveNum,0, drs.keys, win)
+    runSVC(subject, keys, win)
 catch
     Screen('closeall');
     ShowCursor;
@@ -259,7 +243,7 @@ if ispc
 end
 
 try
-    runDSD(drs.subNum,drs.waveNum,0, drs.keys, win);
+    runDSD(subject, keys, win);
 catch
     Screen('closeall');
     ShowCursor;
