@@ -86,33 +86,7 @@ end
 %%For future waves choiceAdvice should be updated to tell people to check
 %%the run sheet for which side the disclosure choice should appear.
 
-% old way, harder to read
-%dsd_discoside.csv info:
-% col1: Tag ID; col2: side (1 = Right, 2 = Left)
-% dummy id 999 uses Right, 998 uses Left
-% discoSideFN=fullfile(inputDir, 'dsd_discoside.csv');
-% sides={'Right','Left'};
-% discoSideMat=csvread(discoSideFN); 
-% discoSideNum=discoSideMat(discoSideMat(:,1) == subject.number,2);
-% discoSide=sides(discoSideNum);
-% 
-% if isempty(discoSide) || (~strcmp(discoSide, 'Right') && ~strcmp(discoSide, 'Left'))
-%     discoSideNumRand=randi([1 2]);
-%     discoSide=sides(discoSideNumRand);
-%     newDiscoSideMat = [discoSideMat; subject.number,discoSideNumRand];
-%     csvwrite(discoSideFN,newDiscoSideMat);
-% end
-
-% new way
-discoSideFN = fullfile(inputDir, 'dsd_discoside.txt');
-T = readtable(discoSideFN);
-if not (ismember(subID, T.Properties.RowNames))
-    sides=["Right", "Left"]; % now using strings
-    randomSide=sides(randi(length(sides)));
-    T{subID, 'discoSide'} = {randomSide};
-    writetable(T, discoSideFN);
-end
-discoSide = T.discoSide{subID};
+discoSide = getDiscoSide(subID);
 
 % load trialMatrix
 fid=fopen(inputTextFile);
@@ -123,7 +97,7 @@ fclose(fid);
 self_vec = ones(trialMatRows, 1);
 friend_vec = ones(trialMatRows, 1)+1;
 
-if discoSide == "Right"
+if strcmp(discoSide, 'Right')
     leftTarget_vec = self_vec;
     rightTarget_vec = friend_vec;
     sideInstructions = '\n\nstatement: left for ''yes'', right for ''no'' \n\ndecision: left to keep private, right to share ';
@@ -147,7 +121,7 @@ task.input.discoJitter = trialMatrix{8};
 task.input.statement = trialMatrix{9};
 numTrials = length(trialMatrix{1});
 task.output.raw = NaN(numTrials,13);
-task.input.discoSide = char(discoSide); % backwards compatibility
+task.input.discoSide = discoSide;
 
 
 

@@ -26,34 +26,8 @@ subject.run = 0;
 thisfile = mfilename('fullpath'); % studyDir/task/code/thisfile.m
 taskDir = fileparts(fileparts(thisfile));
 inputDir = fullfile(taskDir, 'input');
-
-
-%dsd_discoside.csv info:
-% col1: Tag ID; col2: side (1 = Right, 2 = Left)
-% dummy id 999 uses Right, 998 uses Left
-% discoSideFN = fullfile(inputDir, 'dsd_discoside.csv');
-% sides={'Right','Left'};
-% discoSideMat=csvread(discoSideFN); 
-% discoSideNum=discoSideMat(discoSideMat(:,1) == subject.number,2);
-% discoSide=sides(discoSideNum);
-% 
-% if isempty(discoSide) || (~strcmp(discoSide, 'Right') && ~strcmp(discoSide, 'Left'))
-%     discoSideNumRand=randi([1 2]);
-%     discoSide=sides(discoSideNumRand);
-%     newDiscoSideMat = [discoSideMat; subject.number,discoSideNumRand];
-%     csvwrite(discoSideFN,newDiscoSideMat);
-% end
-
-% new way
-discoSideFN = fullfile(inputDir, 'dsd_discoside.txt');
-T = readtable(discoSideFN);
-if not (ismember(subID, T.Properties.RowNames))
-    sides=["Right", "Left"]; % now using strings
-    randomSide=sides(randi(length(sides)));
-    T{subID, 'discoSide'} = {randomSide};
-    writetable(T, discoSideFN);
-end
-discoSide = T.discoSide{subID};
+ 
+discoSide = getDiscoSide(subID);
 
 %% query button box, set up keys
 % jcs
@@ -166,7 +140,7 @@ end
 
 FlushEvents('keyDown');
 %% Explain DSD
-if discoSide == "Right"
+if strcmp(discoSide, 'Right')
     targets = [1 2 2 4];
     privatetext = '(press left to keep it private)';
     sharetext = '(press right to share with your friend)';
