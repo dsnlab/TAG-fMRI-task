@@ -65,22 +65,40 @@ function [task] = runSVC_core(subject, keys, win)
         fprintf('Warning: file not found %s.', inputTextFile);
     end
 
+    %% replacing with a more cross-platform approach
     % load trialMatrix
-    fid=fopen(inputTextFile);
-    trialMatrix=textscan(fid,'%u%u%f%u%u%s\n','delimiter',',');
-    fclose(fid);
+%     fid=fopen(inputTextFile);
+%     trialMatrix=textscan(fid,'%u%u%f%u%u%s\n','delimiter',',','LineEnding','\r\n');
+%     fclose(fid);
+%     
+%     %% store info from trialMatrix in drs structure
+%     task.input.raw = [trialMatrix{1} trialMatrix{2} trialMatrix{3} trialMatrix{4} trialMatrix{5}];
+%     task.input.condition = trialMatrix{2};
+%     task.input.jitter = trialMatrix{3};
+%     task.input.reverse = trialMatrix{4};
+%     task.input.syllables = trialMatrix{5};
+%     task.input.trait = trialMatrix{6};
+%     numTrials = length(trialMatrix{1});
+%     task.output.raw = NaN(numTrials,13);
 
-    %% store info from trialMatrix in drs structure
-    task.input.raw = [trialMatrix{1} trialMatrix{2} trialMatrix{3} trialMatrix{4} trialMatrix{5}];
-    task.input.condition = trialMatrix{2};
-    task.input.jitter = trialMatrix{3};
-    task.input.reverse = trialMatrix{4};
-    task.input.syllables = trialMatrix{5};
-    task.input.trait = trialMatrix{6};
-    numTrials = length(trialMatrix{1});
-    task.output.raw = NaN(numTrials,13);
+    %% load task, table approach
+    opts = detectImportOptions(inputTextFile);
+    opts.VariableNames = {'index', 'condition', 'jitter', 'reverse', 'syllables', 'trait'};
+    opts.VariableTypes = {'uint32', 'uint32', 'double', 'uint32', 'uint32', 'char'};
+    trialTable = readtable(inputTextFile, opts);
+    
+    % store info from trialTable in drs structure
+     task.input.raw = [trialTable.index trialTable.condition ...
+        trialTable.jitter trialTable.reverse trialTable.syllables];
+     task.input.condition = trialTable.condition;
+     task.input.jitter = trialTable.jitter;
+     task.input.reverse = trialTable.reverse;
+     task.input.syllables = trialTable.syllables;
+     task.input.trait = trialTable.trait;
+     numTrials = length(trialTable.index);
+     task.output.raw = NaN(numTrials,13);
 
-    %%
+     %%
     screenNumber = max(Screen('Screens'));
 
     % flip to get ifi
@@ -147,9 +165,9 @@ function [task] = runSVC_core(subject, keys, win)
     %% trial loop
     for tCount = 1:numTrials
       %% set variables for this trial
-      condition = trialMatrix{2}(tCount);
-      traitJitter = trialMatrix{3}(tCount);
-      trait = trialMatrix{6}{tCount};
+      condition = trialTable.condition(tCount);
+      traitJitter = trialTable.jitter(tCount);
+      trait = trialTable.trait{tCount};
       traitResponse = 0;
       traitRT = NaN;
       chose = 0;
@@ -238,12 +256,12 @@ function [task] = runSVC_core(subject, keys, win)
       end
       % assign output for each trial to task.(thisRun).output.raw matrix
       task.output.raw(tCount,1) = tCount;
-      task.output.raw(tCount,2) = trialMatrix{2}(tCount);
+      task.output.raw(tCount,2) = trialTable.condition(tCount);
       task.output.raw(tCount,3) = (traitOnset - loopStartTime);
       task.output.raw(tCount,4) = max(traitRT); %This ensures we only record one RT. Errors can be caused by ultra-fast switching
       task.output.raw(tCount,5) = traitResponse;
-      task.output.raw(tCount,6) = trialMatrix{4}(tCount);
-      task.output.raw(tCount,7) = trialMatrix{5}(tCount);
+      task.output.raw(tCount,6) = trialTable.reverse(tCount);
+      task.output.raw(tCount,7) = trialTable.syllables(tCount);
       save(subOutputMat,'task');
 
     end
