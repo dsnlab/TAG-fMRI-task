@@ -42,7 +42,7 @@ function [task] = runSVC_core(subject, keys, win)
     
 
     % get subID from subNum
-    subID = ['tag',num2str(subject.number, '%03d')];
+    subID = sprintf('tag%03d', subject.number);
     % prefix for files
     prefix = [subID,'_wave_',num2str(subject.wave)];
 
