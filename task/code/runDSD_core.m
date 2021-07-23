@@ -88,14 +88,22 @@ end
 
 discoSide = getDiscoSide(subID);
 
-% load trialMatrix
-fid=fopen(inputTextFile);
-trialMatrix=textscan(fid,'%f%f%f%f%f%f%f%f%s\n','delimiter',',');
-fclose(fid);
+%% load trialMatrix
 
-[trialMatRows, ~] = size(trialMatrix{3});
-self_vec = ones(trialMatRows, 1);
-friend_vec = ones(trialMatRows, 1)+1;
+% old way - not cross platform compatible
+%fid=fopen(inputTextFile);
+%trialMatrix=textscan(fid,'%f%f%f%f%f%f%f%f%s\n','delimiter',',');
+%fclose(fid);
+
+opts = detectImportOptions(inputTextFile);
+opts.VariableNames = {'index', 'condition', 'leftTarget', ...
+    'rightTarget', 'leftCoin', 'rightCoin', 'choiceJitter', ...
+    'discoJitter', 'statement'};
+trialTable = readtable(inputTextFile, opts);
+
+numTrials = height(trialTable);
+self_vec = ones(numTrials, 1);
+friend_vec = ones(numTrials, 1)+1;
 
 if strcmp(discoSide, 'Right')
     leftTarget_vec = self_vec;
@@ -108,22 +116,23 @@ else
 end
 
 %% store info from trialMatrix in drs structure
-task.input.raw = [trialMatrix{1} trialMatrix{2} trialMatrix{3} trialMatrix{4} trialMatrix{5} trialMatrix{6} trialMatrix{7} trialMatrix{8}];
-task.input.condition = trialMatrix{2};
+task.input.raw = [trialTable.index trialTable.condition ...
+    trialTable.leftTarget trialTable.rightTarget ...
+    trialTable.leftCoin trialTable.rightCoin ...
+    trialTable.choiceJitter trialTable.discoJitter];
+task.input.condition = trialTable.condition;
 task.input.leftTarget = leftTarget_vec;
-trialMatrix{3} = leftTarget_vec;
+trialTable.leftTarget = leftTarget_vec;
 task.input.rightTarget = rightTarget_vec;
-trialMatrix{4} = rightTarget_vec;
-task.input.leftCoin = trialMatrix{5};
-task.input.rightCoin = trialMatrix{6};
-task.input.choiceJitter = trialMatrix{7};
-task.input.discoJitter = trialMatrix{8};
-task.input.statement = trialMatrix{9};
-numTrials = length(trialMatrix{1});
+trialTable.rightTarget = rightTarget_vec;
+task.input.leftCoin = trialTable.leftCoin;
+task.input.rightCoin = trialTable.rightCoin;
+task.input.choiceJitter = trialTable.choiceJitter;
+task.input.discoJitter = trialTable.discoJitter;
+task.input.statement = trialTable.statement;
+
 task.output.raw = NaN(numTrials,13);
 task.input.discoSide = discoSide;
-
-
 
 %% 
 screenNumber = max(Screen('Screens'));
@@ -199,10 +208,13 @@ loopStartTime = GetSecs;
 %% trial loop
 for tCount = 1:numTrials
   %% set variables for this trial
-  targets = [trialMatrix{3}(tCount),trialMatrix{4}(tCount),trialMatrix{5}(tCount),trialMatrix{6}(tCount)];
-  choiceJitter = trialMatrix{7}(tCount);
-  discoJitter = trialMatrix{8}(tCount);
-  statement = trialMatrix{9}{tCount};
+  targets = [trialTable.leftTarget(tCount),...
+             trialTable.rightTarget(tCount),...
+             trialTable.leftCoin(tCount),...
+             trialTable.rightCoin(tCount)];
+  choiceJitter = trialTable.choiceJitter(tCount);
+  discoJitter = trialTable.discoJitter(tCount);
+  statement = trialTable.statement{tCount};
   choiceResponse = 0;
   choiceRT = NaN;
   discoRT = NaN;
@@ -218,8 +230,12 @@ for tCount = 1:numTrials
   drawYesNo(win,drs.stim,[0.5 0.5]);
   drawDisco(win,drs.stim,statement);
   
-  Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
-  Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);
+  Screen('FillRect',win,[drs.stim.bg(1:3) 0.1], ...
+      [drs.stim.box.choice{1}(1) drs.stim.box.choice{1}(2) ...
+      drs.stim.box.choice{2}(3) drs.stim.box.choice{2}(4)]);
+  Screen('FillRect',win,[drs.stim.bg(1:3) 0.5], ...
+      [drs.stim.box.coin{1}(1) drs.stim.box.coin{1}(2) ...
+      drs.stim.box.coin{2}(3) drs.stim.box.coin{2}(4)]);
   
   for kn = 1:length(keys.response_indices)
     KbQueueStart(keys.response_indices(kn));
@@ -230,9 +246,9 @@ for tCount = 1:numTrials
  %   [ pressed, firstPress]=KbQueueCheck(inputDevice);
     [ pressed, firstPress]=ResponseCheck(keys.response_indices);
     if pressed
-      if disclosed == 0;
+      if disclosed == 0
         discoRT = firstPress(find(firstPress)) - discoOnset;
-      elseif disclosed == 1 ;
+      elseif disclosed == 1 
         multiDiscoResponse = [multiDiscoResponse discoResponse];
         multiDiscoRT =[multiDiscoRT discoRT];
         discoRT = firstPress(find(firstPress)) - discoOnset;
@@ -280,7 +296,8 @@ for tCount = 1:numTrials
             payout = targets(4);
         end
         chose=1;
-        drawChoiceFeedback(win,drs.stim,targets,statement,discoResponse,choiceResponse);
+        drawChoiceFeedback(win,drs.stim,targets,statement,discoResponse,...
+            choiceResponse);
       end   
   end
   for kn = 1:length(keys.response_indices)
@@ -300,11 +317,11 @@ for tCount = 1:numTrials
   % assign output for each trial to task.(thisRun).output.raw matrix
   
   task.output.raw(tCount,1) = tCount;
-  task.output.raw(tCount,2) = trialMatrix{2}(tCount);
-  task.output.raw(tCount,3) = trialMatrix{3}(tCount);
-  task.output.raw(tCount,4) = trialMatrix{4}(tCount);
-  task.output.raw(tCount,5) = trialMatrix{5}(tCount);
-  task.output.raw(tCount,6) = trialMatrix{6}(tCount);
+  task.output.raw(tCount,2) = trialTable.condition(tCount);
+  task.output.raw(tCount,3) = trialTable.leftTarget(tCount);
+  task.output.raw(tCount,4) = trialTable.rightTarget(tCount);
+  task.output.raw(tCount,5) = trialTable.leftCoin(tCount);
+  task.output.raw(tCount,6) = trialTable.rightCoin(tCount);
   task.output.raw(tCount,7) = (choiceOnset - loopStartTime);
   task.output.raw(tCount,8) = choiceResponse; 
   task.output.raw(tCount,9) = max(choiceRT); %This ensures we only record one RT. Errors can be caused by ultra-fast switching
@@ -353,7 +370,7 @@ if subject.run ~= 0
   save(subOutputMat,'task');
 end
 
-disp('Waiting for key');
+disp('Waiting for enter key');
 KbStrokeWait(keys.keyboard_index);
 
 KbQueueRelease(keys.keyboard_index);
