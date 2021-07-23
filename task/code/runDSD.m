@@ -64,7 +64,7 @@ function [task] = runDSD()
     subject.number = str2double(manualInput{1});
     subject.wave = str2double(manualInput{2});
     subject.run = str2double(manualInput{3});
-
+    
     keys = ButtonLoad();
     win = initWindow();
     

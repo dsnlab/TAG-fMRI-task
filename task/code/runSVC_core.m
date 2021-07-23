@@ -48,6 +48,11 @@ function [task] = runSVC_core(subject, keys, win)
 
     % load subject's drs structure
     subInfoFile = fullfile(inputDir, [prefix,'_info.mat']);
+    
+    if not(isfile(subInfoFile))
+        error('file not found %s.', subInfoFile);
+    end
+    
     load(subInfoFile, 'drs');
     thisRun = ['run',num2str(subject.run)];
 
@@ -95,7 +100,7 @@ function [task] = runSVC_core(subject, keys, win)
      task.input.reverse = trialTable.reverse;
      task.input.syllables = trialTable.syllables;
      task.input.trait = trialTable.trait;
-     numTrials = length(trialTable.index);
+     numTrials = height(trialTable);
      task.output.raw = NaN(numTrials,13);
 
      %%
@@ -291,7 +296,6 @@ function [task] = runSVC_core(subject, keys, win)
       save(subOutputMat,'task');
     end
 
-    disp('Waiting for key');
     KbStrokeWait(keys.keyboard_index);
 
 

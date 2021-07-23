@@ -63,6 +63,12 @@ prefix = [subID,'_wave_',num2str(subject.wave)];
 
 % load subject's drs structure
 subInfoFile = fullfile(inputDir, [prefix,'_info.mat']);
+
+if not(isfile(subInfoFile))
+    error('file not found %s.', subInfoFile);
+end
+    
+
 load(subInfoFile, 'drs');
 
 %%
@@ -77,7 +83,7 @@ else
 end
 
 if not(isfile(inputTextFile))
-    fprintf('Warning: file not found %s.', inputTextFile);
+    error('file not found %s.', inputTextFile);
 end
 
 %%The first approximately half of all participants in wave 1 saw the
@@ -370,7 +376,7 @@ if subject.run ~= 0
   save(subOutputMat,'task');
 end
 
-disp('Waiting for enter key');
+
 KbStrokeWait(keys.keyboard_index);
 
 KbQueueRelease(keys.keyboard_index);

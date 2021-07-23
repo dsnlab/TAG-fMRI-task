@@ -303,3 +303,4 @@ tag998,Left
 tag300,Right
 tag301,Left
 tag2246,Right
+tag777,Left

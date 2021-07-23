@@ -39,9 +39,9 @@ drs.studyDir = studyDir;
 drs.subNum = str2num(manualInput{1});
 drs.waveNum = str2num(manualInput{4});
 
-% no longer necessary
-%drs.input.path = fullfile(studyDir,'task', 'input');
-%drs.output.path = fullfile(studyDir,'task','output');
+% no longer necessary but still here
+drs.input.path = fullfile(studyDir,'task', 'input');
+drs.output.path = fullfile(studyDir,'task','output');
 
 % stimFile created by makeDRSstimulus.m
 stimFile = fullfile(studyDir,'task','DRSstim.mat');
