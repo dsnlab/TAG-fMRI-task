@@ -14,6 +14,9 @@ function introTAG()
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % open dialog to get some info from participant
 drs = getSubInfo();
+if isempty(drs)
+    return
+end
 
 % set subID 
 subID = drs.subID;

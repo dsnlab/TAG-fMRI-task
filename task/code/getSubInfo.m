@@ -21,11 +21,17 @@ prompt = {...
 'friend: ',...
 'experimentor: '...,
 'wave: '};
-dTitle = 'define subject specific variables';
-nLines = 1;
+dTitle = 'Define subject specific variables';
+dims = [1 , 60];
 % defaults
 def = { '999' , 'Ally' , 'TAG', '1' };
-manualInput = inputdlg(prompt,dTitle,nLines,def);
+manualInput = inputdlg(prompt,dTitle,dims,def);
+
+if isempty(manualInput)
+    drs = {};
+    return
+end
+
 % the order is funky here because we want the structure output 
 % to be readily readable in summary form (so this, err, isn't)
 drs.subID = ['tag',manualInput{1}];

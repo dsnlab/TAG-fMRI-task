@@ -35,11 +35,14 @@ function [task] = runSVC()
     'sub num: ',...
     'wave num: ',...
     'run num: '};
-    dTitle = 'Input Subject, Wave, and Run Number';
-    nLines = 1;
+    dTitle = 'Input';
+    dims = [1, 35];
     % defaults
     def = {'', '', ''};
-    manualInput = inputdlg(prompt,dTitle,nLines,def);
+    manualInput = inputdlg(prompt,dTitle,dims,def);
+    if isempty(manualInput)
+        return
+    end
 
     subject.number = str2double(manualInput{1});
     subject.wave = str2double(manualInput{2});
