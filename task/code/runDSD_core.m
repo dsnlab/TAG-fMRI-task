@@ -63,12 +63,9 @@ prefix = [subID,'_wave_',num2str(subject.wave)];
 
 % load subject's drs structure
 subInfoFile = fullfile(inputDir, [prefix,'_info.mat']);
-
 if not(isfile(subInfoFile))
     error('file not found %s.', subInfoFile);
 end
-    
-
 load(subInfoFile, 'drs');
 
 %%
@@ -121,7 +118,7 @@ else
     sideInstructions = '\n\nstatement: left for ''yes'', right for ''no'' \n\ndecision: left to share, right to keep it private ';
 end
 
-%% store info from trialMatrix in drs structure
+%% store info from trialTable in drs structure
 task.input.raw = [trialTable.index trialTable.condition ...
     trialTable.leftTarget trialTable.rightTarget ...
     trialTable.leftCoin trialTable.rightCoin ...
