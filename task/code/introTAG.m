@@ -43,8 +43,8 @@ screenNumber = max(Screen('Screens'));
 
 %% adjust stim for retina problems & different projectors
 drs.stim.box = ConvertStim(drs.stim.box, screenNumber); 
-smalltext = floor(50 * drs.stim.box.yratio); 
-largetext = floor(80 * drs.stim.box.yratio); 
+smalltext = floor(50); 
+largetext = floor(80); 
 
 % flip to get ifi
 Screen('Flip', win);
