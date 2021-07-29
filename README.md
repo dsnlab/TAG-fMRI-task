@@ -12,49 +12,14 @@ DSD is a self-disclosure task based on Tamir & Mitchell, 2012.
 ## setup
 To run this task, proceed with the following steps:
 
-1. Add `task/code` to your matlab path
-2. You **must** run the following from `svc/task`
-3. Run `getSubInfo()` on the matlab command line
-	- it will ask you to select the study folder -- this will be the `svc/` folder in which you find `task/` and this file, `README.md`. 
+1. Add the `task` and `UniversalHardware` folders to your matlab path (or the entire study folder)
+2. You do NOT need to be in a specific directory to continue.
+3. Run `getSubInfo()` on the matlab command line. It will automatically locate the study folder.
 4. Run `runSVC()` or `runDSD()` on the matlab command line
-
-## `~/task`
-
-Contains code and input text to run experiments, design info/materials, task output  
-
-All code is in [Psychtoolbox-3](http://psychtoolbox.org/), often run on OS X using MATLAB_R2014b
-
-Make sure to add the folders in `~/task` to the MATLAB search path. To do so, type:  
-
-```matlab
-addpath(genpath('~/task'));
-```
-
-## a note on keyboards
-Both SVC and DSD scripts have two redundant pieces of code that help with keyboard selection. **Either one or the other should be active, while the other one should be commented out.**
-
-The first one looks like this, and is for manual keyboard selection. If this is activated, then with each run of the script the user will manually select the internal keyboard and response keyboard. 
-
-```matlab
-[internalKeyboardDevice, inputDevice] = getKeyboards;
-drs.keys = initKeysFromId(inputDevice);
-```
-
-The second one looks like this, and relies on harcoded specifications about the devices in order to identify keyboards. 
-
-```matlab
- drs.keys = initKeys;
- inputDevice = drs.keys.deviceNum;
  
- devices=PsychHID('Devices');
- for deviceCount=1:length(devices),
-   % Just get the local keyboard
-   if ((strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).manufacturer,'Mitsumi Electric')) ...
-           || (strcmp(devices(deviceCount).usageName,'Keyboard') && strcmp(devices(deviceCount).product,'Apple Internal Keyboard / Trackpad'))),
-     keys.bbox = deviceCount;
-     keys.trigger = KbName('t'); % use 't' as KbTrigger
-     internalKeyboardDevice=deviceCount;
-   end
- end
 
-```
+All code is in [Psychtoolbox-3](http://psychtoolbox.org/), and should run on OSX, linux, or Windows. Matlab version 2017b or higher is required.
+
+Keyboard information is stored in a .mat file and loaded by ButtonLoad.m in the UniversalHardware submodule. Calling ButtonLoad with no arguments will initiate a dialog to choose the appropriate file (hit cancel to create a new file). If the loaded information does not match the current hardware, ButtonLoad will ask you if you'd like to create a new file. Just follow the screen prompts. Always review the results after creating a new file.
+
+
