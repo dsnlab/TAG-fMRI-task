@@ -23,3 +23,8 @@ All code is in [Psychtoolbox-3](http://psychtoolbox.org/), and should run on OSX
 Keyboard information is stored in a .mat file and loaded by ButtonLoad.m in the UniversalHardware submodule. Calling ButtonLoad with no arguments will initiate a dialog to choose the appropriate file (hit cancel to create a new file). If the loaded information does not match the current hardware, ButtonLoad will ask you if you'd like to create a new file. Just follow the screen prompts. Always review the results after creating a new file.
 
 
+## Differences between uh_dev and universal_hardware branches
+You do NOT need to be in a specific directory to run the experiment.
+You do not need to select the study directory, the script can find it.
+Better error handling for more graceful failures.
+Windows & linux support.
