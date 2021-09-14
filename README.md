@@ -22,7 +22,7 @@ To run this task, proceed with the following steps:
 
 Contains code and input text to run experiments, design info/materials, task output  
 
-All code is in [Psychtoolbox-3](http://psychtoolbox.org/), and should run on OSX, linux, or Windows. Matlab version 2017b or higher is required.
+All code is in [Psychtoolbox-3](http://psychtoolbox.org/), and runs on OSX (for linux or Windows see the development branch). Matlab version 2017b or higher is required.
 
 Make sure to add the folders in `~/task` to the MATLAB search path. To do so, type:  
 
