@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.692,0.105,act without thinking
+2,2,1,2,3,4,0.576,0.066,like watching sports  
+3,3,1,2,3,3,1.063,0.073,try new foods
+4,4,1,2,3,2,1.125,0.213,worry about grades
+5,5,1,2,3,4,1.254,0.698,get picked on
+6,2,1,2,2,4,2.224,0.028,sleep in late
+7,5,1,2,2,4,6.251,0.038,get embarrassed
+8,1,1,2,3,2,1.573,0.031,don't shower in the morning
+9,4,1,2,3,2,1.503,0.358,want to be alone
+10,6,1,2,3,3,5.622,0.114,tell little lies
+11,5,1,2,3,4,1.003,0.202,feel pressured to drink
+12,1,1,2,3,2,0.737,0.224,wear bright colors 
+13,3,1,2,3,3,1.592,0.043,braid my hair
+14,1,1,2,4,2,0.128,0.074,read magazines
+15,6,1,2,3,3,5.907,0.213,hide my feelings
+16,2,1,2,3,4,0.178,0.431,like wearing makeup
+17,3,1,2,3,3,3.065,0.233,forget people's names
+18,1,1,2,4,3,0.342,0.358,have too many chores
+19,2,1,2,2,4,1.282,0.032,stay up late
+20,4,1,2,4,2,0.077,0.106,can't stop worrying
+21,3,1,2,4,4,0.258,0.386,carry chapstick
+22,5,1,2,2,4,0.792,0.299,want to be popular
+23,4,1,2,4,3,0.271,0.104,don't like my life
+24,1,1,2,3,2,2.688,0.328,wear PJs all day
+25,4,1,2,3,2,0.004,0.127,worry about college
+26,5,1,2,2,4,0.005,0.126,get irritated easily
+27,6,1,2,4,4,0.023,0.171,pretend I'm fine
+28,2,1,2,2,4,2.018,0.019,like wearing costumes
+29,5,1,2,3,4,0.968,0.102,like flirting
+30,6,1,2,4,4,1.429,0.127,think I look cute
+31,3,1,2,4,4,0.085,0.047,like to wear hats 
+32,2,1,2,3,4,0.275,0.101,don't brush my teeth
+33,6,1,2,2,2,0.775,0.164,think I'm smart
+34,4,1,2,4,2,4.052,0.176,get mad at my friends
+35,2,1,2,2,3,0.880,0.033,wear sunglasses
+36,1,1,2,4,2,2.373,0.392,like eating out
+37,5,1,2,2,3,0.296,0.259,dream about my wedding
+38,3,1,2,2,2,0.966,0.464,listen to music
+39,6,1,2,4,4,0.383,0.243,can be mean
+40,1,1,2,4,2,0.206,0.037,forget to wear sunscreen
+41,4,1,2,4,2,9.934,0.268,judge people

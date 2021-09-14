@@ -1,0 +1,41 @@
+1,6,1,2,2,2,4.052,0.464,can be awkward
+2,2,1,2,3,4,1.282,0.060,help around the house
+3,3,1,2,2,2,1.063,0.164,sleep in late
+4,4,1,2,4,3,0.023,0.101,copy homework
+5,5,1,2,3,4,0.128,0.074,can't keep secrets
+6,2,1,2,2,4,2.373,0.213,wear bright colors 
+7,5,1,2,2,4,3.065,0.328,wish I was in love 
+8,1,1,2,4,3,2.224,0.104,like sleepovers
+9,4,1,2,4,3,1.429,0.031,fight with my family
+10,6,1,2,4,4,0.004,0.202,act without thinking
+11,5,1,2,3,4,0.966,0.176,pretend I'm fine
+12,1,1,2,4,3,2.018,0.224,don't shower in the morning
+13,3,1,2,4,4,0.968,0.127,don't make my bed
+14,1,1,2,4,2,0.342,0.038,like burning candles
+15,6,1,2,2,2,1.003,0.386,judge people
+16,2,1,2,3,4,1.592,0.213,sing in the shower
+17,3,1,2,2,2,0.383,0.047,burn my toast
+18,1,1,2,3,2,1.573,0.127,carry chapstick
+19,2,1,2,2,3,0.085,0.431,dance in my room
+20,4,1,2,4,2,0.258,0.358,get irritated easily
+21,3,1,2,3,3,0.792,0.126,like wearing makeup
+22,5,1,2,2,3,1.254,0.233,get self-conscious
+23,4,1,2,3,2,5.907,0.243,get mad at my friends
+24,1,1,2,4,2,0.271,0.259,like cold pizza
+25,4,1,2,4,2,1.623,0.037,want to be alone
+26,5,1,2,2,4,1.125,0.032,am good at getting my way
+27,6,1,2,3,3,0.206,0.268,can be mean
+28,2,1,2,2,4,0.737,0.698,forget to wear sunscreen
+29,5,1,2,2,4,0.576,0.171,dislike my body
+30,6,1,2,4,4,0.275,0.043,can't stop worrying
+31,3,1,2,4,4,1.503,0.066,like wearing costumes
+32,2,1,2,2,4,2.688,0.114,can be messy
+33,6,1,2,4,4,0.296,0.299,get embarrassed
+34,4,1,2,3,2,0.880,0.073,dream about my wedding
+35,2,1,2,3,4,0.692,0.102,stay up late
+36,1,1,2,3,2,0.077,0.028,like eating out
+37,5,1,2,3,4,0.775,0.358,can't count on my family
+38,3,1,2,4,4,0.178,0.105,forget to turn off lights
+39,6,1,2,3,3,2.434,0.106,worry about kissing
+40,1,1,2,3,2,6.251,0.019,paint my nails
+41,4,1,2,3,2,7.505,0.033,think I'm weird

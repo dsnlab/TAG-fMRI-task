@@ -1,0 +1,41 @@
+1,6,1,2,2,2,0.206,0.074,like flirting
+2,2,1,2,2,3,0.692,0.358,can be messy
+3,3,1,2,2,2,1.254,0.031,read magazines
+4,4,1,2,4,2,2.224,0.126,feel pressured to drink
+5,5,1,2,2,3,0.792,0.114,can't count on my family
+6,2,1,2,2,4,3.065,0.060,forget to turn off lights
+7,5,1,2,2,4,0.128,0.233,think I'm weird
+8,1,1,2,4,2,0.004,0.164,carry chapstick
+9,4,1,2,3,2,0.271,0.171,worry about kissing
+10,6,1,2,3,3,0.296,0.038,dream about my wedding
+11,5,1,2,2,4,0.005,0.259,pretend I'm fine
+12,1,1,2,3,2,1.573,0.019,try to recycle
+13,3,1,2,3,3,0.077,0.176,take bubble baths 
+14,1,1,2,3,2,0.737,0.028,help around the house
+15,6,1,2,3,3,2.373,0.464,like breaking rules
+16,2,1,2,2,4,1.282,0.104,can be creative
+17,3,1,2,3,3,0.383,0.127,go barefoot
+18,1,1,2,4,3,1.429,0.268,like cold pizza
+19,2,1,2,2,4,5.907,0.392,like burning candles
+20,4,1,2,3,2,0.085,0.213,can't ignore gossip
+21,3,1,2,2,2,1.623,0.127,like to doodle
+22,5,1,2,2,4,0.966,0.698,pretend to like people
+23,4,1,2,4,3,0.258,0.047,want to be popular
+24,1,1,2,4,2,6.251,0.105,dance in my room
+25,4,1,2,4,2,1.592,0.386,get self-conscious
+26,5,1,2,3,4,0.880,0.299,fight with my family
+27,6,1,2,2,2,0.775,0.243,count calories
+28,2,1,2,3,4,1.003,0.224,braid my hair
+29,5,1,2,3,4,4.052,0.106,dislike my body
+30,6,1,2,3,3,1.503,0.073,feel shy in groups
+31,3,1,2,3,3,0.576,0.202,like sleepovers
+32,2,1,2,3,4,2.018,0.101,like reality TV shows
+33,6,1,2,4,4,1.063,0.033,worry about college
+34,4,1,2,3,2,0.178,0.213,am good at getting my way
+35,2,1,2,2,4,5.622,0.328,like wearing costumes
+36,1,1,2,3,2,0.342,0.066,like eating out
+37,5,1,2,2,4,0.275,0.037,can get moody
+38,3,1,2,4,4,1.125,0.358,don't brush my teeth
+39,6,1,2,3,3,0.023,0.043,make friends easily
+40,1,1,2,3,2,0.968,0.431,wear flip flops
+41,4,1,2,3,2,10.188,0.102,get irritated easily

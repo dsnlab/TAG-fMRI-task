@@ -1,0 +1,41 @@
+1,6,1,2,3,3,1.503,0.213,tell little lies
+2,2,1,2,2,4,0.128,0.127,like wearing makeup
+3,3,1,2,3,3,0.206,0.328,wear flip flops
+4,4,1,2,3,2,0.342,0.171,am good at getting my way
+5,5,1,2,2,4,0.737,0.028,worry about grades
+6,2,1,2,2,4,0.296,0.698,wear leggings
+7,5,1,2,2,4,0.792,0.104,think I'm weird
+8,1,1,2,3,2,0.880,0.102,can be creative
+9,4,1,2,4,2,0.968,0.176,get mad at my friends
+10,6,1,2,2,2,3.065,0.127,can't ignore gossip
+11,5,1,2,3,4,2.018,0.073,hide my feelings
+12,1,1,2,4,2,1.003,0.358,forget to wear sunscreen
+13,3,1,2,2,2,0.383,0.224,dance in my room
+14,1,1,2,4,2,5.907,0.031,forget people's names
+15,6,1,2,4,4,2.688,0.392,want to be alone
+16,2,1,2,3,4,1.592,0.066,sleep in late
+17,3,1,2,4,4,1.573,0.299,like burning candles
+18,1,1,2,4,3,1.125,0.233,like eating out
+19,2,1,2,2,3,0.258,0.043,drink milk
+20,4,1,2,4,2,2.434,0.060,get self-conscious
+21,3,1,2,3,3,0.271,0.243,like watching sports  
+22,5,1,2,2,3,0.775,0.114,make friends easily
+23,4,1,2,4,3,1.623,0.259,get picked on
+24,1,1,2,4,2,0.692,0.386,read magazines
+25,4,1,2,4,2,4.052,0.202,count calories
+26,5,1,2,2,4,2.224,0.105,feel pressured to drink
+27,6,1,2,3,3,1.282,0.213,pretend I'm fine
+28,2,1,2,2,4,0.966,0.164,play board games
+29,5,1,2,2,3,0.576,0.106,pretend to like people
+30,6,1,2,4,4,0.077,0.464,can be mean
+31,3,1,2,4,4,5.622,0.047,like reality TV shows
+32,2,1,2,2,3,1.429,0.126,listen to music
+33,6,1,2,2,2,0.005,0.019,act without thinking
+34,4,1,2,4,2,1.254,0.358,wish I was in love 
+35,2,1,2,3,4,6.251,0.033,stay up late
+36,1,1,2,4,2,0.275,0.101,like cold pizza
+37,5,1,2,3,4,0.023,0.268,like breaking rules
+38,3,1,2,2,2,2.373,0.037,can be messy
+39,6,1,2,4,4,0.178,0.074,like flirting
+40,1,1,2,3,2,0.004,0.038,have too many chores
+41,4,1,2,3,2,7.585,0.431,judge people

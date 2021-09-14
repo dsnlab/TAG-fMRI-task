@@ -1,0 +1,41 @@
+1,6,1,2,4,4,2.434,0.176,pretend I'm fine
+2,2,1,2,3,4,2.688,0.127,sleep in late
+3,3,1,2,4,4,2.224,0.106,like wearing makeup
+4,4,1,2,4,2,0.275,0.243,dislike my body
+5,5,1,2,3,4,0.271,0.392,worry about grades
+6,2,1,2,2,3,0.178,0.358,like burning candles
+7,5,1,2,2,3,0.128,0.032,feel pressured to drink
+8,1,1,2,4,2,0.792,0.073,dance in my room
+9,4,1,2,3,2,0.258,0.019,get embarrassed
+10,6,1,2,4,4,3.065,0.213,count calories
+11,5,1,2,2,4,2.373,0.037,worry about kissing
+12,1,1,2,3,2,0.737,0.171,braid my hair
+13,3,1,2,4,4,4.052,0.060,wear flip flops
+14,1,1,2,4,2,0.966,0.431,take bubble baths 
+15,6,1,2,3,3,1.592,0.299,get irritated easily
+16,2,1,2,2,4,1.254,0.028,wear PJs all day
+17,3,1,2,3,3,0.004,0.043,wear sunglasses
+18,1,1,2,4,2,0.206,0.033,don't brush my teeth
+19,2,1,2,3,4,0.077,0.268,like wearing costumes
+20,4,1,2,4,2,1.003,0.031,make friends easily
+21,3,1,2,2,2,1.282,0.213,forget people's names
+22,5,1,2,3,4,0.880,0.233,worry about college
+23,4,1,2,4,2,0.085,0.038,get self-conscious
+24,1,1,2,3,2,6.251,0.464,carry chapstick
+25,4,1,2,3,2,0.005,0.102,dream about my wedding
+26,5,1,2,3,4,0.023,0.164,can't ignore gossip
+27,6,1,2,2,2,0.692,0.126,tell little lies
+28,2,1,2,3,4,0.296,0.386,like to wear hats 
+29,5,1,2,2,4,2.018,0.074,copy homework
+30,6,1,2,3,3,1.503,0.127,want to be alone
+31,3,1,2,3,3,5.907,0.066,go barefoot
+32,2,1,2,2,4,0.383,0.259,try new foods
+33,6,1,2,4,4,5.622,0.105,think I look cute
+34,4,1,2,4,2,1.429,0.104,am good at getting my way
+35,2,1,2,2,4,1.573,0.114,forget to turn off lights
+36,1,1,2,4,2,0.968,0.698,try to recycle
+37,5,1,2,2,4,0.342,0.358,hate school 
+38,3,1,2,4,4,1.063,0.224,like leftovers
+39,6,1,2,2,2,1.125,0.101,act without thinking
+40,1,1,2,3,2,0.775,0.202,burn my toast
+41,4,1,2,3,2,9.123,0.047,can't count on my family

@@ -1,0 +1,41 @@
+1,6,1,2,3,3,0.271,0.038,am good at getting my way
+2,2,1,2,3,4,5.907,0.358,forget to turn off lights
+3,3,1,2,3,3,0.206,0.299,play board games
+4,4,1,2,4,2,2.018,0.386,can't keep secrets
+5,5,1,2,3,4,0.737,0.101,get picked on
+6,2,1,2,3,4,0.258,0.268,like sleepovers
+7,5,1,2,3,4,0.576,0.031,hate school 
+8,1,1,2,4,2,2.688,0.104,carry chapstick
+9,4,1,2,4,3,0.178,0.464,can be awkward
+10,6,1,2,4,4,5.622,0.176,make friends easily
+11,5,1,2,2,3,1.623,0.066,can't count on my family
+12,1,1,2,4,3,1.573,0.171,wear flip flops
+13,3,1,2,4,4,1.592,0.698,like to doodle
+14,1,1,2,4,2,0.775,0.019,drink milk
+15,6,1,2,2,2,0.004,0.033,get irritated easily
+16,2,1,2,2,3,0.342,0.164,help around the house
+17,3,1,2,2,2,0.023,0.213,take bubble baths 
+18,1,1,2,4,3,0.077,0.233,wear leggings
+19,2,1,2,2,3,2.373,0.060,braid my hair
+20,4,1,2,4,2,1.003,0.102,can get moody
+21,3,1,2,4,4,1.429,0.047,try new foods
+22,5,1,2,2,3,1.282,0.073,get mad at my friends
+23,4,1,2,4,3,0.275,0.259,feel pressured to drink
+24,1,1,2,3,2,0.085,0.114,read magazines
+25,4,1,2,3,2,1.063,0.243,get embarrassed
+26,5,1,2,2,4,0.880,0.328,can be mean
+27,6,1,2,4,4,0.792,0.126,want to be popular
+28,2,1,2,2,4,1.125,0.213,sing in the shower
+29,5,1,2,2,4,2.224,0.127,worry about college
+30,6,1,2,4,4,2.434,0.202,regret what I post online
+31,3,1,2,4,4,1.254,0.224,sleep in late
+32,2,1,2,2,4,4.052,0.028,like leftovers
+33,6,1,2,3,3,0.692,0.431,hide my feelings
+34,4,1,2,4,3,6.251,0.106,worry about kissing
+35,2,1,2,3,4,0.128,0.358,don't make my bed
+36,1,1,2,4,3,0.968,0.392,like eating out
+37,5,1,2,3,4,0.383,0.074,want to be alone
+38,3,1,2,3,3,3.065,0.105,listen to music
+39,6,1,2,3,3,0.966,0.037,like flirting
+40,1,1,2,4,2,0.296,0.032,wear PJs all day
+41,4,1,2,4,2,7.505,0.127,like breaking rules

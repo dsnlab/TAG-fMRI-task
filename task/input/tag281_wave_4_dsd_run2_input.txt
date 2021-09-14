@@ -1,0 +1,41 @@
+1,6,1,2,4,4,2.688,0.066,think I look cute
+2,2,1,2,2,4,0.004,0.073,play board games
+3,3,1,2,4,4,0.178,0.268,like wearing costumes
+4,4,1,2,4,2,0.296,0.037,can't stop worrying
+5,5,1,2,2,4,0.775,0.243,can't count on my family
+6,2,1,2,2,3,0.792,0.698,wear leggings
+7,5,1,2,2,3,0.005,0.213,can't ignore gossip
+8,1,1,2,4,2,2.224,0.127,read magazines
+9,4,1,2,3,2,6.251,0.028,feel pressured to drink
+10,6,1,2,2,2,0.966,0.213,think I'm weird
+11,5,1,2,3,4,2.373,0.386,copy homework
+12,1,1,2,3,2,5.907,0.233,like eating out
+13,3,1,2,2,2,1.063,0.164,like sleepovers
+14,1,1,2,3,2,1.282,0.328,wear sunglasses
+15,6,1,2,3,3,1.429,0.038,want to be popular
+16,2,1,2,3,4,1.503,0.259,wear bright colors 
+17,3,1,2,3,3,0.880,0.464,forget to wear sunscreen
+18,1,1,2,4,3,0.383,0.105,carry chapstick
+19,2,1,2,3,4,5.622,0.431,don't shower in the morning
+20,4,1,2,3,2,4.052,0.202,fight with my family
+21,3,1,2,2,2,0.128,0.358,dance in my room
+22,5,1,2,3,4,1.125,0.358,get irritated easily
+23,4,1,2,4,3,1.623,0.299,count calories
+24,1,1,2,4,2,0.737,0.392,wear flip flops
+25,4,1,2,4,2,1.003,0.104,can't keep secrets
+26,5,1,2,2,3,0.023,0.224,wish I was in love 
+27,6,1,2,2,2,1.254,0.127,can be mean
+28,2,1,2,2,3,0.342,0.033,drink milk
+29,5,1,2,2,4,0.968,0.176,worry about college
+30,6,1,2,3,3,0.576,0.060,don't like my life
+31,3,1,2,3,3,0.206,0.126,try new foods
+32,2,1,2,2,4,3.065,0.102,don't make my bed
+33,6,1,2,4,4,0.271,0.074,act without thinking
+34,4,1,2,4,2,0.085,0.114,can be awkward
+35,2,1,2,2,4,0.077,0.019,stay up late
+36,1,1,2,4,2,2.018,0.101,like leftovers
+37,5,1,2,2,4,0.258,0.032,think I'm smart
+38,3,1,2,4,4,0.692,0.047,like watching sports  
+39,6,1,2,4,4,1.573,0.031,hide my feelings
+40,1,1,2,3,2,2.434,0.043,sleep in late
+41,4,1,2,3,2,9.092,0.106,get mad at my friends
